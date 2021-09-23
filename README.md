@@ -14,6 +14,21 @@
                                                       |___/                    
                                                       
 </pre>
+
+Projects;
+ - clang;
+ - clang-tools-extra;
+ - compiler-rt;
+ - libc;
+ - libclc;
+ - libcxx;
+ - libcxxabi;
+ - lld;
+ - lldb;
+ - parallel-libs;
+ - polly;
+ - pstl;
+ 
 <ul>
 <h2>Donations/Tips</h2>
 <p>Please donate below!</p>
