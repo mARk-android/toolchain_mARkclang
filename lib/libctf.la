@@ -17,7 +17,7 @@ old_library='libctf.a'
 inherited_linker_flags=''
 
 # Libraries that this one depends upon.
-dependency_libs=' '/home/mark/toolchain/bld/install/lib'/libbfd.la -L/home/mark/toolchain/bld/build/binutils/x86_64-linux-gnu/libctf/../libiberty -liberty -lz -ldl'
+dependency_libs=' '/home/mark/toolchain/bld/install/lib'/libbfd.la -L/home/mark/toolchain/bld/build/binutils/x86_64-linux-gnu/libctf/../libiberty -liberty -lz'
 
 # Names of additional weak libraries provided by this library
 weak_library_names=''

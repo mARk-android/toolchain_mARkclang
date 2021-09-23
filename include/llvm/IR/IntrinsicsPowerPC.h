@@ -13,7 +13,7 @@ namespace llvm {
 namespace Intrinsic {
 enum PPCIntrinsics : unsigned {
 // Enum values for intrinsics
-    ppc_addex = 6426,                                 // llvm.ppc.addex
+    ppc_addex = 6443,                                 // llvm.ppc.addex
     ppc_addf128_round_to_odd,                  // llvm.ppc.addf128.round.to.odd
     ppc_altivec_crypto_vcipher,                // llvm.ppc.altivec.crypto.vcipher
     ppc_altivec_crypto_vcipherlast,            // llvm.ppc.altivec.crypto.vcipherlast
@@ -319,6 +319,8 @@ enum PPCIntrinsics : unsigned {
     ppc_altivec_vupklsb,                       // llvm.ppc.altivec.vupklsb
     ppc_altivec_vupklsh,                       // llvm.ppc.altivec.vupklsh
     ppc_altivec_vupklsw,                       // llvm.ppc.altivec.vupklsw
+    ppc_atomic_load_i128,                      // llvm.ppc.atomic.load.i128
+    ppc_atomic_store_i128,                     // llvm.ppc.atomic.store.i128
     ppc_atomicrmw_add_i128,                    // llvm.ppc.atomicrmw.add.i128
     ppc_atomicrmw_and_i128,                    // llvm.ppc.atomicrmw.and.i128
     ppc_atomicrmw_nand_i128,                   // llvm.ppc.atomicrmw.nand.i128

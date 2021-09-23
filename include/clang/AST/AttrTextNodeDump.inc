@@ -264,6 +264,11 @@
       break;
     }
   }
+  void VisitErrorAttr(const ErrorAttr *A) {
+    const auto *SA = cast<ErrorAttr>(A); (void)SA;
+    OS << " " << A->getSpelling();
+    OS << " \"" << SA->getUserDiagnostic() << "\"";
+  }
   void VisitExternalSourceSymbolAttr(const ExternalSourceSymbolAttr *A) {
     const auto *SA = cast<ExternalSourceSymbolAttr>(A); (void)SA;
     OS << " \"" << SA->getLanguage() << "\"";

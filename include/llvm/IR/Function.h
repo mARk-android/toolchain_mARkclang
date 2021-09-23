@@ -58,7 +58,8 @@ class User;
 class BranchProbabilityInfo;
 class BlockFrequencyInfo;
 
-class Function : public GlobalObject, public ilist_node<Function> {
+class LLVM_EXTERNAL_VISIBILITY Function : public GlobalObject,
+                                          public ilist_node<Function> {
 public:
   using BasicBlockListType = SymbolTableList<BasicBlock>;
 
@@ -327,14 +328,9 @@ public:
   /// Set the attribute list for this Function.
   void setAttributes(AttributeList Attrs) { AttributeSets = Attrs; }
 
+  // TODO: remove non-AtIndex versions of these methods.
   /// adds the attribute to the list of attributes.
-  void addAttribute(unsigned i, Attribute Attr);
-
-  /// adds the attribute to the list of attributes.
-  void addAttribute(unsigned i, Attribute::AttrKind Kind);
-
-  /// adds the attributes to the list of attributes.
-  void addAttributes(unsigned i, const AttrBuilder &Attrs);
+  void addAttributeAtIndex(unsigned i, Attribute Attr);
 
   /// Add function attributes to this function.
   void addFnAttr(Attribute::AttrKind Kind);
@@ -351,6 +347,12 @@ public:
   /// Add return value attributes to this function.
   void addRetAttr(Attribute::AttrKind Kind);
 
+  /// Add return value attributes to this function.
+  void addRetAttr(Attribute Attr);
+
+  /// Add return value attributes to this function.
+  void addRetAttrs(const AttrBuilder &Attrs);
+
   /// adds the attribute to the list of attributes for the given arg.
   void addParamAttr(unsigned ArgNo, Attribute::AttrKind Kind);
 
@@ -361,10 +363,10 @@ public:
   void addParamAttrs(unsigned ArgNo, const AttrBuilder &Attrs);
 
   /// removes the attribute from the list of attributes.
-  void removeAttribute(unsigned i, Attribute::AttrKind Kind);
+  void removeAttributeAtIndex(unsigned i, Attribute::AttrKind Kind);
 
   /// removes the attribute from the list of attributes.
-  void removeAttribute(unsigned i, StringRef Kind);
+  void removeAttributeAtIndex(unsigned i, StringRef Kind);
 
   /// Remove function attributes from this function.
   void removeFnAttr(Attribute::AttrKind Kind);
@@ -405,10 +407,10 @@ public:
   bool hasParamAttribute(unsigned ArgNo, Attribute::AttrKind Kind) const;
 
   /// gets the attribute from the list of attributes.
-  Attribute getAttribute(unsigned i, Attribute::AttrKind Kind) const;
+  Attribute getAttributeAtIndex(unsigned i, Attribute::AttrKind Kind) const;
 
   /// gets the attribute from the list of attributes.
-  Attribute getAttribute(unsigned i, StringRef Kind) const;
+  Attribute getAttributeAtIndex(unsigned i, StringRef Kind) const;
 
   /// Return the attribute for the given attribute kind.
   Attribute getFnAttribute(Attribute::AttrKind Kind) const;
@@ -424,20 +426,8 @@ public:
   void removeParamUndefImplyingAttrs(unsigned ArgNo);
 
   /// Return the stack alignment for the function.
-  unsigned getFnStackAlignment() const {
-    if (!hasFnAttribute(Attribute::StackAlignment))
-      return 0;
-    if (const auto MA =
-            AttributeSets.getStackAlignment(AttributeList::FunctionIndex))
-      return MA->value();
-    return 0;
-  }
-
-  /// Return the stack alignment for the function.
   MaybeAlign getFnStackAlign() const {
-    if (!hasFnAttribute(Attribute::StackAlignment))
-      return None;
-    return AttributeSets.getStackAlignment(AttributeList::FunctionIndex);
+    return AttributeSets.getFnStackAlignment();
   }
 
   /// Returns true if the function has ssp, sspstrong, or sspreq fn attrs.
@@ -488,24 +478,15 @@ public:
     return AttributeSets.getParamByRefType(ArgNo);
   }
 
-  /// Extract the number of dereferenceable bytes for a call or
-  /// parameter (0=unknown).
-  /// @param i AttributeList index, referring to a return value or argument.
-  uint64_t getDereferenceableBytes(unsigned i) const {
-    return AttributeSets.getDereferenceableBytes(i);
+  /// Extract the preallocated type for a parameter.
+  Type *getParamPreallocatedType(unsigned ArgNo) const {
+    return AttributeSets.getParamPreallocatedType(ArgNo);
   }
 
   /// Extract the number of dereferenceable bytes for a parameter.
   /// @param ArgNo Index of an argument, with 0 being the first function arg.
   uint64_t getParamDereferenceableBytes(unsigned ArgNo) const {
     return AttributeSets.getParamDereferenceableBytes(ArgNo);
-  }
-
-  /// Extract the number of dereferenceable_or_null bytes for a call or
-  /// parameter (0=unknown).
-  /// @param i AttributeList index, referring to a return value or argument.
-  uint64_t getDereferenceableOrNullBytes(unsigned i) const {
-    return AttributeSets.getDereferenceableOrNullBytes(i);
   }
 
   /// Extract the number of dereferenceable_or_null bytes for a
@@ -878,13 +859,14 @@ public:
   /// hasAddressTaken - returns true if there are any uses of this function
   /// other than direct calls or invokes to it, or blockaddress expressions.
   /// Optionally passes back an offending user for diagnostic purposes,
-  /// ignores callback uses, assume like pointer annotation calls, and
-  /// references in llvm.used and llvm.compiler.used variables.
-  ///
+  /// ignores callback uses, assume like pointer annotation calls, references in
+  /// llvm.used and llvm.compiler.used variables, and operand bundle
+  /// "clang.arc.attachedcall".
   bool hasAddressTaken(const User ** = nullptr,
                        bool IgnoreCallbackUses = false,
                        bool IgnoreAssumeLikeCalls = true,
-                       bool IngoreLLVMUsed = false) const;
+                       bool IngoreLLVMUsed = false,
+                       bool IgnoreARCAttachedCall = false) const;
 
   /// isDefTriviallyDead - Return true if it is trivially safe to remove
   /// this function definition from the module (because it isn't externally

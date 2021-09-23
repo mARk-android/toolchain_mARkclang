@@ -57,7 +57,7 @@ add_library(LLVMDemangle STATIC IMPORTED)
 add_library(LLVMSupport STATIC IMPORTED)
 
 set_target_properties(LLVMSupport PROPERTIES
-  INTERFACE_LINK_LIBRARIES "rt;dl;-lpthread;m;ZLIB::ZLIB;LLVMDemangle"
+  INTERFACE_LINK_LIBRARIES "rt;dl;m;ZLIB::ZLIB;LLVMDemangle"
 )
 
 # Create imported target LLVMTableGen
@@ -81,7 +81,7 @@ add_executable(llvm-tblgen IMPORTED)
 add_library(LLVMCore STATIC IMPORTED)
 
 set_target_properties(LLVMCore PROPERTIES
-  INTERFACE_LINK_LIBRARIES "-lpthread;LLVMBinaryFormat;LLVMRemarks;LLVMSupport"
+  INTERFACE_LINK_LIBRARIES "LLVMBinaryFormat;LLVMRemarks;LLVMSupport"
 )
 
 # Create imported target LLVMFuzzMutate
@@ -116,7 +116,7 @@ set_target_properties(LLVMIRReader PROPERTIES
 add_library(LLVMCodeGen STATIC IMPORTED)
 
 set_target_properties(LLVMCodeGen PROPERTIES
-  INTERFACE_LINK_LIBRARIES "-lpthread;LLVMAnalysis;LLVMBitReader;LLVMBitWriter;LLVMCore;LLVMMC;LLVMProfileData;LLVMScalarOpts;LLVMSupport;LLVMTarget;LLVMTransformUtils"
+  INTERFACE_LINK_LIBRARIES "LLVMAnalysis;LLVMBitReader;LLVMBitWriter;LLVMCore;LLVMMC;LLVMProfileData;LLVMScalarOpts;LLVMSupport;LLVMTarget;LLVMTransformUtils"
 )
 
 # Create imported target LLVMSelectionDAG
@@ -200,7 +200,7 @@ set_target_properties(LLVMFrontendOpenACC PROPERTIES
 add_library(LLVMFrontendOpenMP STATIC IMPORTED)
 
 set_target_properties(LLVMFrontendOpenMP PROPERTIES
-  INTERFACE_LINK_LIBRARIES "LLVMCore;LLVMSupport;LLVMTransformUtils"
+  INTERFACE_LINK_LIBRARIES "LLVMCore;LLVMSupport;LLVMTransformUtils;LLVMAnalysis;LLVMMC;LLVMScalarOpts"
 )
 
 # Create imported target LLVMTransformUtils
@@ -242,7 +242,7 @@ set_target_properties(LLVMScalarOpts PROPERTIES
 add_library(LLVMipo STATIC IMPORTED)
 
 set_target_properties(LLVMipo PROPERTIES
-  INTERFACE_LINK_LIBRARIES "LLVMAggressiveInstCombine;LLVMAnalysis;LLVMBitReader;LLVMBitWriter;LLVMCore;LLVMFrontendOpenMP;LLVMInstCombine;LLVMIRReader;LLVMLinker;LLVMObject;LLVMProfileData;LLVMScalarOpts;LLVMSupport;LLVMTransformUtils;LLVMVectorize;LLVMInstrumentation"
+  INTERFACE_LINK_LIBRARIES "LLVMAggressiveInstCombine;LLVMAnalysis;LLVMBitReader;LLVMBitWriter;LLVMCore;LLVMFrontendOpenMP;LLVMInstCombine;LLVMIRReader;LLVMLinker;LLVMObject;LLVMProfileData;LLVMScalarOpts;LLVMSupport;LLVMTransformUtils;LLVMVectorize;LLVMInstrumentation;LLVMScalarOpts"
 )
 
 # Create imported target LLVMVectorize
@@ -550,7 +550,7 @@ set_target_properties(LLVMARMUtils PROPERTIES
 add_library(LLVMX86CodeGen STATIC IMPORTED)
 
 set_target_properties(LLVMX86CodeGen PROPERTIES
-  INTERFACE_LINK_LIBRARIES "LLVMAnalysis;LLVMAsmPrinter;LLVMCodeGen;LLVMCore;LLVMMC;LLVMSelectionDAG;LLVMSupport;LLVMTarget;LLVMTransformUtils;LLVMX86Desc;LLVMX86Info;LLVMGlobalISel;LLVMProfileData;LLVMCFGuard"
+  INTERFACE_LINK_LIBRARIES "LLVMAnalysis;LLVMAsmPrinter;LLVMCodeGen;LLVMCore;LLVMInstrumentation;LLVMMC;LLVMSelectionDAG;LLVMSupport;LLVMTarget;LLVMTransformUtils;LLVMX86Desc;LLVMX86Info;LLVMGlobalISel;LLVMProfileData;LLVMCFGuard"
 )
 
 # Create imported target LLVMX86AsmParser
@@ -592,7 +592,7 @@ set_target_properties(LLVMAsmParser PROPERTIES
 add_library(LLVMLineEditor STATIC IMPORTED)
 
 set_target_properties(LLVMLineEditor PROPERTIES
-  INTERFACE_LINK_LIBRARIES "LLVMSupport"
+  INTERFACE_LINK_LIBRARIES "edit;LLVMSupport"
 )
 
 # Create imported target LLVMProfileData

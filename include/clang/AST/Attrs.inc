@@ -3419,6 +3419,35 @@ public:
   static bool classof(const Attr *A) { return A->getKind() == attr::DiagnoseIf; }
 };
 
+class DisableSanitizerInstrumentationAttr : public InheritableAttr {
+public:
+  enum Spelling {
+    GNU_disable_sanitizer_instrumentation = 0,
+    CXX11_clang_disable_sanitizer_instrumentation = 1,
+    C2x_clang_disable_sanitizer_instrumentation = 2,
+  SpellingNotCalculated = 15
+
+  };
+
+  // Factory methods
+  static DisableSanitizerInstrumentationAttr *CreateImplicit(ASTContext &Ctx, const AttributeCommonInfo &CommonInfo = {SourceRange{}});
+  static DisableSanitizerInstrumentationAttr *Create(ASTContext &Ctx, const AttributeCommonInfo &CommonInfo);
+  static DisableSanitizerInstrumentationAttr *CreateImplicit(ASTContext &Ctx, SourceRange Range, AttributeCommonInfo::Syntax Syntax);
+  static DisableSanitizerInstrumentationAttr *Create(ASTContext &Ctx, SourceRange Range, AttributeCommonInfo::Syntax Syntax);
+
+  // Constructors
+  DisableSanitizerInstrumentationAttr(ASTContext &Ctx, const AttributeCommonInfo &CommonInfo
+             );
+
+  DisableSanitizerInstrumentationAttr *clone(ASTContext &C) const;
+  void printPretty(raw_ostream &OS,
+                   const PrintingPolicy &Policy) const;
+  const char *getSpelling() const;
+
+
+  static bool classof(const Attr *A) { return A->getKind() == attr::DisableSanitizerInstrumentation; }
+};
+
 class DisableTailCallsAttr : public InheritableAttr {
 public:
   enum Spelling {
@@ -3648,6 +3677,62 @@ public:
 
 
   static bool classof(const Attr *A) { return A->getKind() == attr::EnumExtensibility; }
+};
+
+class ErrorAttr : public InheritableAttr {
+unsigned userDiagnosticLength;
+char *userDiagnostic;
+
+public:
+  enum Spelling {
+    GNU_error = 0,
+    CXX11_gnu_error = 1,
+    C2x_gnu_error = 2,
+    GNU_warning = 3,
+    CXX11_gnu_warning = 4,
+    C2x_gnu_warning = 5,
+  SpellingNotCalculated = 15
+
+  };
+
+  // Factory methods
+  static ErrorAttr *CreateImplicit(ASTContext &Ctx, llvm::StringRef UserDiagnostic, const AttributeCommonInfo &CommonInfo = {SourceRange{}});
+  static ErrorAttr *Create(ASTContext &Ctx, llvm::StringRef UserDiagnostic, const AttributeCommonInfo &CommonInfo);
+  static ErrorAttr *CreateImplicit(ASTContext &Ctx, llvm::StringRef UserDiagnostic, SourceRange Range, AttributeCommonInfo::Syntax Syntax, ErrorAttr::Spelling S = static_cast<Spelling>(SpellingNotCalculated));
+  static ErrorAttr *Create(ASTContext &Ctx, llvm::StringRef UserDiagnostic, SourceRange Range, AttributeCommonInfo::Syntax Syntax, ErrorAttr::Spelling S = static_cast<Spelling>(SpellingNotCalculated));
+
+  // Constructors
+  ErrorAttr(ASTContext &Ctx, const AttributeCommonInfo &CommonInfo
+              , llvm::StringRef UserDiagnostic
+             );
+
+  ErrorAttr *clone(ASTContext &C) const;
+  void printPretty(raw_ostream &OS,
+                   const PrintingPolicy &Policy) const;
+  const char *getSpelling() const;
+  Spelling getSemanticSpelling() const;
+  bool isError() const { return getAttributeSpellingListIndex() == 0 ||
+    getAttributeSpellingListIndex() == 1 ||
+    getAttributeSpellingListIndex() == 2; }
+  bool isWarning() const { return getAttributeSpellingListIndex() == 3 ||
+    getAttributeSpellingListIndex() == 4 ||
+    getAttributeSpellingListIndex() == 5; }
+  llvm::StringRef getUserDiagnostic() const {
+    return llvm::StringRef(userDiagnostic, userDiagnosticLength);
+  }
+  unsigned getUserDiagnosticLength() const {
+    return userDiagnosticLength;
+  }
+  void setUserDiagnostic(ASTContext &C, llvm::StringRef S) {
+    userDiagnosticLength = S.size();
+    this->userDiagnostic = new (C, 1) char [userDiagnosticLength];
+    if (!S.empty())
+      std::memcpy(this->userDiagnostic, S.data(), userDiagnosticLength);
+  }
+
+
+
+  static bool classof(const Attr *A) { return A->getKind() == attr::Error; }
 };
 
 class ExcludeFromExplicitInstantiationAttr : public InheritableAttr {

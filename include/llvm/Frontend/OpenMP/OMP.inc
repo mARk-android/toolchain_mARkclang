@@ -760,15 +760,31 @@ namespace omp {
   static OmpClauseSet requiredClauses_OMPD_master_taskloop_simd {
   };
 
+  // Sets for metadirective
+
+  static OmpClauseSet allowedClauses_OMPD_metadirective {
+    llvm::omp::Clause::OMPC_when,
+  };
+
+  static OmpClauseSet allowedOnceClauses_OMPD_metadirective {
+    llvm::omp::Clause::OMPC_default,
+  };
+
+  static OmpClauseSet allowedExclusiveClauses_OMPD_metadirective {
+  };
+
+  static OmpClauseSet requiredClauses_OMPD_metadirective {
+  };
+
   // Sets for ordered
 
   static OmpClauseSet allowedClauses_OMPD_ordered {
-    llvm::omp::Clause::OMPC_threads,
-    llvm::omp::Clause::OMPC_simd,
     llvm::omp::Clause::OMPC_depend,
   };
 
   static OmpClauseSet allowedOnceClauses_OMPD_ordered {
+    llvm::omp::Clause::OMPC_threads,
+    llvm::omp::Clause::OMPC_simd,
   };
 
   static OmpClauseSet allowedExclusiveClauses_OMPD_ordered {
@@ -2568,6 +2584,14 @@ namespace omp {
       llvm::omp::requiredClauses_OMPD_master_taskloop_simd,
     }
   },
+  {llvm::omp::Directive::OMPD_metadirective,
+    {
+      llvm::omp::allowedClauses_OMPD_metadirective,
+      llvm::omp::allowedOnceClauses_OMPD_metadirective,
+      llvm::omp::allowedExclusiveClauses_OMPD_metadirective,
+      llvm::omp::requiredClauses_OMPD_metadirective,
+    }
+  },
   {llvm::omp::Directive::OMPD_ordered,
     {
       llvm::omp::allowedClauses_OMPD_ordered,
@@ -3068,7 +3092,7 @@ EMPTY_CLASS(Mergeable);
 EMPTY_CLASS(Nogroup);
 EMPTY_CLASS(Nowait);
 WRAPPER_CLASS(Nocontext, ScalarLogicalExpr);
-EMPTY_CLASS(Nontemporal);
+WRAPPER_CLASS(Nontemporal, std::list<Name>);
 EMPTY_CLASS(Notinbranch);
 WRAPPER_CLASS(Novariants, ScalarLogicalExpr);
 WRAPPER_CLASS(NumTasks, ScalarIntExpr);
@@ -3107,6 +3131,7 @@ EMPTY_CLASS(Use);
 EMPTY_CLASS(UseDeviceAddr);
 WRAPPER_CLASS(UseDevicePtr, std::list<Name>);
 EMPTY_CLASS(UsesAllocators);
+EMPTY_CLASS(When);
 EMPTY_CLASS(Write);
 
 #endif // GEN_FLANG_CLAUSE_PARSER_CLASSES
@@ -3198,6 +3223,7 @@ AcqRel
 , UseDeviceAddr
 , UseDevicePtr
 , UsesAllocators
+, When
 , Write
 
 #endif // GEN_FLANG_CLAUSE_PARSER_CLASSES_LIST
@@ -3289,6 +3315,7 @@ NODE(OmpClause, Use)
 NODE(OmpClause, UseDeviceAddr)
 NODE(OmpClause, UseDevicePtr)
 NODE(OmpClause, UsesAllocators)
+NODE(OmpClause, When)
 NODE(OmpClause, Write)
 
 #endif // GEN_FLANG_DUMP_PARSE_TREE_CLAUSES
@@ -3459,7 +3486,12 @@ void Unparse(const OmpClause::Nocontext &x) {
   Walk(x.v);
   Put(")");
 }
-void Before(const OmpClause::Nontemporal &) { Word("NONTEMPORAL"); }
+void Unparse(const OmpClause::Nontemporal &x) {
+  Word("NONTEMPORAL");
+  Put("(");
+  Walk(x.v, ",");
+  Put(")");
+}
 void Before(const OmpClause::Notinbranch &) { Word("NOTINBRANCH"); }
 void Unparse(const OmpClause::Novariants &x) {
   Word("NOVARIANTS");
@@ -3586,6 +3618,7 @@ void Unparse(const OmpClause::UseDevicePtr &x) {
   Put(")");
 }
 void Before(const OmpClause::UsesAllocators &) { Word("USES_ALLOCATORS"); }
+void Before(const OmpClause::When &) { Word("WHEN"); }
 void Before(const OmpClause::Write &) { Word("WRITE"); }
 
 #endif // GEN_FLANG_CLAUSE_UNPARSE
@@ -3677,6 +3710,7 @@ void Enter(const parser::OmpClause::Use &);
 void Enter(const parser::OmpClause::UseDeviceAddr &);
 void Enter(const parser::OmpClause::UseDevicePtr &);
 void Enter(const parser::OmpClause::UsesAllocators &);
+void Enter(const parser::OmpClause::When &);
 void Enter(const parser::OmpClause::Write &);
 
 #endif // GEN_FLANG_CLAUSE_CHECK_ENTER
@@ -3852,6 +3886,8 @@ if constexpr (std::is_same_v<A, parser::OmpClause::UseDevicePtr>)
   return llvm::omp::Clause::OMPC_use_device_ptr;
 if constexpr (std::is_same_v<A, parser::OmpClause::UsesAllocators>)
   return llvm::omp::Clause::OMPC_uses_allocators;
+if constexpr (std::is_same_v<A, parser::OmpClause::When>)
+  return llvm::omp::Clause::OMPC_when;
 if constexpr (std::is_same_v<A, parser::OmpClause::Write>)
   return llvm::omp::Clause::OMPC_write;
 llvm_unreachable("Invalid OpenMP Parser clause");
@@ -3968,6 +4004,7 @@ __CLAUSE(use, OMPUseClause)
 __CLAUSE(use_device_addr, OMPUseDeviceAddrClause)
 __CLAUSE(use_device_ptr, OMPUseDevicePtrClause)
 __CLAUSE(uses_allocators, OMPUsesAllocatorsClause)
+__CLAUSE_NO_CLASS(when)
 __CLAUSE(write, OMPWriteClause)
 
 #undef __IMPLICIT_CLAUSE_NO_CLASS
@@ -4022,6 +4059,7 @@ Directive llvm::omp::getOpenMPDirectiveKind(llvm::StringRef Str) {
     .Case("master",OMPD_master)
     .Case("master taskloop",OMPD_master_taskloop)
     .Case("master taskloop simd",OMPD_master_taskloop_simd)
+    .Case("metadirective",OMPD_metadirective)
     .Case("ordered",OMPD_ordered)
     .Case("parallel",OMPD_parallel)
     .Case("parallel do",OMPD_parallel_do)
@@ -4159,6 +4197,8 @@ llvm::StringRef llvm::omp::getOpenMPDirectiveName(Directive Kind) {
       return "master taskloop";
     case OMPD_master_taskloop_simd:
       return "master taskloop simd";
+    case OMPD_metadirective:
+      return "metadirective";
     case OMPD_ordered:
       return "ordered";
     case OMPD_parallel:
@@ -4361,6 +4401,7 @@ Clause llvm::omp::getOpenMPClauseKind(llvm::StringRef Str) {
     .Case("use_device_addr",OMPC_use_device_addr)
     .Case("use_device_ptr",OMPC_use_device_ptr)
     .Case("uses_allocators",OMPC_uses_allocators)
+    .Case("when",OMPC_when)
     .Case("write",OMPC_write)
     .Default(OMPC_unknown);
 }
@@ -4535,6 +4576,8 @@ llvm::StringRef llvm::omp::getOpenMPClauseName(Clause Kind) {
       return "use_device_ptr";
     case OMPC_uses_allocators:
       return "uses_allocators";
+    case OMPC_when:
+      return "when";
     case OMPC_write:
       return "write";
   }
@@ -5257,13 +5300,23 @@ bool llvm::omp::isAllowedClauseForDirective(Directive D, Clause C, unsigned Vers
           return false;
       }
       break;
+    case OMPD_metadirective:
+      switch (C) {
+        case OMPC_when:
+          return 1 <= Version && 2147483647 >= Version;
+        case OMPC_default:
+          return 1 <= Version && 2147483647 >= Version;
+        default:
+          return false;
+      }
+      break;
     case OMPD_ordered:
       switch (C) {
+        case OMPC_depend:
+          return 1 <= Version && 2147483647 >= Version;
         case OMPC_threads:
           return 1 <= Version && 2147483647 >= Version;
         case OMPC_simd:
-          return 1 <= Version && 2147483647 >= Version;
-        case OMPC_depend:
           return 1 <= Version && 2147483647 >= Version;
         default:
           return false;

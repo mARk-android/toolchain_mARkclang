@@ -2081,6 +2081,20 @@ public:
     return false;
   }
 
+  /// Return true if it may be profitable to transform
+  /// (mul (add x, c1), c2) -> (add (mul x, c2), c1*c2).
+  /// This may not be true if c1 and c2 can be represented as immediates but
+  /// c1*c2 cannot, for example.
+  /// The target should check if c1, c2 and c1*c2 can be represented as
+  /// immediates, or have to be materialized into registers. If it is not sure
+  /// about some cases, a default true can be returned to let the DAGCombiner
+  /// decide.
+  /// AddNode is (add x, c1), and ConstNode is c2.
+  virtual bool isMulAddWithConstProfitable(const SDValue &AddNode,
+                                           const SDValue &ConstNode) const {
+    return true;
+  }
+
   /// Return true if it is more correct/profitable to use strict FP_TO_INT
   /// conversion operations - canonicalizing the FP source value instead of
   /// converting all cases and then selecting based on value.
@@ -4430,10 +4444,6 @@ public:
   /// \param N Node to expand
   /// \returns The expansion result
   SDValue expandFP_TO_INT_SAT(SDNode *N, SelectionDAG &DAG) const;
-
-  /// Expand isnan depending on function attributes.
-  SDValue expandISNAN(EVT ResultVT, SDValue Op, SDNodeFlags Flags,
-                      const SDLoc &DL, SelectionDAG &DAG) const;
 
   /// Expand CTPOP nodes. Expands vector/scalar CTPOP nodes,
   /// vector nodes can only succeed if all operations are legal/custom.

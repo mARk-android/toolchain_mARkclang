@@ -272,20 +272,24 @@ template <typename T> auto drop_begin(T &&RangeOrContainer, size_t N = 1) {
 // be applied whenever operator* is invoked on the iterator.
 
 template <typename ItTy, typename FuncTy,
-          typename FuncReturnTy =
-            decltype(std::declval<FuncTy>()(*std::declval<ItTy>()))>
+          typename ReferenceTy =
+              decltype(std::declval<FuncTy>()(*std::declval<ItTy>()))>
 class mapped_iterator
     : public iterator_adaptor_base<
-             mapped_iterator<ItTy, FuncTy>, ItTy,
-             typename std::iterator_traits<ItTy>::iterator_category,
-             typename std::remove_reference<FuncReturnTy>::type> {
+          mapped_iterator<ItTy, FuncTy>, ItTy,
+          typename std::iterator_traits<ItTy>::iterator_category,
+          std::remove_reference_t<ReferenceTy>,
+          typename std::iterator_traits<ItTy>::difference_type,
+          std::remove_reference_t<ReferenceTy> *, ReferenceTy> {
 public:
   mapped_iterator(ItTy U, FuncTy F)
     : mapped_iterator::iterator_adaptor_base(std::move(U)), F(std::move(F)) {}
 
   ItTy getCurrent() { return this->I; }
 
-  FuncReturnTy operator*() const { return F(*this->I); }
+  const FuncTy &getFunction() const { return F; }
+
+  ReferenceTy operator*() const { return F(*this->I); }
 
 private:
   FuncTy F;
@@ -1273,7 +1277,7 @@ template <typename ContainerTy> auto make_second_range(ContainerTy &&c) {
 /// compares less than the first component of another std::pair.
 struct less_first {
   template <typename T> bool operator()(const T &lhs, const T &rhs) const {
-    return lhs.first < rhs.first;
+    return std::less<>()(lhs.first, rhs.first);
   }
 };
 
@@ -1281,7 +1285,7 @@ struct less_first {
 /// compares less than the second component of another std::pair.
 struct less_second {
   template <typename T> bool operator()(const T &lhs, const T &rhs) const {
-    return lhs.second < rhs.second;
+    return std::less<>()(lhs.second, rhs.second);
   }
 };
 

@@ -466,6 +466,10 @@ Attr *instantiateTemplateAttribute(const Attr *At, ASTContext &C, Sema &S,
       }
       return new (C) DiagnoseIfAttr(C, *A, tempInstCond, A->getMessage(), A->getDiagnosticType(), A->getArgDependent(), A->getParent());
     }
+    case attr::DisableSanitizerInstrumentation: {
+      const auto *A = cast<DisableSanitizerInstrumentationAttr>(At);
+      return A->clone(C);
+    }
     case attr::DisableTailCalls: {
       const auto *A = cast<DisableTailCallsAttr>(At);
       return A->clone(C);
@@ -496,6 +500,10 @@ Attr *instantiateTemplateAttribute(const Attr *At, ASTContext &C, Sema &S,
     }
     case attr::EnumExtensibility: {
       const auto *A = cast<EnumExtensibilityAttr>(At);
+      return A->clone(C);
+    }
+    case attr::Error: {
+      const auto *A = cast<ErrorAttr>(At);
       return A->clone(C);
     }
     case attr::ExcludeFromExplicitInstantiation: {
@@ -1891,6 +1899,9 @@ Attr *instantiateTemplateAttributeForDecl(const Attr *At,
     case attr::DiagnoseIf: {
       return nullptr;
     }
+    case attr::DisableSanitizerInstrumentation: {
+      return nullptr;
+    }
     case attr::DisableTailCalls: {
       return nullptr;
     }
@@ -1907,6 +1918,9 @@ Attr *instantiateTemplateAttributeForDecl(const Attr *At,
       return nullptr;
     }
     case attr::EnumExtensibility: {
+      return nullptr;
+    }
+    case attr::Error: {
       return nullptr;
     }
     case attr::ExcludeFromExplicitInstantiation: {

@@ -13,7 +13,7 @@ namespace llvm {
 namespace Intrinsic {
 enum AMDGCNIntrinsics : unsigned {
 // Enum values for intrinsics
-    amdgcn_alignbit = 1227,                           // llvm.amdgcn.alignbit
+    amdgcn_alignbit = 1228,                           // llvm.amdgcn.alignbit
     amdgcn_alignbyte,                          // llvm.amdgcn.alignbyte
     amdgcn_atomic_dec,                         // llvm.amdgcn.atomic.dec
     amdgcn_atomic_inc,                         // llvm.amdgcn.atomic.inc
@@ -129,6 +129,22 @@ enum AMDGCNIntrinsics : unsigned {
     amdgcn_image_atomic_dec_2dmsaa,            // llvm.amdgcn.image.atomic.dec.2dmsaa
     amdgcn_image_atomic_dec_3d,                // llvm.amdgcn.image.atomic.dec.3d
     amdgcn_image_atomic_dec_cube,              // llvm.amdgcn.image.atomic.dec.cube
+    amdgcn_image_atomic_fmax_1d,               // llvm.amdgcn.image.atomic.fmax.1d
+    amdgcn_image_atomic_fmax_1darray,          // llvm.amdgcn.image.atomic.fmax.1darray
+    amdgcn_image_atomic_fmax_2d,               // llvm.amdgcn.image.atomic.fmax.2d
+    amdgcn_image_atomic_fmax_2darray,          // llvm.amdgcn.image.atomic.fmax.2darray
+    amdgcn_image_atomic_fmax_2darraymsaa,      // llvm.amdgcn.image.atomic.fmax.2darraymsaa
+    amdgcn_image_atomic_fmax_2dmsaa,           // llvm.amdgcn.image.atomic.fmax.2dmsaa
+    amdgcn_image_atomic_fmax_3d,               // llvm.amdgcn.image.atomic.fmax.3d
+    amdgcn_image_atomic_fmax_cube,             // llvm.amdgcn.image.atomic.fmax.cube
+    amdgcn_image_atomic_fmin_1d,               // llvm.amdgcn.image.atomic.fmin.1d
+    amdgcn_image_atomic_fmin_1darray,          // llvm.amdgcn.image.atomic.fmin.1darray
+    amdgcn_image_atomic_fmin_2d,               // llvm.amdgcn.image.atomic.fmin.2d
+    amdgcn_image_atomic_fmin_2darray,          // llvm.amdgcn.image.atomic.fmin.2darray
+    amdgcn_image_atomic_fmin_2darraymsaa,      // llvm.amdgcn.image.atomic.fmin.2darraymsaa
+    amdgcn_image_atomic_fmin_2dmsaa,           // llvm.amdgcn.image.atomic.fmin.2dmsaa
+    amdgcn_image_atomic_fmin_3d,               // llvm.amdgcn.image.atomic.fmin.3d
+    amdgcn_image_atomic_fmin_cube,             // llvm.amdgcn.image.atomic.fmin.cube
     amdgcn_image_atomic_inc_1d,                // llvm.amdgcn.image.atomic.inc.1d
     amdgcn_image_atomic_inc_1darray,           // llvm.amdgcn.image.atomic.inc.1darray
     amdgcn_image_atomic_inc_2d,                // llvm.amdgcn.image.atomic.inc.2d

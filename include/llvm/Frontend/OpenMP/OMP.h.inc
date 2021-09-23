@@ -48,6 +48,7 @@ enum class Directive {
   OMPD_master,
   OMPD_master_taskloop,
   OMPD_master_taskloop_simd,
+  OMPD_metadirective,
   OMPD_ordered,
   OMPD_parallel,
   OMPD_parallel_do,
@@ -106,7 +107,7 @@ enum class Directive {
   OMPD_masked,
 };
 
-static constexpr std::size_t Directive_enumSize = 94;
+static constexpr std::size_t Directive_enumSize = 95;
 
 constexpr auto OMPD_allocate = llvm::omp::Directive::OMPD_allocate;
 constexpr auto OMPD_assumes = llvm::omp::Directive::OMPD_assumes;
@@ -146,6 +147,7 @@ constexpr auto OMPD_for_simd = llvm::omp::Directive::OMPD_for_simd;
 constexpr auto OMPD_master = llvm::omp::Directive::OMPD_master;
 constexpr auto OMPD_master_taskloop = llvm::omp::Directive::OMPD_master_taskloop;
 constexpr auto OMPD_master_taskloop_simd = llvm::omp::Directive::OMPD_master_taskloop_simd;
+constexpr auto OMPD_metadirective = llvm::omp::Directive::OMPD_metadirective;
 constexpr auto OMPD_ordered = llvm::omp::Directive::OMPD_ordered;
 constexpr auto OMPD_parallel = llvm::omp::Directive::OMPD_parallel;
 constexpr auto OMPD_parallel_do = llvm::omp::Directive::OMPD_parallel_do;
@@ -288,10 +290,11 @@ enum class Clause {
   OMPC_use_device_addr,
   OMPC_use_device_ptr,
   OMPC_uses_allocators,
+  OMPC_when,
   OMPC_write,
 };
 
-static constexpr std::size_t Clause_enumSize = 85;
+static constexpr std::size_t Clause_enumSize = 86;
 
 constexpr auto OMPC_acq_rel = llvm::omp::Clause::OMPC_acq_rel;
 constexpr auto OMPC_acquire = llvm::omp::Clause::OMPC_acquire;
@@ -377,6 +380,7 @@ constexpr auto OMPC_use = llvm::omp::Clause::OMPC_use;
 constexpr auto OMPC_use_device_addr = llvm::omp::Clause::OMPC_use_device_addr;
 constexpr auto OMPC_use_device_ptr = llvm::omp::Clause::OMPC_use_device_ptr;
 constexpr auto OMPC_uses_allocators = llvm::omp::Clause::OMPC_uses_allocators;
+constexpr auto OMPC_when = llvm::omp::Clause::OMPC_when;
 constexpr auto OMPC_write = llvm::omp::Clause::OMPC_write;
 
 enum class OrderKind {

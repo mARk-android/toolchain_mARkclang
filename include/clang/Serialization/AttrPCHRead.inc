@@ -1035,6 +1035,16 @@
     New->setPackExpansion(isPackExpansion);
     break;
   }
+  case attr::DisableSanitizerInstrumentation: {
+    bool isInherited = Record.readInt();
+    bool isImplicit = Record.readInt();
+    bool isPackExpansion = Record.readInt();
+    New = new (Context) DisableSanitizerInstrumentationAttr(Context, Info);
+    cast<InheritableAttr>(New)->setInherited(isInherited);
+    New->setImplicit(isImplicit);
+    New->setPackExpansion(isPackExpansion);
+    break;
+  }
   case attr::DisableTailCalls: {
     bool isInherited = Record.readInt();
     bool isImplicit = Record.readInt();
@@ -1095,6 +1105,17 @@
     bool isPackExpansion = Record.readInt();
     EnumExtensibilityAttr::Kind extensibility(static_cast<EnumExtensibilityAttr::Kind>(Record.readInt()));
     New = new (Context) EnumExtensibilityAttr(Context, Info, extensibility);
+    cast<InheritableAttr>(New)->setInherited(isInherited);
+    New->setImplicit(isImplicit);
+    New->setPackExpansion(isPackExpansion);
+    break;
+  }
+  case attr::Error: {
+    bool isInherited = Record.readInt();
+    bool isImplicit = Record.readInt();
+    bool isPackExpansion = Record.readInt();
+    std::string userDiagnostic= Record.readString();
+    New = new (Context) ErrorAttr(Context, Info, userDiagnostic);
     cast<InheritableAttr>(New)->setInherited(isInherited);
     New->setImplicit(isImplicit);
     New->setPackExpansion(isPackExpansion);

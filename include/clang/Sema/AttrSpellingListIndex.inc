@@ -716,6 +716,15 @@
         return 0;
     break;
   }
+  case AT_DisableSanitizerInstrumentation: {
+    if (Name == "disable_sanitizer_instrumentation" && getSyntax() == AttributeCommonInfo::AS_GNU && Scope == "")
+        return 0;
+    if (Name == "disable_sanitizer_instrumentation" && getSyntax() == AttributeCommonInfo::AS_CXX11 && Scope == "clang")
+        return 1;
+    if (Name == "disable_sanitizer_instrumentation" && getSyntax() == AttributeCommonInfo::AS_C2x && Scope == "clang")
+        return 2;
+    break;
+  }
   case AT_DisableTailCalls: {
     if (Name == "disable_tail_calls" && getSyntax() == AttributeCommonInfo::AS_GNU && Scope == "")
         return 0;
@@ -760,6 +769,21 @@
         return 1;
     if (Name == "enum_extensibility" && getSyntax() == AttributeCommonInfo::AS_C2x && Scope == "clang")
         return 2;
+    break;
+  }
+  case AT_Error: {
+    if (Name == "error" && getSyntax() == AttributeCommonInfo::AS_GNU && Scope == "")
+        return 0;
+    if (Name == "error" && getSyntax() == AttributeCommonInfo::AS_CXX11 && Scope == "gnu")
+        return 1;
+    if (Name == "error" && getSyntax() == AttributeCommonInfo::AS_C2x && Scope == "gnu")
+        return 2;
+    if (Name == "warning" && getSyntax() == AttributeCommonInfo::AS_GNU && Scope == "")
+        return 3;
+    if (Name == "warning" && getSyntax() == AttributeCommonInfo::AS_CXX11 && Scope == "gnu")
+        return 4;
+    if (Name == "warning" && getSyntax() == AttributeCommonInfo::AS_C2x && Scope == "gnu")
+        return 5;
     break;
   }
   case AT_ExcludeFromExplicitInstantiation: {

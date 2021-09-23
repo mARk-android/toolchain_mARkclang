@@ -177,8 +177,8 @@ set(LLVM_BUILD_32_BITS OFF)
 
 set(LLVM_ENABLE_NEW_PASS_MANAGER TRUE)
 
-if (NOT "-lpthread" STREQUAL "")
-  set(LLVM_PTHREAD_LIB "-lpthread")
+if (NOT "" STREQUAL "")
+  set(LLVM_PTHREAD_LIB "")
 endif()
 
 set(LLVM_ENABLE_PLUGINS ON)

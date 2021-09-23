@@ -79,6 +79,7 @@ enum DiagnosticKind {
   DK_PGOProfile,
   DK_Unsupported,
   DK_SrcMgr,
+  DK_DontCall,
   DK_FirstPluginKind // Must be last value to work with
                      // getNextAvailablePluginDiagnosticKind
 };
@@ -194,10 +195,9 @@ public:
   /// \p The function that is concerned by this stack size diagnostic.
   /// \p The computed stack size.
   DiagnosticInfoResourceLimit(const Function &Fn, const char *ResourceName,
-                              uint64_t ResourceSize,
+                              uint64_t ResourceSize, uint64_t ResourceLimit,
                               DiagnosticSeverity Severity = DS_Warning,
-                              DiagnosticKind Kind = DK_ResourceLimit,
-                              uint64_t ResourceLimit = 0)
+                              DiagnosticKind Kind = DK_ResourceLimit)
       : DiagnosticInfo(Kind, Severity), Fn(Fn), ResourceName(ResourceName),
         ResourceSize(ResourceSize), ResourceLimit(ResourceLimit) {}
 
@@ -218,10 +218,10 @@ class DiagnosticInfoStackSize : public DiagnosticInfoResourceLimit {
   void anchor() override;
 public:
   DiagnosticInfoStackSize(const Function &Fn, uint64_t StackSize,
-                          DiagnosticSeverity Severity = DS_Warning,
-                          uint64_t StackLimit = 0)
-      : DiagnosticInfoResourceLimit(Fn, "stack frame size", StackSize, Severity,
-                                    DK_StackSize, StackLimit) {}
+                          uint64_t StackLimit,
+                          DiagnosticSeverity Severity = DS_Warning)
+      : DiagnosticInfoResourceLimit(Fn, "stack frame size", StackSize,
+                                    StackLimit, Severity, DK_StackSize) {}
 
   uint64_t getStackSize() const { return getResourceSize(); }
   uint64_t getStackLimit() const { return getResourceLimit(); }
@@ -1067,6 +1067,22 @@ public:
 
   static bool classof(const DiagnosticInfo *DI) {
     return DI->getKind() == DK_SrcMgr;
+  }
+};
+
+class DiagnosticInfoDontCall : public DiagnosticInfo {
+  StringRef CalleeName;
+  unsigned LocCookie;
+
+public:
+  DiagnosticInfoDontCall(StringRef CalleeName, unsigned LocCookie)
+      : DiagnosticInfo(DK_DontCall, DS_Error), CalleeName(CalleeName),
+        LocCookie(LocCookie) {}
+  StringRef getFunctionName() const { return CalleeName; }
+  unsigned getLocCookie() const { return LocCookie; }
+  void print(DiagnosticPrinter &DP) const override;
+  static bool classof(const DiagnosticInfo *DI) {
+    return DI->getKind() == DK_DontCall;
   }
 };
 

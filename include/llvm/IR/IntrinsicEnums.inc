@@ -12,6 +12,7 @@
     adjust_trampoline,                         // llvm.adjust.trampoline
     annotation,                                // llvm.annotation
     arithmetic_fence,                          // llvm.arithmetic.fence
+    asan_check_memaccess,                      // llvm.asan.check.memaccess
     assume,                                    // llvm.assume
     bitreverse,                                // llvm.bitreverse
     bswap,                                     // llvm.bswap
@@ -166,7 +167,6 @@
     invariant_end,                             // llvm.invariant.end
     invariant_start,                           // llvm.invariant.start
     is_constant,                               // llvm.is.constant
-    isnan,                                     // llvm.isnan
     launder_invariant_group,                   // llvm.launder.invariant.group
     lifetime_end,                              // llvm.lifetime.end
     lifetime_start,                            // llvm.lifetime.start
@@ -349,6 +349,7 @@
     vp_reduce_xor,                             // llvm.vp.reduce.xor
     vp_scatter,                                // llvm.vp.scatter
     vp_sdiv,                                   // llvm.vp.sdiv
+    vp_select,                                 // llvm.vp.select
     vp_shl,                                    // llvm.vp.shl
     vp_srem,                                   // llvm.vp.srem
     vp_store,                                  // llvm.vp.store
@@ -360,4 +361,4 @@
     write_register,                            // llvm.write_register
     xray_customevent,                          // llvm.xray.customevent
     xray_typedevent,                           // llvm.xray.typedevent
-    num_intrinsics = 10444
+    num_intrinsics = 10530

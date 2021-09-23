@@ -8617,6 +8617,87 @@ const char *DiagnoseIfAttr::getSpelling() const {
 }
 
 
+// DisableSanitizerInstrumentationAttr implementation
+
+DisableSanitizerInstrumentationAttr *DisableSanitizerInstrumentationAttr::CreateImplicit(ASTContext &Ctx, const AttributeCommonInfo &CommonInfo) {
+  auto *A = new (Ctx) DisableSanitizerInstrumentationAttr(Ctx, CommonInfo);
+  A->setImplicit(true);
+  if (!A->isAttributeSpellingListCalculated() && !A->getAttrName())
+    A->setAttributeSpellingListIndex(0);
+  return A;
+}
+
+DisableSanitizerInstrumentationAttr *DisableSanitizerInstrumentationAttr::Create(ASTContext &Ctx, const AttributeCommonInfo &CommonInfo) {
+  auto *A = new (Ctx) DisableSanitizerInstrumentationAttr(Ctx, CommonInfo);
+  if (!A->isAttributeSpellingListCalculated() && !A->getAttrName())
+    A->setAttributeSpellingListIndex(0);
+  return A;
+}
+
+DisableSanitizerInstrumentationAttr *DisableSanitizerInstrumentationAttr::CreateImplicit(ASTContext &Ctx, SourceRange Range, AttributeCommonInfo::Syntax Syntax) {
+  AttributeCommonInfo I(Range, NoSemaHandlerAttribute, Syntax);
+  return CreateImplicit(Ctx, I);
+}
+
+DisableSanitizerInstrumentationAttr *DisableSanitizerInstrumentationAttr::Create(ASTContext &Ctx, SourceRange Range, AttributeCommonInfo::Syntax Syntax) {
+  AttributeCommonInfo I(Range, NoSemaHandlerAttribute, Syntax);
+  return Create(Ctx, I);
+}
+
+DisableSanitizerInstrumentationAttr::DisableSanitizerInstrumentationAttr(ASTContext &Ctx, const AttributeCommonInfo &CommonInfo
+             )
+  : InheritableAttr(Ctx, CommonInfo, attr::DisableSanitizerInstrumentation, false, false)
+  {
+}
+
+DisableSanitizerInstrumentationAttr *DisableSanitizerInstrumentationAttr::clone(ASTContext &C) const {
+  auto *A = new (C) DisableSanitizerInstrumentationAttr(C, *this);
+  A->Inherited = Inherited;
+  A->IsPackExpansion = IsPackExpansion;
+  A->setImplicit(Implicit);
+  return A;
+}
+
+void DisableSanitizerInstrumentationAttr::printPretty(raw_ostream &OS, const PrintingPolicy &Policy) const {
+  bool IsFirstArgument = true; (void)IsFirstArgument;
+  unsigned TrailingOmittedArgs = 0; (void)TrailingOmittedArgs;
+  switch (getAttributeSpellingListIndex()) {
+  default:
+    llvm_unreachable("Unknown attribute spelling!");
+    break;
+  case 0 : {
+    OS << " __attribute__((disable_sanitizer_instrumentation";
+    OS << "))";
+    break;
+  }
+  case 1 : {
+    OS << " [[clang::disable_sanitizer_instrumentation";
+    OS << "]]";
+    break;
+  }
+  case 2 : {
+    OS << " [[clang::disable_sanitizer_instrumentation";
+    OS << "]]";
+    break;
+  }
+}
+}
+
+const char *DisableSanitizerInstrumentationAttr::getSpelling() const {
+  switch (getAttributeSpellingListIndex()) {
+  default:
+    llvm_unreachable("Unknown attribute spelling!");
+    return "(No spelling)";
+  case 0:
+    return "disable_sanitizer_instrumentation";
+  case 1:
+    return "disable_sanitizer_instrumentation";
+  case 2:
+    return "disable_sanitizer_instrumentation";
+  }
+}
+
+
 // DisableTailCallsAttr implementation
 
 DisableTailCallsAttr *DisableTailCallsAttr::CreateImplicit(ASTContext &Ctx, const AttributeCommonInfo &CommonInfo) {
@@ -9158,6 +9239,147 @@ const char *EnumExtensibilityAttr::getSpelling() const {
     return "enum_extensibility";
   case 2:
     return "enum_extensibility";
+  }
+}
+
+
+// ErrorAttr implementation
+
+ErrorAttr *ErrorAttr::CreateImplicit(ASTContext &Ctx, llvm::StringRef UserDiagnostic, const AttributeCommonInfo &CommonInfo) {
+  auto *A = new (Ctx) ErrorAttr(Ctx, CommonInfo, UserDiagnostic);
+  A->setImplicit(true);
+  if (!A->isAttributeSpellingListCalculated() && !A->getAttrName())
+    A->setAttributeSpellingListIndex(0);
+  return A;
+}
+
+ErrorAttr *ErrorAttr::Create(ASTContext &Ctx, llvm::StringRef UserDiagnostic, const AttributeCommonInfo &CommonInfo) {
+  auto *A = new (Ctx) ErrorAttr(Ctx, CommonInfo, UserDiagnostic);
+  return A;
+}
+
+ErrorAttr *ErrorAttr::CreateImplicit(ASTContext &Ctx, llvm::StringRef UserDiagnostic, SourceRange Range, AttributeCommonInfo::Syntax Syntax, ErrorAttr::Spelling S) {
+  AttributeCommonInfo I(Range, NoSemaHandlerAttribute, Syntax, S);
+  return CreateImplicit(Ctx, UserDiagnostic, I);
+}
+
+ErrorAttr *ErrorAttr::Create(ASTContext &Ctx, llvm::StringRef UserDiagnostic, SourceRange Range, AttributeCommonInfo::Syntax Syntax, ErrorAttr::Spelling S) {
+  AttributeCommonInfo I(Range, NoSemaHandlerAttribute, Syntax, S);
+  return Create(Ctx, UserDiagnostic, I);
+}
+
+ErrorAttr::ErrorAttr(ASTContext &Ctx, const AttributeCommonInfo &CommonInfo
+              , llvm::StringRef UserDiagnostic
+             )
+  : InheritableAttr(Ctx, CommonInfo, attr::Error, false, false)
+              , userDiagnosticLength(UserDiagnostic.size()),userDiagnostic(new (Ctx, 1) char[userDiagnosticLength])
+  {
+    if (!UserDiagnostic.empty())
+      std::memcpy(userDiagnostic, UserDiagnostic.data(), userDiagnosticLength);
+}
+
+ErrorAttr::Spelling ErrorAttr::getSemanticSpelling() const {
+  switch (getAttributeSpellingListIndex()) {
+    default: llvm_unreachable("Unknown spelling list index");
+    case 0: return GNU_error;
+    case 1: return CXX11_gnu_error;
+    case 2: return C2x_gnu_error;
+    case 3: return GNU_warning;
+    case 4: return CXX11_gnu_warning;
+    case 5: return C2x_gnu_warning;
+  }
+}
+
+
+ErrorAttr *ErrorAttr::clone(ASTContext &C) const {
+  auto *A = new (C) ErrorAttr(C, *this, getUserDiagnostic());
+  A->Inherited = Inherited;
+  A->IsPackExpansion = IsPackExpansion;
+  A->setImplicit(Implicit);
+  return A;
+}
+
+void ErrorAttr::printPretty(raw_ostream &OS, const PrintingPolicy &Policy) const {
+  bool IsFirstArgument = true; (void)IsFirstArgument;
+  unsigned TrailingOmittedArgs = 0; (void)TrailingOmittedArgs;
+  switch (getAttributeSpellingListIndex()) {
+  default:
+    llvm_unreachable("Unknown attribute spelling!");
+    break;
+  case 0 : {
+    OS << " __attribute__((error";
+    DelimitAttributeArgument(OS, IsFirstArgument);
+    OS << "\"" << getUserDiagnostic() << "\"";
+    if (!IsFirstArgument)
+      OS << ")";
+    OS << "))";
+    break;
+  }
+  case 1 : {
+    OS << " [[gnu::error";
+    DelimitAttributeArgument(OS, IsFirstArgument);
+    OS << "\"" << getUserDiagnostic() << "\"";
+    if (!IsFirstArgument)
+      OS << ")";
+    OS << "]]";
+    break;
+  }
+  case 2 : {
+    OS << " [[gnu::error";
+    DelimitAttributeArgument(OS, IsFirstArgument);
+    OS << "\"" << getUserDiagnostic() << "\"";
+    if (!IsFirstArgument)
+      OS << ")";
+    OS << "]]";
+    break;
+  }
+  case 3 : {
+    OS << " __attribute__((warning";
+    DelimitAttributeArgument(OS, IsFirstArgument);
+    OS << "\"" << getUserDiagnostic() << "\"";
+    if (!IsFirstArgument)
+      OS << ")";
+    OS << "))";
+    break;
+  }
+  case 4 : {
+    OS << " [[gnu::warning";
+    DelimitAttributeArgument(OS, IsFirstArgument);
+    OS << "\"" << getUserDiagnostic() << "\"";
+    if (!IsFirstArgument)
+      OS << ")";
+    OS << "]]";
+    break;
+  }
+  case 5 : {
+    OS << " [[gnu::warning";
+    DelimitAttributeArgument(OS, IsFirstArgument);
+    OS << "\"" << getUserDiagnostic() << "\"";
+    if (!IsFirstArgument)
+      OS << ")";
+    OS << "]]";
+    break;
+  }
+}
+}
+
+const char *ErrorAttr::getSpelling() const {
+  switch (getAttributeSpellingListIndex()) {
+  default:
+    llvm_unreachable("Unknown attribute spelling!");
+    return "(No spelling)";
+  case 0:
+    return "error";
+  case 1:
+    return "error";
+  case 2:
+    return "error";
+  case 3:
+    return "warning";
+  case 4:
+    return "warning";
+  case 5:
+    return "warning";
   }
 }
 
@@ -31043,6 +31265,8 @@ const char *Attr::getSpelling() const {
     return cast<DestructorAttr>(this)->getSpelling();
   case attr::DiagnoseIf:
     return cast<DiagnoseIfAttr>(this)->getSpelling();
+  case attr::DisableSanitizerInstrumentation:
+    return cast<DisableSanitizerInstrumentationAttr>(this)->getSpelling();
   case attr::DisableTailCalls:
     return cast<DisableTailCallsAttr>(this)->getSpelling();
   case attr::EmptyBases:
@@ -31055,6 +31279,8 @@ const char *Attr::getSpelling() const {
     return cast<EnforceTCBLeafAttr>(this)->getSpelling();
   case attr::EnumExtensibility:
     return cast<EnumExtensibilityAttr>(this)->getSpelling();
+  case attr::Error:
+    return cast<ErrorAttr>(this)->getSpelling();
   case attr::ExcludeFromExplicitInstantiation:
     return cast<ExcludeFromExplicitInstantiationAttr>(this)->getSpelling();
   case attr::ExclusiveTrylockFunction:
@@ -31733,6 +31959,8 @@ Attr *Attr::clone(ASTContext &C) const {
     return cast<DestructorAttr>(this)->clone(C);
   case attr::DiagnoseIf:
     return cast<DiagnoseIfAttr>(this)->clone(C);
+  case attr::DisableSanitizerInstrumentation:
+    return cast<DisableSanitizerInstrumentationAttr>(this)->clone(C);
   case attr::DisableTailCalls:
     return cast<DisableTailCallsAttr>(this)->clone(C);
   case attr::EmptyBases:
@@ -31745,6 +31973,8 @@ Attr *Attr::clone(ASTContext &C) const {
     return cast<EnforceTCBLeafAttr>(this)->clone(C);
   case attr::EnumExtensibility:
     return cast<EnumExtensibilityAttr>(this)->clone(C);
+  case attr::Error:
+    return cast<ErrorAttr>(this)->clone(C);
   case attr::ExcludeFromExplicitInstantiation:
     return cast<ExcludeFromExplicitInstantiationAttr>(this)->clone(C);
   case attr::ExclusiveTrylockFunction:
@@ -32423,6 +32653,8 @@ void Attr::printPretty(raw_ostream &OS, const PrintingPolicy &Policy) const {
     return cast<DestructorAttr>(this)->printPretty(OS, Policy);
   case attr::DiagnoseIf:
     return cast<DiagnoseIfAttr>(this)->printPretty(OS, Policy);
+  case attr::DisableSanitizerInstrumentation:
+    return cast<DisableSanitizerInstrumentationAttr>(this)->printPretty(OS, Policy);
   case attr::DisableTailCalls:
     return cast<DisableTailCallsAttr>(this)->printPretty(OS, Policy);
   case attr::EmptyBases:
@@ -32435,6 +32667,8 @@ void Attr::printPretty(raw_ostream &OS, const PrintingPolicy &Policy) const {
     return cast<EnforceTCBLeafAttr>(this)->printPretty(OS, Policy);
   case attr::EnumExtensibility:
     return cast<EnumExtensibilityAttr>(this)->printPretty(OS, Policy);
+  case attr::Error:
+    return cast<ErrorAttr>(this)->printPretty(OS, Policy);
   case attr::ExcludeFromExplicitInstantiation:
     return cast<ExcludeFromExplicitInstantiationAttr>(this)->printPretty(OS, Policy);
   case attr::ExclusiveTrylockFunction:

@@ -396,7 +396,7 @@ public:
   ///
   /// This is the greatest alignment value supported by load, store, and alloca
   /// instructions, and global values.
-  static const unsigned MaxAlignmentExponent = 29;
+  static const unsigned MaxAlignmentExponent = 30;
   static const unsigned MaximumAlignment = 1u << MaxAlignmentExponent;
 
   typedef OpaquePtr<DeclGroupRef> DeclGroupPtrTy;
@@ -1419,8 +1419,22 @@ public:
   const llvm::MapVector<FieldDecl *, DeleteLocs> &
   getMismatchingDeleteExpressions() const;
 
-  typedef std::pair<ObjCMethodList, ObjCMethodList> GlobalMethods;
-  typedef llvm::DenseMap<Selector, GlobalMethods> GlobalMethodPool;
+  class GlobalMethodPool {
+  public:
+    using Lists = std::pair<ObjCMethodList, ObjCMethodList>;
+    using iterator = llvm::DenseMap<Selector, Lists>::iterator;
+    iterator begin() { return Methods.begin(); }
+    iterator end() { return Methods.end(); }
+    iterator find(Selector Sel) { return Methods.find(Sel); }
+    std::pair<iterator, bool> insert(std::pair<Selector, Lists> &&Val) {
+      return Methods.insert(Val);
+    }
+    int count(Selector Sel) const { return Methods.count(Sel); }
+    bool empty() const { return Methods.empty(); }
+
+  private:
+    llvm::DenseMap<Selector, Lists> Methods;
+  };
 
   /// Method Pool - allows efficient lookup when typechecking messages to "id".
   /// We need to maintain a list, since selectors can have differing signatures
@@ -1502,15 +1516,19 @@ public:
   /// statements.
   class FPFeaturesStateRAII {
   public:
-    FPFeaturesStateRAII(Sema &S);
-    ~FPFeaturesStateRAII();
+    FPFeaturesStateRAII(Sema &S) : S(S), OldFPFeaturesState(S.CurFPFeatures) {
+      OldOverrides = S.FpPragmaStack.CurrentValue;
+    }
+    ~FPFeaturesStateRAII() {
+      S.CurFPFeatures = OldFPFeaturesState;
+      S.FpPragmaStack.CurrentValue = OldOverrides;
+    }
     FPOptionsOverride getOverrides() { return OldOverrides; }
 
   private:
     Sema& S;
     FPOptions OldFPFeaturesState;
     FPOptionsOverride OldOverrides;
-    int OldEvalMethod;
   };
 
   void addImplicitTypedef(StringRef Name, QualType T);
@@ -3338,6 +3356,8 @@ public:
                                             const AttributeCommonInfo &CI,
                                             bool BestCase,
                                             MSInheritanceModel Model);
+  ErrorAttr *mergeErrorAttr(Decl *D, const AttributeCommonInfo &CI,
+                            StringRef NewUserDiagnostic);
   FormatAttr *mergeFormatAttr(Decl *D, const AttributeCommonInfo &CI,
                               IdentifierInfo *Format, int FormatIdx,
                               int FirstArg);
@@ -3885,6 +3905,8 @@ public:
                                        SourceLocation LParenLoc,
                                        MultiExprArg Args,
                                        SourceLocation RParenLoc,
+                                       Expr *ExecConfig = nullptr,
+                                       bool IsExecConfig = false,
                                        bool AllowRecovery = false);
   ExprResult
   BuildCallToObjectOfClassType(Scope *S, Expr *Object, SourceLocation LParenLoc,
@@ -4890,7 +4912,7 @@ public:
 
   /// DiagnoseUnusedExprResult - If the statement passed in is an expression
   /// whose result is unused, warn.
-  void DiagnoseUnusedExprResult(const Stmt *S);
+  void DiagnoseUnusedExprResult(const Stmt *S, unsigned DiagID);
   void DiagnoseUnusedNestedTypedefs(const RecordDecl *D);
   void DiagnoseUnusedDecl(const NamedDecl *ND);
 
@@ -5095,6 +5117,16 @@ public:
   /// Try to convert an expression \p E to type \p Ty. Returns the result of the
   /// conversion.
   ExprResult tryConvertExprToType(Expr *E, QualType Ty);
+
+  /// Conditionally issue a diagnostic based on the statement's reachability
+  /// analysis evaluation context.
+  ///
+  /// \param Statement If Statement is non-null, delay reporting the
+  /// diagnostic until the function body is parsed, and then do a basic
+  /// reachability analysis to determine if the statement is reachable.
+  /// If it is unreachable, the diagnostic will not be emitted.
+  bool DiagIfReachable(SourceLocation Loc, ArrayRef<const Stmt *> Stmts,
+                       const PartialDiagnostic &PD);
 
   /// Conditionally issue a diagnostic based on the current
   /// evaluation context.
@@ -10434,6 +10466,12 @@ public:
   /// \param Init First part of the for loop.
   void ActOnOpenMPLoopInitialization(SourceLocation ForLoc, Stmt *Init);
 
+  /// Called on well-formed '\#pragma omp metadirective' after parsing
+  /// of the  associated statement.
+  StmtResult ActOnOpenMPMetaDirective(ArrayRef<OMPClause *> Clauses,
+                                      Stmt *AStmt, SourceLocation StartLoc,
+                                      SourceLocation EndLoc);
+
   // OpenMP directives and clauses.
   /// Called on correct id-expression from the '#pragma omp
   /// threadprivate'.
@@ -10456,7 +10494,7 @@ public:
   /// Called on well-formed '#pragma omp [begin] assume[s]'.
   void ActOnOpenMPAssumesDirective(SourceLocation Loc,
                                    OpenMPDirectiveKind DKind,
-                                   ArrayRef<StringRef> Assumptions,
+                                   ArrayRef<std::string> Assumptions,
                                    bool SkippedClauses);
 
   /// Check if there is an active global `omp begin assumes` directive.
@@ -10565,6 +10603,11 @@ public:
   /// Called for syntactical loops (ForStmt or CXXForRangeStmt) associated to
   /// an OpenMP loop directive.
   StmtResult ActOnOpenMPCanonicalLoop(Stmt *AStmt);
+
+  /// Process a canonical OpenMP loop nest that can either be a canonical
+  /// literal loop (ForStmt or CXXForRangeStmt), or the generated loop of an
+  /// OpenMP loop transformation construct.
+  StmtResult ActOnOpenMPLoopnest(Stmt *AStmt);
 
   /// End of OpenMP region.
   ///
@@ -10996,6 +11039,10 @@ public:
                                      SourceLocation StartLoc,
                                      SourceLocation LParenLoc,
                                      SourceLocation EndLoc);
+  /// Called on well-formed 'when' clause.
+  OMPClause *ActOnOpenMPWhenClause(OMPTraitInfo &TI, SourceLocation StartLoc,
+                                   SourceLocation LParenLoc,
+                                   SourceLocation EndLoc);
   /// Called on well-formed 'default' clause.
   OMPClause *ActOnOpenMPDefaultClause(llvm::omp::DefaultKind Kind,
                                       SourceLocation KindLoc,
@@ -11246,15 +11293,14 @@ public:
                                      SourceLocation ModifierLoc,
                                      SourceLocation EndLoc);
   /// Called on well-formed 'map' clause.
-  OMPClause *
-  ActOnOpenMPMapClause(ArrayRef<OpenMPMapModifierKind> MapTypeModifiers,
-                       ArrayRef<SourceLocation> MapTypeModifiersLoc,
-                       CXXScopeSpec &MapperIdScopeSpec,
-                       DeclarationNameInfo &MapperId,
-                       OpenMPMapClauseKind MapType, bool IsMapTypeImplicit,
-                       SourceLocation MapLoc, SourceLocation ColonLoc,
-                       ArrayRef<Expr *> VarList, const OMPVarListLocTy &Locs,
-                       ArrayRef<Expr *> UnresolvedMappers = llvm::None);
+  OMPClause *ActOnOpenMPMapClause(
+      ArrayRef<OpenMPMapModifierKind> MapTypeModifiers,
+      ArrayRef<SourceLocation> MapTypeModifiersLoc,
+      CXXScopeSpec &MapperIdScopeSpec, DeclarationNameInfo &MapperId,
+      OpenMPMapClauseKind MapType, bool IsMapTypeImplicit,
+      SourceLocation MapLoc, SourceLocation ColonLoc, ArrayRef<Expr *> VarList,
+      const OMPVarListLocTy &Locs, bool NoDiagnose = false,
+      ArrayRef<Expr *> UnresolvedMappers = llvm::None);
   /// Called on well-formed 'num_teams' clause.
   OMPClause *ActOnOpenMPNumTeamsClause(Expr *NumTeams, SourceLocation StartLoc,
                                        SourceLocation LParenLoc,
