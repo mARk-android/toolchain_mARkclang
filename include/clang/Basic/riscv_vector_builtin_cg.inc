@@ -765,52 +765,52 @@ case RISCV::BI__builtin_rvv_vaadd_vx_i64m8:
   ID = Intrinsic::riscv_vaadd;
   IntrinsicTypes = {ResultType, Ops[1]->getType(), Ops.back()->getType()};
   break;
-case RISCV::BI__builtin_rvv_vaadd_vv_i8m1_m:
-case RISCV::BI__builtin_rvv_vaadd_vv_i8m2_m:
-case RISCV::BI__builtin_rvv_vaadd_vv_i8m4_m:
-case RISCV::BI__builtin_rvv_vaadd_vv_i8m8_m:
-case RISCV::BI__builtin_rvv_vaadd_vv_i8mf2_m:
-case RISCV::BI__builtin_rvv_vaadd_vv_i8mf4_m:
-case RISCV::BI__builtin_rvv_vaadd_vv_i8mf8_m:
-case RISCV::BI__builtin_rvv_vaadd_vv_i16m1_m:
-case RISCV::BI__builtin_rvv_vaadd_vv_i16m2_m:
-case RISCV::BI__builtin_rvv_vaadd_vv_i16m4_m:
-case RISCV::BI__builtin_rvv_vaadd_vv_i16m8_m:
-case RISCV::BI__builtin_rvv_vaadd_vv_i16mf2_m:
-case RISCV::BI__builtin_rvv_vaadd_vv_i16mf4_m:
-case RISCV::BI__builtin_rvv_vaadd_vv_i32m1_m:
-case RISCV::BI__builtin_rvv_vaadd_vv_i32m2_m:
-case RISCV::BI__builtin_rvv_vaadd_vv_i32m4_m:
-case RISCV::BI__builtin_rvv_vaadd_vv_i32m8_m:
-case RISCV::BI__builtin_rvv_vaadd_vv_i32mf2_m:
-case RISCV::BI__builtin_rvv_vaadd_vv_i64m1_m:
-case RISCV::BI__builtin_rvv_vaadd_vv_i64m2_m:
-case RISCV::BI__builtin_rvv_vaadd_vv_i64m4_m:
-case RISCV::BI__builtin_rvv_vaadd_vv_i64m8_m:
-case RISCV::BI__builtin_rvv_vaadd_vx_i8m1_m:
-case RISCV::BI__builtin_rvv_vaadd_vx_i8m2_m:
-case RISCV::BI__builtin_rvv_vaadd_vx_i8m4_m:
-case RISCV::BI__builtin_rvv_vaadd_vx_i8m8_m:
-case RISCV::BI__builtin_rvv_vaadd_vx_i8mf2_m:
-case RISCV::BI__builtin_rvv_vaadd_vx_i8mf4_m:
-case RISCV::BI__builtin_rvv_vaadd_vx_i8mf8_m:
-case RISCV::BI__builtin_rvv_vaadd_vx_i16m1_m:
-case RISCV::BI__builtin_rvv_vaadd_vx_i16m2_m:
-case RISCV::BI__builtin_rvv_vaadd_vx_i16m4_m:
-case RISCV::BI__builtin_rvv_vaadd_vx_i16m8_m:
-case RISCV::BI__builtin_rvv_vaadd_vx_i16mf2_m:
-case RISCV::BI__builtin_rvv_vaadd_vx_i16mf4_m:
-case RISCV::BI__builtin_rvv_vaadd_vx_i32m1_m:
-case RISCV::BI__builtin_rvv_vaadd_vx_i32m2_m:
-case RISCV::BI__builtin_rvv_vaadd_vx_i32m4_m:
-case RISCV::BI__builtin_rvv_vaadd_vx_i32m8_m:
-case RISCV::BI__builtin_rvv_vaadd_vx_i32mf2_m:
-case RISCV::BI__builtin_rvv_vaadd_vx_i64m1_m:
-case RISCV::BI__builtin_rvv_vaadd_vx_i64m2_m:
-case RISCV::BI__builtin_rvv_vaadd_vx_i64m4_m:
-case RISCV::BI__builtin_rvv_vaadd_vx_i64m8_m:
+case RISCV::BI__builtin_rvv_vaadd_vv_i8m1_mt:
+case RISCV::BI__builtin_rvv_vaadd_vv_i8m2_mt:
+case RISCV::BI__builtin_rvv_vaadd_vv_i8m4_mt:
+case RISCV::BI__builtin_rvv_vaadd_vv_i8m8_mt:
+case RISCV::BI__builtin_rvv_vaadd_vv_i8mf2_mt:
+case RISCV::BI__builtin_rvv_vaadd_vv_i8mf4_mt:
+case RISCV::BI__builtin_rvv_vaadd_vv_i8mf8_mt:
+case RISCV::BI__builtin_rvv_vaadd_vv_i16m1_mt:
+case RISCV::BI__builtin_rvv_vaadd_vv_i16m2_mt:
+case RISCV::BI__builtin_rvv_vaadd_vv_i16m4_mt:
+case RISCV::BI__builtin_rvv_vaadd_vv_i16m8_mt:
+case RISCV::BI__builtin_rvv_vaadd_vv_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vaadd_vv_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vaadd_vv_i32m1_mt:
+case RISCV::BI__builtin_rvv_vaadd_vv_i32m2_mt:
+case RISCV::BI__builtin_rvv_vaadd_vv_i32m4_mt:
+case RISCV::BI__builtin_rvv_vaadd_vv_i32m8_mt:
+case RISCV::BI__builtin_rvv_vaadd_vv_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vaadd_vv_i64m1_mt:
+case RISCV::BI__builtin_rvv_vaadd_vv_i64m2_mt:
+case RISCV::BI__builtin_rvv_vaadd_vv_i64m4_mt:
+case RISCV::BI__builtin_rvv_vaadd_vv_i64m8_mt:
+case RISCV::BI__builtin_rvv_vaadd_vx_i8m1_mt:
+case RISCV::BI__builtin_rvv_vaadd_vx_i8m2_mt:
+case RISCV::BI__builtin_rvv_vaadd_vx_i8m4_mt:
+case RISCV::BI__builtin_rvv_vaadd_vx_i8m8_mt:
+case RISCV::BI__builtin_rvv_vaadd_vx_i8mf2_mt:
+case RISCV::BI__builtin_rvv_vaadd_vx_i8mf4_mt:
+case RISCV::BI__builtin_rvv_vaadd_vx_i8mf8_mt:
+case RISCV::BI__builtin_rvv_vaadd_vx_i16m1_mt:
+case RISCV::BI__builtin_rvv_vaadd_vx_i16m2_mt:
+case RISCV::BI__builtin_rvv_vaadd_vx_i16m4_mt:
+case RISCV::BI__builtin_rvv_vaadd_vx_i16m8_mt:
+case RISCV::BI__builtin_rvv_vaadd_vx_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vaadd_vx_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vaadd_vx_i32m1_mt:
+case RISCV::BI__builtin_rvv_vaadd_vx_i32m2_mt:
+case RISCV::BI__builtin_rvv_vaadd_vx_i32m4_mt:
+case RISCV::BI__builtin_rvv_vaadd_vx_i32m8_mt:
+case RISCV::BI__builtin_rvv_vaadd_vx_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vaadd_vx_i64m1_mt:
+case RISCV::BI__builtin_rvv_vaadd_vx_i64m2_mt:
+case RISCV::BI__builtin_rvv_vaadd_vx_i64m4_mt:
+case RISCV::BI__builtin_rvv_vaadd_vx_i64m8_mt:
   ID = Intrinsic::riscv_vaadd_mask;
-  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 1);
+  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 2);
   IntrinsicTypes = {ResultType, Ops[2]->getType(), Ops.back()->getType()};
   break;
 case RISCV::BI__builtin_rvv_vaaddu_vv_u8m1:
@@ -860,52 +860,52 @@ case RISCV::BI__builtin_rvv_vaaddu_vx_u64m8:
   ID = Intrinsic::riscv_vaaddu;
   IntrinsicTypes = {ResultType, Ops[1]->getType(), Ops.back()->getType()};
   break;
-case RISCV::BI__builtin_rvv_vaaddu_vv_u8m1_m:
-case RISCV::BI__builtin_rvv_vaaddu_vv_u8m2_m:
-case RISCV::BI__builtin_rvv_vaaddu_vv_u8m4_m:
-case RISCV::BI__builtin_rvv_vaaddu_vv_u8m8_m:
-case RISCV::BI__builtin_rvv_vaaddu_vv_u8mf2_m:
-case RISCV::BI__builtin_rvv_vaaddu_vv_u8mf4_m:
-case RISCV::BI__builtin_rvv_vaaddu_vv_u8mf8_m:
-case RISCV::BI__builtin_rvv_vaaddu_vv_u16m1_m:
-case RISCV::BI__builtin_rvv_vaaddu_vv_u16m2_m:
-case RISCV::BI__builtin_rvv_vaaddu_vv_u16m4_m:
-case RISCV::BI__builtin_rvv_vaaddu_vv_u16m8_m:
-case RISCV::BI__builtin_rvv_vaaddu_vv_u16mf2_m:
-case RISCV::BI__builtin_rvv_vaaddu_vv_u16mf4_m:
-case RISCV::BI__builtin_rvv_vaaddu_vv_u32m1_m:
-case RISCV::BI__builtin_rvv_vaaddu_vv_u32m2_m:
-case RISCV::BI__builtin_rvv_vaaddu_vv_u32m4_m:
-case RISCV::BI__builtin_rvv_vaaddu_vv_u32m8_m:
-case RISCV::BI__builtin_rvv_vaaddu_vv_u32mf2_m:
-case RISCV::BI__builtin_rvv_vaaddu_vv_u64m1_m:
-case RISCV::BI__builtin_rvv_vaaddu_vv_u64m2_m:
-case RISCV::BI__builtin_rvv_vaaddu_vv_u64m4_m:
-case RISCV::BI__builtin_rvv_vaaddu_vv_u64m8_m:
-case RISCV::BI__builtin_rvv_vaaddu_vx_u8m1_m:
-case RISCV::BI__builtin_rvv_vaaddu_vx_u8m2_m:
-case RISCV::BI__builtin_rvv_vaaddu_vx_u8m4_m:
-case RISCV::BI__builtin_rvv_vaaddu_vx_u8m8_m:
-case RISCV::BI__builtin_rvv_vaaddu_vx_u8mf2_m:
-case RISCV::BI__builtin_rvv_vaaddu_vx_u8mf4_m:
-case RISCV::BI__builtin_rvv_vaaddu_vx_u8mf8_m:
-case RISCV::BI__builtin_rvv_vaaddu_vx_u16m1_m:
-case RISCV::BI__builtin_rvv_vaaddu_vx_u16m2_m:
-case RISCV::BI__builtin_rvv_vaaddu_vx_u16m4_m:
-case RISCV::BI__builtin_rvv_vaaddu_vx_u16m8_m:
-case RISCV::BI__builtin_rvv_vaaddu_vx_u16mf2_m:
-case RISCV::BI__builtin_rvv_vaaddu_vx_u16mf4_m:
-case RISCV::BI__builtin_rvv_vaaddu_vx_u32m1_m:
-case RISCV::BI__builtin_rvv_vaaddu_vx_u32m2_m:
-case RISCV::BI__builtin_rvv_vaaddu_vx_u32m4_m:
-case RISCV::BI__builtin_rvv_vaaddu_vx_u32m8_m:
-case RISCV::BI__builtin_rvv_vaaddu_vx_u32mf2_m:
-case RISCV::BI__builtin_rvv_vaaddu_vx_u64m1_m:
-case RISCV::BI__builtin_rvv_vaaddu_vx_u64m2_m:
-case RISCV::BI__builtin_rvv_vaaddu_vx_u64m4_m:
-case RISCV::BI__builtin_rvv_vaaddu_vx_u64m8_m:
+case RISCV::BI__builtin_rvv_vaaddu_vv_u8m1_mt:
+case RISCV::BI__builtin_rvv_vaaddu_vv_u8m2_mt:
+case RISCV::BI__builtin_rvv_vaaddu_vv_u8m4_mt:
+case RISCV::BI__builtin_rvv_vaaddu_vv_u8m8_mt:
+case RISCV::BI__builtin_rvv_vaaddu_vv_u8mf2_mt:
+case RISCV::BI__builtin_rvv_vaaddu_vv_u8mf4_mt:
+case RISCV::BI__builtin_rvv_vaaddu_vv_u8mf8_mt:
+case RISCV::BI__builtin_rvv_vaaddu_vv_u16m1_mt:
+case RISCV::BI__builtin_rvv_vaaddu_vv_u16m2_mt:
+case RISCV::BI__builtin_rvv_vaaddu_vv_u16m4_mt:
+case RISCV::BI__builtin_rvv_vaaddu_vv_u16m8_mt:
+case RISCV::BI__builtin_rvv_vaaddu_vv_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vaaddu_vv_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vaaddu_vv_u32m1_mt:
+case RISCV::BI__builtin_rvv_vaaddu_vv_u32m2_mt:
+case RISCV::BI__builtin_rvv_vaaddu_vv_u32m4_mt:
+case RISCV::BI__builtin_rvv_vaaddu_vv_u32m8_mt:
+case RISCV::BI__builtin_rvv_vaaddu_vv_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vaaddu_vv_u64m1_mt:
+case RISCV::BI__builtin_rvv_vaaddu_vv_u64m2_mt:
+case RISCV::BI__builtin_rvv_vaaddu_vv_u64m4_mt:
+case RISCV::BI__builtin_rvv_vaaddu_vv_u64m8_mt:
+case RISCV::BI__builtin_rvv_vaaddu_vx_u8m1_mt:
+case RISCV::BI__builtin_rvv_vaaddu_vx_u8m2_mt:
+case RISCV::BI__builtin_rvv_vaaddu_vx_u8m4_mt:
+case RISCV::BI__builtin_rvv_vaaddu_vx_u8m8_mt:
+case RISCV::BI__builtin_rvv_vaaddu_vx_u8mf2_mt:
+case RISCV::BI__builtin_rvv_vaaddu_vx_u8mf4_mt:
+case RISCV::BI__builtin_rvv_vaaddu_vx_u8mf8_mt:
+case RISCV::BI__builtin_rvv_vaaddu_vx_u16m1_mt:
+case RISCV::BI__builtin_rvv_vaaddu_vx_u16m2_mt:
+case RISCV::BI__builtin_rvv_vaaddu_vx_u16m4_mt:
+case RISCV::BI__builtin_rvv_vaaddu_vx_u16m8_mt:
+case RISCV::BI__builtin_rvv_vaaddu_vx_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vaaddu_vx_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vaaddu_vx_u32m1_mt:
+case RISCV::BI__builtin_rvv_vaaddu_vx_u32m2_mt:
+case RISCV::BI__builtin_rvv_vaaddu_vx_u32m4_mt:
+case RISCV::BI__builtin_rvv_vaaddu_vx_u32m8_mt:
+case RISCV::BI__builtin_rvv_vaaddu_vx_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vaaddu_vx_u64m1_mt:
+case RISCV::BI__builtin_rvv_vaaddu_vx_u64m2_mt:
+case RISCV::BI__builtin_rvv_vaaddu_vx_u64m4_mt:
+case RISCV::BI__builtin_rvv_vaaddu_vx_u64m8_mt:
   ID = Intrinsic::riscv_vaaddu_mask;
-  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 1);
+  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 2);
   IntrinsicTypes = {ResultType, Ops[2]->getType(), Ops.back()->getType()};
   break;
 case RISCV::BI__builtin_rvv_vadc_vvm_i8m1:
@@ -1090,96 +1090,96 @@ case RISCV::BI__builtin_rvv_vadd_vx_u64m8:
   ID = Intrinsic::riscv_vadd;
   IntrinsicTypes = {ResultType, Ops[1]->getType(), Ops.back()->getType()};
   break;
-case RISCV::BI__builtin_rvv_vadd_vv_i8m1_m:
-case RISCV::BI__builtin_rvv_vadd_vv_i8m2_m:
-case RISCV::BI__builtin_rvv_vadd_vv_i8m4_m:
-case RISCV::BI__builtin_rvv_vadd_vv_i8m8_m:
-case RISCV::BI__builtin_rvv_vadd_vv_i8mf2_m:
-case RISCV::BI__builtin_rvv_vadd_vv_i8mf4_m:
-case RISCV::BI__builtin_rvv_vadd_vv_i8mf8_m:
-case RISCV::BI__builtin_rvv_vadd_vv_i16m1_m:
-case RISCV::BI__builtin_rvv_vadd_vv_i16m2_m:
-case RISCV::BI__builtin_rvv_vadd_vv_i16m4_m:
-case RISCV::BI__builtin_rvv_vadd_vv_i16m8_m:
-case RISCV::BI__builtin_rvv_vadd_vv_i16mf2_m:
-case RISCV::BI__builtin_rvv_vadd_vv_i16mf4_m:
-case RISCV::BI__builtin_rvv_vadd_vv_i32m1_m:
-case RISCV::BI__builtin_rvv_vadd_vv_i32m2_m:
-case RISCV::BI__builtin_rvv_vadd_vv_i32m4_m:
-case RISCV::BI__builtin_rvv_vadd_vv_i32m8_m:
-case RISCV::BI__builtin_rvv_vadd_vv_i32mf2_m:
-case RISCV::BI__builtin_rvv_vadd_vv_i64m1_m:
-case RISCV::BI__builtin_rvv_vadd_vv_i64m2_m:
-case RISCV::BI__builtin_rvv_vadd_vv_i64m4_m:
-case RISCV::BI__builtin_rvv_vadd_vv_i64m8_m:
-case RISCV::BI__builtin_rvv_vadd_vx_i8m1_m:
-case RISCV::BI__builtin_rvv_vadd_vx_i8m2_m:
-case RISCV::BI__builtin_rvv_vadd_vx_i8m4_m:
-case RISCV::BI__builtin_rvv_vadd_vx_i8m8_m:
-case RISCV::BI__builtin_rvv_vadd_vx_i8mf2_m:
-case RISCV::BI__builtin_rvv_vadd_vx_i8mf4_m:
-case RISCV::BI__builtin_rvv_vadd_vx_i8mf8_m:
-case RISCV::BI__builtin_rvv_vadd_vx_i16m1_m:
-case RISCV::BI__builtin_rvv_vadd_vx_i16m2_m:
-case RISCV::BI__builtin_rvv_vadd_vx_i16m4_m:
-case RISCV::BI__builtin_rvv_vadd_vx_i16m8_m:
-case RISCV::BI__builtin_rvv_vadd_vx_i16mf2_m:
-case RISCV::BI__builtin_rvv_vadd_vx_i16mf4_m:
-case RISCV::BI__builtin_rvv_vadd_vx_i32m1_m:
-case RISCV::BI__builtin_rvv_vadd_vx_i32m2_m:
-case RISCV::BI__builtin_rvv_vadd_vx_i32m4_m:
-case RISCV::BI__builtin_rvv_vadd_vx_i32m8_m:
-case RISCV::BI__builtin_rvv_vadd_vx_i32mf2_m:
-case RISCV::BI__builtin_rvv_vadd_vx_i64m1_m:
-case RISCV::BI__builtin_rvv_vadd_vx_i64m2_m:
-case RISCV::BI__builtin_rvv_vadd_vx_i64m4_m:
-case RISCV::BI__builtin_rvv_vadd_vx_i64m8_m:
-case RISCV::BI__builtin_rvv_vadd_vv_u8m1_m:
-case RISCV::BI__builtin_rvv_vadd_vv_u8m2_m:
-case RISCV::BI__builtin_rvv_vadd_vv_u8m4_m:
-case RISCV::BI__builtin_rvv_vadd_vv_u8m8_m:
-case RISCV::BI__builtin_rvv_vadd_vv_u8mf2_m:
-case RISCV::BI__builtin_rvv_vadd_vv_u8mf4_m:
-case RISCV::BI__builtin_rvv_vadd_vv_u8mf8_m:
-case RISCV::BI__builtin_rvv_vadd_vv_u16m1_m:
-case RISCV::BI__builtin_rvv_vadd_vv_u16m2_m:
-case RISCV::BI__builtin_rvv_vadd_vv_u16m4_m:
-case RISCV::BI__builtin_rvv_vadd_vv_u16m8_m:
-case RISCV::BI__builtin_rvv_vadd_vv_u16mf2_m:
-case RISCV::BI__builtin_rvv_vadd_vv_u16mf4_m:
-case RISCV::BI__builtin_rvv_vadd_vv_u32m1_m:
-case RISCV::BI__builtin_rvv_vadd_vv_u32m2_m:
-case RISCV::BI__builtin_rvv_vadd_vv_u32m4_m:
-case RISCV::BI__builtin_rvv_vadd_vv_u32m8_m:
-case RISCV::BI__builtin_rvv_vadd_vv_u32mf2_m:
-case RISCV::BI__builtin_rvv_vadd_vv_u64m1_m:
-case RISCV::BI__builtin_rvv_vadd_vv_u64m2_m:
-case RISCV::BI__builtin_rvv_vadd_vv_u64m4_m:
-case RISCV::BI__builtin_rvv_vadd_vv_u64m8_m:
-case RISCV::BI__builtin_rvv_vadd_vx_u8m1_m:
-case RISCV::BI__builtin_rvv_vadd_vx_u8m2_m:
-case RISCV::BI__builtin_rvv_vadd_vx_u8m4_m:
-case RISCV::BI__builtin_rvv_vadd_vx_u8m8_m:
-case RISCV::BI__builtin_rvv_vadd_vx_u8mf2_m:
-case RISCV::BI__builtin_rvv_vadd_vx_u8mf4_m:
-case RISCV::BI__builtin_rvv_vadd_vx_u8mf8_m:
-case RISCV::BI__builtin_rvv_vadd_vx_u16m1_m:
-case RISCV::BI__builtin_rvv_vadd_vx_u16m2_m:
-case RISCV::BI__builtin_rvv_vadd_vx_u16m4_m:
-case RISCV::BI__builtin_rvv_vadd_vx_u16m8_m:
-case RISCV::BI__builtin_rvv_vadd_vx_u16mf2_m:
-case RISCV::BI__builtin_rvv_vadd_vx_u16mf4_m:
-case RISCV::BI__builtin_rvv_vadd_vx_u32m1_m:
-case RISCV::BI__builtin_rvv_vadd_vx_u32m2_m:
-case RISCV::BI__builtin_rvv_vadd_vx_u32m4_m:
-case RISCV::BI__builtin_rvv_vadd_vx_u32m8_m:
-case RISCV::BI__builtin_rvv_vadd_vx_u32mf2_m:
-case RISCV::BI__builtin_rvv_vadd_vx_u64m1_m:
-case RISCV::BI__builtin_rvv_vadd_vx_u64m2_m:
-case RISCV::BI__builtin_rvv_vadd_vx_u64m4_m:
-case RISCV::BI__builtin_rvv_vadd_vx_u64m8_m:
+case RISCV::BI__builtin_rvv_vadd_vv_i8m1_mt:
+case RISCV::BI__builtin_rvv_vadd_vv_i8m2_mt:
+case RISCV::BI__builtin_rvv_vadd_vv_i8m4_mt:
+case RISCV::BI__builtin_rvv_vadd_vv_i8m8_mt:
+case RISCV::BI__builtin_rvv_vadd_vv_i8mf2_mt:
+case RISCV::BI__builtin_rvv_vadd_vv_i8mf4_mt:
+case RISCV::BI__builtin_rvv_vadd_vv_i8mf8_mt:
+case RISCV::BI__builtin_rvv_vadd_vv_i16m1_mt:
+case RISCV::BI__builtin_rvv_vadd_vv_i16m2_mt:
+case RISCV::BI__builtin_rvv_vadd_vv_i16m4_mt:
+case RISCV::BI__builtin_rvv_vadd_vv_i16m8_mt:
+case RISCV::BI__builtin_rvv_vadd_vv_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vadd_vv_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vadd_vv_i32m1_mt:
+case RISCV::BI__builtin_rvv_vadd_vv_i32m2_mt:
+case RISCV::BI__builtin_rvv_vadd_vv_i32m4_mt:
+case RISCV::BI__builtin_rvv_vadd_vv_i32m8_mt:
+case RISCV::BI__builtin_rvv_vadd_vv_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vadd_vv_i64m1_mt:
+case RISCV::BI__builtin_rvv_vadd_vv_i64m2_mt:
+case RISCV::BI__builtin_rvv_vadd_vv_i64m4_mt:
+case RISCV::BI__builtin_rvv_vadd_vv_i64m8_mt:
+case RISCV::BI__builtin_rvv_vadd_vx_i8m1_mt:
+case RISCV::BI__builtin_rvv_vadd_vx_i8m2_mt:
+case RISCV::BI__builtin_rvv_vadd_vx_i8m4_mt:
+case RISCV::BI__builtin_rvv_vadd_vx_i8m8_mt:
+case RISCV::BI__builtin_rvv_vadd_vx_i8mf2_mt:
+case RISCV::BI__builtin_rvv_vadd_vx_i8mf4_mt:
+case RISCV::BI__builtin_rvv_vadd_vx_i8mf8_mt:
+case RISCV::BI__builtin_rvv_vadd_vx_i16m1_mt:
+case RISCV::BI__builtin_rvv_vadd_vx_i16m2_mt:
+case RISCV::BI__builtin_rvv_vadd_vx_i16m4_mt:
+case RISCV::BI__builtin_rvv_vadd_vx_i16m8_mt:
+case RISCV::BI__builtin_rvv_vadd_vx_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vadd_vx_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vadd_vx_i32m1_mt:
+case RISCV::BI__builtin_rvv_vadd_vx_i32m2_mt:
+case RISCV::BI__builtin_rvv_vadd_vx_i32m4_mt:
+case RISCV::BI__builtin_rvv_vadd_vx_i32m8_mt:
+case RISCV::BI__builtin_rvv_vadd_vx_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vadd_vx_i64m1_mt:
+case RISCV::BI__builtin_rvv_vadd_vx_i64m2_mt:
+case RISCV::BI__builtin_rvv_vadd_vx_i64m4_mt:
+case RISCV::BI__builtin_rvv_vadd_vx_i64m8_mt:
+case RISCV::BI__builtin_rvv_vadd_vv_u8m1_mt:
+case RISCV::BI__builtin_rvv_vadd_vv_u8m2_mt:
+case RISCV::BI__builtin_rvv_vadd_vv_u8m4_mt:
+case RISCV::BI__builtin_rvv_vadd_vv_u8m8_mt:
+case RISCV::BI__builtin_rvv_vadd_vv_u8mf2_mt:
+case RISCV::BI__builtin_rvv_vadd_vv_u8mf4_mt:
+case RISCV::BI__builtin_rvv_vadd_vv_u8mf8_mt:
+case RISCV::BI__builtin_rvv_vadd_vv_u16m1_mt:
+case RISCV::BI__builtin_rvv_vadd_vv_u16m2_mt:
+case RISCV::BI__builtin_rvv_vadd_vv_u16m4_mt:
+case RISCV::BI__builtin_rvv_vadd_vv_u16m8_mt:
+case RISCV::BI__builtin_rvv_vadd_vv_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vadd_vv_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vadd_vv_u32m1_mt:
+case RISCV::BI__builtin_rvv_vadd_vv_u32m2_mt:
+case RISCV::BI__builtin_rvv_vadd_vv_u32m4_mt:
+case RISCV::BI__builtin_rvv_vadd_vv_u32m8_mt:
+case RISCV::BI__builtin_rvv_vadd_vv_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vadd_vv_u64m1_mt:
+case RISCV::BI__builtin_rvv_vadd_vv_u64m2_mt:
+case RISCV::BI__builtin_rvv_vadd_vv_u64m4_mt:
+case RISCV::BI__builtin_rvv_vadd_vv_u64m8_mt:
+case RISCV::BI__builtin_rvv_vadd_vx_u8m1_mt:
+case RISCV::BI__builtin_rvv_vadd_vx_u8m2_mt:
+case RISCV::BI__builtin_rvv_vadd_vx_u8m4_mt:
+case RISCV::BI__builtin_rvv_vadd_vx_u8m8_mt:
+case RISCV::BI__builtin_rvv_vadd_vx_u8mf2_mt:
+case RISCV::BI__builtin_rvv_vadd_vx_u8mf4_mt:
+case RISCV::BI__builtin_rvv_vadd_vx_u8mf8_mt:
+case RISCV::BI__builtin_rvv_vadd_vx_u16m1_mt:
+case RISCV::BI__builtin_rvv_vadd_vx_u16m2_mt:
+case RISCV::BI__builtin_rvv_vadd_vx_u16m4_mt:
+case RISCV::BI__builtin_rvv_vadd_vx_u16m8_mt:
+case RISCV::BI__builtin_rvv_vadd_vx_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vadd_vx_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vadd_vx_u32m1_mt:
+case RISCV::BI__builtin_rvv_vadd_vx_u32m2_mt:
+case RISCV::BI__builtin_rvv_vadd_vx_u32m4_mt:
+case RISCV::BI__builtin_rvv_vadd_vx_u32m8_mt:
+case RISCV::BI__builtin_rvv_vadd_vx_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vadd_vx_u64m1_mt:
+case RISCV::BI__builtin_rvv_vadd_vx_u64m2_mt:
+case RISCV::BI__builtin_rvv_vadd_vx_u64m4_mt:
+case RISCV::BI__builtin_rvv_vadd_vx_u64m8_mt:
   ID = Intrinsic::riscv_vadd_mask;
-  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 1);
+  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 2);
   IntrinsicTypes = {ResultType, Ops[2]->getType(), Ops.back()->getType()};
   break;
 case RISCV::BI__builtin_rvv_vamoaddei8_v_i32m1:
@@ -2431,96 +2431,96 @@ case RISCV::BI__builtin_rvv_vand_vx_u64m8:
   ID = Intrinsic::riscv_vand;
   IntrinsicTypes = {ResultType, Ops[1]->getType(), Ops.back()->getType()};
   break;
-case RISCV::BI__builtin_rvv_vand_vv_i8m1_m:
-case RISCV::BI__builtin_rvv_vand_vv_i8m2_m:
-case RISCV::BI__builtin_rvv_vand_vv_i8m4_m:
-case RISCV::BI__builtin_rvv_vand_vv_i8m8_m:
-case RISCV::BI__builtin_rvv_vand_vv_i8mf2_m:
-case RISCV::BI__builtin_rvv_vand_vv_i8mf4_m:
-case RISCV::BI__builtin_rvv_vand_vv_i8mf8_m:
-case RISCV::BI__builtin_rvv_vand_vv_i16m1_m:
-case RISCV::BI__builtin_rvv_vand_vv_i16m2_m:
-case RISCV::BI__builtin_rvv_vand_vv_i16m4_m:
-case RISCV::BI__builtin_rvv_vand_vv_i16m8_m:
-case RISCV::BI__builtin_rvv_vand_vv_i16mf2_m:
-case RISCV::BI__builtin_rvv_vand_vv_i16mf4_m:
-case RISCV::BI__builtin_rvv_vand_vv_i32m1_m:
-case RISCV::BI__builtin_rvv_vand_vv_i32m2_m:
-case RISCV::BI__builtin_rvv_vand_vv_i32m4_m:
-case RISCV::BI__builtin_rvv_vand_vv_i32m8_m:
-case RISCV::BI__builtin_rvv_vand_vv_i32mf2_m:
-case RISCV::BI__builtin_rvv_vand_vv_i64m1_m:
-case RISCV::BI__builtin_rvv_vand_vv_i64m2_m:
-case RISCV::BI__builtin_rvv_vand_vv_i64m4_m:
-case RISCV::BI__builtin_rvv_vand_vv_i64m8_m:
-case RISCV::BI__builtin_rvv_vand_vx_i8m1_m:
-case RISCV::BI__builtin_rvv_vand_vx_i8m2_m:
-case RISCV::BI__builtin_rvv_vand_vx_i8m4_m:
-case RISCV::BI__builtin_rvv_vand_vx_i8m8_m:
-case RISCV::BI__builtin_rvv_vand_vx_i8mf2_m:
-case RISCV::BI__builtin_rvv_vand_vx_i8mf4_m:
-case RISCV::BI__builtin_rvv_vand_vx_i8mf8_m:
-case RISCV::BI__builtin_rvv_vand_vx_i16m1_m:
-case RISCV::BI__builtin_rvv_vand_vx_i16m2_m:
-case RISCV::BI__builtin_rvv_vand_vx_i16m4_m:
-case RISCV::BI__builtin_rvv_vand_vx_i16m8_m:
-case RISCV::BI__builtin_rvv_vand_vx_i16mf2_m:
-case RISCV::BI__builtin_rvv_vand_vx_i16mf4_m:
-case RISCV::BI__builtin_rvv_vand_vx_i32m1_m:
-case RISCV::BI__builtin_rvv_vand_vx_i32m2_m:
-case RISCV::BI__builtin_rvv_vand_vx_i32m4_m:
-case RISCV::BI__builtin_rvv_vand_vx_i32m8_m:
-case RISCV::BI__builtin_rvv_vand_vx_i32mf2_m:
-case RISCV::BI__builtin_rvv_vand_vx_i64m1_m:
-case RISCV::BI__builtin_rvv_vand_vx_i64m2_m:
-case RISCV::BI__builtin_rvv_vand_vx_i64m4_m:
-case RISCV::BI__builtin_rvv_vand_vx_i64m8_m:
-case RISCV::BI__builtin_rvv_vand_vv_u8m1_m:
-case RISCV::BI__builtin_rvv_vand_vv_u8m2_m:
-case RISCV::BI__builtin_rvv_vand_vv_u8m4_m:
-case RISCV::BI__builtin_rvv_vand_vv_u8m8_m:
-case RISCV::BI__builtin_rvv_vand_vv_u8mf2_m:
-case RISCV::BI__builtin_rvv_vand_vv_u8mf4_m:
-case RISCV::BI__builtin_rvv_vand_vv_u8mf8_m:
-case RISCV::BI__builtin_rvv_vand_vv_u16m1_m:
-case RISCV::BI__builtin_rvv_vand_vv_u16m2_m:
-case RISCV::BI__builtin_rvv_vand_vv_u16m4_m:
-case RISCV::BI__builtin_rvv_vand_vv_u16m8_m:
-case RISCV::BI__builtin_rvv_vand_vv_u16mf2_m:
-case RISCV::BI__builtin_rvv_vand_vv_u16mf4_m:
-case RISCV::BI__builtin_rvv_vand_vv_u32m1_m:
-case RISCV::BI__builtin_rvv_vand_vv_u32m2_m:
-case RISCV::BI__builtin_rvv_vand_vv_u32m4_m:
-case RISCV::BI__builtin_rvv_vand_vv_u32m8_m:
-case RISCV::BI__builtin_rvv_vand_vv_u32mf2_m:
-case RISCV::BI__builtin_rvv_vand_vv_u64m1_m:
-case RISCV::BI__builtin_rvv_vand_vv_u64m2_m:
-case RISCV::BI__builtin_rvv_vand_vv_u64m4_m:
-case RISCV::BI__builtin_rvv_vand_vv_u64m8_m:
-case RISCV::BI__builtin_rvv_vand_vx_u8m1_m:
-case RISCV::BI__builtin_rvv_vand_vx_u8m2_m:
-case RISCV::BI__builtin_rvv_vand_vx_u8m4_m:
-case RISCV::BI__builtin_rvv_vand_vx_u8m8_m:
-case RISCV::BI__builtin_rvv_vand_vx_u8mf2_m:
-case RISCV::BI__builtin_rvv_vand_vx_u8mf4_m:
-case RISCV::BI__builtin_rvv_vand_vx_u8mf8_m:
-case RISCV::BI__builtin_rvv_vand_vx_u16m1_m:
-case RISCV::BI__builtin_rvv_vand_vx_u16m2_m:
-case RISCV::BI__builtin_rvv_vand_vx_u16m4_m:
-case RISCV::BI__builtin_rvv_vand_vx_u16m8_m:
-case RISCV::BI__builtin_rvv_vand_vx_u16mf2_m:
-case RISCV::BI__builtin_rvv_vand_vx_u16mf4_m:
-case RISCV::BI__builtin_rvv_vand_vx_u32m1_m:
-case RISCV::BI__builtin_rvv_vand_vx_u32m2_m:
-case RISCV::BI__builtin_rvv_vand_vx_u32m4_m:
-case RISCV::BI__builtin_rvv_vand_vx_u32m8_m:
-case RISCV::BI__builtin_rvv_vand_vx_u32mf2_m:
-case RISCV::BI__builtin_rvv_vand_vx_u64m1_m:
-case RISCV::BI__builtin_rvv_vand_vx_u64m2_m:
-case RISCV::BI__builtin_rvv_vand_vx_u64m4_m:
-case RISCV::BI__builtin_rvv_vand_vx_u64m8_m:
+case RISCV::BI__builtin_rvv_vand_vv_i8m1_mt:
+case RISCV::BI__builtin_rvv_vand_vv_i8m2_mt:
+case RISCV::BI__builtin_rvv_vand_vv_i8m4_mt:
+case RISCV::BI__builtin_rvv_vand_vv_i8m8_mt:
+case RISCV::BI__builtin_rvv_vand_vv_i8mf2_mt:
+case RISCV::BI__builtin_rvv_vand_vv_i8mf4_mt:
+case RISCV::BI__builtin_rvv_vand_vv_i8mf8_mt:
+case RISCV::BI__builtin_rvv_vand_vv_i16m1_mt:
+case RISCV::BI__builtin_rvv_vand_vv_i16m2_mt:
+case RISCV::BI__builtin_rvv_vand_vv_i16m4_mt:
+case RISCV::BI__builtin_rvv_vand_vv_i16m8_mt:
+case RISCV::BI__builtin_rvv_vand_vv_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vand_vv_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vand_vv_i32m1_mt:
+case RISCV::BI__builtin_rvv_vand_vv_i32m2_mt:
+case RISCV::BI__builtin_rvv_vand_vv_i32m4_mt:
+case RISCV::BI__builtin_rvv_vand_vv_i32m8_mt:
+case RISCV::BI__builtin_rvv_vand_vv_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vand_vv_i64m1_mt:
+case RISCV::BI__builtin_rvv_vand_vv_i64m2_mt:
+case RISCV::BI__builtin_rvv_vand_vv_i64m4_mt:
+case RISCV::BI__builtin_rvv_vand_vv_i64m8_mt:
+case RISCV::BI__builtin_rvv_vand_vx_i8m1_mt:
+case RISCV::BI__builtin_rvv_vand_vx_i8m2_mt:
+case RISCV::BI__builtin_rvv_vand_vx_i8m4_mt:
+case RISCV::BI__builtin_rvv_vand_vx_i8m8_mt:
+case RISCV::BI__builtin_rvv_vand_vx_i8mf2_mt:
+case RISCV::BI__builtin_rvv_vand_vx_i8mf4_mt:
+case RISCV::BI__builtin_rvv_vand_vx_i8mf8_mt:
+case RISCV::BI__builtin_rvv_vand_vx_i16m1_mt:
+case RISCV::BI__builtin_rvv_vand_vx_i16m2_mt:
+case RISCV::BI__builtin_rvv_vand_vx_i16m4_mt:
+case RISCV::BI__builtin_rvv_vand_vx_i16m8_mt:
+case RISCV::BI__builtin_rvv_vand_vx_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vand_vx_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vand_vx_i32m1_mt:
+case RISCV::BI__builtin_rvv_vand_vx_i32m2_mt:
+case RISCV::BI__builtin_rvv_vand_vx_i32m4_mt:
+case RISCV::BI__builtin_rvv_vand_vx_i32m8_mt:
+case RISCV::BI__builtin_rvv_vand_vx_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vand_vx_i64m1_mt:
+case RISCV::BI__builtin_rvv_vand_vx_i64m2_mt:
+case RISCV::BI__builtin_rvv_vand_vx_i64m4_mt:
+case RISCV::BI__builtin_rvv_vand_vx_i64m8_mt:
+case RISCV::BI__builtin_rvv_vand_vv_u8m1_mt:
+case RISCV::BI__builtin_rvv_vand_vv_u8m2_mt:
+case RISCV::BI__builtin_rvv_vand_vv_u8m4_mt:
+case RISCV::BI__builtin_rvv_vand_vv_u8m8_mt:
+case RISCV::BI__builtin_rvv_vand_vv_u8mf2_mt:
+case RISCV::BI__builtin_rvv_vand_vv_u8mf4_mt:
+case RISCV::BI__builtin_rvv_vand_vv_u8mf8_mt:
+case RISCV::BI__builtin_rvv_vand_vv_u16m1_mt:
+case RISCV::BI__builtin_rvv_vand_vv_u16m2_mt:
+case RISCV::BI__builtin_rvv_vand_vv_u16m4_mt:
+case RISCV::BI__builtin_rvv_vand_vv_u16m8_mt:
+case RISCV::BI__builtin_rvv_vand_vv_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vand_vv_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vand_vv_u32m1_mt:
+case RISCV::BI__builtin_rvv_vand_vv_u32m2_mt:
+case RISCV::BI__builtin_rvv_vand_vv_u32m4_mt:
+case RISCV::BI__builtin_rvv_vand_vv_u32m8_mt:
+case RISCV::BI__builtin_rvv_vand_vv_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vand_vv_u64m1_mt:
+case RISCV::BI__builtin_rvv_vand_vv_u64m2_mt:
+case RISCV::BI__builtin_rvv_vand_vv_u64m4_mt:
+case RISCV::BI__builtin_rvv_vand_vv_u64m8_mt:
+case RISCV::BI__builtin_rvv_vand_vx_u8m1_mt:
+case RISCV::BI__builtin_rvv_vand_vx_u8m2_mt:
+case RISCV::BI__builtin_rvv_vand_vx_u8m4_mt:
+case RISCV::BI__builtin_rvv_vand_vx_u8m8_mt:
+case RISCV::BI__builtin_rvv_vand_vx_u8mf2_mt:
+case RISCV::BI__builtin_rvv_vand_vx_u8mf4_mt:
+case RISCV::BI__builtin_rvv_vand_vx_u8mf8_mt:
+case RISCV::BI__builtin_rvv_vand_vx_u16m1_mt:
+case RISCV::BI__builtin_rvv_vand_vx_u16m2_mt:
+case RISCV::BI__builtin_rvv_vand_vx_u16m4_mt:
+case RISCV::BI__builtin_rvv_vand_vx_u16m8_mt:
+case RISCV::BI__builtin_rvv_vand_vx_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vand_vx_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vand_vx_u32m1_mt:
+case RISCV::BI__builtin_rvv_vand_vx_u32m2_mt:
+case RISCV::BI__builtin_rvv_vand_vx_u32m4_mt:
+case RISCV::BI__builtin_rvv_vand_vx_u32m8_mt:
+case RISCV::BI__builtin_rvv_vand_vx_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vand_vx_u64m1_mt:
+case RISCV::BI__builtin_rvv_vand_vx_u64m2_mt:
+case RISCV::BI__builtin_rvv_vand_vx_u64m4_mt:
+case RISCV::BI__builtin_rvv_vand_vx_u64m8_mt:
   ID = Intrinsic::riscv_vand_mask;
-  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 1);
+  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 2);
   IntrinsicTypes = {ResultType, Ops[2]->getType(), Ops.back()->getType()};
   break;
 case RISCV::BI__builtin_rvv_vasub_vv_i8m1:
@@ -2570,52 +2570,52 @@ case RISCV::BI__builtin_rvv_vasub_vx_i64m8:
   ID = Intrinsic::riscv_vasub;
   IntrinsicTypes = {ResultType, Ops[1]->getType(), Ops.back()->getType()};
   break;
-case RISCV::BI__builtin_rvv_vasub_vv_i8m1_m:
-case RISCV::BI__builtin_rvv_vasub_vv_i8m2_m:
-case RISCV::BI__builtin_rvv_vasub_vv_i8m4_m:
-case RISCV::BI__builtin_rvv_vasub_vv_i8m8_m:
-case RISCV::BI__builtin_rvv_vasub_vv_i8mf2_m:
-case RISCV::BI__builtin_rvv_vasub_vv_i8mf4_m:
-case RISCV::BI__builtin_rvv_vasub_vv_i8mf8_m:
-case RISCV::BI__builtin_rvv_vasub_vv_i16m1_m:
-case RISCV::BI__builtin_rvv_vasub_vv_i16m2_m:
-case RISCV::BI__builtin_rvv_vasub_vv_i16m4_m:
-case RISCV::BI__builtin_rvv_vasub_vv_i16m8_m:
-case RISCV::BI__builtin_rvv_vasub_vv_i16mf2_m:
-case RISCV::BI__builtin_rvv_vasub_vv_i16mf4_m:
-case RISCV::BI__builtin_rvv_vasub_vv_i32m1_m:
-case RISCV::BI__builtin_rvv_vasub_vv_i32m2_m:
-case RISCV::BI__builtin_rvv_vasub_vv_i32m4_m:
-case RISCV::BI__builtin_rvv_vasub_vv_i32m8_m:
-case RISCV::BI__builtin_rvv_vasub_vv_i32mf2_m:
-case RISCV::BI__builtin_rvv_vasub_vv_i64m1_m:
-case RISCV::BI__builtin_rvv_vasub_vv_i64m2_m:
-case RISCV::BI__builtin_rvv_vasub_vv_i64m4_m:
-case RISCV::BI__builtin_rvv_vasub_vv_i64m8_m:
-case RISCV::BI__builtin_rvv_vasub_vx_i8m1_m:
-case RISCV::BI__builtin_rvv_vasub_vx_i8m2_m:
-case RISCV::BI__builtin_rvv_vasub_vx_i8m4_m:
-case RISCV::BI__builtin_rvv_vasub_vx_i8m8_m:
-case RISCV::BI__builtin_rvv_vasub_vx_i8mf2_m:
-case RISCV::BI__builtin_rvv_vasub_vx_i8mf4_m:
-case RISCV::BI__builtin_rvv_vasub_vx_i8mf8_m:
-case RISCV::BI__builtin_rvv_vasub_vx_i16m1_m:
-case RISCV::BI__builtin_rvv_vasub_vx_i16m2_m:
-case RISCV::BI__builtin_rvv_vasub_vx_i16m4_m:
-case RISCV::BI__builtin_rvv_vasub_vx_i16m8_m:
-case RISCV::BI__builtin_rvv_vasub_vx_i16mf2_m:
-case RISCV::BI__builtin_rvv_vasub_vx_i16mf4_m:
-case RISCV::BI__builtin_rvv_vasub_vx_i32m1_m:
-case RISCV::BI__builtin_rvv_vasub_vx_i32m2_m:
-case RISCV::BI__builtin_rvv_vasub_vx_i32m4_m:
-case RISCV::BI__builtin_rvv_vasub_vx_i32m8_m:
-case RISCV::BI__builtin_rvv_vasub_vx_i32mf2_m:
-case RISCV::BI__builtin_rvv_vasub_vx_i64m1_m:
-case RISCV::BI__builtin_rvv_vasub_vx_i64m2_m:
-case RISCV::BI__builtin_rvv_vasub_vx_i64m4_m:
-case RISCV::BI__builtin_rvv_vasub_vx_i64m8_m:
+case RISCV::BI__builtin_rvv_vasub_vv_i8m1_mt:
+case RISCV::BI__builtin_rvv_vasub_vv_i8m2_mt:
+case RISCV::BI__builtin_rvv_vasub_vv_i8m4_mt:
+case RISCV::BI__builtin_rvv_vasub_vv_i8m8_mt:
+case RISCV::BI__builtin_rvv_vasub_vv_i8mf2_mt:
+case RISCV::BI__builtin_rvv_vasub_vv_i8mf4_mt:
+case RISCV::BI__builtin_rvv_vasub_vv_i8mf8_mt:
+case RISCV::BI__builtin_rvv_vasub_vv_i16m1_mt:
+case RISCV::BI__builtin_rvv_vasub_vv_i16m2_mt:
+case RISCV::BI__builtin_rvv_vasub_vv_i16m4_mt:
+case RISCV::BI__builtin_rvv_vasub_vv_i16m8_mt:
+case RISCV::BI__builtin_rvv_vasub_vv_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vasub_vv_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vasub_vv_i32m1_mt:
+case RISCV::BI__builtin_rvv_vasub_vv_i32m2_mt:
+case RISCV::BI__builtin_rvv_vasub_vv_i32m4_mt:
+case RISCV::BI__builtin_rvv_vasub_vv_i32m8_mt:
+case RISCV::BI__builtin_rvv_vasub_vv_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vasub_vv_i64m1_mt:
+case RISCV::BI__builtin_rvv_vasub_vv_i64m2_mt:
+case RISCV::BI__builtin_rvv_vasub_vv_i64m4_mt:
+case RISCV::BI__builtin_rvv_vasub_vv_i64m8_mt:
+case RISCV::BI__builtin_rvv_vasub_vx_i8m1_mt:
+case RISCV::BI__builtin_rvv_vasub_vx_i8m2_mt:
+case RISCV::BI__builtin_rvv_vasub_vx_i8m4_mt:
+case RISCV::BI__builtin_rvv_vasub_vx_i8m8_mt:
+case RISCV::BI__builtin_rvv_vasub_vx_i8mf2_mt:
+case RISCV::BI__builtin_rvv_vasub_vx_i8mf4_mt:
+case RISCV::BI__builtin_rvv_vasub_vx_i8mf8_mt:
+case RISCV::BI__builtin_rvv_vasub_vx_i16m1_mt:
+case RISCV::BI__builtin_rvv_vasub_vx_i16m2_mt:
+case RISCV::BI__builtin_rvv_vasub_vx_i16m4_mt:
+case RISCV::BI__builtin_rvv_vasub_vx_i16m8_mt:
+case RISCV::BI__builtin_rvv_vasub_vx_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vasub_vx_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vasub_vx_i32m1_mt:
+case RISCV::BI__builtin_rvv_vasub_vx_i32m2_mt:
+case RISCV::BI__builtin_rvv_vasub_vx_i32m4_mt:
+case RISCV::BI__builtin_rvv_vasub_vx_i32m8_mt:
+case RISCV::BI__builtin_rvv_vasub_vx_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vasub_vx_i64m1_mt:
+case RISCV::BI__builtin_rvv_vasub_vx_i64m2_mt:
+case RISCV::BI__builtin_rvv_vasub_vx_i64m4_mt:
+case RISCV::BI__builtin_rvv_vasub_vx_i64m8_mt:
   ID = Intrinsic::riscv_vasub_mask;
-  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 1);
+  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 2);
   IntrinsicTypes = {ResultType, Ops[2]->getType(), Ops.back()->getType()};
   break;
 case RISCV::BI__builtin_rvv_vasubu_vv_u8m1:
@@ -2665,52 +2665,52 @@ case RISCV::BI__builtin_rvv_vasubu_vx_u64m8:
   ID = Intrinsic::riscv_vasubu;
   IntrinsicTypes = {ResultType, Ops[1]->getType(), Ops.back()->getType()};
   break;
-case RISCV::BI__builtin_rvv_vasubu_vv_u8m1_m:
-case RISCV::BI__builtin_rvv_vasubu_vv_u8m2_m:
-case RISCV::BI__builtin_rvv_vasubu_vv_u8m4_m:
-case RISCV::BI__builtin_rvv_vasubu_vv_u8m8_m:
-case RISCV::BI__builtin_rvv_vasubu_vv_u8mf2_m:
-case RISCV::BI__builtin_rvv_vasubu_vv_u8mf4_m:
-case RISCV::BI__builtin_rvv_vasubu_vv_u8mf8_m:
-case RISCV::BI__builtin_rvv_vasubu_vv_u16m1_m:
-case RISCV::BI__builtin_rvv_vasubu_vv_u16m2_m:
-case RISCV::BI__builtin_rvv_vasubu_vv_u16m4_m:
-case RISCV::BI__builtin_rvv_vasubu_vv_u16m8_m:
-case RISCV::BI__builtin_rvv_vasubu_vv_u16mf2_m:
-case RISCV::BI__builtin_rvv_vasubu_vv_u16mf4_m:
-case RISCV::BI__builtin_rvv_vasubu_vv_u32m1_m:
-case RISCV::BI__builtin_rvv_vasubu_vv_u32m2_m:
-case RISCV::BI__builtin_rvv_vasubu_vv_u32m4_m:
-case RISCV::BI__builtin_rvv_vasubu_vv_u32m8_m:
-case RISCV::BI__builtin_rvv_vasubu_vv_u32mf2_m:
-case RISCV::BI__builtin_rvv_vasubu_vv_u64m1_m:
-case RISCV::BI__builtin_rvv_vasubu_vv_u64m2_m:
-case RISCV::BI__builtin_rvv_vasubu_vv_u64m4_m:
-case RISCV::BI__builtin_rvv_vasubu_vv_u64m8_m:
-case RISCV::BI__builtin_rvv_vasubu_vx_u8m1_m:
-case RISCV::BI__builtin_rvv_vasubu_vx_u8m2_m:
-case RISCV::BI__builtin_rvv_vasubu_vx_u8m4_m:
-case RISCV::BI__builtin_rvv_vasubu_vx_u8m8_m:
-case RISCV::BI__builtin_rvv_vasubu_vx_u8mf2_m:
-case RISCV::BI__builtin_rvv_vasubu_vx_u8mf4_m:
-case RISCV::BI__builtin_rvv_vasubu_vx_u8mf8_m:
-case RISCV::BI__builtin_rvv_vasubu_vx_u16m1_m:
-case RISCV::BI__builtin_rvv_vasubu_vx_u16m2_m:
-case RISCV::BI__builtin_rvv_vasubu_vx_u16m4_m:
-case RISCV::BI__builtin_rvv_vasubu_vx_u16m8_m:
-case RISCV::BI__builtin_rvv_vasubu_vx_u16mf2_m:
-case RISCV::BI__builtin_rvv_vasubu_vx_u16mf4_m:
-case RISCV::BI__builtin_rvv_vasubu_vx_u32m1_m:
-case RISCV::BI__builtin_rvv_vasubu_vx_u32m2_m:
-case RISCV::BI__builtin_rvv_vasubu_vx_u32m4_m:
-case RISCV::BI__builtin_rvv_vasubu_vx_u32m8_m:
-case RISCV::BI__builtin_rvv_vasubu_vx_u32mf2_m:
-case RISCV::BI__builtin_rvv_vasubu_vx_u64m1_m:
-case RISCV::BI__builtin_rvv_vasubu_vx_u64m2_m:
-case RISCV::BI__builtin_rvv_vasubu_vx_u64m4_m:
-case RISCV::BI__builtin_rvv_vasubu_vx_u64m8_m:
+case RISCV::BI__builtin_rvv_vasubu_vv_u8m1_mt:
+case RISCV::BI__builtin_rvv_vasubu_vv_u8m2_mt:
+case RISCV::BI__builtin_rvv_vasubu_vv_u8m4_mt:
+case RISCV::BI__builtin_rvv_vasubu_vv_u8m8_mt:
+case RISCV::BI__builtin_rvv_vasubu_vv_u8mf2_mt:
+case RISCV::BI__builtin_rvv_vasubu_vv_u8mf4_mt:
+case RISCV::BI__builtin_rvv_vasubu_vv_u8mf8_mt:
+case RISCV::BI__builtin_rvv_vasubu_vv_u16m1_mt:
+case RISCV::BI__builtin_rvv_vasubu_vv_u16m2_mt:
+case RISCV::BI__builtin_rvv_vasubu_vv_u16m4_mt:
+case RISCV::BI__builtin_rvv_vasubu_vv_u16m8_mt:
+case RISCV::BI__builtin_rvv_vasubu_vv_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vasubu_vv_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vasubu_vv_u32m1_mt:
+case RISCV::BI__builtin_rvv_vasubu_vv_u32m2_mt:
+case RISCV::BI__builtin_rvv_vasubu_vv_u32m4_mt:
+case RISCV::BI__builtin_rvv_vasubu_vv_u32m8_mt:
+case RISCV::BI__builtin_rvv_vasubu_vv_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vasubu_vv_u64m1_mt:
+case RISCV::BI__builtin_rvv_vasubu_vv_u64m2_mt:
+case RISCV::BI__builtin_rvv_vasubu_vv_u64m4_mt:
+case RISCV::BI__builtin_rvv_vasubu_vv_u64m8_mt:
+case RISCV::BI__builtin_rvv_vasubu_vx_u8m1_mt:
+case RISCV::BI__builtin_rvv_vasubu_vx_u8m2_mt:
+case RISCV::BI__builtin_rvv_vasubu_vx_u8m4_mt:
+case RISCV::BI__builtin_rvv_vasubu_vx_u8m8_mt:
+case RISCV::BI__builtin_rvv_vasubu_vx_u8mf2_mt:
+case RISCV::BI__builtin_rvv_vasubu_vx_u8mf4_mt:
+case RISCV::BI__builtin_rvv_vasubu_vx_u8mf8_mt:
+case RISCV::BI__builtin_rvv_vasubu_vx_u16m1_mt:
+case RISCV::BI__builtin_rvv_vasubu_vx_u16m2_mt:
+case RISCV::BI__builtin_rvv_vasubu_vx_u16m4_mt:
+case RISCV::BI__builtin_rvv_vasubu_vx_u16m8_mt:
+case RISCV::BI__builtin_rvv_vasubu_vx_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vasubu_vx_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vasubu_vx_u32m1_mt:
+case RISCV::BI__builtin_rvv_vasubu_vx_u32m2_mt:
+case RISCV::BI__builtin_rvv_vasubu_vx_u32m4_mt:
+case RISCV::BI__builtin_rvv_vasubu_vx_u32m8_mt:
+case RISCV::BI__builtin_rvv_vasubu_vx_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vasubu_vx_u64m1_mt:
+case RISCV::BI__builtin_rvv_vasubu_vx_u64m2_mt:
+case RISCV::BI__builtin_rvv_vasubu_vx_u64m4_mt:
+case RISCV::BI__builtin_rvv_vasubu_vx_u64m8_mt:
   ID = Intrinsic::riscv_vasubu_mask;
-  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 1);
+  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 2);
   IntrinsicTypes = {ResultType, Ops[2]->getType(), Ops.back()->getType()};
   break;
 case RISCV::BI__builtin_rvv_vcompress_vm_i8m1:
@@ -2824,52 +2824,52 @@ case RISCV::BI__builtin_rvv_vdiv_vx_i64m8:
   ID = Intrinsic::riscv_vdiv;
   IntrinsicTypes = {ResultType, Ops[1]->getType(), Ops.back()->getType()};
   break;
-case RISCV::BI__builtin_rvv_vdiv_vv_i8m1_m:
-case RISCV::BI__builtin_rvv_vdiv_vv_i8m2_m:
-case RISCV::BI__builtin_rvv_vdiv_vv_i8m4_m:
-case RISCV::BI__builtin_rvv_vdiv_vv_i8m8_m:
-case RISCV::BI__builtin_rvv_vdiv_vv_i8mf2_m:
-case RISCV::BI__builtin_rvv_vdiv_vv_i8mf4_m:
-case RISCV::BI__builtin_rvv_vdiv_vv_i8mf8_m:
-case RISCV::BI__builtin_rvv_vdiv_vv_i16m1_m:
-case RISCV::BI__builtin_rvv_vdiv_vv_i16m2_m:
-case RISCV::BI__builtin_rvv_vdiv_vv_i16m4_m:
-case RISCV::BI__builtin_rvv_vdiv_vv_i16m8_m:
-case RISCV::BI__builtin_rvv_vdiv_vv_i16mf2_m:
-case RISCV::BI__builtin_rvv_vdiv_vv_i16mf4_m:
-case RISCV::BI__builtin_rvv_vdiv_vv_i32m1_m:
-case RISCV::BI__builtin_rvv_vdiv_vv_i32m2_m:
-case RISCV::BI__builtin_rvv_vdiv_vv_i32m4_m:
-case RISCV::BI__builtin_rvv_vdiv_vv_i32m8_m:
-case RISCV::BI__builtin_rvv_vdiv_vv_i32mf2_m:
-case RISCV::BI__builtin_rvv_vdiv_vv_i64m1_m:
-case RISCV::BI__builtin_rvv_vdiv_vv_i64m2_m:
-case RISCV::BI__builtin_rvv_vdiv_vv_i64m4_m:
-case RISCV::BI__builtin_rvv_vdiv_vv_i64m8_m:
-case RISCV::BI__builtin_rvv_vdiv_vx_i8m1_m:
-case RISCV::BI__builtin_rvv_vdiv_vx_i8m2_m:
-case RISCV::BI__builtin_rvv_vdiv_vx_i8m4_m:
-case RISCV::BI__builtin_rvv_vdiv_vx_i8m8_m:
-case RISCV::BI__builtin_rvv_vdiv_vx_i8mf2_m:
-case RISCV::BI__builtin_rvv_vdiv_vx_i8mf4_m:
-case RISCV::BI__builtin_rvv_vdiv_vx_i8mf8_m:
-case RISCV::BI__builtin_rvv_vdiv_vx_i16m1_m:
-case RISCV::BI__builtin_rvv_vdiv_vx_i16m2_m:
-case RISCV::BI__builtin_rvv_vdiv_vx_i16m4_m:
-case RISCV::BI__builtin_rvv_vdiv_vx_i16m8_m:
-case RISCV::BI__builtin_rvv_vdiv_vx_i16mf2_m:
-case RISCV::BI__builtin_rvv_vdiv_vx_i16mf4_m:
-case RISCV::BI__builtin_rvv_vdiv_vx_i32m1_m:
-case RISCV::BI__builtin_rvv_vdiv_vx_i32m2_m:
-case RISCV::BI__builtin_rvv_vdiv_vx_i32m4_m:
-case RISCV::BI__builtin_rvv_vdiv_vx_i32m8_m:
-case RISCV::BI__builtin_rvv_vdiv_vx_i32mf2_m:
-case RISCV::BI__builtin_rvv_vdiv_vx_i64m1_m:
-case RISCV::BI__builtin_rvv_vdiv_vx_i64m2_m:
-case RISCV::BI__builtin_rvv_vdiv_vx_i64m4_m:
-case RISCV::BI__builtin_rvv_vdiv_vx_i64m8_m:
+case RISCV::BI__builtin_rvv_vdiv_vv_i8m1_mt:
+case RISCV::BI__builtin_rvv_vdiv_vv_i8m2_mt:
+case RISCV::BI__builtin_rvv_vdiv_vv_i8m4_mt:
+case RISCV::BI__builtin_rvv_vdiv_vv_i8m8_mt:
+case RISCV::BI__builtin_rvv_vdiv_vv_i8mf2_mt:
+case RISCV::BI__builtin_rvv_vdiv_vv_i8mf4_mt:
+case RISCV::BI__builtin_rvv_vdiv_vv_i8mf8_mt:
+case RISCV::BI__builtin_rvv_vdiv_vv_i16m1_mt:
+case RISCV::BI__builtin_rvv_vdiv_vv_i16m2_mt:
+case RISCV::BI__builtin_rvv_vdiv_vv_i16m4_mt:
+case RISCV::BI__builtin_rvv_vdiv_vv_i16m8_mt:
+case RISCV::BI__builtin_rvv_vdiv_vv_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vdiv_vv_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vdiv_vv_i32m1_mt:
+case RISCV::BI__builtin_rvv_vdiv_vv_i32m2_mt:
+case RISCV::BI__builtin_rvv_vdiv_vv_i32m4_mt:
+case RISCV::BI__builtin_rvv_vdiv_vv_i32m8_mt:
+case RISCV::BI__builtin_rvv_vdiv_vv_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vdiv_vv_i64m1_mt:
+case RISCV::BI__builtin_rvv_vdiv_vv_i64m2_mt:
+case RISCV::BI__builtin_rvv_vdiv_vv_i64m4_mt:
+case RISCV::BI__builtin_rvv_vdiv_vv_i64m8_mt:
+case RISCV::BI__builtin_rvv_vdiv_vx_i8m1_mt:
+case RISCV::BI__builtin_rvv_vdiv_vx_i8m2_mt:
+case RISCV::BI__builtin_rvv_vdiv_vx_i8m4_mt:
+case RISCV::BI__builtin_rvv_vdiv_vx_i8m8_mt:
+case RISCV::BI__builtin_rvv_vdiv_vx_i8mf2_mt:
+case RISCV::BI__builtin_rvv_vdiv_vx_i8mf4_mt:
+case RISCV::BI__builtin_rvv_vdiv_vx_i8mf8_mt:
+case RISCV::BI__builtin_rvv_vdiv_vx_i16m1_mt:
+case RISCV::BI__builtin_rvv_vdiv_vx_i16m2_mt:
+case RISCV::BI__builtin_rvv_vdiv_vx_i16m4_mt:
+case RISCV::BI__builtin_rvv_vdiv_vx_i16m8_mt:
+case RISCV::BI__builtin_rvv_vdiv_vx_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vdiv_vx_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vdiv_vx_i32m1_mt:
+case RISCV::BI__builtin_rvv_vdiv_vx_i32m2_mt:
+case RISCV::BI__builtin_rvv_vdiv_vx_i32m4_mt:
+case RISCV::BI__builtin_rvv_vdiv_vx_i32m8_mt:
+case RISCV::BI__builtin_rvv_vdiv_vx_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vdiv_vx_i64m1_mt:
+case RISCV::BI__builtin_rvv_vdiv_vx_i64m2_mt:
+case RISCV::BI__builtin_rvv_vdiv_vx_i64m4_mt:
+case RISCV::BI__builtin_rvv_vdiv_vx_i64m8_mt:
   ID = Intrinsic::riscv_vdiv_mask;
-  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 1);
+  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 2);
   IntrinsicTypes = {ResultType, Ops[2]->getType(), Ops.back()->getType()};
   break;
 case RISCV::BI__builtin_rvv_vdivu_vv_u8m1:
@@ -2919,52 +2919,52 @@ case RISCV::BI__builtin_rvv_vdivu_vx_u64m8:
   ID = Intrinsic::riscv_vdivu;
   IntrinsicTypes = {ResultType, Ops[1]->getType(), Ops.back()->getType()};
   break;
-case RISCV::BI__builtin_rvv_vdivu_vv_u8m1_m:
-case RISCV::BI__builtin_rvv_vdivu_vv_u8m2_m:
-case RISCV::BI__builtin_rvv_vdivu_vv_u8m4_m:
-case RISCV::BI__builtin_rvv_vdivu_vv_u8m8_m:
-case RISCV::BI__builtin_rvv_vdivu_vv_u8mf2_m:
-case RISCV::BI__builtin_rvv_vdivu_vv_u8mf4_m:
-case RISCV::BI__builtin_rvv_vdivu_vv_u8mf8_m:
-case RISCV::BI__builtin_rvv_vdivu_vv_u16m1_m:
-case RISCV::BI__builtin_rvv_vdivu_vv_u16m2_m:
-case RISCV::BI__builtin_rvv_vdivu_vv_u16m4_m:
-case RISCV::BI__builtin_rvv_vdivu_vv_u16m8_m:
-case RISCV::BI__builtin_rvv_vdivu_vv_u16mf2_m:
-case RISCV::BI__builtin_rvv_vdivu_vv_u16mf4_m:
-case RISCV::BI__builtin_rvv_vdivu_vv_u32m1_m:
-case RISCV::BI__builtin_rvv_vdivu_vv_u32m2_m:
-case RISCV::BI__builtin_rvv_vdivu_vv_u32m4_m:
-case RISCV::BI__builtin_rvv_vdivu_vv_u32m8_m:
-case RISCV::BI__builtin_rvv_vdivu_vv_u32mf2_m:
-case RISCV::BI__builtin_rvv_vdivu_vv_u64m1_m:
-case RISCV::BI__builtin_rvv_vdivu_vv_u64m2_m:
-case RISCV::BI__builtin_rvv_vdivu_vv_u64m4_m:
-case RISCV::BI__builtin_rvv_vdivu_vv_u64m8_m:
-case RISCV::BI__builtin_rvv_vdivu_vx_u8m1_m:
-case RISCV::BI__builtin_rvv_vdivu_vx_u8m2_m:
-case RISCV::BI__builtin_rvv_vdivu_vx_u8m4_m:
-case RISCV::BI__builtin_rvv_vdivu_vx_u8m8_m:
-case RISCV::BI__builtin_rvv_vdivu_vx_u8mf2_m:
-case RISCV::BI__builtin_rvv_vdivu_vx_u8mf4_m:
-case RISCV::BI__builtin_rvv_vdivu_vx_u8mf8_m:
-case RISCV::BI__builtin_rvv_vdivu_vx_u16m1_m:
-case RISCV::BI__builtin_rvv_vdivu_vx_u16m2_m:
-case RISCV::BI__builtin_rvv_vdivu_vx_u16m4_m:
-case RISCV::BI__builtin_rvv_vdivu_vx_u16m8_m:
-case RISCV::BI__builtin_rvv_vdivu_vx_u16mf2_m:
-case RISCV::BI__builtin_rvv_vdivu_vx_u16mf4_m:
-case RISCV::BI__builtin_rvv_vdivu_vx_u32m1_m:
-case RISCV::BI__builtin_rvv_vdivu_vx_u32m2_m:
-case RISCV::BI__builtin_rvv_vdivu_vx_u32m4_m:
-case RISCV::BI__builtin_rvv_vdivu_vx_u32m8_m:
-case RISCV::BI__builtin_rvv_vdivu_vx_u32mf2_m:
-case RISCV::BI__builtin_rvv_vdivu_vx_u64m1_m:
-case RISCV::BI__builtin_rvv_vdivu_vx_u64m2_m:
-case RISCV::BI__builtin_rvv_vdivu_vx_u64m4_m:
-case RISCV::BI__builtin_rvv_vdivu_vx_u64m8_m:
+case RISCV::BI__builtin_rvv_vdivu_vv_u8m1_mt:
+case RISCV::BI__builtin_rvv_vdivu_vv_u8m2_mt:
+case RISCV::BI__builtin_rvv_vdivu_vv_u8m4_mt:
+case RISCV::BI__builtin_rvv_vdivu_vv_u8m8_mt:
+case RISCV::BI__builtin_rvv_vdivu_vv_u8mf2_mt:
+case RISCV::BI__builtin_rvv_vdivu_vv_u8mf4_mt:
+case RISCV::BI__builtin_rvv_vdivu_vv_u8mf8_mt:
+case RISCV::BI__builtin_rvv_vdivu_vv_u16m1_mt:
+case RISCV::BI__builtin_rvv_vdivu_vv_u16m2_mt:
+case RISCV::BI__builtin_rvv_vdivu_vv_u16m4_mt:
+case RISCV::BI__builtin_rvv_vdivu_vv_u16m8_mt:
+case RISCV::BI__builtin_rvv_vdivu_vv_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vdivu_vv_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vdivu_vv_u32m1_mt:
+case RISCV::BI__builtin_rvv_vdivu_vv_u32m2_mt:
+case RISCV::BI__builtin_rvv_vdivu_vv_u32m4_mt:
+case RISCV::BI__builtin_rvv_vdivu_vv_u32m8_mt:
+case RISCV::BI__builtin_rvv_vdivu_vv_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vdivu_vv_u64m1_mt:
+case RISCV::BI__builtin_rvv_vdivu_vv_u64m2_mt:
+case RISCV::BI__builtin_rvv_vdivu_vv_u64m4_mt:
+case RISCV::BI__builtin_rvv_vdivu_vv_u64m8_mt:
+case RISCV::BI__builtin_rvv_vdivu_vx_u8m1_mt:
+case RISCV::BI__builtin_rvv_vdivu_vx_u8m2_mt:
+case RISCV::BI__builtin_rvv_vdivu_vx_u8m4_mt:
+case RISCV::BI__builtin_rvv_vdivu_vx_u8m8_mt:
+case RISCV::BI__builtin_rvv_vdivu_vx_u8mf2_mt:
+case RISCV::BI__builtin_rvv_vdivu_vx_u8mf4_mt:
+case RISCV::BI__builtin_rvv_vdivu_vx_u8mf8_mt:
+case RISCV::BI__builtin_rvv_vdivu_vx_u16m1_mt:
+case RISCV::BI__builtin_rvv_vdivu_vx_u16m2_mt:
+case RISCV::BI__builtin_rvv_vdivu_vx_u16m4_mt:
+case RISCV::BI__builtin_rvv_vdivu_vx_u16m8_mt:
+case RISCV::BI__builtin_rvv_vdivu_vx_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vdivu_vx_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vdivu_vx_u32m1_mt:
+case RISCV::BI__builtin_rvv_vdivu_vx_u32m2_mt:
+case RISCV::BI__builtin_rvv_vdivu_vx_u32m4_mt:
+case RISCV::BI__builtin_rvv_vdivu_vx_u32m8_mt:
+case RISCV::BI__builtin_rvv_vdivu_vx_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vdivu_vx_u64m1_mt:
+case RISCV::BI__builtin_rvv_vdivu_vx_u64m2_mt:
+case RISCV::BI__builtin_rvv_vdivu_vx_u64m4_mt:
+case RISCV::BI__builtin_rvv_vdivu_vx_u64m8_mt:
   ID = Intrinsic::riscv_vdivu_mask;
-  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 1);
+  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 2);
   IntrinsicTypes = {ResultType, Ops[2]->getType(), Ops.back()->getType()};
   break;
 case RISCV::BI__builtin_rvv_vfadd_vv_f16m1:
@@ -3000,38 +3000,38 @@ case RISCV::BI__builtin_rvv_vfadd_vf_f64m8:
   ID = Intrinsic::riscv_vfadd;
   IntrinsicTypes = {ResultType, Ops[1]->getType(), Ops.back()->getType()};
   break;
-case RISCV::BI__builtin_rvv_vfadd_vv_f16m1_m:
-case RISCV::BI__builtin_rvv_vfadd_vv_f16m2_m:
-case RISCV::BI__builtin_rvv_vfadd_vv_f16m4_m:
-case RISCV::BI__builtin_rvv_vfadd_vv_f16m8_m:
-case RISCV::BI__builtin_rvv_vfadd_vv_f16mf2_m:
-case RISCV::BI__builtin_rvv_vfadd_vv_f16mf4_m:
-case RISCV::BI__builtin_rvv_vfadd_vv_f32m1_m:
-case RISCV::BI__builtin_rvv_vfadd_vv_f32m2_m:
-case RISCV::BI__builtin_rvv_vfadd_vv_f32m4_m:
-case RISCV::BI__builtin_rvv_vfadd_vv_f32m8_m:
-case RISCV::BI__builtin_rvv_vfadd_vv_f32mf2_m:
-case RISCV::BI__builtin_rvv_vfadd_vv_f64m1_m:
-case RISCV::BI__builtin_rvv_vfadd_vv_f64m2_m:
-case RISCV::BI__builtin_rvv_vfadd_vv_f64m4_m:
-case RISCV::BI__builtin_rvv_vfadd_vv_f64m8_m:
-case RISCV::BI__builtin_rvv_vfadd_vf_f16m1_m:
-case RISCV::BI__builtin_rvv_vfadd_vf_f16m2_m:
-case RISCV::BI__builtin_rvv_vfadd_vf_f16m4_m:
-case RISCV::BI__builtin_rvv_vfadd_vf_f16m8_m:
-case RISCV::BI__builtin_rvv_vfadd_vf_f16mf2_m:
-case RISCV::BI__builtin_rvv_vfadd_vf_f16mf4_m:
-case RISCV::BI__builtin_rvv_vfadd_vf_f32m1_m:
-case RISCV::BI__builtin_rvv_vfadd_vf_f32m2_m:
-case RISCV::BI__builtin_rvv_vfadd_vf_f32m4_m:
-case RISCV::BI__builtin_rvv_vfadd_vf_f32m8_m:
-case RISCV::BI__builtin_rvv_vfadd_vf_f32mf2_m:
-case RISCV::BI__builtin_rvv_vfadd_vf_f64m1_m:
-case RISCV::BI__builtin_rvv_vfadd_vf_f64m2_m:
-case RISCV::BI__builtin_rvv_vfadd_vf_f64m4_m:
-case RISCV::BI__builtin_rvv_vfadd_vf_f64m8_m:
+case RISCV::BI__builtin_rvv_vfadd_vv_f16m1_mt:
+case RISCV::BI__builtin_rvv_vfadd_vv_f16m2_mt:
+case RISCV::BI__builtin_rvv_vfadd_vv_f16m4_mt:
+case RISCV::BI__builtin_rvv_vfadd_vv_f16m8_mt:
+case RISCV::BI__builtin_rvv_vfadd_vv_f16mf2_mt:
+case RISCV::BI__builtin_rvv_vfadd_vv_f16mf4_mt:
+case RISCV::BI__builtin_rvv_vfadd_vv_f32m1_mt:
+case RISCV::BI__builtin_rvv_vfadd_vv_f32m2_mt:
+case RISCV::BI__builtin_rvv_vfadd_vv_f32m4_mt:
+case RISCV::BI__builtin_rvv_vfadd_vv_f32m8_mt:
+case RISCV::BI__builtin_rvv_vfadd_vv_f32mf2_mt:
+case RISCV::BI__builtin_rvv_vfadd_vv_f64m1_mt:
+case RISCV::BI__builtin_rvv_vfadd_vv_f64m2_mt:
+case RISCV::BI__builtin_rvv_vfadd_vv_f64m4_mt:
+case RISCV::BI__builtin_rvv_vfadd_vv_f64m8_mt:
+case RISCV::BI__builtin_rvv_vfadd_vf_f16m1_mt:
+case RISCV::BI__builtin_rvv_vfadd_vf_f16m2_mt:
+case RISCV::BI__builtin_rvv_vfadd_vf_f16m4_mt:
+case RISCV::BI__builtin_rvv_vfadd_vf_f16m8_mt:
+case RISCV::BI__builtin_rvv_vfadd_vf_f16mf2_mt:
+case RISCV::BI__builtin_rvv_vfadd_vf_f16mf4_mt:
+case RISCV::BI__builtin_rvv_vfadd_vf_f32m1_mt:
+case RISCV::BI__builtin_rvv_vfadd_vf_f32m2_mt:
+case RISCV::BI__builtin_rvv_vfadd_vf_f32m4_mt:
+case RISCV::BI__builtin_rvv_vfadd_vf_f32m8_mt:
+case RISCV::BI__builtin_rvv_vfadd_vf_f32mf2_mt:
+case RISCV::BI__builtin_rvv_vfadd_vf_f64m1_mt:
+case RISCV::BI__builtin_rvv_vfadd_vf_f64m2_mt:
+case RISCV::BI__builtin_rvv_vfadd_vf_f64m4_mt:
+case RISCV::BI__builtin_rvv_vfadd_vf_f64m8_mt:
   ID = Intrinsic::riscv_vfadd_mask;
-  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 1);
+  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 2);
   IntrinsicTypes = {ResultType, Ops[2]->getType(), Ops.back()->getType()};
   break;
 case RISCV::BI__builtin_rvv_vfclass_v_u16m1:
@@ -3089,23 +3089,23 @@ case RISCV::BI__builtin_rvv_vfcvt_f_x_v_f64m8:
   ID = Intrinsic::riscv_vfcvt_f_x_v;
   IntrinsicTypes = {ResultType, Ops[0]->getType(), Ops.back()->getType()};
   break;
-case RISCV::BI__builtin_rvv_vfcvt_f_x_v_f16m1_m:
-case RISCV::BI__builtin_rvv_vfcvt_f_x_v_f16m2_m:
-case RISCV::BI__builtin_rvv_vfcvt_f_x_v_f16m4_m:
-case RISCV::BI__builtin_rvv_vfcvt_f_x_v_f16m8_m:
-case RISCV::BI__builtin_rvv_vfcvt_f_x_v_f16mf2_m:
-case RISCV::BI__builtin_rvv_vfcvt_f_x_v_f16mf4_m:
-case RISCV::BI__builtin_rvv_vfcvt_f_x_v_f32m1_m:
-case RISCV::BI__builtin_rvv_vfcvt_f_x_v_f32m2_m:
-case RISCV::BI__builtin_rvv_vfcvt_f_x_v_f32m4_m:
-case RISCV::BI__builtin_rvv_vfcvt_f_x_v_f32m8_m:
-case RISCV::BI__builtin_rvv_vfcvt_f_x_v_f32mf2_m:
-case RISCV::BI__builtin_rvv_vfcvt_f_x_v_f64m1_m:
-case RISCV::BI__builtin_rvv_vfcvt_f_x_v_f64m2_m:
-case RISCV::BI__builtin_rvv_vfcvt_f_x_v_f64m4_m:
-case RISCV::BI__builtin_rvv_vfcvt_f_x_v_f64m8_m:
+case RISCV::BI__builtin_rvv_vfcvt_f_x_v_f16m1_mt:
+case RISCV::BI__builtin_rvv_vfcvt_f_x_v_f16m2_mt:
+case RISCV::BI__builtin_rvv_vfcvt_f_x_v_f16m4_mt:
+case RISCV::BI__builtin_rvv_vfcvt_f_x_v_f16m8_mt:
+case RISCV::BI__builtin_rvv_vfcvt_f_x_v_f16mf2_mt:
+case RISCV::BI__builtin_rvv_vfcvt_f_x_v_f16mf4_mt:
+case RISCV::BI__builtin_rvv_vfcvt_f_x_v_f32m1_mt:
+case RISCV::BI__builtin_rvv_vfcvt_f_x_v_f32m2_mt:
+case RISCV::BI__builtin_rvv_vfcvt_f_x_v_f32m4_mt:
+case RISCV::BI__builtin_rvv_vfcvt_f_x_v_f32m8_mt:
+case RISCV::BI__builtin_rvv_vfcvt_f_x_v_f32mf2_mt:
+case RISCV::BI__builtin_rvv_vfcvt_f_x_v_f64m1_mt:
+case RISCV::BI__builtin_rvv_vfcvt_f_x_v_f64m2_mt:
+case RISCV::BI__builtin_rvv_vfcvt_f_x_v_f64m4_mt:
+case RISCV::BI__builtin_rvv_vfcvt_f_x_v_f64m8_mt:
   ID = Intrinsic::riscv_vfcvt_f_x_v_mask;
-  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 1);
+  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 2);
   IntrinsicTypes = {ResultType, Ops[1]->getType(), Ops.back()->getType()};
   break;
 case RISCV::BI__builtin_rvv_vfcvt_f_xu_v_f16m1:
@@ -3126,23 +3126,23 @@ case RISCV::BI__builtin_rvv_vfcvt_f_xu_v_f64m8:
   ID = Intrinsic::riscv_vfcvt_f_xu_v;
   IntrinsicTypes = {ResultType, Ops[0]->getType(), Ops.back()->getType()};
   break;
-case RISCV::BI__builtin_rvv_vfcvt_f_xu_v_f16m1_m:
-case RISCV::BI__builtin_rvv_vfcvt_f_xu_v_f16m2_m:
-case RISCV::BI__builtin_rvv_vfcvt_f_xu_v_f16m4_m:
-case RISCV::BI__builtin_rvv_vfcvt_f_xu_v_f16m8_m:
-case RISCV::BI__builtin_rvv_vfcvt_f_xu_v_f16mf2_m:
-case RISCV::BI__builtin_rvv_vfcvt_f_xu_v_f16mf4_m:
-case RISCV::BI__builtin_rvv_vfcvt_f_xu_v_f32m1_m:
-case RISCV::BI__builtin_rvv_vfcvt_f_xu_v_f32m2_m:
-case RISCV::BI__builtin_rvv_vfcvt_f_xu_v_f32m4_m:
-case RISCV::BI__builtin_rvv_vfcvt_f_xu_v_f32m8_m:
-case RISCV::BI__builtin_rvv_vfcvt_f_xu_v_f32mf2_m:
-case RISCV::BI__builtin_rvv_vfcvt_f_xu_v_f64m1_m:
-case RISCV::BI__builtin_rvv_vfcvt_f_xu_v_f64m2_m:
-case RISCV::BI__builtin_rvv_vfcvt_f_xu_v_f64m4_m:
-case RISCV::BI__builtin_rvv_vfcvt_f_xu_v_f64m8_m:
+case RISCV::BI__builtin_rvv_vfcvt_f_xu_v_f16m1_mt:
+case RISCV::BI__builtin_rvv_vfcvt_f_xu_v_f16m2_mt:
+case RISCV::BI__builtin_rvv_vfcvt_f_xu_v_f16m4_mt:
+case RISCV::BI__builtin_rvv_vfcvt_f_xu_v_f16m8_mt:
+case RISCV::BI__builtin_rvv_vfcvt_f_xu_v_f16mf2_mt:
+case RISCV::BI__builtin_rvv_vfcvt_f_xu_v_f16mf4_mt:
+case RISCV::BI__builtin_rvv_vfcvt_f_xu_v_f32m1_mt:
+case RISCV::BI__builtin_rvv_vfcvt_f_xu_v_f32m2_mt:
+case RISCV::BI__builtin_rvv_vfcvt_f_xu_v_f32m4_mt:
+case RISCV::BI__builtin_rvv_vfcvt_f_xu_v_f32m8_mt:
+case RISCV::BI__builtin_rvv_vfcvt_f_xu_v_f32mf2_mt:
+case RISCV::BI__builtin_rvv_vfcvt_f_xu_v_f64m1_mt:
+case RISCV::BI__builtin_rvv_vfcvt_f_xu_v_f64m2_mt:
+case RISCV::BI__builtin_rvv_vfcvt_f_xu_v_f64m4_mt:
+case RISCV::BI__builtin_rvv_vfcvt_f_xu_v_f64m8_mt:
   ID = Intrinsic::riscv_vfcvt_f_xu_v_mask;
-  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 1);
+  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 2);
   IntrinsicTypes = {ResultType, Ops[1]->getType(), Ops.back()->getType()};
   break;
 case RISCV::BI__builtin_rvv_vfcvt_rtz_x_f_v_i16m1:
@@ -3163,23 +3163,23 @@ case RISCV::BI__builtin_rvv_vfcvt_rtz_x_f_v_i64m8:
   ID = Intrinsic::riscv_vfcvt_rtz_x_f_v;
   IntrinsicTypes = {ResultType, Ops[0]->getType(), Ops.back()->getType()};
   break;
-case RISCV::BI__builtin_rvv_vfcvt_rtz_x_f_v_i16m1_m:
-case RISCV::BI__builtin_rvv_vfcvt_rtz_x_f_v_i16m2_m:
-case RISCV::BI__builtin_rvv_vfcvt_rtz_x_f_v_i16m4_m:
-case RISCV::BI__builtin_rvv_vfcvt_rtz_x_f_v_i16m8_m:
-case RISCV::BI__builtin_rvv_vfcvt_rtz_x_f_v_i16mf2_m:
-case RISCV::BI__builtin_rvv_vfcvt_rtz_x_f_v_i16mf4_m:
-case RISCV::BI__builtin_rvv_vfcvt_rtz_x_f_v_i32m1_m:
-case RISCV::BI__builtin_rvv_vfcvt_rtz_x_f_v_i32m2_m:
-case RISCV::BI__builtin_rvv_vfcvt_rtz_x_f_v_i32m4_m:
-case RISCV::BI__builtin_rvv_vfcvt_rtz_x_f_v_i32m8_m:
-case RISCV::BI__builtin_rvv_vfcvt_rtz_x_f_v_i32mf2_m:
-case RISCV::BI__builtin_rvv_vfcvt_rtz_x_f_v_i64m1_m:
-case RISCV::BI__builtin_rvv_vfcvt_rtz_x_f_v_i64m2_m:
-case RISCV::BI__builtin_rvv_vfcvt_rtz_x_f_v_i64m4_m:
-case RISCV::BI__builtin_rvv_vfcvt_rtz_x_f_v_i64m8_m:
+case RISCV::BI__builtin_rvv_vfcvt_rtz_x_f_v_i16m1_mt:
+case RISCV::BI__builtin_rvv_vfcvt_rtz_x_f_v_i16m2_mt:
+case RISCV::BI__builtin_rvv_vfcvt_rtz_x_f_v_i16m4_mt:
+case RISCV::BI__builtin_rvv_vfcvt_rtz_x_f_v_i16m8_mt:
+case RISCV::BI__builtin_rvv_vfcvt_rtz_x_f_v_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vfcvt_rtz_x_f_v_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vfcvt_rtz_x_f_v_i32m1_mt:
+case RISCV::BI__builtin_rvv_vfcvt_rtz_x_f_v_i32m2_mt:
+case RISCV::BI__builtin_rvv_vfcvt_rtz_x_f_v_i32m4_mt:
+case RISCV::BI__builtin_rvv_vfcvt_rtz_x_f_v_i32m8_mt:
+case RISCV::BI__builtin_rvv_vfcvt_rtz_x_f_v_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vfcvt_rtz_x_f_v_i64m1_mt:
+case RISCV::BI__builtin_rvv_vfcvt_rtz_x_f_v_i64m2_mt:
+case RISCV::BI__builtin_rvv_vfcvt_rtz_x_f_v_i64m4_mt:
+case RISCV::BI__builtin_rvv_vfcvt_rtz_x_f_v_i64m8_mt:
   ID = Intrinsic::riscv_vfcvt_rtz_x_f_v_mask;
-  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 1);
+  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 2);
   IntrinsicTypes = {ResultType, Ops[1]->getType(), Ops.back()->getType()};
   break;
 case RISCV::BI__builtin_rvv_vfcvt_rtz_xu_f_v_u16m1:
@@ -3200,23 +3200,23 @@ case RISCV::BI__builtin_rvv_vfcvt_rtz_xu_f_v_u64m8:
   ID = Intrinsic::riscv_vfcvt_rtz_xu_f_v;
   IntrinsicTypes = {ResultType, Ops[0]->getType(), Ops.back()->getType()};
   break;
-case RISCV::BI__builtin_rvv_vfcvt_rtz_xu_f_v_u16m1_m:
-case RISCV::BI__builtin_rvv_vfcvt_rtz_xu_f_v_u16m2_m:
-case RISCV::BI__builtin_rvv_vfcvt_rtz_xu_f_v_u16m4_m:
-case RISCV::BI__builtin_rvv_vfcvt_rtz_xu_f_v_u16m8_m:
-case RISCV::BI__builtin_rvv_vfcvt_rtz_xu_f_v_u16mf2_m:
-case RISCV::BI__builtin_rvv_vfcvt_rtz_xu_f_v_u16mf4_m:
-case RISCV::BI__builtin_rvv_vfcvt_rtz_xu_f_v_u32m1_m:
-case RISCV::BI__builtin_rvv_vfcvt_rtz_xu_f_v_u32m2_m:
-case RISCV::BI__builtin_rvv_vfcvt_rtz_xu_f_v_u32m4_m:
-case RISCV::BI__builtin_rvv_vfcvt_rtz_xu_f_v_u32m8_m:
-case RISCV::BI__builtin_rvv_vfcvt_rtz_xu_f_v_u32mf2_m:
-case RISCV::BI__builtin_rvv_vfcvt_rtz_xu_f_v_u64m1_m:
-case RISCV::BI__builtin_rvv_vfcvt_rtz_xu_f_v_u64m2_m:
-case RISCV::BI__builtin_rvv_vfcvt_rtz_xu_f_v_u64m4_m:
-case RISCV::BI__builtin_rvv_vfcvt_rtz_xu_f_v_u64m8_m:
+case RISCV::BI__builtin_rvv_vfcvt_rtz_xu_f_v_u16m1_mt:
+case RISCV::BI__builtin_rvv_vfcvt_rtz_xu_f_v_u16m2_mt:
+case RISCV::BI__builtin_rvv_vfcvt_rtz_xu_f_v_u16m4_mt:
+case RISCV::BI__builtin_rvv_vfcvt_rtz_xu_f_v_u16m8_mt:
+case RISCV::BI__builtin_rvv_vfcvt_rtz_xu_f_v_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vfcvt_rtz_xu_f_v_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vfcvt_rtz_xu_f_v_u32m1_mt:
+case RISCV::BI__builtin_rvv_vfcvt_rtz_xu_f_v_u32m2_mt:
+case RISCV::BI__builtin_rvv_vfcvt_rtz_xu_f_v_u32m4_mt:
+case RISCV::BI__builtin_rvv_vfcvt_rtz_xu_f_v_u32m8_mt:
+case RISCV::BI__builtin_rvv_vfcvt_rtz_xu_f_v_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vfcvt_rtz_xu_f_v_u64m1_mt:
+case RISCV::BI__builtin_rvv_vfcvt_rtz_xu_f_v_u64m2_mt:
+case RISCV::BI__builtin_rvv_vfcvt_rtz_xu_f_v_u64m4_mt:
+case RISCV::BI__builtin_rvv_vfcvt_rtz_xu_f_v_u64m8_mt:
   ID = Intrinsic::riscv_vfcvt_rtz_xu_f_v_mask;
-  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 1);
+  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 2);
   IntrinsicTypes = {ResultType, Ops[1]->getType(), Ops.back()->getType()};
   break;
 case RISCV::BI__builtin_rvv_vfcvt_x_f_v_i16m1:
@@ -3237,23 +3237,23 @@ case RISCV::BI__builtin_rvv_vfcvt_x_f_v_i64m8:
   ID = Intrinsic::riscv_vfcvt_x_f_v;
   IntrinsicTypes = {ResultType, Ops[0]->getType(), Ops.back()->getType()};
   break;
-case RISCV::BI__builtin_rvv_vfcvt_x_f_v_i16m1_m:
-case RISCV::BI__builtin_rvv_vfcvt_x_f_v_i16m2_m:
-case RISCV::BI__builtin_rvv_vfcvt_x_f_v_i16m4_m:
-case RISCV::BI__builtin_rvv_vfcvt_x_f_v_i16m8_m:
-case RISCV::BI__builtin_rvv_vfcvt_x_f_v_i16mf2_m:
-case RISCV::BI__builtin_rvv_vfcvt_x_f_v_i16mf4_m:
-case RISCV::BI__builtin_rvv_vfcvt_x_f_v_i32m1_m:
-case RISCV::BI__builtin_rvv_vfcvt_x_f_v_i32m2_m:
-case RISCV::BI__builtin_rvv_vfcvt_x_f_v_i32m4_m:
-case RISCV::BI__builtin_rvv_vfcvt_x_f_v_i32m8_m:
-case RISCV::BI__builtin_rvv_vfcvt_x_f_v_i32mf2_m:
-case RISCV::BI__builtin_rvv_vfcvt_x_f_v_i64m1_m:
-case RISCV::BI__builtin_rvv_vfcvt_x_f_v_i64m2_m:
-case RISCV::BI__builtin_rvv_vfcvt_x_f_v_i64m4_m:
-case RISCV::BI__builtin_rvv_vfcvt_x_f_v_i64m8_m:
+case RISCV::BI__builtin_rvv_vfcvt_x_f_v_i16m1_mt:
+case RISCV::BI__builtin_rvv_vfcvt_x_f_v_i16m2_mt:
+case RISCV::BI__builtin_rvv_vfcvt_x_f_v_i16m4_mt:
+case RISCV::BI__builtin_rvv_vfcvt_x_f_v_i16m8_mt:
+case RISCV::BI__builtin_rvv_vfcvt_x_f_v_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vfcvt_x_f_v_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vfcvt_x_f_v_i32m1_mt:
+case RISCV::BI__builtin_rvv_vfcvt_x_f_v_i32m2_mt:
+case RISCV::BI__builtin_rvv_vfcvt_x_f_v_i32m4_mt:
+case RISCV::BI__builtin_rvv_vfcvt_x_f_v_i32m8_mt:
+case RISCV::BI__builtin_rvv_vfcvt_x_f_v_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vfcvt_x_f_v_i64m1_mt:
+case RISCV::BI__builtin_rvv_vfcvt_x_f_v_i64m2_mt:
+case RISCV::BI__builtin_rvv_vfcvt_x_f_v_i64m4_mt:
+case RISCV::BI__builtin_rvv_vfcvt_x_f_v_i64m8_mt:
   ID = Intrinsic::riscv_vfcvt_x_f_v_mask;
-  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 1);
+  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 2);
   IntrinsicTypes = {ResultType, Ops[1]->getType(), Ops.back()->getType()};
   break;
 case RISCV::BI__builtin_rvv_vfcvt_xu_f_v_u16m1:
@@ -3274,23 +3274,23 @@ case RISCV::BI__builtin_rvv_vfcvt_xu_f_v_u64m8:
   ID = Intrinsic::riscv_vfcvt_xu_f_v;
   IntrinsicTypes = {ResultType, Ops[0]->getType(), Ops.back()->getType()};
   break;
-case RISCV::BI__builtin_rvv_vfcvt_xu_f_v_u16m1_m:
-case RISCV::BI__builtin_rvv_vfcvt_xu_f_v_u16m2_m:
-case RISCV::BI__builtin_rvv_vfcvt_xu_f_v_u16m4_m:
-case RISCV::BI__builtin_rvv_vfcvt_xu_f_v_u16m8_m:
-case RISCV::BI__builtin_rvv_vfcvt_xu_f_v_u16mf2_m:
-case RISCV::BI__builtin_rvv_vfcvt_xu_f_v_u16mf4_m:
-case RISCV::BI__builtin_rvv_vfcvt_xu_f_v_u32m1_m:
-case RISCV::BI__builtin_rvv_vfcvt_xu_f_v_u32m2_m:
-case RISCV::BI__builtin_rvv_vfcvt_xu_f_v_u32m4_m:
-case RISCV::BI__builtin_rvv_vfcvt_xu_f_v_u32m8_m:
-case RISCV::BI__builtin_rvv_vfcvt_xu_f_v_u32mf2_m:
-case RISCV::BI__builtin_rvv_vfcvt_xu_f_v_u64m1_m:
-case RISCV::BI__builtin_rvv_vfcvt_xu_f_v_u64m2_m:
-case RISCV::BI__builtin_rvv_vfcvt_xu_f_v_u64m4_m:
-case RISCV::BI__builtin_rvv_vfcvt_xu_f_v_u64m8_m:
+case RISCV::BI__builtin_rvv_vfcvt_xu_f_v_u16m1_mt:
+case RISCV::BI__builtin_rvv_vfcvt_xu_f_v_u16m2_mt:
+case RISCV::BI__builtin_rvv_vfcvt_xu_f_v_u16m4_mt:
+case RISCV::BI__builtin_rvv_vfcvt_xu_f_v_u16m8_mt:
+case RISCV::BI__builtin_rvv_vfcvt_xu_f_v_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vfcvt_xu_f_v_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vfcvt_xu_f_v_u32m1_mt:
+case RISCV::BI__builtin_rvv_vfcvt_xu_f_v_u32m2_mt:
+case RISCV::BI__builtin_rvv_vfcvt_xu_f_v_u32m4_mt:
+case RISCV::BI__builtin_rvv_vfcvt_xu_f_v_u32m8_mt:
+case RISCV::BI__builtin_rvv_vfcvt_xu_f_v_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vfcvt_xu_f_v_u64m1_mt:
+case RISCV::BI__builtin_rvv_vfcvt_xu_f_v_u64m2_mt:
+case RISCV::BI__builtin_rvv_vfcvt_xu_f_v_u64m4_mt:
+case RISCV::BI__builtin_rvv_vfcvt_xu_f_v_u64m8_mt:
   ID = Intrinsic::riscv_vfcvt_xu_f_v_mask;
-  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 1);
+  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 2);
   IntrinsicTypes = {ResultType, Ops[1]->getType(), Ops.back()->getType()};
   break;
 case RISCV::BI__builtin_rvv_vfdiv_vv_f16m1:
@@ -3326,38 +3326,38 @@ case RISCV::BI__builtin_rvv_vfdiv_vf_f64m8:
   ID = Intrinsic::riscv_vfdiv;
   IntrinsicTypes = {ResultType, Ops[1]->getType(), Ops.back()->getType()};
   break;
-case RISCV::BI__builtin_rvv_vfdiv_vv_f16m1_m:
-case RISCV::BI__builtin_rvv_vfdiv_vv_f16m2_m:
-case RISCV::BI__builtin_rvv_vfdiv_vv_f16m4_m:
-case RISCV::BI__builtin_rvv_vfdiv_vv_f16m8_m:
-case RISCV::BI__builtin_rvv_vfdiv_vv_f16mf2_m:
-case RISCV::BI__builtin_rvv_vfdiv_vv_f16mf4_m:
-case RISCV::BI__builtin_rvv_vfdiv_vv_f32m1_m:
-case RISCV::BI__builtin_rvv_vfdiv_vv_f32m2_m:
-case RISCV::BI__builtin_rvv_vfdiv_vv_f32m4_m:
-case RISCV::BI__builtin_rvv_vfdiv_vv_f32m8_m:
-case RISCV::BI__builtin_rvv_vfdiv_vv_f32mf2_m:
-case RISCV::BI__builtin_rvv_vfdiv_vv_f64m1_m:
-case RISCV::BI__builtin_rvv_vfdiv_vv_f64m2_m:
-case RISCV::BI__builtin_rvv_vfdiv_vv_f64m4_m:
-case RISCV::BI__builtin_rvv_vfdiv_vv_f64m8_m:
-case RISCV::BI__builtin_rvv_vfdiv_vf_f16m1_m:
-case RISCV::BI__builtin_rvv_vfdiv_vf_f16m2_m:
-case RISCV::BI__builtin_rvv_vfdiv_vf_f16m4_m:
-case RISCV::BI__builtin_rvv_vfdiv_vf_f16m8_m:
-case RISCV::BI__builtin_rvv_vfdiv_vf_f16mf2_m:
-case RISCV::BI__builtin_rvv_vfdiv_vf_f16mf4_m:
-case RISCV::BI__builtin_rvv_vfdiv_vf_f32m1_m:
-case RISCV::BI__builtin_rvv_vfdiv_vf_f32m2_m:
-case RISCV::BI__builtin_rvv_vfdiv_vf_f32m4_m:
-case RISCV::BI__builtin_rvv_vfdiv_vf_f32m8_m:
-case RISCV::BI__builtin_rvv_vfdiv_vf_f32mf2_m:
-case RISCV::BI__builtin_rvv_vfdiv_vf_f64m1_m:
-case RISCV::BI__builtin_rvv_vfdiv_vf_f64m2_m:
-case RISCV::BI__builtin_rvv_vfdiv_vf_f64m4_m:
-case RISCV::BI__builtin_rvv_vfdiv_vf_f64m8_m:
+case RISCV::BI__builtin_rvv_vfdiv_vv_f16m1_mt:
+case RISCV::BI__builtin_rvv_vfdiv_vv_f16m2_mt:
+case RISCV::BI__builtin_rvv_vfdiv_vv_f16m4_mt:
+case RISCV::BI__builtin_rvv_vfdiv_vv_f16m8_mt:
+case RISCV::BI__builtin_rvv_vfdiv_vv_f16mf2_mt:
+case RISCV::BI__builtin_rvv_vfdiv_vv_f16mf4_mt:
+case RISCV::BI__builtin_rvv_vfdiv_vv_f32m1_mt:
+case RISCV::BI__builtin_rvv_vfdiv_vv_f32m2_mt:
+case RISCV::BI__builtin_rvv_vfdiv_vv_f32m4_mt:
+case RISCV::BI__builtin_rvv_vfdiv_vv_f32m8_mt:
+case RISCV::BI__builtin_rvv_vfdiv_vv_f32mf2_mt:
+case RISCV::BI__builtin_rvv_vfdiv_vv_f64m1_mt:
+case RISCV::BI__builtin_rvv_vfdiv_vv_f64m2_mt:
+case RISCV::BI__builtin_rvv_vfdiv_vv_f64m4_mt:
+case RISCV::BI__builtin_rvv_vfdiv_vv_f64m8_mt:
+case RISCV::BI__builtin_rvv_vfdiv_vf_f16m1_mt:
+case RISCV::BI__builtin_rvv_vfdiv_vf_f16m2_mt:
+case RISCV::BI__builtin_rvv_vfdiv_vf_f16m4_mt:
+case RISCV::BI__builtin_rvv_vfdiv_vf_f16m8_mt:
+case RISCV::BI__builtin_rvv_vfdiv_vf_f16mf2_mt:
+case RISCV::BI__builtin_rvv_vfdiv_vf_f16mf4_mt:
+case RISCV::BI__builtin_rvv_vfdiv_vf_f32m1_mt:
+case RISCV::BI__builtin_rvv_vfdiv_vf_f32m2_mt:
+case RISCV::BI__builtin_rvv_vfdiv_vf_f32m4_mt:
+case RISCV::BI__builtin_rvv_vfdiv_vf_f32m8_mt:
+case RISCV::BI__builtin_rvv_vfdiv_vf_f32mf2_mt:
+case RISCV::BI__builtin_rvv_vfdiv_vf_f64m1_mt:
+case RISCV::BI__builtin_rvv_vfdiv_vf_f64m2_mt:
+case RISCV::BI__builtin_rvv_vfdiv_vf_f64m4_mt:
+case RISCV::BI__builtin_rvv_vfdiv_vf_f64m8_mt:
   ID = Intrinsic::riscv_vfdiv_mask;
-  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 1);
+  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 2);
   IntrinsicTypes = {ResultType, Ops[2]->getType(), Ops.back()->getType()};
   break;
 case RISCV::BI__builtin_rvv_vfirst_m_b8:
@@ -3548,38 +3548,38 @@ case RISCV::BI__builtin_rvv_vfmax_vf_f64m8:
   ID = Intrinsic::riscv_vfmax;
   IntrinsicTypes = {ResultType, Ops[1]->getType(), Ops.back()->getType()};
   break;
-case RISCV::BI__builtin_rvv_vfmax_vv_f16m1_m:
-case RISCV::BI__builtin_rvv_vfmax_vv_f16m2_m:
-case RISCV::BI__builtin_rvv_vfmax_vv_f16m4_m:
-case RISCV::BI__builtin_rvv_vfmax_vv_f16m8_m:
-case RISCV::BI__builtin_rvv_vfmax_vv_f16mf2_m:
-case RISCV::BI__builtin_rvv_vfmax_vv_f16mf4_m:
-case RISCV::BI__builtin_rvv_vfmax_vv_f32m1_m:
-case RISCV::BI__builtin_rvv_vfmax_vv_f32m2_m:
-case RISCV::BI__builtin_rvv_vfmax_vv_f32m4_m:
-case RISCV::BI__builtin_rvv_vfmax_vv_f32m8_m:
-case RISCV::BI__builtin_rvv_vfmax_vv_f32mf2_m:
-case RISCV::BI__builtin_rvv_vfmax_vv_f64m1_m:
-case RISCV::BI__builtin_rvv_vfmax_vv_f64m2_m:
-case RISCV::BI__builtin_rvv_vfmax_vv_f64m4_m:
-case RISCV::BI__builtin_rvv_vfmax_vv_f64m8_m:
-case RISCV::BI__builtin_rvv_vfmax_vf_f16m1_m:
-case RISCV::BI__builtin_rvv_vfmax_vf_f16m2_m:
-case RISCV::BI__builtin_rvv_vfmax_vf_f16m4_m:
-case RISCV::BI__builtin_rvv_vfmax_vf_f16m8_m:
-case RISCV::BI__builtin_rvv_vfmax_vf_f16mf2_m:
-case RISCV::BI__builtin_rvv_vfmax_vf_f16mf4_m:
-case RISCV::BI__builtin_rvv_vfmax_vf_f32m1_m:
-case RISCV::BI__builtin_rvv_vfmax_vf_f32m2_m:
-case RISCV::BI__builtin_rvv_vfmax_vf_f32m4_m:
-case RISCV::BI__builtin_rvv_vfmax_vf_f32m8_m:
-case RISCV::BI__builtin_rvv_vfmax_vf_f32mf2_m:
-case RISCV::BI__builtin_rvv_vfmax_vf_f64m1_m:
-case RISCV::BI__builtin_rvv_vfmax_vf_f64m2_m:
-case RISCV::BI__builtin_rvv_vfmax_vf_f64m4_m:
-case RISCV::BI__builtin_rvv_vfmax_vf_f64m8_m:
+case RISCV::BI__builtin_rvv_vfmax_vv_f16m1_mt:
+case RISCV::BI__builtin_rvv_vfmax_vv_f16m2_mt:
+case RISCV::BI__builtin_rvv_vfmax_vv_f16m4_mt:
+case RISCV::BI__builtin_rvv_vfmax_vv_f16m8_mt:
+case RISCV::BI__builtin_rvv_vfmax_vv_f16mf2_mt:
+case RISCV::BI__builtin_rvv_vfmax_vv_f16mf4_mt:
+case RISCV::BI__builtin_rvv_vfmax_vv_f32m1_mt:
+case RISCV::BI__builtin_rvv_vfmax_vv_f32m2_mt:
+case RISCV::BI__builtin_rvv_vfmax_vv_f32m4_mt:
+case RISCV::BI__builtin_rvv_vfmax_vv_f32m8_mt:
+case RISCV::BI__builtin_rvv_vfmax_vv_f32mf2_mt:
+case RISCV::BI__builtin_rvv_vfmax_vv_f64m1_mt:
+case RISCV::BI__builtin_rvv_vfmax_vv_f64m2_mt:
+case RISCV::BI__builtin_rvv_vfmax_vv_f64m4_mt:
+case RISCV::BI__builtin_rvv_vfmax_vv_f64m8_mt:
+case RISCV::BI__builtin_rvv_vfmax_vf_f16m1_mt:
+case RISCV::BI__builtin_rvv_vfmax_vf_f16m2_mt:
+case RISCV::BI__builtin_rvv_vfmax_vf_f16m4_mt:
+case RISCV::BI__builtin_rvv_vfmax_vf_f16m8_mt:
+case RISCV::BI__builtin_rvv_vfmax_vf_f16mf2_mt:
+case RISCV::BI__builtin_rvv_vfmax_vf_f16mf4_mt:
+case RISCV::BI__builtin_rvv_vfmax_vf_f32m1_mt:
+case RISCV::BI__builtin_rvv_vfmax_vf_f32m2_mt:
+case RISCV::BI__builtin_rvv_vfmax_vf_f32m4_mt:
+case RISCV::BI__builtin_rvv_vfmax_vf_f32m8_mt:
+case RISCV::BI__builtin_rvv_vfmax_vf_f32mf2_mt:
+case RISCV::BI__builtin_rvv_vfmax_vf_f64m1_mt:
+case RISCV::BI__builtin_rvv_vfmax_vf_f64m2_mt:
+case RISCV::BI__builtin_rvv_vfmax_vf_f64m4_mt:
+case RISCV::BI__builtin_rvv_vfmax_vf_f64m8_mt:
   ID = Intrinsic::riscv_vfmax_mask;
-  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 1);
+  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 2);
   IntrinsicTypes = {ResultType, Ops[2]->getType(), Ops.back()->getType()};
   break;
 case RISCV::BI__builtin_rvv_vmerge_vvm_f16m1:
@@ -3650,38 +3650,38 @@ case RISCV::BI__builtin_rvv_vfmin_vf_f64m8:
   ID = Intrinsic::riscv_vfmin;
   IntrinsicTypes = {ResultType, Ops[1]->getType(), Ops.back()->getType()};
   break;
-case RISCV::BI__builtin_rvv_vfmin_vv_f16m1_m:
-case RISCV::BI__builtin_rvv_vfmin_vv_f16m2_m:
-case RISCV::BI__builtin_rvv_vfmin_vv_f16m4_m:
-case RISCV::BI__builtin_rvv_vfmin_vv_f16m8_m:
-case RISCV::BI__builtin_rvv_vfmin_vv_f16mf2_m:
-case RISCV::BI__builtin_rvv_vfmin_vv_f16mf4_m:
-case RISCV::BI__builtin_rvv_vfmin_vv_f32m1_m:
-case RISCV::BI__builtin_rvv_vfmin_vv_f32m2_m:
-case RISCV::BI__builtin_rvv_vfmin_vv_f32m4_m:
-case RISCV::BI__builtin_rvv_vfmin_vv_f32m8_m:
-case RISCV::BI__builtin_rvv_vfmin_vv_f32mf2_m:
-case RISCV::BI__builtin_rvv_vfmin_vv_f64m1_m:
-case RISCV::BI__builtin_rvv_vfmin_vv_f64m2_m:
-case RISCV::BI__builtin_rvv_vfmin_vv_f64m4_m:
-case RISCV::BI__builtin_rvv_vfmin_vv_f64m8_m:
-case RISCV::BI__builtin_rvv_vfmin_vf_f16m1_m:
-case RISCV::BI__builtin_rvv_vfmin_vf_f16m2_m:
-case RISCV::BI__builtin_rvv_vfmin_vf_f16m4_m:
-case RISCV::BI__builtin_rvv_vfmin_vf_f16m8_m:
-case RISCV::BI__builtin_rvv_vfmin_vf_f16mf2_m:
-case RISCV::BI__builtin_rvv_vfmin_vf_f16mf4_m:
-case RISCV::BI__builtin_rvv_vfmin_vf_f32m1_m:
-case RISCV::BI__builtin_rvv_vfmin_vf_f32m2_m:
-case RISCV::BI__builtin_rvv_vfmin_vf_f32m4_m:
-case RISCV::BI__builtin_rvv_vfmin_vf_f32m8_m:
-case RISCV::BI__builtin_rvv_vfmin_vf_f32mf2_m:
-case RISCV::BI__builtin_rvv_vfmin_vf_f64m1_m:
-case RISCV::BI__builtin_rvv_vfmin_vf_f64m2_m:
-case RISCV::BI__builtin_rvv_vfmin_vf_f64m4_m:
-case RISCV::BI__builtin_rvv_vfmin_vf_f64m8_m:
+case RISCV::BI__builtin_rvv_vfmin_vv_f16m1_mt:
+case RISCV::BI__builtin_rvv_vfmin_vv_f16m2_mt:
+case RISCV::BI__builtin_rvv_vfmin_vv_f16m4_mt:
+case RISCV::BI__builtin_rvv_vfmin_vv_f16m8_mt:
+case RISCV::BI__builtin_rvv_vfmin_vv_f16mf2_mt:
+case RISCV::BI__builtin_rvv_vfmin_vv_f16mf4_mt:
+case RISCV::BI__builtin_rvv_vfmin_vv_f32m1_mt:
+case RISCV::BI__builtin_rvv_vfmin_vv_f32m2_mt:
+case RISCV::BI__builtin_rvv_vfmin_vv_f32m4_mt:
+case RISCV::BI__builtin_rvv_vfmin_vv_f32m8_mt:
+case RISCV::BI__builtin_rvv_vfmin_vv_f32mf2_mt:
+case RISCV::BI__builtin_rvv_vfmin_vv_f64m1_mt:
+case RISCV::BI__builtin_rvv_vfmin_vv_f64m2_mt:
+case RISCV::BI__builtin_rvv_vfmin_vv_f64m4_mt:
+case RISCV::BI__builtin_rvv_vfmin_vv_f64m8_mt:
+case RISCV::BI__builtin_rvv_vfmin_vf_f16m1_mt:
+case RISCV::BI__builtin_rvv_vfmin_vf_f16m2_mt:
+case RISCV::BI__builtin_rvv_vfmin_vf_f16m4_mt:
+case RISCV::BI__builtin_rvv_vfmin_vf_f16m8_mt:
+case RISCV::BI__builtin_rvv_vfmin_vf_f16mf2_mt:
+case RISCV::BI__builtin_rvv_vfmin_vf_f16mf4_mt:
+case RISCV::BI__builtin_rvv_vfmin_vf_f32m1_mt:
+case RISCV::BI__builtin_rvv_vfmin_vf_f32m2_mt:
+case RISCV::BI__builtin_rvv_vfmin_vf_f32m4_mt:
+case RISCV::BI__builtin_rvv_vfmin_vf_f32m8_mt:
+case RISCV::BI__builtin_rvv_vfmin_vf_f32mf2_mt:
+case RISCV::BI__builtin_rvv_vfmin_vf_f64m1_mt:
+case RISCV::BI__builtin_rvv_vfmin_vf_f64m2_mt:
+case RISCV::BI__builtin_rvv_vfmin_vf_f64m4_mt:
+case RISCV::BI__builtin_rvv_vfmin_vf_f64m8_mt:
   ID = Intrinsic::riscv_vfmin_mask;
-  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 1);
+  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 2);
   IntrinsicTypes = {ResultType, Ops[2]->getType(), Ops.back()->getType()};
   break;
 case RISCV::BI__builtin_rvv_vfmsac_vv_f16m1:
@@ -3851,38 +3851,38 @@ case RISCV::BI__builtin_rvv_vfmul_vf_f64m8:
   ID = Intrinsic::riscv_vfmul;
   IntrinsicTypes = {ResultType, Ops[1]->getType(), Ops.back()->getType()};
   break;
-case RISCV::BI__builtin_rvv_vfmul_vv_f16m1_m:
-case RISCV::BI__builtin_rvv_vfmul_vv_f16m2_m:
-case RISCV::BI__builtin_rvv_vfmul_vv_f16m4_m:
-case RISCV::BI__builtin_rvv_vfmul_vv_f16m8_m:
-case RISCV::BI__builtin_rvv_vfmul_vv_f16mf2_m:
-case RISCV::BI__builtin_rvv_vfmul_vv_f16mf4_m:
-case RISCV::BI__builtin_rvv_vfmul_vv_f32m1_m:
-case RISCV::BI__builtin_rvv_vfmul_vv_f32m2_m:
-case RISCV::BI__builtin_rvv_vfmul_vv_f32m4_m:
-case RISCV::BI__builtin_rvv_vfmul_vv_f32m8_m:
-case RISCV::BI__builtin_rvv_vfmul_vv_f32mf2_m:
-case RISCV::BI__builtin_rvv_vfmul_vv_f64m1_m:
-case RISCV::BI__builtin_rvv_vfmul_vv_f64m2_m:
-case RISCV::BI__builtin_rvv_vfmul_vv_f64m4_m:
-case RISCV::BI__builtin_rvv_vfmul_vv_f64m8_m:
-case RISCV::BI__builtin_rvv_vfmul_vf_f16m1_m:
-case RISCV::BI__builtin_rvv_vfmul_vf_f16m2_m:
-case RISCV::BI__builtin_rvv_vfmul_vf_f16m4_m:
-case RISCV::BI__builtin_rvv_vfmul_vf_f16m8_m:
-case RISCV::BI__builtin_rvv_vfmul_vf_f16mf2_m:
-case RISCV::BI__builtin_rvv_vfmul_vf_f16mf4_m:
-case RISCV::BI__builtin_rvv_vfmul_vf_f32m1_m:
-case RISCV::BI__builtin_rvv_vfmul_vf_f32m2_m:
-case RISCV::BI__builtin_rvv_vfmul_vf_f32m4_m:
-case RISCV::BI__builtin_rvv_vfmul_vf_f32m8_m:
-case RISCV::BI__builtin_rvv_vfmul_vf_f32mf2_m:
-case RISCV::BI__builtin_rvv_vfmul_vf_f64m1_m:
-case RISCV::BI__builtin_rvv_vfmul_vf_f64m2_m:
-case RISCV::BI__builtin_rvv_vfmul_vf_f64m4_m:
-case RISCV::BI__builtin_rvv_vfmul_vf_f64m8_m:
+case RISCV::BI__builtin_rvv_vfmul_vv_f16m1_mt:
+case RISCV::BI__builtin_rvv_vfmul_vv_f16m2_mt:
+case RISCV::BI__builtin_rvv_vfmul_vv_f16m4_mt:
+case RISCV::BI__builtin_rvv_vfmul_vv_f16m8_mt:
+case RISCV::BI__builtin_rvv_vfmul_vv_f16mf2_mt:
+case RISCV::BI__builtin_rvv_vfmul_vv_f16mf4_mt:
+case RISCV::BI__builtin_rvv_vfmul_vv_f32m1_mt:
+case RISCV::BI__builtin_rvv_vfmul_vv_f32m2_mt:
+case RISCV::BI__builtin_rvv_vfmul_vv_f32m4_mt:
+case RISCV::BI__builtin_rvv_vfmul_vv_f32m8_mt:
+case RISCV::BI__builtin_rvv_vfmul_vv_f32mf2_mt:
+case RISCV::BI__builtin_rvv_vfmul_vv_f64m1_mt:
+case RISCV::BI__builtin_rvv_vfmul_vv_f64m2_mt:
+case RISCV::BI__builtin_rvv_vfmul_vv_f64m4_mt:
+case RISCV::BI__builtin_rvv_vfmul_vv_f64m8_mt:
+case RISCV::BI__builtin_rvv_vfmul_vf_f16m1_mt:
+case RISCV::BI__builtin_rvv_vfmul_vf_f16m2_mt:
+case RISCV::BI__builtin_rvv_vfmul_vf_f16m4_mt:
+case RISCV::BI__builtin_rvv_vfmul_vf_f16m8_mt:
+case RISCV::BI__builtin_rvv_vfmul_vf_f16mf2_mt:
+case RISCV::BI__builtin_rvv_vfmul_vf_f16mf4_mt:
+case RISCV::BI__builtin_rvv_vfmul_vf_f32m1_mt:
+case RISCV::BI__builtin_rvv_vfmul_vf_f32m2_mt:
+case RISCV::BI__builtin_rvv_vfmul_vf_f32m4_mt:
+case RISCV::BI__builtin_rvv_vfmul_vf_f32m8_mt:
+case RISCV::BI__builtin_rvv_vfmul_vf_f32mf2_mt:
+case RISCV::BI__builtin_rvv_vfmul_vf_f64m1_mt:
+case RISCV::BI__builtin_rvv_vfmul_vf_f64m2_mt:
+case RISCV::BI__builtin_rvv_vfmul_vf_f64m4_mt:
+case RISCV::BI__builtin_rvv_vfmul_vf_f64m8_mt:
   ID = Intrinsic::riscv_vfmul_mask;
-  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 1);
+  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 2);
   IntrinsicTypes = {ResultType, Ops[2]->getType(), Ops.back()->getType()};
   break;
 case RISCV::BI__builtin_rvv_vfmv_f_s_f16m1_f16:
@@ -3966,17 +3966,17 @@ case RISCV::BI__builtin_rvv_vfncvt_f_f_w_f32m4:
   ID = Intrinsic::riscv_vfncvt_f_f_w;
   IntrinsicTypes = {ResultType, Ops[0]->getType(), Ops.back()->getType()};
   break;
-case RISCV::BI__builtin_rvv_vfncvt_f_f_w_f16mf4_m:
-case RISCV::BI__builtin_rvv_vfncvt_f_f_w_f16mf2_m:
-case RISCV::BI__builtin_rvv_vfncvt_f_f_w_f16m1_m:
-case RISCV::BI__builtin_rvv_vfncvt_f_f_w_f16m2_m:
-case RISCV::BI__builtin_rvv_vfncvt_f_f_w_f16m4_m:
-case RISCV::BI__builtin_rvv_vfncvt_f_f_w_f32mf2_m:
-case RISCV::BI__builtin_rvv_vfncvt_f_f_w_f32m1_m:
-case RISCV::BI__builtin_rvv_vfncvt_f_f_w_f32m2_m:
-case RISCV::BI__builtin_rvv_vfncvt_f_f_w_f32m4_m:
+case RISCV::BI__builtin_rvv_vfncvt_f_f_w_f16mf4_mt:
+case RISCV::BI__builtin_rvv_vfncvt_f_f_w_f16mf2_mt:
+case RISCV::BI__builtin_rvv_vfncvt_f_f_w_f16m1_mt:
+case RISCV::BI__builtin_rvv_vfncvt_f_f_w_f16m2_mt:
+case RISCV::BI__builtin_rvv_vfncvt_f_f_w_f16m4_mt:
+case RISCV::BI__builtin_rvv_vfncvt_f_f_w_f32mf2_mt:
+case RISCV::BI__builtin_rvv_vfncvt_f_f_w_f32m1_mt:
+case RISCV::BI__builtin_rvv_vfncvt_f_f_w_f32m2_mt:
+case RISCV::BI__builtin_rvv_vfncvt_f_f_w_f32m4_mt:
   ID = Intrinsic::riscv_vfncvt_f_f_w_mask;
-  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 1);
+  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 2);
   IntrinsicTypes = {ResultType, Ops[1]->getType(), Ops.back()->getType()};
   break;
 case RISCV::BI__builtin_rvv_vfncvt_f_x_w_f16mf4:
@@ -3991,17 +3991,17 @@ case RISCV::BI__builtin_rvv_vfncvt_f_x_w_f32m4:
   ID = Intrinsic::riscv_vfncvt_f_x_w;
   IntrinsicTypes = {ResultType, Ops[0]->getType(), Ops.back()->getType()};
   break;
-case RISCV::BI__builtin_rvv_vfncvt_f_x_w_f16mf4_m:
-case RISCV::BI__builtin_rvv_vfncvt_f_x_w_f16mf2_m:
-case RISCV::BI__builtin_rvv_vfncvt_f_x_w_f16m1_m:
-case RISCV::BI__builtin_rvv_vfncvt_f_x_w_f16m2_m:
-case RISCV::BI__builtin_rvv_vfncvt_f_x_w_f16m4_m:
-case RISCV::BI__builtin_rvv_vfncvt_f_x_w_f32mf2_m:
-case RISCV::BI__builtin_rvv_vfncvt_f_x_w_f32m1_m:
-case RISCV::BI__builtin_rvv_vfncvt_f_x_w_f32m2_m:
-case RISCV::BI__builtin_rvv_vfncvt_f_x_w_f32m4_m:
+case RISCV::BI__builtin_rvv_vfncvt_f_x_w_f16mf4_mt:
+case RISCV::BI__builtin_rvv_vfncvt_f_x_w_f16mf2_mt:
+case RISCV::BI__builtin_rvv_vfncvt_f_x_w_f16m1_mt:
+case RISCV::BI__builtin_rvv_vfncvt_f_x_w_f16m2_mt:
+case RISCV::BI__builtin_rvv_vfncvt_f_x_w_f16m4_mt:
+case RISCV::BI__builtin_rvv_vfncvt_f_x_w_f32mf2_mt:
+case RISCV::BI__builtin_rvv_vfncvt_f_x_w_f32m1_mt:
+case RISCV::BI__builtin_rvv_vfncvt_f_x_w_f32m2_mt:
+case RISCV::BI__builtin_rvv_vfncvt_f_x_w_f32m4_mt:
   ID = Intrinsic::riscv_vfncvt_f_x_w_mask;
-  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 1);
+  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 2);
   IntrinsicTypes = {ResultType, Ops[1]->getType(), Ops.back()->getType()};
   break;
 case RISCV::BI__builtin_rvv_vfncvt_f_xu_w_f16mf4:
@@ -4016,17 +4016,17 @@ case RISCV::BI__builtin_rvv_vfncvt_f_xu_w_f32m4:
   ID = Intrinsic::riscv_vfncvt_f_xu_w;
   IntrinsicTypes = {ResultType, Ops[0]->getType(), Ops.back()->getType()};
   break;
-case RISCV::BI__builtin_rvv_vfncvt_f_xu_w_f16mf4_m:
-case RISCV::BI__builtin_rvv_vfncvt_f_xu_w_f16mf2_m:
-case RISCV::BI__builtin_rvv_vfncvt_f_xu_w_f16m1_m:
-case RISCV::BI__builtin_rvv_vfncvt_f_xu_w_f16m2_m:
-case RISCV::BI__builtin_rvv_vfncvt_f_xu_w_f16m4_m:
-case RISCV::BI__builtin_rvv_vfncvt_f_xu_w_f32mf2_m:
-case RISCV::BI__builtin_rvv_vfncvt_f_xu_w_f32m1_m:
-case RISCV::BI__builtin_rvv_vfncvt_f_xu_w_f32m2_m:
-case RISCV::BI__builtin_rvv_vfncvt_f_xu_w_f32m4_m:
+case RISCV::BI__builtin_rvv_vfncvt_f_xu_w_f16mf4_mt:
+case RISCV::BI__builtin_rvv_vfncvt_f_xu_w_f16mf2_mt:
+case RISCV::BI__builtin_rvv_vfncvt_f_xu_w_f16m1_mt:
+case RISCV::BI__builtin_rvv_vfncvt_f_xu_w_f16m2_mt:
+case RISCV::BI__builtin_rvv_vfncvt_f_xu_w_f16m4_mt:
+case RISCV::BI__builtin_rvv_vfncvt_f_xu_w_f32mf2_mt:
+case RISCV::BI__builtin_rvv_vfncvt_f_xu_w_f32m1_mt:
+case RISCV::BI__builtin_rvv_vfncvt_f_xu_w_f32m2_mt:
+case RISCV::BI__builtin_rvv_vfncvt_f_xu_w_f32m4_mt:
   ID = Intrinsic::riscv_vfncvt_f_xu_w_mask;
-  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 1);
+  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 2);
   IntrinsicTypes = {ResultType, Ops[1]->getType(), Ops.back()->getType()};
   break;
 case RISCV::BI__builtin_rvv_vfncvt_rod_f_f_w_f16mf4:
@@ -4041,17 +4041,17 @@ case RISCV::BI__builtin_rvv_vfncvt_rod_f_f_w_f32m4:
   ID = Intrinsic::riscv_vfncvt_rod_f_f_w;
   IntrinsicTypes = {ResultType, Ops[0]->getType(), Ops.back()->getType()};
   break;
-case RISCV::BI__builtin_rvv_vfncvt_rod_f_f_w_f16mf4_m:
-case RISCV::BI__builtin_rvv_vfncvt_rod_f_f_w_f16mf2_m:
-case RISCV::BI__builtin_rvv_vfncvt_rod_f_f_w_f16m1_m:
-case RISCV::BI__builtin_rvv_vfncvt_rod_f_f_w_f16m2_m:
-case RISCV::BI__builtin_rvv_vfncvt_rod_f_f_w_f16m4_m:
-case RISCV::BI__builtin_rvv_vfncvt_rod_f_f_w_f32mf2_m:
-case RISCV::BI__builtin_rvv_vfncvt_rod_f_f_w_f32m1_m:
-case RISCV::BI__builtin_rvv_vfncvt_rod_f_f_w_f32m2_m:
-case RISCV::BI__builtin_rvv_vfncvt_rod_f_f_w_f32m4_m:
+case RISCV::BI__builtin_rvv_vfncvt_rod_f_f_w_f16mf4_mt:
+case RISCV::BI__builtin_rvv_vfncvt_rod_f_f_w_f16mf2_mt:
+case RISCV::BI__builtin_rvv_vfncvt_rod_f_f_w_f16m1_mt:
+case RISCV::BI__builtin_rvv_vfncvt_rod_f_f_w_f16m2_mt:
+case RISCV::BI__builtin_rvv_vfncvt_rod_f_f_w_f16m4_mt:
+case RISCV::BI__builtin_rvv_vfncvt_rod_f_f_w_f32mf2_mt:
+case RISCV::BI__builtin_rvv_vfncvt_rod_f_f_w_f32m1_mt:
+case RISCV::BI__builtin_rvv_vfncvt_rod_f_f_w_f32m2_mt:
+case RISCV::BI__builtin_rvv_vfncvt_rod_f_f_w_f32m4_mt:
   ID = Intrinsic::riscv_vfncvt_rod_f_f_w_mask;
-  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 1);
+  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 2);
   IntrinsicTypes = {ResultType, Ops[1]->getType(), Ops.back()->getType()};
   break;
 case RISCV::BI__builtin_rvv_vfncvt_rtz_x_f_w_i8mf8:
@@ -4072,23 +4072,23 @@ case RISCV::BI__builtin_rvv_vfncvt_rtz_x_f_w_i32m4:
   ID = Intrinsic::riscv_vfncvt_rtz_x_f_w;
   IntrinsicTypes = {ResultType, Ops[0]->getType(), Ops.back()->getType()};
   break;
-case RISCV::BI__builtin_rvv_vfncvt_rtz_x_f_w_i8mf8_m:
-case RISCV::BI__builtin_rvv_vfncvt_rtz_x_f_w_i8mf4_m:
-case RISCV::BI__builtin_rvv_vfncvt_rtz_x_f_w_i8mf2_m:
-case RISCV::BI__builtin_rvv_vfncvt_rtz_x_f_w_i8m1_m:
-case RISCV::BI__builtin_rvv_vfncvt_rtz_x_f_w_i8m2_m:
-case RISCV::BI__builtin_rvv_vfncvt_rtz_x_f_w_i8m4_m:
-case RISCV::BI__builtin_rvv_vfncvt_rtz_x_f_w_i16mf4_m:
-case RISCV::BI__builtin_rvv_vfncvt_rtz_x_f_w_i16mf2_m:
-case RISCV::BI__builtin_rvv_vfncvt_rtz_x_f_w_i16m1_m:
-case RISCV::BI__builtin_rvv_vfncvt_rtz_x_f_w_i16m2_m:
-case RISCV::BI__builtin_rvv_vfncvt_rtz_x_f_w_i16m4_m:
-case RISCV::BI__builtin_rvv_vfncvt_rtz_x_f_w_i32mf2_m:
-case RISCV::BI__builtin_rvv_vfncvt_rtz_x_f_w_i32m1_m:
-case RISCV::BI__builtin_rvv_vfncvt_rtz_x_f_w_i32m2_m:
-case RISCV::BI__builtin_rvv_vfncvt_rtz_x_f_w_i32m4_m:
+case RISCV::BI__builtin_rvv_vfncvt_rtz_x_f_w_i8mf8_mt:
+case RISCV::BI__builtin_rvv_vfncvt_rtz_x_f_w_i8mf4_mt:
+case RISCV::BI__builtin_rvv_vfncvt_rtz_x_f_w_i8mf2_mt:
+case RISCV::BI__builtin_rvv_vfncvt_rtz_x_f_w_i8m1_mt:
+case RISCV::BI__builtin_rvv_vfncvt_rtz_x_f_w_i8m2_mt:
+case RISCV::BI__builtin_rvv_vfncvt_rtz_x_f_w_i8m4_mt:
+case RISCV::BI__builtin_rvv_vfncvt_rtz_x_f_w_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vfncvt_rtz_x_f_w_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vfncvt_rtz_x_f_w_i16m1_mt:
+case RISCV::BI__builtin_rvv_vfncvt_rtz_x_f_w_i16m2_mt:
+case RISCV::BI__builtin_rvv_vfncvt_rtz_x_f_w_i16m4_mt:
+case RISCV::BI__builtin_rvv_vfncvt_rtz_x_f_w_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vfncvt_rtz_x_f_w_i32m1_mt:
+case RISCV::BI__builtin_rvv_vfncvt_rtz_x_f_w_i32m2_mt:
+case RISCV::BI__builtin_rvv_vfncvt_rtz_x_f_w_i32m4_mt:
   ID = Intrinsic::riscv_vfncvt_rtz_x_f_w_mask;
-  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 1);
+  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 2);
   IntrinsicTypes = {ResultType, Ops[1]->getType(), Ops.back()->getType()};
   break;
 case RISCV::BI__builtin_rvv_vfncvt_rtz_xu_f_w_u8mf8:
@@ -4109,23 +4109,23 @@ case RISCV::BI__builtin_rvv_vfncvt_rtz_xu_f_w_u32m4:
   ID = Intrinsic::riscv_vfncvt_rtz_xu_f_w;
   IntrinsicTypes = {ResultType, Ops[0]->getType(), Ops.back()->getType()};
   break;
-case RISCV::BI__builtin_rvv_vfncvt_rtz_xu_f_w_u8mf8_m:
-case RISCV::BI__builtin_rvv_vfncvt_rtz_xu_f_w_u8mf4_m:
-case RISCV::BI__builtin_rvv_vfncvt_rtz_xu_f_w_u8mf2_m:
-case RISCV::BI__builtin_rvv_vfncvt_rtz_xu_f_w_u8m1_m:
-case RISCV::BI__builtin_rvv_vfncvt_rtz_xu_f_w_u8m2_m:
-case RISCV::BI__builtin_rvv_vfncvt_rtz_xu_f_w_u8m4_m:
-case RISCV::BI__builtin_rvv_vfncvt_rtz_xu_f_w_u16mf4_m:
-case RISCV::BI__builtin_rvv_vfncvt_rtz_xu_f_w_u16mf2_m:
-case RISCV::BI__builtin_rvv_vfncvt_rtz_xu_f_w_u16m1_m:
-case RISCV::BI__builtin_rvv_vfncvt_rtz_xu_f_w_u16m2_m:
-case RISCV::BI__builtin_rvv_vfncvt_rtz_xu_f_w_u16m4_m:
-case RISCV::BI__builtin_rvv_vfncvt_rtz_xu_f_w_u32mf2_m:
-case RISCV::BI__builtin_rvv_vfncvt_rtz_xu_f_w_u32m1_m:
-case RISCV::BI__builtin_rvv_vfncvt_rtz_xu_f_w_u32m2_m:
-case RISCV::BI__builtin_rvv_vfncvt_rtz_xu_f_w_u32m4_m:
+case RISCV::BI__builtin_rvv_vfncvt_rtz_xu_f_w_u8mf8_mt:
+case RISCV::BI__builtin_rvv_vfncvt_rtz_xu_f_w_u8mf4_mt:
+case RISCV::BI__builtin_rvv_vfncvt_rtz_xu_f_w_u8mf2_mt:
+case RISCV::BI__builtin_rvv_vfncvt_rtz_xu_f_w_u8m1_mt:
+case RISCV::BI__builtin_rvv_vfncvt_rtz_xu_f_w_u8m2_mt:
+case RISCV::BI__builtin_rvv_vfncvt_rtz_xu_f_w_u8m4_mt:
+case RISCV::BI__builtin_rvv_vfncvt_rtz_xu_f_w_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vfncvt_rtz_xu_f_w_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vfncvt_rtz_xu_f_w_u16m1_mt:
+case RISCV::BI__builtin_rvv_vfncvt_rtz_xu_f_w_u16m2_mt:
+case RISCV::BI__builtin_rvv_vfncvt_rtz_xu_f_w_u16m4_mt:
+case RISCV::BI__builtin_rvv_vfncvt_rtz_xu_f_w_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vfncvt_rtz_xu_f_w_u32m1_mt:
+case RISCV::BI__builtin_rvv_vfncvt_rtz_xu_f_w_u32m2_mt:
+case RISCV::BI__builtin_rvv_vfncvt_rtz_xu_f_w_u32m4_mt:
   ID = Intrinsic::riscv_vfncvt_rtz_xu_f_w_mask;
-  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 1);
+  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 2);
   IntrinsicTypes = {ResultType, Ops[1]->getType(), Ops.back()->getType()};
   break;
 case RISCV::BI__builtin_rvv_vfncvt_x_f_w_i8mf8:
@@ -4146,23 +4146,23 @@ case RISCV::BI__builtin_rvv_vfncvt_x_f_w_i32m4:
   ID = Intrinsic::riscv_vfncvt_x_f_w;
   IntrinsicTypes = {ResultType, Ops[0]->getType(), Ops.back()->getType()};
   break;
-case RISCV::BI__builtin_rvv_vfncvt_x_f_w_i8mf8_m:
-case RISCV::BI__builtin_rvv_vfncvt_x_f_w_i8mf4_m:
-case RISCV::BI__builtin_rvv_vfncvt_x_f_w_i8mf2_m:
-case RISCV::BI__builtin_rvv_vfncvt_x_f_w_i8m1_m:
-case RISCV::BI__builtin_rvv_vfncvt_x_f_w_i8m2_m:
-case RISCV::BI__builtin_rvv_vfncvt_x_f_w_i8m4_m:
-case RISCV::BI__builtin_rvv_vfncvt_x_f_w_i16mf4_m:
-case RISCV::BI__builtin_rvv_vfncvt_x_f_w_i16mf2_m:
-case RISCV::BI__builtin_rvv_vfncvt_x_f_w_i16m1_m:
-case RISCV::BI__builtin_rvv_vfncvt_x_f_w_i16m2_m:
-case RISCV::BI__builtin_rvv_vfncvt_x_f_w_i16m4_m:
-case RISCV::BI__builtin_rvv_vfncvt_x_f_w_i32mf2_m:
-case RISCV::BI__builtin_rvv_vfncvt_x_f_w_i32m1_m:
-case RISCV::BI__builtin_rvv_vfncvt_x_f_w_i32m2_m:
-case RISCV::BI__builtin_rvv_vfncvt_x_f_w_i32m4_m:
+case RISCV::BI__builtin_rvv_vfncvt_x_f_w_i8mf8_mt:
+case RISCV::BI__builtin_rvv_vfncvt_x_f_w_i8mf4_mt:
+case RISCV::BI__builtin_rvv_vfncvt_x_f_w_i8mf2_mt:
+case RISCV::BI__builtin_rvv_vfncvt_x_f_w_i8m1_mt:
+case RISCV::BI__builtin_rvv_vfncvt_x_f_w_i8m2_mt:
+case RISCV::BI__builtin_rvv_vfncvt_x_f_w_i8m4_mt:
+case RISCV::BI__builtin_rvv_vfncvt_x_f_w_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vfncvt_x_f_w_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vfncvt_x_f_w_i16m1_mt:
+case RISCV::BI__builtin_rvv_vfncvt_x_f_w_i16m2_mt:
+case RISCV::BI__builtin_rvv_vfncvt_x_f_w_i16m4_mt:
+case RISCV::BI__builtin_rvv_vfncvt_x_f_w_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vfncvt_x_f_w_i32m1_mt:
+case RISCV::BI__builtin_rvv_vfncvt_x_f_w_i32m2_mt:
+case RISCV::BI__builtin_rvv_vfncvt_x_f_w_i32m4_mt:
   ID = Intrinsic::riscv_vfncvt_x_f_w_mask;
-  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 1);
+  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 2);
   IntrinsicTypes = {ResultType, Ops[1]->getType(), Ops.back()->getType()};
   break;
 case RISCV::BI__builtin_rvv_vfncvt_xu_f_w_u8mf8:
@@ -4183,23 +4183,23 @@ case RISCV::BI__builtin_rvv_vfncvt_xu_f_w_u32m4:
   ID = Intrinsic::riscv_vfncvt_xu_f_w;
   IntrinsicTypes = {ResultType, Ops[0]->getType(), Ops.back()->getType()};
   break;
-case RISCV::BI__builtin_rvv_vfncvt_xu_f_w_u8mf8_m:
-case RISCV::BI__builtin_rvv_vfncvt_xu_f_w_u8mf4_m:
-case RISCV::BI__builtin_rvv_vfncvt_xu_f_w_u8mf2_m:
-case RISCV::BI__builtin_rvv_vfncvt_xu_f_w_u8m1_m:
-case RISCV::BI__builtin_rvv_vfncvt_xu_f_w_u8m2_m:
-case RISCV::BI__builtin_rvv_vfncvt_xu_f_w_u8m4_m:
-case RISCV::BI__builtin_rvv_vfncvt_xu_f_w_u16mf4_m:
-case RISCV::BI__builtin_rvv_vfncvt_xu_f_w_u16mf2_m:
-case RISCV::BI__builtin_rvv_vfncvt_xu_f_w_u16m1_m:
-case RISCV::BI__builtin_rvv_vfncvt_xu_f_w_u16m2_m:
-case RISCV::BI__builtin_rvv_vfncvt_xu_f_w_u16m4_m:
-case RISCV::BI__builtin_rvv_vfncvt_xu_f_w_u32mf2_m:
-case RISCV::BI__builtin_rvv_vfncvt_xu_f_w_u32m1_m:
-case RISCV::BI__builtin_rvv_vfncvt_xu_f_w_u32m2_m:
-case RISCV::BI__builtin_rvv_vfncvt_xu_f_w_u32m4_m:
+case RISCV::BI__builtin_rvv_vfncvt_xu_f_w_u8mf8_mt:
+case RISCV::BI__builtin_rvv_vfncvt_xu_f_w_u8mf4_mt:
+case RISCV::BI__builtin_rvv_vfncvt_xu_f_w_u8mf2_mt:
+case RISCV::BI__builtin_rvv_vfncvt_xu_f_w_u8m1_mt:
+case RISCV::BI__builtin_rvv_vfncvt_xu_f_w_u8m2_mt:
+case RISCV::BI__builtin_rvv_vfncvt_xu_f_w_u8m4_mt:
+case RISCV::BI__builtin_rvv_vfncvt_xu_f_w_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vfncvt_xu_f_w_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vfncvt_xu_f_w_u16m1_mt:
+case RISCV::BI__builtin_rvv_vfncvt_xu_f_w_u16m2_mt:
+case RISCV::BI__builtin_rvv_vfncvt_xu_f_w_u16m4_mt:
+case RISCV::BI__builtin_rvv_vfncvt_xu_f_w_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vfncvt_xu_f_w_u32m1_mt:
+case RISCV::BI__builtin_rvv_vfncvt_xu_f_w_u32m2_mt:
+case RISCV::BI__builtin_rvv_vfncvt_xu_f_w_u32m4_mt:
   ID = Intrinsic::riscv_vfncvt_xu_f_w_mask;
-  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 1);
+  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 2);
   IntrinsicTypes = {ResultType, Ops[1]->getType(), Ops.back()->getType()};
   break;
 case RISCV::BI__builtin_rvv_vfnmacc_vv_f16m1:
@@ -4488,23 +4488,23 @@ case RISCV::BI__builtin_rvv_vfrdiv_vf_f64m8:
   ID = Intrinsic::riscv_vfrdiv;
   IntrinsicTypes = {ResultType, Ops[1]->getType(), Ops.back()->getType()};
   break;
-case RISCV::BI__builtin_rvv_vfrdiv_vf_f16m1_m:
-case RISCV::BI__builtin_rvv_vfrdiv_vf_f16m2_m:
-case RISCV::BI__builtin_rvv_vfrdiv_vf_f16m4_m:
-case RISCV::BI__builtin_rvv_vfrdiv_vf_f16m8_m:
-case RISCV::BI__builtin_rvv_vfrdiv_vf_f16mf2_m:
-case RISCV::BI__builtin_rvv_vfrdiv_vf_f16mf4_m:
-case RISCV::BI__builtin_rvv_vfrdiv_vf_f32m1_m:
-case RISCV::BI__builtin_rvv_vfrdiv_vf_f32m2_m:
-case RISCV::BI__builtin_rvv_vfrdiv_vf_f32m4_m:
-case RISCV::BI__builtin_rvv_vfrdiv_vf_f32m8_m:
-case RISCV::BI__builtin_rvv_vfrdiv_vf_f32mf2_m:
-case RISCV::BI__builtin_rvv_vfrdiv_vf_f64m1_m:
-case RISCV::BI__builtin_rvv_vfrdiv_vf_f64m2_m:
-case RISCV::BI__builtin_rvv_vfrdiv_vf_f64m4_m:
-case RISCV::BI__builtin_rvv_vfrdiv_vf_f64m8_m:
+case RISCV::BI__builtin_rvv_vfrdiv_vf_f16m1_mt:
+case RISCV::BI__builtin_rvv_vfrdiv_vf_f16m2_mt:
+case RISCV::BI__builtin_rvv_vfrdiv_vf_f16m4_mt:
+case RISCV::BI__builtin_rvv_vfrdiv_vf_f16m8_mt:
+case RISCV::BI__builtin_rvv_vfrdiv_vf_f16mf2_mt:
+case RISCV::BI__builtin_rvv_vfrdiv_vf_f16mf4_mt:
+case RISCV::BI__builtin_rvv_vfrdiv_vf_f32m1_mt:
+case RISCV::BI__builtin_rvv_vfrdiv_vf_f32m2_mt:
+case RISCV::BI__builtin_rvv_vfrdiv_vf_f32m4_mt:
+case RISCV::BI__builtin_rvv_vfrdiv_vf_f32m8_mt:
+case RISCV::BI__builtin_rvv_vfrdiv_vf_f32mf2_mt:
+case RISCV::BI__builtin_rvv_vfrdiv_vf_f64m1_mt:
+case RISCV::BI__builtin_rvv_vfrdiv_vf_f64m2_mt:
+case RISCV::BI__builtin_rvv_vfrdiv_vf_f64m4_mt:
+case RISCV::BI__builtin_rvv_vfrdiv_vf_f64m8_mt:
   ID = Intrinsic::riscv_vfrdiv_mask;
-  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 1);
+  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 2);
   IntrinsicTypes = {ResultType, Ops[2]->getType(), Ops.back()->getType()};
   break;
 case RISCV::BI__builtin_rvv_vfrec7_v_f16m1:
@@ -4525,23 +4525,23 @@ case RISCV::BI__builtin_rvv_vfrec7_v_f64m8:
   ID = Intrinsic::riscv_vfrec7;
   IntrinsicTypes = {ResultType, Ops.back()->getType()};
   break;
-case RISCV::BI__builtin_rvv_vfrec7_v_f16m1_m:
-case RISCV::BI__builtin_rvv_vfrec7_v_f16m2_m:
-case RISCV::BI__builtin_rvv_vfrec7_v_f16m4_m:
-case RISCV::BI__builtin_rvv_vfrec7_v_f16m8_m:
-case RISCV::BI__builtin_rvv_vfrec7_v_f16mf2_m:
-case RISCV::BI__builtin_rvv_vfrec7_v_f16mf4_m:
-case RISCV::BI__builtin_rvv_vfrec7_v_f32m1_m:
-case RISCV::BI__builtin_rvv_vfrec7_v_f32m2_m:
-case RISCV::BI__builtin_rvv_vfrec7_v_f32m4_m:
-case RISCV::BI__builtin_rvv_vfrec7_v_f32m8_m:
-case RISCV::BI__builtin_rvv_vfrec7_v_f32mf2_m:
-case RISCV::BI__builtin_rvv_vfrec7_v_f64m1_m:
-case RISCV::BI__builtin_rvv_vfrec7_v_f64m2_m:
-case RISCV::BI__builtin_rvv_vfrec7_v_f64m4_m:
-case RISCV::BI__builtin_rvv_vfrec7_v_f64m8_m:
+case RISCV::BI__builtin_rvv_vfrec7_v_f16m1_mt:
+case RISCV::BI__builtin_rvv_vfrec7_v_f16m2_mt:
+case RISCV::BI__builtin_rvv_vfrec7_v_f16m4_mt:
+case RISCV::BI__builtin_rvv_vfrec7_v_f16m8_mt:
+case RISCV::BI__builtin_rvv_vfrec7_v_f16mf2_mt:
+case RISCV::BI__builtin_rvv_vfrec7_v_f16mf4_mt:
+case RISCV::BI__builtin_rvv_vfrec7_v_f32m1_mt:
+case RISCV::BI__builtin_rvv_vfrec7_v_f32m2_mt:
+case RISCV::BI__builtin_rvv_vfrec7_v_f32m4_mt:
+case RISCV::BI__builtin_rvv_vfrec7_v_f32m8_mt:
+case RISCV::BI__builtin_rvv_vfrec7_v_f32mf2_mt:
+case RISCV::BI__builtin_rvv_vfrec7_v_f64m1_mt:
+case RISCV::BI__builtin_rvv_vfrec7_v_f64m2_mt:
+case RISCV::BI__builtin_rvv_vfrec7_v_f64m4_mt:
+case RISCV::BI__builtin_rvv_vfrec7_v_f64m8_mt:
   ID = Intrinsic::riscv_vfrec7_mask;
-  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 1);
+  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 2);
   IntrinsicTypes = {ResultType, Ops.back()->getType()};
   break;
 case RISCV::BI__builtin_rvv_vfredmax_vs_f16m1_f16m1:
@@ -4710,23 +4710,23 @@ case RISCV::BI__builtin_rvv_vfrsqrt7_v_f64m8:
   ID = Intrinsic::riscv_vfrsqrt7;
   IntrinsicTypes = {ResultType, Ops.back()->getType()};
   break;
-case RISCV::BI__builtin_rvv_vfrsqrt7_v_f16m1_m:
-case RISCV::BI__builtin_rvv_vfrsqrt7_v_f16m2_m:
-case RISCV::BI__builtin_rvv_vfrsqrt7_v_f16m4_m:
-case RISCV::BI__builtin_rvv_vfrsqrt7_v_f16m8_m:
-case RISCV::BI__builtin_rvv_vfrsqrt7_v_f16mf2_m:
-case RISCV::BI__builtin_rvv_vfrsqrt7_v_f16mf4_m:
-case RISCV::BI__builtin_rvv_vfrsqrt7_v_f32m1_m:
-case RISCV::BI__builtin_rvv_vfrsqrt7_v_f32m2_m:
-case RISCV::BI__builtin_rvv_vfrsqrt7_v_f32m4_m:
-case RISCV::BI__builtin_rvv_vfrsqrt7_v_f32m8_m:
-case RISCV::BI__builtin_rvv_vfrsqrt7_v_f32mf2_m:
-case RISCV::BI__builtin_rvv_vfrsqrt7_v_f64m1_m:
-case RISCV::BI__builtin_rvv_vfrsqrt7_v_f64m2_m:
-case RISCV::BI__builtin_rvv_vfrsqrt7_v_f64m4_m:
-case RISCV::BI__builtin_rvv_vfrsqrt7_v_f64m8_m:
+case RISCV::BI__builtin_rvv_vfrsqrt7_v_f16m1_mt:
+case RISCV::BI__builtin_rvv_vfrsqrt7_v_f16m2_mt:
+case RISCV::BI__builtin_rvv_vfrsqrt7_v_f16m4_mt:
+case RISCV::BI__builtin_rvv_vfrsqrt7_v_f16m8_mt:
+case RISCV::BI__builtin_rvv_vfrsqrt7_v_f16mf2_mt:
+case RISCV::BI__builtin_rvv_vfrsqrt7_v_f16mf4_mt:
+case RISCV::BI__builtin_rvv_vfrsqrt7_v_f32m1_mt:
+case RISCV::BI__builtin_rvv_vfrsqrt7_v_f32m2_mt:
+case RISCV::BI__builtin_rvv_vfrsqrt7_v_f32m4_mt:
+case RISCV::BI__builtin_rvv_vfrsqrt7_v_f32m8_mt:
+case RISCV::BI__builtin_rvv_vfrsqrt7_v_f32mf2_mt:
+case RISCV::BI__builtin_rvv_vfrsqrt7_v_f64m1_mt:
+case RISCV::BI__builtin_rvv_vfrsqrt7_v_f64m2_mt:
+case RISCV::BI__builtin_rvv_vfrsqrt7_v_f64m4_mt:
+case RISCV::BI__builtin_rvv_vfrsqrt7_v_f64m8_mt:
   ID = Intrinsic::riscv_vfrsqrt7_mask;
-  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 1);
+  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 2);
   IntrinsicTypes = {ResultType, Ops.back()->getType()};
   break;
 case RISCV::BI__builtin_rvv_vfrsub_vf_f16m1:
@@ -4747,23 +4747,23 @@ case RISCV::BI__builtin_rvv_vfrsub_vf_f64m8:
   ID = Intrinsic::riscv_vfrsub;
   IntrinsicTypes = {ResultType, Ops[1]->getType(), Ops.back()->getType()};
   break;
-case RISCV::BI__builtin_rvv_vfrsub_vf_f16m1_m:
-case RISCV::BI__builtin_rvv_vfrsub_vf_f16m2_m:
-case RISCV::BI__builtin_rvv_vfrsub_vf_f16m4_m:
-case RISCV::BI__builtin_rvv_vfrsub_vf_f16m8_m:
-case RISCV::BI__builtin_rvv_vfrsub_vf_f16mf2_m:
-case RISCV::BI__builtin_rvv_vfrsub_vf_f16mf4_m:
-case RISCV::BI__builtin_rvv_vfrsub_vf_f32m1_m:
-case RISCV::BI__builtin_rvv_vfrsub_vf_f32m2_m:
-case RISCV::BI__builtin_rvv_vfrsub_vf_f32m4_m:
-case RISCV::BI__builtin_rvv_vfrsub_vf_f32m8_m:
-case RISCV::BI__builtin_rvv_vfrsub_vf_f32mf2_m:
-case RISCV::BI__builtin_rvv_vfrsub_vf_f64m1_m:
-case RISCV::BI__builtin_rvv_vfrsub_vf_f64m2_m:
-case RISCV::BI__builtin_rvv_vfrsub_vf_f64m4_m:
-case RISCV::BI__builtin_rvv_vfrsub_vf_f64m8_m:
+case RISCV::BI__builtin_rvv_vfrsub_vf_f16m1_mt:
+case RISCV::BI__builtin_rvv_vfrsub_vf_f16m2_mt:
+case RISCV::BI__builtin_rvv_vfrsub_vf_f16m4_mt:
+case RISCV::BI__builtin_rvv_vfrsub_vf_f16m8_mt:
+case RISCV::BI__builtin_rvv_vfrsub_vf_f16mf2_mt:
+case RISCV::BI__builtin_rvv_vfrsub_vf_f16mf4_mt:
+case RISCV::BI__builtin_rvv_vfrsub_vf_f32m1_mt:
+case RISCV::BI__builtin_rvv_vfrsub_vf_f32m2_mt:
+case RISCV::BI__builtin_rvv_vfrsub_vf_f32m4_mt:
+case RISCV::BI__builtin_rvv_vfrsub_vf_f32m8_mt:
+case RISCV::BI__builtin_rvv_vfrsub_vf_f32mf2_mt:
+case RISCV::BI__builtin_rvv_vfrsub_vf_f64m1_mt:
+case RISCV::BI__builtin_rvv_vfrsub_vf_f64m2_mt:
+case RISCV::BI__builtin_rvv_vfrsub_vf_f64m4_mt:
+case RISCV::BI__builtin_rvv_vfrsub_vf_f64m8_mt:
   ID = Intrinsic::riscv_vfrsub_mask;
-  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 1);
+  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 2);
   IntrinsicTypes = {ResultType, Ops[2]->getType(), Ops.back()->getType()};
   break;
 case RISCV::BI__builtin_rvv_vfsgnj_vv_f16m1:
@@ -4799,38 +4799,38 @@ case RISCV::BI__builtin_rvv_vfsgnj_vf_f64m8:
   ID = Intrinsic::riscv_vfsgnj;
   IntrinsicTypes = {ResultType, Ops[1]->getType(), Ops.back()->getType()};
   break;
-case RISCV::BI__builtin_rvv_vfsgnj_vv_f16m1_m:
-case RISCV::BI__builtin_rvv_vfsgnj_vv_f16m2_m:
-case RISCV::BI__builtin_rvv_vfsgnj_vv_f16m4_m:
-case RISCV::BI__builtin_rvv_vfsgnj_vv_f16m8_m:
-case RISCV::BI__builtin_rvv_vfsgnj_vv_f16mf2_m:
-case RISCV::BI__builtin_rvv_vfsgnj_vv_f16mf4_m:
-case RISCV::BI__builtin_rvv_vfsgnj_vv_f32m1_m:
-case RISCV::BI__builtin_rvv_vfsgnj_vv_f32m2_m:
-case RISCV::BI__builtin_rvv_vfsgnj_vv_f32m4_m:
-case RISCV::BI__builtin_rvv_vfsgnj_vv_f32m8_m:
-case RISCV::BI__builtin_rvv_vfsgnj_vv_f32mf2_m:
-case RISCV::BI__builtin_rvv_vfsgnj_vv_f64m1_m:
-case RISCV::BI__builtin_rvv_vfsgnj_vv_f64m2_m:
-case RISCV::BI__builtin_rvv_vfsgnj_vv_f64m4_m:
-case RISCV::BI__builtin_rvv_vfsgnj_vv_f64m8_m:
-case RISCV::BI__builtin_rvv_vfsgnj_vf_f16m1_m:
-case RISCV::BI__builtin_rvv_vfsgnj_vf_f16m2_m:
-case RISCV::BI__builtin_rvv_vfsgnj_vf_f16m4_m:
-case RISCV::BI__builtin_rvv_vfsgnj_vf_f16m8_m:
-case RISCV::BI__builtin_rvv_vfsgnj_vf_f16mf2_m:
-case RISCV::BI__builtin_rvv_vfsgnj_vf_f16mf4_m:
-case RISCV::BI__builtin_rvv_vfsgnj_vf_f32m1_m:
-case RISCV::BI__builtin_rvv_vfsgnj_vf_f32m2_m:
-case RISCV::BI__builtin_rvv_vfsgnj_vf_f32m4_m:
-case RISCV::BI__builtin_rvv_vfsgnj_vf_f32m8_m:
-case RISCV::BI__builtin_rvv_vfsgnj_vf_f32mf2_m:
-case RISCV::BI__builtin_rvv_vfsgnj_vf_f64m1_m:
-case RISCV::BI__builtin_rvv_vfsgnj_vf_f64m2_m:
-case RISCV::BI__builtin_rvv_vfsgnj_vf_f64m4_m:
-case RISCV::BI__builtin_rvv_vfsgnj_vf_f64m8_m:
+case RISCV::BI__builtin_rvv_vfsgnj_vv_f16m1_mt:
+case RISCV::BI__builtin_rvv_vfsgnj_vv_f16m2_mt:
+case RISCV::BI__builtin_rvv_vfsgnj_vv_f16m4_mt:
+case RISCV::BI__builtin_rvv_vfsgnj_vv_f16m8_mt:
+case RISCV::BI__builtin_rvv_vfsgnj_vv_f16mf2_mt:
+case RISCV::BI__builtin_rvv_vfsgnj_vv_f16mf4_mt:
+case RISCV::BI__builtin_rvv_vfsgnj_vv_f32m1_mt:
+case RISCV::BI__builtin_rvv_vfsgnj_vv_f32m2_mt:
+case RISCV::BI__builtin_rvv_vfsgnj_vv_f32m4_mt:
+case RISCV::BI__builtin_rvv_vfsgnj_vv_f32m8_mt:
+case RISCV::BI__builtin_rvv_vfsgnj_vv_f32mf2_mt:
+case RISCV::BI__builtin_rvv_vfsgnj_vv_f64m1_mt:
+case RISCV::BI__builtin_rvv_vfsgnj_vv_f64m2_mt:
+case RISCV::BI__builtin_rvv_vfsgnj_vv_f64m4_mt:
+case RISCV::BI__builtin_rvv_vfsgnj_vv_f64m8_mt:
+case RISCV::BI__builtin_rvv_vfsgnj_vf_f16m1_mt:
+case RISCV::BI__builtin_rvv_vfsgnj_vf_f16m2_mt:
+case RISCV::BI__builtin_rvv_vfsgnj_vf_f16m4_mt:
+case RISCV::BI__builtin_rvv_vfsgnj_vf_f16m8_mt:
+case RISCV::BI__builtin_rvv_vfsgnj_vf_f16mf2_mt:
+case RISCV::BI__builtin_rvv_vfsgnj_vf_f16mf4_mt:
+case RISCV::BI__builtin_rvv_vfsgnj_vf_f32m1_mt:
+case RISCV::BI__builtin_rvv_vfsgnj_vf_f32m2_mt:
+case RISCV::BI__builtin_rvv_vfsgnj_vf_f32m4_mt:
+case RISCV::BI__builtin_rvv_vfsgnj_vf_f32m8_mt:
+case RISCV::BI__builtin_rvv_vfsgnj_vf_f32mf2_mt:
+case RISCV::BI__builtin_rvv_vfsgnj_vf_f64m1_mt:
+case RISCV::BI__builtin_rvv_vfsgnj_vf_f64m2_mt:
+case RISCV::BI__builtin_rvv_vfsgnj_vf_f64m4_mt:
+case RISCV::BI__builtin_rvv_vfsgnj_vf_f64m8_mt:
   ID = Intrinsic::riscv_vfsgnj_mask;
-  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 1);
+  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 2);
   IntrinsicTypes = {ResultType, Ops[2]->getType(), Ops.back()->getType()};
   break;
 case RISCV::BI__builtin_rvv_vfsgnjn_vv_f16m1:
@@ -4891,59 +4891,59 @@ case RISCV::BI__builtin_rvv_vfneg_v_f64m8:
         break;
       }
       break;
-case RISCV::BI__builtin_rvv_vfsgnjn_vv_f16m1_m:
-case RISCV::BI__builtin_rvv_vfsgnjn_vv_f16m2_m:
-case RISCV::BI__builtin_rvv_vfsgnjn_vv_f16m4_m:
-case RISCV::BI__builtin_rvv_vfsgnjn_vv_f16m8_m:
-case RISCV::BI__builtin_rvv_vfsgnjn_vv_f16mf2_m:
-case RISCV::BI__builtin_rvv_vfsgnjn_vv_f16mf4_m:
-case RISCV::BI__builtin_rvv_vfsgnjn_vv_f32m1_m:
-case RISCV::BI__builtin_rvv_vfsgnjn_vv_f32m2_m:
-case RISCV::BI__builtin_rvv_vfsgnjn_vv_f32m4_m:
-case RISCV::BI__builtin_rvv_vfsgnjn_vv_f32m8_m:
-case RISCV::BI__builtin_rvv_vfsgnjn_vv_f32mf2_m:
-case RISCV::BI__builtin_rvv_vfsgnjn_vv_f64m1_m:
-case RISCV::BI__builtin_rvv_vfsgnjn_vv_f64m2_m:
-case RISCV::BI__builtin_rvv_vfsgnjn_vv_f64m4_m:
-case RISCV::BI__builtin_rvv_vfsgnjn_vv_f64m8_m:
-case RISCV::BI__builtin_rvv_vfsgnjn_vf_f16m1_m:
-case RISCV::BI__builtin_rvv_vfsgnjn_vf_f16m2_m:
-case RISCV::BI__builtin_rvv_vfsgnjn_vf_f16m4_m:
-case RISCV::BI__builtin_rvv_vfsgnjn_vf_f16m8_m:
-case RISCV::BI__builtin_rvv_vfsgnjn_vf_f16mf2_m:
-case RISCV::BI__builtin_rvv_vfsgnjn_vf_f16mf4_m:
-case RISCV::BI__builtin_rvv_vfsgnjn_vf_f32m1_m:
-case RISCV::BI__builtin_rvv_vfsgnjn_vf_f32m2_m:
-case RISCV::BI__builtin_rvv_vfsgnjn_vf_f32m4_m:
-case RISCV::BI__builtin_rvv_vfsgnjn_vf_f32m8_m:
-case RISCV::BI__builtin_rvv_vfsgnjn_vf_f32mf2_m:
-case RISCV::BI__builtin_rvv_vfsgnjn_vf_f64m1_m:
-case RISCV::BI__builtin_rvv_vfsgnjn_vf_f64m2_m:
-case RISCV::BI__builtin_rvv_vfsgnjn_vf_f64m4_m:
-case RISCV::BI__builtin_rvv_vfsgnjn_vf_f64m8_m:
+case RISCV::BI__builtin_rvv_vfsgnjn_vv_f16m1_mt:
+case RISCV::BI__builtin_rvv_vfsgnjn_vv_f16m2_mt:
+case RISCV::BI__builtin_rvv_vfsgnjn_vv_f16m4_mt:
+case RISCV::BI__builtin_rvv_vfsgnjn_vv_f16m8_mt:
+case RISCV::BI__builtin_rvv_vfsgnjn_vv_f16mf2_mt:
+case RISCV::BI__builtin_rvv_vfsgnjn_vv_f16mf4_mt:
+case RISCV::BI__builtin_rvv_vfsgnjn_vv_f32m1_mt:
+case RISCV::BI__builtin_rvv_vfsgnjn_vv_f32m2_mt:
+case RISCV::BI__builtin_rvv_vfsgnjn_vv_f32m4_mt:
+case RISCV::BI__builtin_rvv_vfsgnjn_vv_f32m8_mt:
+case RISCV::BI__builtin_rvv_vfsgnjn_vv_f32mf2_mt:
+case RISCV::BI__builtin_rvv_vfsgnjn_vv_f64m1_mt:
+case RISCV::BI__builtin_rvv_vfsgnjn_vv_f64m2_mt:
+case RISCV::BI__builtin_rvv_vfsgnjn_vv_f64m4_mt:
+case RISCV::BI__builtin_rvv_vfsgnjn_vv_f64m8_mt:
+case RISCV::BI__builtin_rvv_vfsgnjn_vf_f16m1_mt:
+case RISCV::BI__builtin_rvv_vfsgnjn_vf_f16m2_mt:
+case RISCV::BI__builtin_rvv_vfsgnjn_vf_f16m4_mt:
+case RISCV::BI__builtin_rvv_vfsgnjn_vf_f16m8_mt:
+case RISCV::BI__builtin_rvv_vfsgnjn_vf_f16mf2_mt:
+case RISCV::BI__builtin_rvv_vfsgnjn_vf_f16mf4_mt:
+case RISCV::BI__builtin_rvv_vfsgnjn_vf_f32m1_mt:
+case RISCV::BI__builtin_rvv_vfsgnjn_vf_f32m2_mt:
+case RISCV::BI__builtin_rvv_vfsgnjn_vf_f32m4_mt:
+case RISCV::BI__builtin_rvv_vfsgnjn_vf_f32m8_mt:
+case RISCV::BI__builtin_rvv_vfsgnjn_vf_f32mf2_mt:
+case RISCV::BI__builtin_rvv_vfsgnjn_vf_f64m1_mt:
+case RISCV::BI__builtin_rvv_vfsgnjn_vf_f64m2_mt:
+case RISCV::BI__builtin_rvv_vfsgnjn_vf_f64m4_mt:
+case RISCV::BI__builtin_rvv_vfsgnjn_vf_f64m8_mt:
   ID = Intrinsic::riscv_vfsgnjn_mask;
-  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 1);
+  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 2);
   IntrinsicTypes = {ResultType, Ops[2]->getType(), Ops.back()->getType()};
   break;
-case RISCV::BI__builtin_rvv_vfneg_v_f16m1_m:
-case RISCV::BI__builtin_rvv_vfneg_v_f16m2_m:
-case RISCV::BI__builtin_rvv_vfneg_v_f16m4_m:
-case RISCV::BI__builtin_rvv_vfneg_v_f16m8_m:
-case RISCV::BI__builtin_rvv_vfneg_v_f16mf2_m:
-case RISCV::BI__builtin_rvv_vfneg_v_f16mf4_m:
-case RISCV::BI__builtin_rvv_vfneg_v_f32m1_m:
-case RISCV::BI__builtin_rvv_vfneg_v_f32m2_m:
-case RISCV::BI__builtin_rvv_vfneg_v_f32m4_m:
-case RISCV::BI__builtin_rvv_vfneg_v_f32m8_m:
-case RISCV::BI__builtin_rvv_vfneg_v_f32mf2_m:
-case RISCV::BI__builtin_rvv_vfneg_v_f64m1_m:
-case RISCV::BI__builtin_rvv_vfneg_v_f64m2_m:
-case RISCV::BI__builtin_rvv_vfneg_v_f64m4_m:
-case RISCV::BI__builtin_rvv_vfneg_v_f64m8_m:
+case RISCV::BI__builtin_rvv_vfneg_v_f16m1_mt:
+case RISCV::BI__builtin_rvv_vfneg_v_f16m2_mt:
+case RISCV::BI__builtin_rvv_vfneg_v_f16m4_mt:
+case RISCV::BI__builtin_rvv_vfneg_v_f16m8_mt:
+case RISCV::BI__builtin_rvv_vfneg_v_f16mf2_mt:
+case RISCV::BI__builtin_rvv_vfneg_v_f16mf4_mt:
+case RISCV::BI__builtin_rvv_vfneg_v_f32m1_mt:
+case RISCV::BI__builtin_rvv_vfneg_v_f32m2_mt:
+case RISCV::BI__builtin_rvv_vfneg_v_f32m4_mt:
+case RISCV::BI__builtin_rvv_vfneg_v_f32m8_mt:
+case RISCV::BI__builtin_rvv_vfneg_v_f32mf2_mt:
+case RISCV::BI__builtin_rvv_vfneg_v_f64m1_mt:
+case RISCV::BI__builtin_rvv_vfneg_v_f64m2_mt:
+case RISCV::BI__builtin_rvv_vfneg_v_f64m4_mt:
+case RISCV::BI__builtin_rvv_vfneg_v_f64m8_mt:
   ID = Intrinsic::riscv_vfsgnjn_mask;
 
       {
-        std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 1);
+        std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 2);
         // maskedoff, op1, mask, vl
         IntrinsicTypes = {ResultType,
                           Ops[1]->getType(),
@@ -5010,59 +5010,59 @@ case RISCV::BI__builtin_rvv_vfabs_v_f64m8:
         break;
       }
       break;
-case RISCV::BI__builtin_rvv_vfsgnjx_vv_f16m1_m:
-case RISCV::BI__builtin_rvv_vfsgnjx_vv_f16m2_m:
-case RISCV::BI__builtin_rvv_vfsgnjx_vv_f16m4_m:
-case RISCV::BI__builtin_rvv_vfsgnjx_vv_f16m8_m:
-case RISCV::BI__builtin_rvv_vfsgnjx_vv_f16mf2_m:
-case RISCV::BI__builtin_rvv_vfsgnjx_vv_f16mf4_m:
-case RISCV::BI__builtin_rvv_vfsgnjx_vv_f32m1_m:
-case RISCV::BI__builtin_rvv_vfsgnjx_vv_f32m2_m:
-case RISCV::BI__builtin_rvv_vfsgnjx_vv_f32m4_m:
-case RISCV::BI__builtin_rvv_vfsgnjx_vv_f32m8_m:
-case RISCV::BI__builtin_rvv_vfsgnjx_vv_f32mf2_m:
-case RISCV::BI__builtin_rvv_vfsgnjx_vv_f64m1_m:
-case RISCV::BI__builtin_rvv_vfsgnjx_vv_f64m2_m:
-case RISCV::BI__builtin_rvv_vfsgnjx_vv_f64m4_m:
-case RISCV::BI__builtin_rvv_vfsgnjx_vv_f64m8_m:
-case RISCV::BI__builtin_rvv_vfsgnjx_vf_f16m1_m:
-case RISCV::BI__builtin_rvv_vfsgnjx_vf_f16m2_m:
-case RISCV::BI__builtin_rvv_vfsgnjx_vf_f16m4_m:
-case RISCV::BI__builtin_rvv_vfsgnjx_vf_f16m8_m:
-case RISCV::BI__builtin_rvv_vfsgnjx_vf_f16mf2_m:
-case RISCV::BI__builtin_rvv_vfsgnjx_vf_f16mf4_m:
-case RISCV::BI__builtin_rvv_vfsgnjx_vf_f32m1_m:
-case RISCV::BI__builtin_rvv_vfsgnjx_vf_f32m2_m:
-case RISCV::BI__builtin_rvv_vfsgnjx_vf_f32m4_m:
-case RISCV::BI__builtin_rvv_vfsgnjx_vf_f32m8_m:
-case RISCV::BI__builtin_rvv_vfsgnjx_vf_f32mf2_m:
-case RISCV::BI__builtin_rvv_vfsgnjx_vf_f64m1_m:
-case RISCV::BI__builtin_rvv_vfsgnjx_vf_f64m2_m:
-case RISCV::BI__builtin_rvv_vfsgnjx_vf_f64m4_m:
-case RISCV::BI__builtin_rvv_vfsgnjx_vf_f64m8_m:
+case RISCV::BI__builtin_rvv_vfsgnjx_vv_f16m1_mt:
+case RISCV::BI__builtin_rvv_vfsgnjx_vv_f16m2_mt:
+case RISCV::BI__builtin_rvv_vfsgnjx_vv_f16m4_mt:
+case RISCV::BI__builtin_rvv_vfsgnjx_vv_f16m8_mt:
+case RISCV::BI__builtin_rvv_vfsgnjx_vv_f16mf2_mt:
+case RISCV::BI__builtin_rvv_vfsgnjx_vv_f16mf4_mt:
+case RISCV::BI__builtin_rvv_vfsgnjx_vv_f32m1_mt:
+case RISCV::BI__builtin_rvv_vfsgnjx_vv_f32m2_mt:
+case RISCV::BI__builtin_rvv_vfsgnjx_vv_f32m4_mt:
+case RISCV::BI__builtin_rvv_vfsgnjx_vv_f32m8_mt:
+case RISCV::BI__builtin_rvv_vfsgnjx_vv_f32mf2_mt:
+case RISCV::BI__builtin_rvv_vfsgnjx_vv_f64m1_mt:
+case RISCV::BI__builtin_rvv_vfsgnjx_vv_f64m2_mt:
+case RISCV::BI__builtin_rvv_vfsgnjx_vv_f64m4_mt:
+case RISCV::BI__builtin_rvv_vfsgnjx_vv_f64m8_mt:
+case RISCV::BI__builtin_rvv_vfsgnjx_vf_f16m1_mt:
+case RISCV::BI__builtin_rvv_vfsgnjx_vf_f16m2_mt:
+case RISCV::BI__builtin_rvv_vfsgnjx_vf_f16m4_mt:
+case RISCV::BI__builtin_rvv_vfsgnjx_vf_f16m8_mt:
+case RISCV::BI__builtin_rvv_vfsgnjx_vf_f16mf2_mt:
+case RISCV::BI__builtin_rvv_vfsgnjx_vf_f16mf4_mt:
+case RISCV::BI__builtin_rvv_vfsgnjx_vf_f32m1_mt:
+case RISCV::BI__builtin_rvv_vfsgnjx_vf_f32m2_mt:
+case RISCV::BI__builtin_rvv_vfsgnjx_vf_f32m4_mt:
+case RISCV::BI__builtin_rvv_vfsgnjx_vf_f32m8_mt:
+case RISCV::BI__builtin_rvv_vfsgnjx_vf_f32mf2_mt:
+case RISCV::BI__builtin_rvv_vfsgnjx_vf_f64m1_mt:
+case RISCV::BI__builtin_rvv_vfsgnjx_vf_f64m2_mt:
+case RISCV::BI__builtin_rvv_vfsgnjx_vf_f64m4_mt:
+case RISCV::BI__builtin_rvv_vfsgnjx_vf_f64m8_mt:
   ID = Intrinsic::riscv_vfsgnjx_mask;
-  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 1);
+  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 2);
   IntrinsicTypes = {ResultType, Ops[2]->getType(), Ops.back()->getType()};
   break;
-case RISCV::BI__builtin_rvv_vfabs_v_f16m1_m:
-case RISCV::BI__builtin_rvv_vfabs_v_f16m2_m:
-case RISCV::BI__builtin_rvv_vfabs_v_f16m4_m:
-case RISCV::BI__builtin_rvv_vfabs_v_f16m8_m:
-case RISCV::BI__builtin_rvv_vfabs_v_f16mf2_m:
-case RISCV::BI__builtin_rvv_vfabs_v_f16mf4_m:
-case RISCV::BI__builtin_rvv_vfabs_v_f32m1_m:
-case RISCV::BI__builtin_rvv_vfabs_v_f32m2_m:
-case RISCV::BI__builtin_rvv_vfabs_v_f32m4_m:
-case RISCV::BI__builtin_rvv_vfabs_v_f32m8_m:
-case RISCV::BI__builtin_rvv_vfabs_v_f32mf2_m:
-case RISCV::BI__builtin_rvv_vfabs_v_f64m1_m:
-case RISCV::BI__builtin_rvv_vfabs_v_f64m2_m:
-case RISCV::BI__builtin_rvv_vfabs_v_f64m4_m:
-case RISCV::BI__builtin_rvv_vfabs_v_f64m8_m:
+case RISCV::BI__builtin_rvv_vfabs_v_f16m1_mt:
+case RISCV::BI__builtin_rvv_vfabs_v_f16m2_mt:
+case RISCV::BI__builtin_rvv_vfabs_v_f16m4_mt:
+case RISCV::BI__builtin_rvv_vfabs_v_f16m8_mt:
+case RISCV::BI__builtin_rvv_vfabs_v_f16mf2_mt:
+case RISCV::BI__builtin_rvv_vfabs_v_f16mf4_mt:
+case RISCV::BI__builtin_rvv_vfabs_v_f32m1_mt:
+case RISCV::BI__builtin_rvv_vfabs_v_f32m2_mt:
+case RISCV::BI__builtin_rvv_vfabs_v_f32m4_mt:
+case RISCV::BI__builtin_rvv_vfabs_v_f32m8_mt:
+case RISCV::BI__builtin_rvv_vfabs_v_f32mf2_mt:
+case RISCV::BI__builtin_rvv_vfabs_v_f64m1_mt:
+case RISCV::BI__builtin_rvv_vfabs_v_f64m2_mt:
+case RISCV::BI__builtin_rvv_vfabs_v_f64m4_mt:
+case RISCV::BI__builtin_rvv_vfabs_v_f64m8_mt:
   ID = Intrinsic::riscv_vfsgnjx_mask;
 
       {
-        std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 1);
+        std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 2);
         // maskedoff, op1, mask, vl
         IntrinsicTypes = {ResultType,
                           Ops[1]->getType(),
@@ -5089,23 +5089,23 @@ case RISCV::BI__builtin_rvv_vfslide1down_vf_f64m8:
   ID = Intrinsic::riscv_vfslide1down;
   IntrinsicTypes = {ResultType, Ops[1]->getType(), Ops.back()->getType()};
   break;
-case RISCV::BI__builtin_rvv_vfslide1down_vf_f16m1_m:
-case RISCV::BI__builtin_rvv_vfslide1down_vf_f16m2_m:
-case RISCV::BI__builtin_rvv_vfslide1down_vf_f16m4_m:
-case RISCV::BI__builtin_rvv_vfslide1down_vf_f16m8_m:
-case RISCV::BI__builtin_rvv_vfslide1down_vf_f16mf2_m:
-case RISCV::BI__builtin_rvv_vfslide1down_vf_f16mf4_m:
-case RISCV::BI__builtin_rvv_vfslide1down_vf_f32m1_m:
-case RISCV::BI__builtin_rvv_vfslide1down_vf_f32m2_m:
-case RISCV::BI__builtin_rvv_vfslide1down_vf_f32m4_m:
-case RISCV::BI__builtin_rvv_vfslide1down_vf_f32m8_m:
-case RISCV::BI__builtin_rvv_vfslide1down_vf_f32mf2_m:
-case RISCV::BI__builtin_rvv_vfslide1down_vf_f64m1_m:
-case RISCV::BI__builtin_rvv_vfslide1down_vf_f64m2_m:
-case RISCV::BI__builtin_rvv_vfslide1down_vf_f64m4_m:
-case RISCV::BI__builtin_rvv_vfslide1down_vf_f64m8_m:
+case RISCV::BI__builtin_rvv_vfslide1down_vf_f16m1_mt:
+case RISCV::BI__builtin_rvv_vfslide1down_vf_f16m2_mt:
+case RISCV::BI__builtin_rvv_vfslide1down_vf_f16m4_mt:
+case RISCV::BI__builtin_rvv_vfslide1down_vf_f16m8_mt:
+case RISCV::BI__builtin_rvv_vfslide1down_vf_f16mf2_mt:
+case RISCV::BI__builtin_rvv_vfslide1down_vf_f16mf4_mt:
+case RISCV::BI__builtin_rvv_vfslide1down_vf_f32m1_mt:
+case RISCV::BI__builtin_rvv_vfslide1down_vf_f32m2_mt:
+case RISCV::BI__builtin_rvv_vfslide1down_vf_f32m4_mt:
+case RISCV::BI__builtin_rvv_vfslide1down_vf_f32m8_mt:
+case RISCV::BI__builtin_rvv_vfslide1down_vf_f32mf2_mt:
+case RISCV::BI__builtin_rvv_vfslide1down_vf_f64m1_mt:
+case RISCV::BI__builtin_rvv_vfslide1down_vf_f64m2_mt:
+case RISCV::BI__builtin_rvv_vfslide1down_vf_f64m4_mt:
+case RISCV::BI__builtin_rvv_vfslide1down_vf_f64m8_mt:
   ID = Intrinsic::riscv_vfslide1down_mask;
-  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 1);
+  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 2);
   IntrinsicTypes = {ResultType, Ops[2]->getType(), Ops.back()->getType()};
   break;
 case RISCV::BI__builtin_rvv_vfslide1up_vf_f16m1:
@@ -5126,23 +5126,23 @@ case RISCV::BI__builtin_rvv_vfslide1up_vf_f64m8:
   ID = Intrinsic::riscv_vfslide1up;
   IntrinsicTypes = {ResultType, Ops[1]->getType(), Ops.back()->getType()};
   break;
-case RISCV::BI__builtin_rvv_vfslide1up_vf_f16m1_m:
-case RISCV::BI__builtin_rvv_vfslide1up_vf_f16m2_m:
-case RISCV::BI__builtin_rvv_vfslide1up_vf_f16m4_m:
-case RISCV::BI__builtin_rvv_vfslide1up_vf_f16m8_m:
-case RISCV::BI__builtin_rvv_vfslide1up_vf_f16mf2_m:
-case RISCV::BI__builtin_rvv_vfslide1up_vf_f16mf4_m:
-case RISCV::BI__builtin_rvv_vfslide1up_vf_f32m1_m:
-case RISCV::BI__builtin_rvv_vfslide1up_vf_f32m2_m:
-case RISCV::BI__builtin_rvv_vfslide1up_vf_f32m4_m:
-case RISCV::BI__builtin_rvv_vfslide1up_vf_f32m8_m:
-case RISCV::BI__builtin_rvv_vfslide1up_vf_f32mf2_m:
-case RISCV::BI__builtin_rvv_vfslide1up_vf_f64m1_m:
-case RISCV::BI__builtin_rvv_vfslide1up_vf_f64m2_m:
-case RISCV::BI__builtin_rvv_vfslide1up_vf_f64m4_m:
-case RISCV::BI__builtin_rvv_vfslide1up_vf_f64m8_m:
+case RISCV::BI__builtin_rvv_vfslide1up_vf_f16m1_mt:
+case RISCV::BI__builtin_rvv_vfslide1up_vf_f16m2_mt:
+case RISCV::BI__builtin_rvv_vfslide1up_vf_f16m4_mt:
+case RISCV::BI__builtin_rvv_vfslide1up_vf_f16m8_mt:
+case RISCV::BI__builtin_rvv_vfslide1up_vf_f16mf2_mt:
+case RISCV::BI__builtin_rvv_vfslide1up_vf_f16mf4_mt:
+case RISCV::BI__builtin_rvv_vfslide1up_vf_f32m1_mt:
+case RISCV::BI__builtin_rvv_vfslide1up_vf_f32m2_mt:
+case RISCV::BI__builtin_rvv_vfslide1up_vf_f32m4_mt:
+case RISCV::BI__builtin_rvv_vfslide1up_vf_f32m8_mt:
+case RISCV::BI__builtin_rvv_vfslide1up_vf_f32mf2_mt:
+case RISCV::BI__builtin_rvv_vfslide1up_vf_f64m1_mt:
+case RISCV::BI__builtin_rvv_vfslide1up_vf_f64m2_mt:
+case RISCV::BI__builtin_rvv_vfslide1up_vf_f64m4_mt:
+case RISCV::BI__builtin_rvv_vfslide1up_vf_f64m8_mt:
   ID = Intrinsic::riscv_vfslide1up_mask;
-  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 1);
+  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 2);
   IntrinsicTypes = {ResultType, Ops[2]->getType(), Ops.back()->getType()};
   break;
 case RISCV::BI__builtin_rvv_vfsqrt_v_f16m1:
@@ -5163,23 +5163,23 @@ case RISCV::BI__builtin_rvv_vfsqrt_v_f64m8:
   ID = Intrinsic::riscv_vfsqrt;
   IntrinsicTypes = {ResultType, Ops.back()->getType()};
   break;
-case RISCV::BI__builtin_rvv_vfsqrt_v_f16m1_m:
-case RISCV::BI__builtin_rvv_vfsqrt_v_f16m2_m:
-case RISCV::BI__builtin_rvv_vfsqrt_v_f16m4_m:
-case RISCV::BI__builtin_rvv_vfsqrt_v_f16m8_m:
-case RISCV::BI__builtin_rvv_vfsqrt_v_f16mf2_m:
-case RISCV::BI__builtin_rvv_vfsqrt_v_f16mf4_m:
-case RISCV::BI__builtin_rvv_vfsqrt_v_f32m1_m:
-case RISCV::BI__builtin_rvv_vfsqrt_v_f32m2_m:
-case RISCV::BI__builtin_rvv_vfsqrt_v_f32m4_m:
-case RISCV::BI__builtin_rvv_vfsqrt_v_f32m8_m:
-case RISCV::BI__builtin_rvv_vfsqrt_v_f32mf2_m:
-case RISCV::BI__builtin_rvv_vfsqrt_v_f64m1_m:
-case RISCV::BI__builtin_rvv_vfsqrt_v_f64m2_m:
-case RISCV::BI__builtin_rvv_vfsqrt_v_f64m4_m:
-case RISCV::BI__builtin_rvv_vfsqrt_v_f64m8_m:
+case RISCV::BI__builtin_rvv_vfsqrt_v_f16m1_mt:
+case RISCV::BI__builtin_rvv_vfsqrt_v_f16m2_mt:
+case RISCV::BI__builtin_rvv_vfsqrt_v_f16m4_mt:
+case RISCV::BI__builtin_rvv_vfsqrt_v_f16m8_mt:
+case RISCV::BI__builtin_rvv_vfsqrt_v_f16mf2_mt:
+case RISCV::BI__builtin_rvv_vfsqrt_v_f16mf4_mt:
+case RISCV::BI__builtin_rvv_vfsqrt_v_f32m1_mt:
+case RISCV::BI__builtin_rvv_vfsqrt_v_f32m2_mt:
+case RISCV::BI__builtin_rvv_vfsqrt_v_f32m4_mt:
+case RISCV::BI__builtin_rvv_vfsqrt_v_f32m8_mt:
+case RISCV::BI__builtin_rvv_vfsqrt_v_f32mf2_mt:
+case RISCV::BI__builtin_rvv_vfsqrt_v_f64m1_mt:
+case RISCV::BI__builtin_rvv_vfsqrt_v_f64m2_mt:
+case RISCV::BI__builtin_rvv_vfsqrt_v_f64m4_mt:
+case RISCV::BI__builtin_rvv_vfsqrt_v_f64m8_mt:
   ID = Intrinsic::riscv_vfsqrt_mask;
-  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 1);
+  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 2);
   IntrinsicTypes = {ResultType, Ops.back()->getType()};
   break;
 case RISCV::BI__builtin_rvv_vfsub_vv_f16m1:
@@ -5215,38 +5215,38 @@ case RISCV::BI__builtin_rvv_vfsub_vf_f64m8:
   ID = Intrinsic::riscv_vfsub;
   IntrinsicTypes = {ResultType, Ops[1]->getType(), Ops.back()->getType()};
   break;
-case RISCV::BI__builtin_rvv_vfsub_vv_f16m1_m:
-case RISCV::BI__builtin_rvv_vfsub_vv_f16m2_m:
-case RISCV::BI__builtin_rvv_vfsub_vv_f16m4_m:
-case RISCV::BI__builtin_rvv_vfsub_vv_f16m8_m:
-case RISCV::BI__builtin_rvv_vfsub_vv_f16mf2_m:
-case RISCV::BI__builtin_rvv_vfsub_vv_f16mf4_m:
-case RISCV::BI__builtin_rvv_vfsub_vv_f32m1_m:
-case RISCV::BI__builtin_rvv_vfsub_vv_f32m2_m:
-case RISCV::BI__builtin_rvv_vfsub_vv_f32m4_m:
-case RISCV::BI__builtin_rvv_vfsub_vv_f32m8_m:
-case RISCV::BI__builtin_rvv_vfsub_vv_f32mf2_m:
-case RISCV::BI__builtin_rvv_vfsub_vv_f64m1_m:
-case RISCV::BI__builtin_rvv_vfsub_vv_f64m2_m:
-case RISCV::BI__builtin_rvv_vfsub_vv_f64m4_m:
-case RISCV::BI__builtin_rvv_vfsub_vv_f64m8_m:
-case RISCV::BI__builtin_rvv_vfsub_vf_f16m1_m:
-case RISCV::BI__builtin_rvv_vfsub_vf_f16m2_m:
-case RISCV::BI__builtin_rvv_vfsub_vf_f16m4_m:
-case RISCV::BI__builtin_rvv_vfsub_vf_f16m8_m:
-case RISCV::BI__builtin_rvv_vfsub_vf_f16mf2_m:
-case RISCV::BI__builtin_rvv_vfsub_vf_f16mf4_m:
-case RISCV::BI__builtin_rvv_vfsub_vf_f32m1_m:
-case RISCV::BI__builtin_rvv_vfsub_vf_f32m2_m:
-case RISCV::BI__builtin_rvv_vfsub_vf_f32m4_m:
-case RISCV::BI__builtin_rvv_vfsub_vf_f32m8_m:
-case RISCV::BI__builtin_rvv_vfsub_vf_f32mf2_m:
-case RISCV::BI__builtin_rvv_vfsub_vf_f64m1_m:
-case RISCV::BI__builtin_rvv_vfsub_vf_f64m2_m:
-case RISCV::BI__builtin_rvv_vfsub_vf_f64m4_m:
-case RISCV::BI__builtin_rvv_vfsub_vf_f64m8_m:
+case RISCV::BI__builtin_rvv_vfsub_vv_f16m1_mt:
+case RISCV::BI__builtin_rvv_vfsub_vv_f16m2_mt:
+case RISCV::BI__builtin_rvv_vfsub_vv_f16m4_mt:
+case RISCV::BI__builtin_rvv_vfsub_vv_f16m8_mt:
+case RISCV::BI__builtin_rvv_vfsub_vv_f16mf2_mt:
+case RISCV::BI__builtin_rvv_vfsub_vv_f16mf4_mt:
+case RISCV::BI__builtin_rvv_vfsub_vv_f32m1_mt:
+case RISCV::BI__builtin_rvv_vfsub_vv_f32m2_mt:
+case RISCV::BI__builtin_rvv_vfsub_vv_f32m4_mt:
+case RISCV::BI__builtin_rvv_vfsub_vv_f32m8_mt:
+case RISCV::BI__builtin_rvv_vfsub_vv_f32mf2_mt:
+case RISCV::BI__builtin_rvv_vfsub_vv_f64m1_mt:
+case RISCV::BI__builtin_rvv_vfsub_vv_f64m2_mt:
+case RISCV::BI__builtin_rvv_vfsub_vv_f64m4_mt:
+case RISCV::BI__builtin_rvv_vfsub_vv_f64m8_mt:
+case RISCV::BI__builtin_rvv_vfsub_vf_f16m1_mt:
+case RISCV::BI__builtin_rvv_vfsub_vf_f16m2_mt:
+case RISCV::BI__builtin_rvv_vfsub_vf_f16m4_mt:
+case RISCV::BI__builtin_rvv_vfsub_vf_f16m8_mt:
+case RISCV::BI__builtin_rvv_vfsub_vf_f16mf2_mt:
+case RISCV::BI__builtin_rvv_vfsub_vf_f16mf4_mt:
+case RISCV::BI__builtin_rvv_vfsub_vf_f32m1_mt:
+case RISCV::BI__builtin_rvv_vfsub_vf_f32m2_mt:
+case RISCV::BI__builtin_rvv_vfsub_vf_f32m4_mt:
+case RISCV::BI__builtin_rvv_vfsub_vf_f32m8_mt:
+case RISCV::BI__builtin_rvv_vfsub_vf_f32mf2_mt:
+case RISCV::BI__builtin_rvv_vfsub_vf_f64m1_mt:
+case RISCV::BI__builtin_rvv_vfsub_vf_f64m2_mt:
+case RISCV::BI__builtin_rvv_vfsub_vf_f64m4_mt:
+case RISCV::BI__builtin_rvv_vfsub_vf_f64m8_mt:
   ID = Intrinsic::riscv_vfsub_mask;
-  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 1);
+  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 2);
   IntrinsicTypes = {ResultType, Ops[2]->getType(), Ops.back()->getType()};
   break;
 case RISCV::BI__builtin_rvv_vfwadd_vv_f32mf2:
@@ -5270,26 +5270,26 @@ case RISCV::BI__builtin_rvv_vfwadd_vf_f64m8:
   ID = Intrinsic::riscv_vfwadd;
   IntrinsicTypes = {ResultType, Ops[0]->getType(), Ops[1]->getType(), Ops.back()->getType()};
   break;
-case RISCV::BI__builtin_rvv_vfwadd_vv_f32mf2_m:
-case RISCV::BI__builtin_rvv_vfwadd_vv_f32m1_m:
-case RISCV::BI__builtin_rvv_vfwadd_vv_f32m2_m:
-case RISCV::BI__builtin_rvv_vfwadd_vv_f32m4_m:
-case RISCV::BI__builtin_rvv_vfwadd_vv_f32m8_m:
-case RISCV::BI__builtin_rvv_vfwadd_vv_f64m1_m:
-case RISCV::BI__builtin_rvv_vfwadd_vv_f64m2_m:
-case RISCV::BI__builtin_rvv_vfwadd_vv_f64m4_m:
-case RISCV::BI__builtin_rvv_vfwadd_vv_f64m8_m:
-case RISCV::BI__builtin_rvv_vfwadd_vf_f32mf2_m:
-case RISCV::BI__builtin_rvv_vfwadd_vf_f32m1_m:
-case RISCV::BI__builtin_rvv_vfwadd_vf_f32m2_m:
-case RISCV::BI__builtin_rvv_vfwadd_vf_f32m4_m:
-case RISCV::BI__builtin_rvv_vfwadd_vf_f32m8_m:
-case RISCV::BI__builtin_rvv_vfwadd_vf_f64m1_m:
-case RISCV::BI__builtin_rvv_vfwadd_vf_f64m2_m:
-case RISCV::BI__builtin_rvv_vfwadd_vf_f64m4_m:
-case RISCV::BI__builtin_rvv_vfwadd_vf_f64m8_m:
+case RISCV::BI__builtin_rvv_vfwadd_vv_f32mf2_mt:
+case RISCV::BI__builtin_rvv_vfwadd_vv_f32m1_mt:
+case RISCV::BI__builtin_rvv_vfwadd_vv_f32m2_mt:
+case RISCV::BI__builtin_rvv_vfwadd_vv_f32m4_mt:
+case RISCV::BI__builtin_rvv_vfwadd_vv_f32m8_mt:
+case RISCV::BI__builtin_rvv_vfwadd_vv_f64m1_mt:
+case RISCV::BI__builtin_rvv_vfwadd_vv_f64m2_mt:
+case RISCV::BI__builtin_rvv_vfwadd_vv_f64m4_mt:
+case RISCV::BI__builtin_rvv_vfwadd_vv_f64m8_mt:
+case RISCV::BI__builtin_rvv_vfwadd_vf_f32mf2_mt:
+case RISCV::BI__builtin_rvv_vfwadd_vf_f32m1_mt:
+case RISCV::BI__builtin_rvv_vfwadd_vf_f32m2_mt:
+case RISCV::BI__builtin_rvv_vfwadd_vf_f32m4_mt:
+case RISCV::BI__builtin_rvv_vfwadd_vf_f32m8_mt:
+case RISCV::BI__builtin_rvv_vfwadd_vf_f64m1_mt:
+case RISCV::BI__builtin_rvv_vfwadd_vf_f64m2_mt:
+case RISCV::BI__builtin_rvv_vfwadd_vf_f64m4_mt:
+case RISCV::BI__builtin_rvv_vfwadd_vf_f64m8_mt:
   ID = Intrinsic::riscv_vfwadd_mask;
-  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 1);
+  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 2);
   IntrinsicTypes = {ResultType, Ops[1]->getType(), Ops[2]->getType(), Ops.back()->getType()};
   break;
 case RISCV::BI__builtin_rvv_vfwadd_wv_f32mf2:
@@ -5313,26 +5313,26 @@ case RISCV::BI__builtin_rvv_vfwadd_wf_f64m8:
   ID = Intrinsic::riscv_vfwadd_w;
   IntrinsicTypes = {ResultType, Ops[1]->getType(), Ops.back()->getType()};
   break;
-case RISCV::BI__builtin_rvv_vfwadd_wv_f32mf2_m:
-case RISCV::BI__builtin_rvv_vfwadd_wv_f32m1_m:
-case RISCV::BI__builtin_rvv_vfwadd_wv_f32m2_m:
-case RISCV::BI__builtin_rvv_vfwadd_wv_f32m4_m:
-case RISCV::BI__builtin_rvv_vfwadd_wv_f32m8_m:
-case RISCV::BI__builtin_rvv_vfwadd_wv_f64m1_m:
-case RISCV::BI__builtin_rvv_vfwadd_wv_f64m2_m:
-case RISCV::BI__builtin_rvv_vfwadd_wv_f64m4_m:
-case RISCV::BI__builtin_rvv_vfwadd_wv_f64m8_m:
-case RISCV::BI__builtin_rvv_vfwadd_wf_f32mf2_m:
-case RISCV::BI__builtin_rvv_vfwadd_wf_f32m1_m:
-case RISCV::BI__builtin_rvv_vfwadd_wf_f32m2_m:
-case RISCV::BI__builtin_rvv_vfwadd_wf_f32m4_m:
-case RISCV::BI__builtin_rvv_vfwadd_wf_f32m8_m:
-case RISCV::BI__builtin_rvv_vfwadd_wf_f64m1_m:
-case RISCV::BI__builtin_rvv_vfwadd_wf_f64m2_m:
-case RISCV::BI__builtin_rvv_vfwadd_wf_f64m4_m:
-case RISCV::BI__builtin_rvv_vfwadd_wf_f64m8_m:
+case RISCV::BI__builtin_rvv_vfwadd_wv_f32mf2_mt:
+case RISCV::BI__builtin_rvv_vfwadd_wv_f32m1_mt:
+case RISCV::BI__builtin_rvv_vfwadd_wv_f32m2_mt:
+case RISCV::BI__builtin_rvv_vfwadd_wv_f32m4_mt:
+case RISCV::BI__builtin_rvv_vfwadd_wv_f32m8_mt:
+case RISCV::BI__builtin_rvv_vfwadd_wv_f64m1_mt:
+case RISCV::BI__builtin_rvv_vfwadd_wv_f64m2_mt:
+case RISCV::BI__builtin_rvv_vfwadd_wv_f64m4_mt:
+case RISCV::BI__builtin_rvv_vfwadd_wv_f64m8_mt:
+case RISCV::BI__builtin_rvv_vfwadd_wf_f32mf2_mt:
+case RISCV::BI__builtin_rvv_vfwadd_wf_f32m1_mt:
+case RISCV::BI__builtin_rvv_vfwadd_wf_f32m2_mt:
+case RISCV::BI__builtin_rvv_vfwadd_wf_f32m4_mt:
+case RISCV::BI__builtin_rvv_vfwadd_wf_f32m8_mt:
+case RISCV::BI__builtin_rvv_vfwadd_wf_f64m1_mt:
+case RISCV::BI__builtin_rvv_vfwadd_wf_f64m2_mt:
+case RISCV::BI__builtin_rvv_vfwadd_wf_f64m4_mt:
+case RISCV::BI__builtin_rvv_vfwadd_wf_f64m8_mt:
   ID = Intrinsic::riscv_vfwadd_w_mask;
-  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 1);
+  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 2);
   IntrinsicTypes = {ResultType, Ops[2]->getType(), Ops.back()->getType()};
   break;
 case RISCV::BI__builtin_rvv_vfwcvt_f_f_v_f32mf2:
@@ -5347,17 +5347,17 @@ case RISCV::BI__builtin_rvv_vfwcvt_f_f_v_f64m8:
   ID = Intrinsic::riscv_vfwcvt_f_f_v;
   IntrinsicTypes = {ResultType, Ops[0]->getType(), Ops.back()->getType()};
   break;
-case RISCV::BI__builtin_rvv_vfwcvt_f_f_v_f32mf2_m:
-case RISCV::BI__builtin_rvv_vfwcvt_f_f_v_f32m1_m:
-case RISCV::BI__builtin_rvv_vfwcvt_f_f_v_f32m2_m:
-case RISCV::BI__builtin_rvv_vfwcvt_f_f_v_f32m4_m:
-case RISCV::BI__builtin_rvv_vfwcvt_f_f_v_f32m8_m:
-case RISCV::BI__builtin_rvv_vfwcvt_f_f_v_f64m1_m:
-case RISCV::BI__builtin_rvv_vfwcvt_f_f_v_f64m2_m:
-case RISCV::BI__builtin_rvv_vfwcvt_f_f_v_f64m4_m:
-case RISCV::BI__builtin_rvv_vfwcvt_f_f_v_f64m8_m:
+case RISCV::BI__builtin_rvv_vfwcvt_f_f_v_f32mf2_mt:
+case RISCV::BI__builtin_rvv_vfwcvt_f_f_v_f32m1_mt:
+case RISCV::BI__builtin_rvv_vfwcvt_f_f_v_f32m2_mt:
+case RISCV::BI__builtin_rvv_vfwcvt_f_f_v_f32m4_mt:
+case RISCV::BI__builtin_rvv_vfwcvt_f_f_v_f32m8_mt:
+case RISCV::BI__builtin_rvv_vfwcvt_f_f_v_f64m1_mt:
+case RISCV::BI__builtin_rvv_vfwcvt_f_f_v_f64m2_mt:
+case RISCV::BI__builtin_rvv_vfwcvt_f_f_v_f64m4_mt:
+case RISCV::BI__builtin_rvv_vfwcvt_f_f_v_f64m8_mt:
   ID = Intrinsic::riscv_vfwcvt_f_f_v_mask;
-  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 1);
+  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 2);
   IntrinsicTypes = {ResultType, Ops[1]->getType(), Ops.back()->getType()};
   break;
 case RISCV::BI__builtin_rvv_vfwcvt_f_x_v_f16mf4:
@@ -5378,23 +5378,23 @@ case RISCV::BI__builtin_rvv_vfwcvt_f_x_v_f64m8:
   ID = Intrinsic::riscv_vfwcvt_f_x_v;
   IntrinsicTypes = {ResultType, Ops[0]->getType(), Ops.back()->getType()};
   break;
-case RISCV::BI__builtin_rvv_vfwcvt_f_x_v_f16mf4_m:
-case RISCV::BI__builtin_rvv_vfwcvt_f_x_v_f16mf2_m:
-case RISCV::BI__builtin_rvv_vfwcvt_f_x_v_f16m1_m:
-case RISCV::BI__builtin_rvv_vfwcvt_f_x_v_f16m2_m:
-case RISCV::BI__builtin_rvv_vfwcvt_f_x_v_f16m4_m:
-case RISCV::BI__builtin_rvv_vfwcvt_f_x_v_f16m8_m:
-case RISCV::BI__builtin_rvv_vfwcvt_f_x_v_f32mf2_m:
-case RISCV::BI__builtin_rvv_vfwcvt_f_x_v_f32m1_m:
-case RISCV::BI__builtin_rvv_vfwcvt_f_x_v_f32m2_m:
-case RISCV::BI__builtin_rvv_vfwcvt_f_x_v_f32m4_m:
-case RISCV::BI__builtin_rvv_vfwcvt_f_x_v_f32m8_m:
-case RISCV::BI__builtin_rvv_vfwcvt_f_x_v_f64m1_m:
-case RISCV::BI__builtin_rvv_vfwcvt_f_x_v_f64m2_m:
-case RISCV::BI__builtin_rvv_vfwcvt_f_x_v_f64m4_m:
-case RISCV::BI__builtin_rvv_vfwcvt_f_x_v_f64m8_m:
+case RISCV::BI__builtin_rvv_vfwcvt_f_x_v_f16mf4_mt:
+case RISCV::BI__builtin_rvv_vfwcvt_f_x_v_f16mf2_mt:
+case RISCV::BI__builtin_rvv_vfwcvt_f_x_v_f16m1_mt:
+case RISCV::BI__builtin_rvv_vfwcvt_f_x_v_f16m2_mt:
+case RISCV::BI__builtin_rvv_vfwcvt_f_x_v_f16m4_mt:
+case RISCV::BI__builtin_rvv_vfwcvt_f_x_v_f16m8_mt:
+case RISCV::BI__builtin_rvv_vfwcvt_f_x_v_f32mf2_mt:
+case RISCV::BI__builtin_rvv_vfwcvt_f_x_v_f32m1_mt:
+case RISCV::BI__builtin_rvv_vfwcvt_f_x_v_f32m2_mt:
+case RISCV::BI__builtin_rvv_vfwcvt_f_x_v_f32m4_mt:
+case RISCV::BI__builtin_rvv_vfwcvt_f_x_v_f32m8_mt:
+case RISCV::BI__builtin_rvv_vfwcvt_f_x_v_f64m1_mt:
+case RISCV::BI__builtin_rvv_vfwcvt_f_x_v_f64m2_mt:
+case RISCV::BI__builtin_rvv_vfwcvt_f_x_v_f64m4_mt:
+case RISCV::BI__builtin_rvv_vfwcvt_f_x_v_f64m8_mt:
   ID = Intrinsic::riscv_vfwcvt_f_x_v_mask;
-  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 1);
+  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 2);
   IntrinsicTypes = {ResultType, Ops[1]->getType(), Ops.back()->getType()};
   break;
 case RISCV::BI__builtin_rvv_vfwcvt_f_xu_v_f16mf4:
@@ -5415,23 +5415,23 @@ case RISCV::BI__builtin_rvv_vfwcvt_f_xu_v_f64m8:
   ID = Intrinsic::riscv_vfwcvt_f_xu_v;
   IntrinsicTypes = {ResultType, Ops[0]->getType(), Ops.back()->getType()};
   break;
-case RISCV::BI__builtin_rvv_vfwcvt_f_xu_v_f16mf4_m:
-case RISCV::BI__builtin_rvv_vfwcvt_f_xu_v_f16mf2_m:
-case RISCV::BI__builtin_rvv_vfwcvt_f_xu_v_f16m1_m:
-case RISCV::BI__builtin_rvv_vfwcvt_f_xu_v_f16m2_m:
-case RISCV::BI__builtin_rvv_vfwcvt_f_xu_v_f16m4_m:
-case RISCV::BI__builtin_rvv_vfwcvt_f_xu_v_f16m8_m:
-case RISCV::BI__builtin_rvv_vfwcvt_f_xu_v_f32mf2_m:
-case RISCV::BI__builtin_rvv_vfwcvt_f_xu_v_f32m1_m:
-case RISCV::BI__builtin_rvv_vfwcvt_f_xu_v_f32m2_m:
-case RISCV::BI__builtin_rvv_vfwcvt_f_xu_v_f32m4_m:
-case RISCV::BI__builtin_rvv_vfwcvt_f_xu_v_f32m8_m:
-case RISCV::BI__builtin_rvv_vfwcvt_f_xu_v_f64m1_m:
-case RISCV::BI__builtin_rvv_vfwcvt_f_xu_v_f64m2_m:
-case RISCV::BI__builtin_rvv_vfwcvt_f_xu_v_f64m4_m:
-case RISCV::BI__builtin_rvv_vfwcvt_f_xu_v_f64m8_m:
+case RISCV::BI__builtin_rvv_vfwcvt_f_xu_v_f16mf4_mt:
+case RISCV::BI__builtin_rvv_vfwcvt_f_xu_v_f16mf2_mt:
+case RISCV::BI__builtin_rvv_vfwcvt_f_xu_v_f16m1_mt:
+case RISCV::BI__builtin_rvv_vfwcvt_f_xu_v_f16m2_mt:
+case RISCV::BI__builtin_rvv_vfwcvt_f_xu_v_f16m4_mt:
+case RISCV::BI__builtin_rvv_vfwcvt_f_xu_v_f16m8_mt:
+case RISCV::BI__builtin_rvv_vfwcvt_f_xu_v_f32mf2_mt:
+case RISCV::BI__builtin_rvv_vfwcvt_f_xu_v_f32m1_mt:
+case RISCV::BI__builtin_rvv_vfwcvt_f_xu_v_f32m2_mt:
+case RISCV::BI__builtin_rvv_vfwcvt_f_xu_v_f32m4_mt:
+case RISCV::BI__builtin_rvv_vfwcvt_f_xu_v_f32m8_mt:
+case RISCV::BI__builtin_rvv_vfwcvt_f_xu_v_f64m1_mt:
+case RISCV::BI__builtin_rvv_vfwcvt_f_xu_v_f64m2_mt:
+case RISCV::BI__builtin_rvv_vfwcvt_f_xu_v_f64m4_mt:
+case RISCV::BI__builtin_rvv_vfwcvt_f_xu_v_f64m8_mt:
   ID = Intrinsic::riscv_vfwcvt_f_xu_v_mask;
-  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 1);
+  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 2);
   IntrinsicTypes = {ResultType, Ops[1]->getType(), Ops.back()->getType()};
   break;
 case RISCV::BI__builtin_rvv_vfwcvt_rtz_x_f_v_i32mf2:
@@ -5446,17 +5446,17 @@ case RISCV::BI__builtin_rvv_vfwcvt_rtz_x_f_v_i64m8:
   ID = Intrinsic::riscv_vfwcvt_rtz_x_f_v;
   IntrinsicTypes = {ResultType, Ops[0]->getType(), Ops.back()->getType()};
   break;
-case RISCV::BI__builtin_rvv_vfwcvt_rtz_x_f_v_i32mf2_m:
-case RISCV::BI__builtin_rvv_vfwcvt_rtz_x_f_v_i32m1_m:
-case RISCV::BI__builtin_rvv_vfwcvt_rtz_x_f_v_i32m2_m:
-case RISCV::BI__builtin_rvv_vfwcvt_rtz_x_f_v_i32m4_m:
-case RISCV::BI__builtin_rvv_vfwcvt_rtz_x_f_v_i32m8_m:
-case RISCV::BI__builtin_rvv_vfwcvt_rtz_x_f_v_i64m1_m:
-case RISCV::BI__builtin_rvv_vfwcvt_rtz_x_f_v_i64m2_m:
-case RISCV::BI__builtin_rvv_vfwcvt_rtz_x_f_v_i64m4_m:
-case RISCV::BI__builtin_rvv_vfwcvt_rtz_x_f_v_i64m8_m:
+case RISCV::BI__builtin_rvv_vfwcvt_rtz_x_f_v_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vfwcvt_rtz_x_f_v_i32m1_mt:
+case RISCV::BI__builtin_rvv_vfwcvt_rtz_x_f_v_i32m2_mt:
+case RISCV::BI__builtin_rvv_vfwcvt_rtz_x_f_v_i32m4_mt:
+case RISCV::BI__builtin_rvv_vfwcvt_rtz_x_f_v_i32m8_mt:
+case RISCV::BI__builtin_rvv_vfwcvt_rtz_x_f_v_i64m1_mt:
+case RISCV::BI__builtin_rvv_vfwcvt_rtz_x_f_v_i64m2_mt:
+case RISCV::BI__builtin_rvv_vfwcvt_rtz_x_f_v_i64m4_mt:
+case RISCV::BI__builtin_rvv_vfwcvt_rtz_x_f_v_i64m8_mt:
   ID = Intrinsic::riscv_vfwcvt_rtz_x_f_v_mask;
-  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 1);
+  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 2);
   IntrinsicTypes = {ResultType, Ops[1]->getType(), Ops.back()->getType()};
   break;
 case RISCV::BI__builtin_rvv_vfwcvt_rtz_xu_f_v_u32mf2:
@@ -5471,17 +5471,17 @@ case RISCV::BI__builtin_rvv_vfwcvt_rtz_xu_f_v_u64m8:
   ID = Intrinsic::riscv_vfwcvt_rtz_xu_f_v;
   IntrinsicTypes = {ResultType, Ops[0]->getType(), Ops.back()->getType()};
   break;
-case RISCV::BI__builtin_rvv_vfwcvt_rtz_xu_f_v_u32mf2_m:
-case RISCV::BI__builtin_rvv_vfwcvt_rtz_xu_f_v_u32m1_m:
-case RISCV::BI__builtin_rvv_vfwcvt_rtz_xu_f_v_u32m2_m:
-case RISCV::BI__builtin_rvv_vfwcvt_rtz_xu_f_v_u32m4_m:
-case RISCV::BI__builtin_rvv_vfwcvt_rtz_xu_f_v_u32m8_m:
-case RISCV::BI__builtin_rvv_vfwcvt_rtz_xu_f_v_u64m1_m:
-case RISCV::BI__builtin_rvv_vfwcvt_rtz_xu_f_v_u64m2_m:
-case RISCV::BI__builtin_rvv_vfwcvt_rtz_xu_f_v_u64m4_m:
-case RISCV::BI__builtin_rvv_vfwcvt_rtz_xu_f_v_u64m8_m:
+case RISCV::BI__builtin_rvv_vfwcvt_rtz_xu_f_v_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vfwcvt_rtz_xu_f_v_u32m1_mt:
+case RISCV::BI__builtin_rvv_vfwcvt_rtz_xu_f_v_u32m2_mt:
+case RISCV::BI__builtin_rvv_vfwcvt_rtz_xu_f_v_u32m4_mt:
+case RISCV::BI__builtin_rvv_vfwcvt_rtz_xu_f_v_u32m8_mt:
+case RISCV::BI__builtin_rvv_vfwcvt_rtz_xu_f_v_u64m1_mt:
+case RISCV::BI__builtin_rvv_vfwcvt_rtz_xu_f_v_u64m2_mt:
+case RISCV::BI__builtin_rvv_vfwcvt_rtz_xu_f_v_u64m4_mt:
+case RISCV::BI__builtin_rvv_vfwcvt_rtz_xu_f_v_u64m8_mt:
   ID = Intrinsic::riscv_vfwcvt_rtz_xu_f_v_mask;
-  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 1);
+  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 2);
   IntrinsicTypes = {ResultType, Ops[1]->getType(), Ops.back()->getType()};
   break;
 case RISCV::BI__builtin_rvv_vfwcvt_x_f_v_i32mf2:
@@ -5496,17 +5496,17 @@ case RISCV::BI__builtin_rvv_vfwcvt_x_f_v_i64m8:
   ID = Intrinsic::riscv_vfwcvt_x_f_v;
   IntrinsicTypes = {ResultType, Ops[0]->getType(), Ops.back()->getType()};
   break;
-case RISCV::BI__builtin_rvv_vfwcvt_x_f_v_i32mf2_m:
-case RISCV::BI__builtin_rvv_vfwcvt_x_f_v_i32m1_m:
-case RISCV::BI__builtin_rvv_vfwcvt_x_f_v_i32m2_m:
-case RISCV::BI__builtin_rvv_vfwcvt_x_f_v_i32m4_m:
-case RISCV::BI__builtin_rvv_vfwcvt_x_f_v_i32m8_m:
-case RISCV::BI__builtin_rvv_vfwcvt_x_f_v_i64m1_m:
-case RISCV::BI__builtin_rvv_vfwcvt_x_f_v_i64m2_m:
-case RISCV::BI__builtin_rvv_vfwcvt_x_f_v_i64m4_m:
-case RISCV::BI__builtin_rvv_vfwcvt_x_f_v_i64m8_m:
+case RISCV::BI__builtin_rvv_vfwcvt_x_f_v_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vfwcvt_x_f_v_i32m1_mt:
+case RISCV::BI__builtin_rvv_vfwcvt_x_f_v_i32m2_mt:
+case RISCV::BI__builtin_rvv_vfwcvt_x_f_v_i32m4_mt:
+case RISCV::BI__builtin_rvv_vfwcvt_x_f_v_i32m8_mt:
+case RISCV::BI__builtin_rvv_vfwcvt_x_f_v_i64m1_mt:
+case RISCV::BI__builtin_rvv_vfwcvt_x_f_v_i64m2_mt:
+case RISCV::BI__builtin_rvv_vfwcvt_x_f_v_i64m4_mt:
+case RISCV::BI__builtin_rvv_vfwcvt_x_f_v_i64m8_mt:
   ID = Intrinsic::riscv_vfwcvt_x_f_v_mask;
-  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 1);
+  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 2);
   IntrinsicTypes = {ResultType, Ops[1]->getType(), Ops.back()->getType()};
   break;
 case RISCV::BI__builtin_rvv_vfwcvt_xu_f_v_u32mf2:
@@ -5521,17 +5521,17 @@ case RISCV::BI__builtin_rvv_vfwcvt_xu_f_v_u64m8:
   ID = Intrinsic::riscv_vfwcvt_xu_f_v;
   IntrinsicTypes = {ResultType, Ops[0]->getType(), Ops.back()->getType()};
   break;
-case RISCV::BI__builtin_rvv_vfwcvt_xu_f_v_u32mf2_m:
-case RISCV::BI__builtin_rvv_vfwcvt_xu_f_v_u32m1_m:
-case RISCV::BI__builtin_rvv_vfwcvt_xu_f_v_u32m2_m:
-case RISCV::BI__builtin_rvv_vfwcvt_xu_f_v_u32m4_m:
-case RISCV::BI__builtin_rvv_vfwcvt_xu_f_v_u32m8_m:
-case RISCV::BI__builtin_rvv_vfwcvt_xu_f_v_u64m1_m:
-case RISCV::BI__builtin_rvv_vfwcvt_xu_f_v_u64m2_m:
-case RISCV::BI__builtin_rvv_vfwcvt_xu_f_v_u64m4_m:
-case RISCV::BI__builtin_rvv_vfwcvt_xu_f_v_u64m8_m:
+case RISCV::BI__builtin_rvv_vfwcvt_xu_f_v_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vfwcvt_xu_f_v_u32m1_mt:
+case RISCV::BI__builtin_rvv_vfwcvt_xu_f_v_u32m2_mt:
+case RISCV::BI__builtin_rvv_vfwcvt_xu_f_v_u32m4_mt:
+case RISCV::BI__builtin_rvv_vfwcvt_xu_f_v_u32m8_mt:
+case RISCV::BI__builtin_rvv_vfwcvt_xu_f_v_u64m1_mt:
+case RISCV::BI__builtin_rvv_vfwcvt_xu_f_v_u64m2_mt:
+case RISCV::BI__builtin_rvv_vfwcvt_xu_f_v_u64m4_mt:
+case RISCV::BI__builtin_rvv_vfwcvt_xu_f_v_u64m8_mt:
   ID = Intrinsic::riscv_vfwcvt_xu_f_v_mask;
-  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 1);
+  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 2);
   IntrinsicTypes = {ResultType, Ops[1]->getType(), Ops.back()->getType()};
   break;
 case RISCV::BI__builtin_rvv_vfwmacc_vv_f32mf2:
@@ -5641,26 +5641,26 @@ case RISCV::BI__builtin_rvv_vfwmul_vf_f64m8:
   ID = Intrinsic::riscv_vfwmul;
   IntrinsicTypes = {ResultType, Ops[0]->getType(), Ops[1]->getType(), Ops.back()->getType()};
   break;
-case RISCV::BI__builtin_rvv_vfwmul_vv_f32mf2_m:
-case RISCV::BI__builtin_rvv_vfwmul_vv_f32m1_m:
-case RISCV::BI__builtin_rvv_vfwmul_vv_f32m2_m:
-case RISCV::BI__builtin_rvv_vfwmul_vv_f32m4_m:
-case RISCV::BI__builtin_rvv_vfwmul_vv_f32m8_m:
-case RISCV::BI__builtin_rvv_vfwmul_vv_f64m1_m:
-case RISCV::BI__builtin_rvv_vfwmul_vv_f64m2_m:
-case RISCV::BI__builtin_rvv_vfwmul_vv_f64m4_m:
-case RISCV::BI__builtin_rvv_vfwmul_vv_f64m8_m:
-case RISCV::BI__builtin_rvv_vfwmul_vf_f32mf2_m:
-case RISCV::BI__builtin_rvv_vfwmul_vf_f32m1_m:
-case RISCV::BI__builtin_rvv_vfwmul_vf_f32m2_m:
-case RISCV::BI__builtin_rvv_vfwmul_vf_f32m4_m:
-case RISCV::BI__builtin_rvv_vfwmul_vf_f32m8_m:
-case RISCV::BI__builtin_rvv_vfwmul_vf_f64m1_m:
-case RISCV::BI__builtin_rvv_vfwmul_vf_f64m2_m:
-case RISCV::BI__builtin_rvv_vfwmul_vf_f64m4_m:
-case RISCV::BI__builtin_rvv_vfwmul_vf_f64m8_m:
+case RISCV::BI__builtin_rvv_vfwmul_vv_f32mf2_mt:
+case RISCV::BI__builtin_rvv_vfwmul_vv_f32m1_mt:
+case RISCV::BI__builtin_rvv_vfwmul_vv_f32m2_mt:
+case RISCV::BI__builtin_rvv_vfwmul_vv_f32m4_mt:
+case RISCV::BI__builtin_rvv_vfwmul_vv_f32m8_mt:
+case RISCV::BI__builtin_rvv_vfwmul_vv_f64m1_mt:
+case RISCV::BI__builtin_rvv_vfwmul_vv_f64m2_mt:
+case RISCV::BI__builtin_rvv_vfwmul_vv_f64m4_mt:
+case RISCV::BI__builtin_rvv_vfwmul_vv_f64m8_mt:
+case RISCV::BI__builtin_rvv_vfwmul_vf_f32mf2_mt:
+case RISCV::BI__builtin_rvv_vfwmul_vf_f32m1_mt:
+case RISCV::BI__builtin_rvv_vfwmul_vf_f32m2_mt:
+case RISCV::BI__builtin_rvv_vfwmul_vf_f32m4_mt:
+case RISCV::BI__builtin_rvv_vfwmul_vf_f32m8_mt:
+case RISCV::BI__builtin_rvv_vfwmul_vf_f64m1_mt:
+case RISCV::BI__builtin_rvv_vfwmul_vf_f64m2_mt:
+case RISCV::BI__builtin_rvv_vfwmul_vf_f64m4_mt:
+case RISCV::BI__builtin_rvv_vfwmul_vf_f64m8_mt:
   ID = Intrinsic::riscv_vfwmul_mask;
-  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 1);
+  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 2);
   IntrinsicTypes = {ResultType, Ops[1]->getType(), Ops[2]->getType(), Ops.back()->getType()};
   break;
 case RISCV::BI__builtin_rvv_vfwnmacc_vv_f32mf2:
@@ -5828,26 +5828,26 @@ case RISCV::BI__builtin_rvv_vfwsub_vf_f64m8:
   ID = Intrinsic::riscv_vfwsub;
   IntrinsicTypes = {ResultType, Ops[0]->getType(), Ops[1]->getType(), Ops.back()->getType()};
   break;
-case RISCV::BI__builtin_rvv_vfwsub_vv_f32mf2_m:
-case RISCV::BI__builtin_rvv_vfwsub_vv_f32m1_m:
-case RISCV::BI__builtin_rvv_vfwsub_vv_f32m2_m:
-case RISCV::BI__builtin_rvv_vfwsub_vv_f32m4_m:
-case RISCV::BI__builtin_rvv_vfwsub_vv_f32m8_m:
-case RISCV::BI__builtin_rvv_vfwsub_vv_f64m1_m:
-case RISCV::BI__builtin_rvv_vfwsub_vv_f64m2_m:
-case RISCV::BI__builtin_rvv_vfwsub_vv_f64m4_m:
-case RISCV::BI__builtin_rvv_vfwsub_vv_f64m8_m:
-case RISCV::BI__builtin_rvv_vfwsub_vf_f32mf2_m:
-case RISCV::BI__builtin_rvv_vfwsub_vf_f32m1_m:
-case RISCV::BI__builtin_rvv_vfwsub_vf_f32m2_m:
-case RISCV::BI__builtin_rvv_vfwsub_vf_f32m4_m:
-case RISCV::BI__builtin_rvv_vfwsub_vf_f32m8_m:
-case RISCV::BI__builtin_rvv_vfwsub_vf_f64m1_m:
-case RISCV::BI__builtin_rvv_vfwsub_vf_f64m2_m:
-case RISCV::BI__builtin_rvv_vfwsub_vf_f64m4_m:
-case RISCV::BI__builtin_rvv_vfwsub_vf_f64m8_m:
+case RISCV::BI__builtin_rvv_vfwsub_vv_f32mf2_mt:
+case RISCV::BI__builtin_rvv_vfwsub_vv_f32m1_mt:
+case RISCV::BI__builtin_rvv_vfwsub_vv_f32m2_mt:
+case RISCV::BI__builtin_rvv_vfwsub_vv_f32m4_mt:
+case RISCV::BI__builtin_rvv_vfwsub_vv_f32m8_mt:
+case RISCV::BI__builtin_rvv_vfwsub_vv_f64m1_mt:
+case RISCV::BI__builtin_rvv_vfwsub_vv_f64m2_mt:
+case RISCV::BI__builtin_rvv_vfwsub_vv_f64m4_mt:
+case RISCV::BI__builtin_rvv_vfwsub_vv_f64m8_mt:
+case RISCV::BI__builtin_rvv_vfwsub_vf_f32mf2_mt:
+case RISCV::BI__builtin_rvv_vfwsub_vf_f32m1_mt:
+case RISCV::BI__builtin_rvv_vfwsub_vf_f32m2_mt:
+case RISCV::BI__builtin_rvv_vfwsub_vf_f32m4_mt:
+case RISCV::BI__builtin_rvv_vfwsub_vf_f32m8_mt:
+case RISCV::BI__builtin_rvv_vfwsub_vf_f64m1_mt:
+case RISCV::BI__builtin_rvv_vfwsub_vf_f64m2_mt:
+case RISCV::BI__builtin_rvv_vfwsub_vf_f64m4_mt:
+case RISCV::BI__builtin_rvv_vfwsub_vf_f64m8_mt:
   ID = Intrinsic::riscv_vfwsub_mask;
-  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 1);
+  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 2);
   IntrinsicTypes = {ResultType, Ops[1]->getType(), Ops[2]->getType(), Ops.back()->getType()};
   break;
 case RISCV::BI__builtin_rvv_vfwsub_wv_f32mf2:
@@ -5871,26 +5871,26 @@ case RISCV::BI__builtin_rvv_vfwsub_wf_f64m8:
   ID = Intrinsic::riscv_vfwsub_w;
   IntrinsicTypes = {ResultType, Ops[1]->getType(), Ops.back()->getType()};
   break;
-case RISCV::BI__builtin_rvv_vfwsub_wv_f32mf2_m:
-case RISCV::BI__builtin_rvv_vfwsub_wv_f32m1_m:
-case RISCV::BI__builtin_rvv_vfwsub_wv_f32m2_m:
-case RISCV::BI__builtin_rvv_vfwsub_wv_f32m4_m:
-case RISCV::BI__builtin_rvv_vfwsub_wv_f32m8_m:
-case RISCV::BI__builtin_rvv_vfwsub_wv_f64m1_m:
-case RISCV::BI__builtin_rvv_vfwsub_wv_f64m2_m:
-case RISCV::BI__builtin_rvv_vfwsub_wv_f64m4_m:
-case RISCV::BI__builtin_rvv_vfwsub_wv_f64m8_m:
-case RISCV::BI__builtin_rvv_vfwsub_wf_f32mf2_m:
-case RISCV::BI__builtin_rvv_vfwsub_wf_f32m1_m:
-case RISCV::BI__builtin_rvv_vfwsub_wf_f32m2_m:
-case RISCV::BI__builtin_rvv_vfwsub_wf_f32m4_m:
-case RISCV::BI__builtin_rvv_vfwsub_wf_f32m8_m:
-case RISCV::BI__builtin_rvv_vfwsub_wf_f64m1_m:
-case RISCV::BI__builtin_rvv_vfwsub_wf_f64m2_m:
-case RISCV::BI__builtin_rvv_vfwsub_wf_f64m4_m:
-case RISCV::BI__builtin_rvv_vfwsub_wf_f64m8_m:
+case RISCV::BI__builtin_rvv_vfwsub_wv_f32mf2_mt:
+case RISCV::BI__builtin_rvv_vfwsub_wv_f32m1_mt:
+case RISCV::BI__builtin_rvv_vfwsub_wv_f32m2_mt:
+case RISCV::BI__builtin_rvv_vfwsub_wv_f32m4_mt:
+case RISCV::BI__builtin_rvv_vfwsub_wv_f32m8_mt:
+case RISCV::BI__builtin_rvv_vfwsub_wv_f64m1_mt:
+case RISCV::BI__builtin_rvv_vfwsub_wv_f64m2_mt:
+case RISCV::BI__builtin_rvv_vfwsub_wv_f64m4_mt:
+case RISCV::BI__builtin_rvv_vfwsub_wv_f64m8_mt:
+case RISCV::BI__builtin_rvv_vfwsub_wf_f32mf2_mt:
+case RISCV::BI__builtin_rvv_vfwsub_wf_f32m1_mt:
+case RISCV::BI__builtin_rvv_vfwsub_wf_f32m2_mt:
+case RISCV::BI__builtin_rvv_vfwsub_wf_f32m4_mt:
+case RISCV::BI__builtin_rvv_vfwsub_wf_f32m8_mt:
+case RISCV::BI__builtin_rvv_vfwsub_wf_f64m1_mt:
+case RISCV::BI__builtin_rvv_vfwsub_wf_f64m2_mt:
+case RISCV::BI__builtin_rvv_vfwsub_wf_f64m4_mt:
+case RISCV::BI__builtin_rvv_vfwsub_wf_f64m8_mt:
   ID = Intrinsic::riscv_vfwsub_w_mask;
-  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 1);
+  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 2);
   IntrinsicTypes = {ResultType, Ops[2]->getType(), Ops.back()->getType()};
   break;
 case RISCV::BI__builtin_rvv_vid_v_i8m1:
@@ -6115,69 +6115,69 @@ case RISCV::BI__builtin_rvv_vle1_v_b64:
       IntrinsicTypes = {ResultType, Ops[1]->getType()};
       Ops[0] = Builder.CreateBitCast(Ops[0], ResultType->getPointerTo());
     break;
-case RISCV::BI__builtin_rvv_vle8_v_i8m1_m:
-case RISCV::BI__builtin_rvv_vle8_v_i8m2_m:
-case RISCV::BI__builtin_rvv_vle8_v_i8m4_m:
-case RISCV::BI__builtin_rvv_vle8_v_i8m8_m:
-case RISCV::BI__builtin_rvv_vle8_v_i8mf2_m:
-case RISCV::BI__builtin_rvv_vle8_v_i8mf4_m:
-case RISCV::BI__builtin_rvv_vle8_v_i8mf8_m:
-case RISCV::BI__builtin_rvv_vle8_v_u8m1_m:
-case RISCV::BI__builtin_rvv_vle8_v_u8m2_m:
-case RISCV::BI__builtin_rvv_vle8_v_u8m4_m:
-case RISCV::BI__builtin_rvv_vle8_v_u8m8_m:
-case RISCV::BI__builtin_rvv_vle8_v_u8mf2_m:
-case RISCV::BI__builtin_rvv_vle8_v_u8mf4_m:
-case RISCV::BI__builtin_rvv_vle8_v_u8mf8_m:
-case RISCV::BI__builtin_rvv_vle16_v_i16m1_m:
-case RISCV::BI__builtin_rvv_vle16_v_i16m2_m:
-case RISCV::BI__builtin_rvv_vle16_v_i16m4_m:
-case RISCV::BI__builtin_rvv_vle16_v_i16m8_m:
-case RISCV::BI__builtin_rvv_vle16_v_i16mf2_m:
-case RISCV::BI__builtin_rvv_vle16_v_i16mf4_m:
-case RISCV::BI__builtin_rvv_vle16_v_u16m1_m:
-case RISCV::BI__builtin_rvv_vle16_v_u16m2_m:
-case RISCV::BI__builtin_rvv_vle16_v_u16m4_m:
-case RISCV::BI__builtin_rvv_vle16_v_u16m8_m:
-case RISCV::BI__builtin_rvv_vle16_v_u16mf2_m:
-case RISCV::BI__builtin_rvv_vle16_v_u16mf4_m:
-case RISCV::BI__builtin_rvv_vle16_v_f16m1_m:
-case RISCV::BI__builtin_rvv_vle16_v_f16m2_m:
-case RISCV::BI__builtin_rvv_vle16_v_f16m4_m:
-case RISCV::BI__builtin_rvv_vle16_v_f16m8_m:
-case RISCV::BI__builtin_rvv_vle16_v_f16mf2_m:
-case RISCV::BI__builtin_rvv_vle16_v_f16mf4_m:
-case RISCV::BI__builtin_rvv_vle32_v_i32m1_m:
-case RISCV::BI__builtin_rvv_vle32_v_i32m2_m:
-case RISCV::BI__builtin_rvv_vle32_v_i32m4_m:
-case RISCV::BI__builtin_rvv_vle32_v_i32m8_m:
-case RISCV::BI__builtin_rvv_vle32_v_i32mf2_m:
-case RISCV::BI__builtin_rvv_vle32_v_u32m1_m:
-case RISCV::BI__builtin_rvv_vle32_v_u32m2_m:
-case RISCV::BI__builtin_rvv_vle32_v_u32m4_m:
-case RISCV::BI__builtin_rvv_vle32_v_u32m8_m:
-case RISCV::BI__builtin_rvv_vle32_v_u32mf2_m:
-case RISCV::BI__builtin_rvv_vle32_v_f32m1_m:
-case RISCV::BI__builtin_rvv_vle32_v_f32m2_m:
-case RISCV::BI__builtin_rvv_vle32_v_f32m4_m:
-case RISCV::BI__builtin_rvv_vle32_v_f32m8_m:
-case RISCV::BI__builtin_rvv_vle32_v_f32mf2_m:
-case RISCV::BI__builtin_rvv_vle64_v_i64m1_m:
-case RISCV::BI__builtin_rvv_vle64_v_i64m2_m:
-case RISCV::BI__builtin_rvv_vle64_v_i64m4_m:
-case RISCV::BI__builtin_rvv_vle64_v_i64m8_m:
-case RISCV::BI__builtin_rvv_vle64_v_u64m1_m:
-case RISCV::BI__builtin_rvv_vle64_v_u64m2_m:
-case RISCV::BI__builtin_rvv_vle64_v_u64m4_m:
-case RISCV::BI__builtin_rvv_vle64_v_u64m8_m:
-case RISCV::BI__builtin_rvv_vle64_v_f64m1_m:
-case RISCV::BI__builtin_rvv_vle64_v_f64m2_m:
-case RISCV::BI__builtin_rvv_vle64_v_f64m4_m:
-case RISCV::BI__builtin_rvv_vle64_v_f64m8_m:
+case RISCV::BI__builtin_rvv_vle8_v_i8m1_mt:
+case RISCV::BI__builtin_rvv_vle8_v_i8m2_mt:
+case RISCV::BI__builtin_rvv_vle8_v_i8m4_mt:
+case RISCV::BI__builtin_rvv_vle8_v_i8m8_mt:
+case RISCV::BI__builtin_rvv_vle8_v_i8mf2_mt:
+case RISCV::BI__builtin_rvv_vle8_v_i8mf4_mt:
+case RISCV::BI__builtin_rvv_vle8_v_i8mf8_mt:
+case RISCV::BI__builtin_rvv_vle8_v_u8m1_mt:
+case RISCV::BI__builtin_rvv_vle8_v_u8m2_mt:
+case RISCV::BI__builtin_rvv_vle8_v_u8m4_mt:
+case RISCV::BI__builtin_rvv_vle8_v_u8m8_mt:
+case RISCV::BI__builtin_rvv_vle8_v_u8mf2_mt:
+case RISCV::BI__builtin_rvv_vle8_v_u8mf4_mt:
+case RISCV::BI__builtin_rvv_vle8_v_u8mf8_mt:
+case RISCV::BI__builtin_rvv_vle16_v_i16m1_mt:
+case RISCV::BI__builtin_rvv_vle16_v_i16m2_mt:
+case RISCV::BI__builtin_rvv_vle16_v_i16m4_mt:
+case RISCV::BI__builtin_rvv_vle16_v_i16m8_mt:
+case RISCV::BI__builtin_rvv_vle16_v_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vle16_v_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vle16_v_u16m1_mt:
+case RISCV::BI__builtin_rvv_vle16_v_u16m2_mt:
+case RISCV::BI__builtin_rvv_vle16_v_u16m4_mt:
+case RISCV::BI__builtin_rvv_vle16_v_u16m8_mt:
+case RISCV::BI__builtin_rvv_vle16_v_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vle16_v_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vle16_v_f16m1_mt:
+case RISCV::BI__builtin_rvv_vle16_v_f16m2_mt:
+case RISCV::BI__builtin_rvv_vle16_v_f16m4_mt:
+case RISCV::BI__builtin_rvv_vle16_v_f16m8_mt:
+case RISCV::BI__builtin_rvv_vle16_v_f16mf2_mt:
+case RISCV::BI__builtin_rvv_vle16_v_f16mf4_mt:
+case RISCV::BI__builtin_rvv_vle32_v_i32m1_mt:
+case RISCV::BI__builtin_rvv_vle32_v_i32m2_mt:
+case RISCV::BI__builtin_rvv_vle32_v_i32m4_mt:
+case RISCV::BI__builtin_rvv_vle32_v_i32m8_mt:
+case RISCV::BI__builtin_rvv_vle32_v_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vle32_v_u32m1_mt:
+case RISCV::BI__builtin_rvv_vle32_v_u32m2_mt:
+case RISCV::BI__builtin_rvv_vle32_v_u32m4_mt:
+case RISCV::BI__builtin_rvv_vle32_v_u32m8_mt:
+case RISCV::BI__builtin_rvv_vle32_v_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vle32_v_f32m1_mt:
+case RISCV::BI__builtin_rvv_vle32_v_f32m2_mt:
+case RISCV::BI__builtin_rvv_vle32_v_f32m4_mt:
+case RISCV::BI__builtin_rvv_vle32_v_f32m8_mt:
+case RISCV::BI__builtin_rvv_vle32_v_f32mf2_mt:
+case RISCV::BI__builtin_rvv_vle64_v_i64m1_mt:
+case RISCV::BI__builtin_rvv_vle64_v_i64m2_mt:
+case RISCV::BI__builtin_rvv_vle64_v_i64m4_mt:
+case RISCV::BI__builtin_rvv_vle64_v_i64m8_mt:
+case RISCV::BI__builtin_rvv_vle64_v_u64m1_mt:
+case RISCV::BI__builtin_rvv_vle64_v_u64m2_mt:
+case RISCV::BI__builtin_rvv_vle64_v_u64m4_mt:
+case RISCV::BI__builtin_rvv_vle64_v_u64m8_mt:
+case RISCV::BI__builtin_rvv_vle64_v_f64m1_mt:
+case RISCV::BI__builtin_rvv_vle64_v_f64m2_mt:
+case RISCV::BI__builtin_rvv_vle64_v_f64m4_mt:
+case RISCV::BI__builtin_rvv_vle64_v_f64m8_mt:
   ID = Intrinsic::riscv_vle_mask;
 
       // Move mask to right before vl.
-      std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 1);
+      std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 2);
       IntrinsicTypes = {ResultType, Ops[3]->getType()};
       Ops[1] = Builder.CreateBitCast(Ops[1], ResultType->getPointerTo());
     break;
@@ -6258,70 +6258,70 @@ case RISCV::BI__builtin_rvv_vle8ff_v_u8mf8:
         return V;
       }
       break;
-case RISCV::BI__builtin_rvv_vle16ff_v_i16m1_m:
-case RISCV::BI__builtin_rvv_vle16ff_v_i16m2_m:
-case RISCV::BI__builtin_rvv_vle16ff_v_i16m4_m:
-case RISCV::BI__builtin_rvv_vle16ff_v_i16m8_m:
-case RISCV::BI__builtin_rvv_vle16ff_v_i16mf2_m:
-case RISCV::BI__builtin_rvv_vle16ff_v_i16mf4_m:
-case RISCV::BI__builtin_rvv_vle16ff_v_u16m1_m:
-case RISCV::BI__builtin_rvv_vle16ff_v_u16m2_m:
-case RISCV::BI__builtin_rvv_vle16ff_v_u16m4_m:
-case RISCV::BI__builtin_rvv_vle16ff_v_u16m8_m:
-case RISCV::BI__builtin_rvv_vle16ff_v_u16mf2_m:
-case RISCV::BI__builtin_rvv_vle16ff_v_u16mf4_m:
-case RISCV::BI__builtin_rvv_vle16ff_v_f16m1_m:
-case RISCV::BI__builtin_rvv_vle16ff_v_f16m2_m:
-case RISCV::BI__builtin_rvv_vle16ff_v_f16m4_m:
-case RISCV::BI__builtin_rvv_vle16ff_v_f16m8_m:
-case RISCV::BI__builtin_rvv_vle16ff_v_f16mf2_m:
-case RISCV::BI__builtin_rvv_vle16ff_v_f16mf4_m:
-case RISCV::BI__builtin_rvv_vle32ff_v_i32m1_m:
-case RISCV::BI__builtin_rvv_vle32ff_v_i32m2_m:
-case RISCV::BI__builtin_rvv_vle32ff_v_i32m4_m:
-case RISCV::BI__builtin_rvv_vle32ff_v_i32m8_m:
-case RISCV::BI__builtin_rvv_vle32ff_v_i32mf2_m:
-case RISCV::BI__builtin_rvv_vle32ff_v_u32m1_m:
-case RISCV::BI__builtin_rvv_vle32ff_v_u32m2_m:
-case RISCV::BI__builtin_rvv_vle32ff_v_u32m4_m:
-case RISCV::BI__builtin_rvv_vle32ff_v_u32m8_m:
-case RISCV::BI__builtin_rvv_vle32ff_v_u32mf2_m:
-case RISCV::BI__builtin_rvv_vle32ff_v_f32m1_m:
-case RISCV::BI__builtin_rvv_vle32ff_v_f32m2_m:
-case RISCV::BI__builtin_rvv_vle32ff_v_f32m4_m:
-case RISCV::BI__builtin_rvv_vle32ff_v_f32m8_m:
-case RISCV::BI__builtin_rvv_vle32ff_v_f32mf2_m:
-case RISCV::BI__builtin_rvv_vle64ff_v_i64m1_m:
-case RISCV::BI__builtin_rvv_vle64ff_v_i64m2_m:
-case RISCV::BI__builtin_rvv_vle64ff_v_i64m4_m:
-case RISCV::BI__builtin_rvv_vle64ff_v_i64m8_m:
-case RISCV::BI__builtin_rvv_vle64ff_v_u64m1_m:
-case RISCV::BI__builtin_rvv_vle64ff_v_u64m2_m:
-case RISCV::BI__builtin_rvv_vle64ff_v_u64m4_m:
-case RISCV::BI__builtin_rvv_vle64ff_v_u64m8_m:
-case RISCV::BI__builtin_rvv_vle64ff_v_f64m1_m:
-case RISCV::BI__builtin_rvv_vle64ff_v_f64m2_m:
-case RISCV::BI__builtin_rvv_vle64ff_v_f64m4_m:
-case RISCV::BI__builtin_rvv_vle64ff_v_f64m8_m:
-case RISCV::BI__builtin_rvv_vle8ff_v_i8m1_m:
-case RISCV::BI__builtin_rvv_vle8ff_v_i8m2_m:
-case RISCV::BI__builtin_rvv_vle8ff_v_i8m4_m:
-case RISCV::BI__builtin_rvv_vle8ff_v_i8m8_m:
-case RISCV::BI__builtin_rvv_vle8ff_v_i8mf2_m:
-case RISCV::BI__builtin_rvv_vle8ff_v_i8mf4_m:
-case RISCV::BI__builtin_rvv_vle8ff_v_i8mf8_m:
-case RISCV::BI__builtin_rvv_vle8ff_v_u8m1_m:
-case RISCV::BI__builtin_rvv_vle8ff_v_u8m2_m:
-case RISCV::BI__builtin_rvv_vle8ff_v_u8m4_m:
-case RISCV::BI__builtin_rvv_vle8ff_v_u8m8_m:
-case RISCV::BI__builtin_rvv_vle8ff_v_u8mf2_m:
-case RISCV::BI__builtin_rvv_vle8ff_v_u8mf4_m:
-case RISCV::BI__builtin_rvv_vle8ff_v_u8mf8_m:
+case RISCV::BI__builtin_rvv_vle16ff_v_i16m1_mt:
+case RISCV::BI__builtin_rvv_vle16ff_v_i16m2_mt:
+case RISCV::BI__builtin_rvv_vle16ff_v_i16m4_mt:
+case RISCV::BI__builtin_rvv_vle16ff_v_i16m8_mt:
+case RISCV::BI__builtin_rvv_vle16ff_v_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vle16ff_v_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vle16ff_v_u16m1_mt:
+case RISCV::BI__builtin_rvv_vle16ff_v_u16m2_mt:
+case RISCV::BI__builtin_rvv_vle16ff_v_u16m4_mt:
+case RISCV::BI__builtin_rvv_vle16ff_v_u16m8_mt:
+case RISCV::BI__builtin_rvv_vle16ff_v_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vle16ff_v_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vle16ff_v_f16m1_mt:
+case RISCV::BI__builtin_rvv_vle16ff_v_f16m2_mt:
+case RISCV::BI__builtin_rvv_vle16ff_v_f16m4_mt:
+case RISCV::BI__builtin_rvv_vle16ff_v_f16m8_mt:
+case RISCV::BI__builtin_rvv_vle16ff_v_f16mf2_mt:
+case RISCV::BI__builtin_rvv_vle16ff_v_f16mf4_mt:
+case RISCV::BI__builtin_rvv_vle32ff_v_i32m1_mt:
+case RISCV::BI__builtin_rvv_vle32ff_v_i32m2_mt:
+case RISCV::BI__builtin_rvv_vle32ff_v_i32m4_mt:
+case RISCV::BI__builtin_rvv_vle32ff_v_i32m8_mt:
+case RISCV::BI__builtin_rvv_vle32ff_v_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vle32ff_v_u32m1_mt:
+case RISCV::BI__builtin_rvv_vle32ff_v_u32m2_mt:
+case RISCV::BI__builtin_rvv_vle32ff_v_u32m4_mt:
+case RISCV::BI__builtin_rvv_vle32ff_v_u32m8_mt:
+case RISCV::BI__builtin_rvv_vle32ff_v_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vle32ff_v_f32m1_mt:
+case RISCV::BI__builtin_rvv_vle32ff_v_f32m2_mt:
+case RISCV::BI__builtin_rvv_vle32ff_v_f32m4_mt:
+case RISCV::BI__builtin_rvv_vle32ff_v_f32m8_mt:
+case RISCV::BI__builtin_rvv_vle32ff_v_f32mf2_mt:
+case RISCV::BI__builtin_rvv_vle64ff_v_i64m1_mt:
+case RISCV::BI__builtin_rvv_vle64ff_v_i64m2_mt:
+case RISCV::BI__builtin_rvv_vle64ff_v_i64m4_mt:
+case RISCV::BI__builtin_rvv_vle64ff_v_i64m8_mt:
+case RISCV::BI__builtin_rvv_vle64ff_v_u64m1_mt:
+case RISCV::BI__builtin_rvv_vle64ff_v_u64m2_mt:
+case RISCV::BI__builtin_rvv_vle64ff_v_u64m4_mt:
+case RISCV::BI__builtin_rvv_vle64ff_v_u64m8_mt:
+case RISCV::BI__builtin_rvv_vle64ff_v_f64m1_mt:
+case RISCV::BI__builtin_rvv_vle64ff_v_f64m2_mt:
+case RISCV::BI__builtin_rvv_vle64ff_v_f64m4_mt:
+case RISCV::BI__builtin_rvv_vle64ff_v_f64m8_mt:
+case RISCV::BI__builtin_rvv_vle8ff_v_i8m1_mt:
+case RISCV::BI__builtin_rvv_vle8ff_v_i8m2_mt:
+case RISCV::BI__builtin_rvv_vle8ff_v_i8m4_mt:
+case RISCV::BI__builtin_rvv_vle8ff_v_i8m8_mt:
+case RISCV::BI__builtin_rvv_vle8ff_v_i8mf2_mt:
+case RISCV::BI__builtin_rvv_vle8ff_v_i8mf4_mt:
+case RISCV::BI__builtin_rvv_vle8ff_v_i8mf8_mt:
+case RISCV::BI__builtin_rvv_vle8ff_v_u8m1_mt:
+case RISCV::BI__builtin_rvv_vle8ff_v_u8m2_mt:
+case RISCV::BI__builtin_rvv_vle8ff_v_u8m4_mt:
+case RISCV::BI__builtin_rvv_vle8ff_v_u8m8_mt:
+case RISCV::BI__builtin_rvv_vle8ff_v_u8mf2_mt:
+case RISCV::BI__builtin_rvv_vle8ff_v_u8mf4_mt:
+case RISCV::BI__builtin_rvv_vle8ff_v_u8mf8_mt:
   ID = Intrinsic::riscv_vleff_mask;
 
       {
         // Move mask to right before vl.
-        std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 1);
+        std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 2);
         IntrinsicTypes = {ResultType, Ops[4]->getType()};
         Ops[1] = Builder.CreateBitCast(Ops[1], ResultType->getPointerTo());
         Value *NewVL = Ops[2];
@@ -6554,222 +6554,222 @@ case RISCV::BI__builtin_rvv_vloxei64_v_f64m8:
         IntrinsicTypes = {ResultType, Ops[1]->getType(), Ops[2]->getType()};
         Ops[0] = Builder.CreateBitCast(Ops[0], ResultType->getPointerTo());
       break;
-case RISCV::BI__builtin_rvv_vloxei8_v_i8m1_m:
-case RISCV::BI__builtin_rvv_vloxei8_v_i8m2_m:
-case RISCV::BI__builtin_rvv_vloxei8_v_i8m4_m:
-case RISCV::BI__builtin_rvv_vloxei8_v_i8m8_m:
-case RISCV::BI__builtin_rvv_vloxei8_v_i8mf2_m:
-case RISCV::BI__builtin_rvv_vloxei8_v_i8mf4_m:
-case RISCV::BI__builtin_rvv_vloxei8_v_i8mf8_m:
-case RISCV::BI__builtin_rvv_vloxei8_v_u8m1_m:
-case RISCV::BI__builtin_rvv_vloxei8_v_u8m2_m:
-case RISCV::BI__builtin_rvv_vloxei8_v_u8m4_m:
-case RISCV::BI__builtin_rvv_vloxei8_v_u8m8_m:
-case RISCV::BI__builtin_rvv_vloxei8_v_u8mf2_m:
-case RISCV::BI__builtin_rvv_vloxei8_v_u8mf4_m:
-case RISCV::BI__builtin_rvv_vloxei8_v_u8mf8_m:
-case RISCV::BI__builtin_rvv_vloxei16_v_i8m1_m:
-case RISCV::BI__builtin_rvv_vloxei16_v_i8m2_m:
-case RISCV::BI__builtin_rvv_vloxei16_v_i8m4_m:
-case RISCV::BI__builtin_rvv_vloxei16_v_i8mf2_m:
-case RISCV::BI__builtin_rvv_vloxei16_v_i8mf4_m:
-case RISCV::BI__builtin_rvv_vloxei16_v_i8mf8_m:
-case RISCV::BI__builtin_rvv_vloxei16_v_u8m1_m:
-case RISCV::BI__builtin_rvv_vloxei16_v_u8m2_m:
-case RISCV::BI__builtin_rvv_vloxei16_v_u8m4_m:
-case RISCV::BI__builtin_rvv_vloxei16_v_u8mf2_m:
-case RISCV::BI__builtin_rvv_vloxei16_v_u8mf4_m:
-case RISCV::BI__builtin_rvv_vloxei16_v_u8mf8_m:
-case RISCV::BI__builtin_rvv_vloxei32_v_i8m1_m:
-case RISCV::BI__builtin_rvv_vloxei32_v_i8m2_m:
-case RISCV::BI__builtin_rvv_vloxei32_v_i8mf2_m:
-case RISCV::BI__builtin_rvv_vloxei32_v_i8mf4_m:
-case RISCV::BI__builtin_rvv_vloxei32_v_i8mf8_m:
-case RISCV::BI__builtin_rvv_vloxei32_v_u8m1_m:
-case RISCV::BI__builtin_rvv_vloxei32_v_u8m2_m:
-case RISCV::BI__builtin_rvv_vloxei32_v_u8mf2_m:
-case RISCV::BI__builtin_rvv_vloxei32_v_u8mf4_m:
-case RISCV::BI__builtin_rvv_vloxei32_v_u8mf8_m:
-case RISCV::BI__builtin_rvv_vloxei64_v_i8m1_m:
-case RISCV::BI__builtin_rvv_vloxei64_v_i8mf2_m:
-case RISCV::BI__builtin_rvv_vloxei64_v_i8mf4_m:
-case RISCV::BI__builtin_rvv_vloxei64_v_i8mf8_m:
-case RISCV::BI__builtin_rvv_vloxei64_v_u8m1_m:
-case RISCV::BI__builtin_rvv_vloxei64_v_u8mf2_m:
-case RISCV::BI__builtin_rvv_vloxei64_v_u8mf4_m:
-case RISCV::BI__builtin_rvv_vloxei64_v_u8mf8_m:
-case RISCV::BI__builtin_rvv_vloxei8_v_i16m1_m:
-case RISCV::BI__builtin_rvv_vloxei8_v_i16m2_m:
-case RISCV::BI__builtin_rvv_vloxei8_v_i16m4_m:
-case RISCV::BI__builtin_rvv_vloxei8_v_i16m8_m:
-case RISCV::BI__builtin_rvv_vloxei8_v_i16mf2_m:
-case RISCV::BI__builtin_rvv_vloxei8_v_i16mf4_m:
-case RISCV::BI__builtin_rvv_vloxei8_v_u16m1_m:
-case RISCV::BI__builtin_rvv_vloxei8_v_u16m2_m:
-case RISCV::BI__builtin_rvv_vloxei8_v_u16m4_m:
-case RISCV::BI__builtin_rvv_vloxei8_v_u16m8_m:
-case RISCV::BI__builtin_rvv_vloxei8_v_u16mf2_m:
-case RISCV::BI__builtin_rvv_vloxei8_v_u16mf4_m:
-case RISCV::BI__builtin_rvv_vloxei16_v_i16m1_m:
-case RISCV::BI__builtin_rvv_vloxei16_v_i16m2_m:
-case RISCV::BI__builtin_rvv_vloxei16_v_i16m4_m:
-case RISCV::BI__builtin_rvv_vloxei16_v_i16m8_m:
-case RISCV::BI__builtin_rvv_vloxei16_v_i16mf2_m:
-case RISCV::BI__builtin_rvv_vloxei16_v_i16mf4_m:
-case RISCV::BI__builtin_rvv_vloxei16_v_u16m1_m:
-case RISCV::BI__builtin_rvv_vloxei16_v_u16m2_m:
-case RISCV::BI__builtin_rvv_vloxei16_v_u16m4_m:
-case RISCV::BI__builtin_rvv_vloxei16_v_u16m8_m:
-case RISCV::BI__builtin_rvv_vloxei16_v_u16mf2_m:
-case RISCV::BI__builtin_rvv_vloxei16_v_u16mf4_m:
-case RISCV::BI__builtin_rvv_vloxei32_v_i16m1_m:
-case RISCV::BI__builtin_rvv_vloxei32_v_i16m2_m:
-case RISCV::BI__builtin_rvv_vloxei32_v_i16m4_m:
-case RISCV::BI__builtin_rvv_vloxei32_v_i16mf2_m:
-case RISCV::BI__builtin_rvv_vloxei32_v_i16mf4_m:
-case RISCV::BI__builtin_rvv_vloxei32_v_u16m1_m:
-case RISCV::BI__builtin_rvv_vloxei32_v_u16m2_m:
-case RISCV::BI__builtin_rvv_vloxei32_v_u16m4_m:
-case RISCV::BI__builtin_rvv_vloxei32_v_u16mf2_m:
-case RISCV::BI__builtin_rvv_vloxei32_v_u16mf4_m:
-case RISCV::BI__builtin_rvv_vloxei64_v_i16m1_m:
-case RISCV::BI__builtin_rvv_vloxei64_v_i16m2_m:
-case RISCV::BI__builtin_rvv_vloxei64_v_i16mf2_m:
-case RISCV::BI__builtin_rvv_vloxei64_v_i16mf4_m:
-case RISCV::BI__builtin_rvv_vloxei64_v_u16m1_m:
-case RISCV::BI__builtin_rvv_vloxei64_v_u16m2_m:
-case RISCV::BI__builtin_rvv_vloxei64_v_u16mf2_m:
-case RISCV::BI__builtin_rvv_vloxei64_v_u16mf4_m:
-case RISCV::BI__builtin_rvv_vloxei8_v_i32m1_m:
-case RISCV::BI__builtin_rvv_vloxei8_v_i32m2_m:
-case RISCV::BI__builtin_rvv_vloxei8_v_i32m4_m:
-case RISCV::BI__builtin_rvv_vloxei8_v_i32m8_m:
-case RISCV::BI__builtin_rvv_vloxei8_v_i32mf2_m:
-case RISCV::BI__builtin_rvv_vloxei8_v_u32m1_m:
-case RISCV::BI__builtin_rvv_vloxei8_v_u32m2_m:
-case RISCV::BI__builtin_rvv_vloxei8_v_u32m4_m:
-case RISCV::BI__builtin_rvv_vloxei8_v_u32m8_m:
-case RISCV::BI__builtin_rvv_vloxei8_v_u32mf2_m:
-case RISCV::BI__builtin_rvv_vloxei16_v_i32m1_m:
-case RISCV::BI__builtin_rvv_vloxei16_v_i32m2_m:
-case RISCV::BI__builtin_rvv_vloxei16_v_i32m4_m:
-case RISCV::BI__builtin_rvv_vloxei16_v_i32m8_m:
-case RISCV::BI__builtin_rvv_vloxei16_v_i32mf2_m:
-case RISCV::BI__builtin_rvv_vloxei16_v_u32m1_m:
-case RISCV::BI__builtin_rvv_vloxei16_v_u32m2_m:
-case RISCV::BI__builtin_rvv_vloxei16_v_u32m4_m:
-case RISCV::BI__builtin_rvv_vloxei16_v_u32m8_m:
-case RISCV::BI__builtin_rvv_vloxei16_v_u32mf2_m:
-case RISCV::BI__builtin_rvv_vloxei32_v_i32m1_m:
-case RISCV::BI__builtin_rvv_vloxei32_v_i32m2_m:
-case RISCV::BI__builtin_rvv_vloxei32_v_i32m4_m:
-case RISCV::BI__builtin_rvv_vloxei32_v_i32m8_m:
-case RISCV::BI__builtin_rvv_vloxei32_v_i32mf2_m:
-case RISCV::BI__builtin_rvv_vloxei32_v_u32m1_m:
-case RISCV::BI__builtin_rvv_vloxei32_v_u32m2_m:
-case RISCV::BI__builtin_rvv_vloxei32_v_u32m4_m:
-case RISCV::BI__builtin_rvv_vloxei32_v_u32m8_m:
-case RISCV::BI__builtin_rvv_vloxei32_v_u32mf2_m:
-case RISCV::BI__builtin_rvv_vloxei64_v_i32m1_m:
-case RISCV::BI__builtin_rvv_vloxei64_v_i32m2_m:
-case RISCV::BI__builtin_rvv_vloxei64_v_i32m4_m:
-case RISCV::BI__builtin_rvv_vloxei64_v_i32mf2_m:
-case RISCV::BI__builtin_rvv_vloxei64_v_u32m1_m:
-case RISCV::BI__builtin_rvv_vloxei64_v_u32m2_m:
-case RISCV::BI__builtin_rvv_vloxei64_v_u32m4_m:
-case RISCV::BI__builtin_rvv_vloxei64_v_u32mf2_m:
-case RISCV::BI__builtin_rvv_vloxei8_v_i64m1_m:
-case RISCV::BI__builtin_rvv_vloxei8_v_i64m2_m:
-case RISCV::BI__builtin_rvv_vloxei8_v_i64m4_m:
-case RISCV::BI__builtin_rvv_vloxei8_v_i64m8_m:
-case RISCV::BI__builtin_rvv_vloxei8_v_u64m1_m:
-case RISCV::BI__builtin_rvv_vloxei8_v_u64m2_m:
-case RISCV::BI__builtin_rvv_vloxei8_v_u64m4_m:
-case RISCV::BI__builtin_rvv_vloxei8_v_u64m8_m:
-case RISCV::BI__builtin_rvv_vloxei16_v_i64m1_m:
-case RISCV::BI__builtin_rvv_vloxei16_v_i64m2_m:
-case RISCV::BI__builtin_rvv_vloxei16_v_i64m4_m:
-case RISCV::BI__builtin_rvv_vloxei16_v_i64m8_m:
-case RISCV::BI__builtin_rvv_vloxei16_v_u64m1_m:
-case RISCV::BI__builtin_rvv_vloxei16_v_u64m2_m:
-case RISCV::BI__builtin_rvv_vloxei16_v_u64m4_m:
-case RISCV::BI__builtin_rvv_vloxei16_v_u64m8_m:
-case RISCV::BI__builtin_rvv_vloxei32_v_i64m1_m:
-case RISCV::BI__builtin_rvv_vloxei32_v_i64m2_m:
-case RISCV::BI__builtin_rvv_vloxei32_v_i64m4_m:
-case RISCV::BI__builtin_rvv_vloxei32_v_i64m8_m:
-case RISCV::BI__builtin_rvv_vloxei32_v_u64m1_m:
-case RISCV::BI__builtin_rvv_vloxei32_v_u64m2_m:
-case RISCV::BI__builtin_rvv_vloxei32_v_u64m4_m:
-case RISCV::BI__builtin_rvv_vloxei32_v_u64m8_m:
-case RISCV::BI__builtin_rvv_vloxei64_v_i64m1_m:
-case RISCV::BI__builtin_rvv_vloxei64_v_i64m2_m:
-case RISCV::BI__builtin_rvv_vloxei64_v_i64m4_m:
-case RISCV::BI__builtin_rvv_vloxei64_v_i64m8_m:
-case RISCV::BI__builtin_rvv_vloxei64_v_u64m1_m:
-case RISCV::BI__builtin_rvv_vloxei64_v_u64m2_m:
-case RISCV::BI__builtin_rvv_vloxei64_v_u64m4_m:
-case RISCV::BI__builtin_rvv_vloxei64_v_u64m8_m:
-case RISCV::BI__builtin_rvv_vloxei8_v_f16m1_m:
-case RISCV::BI__builtin_rvv_vloxei8_v_f16m2_m:
-case RISCV::BI__builtin_rvv_vloxei8_v_f16m4_m:
-case RISCV::BI__builtin_rvv_vloxei8_v_f16m8_m:
-case RISCV::BI__builtin_rvv_vloxei8_v_f16mf2_m:
-case RISCV::BI__builtin_rvv_vloxei8_v_f16mf4_m:
-case RISCV::BI__builtin_rvv_vloxei16_v_f16m1_m:
-case RISCV::BI__builtin_rvv_vloxei16_v_f16m2_m:
-case RISCV::BI__builtin_rvv_vloxei16_v_f16m4_m:
-case RISCV::BI__builtin_rvv_vloxei16_v_f16m8_m:
-case RISCV::BI__builtin_rvv_vloxei16_v_f16mf2_m:
-case RISCV::BI__builtin_rvv_vloxei16_v_f16mf4_m:
-case RISCV::BI__builtin_rvv_vloxei32_v_f16m1_m:
-case RISCV::BI__builtin_rvv_vloxei32_v_f16m2_m:
-case RISCV::BI__builtin_rvv_vloxei32_v_f16m4_m:
-case RISCV::BI__builtin_rvv_vloxei32_v_f16mf2_m:
-case RISCV::BI__builtin_rvv_vloxei32_v_f16mf4_m:
-case RISCV::BI__builtin_rvv_vloxei64_v_f16m1_m:
-case RISCV::BI__builtin_rvv_vloxei64_v_f16m2_m:
-case RISCV::BI__builtin_rvv_vloxei64_v_f16mf2_m:
-case RISCV::BI__builtin_rvv_vloxei64_v_f16mf4_m:
-case RISCV::BI__builtin_rvv_vloxei8_v_f32m1_m:
-case RISCV::BI__builtin_rvv_vloxei8_v_f32m2_m:
-case RISCV::BI__builtin_rvv_vloxei8_v_f32m4_m:
-case RISCV::BI__builtin_rvv_vloxei8_v_f32m8_m:
-case RISCV::BI__builtin_rvv_vloxei8_v_f32mf2_m:
-case RISCV::BI__builtin_rvv_vloxei16_v_f32m1_m:
-case RISCV::BI__builtin_rvv_vloxei16_v_f32m2_m:
-case RISCV::BI__builtin_rvv_vloxei16_v_f32m4_m:
-case RISCV::BI__builtin_rvv_vloxei16_v_f32m8_m:
-case RISCV::BI__builtin_rvv_vloxei16_v_f32mf2_m:
-case RISCV::BI__builtin_rvv_vloxei32_v_f32m1_m:
-case RISCV::BI__builtin_rvv_vloxei32_v_f32m2_m:
-case RISCV::BI__builtin_rvv_vloxei32_v_f32m4_m:
-case RISCV::BI__builtin_rvv_vloxei32_v_f32m8_m:
-case RISCV::BI__builtin_rvv_vloxei32_v_f32mf2_m:
-case RISCV::BI__builtin_rvv_vloxei64_v_f32m1_m:
-case RISCV::BI__builtin_rvv_vloxei64_v_f32m2_m:
-case RISCV::BI__builtin_rvv_vloxei64_v_f32m4_m:
-case RISCV::BI__builtin_rvv_vloxei64_v_f32mf2_m:
-case RISCV::BI__builtin_rvv_vloxei8_v_f64m1_m:
-case RISCV::BI__builtin_rvv_vloxei8_v_f64m2_m:
-case RISCV::BI__builtin_rvv_vloxei8_v_f64m4_m:
-case RISCV::BI__builtin_rvv_vloxei8_v_f64m8_m:
-case RISCV::BI__builtin_rvv_vloxei16_v_f64m1_m:
-case RISCV::BI__builtin_rvv_vloxei16_v_f64m2_m:
-case RISCV::BI__builtin_rvv_vloxei16_v_f64m4_m:
-case RISCV::BI__builtin_rvv_vloxei16_v_f64m8_m:
-case RISCV::BI__builtin_rvv_vloxei32_v_f64m1_m:
-case RISCV::BI__builtin_rvv_vloxei32_v_f64m2_m:
-case RISCV::BI__builtin_rvv_vloxei32_v_f64m4_m:
-case RISCV::BI__builtin_rvv_vloxei32_v_f64m8_m:
-case RISCV::BI__builtin_rvv_vloxei64_v_f64m1_m:
-case RISCV::BI__builtin_rvv_vloxei64_v_f64m2_m:
-case RISCV::BI__builtin_rvv_vloxei64_v_f64m4_m:
-case RISCV::BI__builtin_rvv_vloxei64_v_f64m8_m:
+case RISCV::BI__builtin_rvv_vloxei8_v_i8m1_mt:
+case RISCV::BI__builtin_rvv_vloxei8_v_i8m2_mt:
+case RISCV::BI__builtin_rvv_vloxei8_v_i8m4_mt:
+case RISCV::BI__builtin_rvv_vloxei8_v_i8m8_mt:
+case RISCV::BI__builtin_rvv_vloxei8_v_i8mf2_mt:
+case RISCV::BI__builtin_rvv_vloxei8_v_i8mf4_mt:
+case RISCV::BI__builtin_rvv_vloxei8_v_i8mf8_mt:
+case RISCV::BI__builtin_rvv_vloxei8_v_u8m1_mt:
+case RISCV::BI__builtin_rvv_vloxei8_v_u8m2_mt:
+case RISCV::BI__builtin_rvv_vloxei8_v_u8m4_mt:
+case RISCV::BI__builtin_rvv_vloxei8_v_u8m8_mt:
+case RISCV::BI__builtin_rvv_vloxei8_v_u8mf2_mt:
+case RISCV::BI__builtin_rvv_vloxei8_v_u8mf4_mt:
+case RISCV::BI__builtin_rvv_vloxei8_v_u8mf8_mt:
+case RISCV::BI__builtin_rvv_vloxei16_v_i8m1_mt:
+case RISCV::BI__builtin_rvv_vloxei16_v_i8m2_mt:
+case RISCV::BI__builtin_rvv_vloxei16_v_i8m4_mt:
+case RISCV::BI__builtin_rvv_vloxei16_v_i8mf2_mt:
+case RISCV::BI__builtin_rvv_vloxei16_v_i8mf4_mt:
+case RISCV::BI__builtin_rvv_vloxei16_v_i8mf8_mt:
+case RISCV::BI__builtin_rvv_vloxei16_v_u8m1_mt:
+case RISCV::BI__builtin_rvv_vloxei16_v_u8m2_mt:
+case RISCV::BI__builtin_rvv_vloxei16_v_u8m4_mt:
+case RISCV::BI__builtin_rvv_vloxei16_v_u8mf2_mt:
+case RISCV::BI__builtin_rvv_vloxei16_v_u8mf4_mt:
+case RISCV::BI__builtin_rvv_vloxei16_v_u8mf8_mt:
+case RISCV::BI__builtin_rvv_vloxei32_v_i8m1_mt:
+case RISCV::BI__builtin_rvv_vloxei32_v_i8m2_mt:
+case RISCV::BI__builtin_rvv_vloxei32_v_i8mf2_mt:
+case RISCV::BI__builtin_rvv_vloxei32_v_i8mf4_mt:
+case RISCV::BI__builtin_rvv_vloxei32_v_i8mf8_mt:
+case RISCV::BI__builtin_rvv_vloxei32_v_u8m1_mt:
+case RISCV::BI__builtin_rvv_vloxei32_v_u8m2_mt:
+case RISCV::BI__builtin_rvv_vloxei32_v_u8mf2_mt:
+case RISCV::BI__builtin_rvv_vloxei32_v_u8mf4_mt:
+case RISCV::BI__builtin_rvv_vloxei32_v_u8mf8_mt:
+case RISCV::BI__builtin_rvv_vloxei64_v_i8m1_mt:
+case RISCV::BI__builtin_rvv_vloxei64_v_i8mf2_mt:
+case RISCV::BI__builtin_rvv_vloxei64_v_i8mf4_mt:
+case RISCV::BI__builtin_rvv_vloxei64_v_i8mf8_mt:
+case RISCV::BI__builtin_rvv_vloxei64_v_u8m1_mt:
+case RISCV::BI__builtin_rvv_vloxei64_v_u8mf2_mt:
+case RISCV::BI__builtin_rvv_vloxei64_v_u8mf4_mt:
+case RISCV::BI__builtin_rvv_vloxei64_v_u8mf8_mt:
+case RISCV::BI__builtin_rvv_vloxei8_v_i16m1_mt:
+case RISCV::BI__builtin_rvv_vloxei8_v_i16m2_mt:
+case RISCV::BI__builtin_rvv_vloxei8_v_i16m4_mt:
+case RISCV::BI__builtin_rvv_vloxei8_v_i16m8_mt:
+case RISCV::BI__builtin_rvv_vloxei8_v_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vloxei8_v_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vloxei8_v_u16m1_mt:
+case RISCV::BI__builtin_rvv_vloxei8_v_u16m2_mt:
+case RISCV::BI__builtin_rvv_vloxei8_v_u16m4_mt:
+case RISCV::BI__builtin_rvv_vloxei8_v_u16m8_mt:
+case RISCV::BI__builtin_rvv_vloxei8_v_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vloxei8_v_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vloxei16_v_i16m1_mt:
+case RISCV::BI__builtin_rvv_vloxei16_v_i16m2_mt:
+case RISCV::BI__builtin_rvv_vloxei16_v_i16m4_mt:
+case RISCV::BI__builtin_rvv_vloxei16_v_i16m8_mt:
+case RISCV::BI__builtin_rvv_vloxei16_v_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vloxei16_v_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vloxei16_v_u16m1_mt:
+case RISCV::BI__builtin_rvv_vloxei16_v_u16m2_mt:
+case RISCV::BI__builtin_rvv_vloxei16_v_u16m4_mt:
+case RISCV::BI__builtin_rvv_vloxei16_v_u16m8_mt:
+case RISCV::BI__builtin_rvv_vloxei16_v_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vloxei16_v_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vloxei32_v_i16m1_mt:
+case RISCV::BI__builtin_rvv_vloxei32_v_i16m2_mt:
+case RISCV::BI__builtin_rvv_vloxei32_v_i16m4_mt:
+case RISCV::BI__builtin_rvv_vloxei32_v_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vloxei32_v_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vloxei32_v_u16m1_mt:
+case RISCV::BI__builtin_rvv_vloxei32_v_u16m2_mt:
+case RISCV::BI__builtin_rvv_vloxei32_v_u16m4_mt:
+case RISCV::BI__builtin_rvv_vloxei32_v_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vloxei32_v_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vloxei64_v_i16m1_mt:
+case RISCV::BI__builtin_rvv_vloxei64_v_i16m2_mt:
+case RISCV::BI__builtin_rvv_vloxei64_v_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vloxei64_v_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vloxei64_v_u16m1_mt:
+case RISCV::BI__builtin_rvv_vloxei64_v_u16m2_mt:
+case RISCV::BI__builtin_rvv_vloxei64_v_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vloxei64_v_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vloxei8_v_i32m1_mt:
+case RISCV::BI__builtin_rvv_vloxei8_v_i32m2_mt:
+case RISCV::BI__builtin_rvv_vloxei8_v_i32m4_mt:
+case RISCV::BI__builtin_rvv_vloxei8_v_i32m8_mt:
+case RISCV::BI__builtin_rvv_vloxei8_v_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vloxei8_v_u32m1_mt:
+case RISCV::BI__builtin_rvv_vloxei8_v_u32m2_mt:
+case RISCV::BI__builtin_rvv_vloxei8_v_u32m4_mt:
+case RISCV::BI__builtin_rvv_vloxei8_v_u32m8_mt:
+case RISCV::BI__builtin_rvv_vloxei8_v_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vloxei16_v_i32m1_mt:
+case RISCV::BI__builtin_rvv_vloxei16_v_i32m2_mt:
+case RISCV::BI__builtin_rvv_vloxei16_v_i32m4_mt:
+case RISCV::BI__builtin_rvv_vloxei16_v_i32m8_mt:
+case RISCV::BI__builtin_rvv_vloxei16_v_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vloxei16_v_u32m1_mt:
+case RISCV::BI__builtin_rvv_vloxei16_v_u32m2_mt:
+case RISCV::BI__builtin_rvv_vloxei16_v_u32m4_mt:
+case RISCV::BI__builtin_rvv_vloxei16_v_u32m8_mt:
+case RISCV::BI__builtin_rvv_vloxei16_v_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vloxei32_v_i32m1_mt:
+case RISCV::BI__builtin_rvv_vloxei32_v_i32m2_mt:
+case RISCV::BI__builtin_rvv_vloxei32_v_i32m4_mt:
+case RISCV::BI__builtin_rvv_vloxei32_v_i32m8_mt:
+case RISCV::BI__builtin_rvv_vloxei32_v_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vloxei32_v_u32m1_mt:
+case RISCV::BI__builtin_rvv_vloxei32_v_u32m2_mt:
+case RISCV::BI__builtin_rvv_vloxei32_v_u32m4_mt:
+case RISCV::BI__builtin_rvv_vloxei32_v_u32m8_mt:
+case RISCV::BI__builtin_rvv_vloxei32_v_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vloxei64_v_i32m1_mt:
+case RISCV::BI__builtin_rvv_vloxei64_v_i32m2_mt:
+case RISCV::BI__builtin_rvv_vloxei64_v_i32m4_mt:
+case RISCV::BI__builtin_rvv_vloxei64_v_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vloxei64_v_u32m1_mt:
+case RISCV::BI__builtin_rvv_vloxei64_v_u32m2_mt:
+case RISCV::BI__builtin_rvv_vloxei64_v_u32m4_mt:
+case RISCV::BI__builtin_rvv_vloxei64_v_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vloxei8_v_i64m1_mt:
+case RISCV::BI__builtin_rvv_vloxei8_v_i64m2_mt:
+case RISCV::BI__builtin_rvv_vloxei8_v_i64m4_mt:
+case RISCV::BI__builtin_rvv_vloxei8_v_i64m8_mt:
+case RISCV::BI__builtin_rvv_vloxei8_v_u64m1_mt:
+case RISCV::BI__builtin_rvv_vloxei8_v_u64m2_mt:
+case RISCV::BI__builtin_rvv_vloxei8_v_u64m4_mt:
+case RISCV::BI__builtin_rvv_vloxei8_v_u64m8_mt:
+case RISCV::BI__builtin_rvv_vloxei16_v_i64m1_mt:
+case RISCV::BI__builtin_rvv_vloxei16_v_i64m2_mt:
+case RISCV::BI__builtin_rvv_vloxei16_v_i64m4_mt:
+case RISCV::BI__builtin_rvv_vloxei16_v_i64m8_mt:
+case RISCV::BI__builtin_rvv_vloxei16_v_u64m1_mt:
+case RISCV::BI__builtin_rvv_vloxei16_v_u64m2_mt:
+case RISCV::BI__builtin_rvv_vloxei16_v_u64m4_mt:
+case RISCV::BI__builtin_rvv_vloxei16_v_u64m8_mt:
+case RISCV::BI__builtin_rvv_vloxei32_v_i64m1_mt:
+case RISCV::BI__builtin_rvv_vloxei32_v_i64m2_mt:
+case RISCV::BI__builtin_rvv_vloxei32_v_i64m4_mt:
+case RISCV::BI__builtin_rvv_vloxei32_v_i64m8_mt:
+case RISCV::BI__builtin_rvv_vloxei32_v_u64m1_mt:
+case RISCV::BI__builtin_rvv_vloxei32_v_u64m2_mt:
+case RISCV::BI__builtin_rvv_vloxei32_v_u64m4_mt:
+case RISCV::BI__builtin_rvv_vloxei32_v_u64m8_mt:
+case RISCV::BI__builtin_rvv_vloxei64_v_i64m1_mt:
+case RISCV::BI__builtin_rvv_vloxei64_v_i64m2_mt:
+case RISCV::BI__builtin_rvv_vloxei64_v_i64m4_mt:
+case RISCV::BI__builtin_rvv_vloxei64_v_i64m8_mt:
+case RISCV::BI__builtin_rvv_vloxei64_v_u64m1_mt:
+case RISCV::BI__builtin_rvv_vloxei64_v_u64m2_mt:
+case RISCV::BI__builtin_rvv_vloxei64_v_u64m4_mt:
+case RISCV::BI__builtin_rvv_vloxei64_v_u64m8_mt:
+case RISCV::BI__builtin_rvv_vloxei8_v_f16m1_mt:
+case RISCV::BI__builtin_rvv_vloxei8_v_f16m2_mt:
+case RISCV::BI__builtin_rvv_vloxei8_v_f16m4_mt:
+case RISCV::BI__builtin_rvv_vloxei8_v_f16m8_mt:
+case RISCV::BI__builtin_rvv_vloxei8_v_f16mf2_mt:
+case RISCV::BI__builtin_rvv_vloxei8_v_f16mf4_mt:
+case RISCV::BI__builtin_rvv_vloxei16_v_f16m1_mt:
+case RISCV::BI__builtin_rvv_vloxei16_v_f16m2_mt:
+case RISCV::BI__builtin_rvv_vloxei16_v_f16m4_mt:
+case RISCV::BI__builtin_rvv_vloxei16_v_f16m8_mt:
+case RISCV::BI__builtin_rvv_vloxei16_v_f16mf2_mt:
+case RISCV::BI__builtin_rvv_vloxei16_v_f16mf4_mt:
+case RISCV::BI__builtin_rvv_vloxei32_v_f16m1_mt:
+case RISCV::BI__builtin_rvv_vloxei32_v_f16m2_mt:
+case RISCV::BI__builtin_rvv_vloxei32_v_f16m4_mt:
+case RISCV::BI__builtin_rvv_vloxei32_v_f16mf2_mt:
+case RISCV::BI__builtin_rvv_vloxei32_v_f16mf4_mt:
+case RISCV::BI__builtin_rvv_vloxei64_v_f16m1_mt:
+case RISCV::BI__builtin_rvv_vloxei64_v_f16m2_mt:
+case RISCV::BI__builtin_rvv_vloxei64_v_f16mf2_mt:
+case RISCV::BI__builtin_rvv_vloxei64_v_f16mf4_mt:
+case RISCV::BI__builtin_rvv_vloxei8_v_f32m1_mt:
+case RISCV::BI__builtin_rvv_vloxei8_v_f32m2_mt:
+case RISCV::BI__builtin_rvv_vloxei8_v_f32m4_mt:
+case RISCV::BI__builtin_rvv_vloxei8_v_f32m8_mt:
+case RISCV::BI__builtin_rvv_vloxei8_v_f32mf2_mt:
+case RISCV::BI__builtin_rvv_vloxei16_v_f32m1_mt:
+case RISCV::BI__builtin_rvv_vloxei16_v_f32m2_mt:
+case RISCV::BI__builtin_rvv_vloxei16_v_f32m4_mt:
+case RISCV::BI__builtin_rvv_vloxei16_v_f32m8_mt:
+case RISCV::BI__builtin_rvv_vloxei16_v_f32mf2_mt:
+case RISCV::BI__builtin_rvv_vloxei32_v_f32m1_mt:
+case RISCV::BI__builtin_rvv_vloxei32_v_f32m2_mt:
+case RISCV::BI__builtin_rvv_vloxei32_v_f32m4_mt:
+case RISCV::BI__builtin_rvv_vloxei32_v_f32m8_mt:
+case RISCV::BI__builtin_rvv_vloxei32_v_f32mf2_mt:
+case RISCV::BI__builtin_rvv_vloxei64_v_f32m1_mt:
+case RISCV::BI__builtin_rvv_vloxei64_v_f32m2_mt:
+case RISCV::BI__builtin_rvv_vloxei64_v_f32m4_mt:
+case RISCV::BI__builtin_rvv_vloxei64_v_f32mf2_mt:
+case RISCV::BI__builtin_rvv_vloxei8_v_f64m1_mt:
+case RISCV::BI__builtin_rvv_vloxei8_v_f64m2_mt:
+case RISCV::BI__builtin_rvv_vloxei8_v_f64m4_mt:
+case RISCV::BI__builtin_rvv_vloxei8_v_f64m8_mt:
+case RISCV::BI__builtin_rvv_vloxei16_v_f64m1_mt:
+case RISCV::BI__builtin_rvv_vloxei16_v_f64m2_mt:
+case RISCV::BI__builtin_rvv_vloxei16_v_f64m4_mt:
+case RISCV::BI__builtin_rvv_vloxei16_v_f64m8_mt:
+case RISCV::BI__builtin_rvv_vloxei32_v_f64m1_mt:
+case RISCV::BI__builtin_rvv_vloxei32_v_f64m2_mt:
+case RISCV::BI__builtin_rvv_vloxei32_v_f64m4_mt:
+case RISCV::BI__builtin_rvv_vloxei32_v_f64m8_mt:
+case RISCV::BI__builtin_rvv_vloxei64_v_f64m1_mt:
+case RISCV::BI__builtin_rvv_vloxei64_v_f64m2_mt:
+case RISCV::BI__builtin_rvv_vloxei64_v_f64m4_mt:
+case RISCV::BI__builtin_rvv_vloxei64_v_f64m8_mt:
   ID = Intrinsic::riscv_vloxei_mask;
 
         // Move mask to right before vl.
-        std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 1);
+        std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 2);
         IntrinsicTypes = {ResultType, Ops[2]->getType(), Ops[4]->getType()};
         Ops[1] = Builder.CreateBitCast(Ops[1], ResultType->getPointerTo());
       break;
@@ -6977,189 +6977,189 @@ case RISCV::BI__builtin_rvv_vloxseg2ei64_v_u32mf2:
       return V;
     }
             break;
-case RISCV::BI__builtin_rvv_vloxseg2ei8_v_i64m1_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei8_v_i64m2_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei8_v_i64m4_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei8_v_u64m1_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei8_v_u64m2_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei8_v_u64m4_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei16_v_i64m1_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei16_v_i64m2_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei16_v_i64m4_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei16_v_u64m1_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei16_v_u64m2_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei16_v_u64m4_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei32_v_i64m1_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei32_v_i64m2_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei32_v_i64m4_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei32_v_u64m1_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei32_v_u64m2_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei32_v_u64m4_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei64_v_i64m1_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei64_v_i64m2_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei64_v_i64m4_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei64_v_u64m1_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei64_v_u64m2_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei64_v_u64m4_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei8_v_f16m1_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei8_v_f16m2_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei8_v_f16m4_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei8_v_f16mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei8_v_f16mf4_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei16_v_f16m1_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei16_v_f16m2_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei16_v_f16m4_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei16_v_f16mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei16_v_f16mf4_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei32_v_f16m1_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei32_v_f16m2_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei32_v_f16m4_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei32_v_f16mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei32_v_f16mf4_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei64_v_f16m1_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei64_v_f16m2_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei64_v_f16mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei64_v_f16mf4_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei8_v_f32m1_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei8_v_f32m2_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei8_v_f32m4_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei8_v_f32mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei16_v_f32m1_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei16_v_f32m2_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei16_v_f32m4_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei16_v_f32mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei32_v_f32m1_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei32_v_f32m2_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei32_v_f32m4_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei32_v_f32mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei64_v_f32m1_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei64_v_f32m2_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei64_v_f32m4_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei64_v_f32mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei8_v_f64m1_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei8_v_f64m2_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei8_v_f64m4_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei16_v_f64m1_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei16_v_f64m2_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei16_v_f64m4_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei32_v_f64m1_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei32_v_f64m2_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei32_v_f64m4_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei64_v_f64m1_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei64_v_f64m2_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei64_v_f64m4_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei8_v_i8m1_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei8_v_i8m2_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei8_v_i8m4_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei8_v_i8mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei8_v_i8mf4_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei8_v_i8mf8_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei8_v_u8m1_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei8_v_u8m2_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei8_v_u8m4_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei8_v_u8mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei8_v_u8mf4_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei8_v_u8mf8_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei16_v_i8m1_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei16_v_i8m2_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei16_v_i8m4_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei16_v_i8mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei16_v_i8mf4_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei16_v_i8mf8_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei16_v_u8m1_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei16_v_u8m2_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei16_v_u8m4_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei16_v_u8mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei16_v_u8mf4_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei16_v_u8mf8_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei32_v_i8m1_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei32_v_i8m2_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei32_v_i8mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei32_v_i8mf4_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei32_v_i8mf8_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei32_v_u8m1_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei32_v_u8m2_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei32_v_u8mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei32_v_u8mf4_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei32_v_u8mf8_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei64_v_i8m1_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei64_v_i8mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei64_v_i8mf4_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei64_v_i8mf8_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei64_v_u8m1_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei64_v_u8mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei64_v_u8mf4_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei64_v_u8mf8_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei8_v_i16m1_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei8_v_i16m2_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei8_v_i16m4_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei8_v_i16mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei8_v_i16mf4_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei8_v_u16m1_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei8_v_u16m2_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei8_v_u16m4_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei8_v_u16mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei8_v_u16mf4_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei16_v_i16m1_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei16_v_i16m2_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei16_v_i16m4_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei16_v_i16mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei16_v_i16mf4_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei16_v_u16m1_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei16_v_u16m2_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei16_v_u16m4_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei16_v_u16mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei16_v_u16mf4_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei32_v_i16m1_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei32_v_i16m2_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei32_v_i16m4_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei32_v_i16mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei32_v_i16mf4_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei32_v_u16m1_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei32_v_u16m2_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei32_v_u16m4_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei32_v_u16mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei32_v_u16mf4_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei64_v_i16m1_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei64_v_i16m2_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei64_v_i16mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei64_v_i16mf4_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei64_v_u16m1_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei64_v_u16m2_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei64_v_u16mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei64_v_u16mf4_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei8_v_i32m1_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei8_v_i32m2_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei8_v_i32m4_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei8_v_i32mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei8_v_u32m1_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei8_v_u32m2_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei8_v_u32m4_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei8_v_u32mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei16_v_i32m1_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei16_v_i32m2_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei16_v_i32m4_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei16_v_i32mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei16_v_u32m1_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei16_v_u32m2_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei16_v_u32m4_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei16_v_u32mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei32_v_i32m1_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei32_v_i32m2_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei32_v_i32m4_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei32_v_i32mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei32_v_u32m1_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei32_v_u32m2_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei32_v_u32m4_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei32_v_u32mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei64_v_i32m1_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei64_v_i32m2_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei64_v_i32m4_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei64_v_i32mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei64_v_u32m1_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei64_v_u32m2_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei64_v_u32m4_m:
-case RISCV::BI__builtin_rvv_vloxseg2ei64_v_u32mf2_m:
+case RISCV::BI__builtin_rvv_vloxseg2ei8_v_i64m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei8_v_i64m2_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei8_v_i64m4_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei8_v_u64m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei8_v_u64m2_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei8_v_u64m4_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei16_v_i64m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei16_v_i64m2_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei16_v_i64m4_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei16_v_u64m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei16_v_u64m2_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei16_v_u64m4_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei32_v_i64m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei32_v_i64m2_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei32_v_i64m4_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei32_v_u64m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei32_v_u64m2_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei32_v_u64m4_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei64_v_i64m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei64_v_i64m2_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei64_v_i64m4_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei64_v_u64m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei64_v_u64m2_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei64_v_u64m4_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei8_v_f16m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei8_v_f16m2_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei8_v_f16m4_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei8_v_f16mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei8_v_f16mf4_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei16_v_f16m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei16_v_f16m2_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei16_v_f16m4_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei16_v_f16mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei16_v_f16mf4_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei32_v_f16m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei32_v_f16m2_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei32_v_f16m4_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei32_v_f16mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei32_v_f16mf4_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei64_v_f16m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei64_v_f16m2_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei64_v_f16mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei64_v_f16mf4_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei8_v_f32m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei8_v_f32m2_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei8_v_f32m4_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei8_v_f32mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei16_v_f32m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei16_v_f32m2_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei16_v_f32m4_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei16_v_f32mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei32_v_f32m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei32_v_f32m2_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei32_v_f32m4_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei32_v_f32mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei64_v_f32m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei64_v_f32m2_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei64_v_f32m4_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei64_v_f32mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei8_v_f64m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei8_v_f64m2_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei8_v_f64m4_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei16_v_f64m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei16_v_f64m2_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei16_v_f64m4_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei32_v_f64m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei32_v_f64m2_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei32_v_f64m4_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei64_v_f64m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei64_v_f64m2_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei64_v_f64m4_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei8_v_i8m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei8_v_i8m2_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei8_v_i8m4_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei8_v_i8mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei8_v_i8mf4_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei8_v_i8mf8_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei8_v_u8m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei8_v_u8m2_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei8_v_u8m4_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei8_v_u8mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei8_v_u8mf4_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei8_v_u8mf8_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei16_v_i8m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei16_v_i8m2_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei16_v_i8m4_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei16_v_i8mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei16_v_i8mf4_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei16_v_i8mf8_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei16_v_u8m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei16_v_u8m2_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei16_v_u8m4_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei16_v_u8mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei16_v_u8mf4_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei16_v_u8mf8_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei32_v_i8m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei32_v_i8m2_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei32_v_i8mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei32_v_i8mf4_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei32_v_i8mf8_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei32_v_u8m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei32_v_u8m2_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei32_v_u8mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei32_v_u8mf4_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei32_v_u8mf8_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei64_v_i8m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei64_v_i8mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei64_v_i8mf4_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei64_v_i8mf8_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei64_v_u8m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei64_v_u8mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei64_v_u8mf4_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei64_v_u8mf8_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei8_v_i16m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei8_v_i16m2_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei8_v_i16m4_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei8_v_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei8_v_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei8_v_u16m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei8_v_u16m2_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei8_v_u16m4_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei8_v_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei8_v_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei16_v_i16m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei16_v_i16m2_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei16_v_i16m4_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei16_v_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei16_v_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei16_v_u16m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei16_v_u16m2_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei16_v_u16m4_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei16_v_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei16_v_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei32_v_i16m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei32_v_i16m2_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei32_v_i16m4_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei32_v_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei32_v_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei32_v_u16m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei32_v_u16m2_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei32_v_u16m4_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei32_v_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei32_v_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei64_v_i16m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei64_v_i16m2_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei64_v_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei64_v_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei64_v_u16m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei64_v_u16m2_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei64_v_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei64_v_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei8_v_i32m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei8_v_i32m2_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei8_v_i32m4_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei8_v_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei8_v_u32m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei8_v_u32m2_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei8_v_u32m4_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei8_v_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei16_v_i32m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei16_v_i32m2_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei16_v_i32m4_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei16_v_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei16_v_u32m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei16_v_u32m2_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei16_v_u32m4_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei16_v_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei32_v_i32m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei32_v_i32m2_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei32_v_i32m4_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei32_v_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei32_v_u32m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei32_v_u32m2_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei32_v_u32m4_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei32_v_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei64_v_i32m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei64_v_i32m2_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei64_v_i32m4_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei64_v_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei64_v_u32m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei64_v_u32m2_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei64_v_u32m4_mt:
+case RISCV::BI__builtin_rvv_vloxseg2ei64_v_u32mf2_mt:
   ID = Intrinsic::riscv_vloxseg2_mask;
   NF = 2;
 
@@ -7175,7 +7175,8 @@ case RISCV::BI__builtin_rvv_vloxseg2ei64_v_u32mf2_m:
       Operands.push_back(Ops[2 * NF + 2]);
       Operands.push_back(Ops[NF]);
       Operands.push_back(Ops[2 * NF + 3]);
-      assert(Operands.size() == NF + 4);
+      Operands.push_back(Ops[2 * NF + 4]);
+      assert(Operands.size() == NF + 5);
       llvm::Function *F = CGM.getIntrinsic(ID, IntrinsicTypes);
       llvm::Value *LoadValue = Builder.CreateCall(F, Operands, "");
       clang::CharUnits Align =
@@ -7355,152 +7356,152 @@ case RISCV::BI__builtin_rvv_vloxseg3ei64_v_u32mf2:
       return V;
     }
             break;
-case RISCV::BI__builtin_rvv_vloxseg3ei8_v_i64m1_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei8_v_i64m2_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei8_v_u64m1_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei8_v_u64m2_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei16_v_i64m1_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei16_v_i64m2_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei16_v_u64m1_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei16_v_u64m2_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei32_v_i64m1_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei32_v_i64m2_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei32_v_u64m1_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei32_v_u64m2_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei64_v_i64m1_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei64_v_i64m2_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei64_v_u64m1_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei64_v_u64m2_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei8_v_f16m1_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei8_v_f16m2_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei8_v_f16mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei8_v_f16mf4_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei16_v_f16m1_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei16_v_f16m2_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei16_v_f16mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei16_v_f16mf4_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei32_v_f16m1_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei32_v_f16m2_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei32_v_f16mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei32_v_f16mf4_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei64_v_f16m1_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei64_v_f16m2_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei64_v_f16mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei64_v_f16mf4_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei8_v_f32m1_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei8_v_f32m2_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei8_v_f32mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei16_v_f32m1_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei16_v_f32m2_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei16_v_f32mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei32_v_f32m1_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei32_v_f32m2_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei32_v_f32mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei64_v_f32m1_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei64_v_f32m2_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei64_v_f32mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei8_v_f64m1_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei8_v_f64m2_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei16_v_f64m1_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei16_v_f64m2_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei32_v_f64m1_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei32_v_f64m2_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei64_v_f64m1_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei64_v_f64m2_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei8_v_i8m1_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei8_v_i8m2_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei8_v_i8mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei8_v_i8mf4_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei8_v_i8mf8_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei8_v_u8m1_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei8_v_u8m2_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei8_v_u8mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei8_v_u8mf4_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei8_v_u8mf8_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei16_v_i8m1_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei16_v_i8m2_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei16_v_i8mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei16_v_i8mf4_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei16_v_i8mf8_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei16_v_u8m1_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei16_v_u8m2_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei16_v_u8mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei16_v_u8mf4_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei16_v_u8mf8_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei32_v_i8m1_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei32_v_i8m2_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei32_v_i8mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei32_v_i8mf4_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei32_v_i8mf8_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei32_v_u8m1_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei32_v_u8m2_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei32_v_u8mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei32_v_u8mf4_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei32_v_u8mf8_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei64_v_i8m1_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei64_v_i8mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei64_v_i8mf4_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei64_v_i8mf8_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei64_v_u8m1_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei64_v_u8mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei64_v_u8mf4_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei64_v_u8mf8_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei8_v_i16m1_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei8_v_i16m2_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei8_v_i16mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei8_v_i16mf4_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei8_v_u16m1_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei8_v_u16m2_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei8_v_u16mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei8_v_u16mf4_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei16_v_i16m1_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei16_v_i16m2_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei16_v_i16mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei16_v_i16mf4_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei16_v_u16m1_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei16_v_u16m2_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei16_v_u16mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei16_v_u16mf4_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei32_v_i16m1_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei32_v_i16m2_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei32_v_i16mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei32_v_i16mf4_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei32_v_u16m1_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei32_v_u16m2_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei32_v_u16mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei32_v_u16mf4_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei64_v_i16m1_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei64_v_i16m2_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei64_v_i16mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei64_v_i16mf4_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei64_v_u16m1_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei64_v_u16m2_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei64_v_u16mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei64_v_u16mf4_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei8_v_i32m1_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei8_v_i32m2_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei8_v_i32mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei8_v_u32m1_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei8_v_u32m2_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei8_v_u32mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei16_v_i32m1_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei16_v_i32m2_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei16_v_i32mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei16_v_u32m1_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei16_v_u32m2_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei16_v_u32mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei32_v_i32m1_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei32_v_i32m2_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei32_v_i32mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei32_v_u32m1_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei32_v_u32m2_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei32_v_u32mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei64_v_i32m1_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei64_v_i32m2_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei64_v_i32mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei64_v_u32m1_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei64_v_u32m2_m:
-case RISCV::BI__builtin_rvv_vloxseg3ei64_v_u32mf2_m:
+case RISCV::BI__builtin_rvv_vloxseg3ei8_v_i64m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei8_v_i64m2_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei8_v_u64m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei8_v_u64m2_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei16_v_i64m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei16_v_i64m2_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei16_v_u64m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei16_v_u64m2_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei32_v_i64m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei32_v_i64m2_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei32_v_u64m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei32_v_u64m2_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei64_v_i64m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei64_v_i64m2_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei64_v_u64m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei64_v_u64m2_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei8_v_f16m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei8_v_f16m2_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei8_v_f16mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei8_v_f16mf4_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei16_v_f16m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei16_v_f16m2_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei16_v_f16mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei16_v_f16mf4_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei32_v_f16m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei32_v_f16m2_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei32_v_f16mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei32_v_f16mf4_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei64_v_f16m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei64_v_f16m2_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei64_v_f16mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei64_v_f16mf4_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei8_v_f32m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei8_v_f32m2_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei8_v_f32mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei16_v_f32m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei16_v_f32m2_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei16_v_f32mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei32_v_f32m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei32_v_f32m2_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei32_v_f32mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei64_v_f32m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei64_v_f32m2_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei64_v_f32mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei8_v_f64m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei8_v_f64m2_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei16_v_f64m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei16_v_f64m2_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei32_v_f64m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei32_v_f64m2_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei64_v_f64m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei64_v_f64m2_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei8_v_i8m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei8_v_i8m2_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei8_v_i8mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei8_v_i8mf4_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei8_v_i8mf8_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei8_v_u8m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei8_v_u8m2_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei8_v_u8mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei8_v_u8mf4_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei8_v_u8mf8_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei16_v_i8m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei16_v_i8m2_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei16_v_i8mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei16_v_i8mf4_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei16_v_i8mf8_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei16_v_u8m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei16_v_u8m2_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei16_v_u8mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei16_v_u8mf4_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei16_v_u8mf8_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei32_v_i8m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei32_v_i8m2_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei32_v_i8mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei32_v_i8mf4_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei32_v_i8mf8_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei32_v_u8m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei32_v_u8m2_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei32_v_u8mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei32_v_u8mf4_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei32_v_u8mf8_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei64_v_i8m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei64_v_i8mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei64_v_i8mf4_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei64_v_i8mf8_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei64_v_u8m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei64_v_u8mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei64_v_u8mf4_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei64_v_u8mf8_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei8_v_i16m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei8_v_i16m2_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei8_v_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei8_v_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei8_v_u16m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei8_v_u16m2_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei8_v_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei8_v_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei16_v_i16m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei16_v_i16m2_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei16_v_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei16_v_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei16_v_u16m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei16_v_u16m2_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei16_v_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei16_v_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei32_v_i16m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei32_v_i16m2_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei32_v_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei32_v_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei32_v_u16m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei32_v_u16m2_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei32_v_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei32_v_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei64_v_i16m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei64_v_i16m2_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei64_v_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei64_v_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei64_v_u16m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei64_v_u16m2_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei64_v_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei64_v_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei8_v_i32m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei8_v_i32m2_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei8_v_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei8_v_u32m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei8_v_u32m2_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei8_v_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei16_v_i32m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei16_v_i32m2_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei16_v_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei16_v_u32m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei16_v_u32m2_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei16_v_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei32_v_i32m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei32_v_i32m2_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei32_v_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei32_v_u32m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei32_v_u32m2_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei32_v_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei64_v_i32m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei64_v_i32m2_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei64_v_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei64_v_u32m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei64_v_u32m2_mt:
+case RISCV::BI__builtin_rvv_vloxseg3ei64_v_u32mf2_mt:
   ID = Intrinsic::riscv_vloxseg3_mask;
   NF = 3;
 
@@ -7516,7 +7517,8 @@ case RISCV::BI__builtin_rvv_vloxseg3ei64_v_u32mf2_m:
       Operands.push_back(Ops[2 * NF + 2]);
       Operands.push_back(Ops[NF]);
       Operands.push_back(Ops[2 * NF + 3]);
-      assert(Operands.size() == NF + 4);
+      Operands.push_back(Ops[2 * NF + 4]);
+      assert(Operands.size() == NF + 5);
       llvm::Function *F = CGM.getIntrinsic(ID, IntrinsicTypes);
       llvm::Value *LoadValue = Builder.CreateCall(F, Operands, "");
       clang::CharUnits Align =
@@ -7696,152 +7698,152 @@ case RISCV::BI__builtin_rvv_vloxseg4ei64_v_u32mf2:
       return V;
     }
             break;
-case RISCV::BI__builtin_rvv_vloxseg4ei8_v_i64m1_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei8_v_i64m2_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei8_v_u64m1_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei8_v_u64m2_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei16_v_i64m1_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei16_v_i64m2_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei16_v_u64m1_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei16_v_u64m2_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei32_v_i64m1_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei32_v_i64m2_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei32_v_u64m1_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei32_v_u64m2_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei64_v_i64m1_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei64_v_i64m2_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei64_v_u64m1_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei64_v_u64m2_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei8_v_f16m1_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei8_v_f16m2_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei8_v_f16mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei8_v_f16mf4_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei16_v_f16m1_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei16_v_f16m2_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei16_v_f16mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei16_v_f16mf4_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei32_v_f16m1_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei32_v_f16m2_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei32_v_f16mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei32_v_f16mf4_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei64_v_f16m1_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei64_v_f16m2_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei64_v_f16mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei64_v_f16mf4_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei8_v_f32m1_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei8_v_f32m2_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei8_v_f32mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei16_v_f32m1_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei16_v_f32m2_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei16_v_f32mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei32_v_f32m1_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei32_v_f32m2_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei32_v_f32mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei64_v_f32m1_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei64_v_f32m2_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei64_v_f32mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei8_v_f64m1_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei8_v_f64m2_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei16_v_f64m1_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei16_v_f64m2_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei32_v_f64m1_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei32_v_f64m2_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei64_v_f64m1_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei64_v_f64m2_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei8_v_i8m1_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei8_v_i8m2_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei8_v_i8mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei8_v_i8mf4_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei8_v_i8mf8_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei8_v_u8m1_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei8_v_u8m2_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei8_v_u8mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei8_v_u8mf4_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei8_v_u8mf8_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei16_v_i8m1_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei16_v_i8m2_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei16_v_i8mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei16_v_i8mf4_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei16_v_i8mf8_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei16_v_u8m1_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei16_v_u8m2_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei16_v_u8mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei16_v_u8mf4_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei16_v_u8mf8_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei32_v_i8m1_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei32_v_i8m2_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei32_v_i8mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei32_v_i8mf4_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei32_v_i8mf8_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei32_v_u8m1_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei32_v_u8m2_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei32_v_u8mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei32_v_u8mf4_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei32_v_u8mf8_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei64_v_i8m1_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei64_v_i8mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei64_v_i8mf4_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei64_v_i8mf8_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei64_v_u8m1_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei64_v_u8mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei64_v_u8mf4_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei64_v_u8mf8_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei8_v_i16m1_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei8_v_i16m2_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei8_v_i16mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei8_v_i16mf4_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei8_v_u16m1_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei8_v_u16m2_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei8_v_u16mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei8_v_u16mf4_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei16_v_i16m1_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei16_v_i16m2_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei16_v_i16mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei16_v_i16mf4_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei16_v_u16m1_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei16_v_u16m2_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei16_v_u16mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei16_v_u16mf4_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei32_v_i16m1_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei32_v_i16m2_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei32_v_i16mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei32_v_i16mf4_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei32_v_u16m1_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei32_v_u16m2_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei32_v_u16mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei32_v_u16mf4_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei64_v_i16m1_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei64_v_i16m2_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei64_v_i16mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei64_v_i16mf4_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei64_v_u16m1_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei64_v_u16m2_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei64_v_u16mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei64_v_u16mf4_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei8_v_i32m1_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei8_v_i32m2_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei8_v_i32mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei8_v_u32m1_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei8_v_u32m2_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei8_v_u32mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei16_v_i32m1_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei16_v_i32m2_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei16_v_i32mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei16_v_u32m1_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei16_v_u32m2_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei16_v_u32mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei32_v_i32m1_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei32_v_i32m2_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei32_v_i32mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei32_v_u32m1_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei32_v_u32m2_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei32_v_u32mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei64_v_i32m1_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei64_v_i32m2_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei64_v_i32mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei64_v_u32m1_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei64_v_u32m2_m:
-case RISCV::BI__builtin_rvv_vloxseg4ei64_v_u32mf2_m:
+case RISCV::BI__builtin_rvv_vloxseg4ei8_v_i64m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei8_v_i64m2_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei8_v_u64m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei8_v_u64m2_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei16_v_i64m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei16_v_i64m2_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei16_v_u64m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei16_v_u64m2_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei32_v_i64m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei32_v_i64m2_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei32_v_u64m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei32_v_u64m2_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei64_v_i64m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei64_v_i64m2_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei64_v_u64m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei64_v_u64m2_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei8_v_f16m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei8_v_f16m2_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei8_v_f16mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei8_v_f16mf4_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei16_v_f16m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei16_v_f16m2_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei16_v_f16mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei16_v_f16mf4_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei32_v_f16m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei32_v_f16m2_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei32_v_f16mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei32_v_f16mf4_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei64_v_f16m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei64_v_f16m2_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei64_v_f16mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei64_v_f16mf4_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei8_v_f32m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei8_v_f32m2_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei8_v_f32mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei16_v_f32m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei16_v_f32m2_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei16_v_f32mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei32_v_f32m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei32_v_f32m2_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei32_v_f32mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei64_v_f32m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei64_v_f32m2_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei64_v_f32mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei8_v_f64m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei8_v_f64m2_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei16_v_f64m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei16_v_f64m2_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei32_v_f64m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei32_v_f64m2_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei64_v_f64m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei64_v_f64m2_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei8_v_i8m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei8_v_i8m2_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei8_v_i8mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei8_v_i8mf4_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei8_v_i8mf8_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei8_v_u8m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei8_v_u8m2_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei8_v_u8mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei8_v_u8mf4_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei8_v_u8mf8_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei16_v_i8m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei16_v_i8m2_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei16_v_i8mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei16_v_i8mf4_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei16_v_i8mf8_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei16_v_u8m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei16_v_u8m2_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei16_v_u8mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei16_v_u8mf4_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei16_v_u8mf8_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei32_v_i8m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei32_v_i8m2_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei32_v_i8mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei32_v_i8mf4_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei32_v_i8mf8_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei32_v_u8m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei32_v_u8m2_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei32_v_u8mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei32_v_u8mf4_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei32_v_u8mf8_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei64_v_i8m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei64_v_i8mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei64_v_i8mf4_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei64_v_i8mf8_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei64_v_u8m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei64_v_u8mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei64_v_u8mf4_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei64_v_u8mf8_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei8_v_i16m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei8_v_i16m2_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei8_v_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei8_v_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei8_v_u16m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei8_v_u16m2_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei8_v_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei8_v_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei16_v_i16m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei16_v_i16m2_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei16_v_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei16_v_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei16_v_u16m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei16_v_u16m2_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei16_v_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei16_v_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei32_v_i16m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei32_v_i16m2_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei32_v_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei32_v_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei32_v_u16m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei32_v_u16m2_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei32_v_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei32_v_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei64_v_i16m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei64_v_i16m2_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei64_v_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei64_v_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei64_v_u16m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei64_v_u16m2_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei64_v_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei64_v_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei8_v_i32m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei8_v_i32m2_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei8_v_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei8_v_u32m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei8_v_u32m2_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei8_v_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei16_v_i32m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei16_v_i32m2_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei16_v_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei16_v_u32m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei16_v_u32m2_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei16_v_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei32_v_i32m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei32_v_i32m2_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei32_v_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei32_v_u32m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei32_v_u32m2_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei32_v_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei64_v_i32m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei64_v_i32m2_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei64_v_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei64_v_u32m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei64_v_u32m2_mt:
+case RISCV::BI__builtin_rvv_vloxseg4ei64_v_u32mf2_mt:
   ID = Intrinsic::riscv_vloxseg4_mask;
   NF = 4;
 
@@ -7857,7 +7859,8 @@ case RISCV::BI__builtin_rvv_vloxseg4ei64_v_u32mf2_m:
       Operands.push_back(Ops[2 * NF + 2]);
       Operands.push_back(Ops[NF]);
       Operands.push_back(Ops[2 * NF + 3]);
-      assert(Operands.size() == NF + 4);
+      Operands.push_back(Ops[2 * NF + 4]);
+      assert(Operands.size() == NF + 5);
       llvm::Function *F = CGM.getIntrinsic(ID, IntrinsicTypes);
       llvm::Value *LoadValue = Builder.CreateCall(F, Operands, "");
       clang::CharUnits Align =
@@ -7995,110 +7998,110 @@ case RISCV::BI__builtin_rvv_vloxseg5ei64_v_u32mf2:
       return V;
     }
             break;
-case RISCV::BI__builtin_rvv_vloxseg5ei8_v_i64m1_m:
-case RISCV::BI__builtin_rvv_vloxseg5ei8_v_u64m1_m:
-case RISCV::BI__builtin_rvv_vloxseg5ei16_v_i64m1_m:
-case RISCV::BI__builtin_rvv_vloxseg5ei16_v_u64m1_m:
-case RISCV::BI__builtin_rvv_vloxseg5ei32_v_i64m1_m:
-case RISCV::BI__builtin_rvv_vloxseg5ei32_v_u64m1_m:
-case RISCV::BI__builtin_rvv_vloxseg5ei64_v_i64m1_m:
-case RISCV::BI__builtin_rvv_vloxseg5ei64_v_u64m1_m:
-case RISCV::BI__builtin_rvv_vloxseg5ei8_v_f16m1_m:
-case RISCV::BI__builtin_rvv_vloxseg5ei8_v_f16mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg5ei8_v_f16mf4_m:
-case RISCV::BI__builtin_rvv_vloxseg5ei16_v_f16m1_m:
-case RISCV::BI__builtin_rvv_vloxseg5ei16_v_f16mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg5ei16_v_f16mf4_m:
-case RISCV::BI__builtin_rvv_vloxseg5ei32_v_f16m1_m:
-case RISCV::BI__builtin_rvv_vloxseg5ei32_v_f16mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg5ei32_v_f16mf4_m:
-case RISCV::BI__builtin_rvv_vloxseg5ei64_v_f16m1_m:
-case RISCV::BI__builtin_rvv_vloxseg5ei64_v_f16mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg5ei64_v_f16mf4_m:
-case RISCV::BI__builtin_rvv_vloxseg5ei8_v_f32m1_m:
-case RISCV::BI__builtin_rvv_vloxseg5ei8_v_f32mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg5ei16_v_f32m1_m:
-case RISCV::BI__builtin_rvv_vloxseg5ei16_v_f32mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg5ei32_v_f32m1_m:
-case RISCV::BI__builtin_rvv_vloxseg5ei32_v_f32mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg5ei64_v_f32m1_m:
-case RISCV::BI__builtin_rvv_vloxseg5ei64_v_f32mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg5ei8_v_f64m1_m:
-case RISCV::BI__builtin_rvv_vloxseg5ei16_v_f64m1_m:
-case RISCV::BI__builtin_rvv_vloxseg5ei32_v_f64m1_m:
-case RISCV::BI__builtin_rvv_vloxseg5ei64_v_f64m1_m:
-case RISCV::BI__builtin_rvv_vloxseg5ei8_v_i8m1_m:
-case RISCV::BI__builtin_rvv_vloxseg5ei8_v_i8mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg5ei8_v_i8mf4_m:
-case RISCV::BI__builtin_rvv_vloxseg5ei8_v_i8mf8_m:
-case RISCV::BI__builtin_rvv_vloxseg5ei8_v_u8m1_m:
-case RISCV::BI__builtin_rvv_vloxseg5ei8_v_u8mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg5ei8_v_u8mf4_m:
-case RISCV::BI__builtin_rvv_vloxseg5ei8_v_u8mf8_m:
-case RISCV::BI__builtin_rvv_vloxseg5ei16_v_i8m1_m:
-case RISCV::BI__builtin_rvv_vloxseg5ei16_v_i8mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg5ei16_v_i8mf4_m:
-case RISCV::BI__builtin_rvv_vloxseg5ei16_v_i8mf8_m:
-case RISCV::BI__builtin_rvv_vloxseg5ei16_v_u8m1_m:
-case RISCV::BI__builtin_rvv_vloxseg5ei16_v_u8mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg5ei16_v_u8mf4_m:
-case RISCV::BI__builtin_rvv_vloxseg5ei16_v_u8mf8_m:
-case RISCV::BI__builtin_rvv_vloxseg5ei32_v_i8m1_m:
-case RISCV::BI__builtin_rvv_vloxseg5ei32_v_i8mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg5ei32_v_i8mf4_m:
-case RISCV::BI__builtin_rvv_vloxseg5ei32_v_i8mf8_m:
-case RISCV::BI__builtin_rvv_vloxseg5ei32_v_u8m1_m:
-case RISCV::BI__builtin_rvv_vloxseg5ei32_v_u8mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg5ei32_v_u8mf4_m:
-case RISCV::BI__builtin_rvv_vloxseg5ei32_v_u8mf8_m:
-case RISCV::BI__builtin_rvv_vloxseg5ei64_v_i8m1_m:
-case RISCV::BI__builtin_rvv_vloxseg5ei64_v_i8mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg5ei64_v_i8mf4_m:
-case RISCV::BI__builtin_rvv_vloxseg5ei64_v_i8mf8_m:
-case RISCV::BI__builtin_rvv_vloxseg5ei64_v_u8m1_m:
-case RISCV::BI__builtin_rvv_vloxseg5ei64_v_u8mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg5ei64_v_u8mf4_m:
-case RISCV::BI__builtin_rvv_vloxseg5ei64_v_u8mf8_m:
-case RISCV::BI__builtin_rvv_vloxseg5ei8_v_i16m1_m:
-case RISCV::BI__builtin_rvv_vloxseg5ei8_v_i16mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg5ei8_v_i16mf4_m:
-case RISCV::BI__builtin_rvv_vloxseg5ei8_v_u16m1_m:
-case RISCV::BI__builtin_rvv_vloxseg5ei8_v_u16mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg5ei8_v_u16mf4_m:
-case RISCV::BI__builtin_rvv_vloxseg5ei16_v_i16m1_m:
-case RISCV::BI__builtin_rvv_vloxseg5ei16_v_i16mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg5ei16_v_i16mf4_m:
-case RISCV::BI__builtin_rvv_vloxseg5ei16_v_u16m1_m:
-case RISCV::BI__builtin_rvv_vloxseg5ei16_v_u16mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg5ei16_v_u16mf4_m:
-case RISCV::BI__builtin_rvv_vloxseg5ei32_v_i16m1_m:
-case RISCV::BI__builtin_rvv_vloxseg5ei32_v_i16mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg5ei32_v_i16mf4_m:
-case RISCV::BI__builtin_rvv_vloxseg5ei32_v_u16m1_m:
-case RISCV::BI__builtin_rvv_vloxseg5ei32_v_u16mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg5ei32_v_u16mf4_m:
-case RISCV::BI__builtin_rvv_vloxseg5ei64_v_i16m1_m:
-case RISCV::BI__builtin_rvv_vloxseg5ei64_v_i16mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg5ei64_v_i16mf4_m:
-case RISCV::BI__builtin_rvv_vloxseg5ei64_v_u16m1_m:
-case RISCV::BI__builtin_rvv_vloxseg5ei64_v_u16mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg5ei64_v_u16mf4_m:
-case RISCV::BI__builtin_rvv_vloxseg5ei8_v_i32m1_m:
-case RISCV::BI__builtin_rvv_vloxseg5ei8_v_i32mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg5ei8_v_u32m1_m:
-case RISCV::BI__builtin_rvv_vloxseg5ei8_v_u32mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg5ei16_v_i32m1_m:
-case RISCV::BI__builtin_rvv_vloxseg5ei16_v_i32mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg5ei16_v_u32m1_m:
-case RISCV::BI__builtin_rvv_vloxseg5ei16_v_u32mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg5ei32_v_i32m1_m:
-case RISCV::BI__builtin_rvv_vloxseg5ei32_v_i32mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg5ei32_v_u32m1_m:
-case RISCV::BI__builtin_rvv_vloxseg5ei32_v_u32mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg5ei64_v_i32m1_m:
-case RISCV::BI__builtin_rvv_vloxseg5ei64_v_i32mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg5ei64_v_u32m1_m:
-case RISCV::BI__builtin_rvv_vloxseg5ei64_v_u32mf2_m:
+case RISCV::BI__builtin_rvv_vloxseg5ei8_v_i64m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg5ei8_v_u64m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg5ei16_v_i64m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg5ei16_v_u64m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg5ei32_v_i64m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg5ei32_v_u64m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg5ei64_v_i64m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg5ei64_v_u64m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg5ei8_v_f16m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg5ei8_v_f16mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg5ei8_v_f16mf4_mt:
+case RISCV::BI__builtin_rvv_vloxseg5ei16_v_f16m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg5ei16_v_f16mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg5ei16_v_f16mf4_mt:
+case RISCV::BI__builtin_rvv_vloxseg5ei32_v_f16m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg5ei32_v_f16mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg5ei32_v_f16mf4_mt:
+case RISCV::BI__builtin_rvv_vloxseg5ei64_v_f16m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg5ei64_v_f16mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg5ei64_v_f16mf4_mt:
+case RISCV::BI__builtin_rvv_vloxseg5ei8_v_f32m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg5ei8_v_f32mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg5ei16_v_f32m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg5ei16_v_f32mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg5ei32_v_f32m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg5ei32_v_f32mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg5ei64_v_f32m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg5ei64_v_f32mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg5ei8_v_f64m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg5ei16_v_f64m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg5ei32_v_f64m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg5ei64_v_f64m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg5ei8_v_i8m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg5ei8_v_i8mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg5ei8_v_i8mf4_mt:
+case RISCV::BI__builtin_rvv_vloxseg5ei8_v_i8mf8_mt:
+case RISCV::BI__builtin_rvv_vloxseg5ei8_v_u8m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg5ei8_v_u8mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg5ei8_v_u8mf4_mt:
+case RISCV::BI__builtin_rvv_vloxseg5ei8_v_u8mf8_mt:
+case RISCV::BI__builtin_rvv_vloxseg5ei16_v_i8m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg5ei16_v_i8mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg5ei16_v_i8mf4_mt:
+case RISCV::BI__builtin_rvv_vloxseg5ei16_v_i8mf8_mt:
+case RISCV::BI__builtin_rvv_vloxseg5ei16_v_u8m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg5ei16_v_u8mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg5ei16_v_u8mf4_mt:
+case RISCV::BI__builtin_rvv_vloxseg5ei16_v_u8mf8_mt:
+case RISCV::BI__builtin_rvv_vloxseg5ei32_v_i8m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg5ei32_v_i8mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg5ei32_v_i8mf4_mt:
+case RISCV::BI__builtin_rvv_vloxseg5ei32_v_i8mf8_mt:
+case RISCV::BI__builtin_rvv_vloxseg5ei32_v_u8m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg5ei32_v_u8mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg5ei32_v_u8mf4_mt:
+case RISCV::BI__builtin_rvv_vloxseg5ei32_v_u8mf8_mt:
+case RISCV::BI__builtin_rvv_vloxseg5ei64_v_i8m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg5ei64_v_i8mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg5ei64_v_i8mf4_mt:
+case RISCV::BI__builtin_rvv_vloxseg5ei64_v_i8mf8_mt:
+case RISCV::BI__builtin_rvv_vloxseg5ei64_v_u8m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg5ei64_v_u8mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg5ei64_v_u8mf4_mt:
+case RISCV::BI__builtin_rvv_vloxseg5ei64_v_u8mf8_mt:
+case RISCV::BI__builtin_rvv_vloxseg5ei8_v_i16m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg5ei8_v_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg5ei8_v_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vloxseg5ei8_v_u16m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg5ei8_v_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg5ei8_v_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vloxseg5ei16_v_i16m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg5ei16_v_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg5ei16_v_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vloxseg5ei16_v_u16m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg5ei16_v_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg5ei16_v_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vloxseg5ei32_v_i16m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg5ei32_v_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg5ei32_v_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vloxseg5ei32_v_u16m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg5ei32_v_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg5ei32_v_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vloxseg5ei64_v_i16m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg5ei64_v_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg5ei64_v_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vloxseg5ei64_v_u16m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg5ei64_v_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg5ei64_v_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vloxseg5ei8_v_i32m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg5ei8_v_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg5ei8_v_u32m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg5ei8_v_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg5ei16_v_i32m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg5ei16_v_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg5ei16_v_u32m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg5ei16_v_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg5ei32_v_i32m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg5ei32_v_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg5ei32_v_u32m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg5ei32_v_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg5ei64_v_i32m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg5ei64_v_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg5ei64_v_u32m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg5ei64_v_u32mf2_mt:
   ID = Intrinsic::riscv_vloxseg5_mask;
   NF = 5;
 
@@ -8114,7 +8117,8 @@ case RISCV::BI__builtin_rvv_vloxseg5ei64_v_u32mf2_m:
       Operands.push_back(Ops[2 * NF + 2]);
       Operands.push_back(Ops[NF]);
       Operands.push_back(Ops[2 * NF + 3]);
-      assert(Operands.size() == NF + 4);
+      Operands.push_back(Ops[2 * NF + 4]);
+      assert(Operands.size() == NF + 5);
       llvm::Function *F = CGM.getIntrinsic(ID, IntrinsicTypes);
       llvm::Value *LoadValue = Builder.CreateCall(F, Operands, "");
       clang::CharUnits Align =
@@ -8252,110 +8256,110 @@ case RISCV::BI__builtin_rvv_vloxseg6ei64_v_u32mf2:
       return V;
     }
             break;
-case RISCV::BI__builtin_rvv_vloxseg6ei8_v_i64m1_m:
-case RISCV::BI__builtin_rvv_vloxseg6ei8_v_u64m1_m:
-case RISCV::BI__builtin_rvv_vloxseg6ei16_v_i64m1_m:
-case RISCV::BI__builtin_rvv_vloxseg6ei16_v_u64m1_m:
-case RISCV::BI__builtin_rvv_vloxseg6ei32_v_i64m1_m:
-case RISCV::BI__builtin_rvv_vloxseg6ei32_v_u64m1_m:
-case RISCV::BI__builtin_rvv_vloxseg6ei64_v_i64m1_m:
-case RISCV::BI__builtin_rvv_vloxseg6ei64_v_u64m1_m:
-case RISCV::BI__builtin_rvv_vloxseg6ei8_v_f16m1_m:
-case RISCV::BI__builtin_rvv_vloxseg6ei8_v_f16mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg6ei8_v_f16mf4_m:
-case RISCV::BI__builtin_rvv_vloxseg6ei16_v_f16m1_m:
-case RISCV::BI__builtin_rvv_vloxseg6ei16_v_f16mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg6ei16_v_f16mf4_m:
-case RISCV::BI__builtin_rvv_vloxseg6ei32_v_f16m1_m:
-case RISCV::BI__builtin_rvv_vloxseg6ei32_v_f16mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg6ei32_v_f16mf4_m:
-case RISCV::BI__builtin_rvv_vloxseg6ei64_v_f16m1_m:
-case RISCV::BI__builtin_rvv_vloxseg6ei64_v_f16mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg6ei64_v_f16mf4_m:
-case RISCV::BI__builtin_rvv_vloxseg6ei8_v_f32m1_m:
-case RISCV::BI__builtin_rvv_vloxseg6ei8_v_f32mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg6ei16_v_f32m1_m:
-case RISCV::BI__builtin_rvv_vloxseg6ei16_v_f32mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg6ei32_v_f32m1_m:
-case RISCV::BI__builtin_rvv_vloxseg6ei32_v_f32mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg6ei64_v_f32m1_m:
-case RISCV::BI__builtin_rvv_vloxseg6ei64_v_f32mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg6ei8_v_f64m1_m:
-case RISCV::BI__builtin_rvv_vloxseg6ei16_v_f64m1_m:
-case RISCV::BI__builtin_rvv_vloxseg6ei32_v_f64m1_m:
-case RISCV::BI__builtin_rvv_vloxseg6ei64_v_f64m1_m:
-case RISCV::BI__builtin_rvv_vloxseg6ei8_v_i8m1_m:
-case RISCV::BI__builtin_rvv_vloxseg6ei8_v_i8mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg6ei8_v_i8mf4_m:
-case RISCV::BI__builtin_rvv_vloxseg6ei8_v_i8mf8_m:
-case RISCV::BI__builtin_rvv_vloxseg6ei8_v_u8m1_m:
-case RISCV::BI__builtin_rvv_vloxseg6ei8_v_u8mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg6ei8_v_u8mf4_m:
-case RISCV::BI__builtin_rvv_vloxseg6ei8_v_u8mf8_m:
-case RISCV::BI__builtin_rvv_vloxseg6ei16_v_i8m1_m:
-case RISCV::BI__builtin_rvv_vloxseg6ei16_v_i8mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg6ei16_v_i8mf4_m:
-case RISCV::BI__builtin_rvv_vloxseg6ei16_v_i8mf8_m:
-case RISCV::BI__builtin_rvv_vloxseg6ei16_v_u8m1_m:
-case RISCV::BI__builtin_rvv_vloxseg6ei16_v_u8mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg6ei16_v_u8mf4_m:
-case RISCV::BI__builtin_rvv_vloxseg6ei16_v_u8mf8_m:
-case RISCV::BI__builtin_rvv_vloxseg6ei32_v_i8m1_m:
-case RISCV::BI__builtin_rvv_vloxseg6ei32_v_i8mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg6ei32_v_i8mf4_m:
-case RISCV::BI__builtin_rvv_vloxseg6ei32_v_i8mf8_m:
-case RISCV::BI__builtin_rvv_vloxseg6ei32_v_u8m1_m:
-case RISCV::BI__builtin_rvv_vloxseg6ei32_v_u8mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg6ei32_v_u8mf4_m:
-case RISCV::BI__builtin_rvv_vloxseg6ei32_v_u8mf8_m:
-case RISCV::BI__builtin_rvv_vloxseg6ei64_v_i8m1_m:
-case RISCV::BI__builtin_rvv_vloxseg6ei64_v_i8mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg6ei64_v_i8mf4_m:
-case RISCV::BI__builtin_rvv_vloxseg6ei64_v_i8mf8_m:
-case RISCV::BI__builtin_rvv_vloxseg6ei64_v_u8m1_m:
-case RISCV::BI__builtin_rvv_vloxseg6ei64_v_u8mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg6ei64_v_u8mf4_m:
-case RISCV::BI__builtin_rvv_vloxseg6ei64_v_u8mf8_m:
-case RISCV::BI__builtin_rvv_vloxseg6ei8_v_i16m1_m:
-case RISCV::BI__builtin_rvv_vloxseg6ei8_v_i16mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg6ei8_v_i16mf4_m:
-case RISCV::BI__builtin_rvv_vloxseg6ei8_v_u16m1_m:
-case RISCV::BI__builtin_rvv_vloxseg6ei8_v_u16mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg6ei8_v_u16mf4_m:
-case RISCV::BI__builtin_rvv_vloxseg6ei16_v_i16m1_m:
-case RISCV::BI__builtin_rvv_vloxseg6ei16_v_i16mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg6ei16_v_i16mf4_m:
-case RISCV::BI__builtin_rvv_vloxseg6ei16_v_u16m1_m:
-case RISCV::BI__builtin_rvv_vloxseg6ei16_v_u16mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg6ei16_v_u16mf4_m:
-case RISCV::BI__builtin_rvv_vloxseg6ei32_v_i16m1_m:
-case RISCV::BI__builtin_rvv_vloxseg6ei32_v_i16mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg6ei32_v_i16mf4_m:
-case RISCV::BI__builtin_rvv_vloxseg6ei32_v_u16m1_m:
-case RISCV::BI__builtin_rvv_vloxseg6ei32_v_u16mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg6ei32_v_u16mf4_m:
-case RISCV::BI__builtin_rvv_vloxseg6ei64_v_i16m1_m:
-case RISCV::BI__builtin_rvv_vloxseg6ei64_v_i16mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg6ei64_v_i16mf4_m:
-case RISCV::BI__builtin_rvv_vloxseg6ei64_v_u16m1_m:
-case RISCV::BI__builtin_rvv_vloxseg6ei64_v_u16mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg6ei64_v_u16mf4_m:
-case RISCV::BI__builtin_rvv_vloxseg6ei8_v_i32m1_m:
-case RISCV::BI__builtin_rvv_vloxseg6ei8_v_i32mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg6ei8_v_u32m1_m:
-case RISCV::BI__builtin_rvv_vloxseg6ei8_v_u32mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg6ei16_v_i32m1_m:
-case RISCV::BI__builtin_rvv_vloxseg6ei16_v_i32mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg6ei16_v_u32m1_m:
-case RISCV::BI__builtin_rvv_vloxseg6ei16_v_u32mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg6ei32_v_i32m1_m:
-case RISCV::BI__builtin_rvv_vloxseg6ei32_v_i32mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg6ei32_v_u32m1_m:
-case RISCV::BI__builtin_rvv_vloxseg6ei32_v_u32mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg6ei64_v_i32m1_m:
-case RISCV::BI__builtin_rvv_vloxseg6ei64_v_i32mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg6ei64_v_u32m1_m:
-case RISCV::BI__builtin_rvv_vloxseg6ei64_v_u32mf2_m:
+case RISCV::BI__builtin_rvv_vloxseg6ei8_v_i64m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg6ei8_v_u64m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg6ei16_v_i64m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg6ei16_v_u64m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg6ei32_v_i64m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg6ei32_v_u64m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg6ei64_v_i64m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg6ei64_v_u64m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg6ei8_v_f16m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg6ei8_v_f16mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg6ei8_v_f16mf4_mt:
+case RISCV::BI__builtin_rvv_vloxseg6ei16_v_f16m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg6ei16_v_f16mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg6ei16_v_f16mf4_mt:
+case RISCV::BI__builtin_rvv_vloxseg6ei32_v_f16m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg6ei32_v_f16mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg6ei32_v_f16mf4_mt:
+case RISCV::BI__builtin_rvv_vloxseg6ei64_v_f16m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg6ei64_v_f16mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg6ei64_v_f16mf4_mt:
+case RISCV::BI__builtin_rvv_vloxseg6ei8_v_f32m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg6ei8_v_f32mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg6ei16_v_f32m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg6ei16_v_f32mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg6ei32_v_f32m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg6ei32_v_f32mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg6ei64_v_f32m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg6ei64_v_f32mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg6ei8_v_f64m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg6ei16_v_f64m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg6ei32_v_f64m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg6ei64_v_f64m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg6ei8_v_i8m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg6ei8_v_i8mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg6ei8_v_i8mf4_mt:
+case RISCV::BI__builtin_rvv_vloxseg6ei8_v_i8mf8_mt:
+case RISCV::BI__builtin_rvv_vloxseg6ei8_v_u8m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg6ei8_v_u8mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg6ei8_v_u8mf4_mt:
+case RISCV::BI__builtin_rvv_vloxseg6ei8_v_u8mf8_mt:
+case RISCV::BI__builtin_rvv_vloxseg6ei16_v_i8m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg6ei16_v_i8mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg6ei16_v_i8mf4_mt:
+case RISCV::BI__builtin_rvv_vloxseg6ei16_v_i8mf8_mt:
+case RISCV::BI__builtin_rvv_vloxseg6ei16_v_u8m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg6ei16_v_u8mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg6ei16_v_u8mf4_mt:
+case RISCV::BI__builtin_rvv_vloxseg6ei16_v_u8mf8_mt:
+case RISCV::BI__builtin_rvv_vloxseg6ei32_v_i8m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg6ei32_v_i8mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg6ei32_v_i8mf4_mt:
+case RISCV::BI__builtin_rvv_vloxseg6ei32_v_i8mf8_mt:
+case RISCV::BI__builtin_rvv_vloxseg6ei32_v_u8m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg6ei32_v_u8mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg6ei32_v_u8mf4_mt:
+case RISCV::BI__builtin_rvv_vloxseg6ei32_v_u8mf8_mt:
+case RISCV::BI__builtin_rvv_vloxseg6ei64_v_i8m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg6ei64_v_i8mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg6ei64_v_i8mf4_mt:
+case RISCV::BI__builtin_rvv_vloxseg6ei64_v_i8mf8_mt:
+case RISCV::BI__builtin_rvv_vloxseg6ei64_v_u8m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg6ei64_v_u8mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg6ei64_v_u8mf4_mt:
+case RISCV::BI__builtin_rvv_vloxseg6ei64_v_u8mf8_mt:
+case RISCV::BI__builtin_rvv_vloxseg6ei8_v_i16m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg6ei8_v_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg6ei8_v_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vloxseg6ei8_v_u16m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg6ei8_v_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg6ei8_v_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vloxseg6ei16_v_i16m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg6ei16_v_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg6ei16_v_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vloxseg6ei16_v_u16m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg6ei16_v_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg6ei16_v_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vloxseg6ei32_v_i16m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg6ei32_v_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg6ei32_v_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vloxseg6ei32_v_u16m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg6ei32_v_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg6ei32_v_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vloxseg6ei64_v_i16m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg6ei64_v_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg6ei64_v_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vloxseg6ei64_v_u16m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg6ei64_v_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg6ei64_v_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vloxseg6ei8_v_i32m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg6ei8_v_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg6ei8_v_u32m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg6ei8_v_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg6ei16_v_i32m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg6ei16_v_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg6ei16_v_u32m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg6ei16_v_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg6ei32_v_i32m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg6ei32_v_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg6ei32_v_u32m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg6ei32_v_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg6ei64_v_i32m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg6ei64_v_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg6ei64_v_u32m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg6ei64_v_u32mf2_mt:
   ID = Intrinsic::riscv_vloxseg6_mask;
   NF = 6;
 
@@ -8371,7 +8375,8 @@ case RISCV::BI__builtin_rvv_vloxseg6ei64_v_u32mf2_m:
       Operands.push_back(Ops[2 * NF + 2]);
       Operands.push_back(Ops[NF]);
       Operands.push_back(Ops[2 * NF + 3]);
-      assert(Operands.size() == NF + 4);
+      Operands.push_back(Ops[2 * NF + 4]);
+      assert(Operands.size() == NF + 5);
       llvm::Function *F = CGM.getIntrinsic(ID, IntrinsicTypes);
       llvm::Value *LoadValue = Builder.CreateCall(F, Operands, "");
       clang::CharUnits Align =
@@ -8509,110 +8514,110 @@ case RISCV::BI__builtin_rvv_vloxseg7ei64_v_u32mf2:
       return V;
     }
             break;
-case RISCV::BI__builtin_rvv_vloxseg7ei8_v_i64m1_m:
-case RISCV::BI__builtin_rvv_vloxseg7ei8_v_u64m1_m:
-case RISCV::BI__builtin_rvv_vloxseg7ei16_v_i64m1_m:
-case RISCV::BI__builtin_rvv_vloxseg7ei16_v_u64m1_m:
-case RISCV::BI__builtin_rvv_vloxseg7ei32_v_i64m1_m:
-case RISCV::BI__builtin_rvv_vloxseg7ei32_v_u64m1_m:
-case RISCV::BI__builtin_rvv_vloxseg7ei64_v_i64m1_m:
-case RISCV::BI__builtin_rvv_vloxseg7ei64_v_u64m1_m:
-case RISCV::BI__builtin_rvv_vloxseg7ei8_v_f16m1_m:
-case RISCV::BI__builtin_rvv_vloxseg7ei8_v_f16mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg7ei8_v_f16mf4_m:
-case RISCV::BI__builtin_rvv_vloxseg7ei16_v_f16m1_m:
-case RISCV::BI__builtin_rvv_vloxseg7ei16_v_f16mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg7ei16_v_f16mf4_m:
-case RISCV::BI__builtin_rvv_vloxseg7ei32_v_f16m1_m:
-case RISCV::BI__builtin_rvv_vloxseg7ei32_v_f16mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg7ei32_v_f16mf4_m:
-case RISCV::BI__builtin_rvv_vloxseg7ei64_v_f16m1_m:
-case RISCV::BI__builtin_rvv_vloxseg7ei64_v_f16mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg7ei64_v_f16mf4_m:
-case RISCV::BI__builtin_rvv_vloxseg7ei8_v_f32m1_m:
-case RISCV::BI__builtin_rvv_vloxseg7ei8_v_f32mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg7ei16_v_f32m1_m:
-case RISCV::BI__builtin_rvv_vloxseg7ei16_v_f32mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg7ei32_v_f32m1_m:
-case RISCV::BI__builtin_rvv_vloxseg7ei32_v_f32mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg7ei64_v_f32m1_m:
-case RISCV::BI__builtin_rvv_vloxseg7ei64_v_f32mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg7ei8_v_f64m1_m:
-case RISCV::BI__builtin_rvv_vloxseg7ei16_v_f64m1_m:
-case RISCV::BI__builtin_rvv_vloxseg7ei32_v_f64m1_m:
-case RISCV::BI__builtin_rvv_vloxseg7ei64_v_f64m1_m:
-case RISCV::BI__builtin_rvv_vloxseg7ei8_v_i8m1_m:
-case RISCV::BI__builtin_rvv_vloxseg7ei8_v_i8mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg7ei8_v_i8mf4_m:
-case RISCV::BI__builtin_rvv_vloxseg7ei8_v_i8mf8_m:
-case RISCV::BI__builtin_rvv_vloxseg7ei8_v_u8m1_m:
-case RISCV::BI__builtin_rvv_vloxseg7ei8_v_u8mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg7ei8_v_u8mf4_m:
-case RISCV::BI__builtin_rvv_vloxseg7ei8_v_u8mf8_m:
-case RISCV::BI__builtin_rvv_vloxseg7ei16_v_i8m1_m:
-case RISCV::BI__builtin_rvv_vloxseg7ei16_v_i8mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg7ei16_v_i8mf4_m:
-case RISCV::BI__builtin_rvv_vloxseg7ei16_v_i8mf8_m:
-case RISCV::BI__builtin_rvv_vloxseg7ei16_v_u8m1_m:
-case RISCV::BI__builtin_rvv_vloxseg7ei16_v_u8mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg7ei16_v_u8mf4_m:
-case RISCV::BI__builtin_rvv_vloxseg7ei16_v_u8mf8_m:
-case RISCV::BI__builtin_rvv_vloxseg7ei32_v_i8m1_m:
-case RISCV::BI__builtin_rvv_vloxseg7ei32_v_i8mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg7ei32_v_i8mf4_m:
-case RISCV::BI__builtin_rvv_vloxseg7ei32_v_i8mf8_m:
-case RISCV::BI__builtin_rvv_vloxseg7ei32_v_u8m1_m:
-case RISCV::BI__builtin_rvv_vloxseg7ei32_v_u8mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg7ei32_v_u8mf4_m:
-case RISCV::BI__builtin_rvv_vloxseg7ei32_v_u8mf8_m:
-case RISCV::BI__builtin_rvv_vloxseg7ei64_v_i8m1_m:
-case RISCV::BI__builtin_rvv_vloxseg7ei64_v_i8mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg7ei64_v_i8mf4_m:
-case RISCV::BI__builtin_rvv_vloxseg7ei64_v_i8mf8_m:
-case RISCV::BI__builtin_rvv_vloxseg7ei64_v_u8m1_m:
-case RISCV::BI__builtin_rvv_vloxseg7ei64_v_u8mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg7ei64_v_u8mf4_m:
-case RISCV::BI__builtin_rvv_vloxseg7ei64_v_u8mf8_m:
-case RISCV::BI__builtin_rvv_vloxseg7ei8_v_i16m1_m:
-case RISCV::BI__builtin_rvv_vloxseg7ei8_v_i16mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg7ei8_v_i16mf4_m:
-case RISCV::BI__builtin_rvv_vloxseg7ei8_v_u16m1_m:
-case RISCV::BI__builtin_rvv_vloxseg7ei8_v_u16mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg7ei8_v_u16mf4_m:
-case RISCV::BI__builtin_rvv_vloxseg7ei16_v_i16m1_m:
-case RISCV::BI__builtin_rvv_vloxseg7ei16_v_i16mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg7ei16_v_i16mf4_m:
-case RISCV::BI__builtin_rvv_vloxseg7ei16_v_u16m1_m:
-case RISCV::BI__builtin_rvv_vloxseg7ei16_v_u16mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg7ei16_v_u16mf4_m:
-case RISCV::BI__builtin_rvv_vloxseg7ei32_v_i16m1_m:
-case RISCV::BI__builtin_rvv_vloxseg7ei32_v_i16mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg7ei32_v_i16mf4_m:
-case RISCV::BI__builtin_rvv_vloxseg7ei32_v_u16m1_m:
-case RISCV::BI__builtin_rvv_vloxseg7ei32_v_u16mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg7ei32_v_u16mf4_m:
-case RISCV::BI__builtin_rvv_vloxseg7ei64_v_i16m1_m:
-case RISCV::BI__builtin_rvv_vloxseg7ei64_v_i16mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg7ei64_v_i16mf4_m:
-case RISCV::BI__builtin_rvv_vloxseg7ei64_v_u16m1_m:
-case RISCV::BI__builtin_rvv_vloxseg7ei64_v_u16mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg7ei64_v_u16mf4_m:
-case RISCV::BI__builtin_rvv_vloxseg7ei8_v_i32m1_m:
-case RISCV::BI__builtin_rvv_vloxseg7ei8_v_i32mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg7ei8_v_u32m1_m:
-case RISCV::BI__builtin_rvv_vloxseg7ei8_v_u32mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg7ei16_v_i32m1_m:
-case RISCV::BI__builtin_rvv_vloxseg7ei16_v_i32mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg7ei16_v_u32m1_m:
-case RISCV::BI__builtin_rvv_vloxseg7ei16_v_u32mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg7ei32_v_i32m1_m:
-case RISCV::BI__builtin_rvv_vloxseg7ei32_v_i32mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg7ei32_v_u32m1_m:
-case RISCV::BI__builtin_rvv_vloxseg7ei32_v_u32mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg7ei64_v_i32m1_m:
-case RISCV::BI__builtin_rvv_vloxseg7ei64_v_i32mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg7ei64_v_u32m1_m:
-case RISCV::BI__builtin_rvv_vloxseg7ei64_v_u32mf2_m:
+case RISCV::BI__builtin_rvv_vloxseg7ei8_v_i64m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg7ei8_v_u64m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg7ei16_v_i64m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg7ei16_v_u64m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg7ei32_v_i64m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg7ei32_v_u64m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg7ei64_v_i64m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg7ei64_v_u64m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg7ei8_v_f16m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg7ei8_v_f16mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg7ei8_v_f16mf4_mt:
+case RISCV::BI__builtin_rvv_vloxseg7ei16_v_f16m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg7ei16_v_f16mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg7ei16_v_f16mf4_mt:
+case RISCV::BI__builtin_rvv_vloxseg7ei32_v_f16m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg7ei32_v_f16mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg7ei32_v_f16mf4_mt:
+case RISCV::BI__builtin_rvv_vloxseg7ei64_v_f16m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg7ei64_v_f16mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg7ei64_v_f16mf4_mt:
+case RISCV::BI__builtin_rvv_vloxseg7ei8_v_f32m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg7ei8_v_f32mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg7ei16_v_f32m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg7ei16_v_f32mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg7ei32_v_f32m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg7ei32_v_f32mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg7ei64_v_f32m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg7ei64_v_f32mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg7ei8_v_f64m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg7ei16_v_f64m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg7ei32_v_f64m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg7ei64_v_f64m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg7ei8_v_i8m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg7ei8_v_i8mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg7ei8_v_i8mf4_mt:
+case RISCV::BI__builtin_rvv_vloxseg7ei8_v_i8mf8_mt:
+case RISCV::BI__builtin_rvv_vloxseg7ei8_v_u8m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg7ei8_v_u8mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg7ei8_v_u8mf4_mt:
+case RISCV::BI__builtin_rvv_vloxseg7ei8_v_u8mf8_mt:
+case RISCV::BI__builtin_rvv_vloxseg7ei16_v_i8m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg7ei16_v_i8mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg7ei16_v_i8mf4_mt:
+case RISCV::BI__builtin_rvv_vloxseg7ei16_v_i8mf8_mt:
+case RISCV::BI__builtin_rvv_vloxseg7ei16_v_u8m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg7ei16_v_u8mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg7ei16_v_u8mf4_mt:
+case RISCV::BI__builtin_rvv_vloxseg7ei16_v_u8mf8_mt:
+case RISCV::BI__builtin_rvv_vloxseg7ei32_v_i8m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg7ei32_v_i8mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg7ei32_v_i8mf4_mt:
+case RISCV::BI__builtin_rvv_vloxseg7ei32_v_i8mf8_mt:
+case RISCV::BI__builtin_rvv_vloxseg7ei32_v_u8m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg7ei32_v_u8mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg7ei32_v_u8mf4_mt:
+case RISCV::BI__builtin_rvv_vloxseg7ei32_v_u8mf8_mt:
+case RISCV::BI__builtin_rvv_vloxseg7ei64_v_i8m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg7ei64_v_i8mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg7ei64_v_i8mf4_mt:
+case RISCV::BI__builtin_rvv_vloxseg7ei64_v_i8mf8_mt:
+case RISCV::BI__builtin_rvv_vloxseg7ei64_v_u8m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg7ei64_v_u8mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg7ei64_v_u8mf4_mt:
+case RISCV::BI__builtin_rvv_vloxseg7ei64_v_u8mf8_mt:
+case RISCV::BI__builtin_rvv_vloxseg7ei8_v_i16m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg7ei8_v_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg7ei8_v_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vloxseg7ei8_v_u16m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg7ei8_v_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg7ei8_v_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vloxseg7ei16_v_i16m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg7ei16_v_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg7ei16_v_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vloxseg7ei16_v_u16m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg7ei16_v_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg7ei16_v_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vloxseg7ei32_v_i16m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg7ei32_v_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg7ei32_v_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vloxseg7ei32_v_u16m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg7ei32_v_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg7ei32_v_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vloxseg7ei64_v_i16m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg7ei64_v_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg7ei64_v_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vloxseg7ei64_v_u16m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg7ei64_v_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg7ei64_v_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vloxseg7ei8_v_i32m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg7ei8_v_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg7ei8_v_u32m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg7ei8_v_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg7ei16_v_i32m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg7ei16_v_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg7ei16_v_u32m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg7ei16_v_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg7ei32_v_i32m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg7ei32_v_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg7ei32_v_u32m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg7ei32_v_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg7ei64_v_i32m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg7ei64_v_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg7ei64_v_u32m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg7ei64_v_u32mf2_mt:
   ID = Intrinsic::riscv_vloxseg7_mask;
   NF = 7;
 
@@ -8628,7 +8633,8 @@ case RISCV::BI__builtin_rvv_vloxseg7ei64_v_u32mf2_m:
       Operands.push_back(Ops[2 * NF + 2]);
       Operands.push_back(Ops[NF]);
       Operands.push_back(Ops[2 * NF + 3]);
-      assert(Operands.size() == NF + 4);
+      Operands.push_back(Ops[2 * NF + 4]);
+      assert(Operands.size() == NF + 5);
       llvm::Function *F = CGM.getIntrinsic(ID, IntrinsicTypes);
       llvm::Value *LoadValue = Builder.CreateCall(F, Operands, "");
       clang::CharUnits Align =
@@ -8766,110 +8772,110 @@ case RISCV::BI__builtin_rvv_vloxseg8ei64_v_u32mf2:
       return V;
     }
             break;
-case RISCV::BI__builtin_rvv_vloxseg8ei8_v_i64m1_m:
-case RISCV::BI__builtin_rvv_vloxseg8ei8_v_u64m1_m:
-case RISCV::BI__builtin_rvv_vloxseg8ei16_v_i64m1_m:
-case RISCV::BI__builtin_rvv_vloxseg8ei16_v_u64m1_m:
-case RISCV::BI__builtin_rvv_vloxseg8ei32_v_i64m1_m:
-case RISCV::BI__builtin_rvv_vloxseg8ei32_v_u64m1_m:
-case RISCV::BI__builtin_rvv_vloxseg8ei64_v_i64m1_m:
-case RISCV::BI__builtin_rvv_vloxseg8ei64_v_u64m1_m:
-case RISCV::BI__builtin_rvv_vloxseg8ei8_v_f16m1_m:
-case RISCV::BI__builtin_rvv_vloxseg8ei8_v_f16mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg8ei8_v_f16mf4_m:
-case RISCV::BI__builtin_rvv_vloxseg8ei16_v_f16m1_m:
-case RISCV::BI__builtin_rvv_vloxseg8ei16_v_f16mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg8ei16_v_f16mf4_m:
-case RISCV::BI__builtin_rvv_vloxseg8ei32_v_f16m1_m:
-case RISCV::BI__builtin_rvv_vloxseg8ei32_v_f16mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg8ei32_v_f16mf4_m:
-case RISCV::BI__builtin_rvv_vloxseg8ei64_v_f16m1_m:
-case RISCV::BI__builtin_rvv_vloxseg8ei64_v_f16mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg8ei64_v_f16mf4_m:
-case RISCV::BI__builtin_rvv_vloxseg8ei8_v_f32m1_m:
-case RISCV::BI__builtin_rvv_vloxseg8ei8_v_f32mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg8ei16_v_f32m1_m:
-case RISCV::BI__builtin_rvv_vloxseg8ei16_v_f32mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg8ei32_v_f32m1_m:
-case RISCV::BI__builtin_rvv_vloxseg8ei32_v_f32mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg8ei64_v_f32m1_m:
-case RISCV::BI__builtin_rvv_vloxseg8ei64_v_f32mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg8ei8_v_f64m1_m:
-case RISCV::BI__builtin_rvv_vloxseg8ei16_v_f64m1_m:
-case RISCV::BI__builtin_rvv_vloxseg8ei32_v_f64m1_m:
-case RISCV::BI__builtin_rvv_vloxseg8ei64_v_f64m1_m:
-case RISCV::BI__builtin_rvv_vloxseg8ei8_v_i8m1_m:
-case RISCV::BI__builtin_rvv_vloxseg8ei8_v_i8mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg8ei8_v_i8mf4_m:
-case RISCV::BI__builtin_rvv_vloxseg8ei8_v_i8mf8_m:
-case RISCV::BI__builtin_rvv_vloxseg8ei8_v_u8m1_m:
-case RISCV::BI__builtin_rvv_vloxseg8ei8_v_u8mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg8ei8_v_u8mf4_m:
-case RISCV::BI__builtin_rvv_vloxseg8ei8_v_u8mf8_m:
-case RISCV::BI__builtin_rvv_vloxseg8ei16_v_i8m1_m:
-case RISCV::BI__builtin_rvv_vloxseg8ei16_v_i8mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg8ei16_v_i8mf4_m:
-case RISCV::BI__builtin_rvv_vloxseg8ei16_v_i8mf8_m:
-case RISCV::BI__builtin_rvv_vloxseg8ei16_v_u8m1_m:
-case RISCV::BI__builtin_rvv_vloxseg8ei16_v_u8mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg8ei16_v_u8mf4_m:
-case RISCV::BI__builtin_rvv_vloxseg8ei16_v_u8mf8_m:
-case RISCV::BI__builtin_rvv_vloxseg8ei32_v_i8m1_m:
-case RISCV::BI__builtin_rvv_vloxseg8ei32_v_i8mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg8ei32_v_i8mf4_m:
-case RISCV::BI__builtin_rvv_vloxseg8ei32_v_i8mf8_m:
-case RISCV::BI__builtin_rvv_vloxseg8ei32_v_u8m1_m:
-case RISCV::BI__builtin_rvv_vloxseg8ei32_v_u8mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg8ei32_v_u8mf4_m:
-case RISCV::BI__builtin_rvv_vloxseg8ei32_v_u8mf8_m:
-case RISCV::BI__builtin_rvv_vloxseg8ei64_v_i8m1_m:
-case RISCV::BI__builtin_rvv_vloxseg8ei64_v_i8mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg8ei64_v_i8mf4_m:
-case RISCV::BI__builtin_rvv_vloxseg8ei64_v_i8mf8_m:
-case RISCV::BI__builtin_rvv_vloxseg8ei64_v_u8m1_m:
-case RISCV::BI__builtin_rvv_vloxseg8ei64_v_u8mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg8ei64_v_u8mf4_m:
-case RISCV::BI__builtin_rvv_vloxseg8ei64_v_u8mf8_m:
-case RISCV::BI__builtin_rvv_vloxseg8ei8_v_i16m1_m:
-case RISCV::BI__builtin_rvv_vloxseg8ei8_v_i16mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg8ei8_v_i16mf4_m:
-case RISCV::BI__builtin_rvv_vloxseg8ei8_v_u16m1_m:
-case RISCV::BI__builtin_rvv_vloxseg8ei8_v_u16mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg8ei8_v_u16mf4_m:
-case RISCV::BI__builtin_rvv_vloxseg8ei16_v_i16m1_m:
-case RISCV::BI__builtin_rvv_vloxseg8ei16_v_i16mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg8ei16_v_i16mf4_m:
-case RISCV::BI__builtin_rvv_vloxseg8ei16_v_u16m1_m:
-case RISCV::BI__builtin_rvv_vloxseg8ei16_v_u16mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg8ei16_v_u16mf4_m:
-case RISCV::BI__builtin_rvv_vloxseg8ei32_v_i16m1_m:
-case RISCV::BI__builtin_rvv_vloxseg8ei32_v_i16mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg8ei32_v_i16mf4_m:
-case RISCV::BI__builtin_rvv_vloxseg8ei32_v_u16m1_m:
-case RISCV::BI__builtin_rvv_vloxseg8ei32_v_u16mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg8ei32_v_u16mf4_m:
-case RISCV::BI__builtin_rvv_vloxseg8ei64_v_i16m1_m:
-case RISCV::BI__builtin_rvv_vloxseg8ei64_v_i16mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg8ei64_v_i16mf4_m:
-case RISCV::BI__builtin_rvv_vloxseg8ei64_v_u16m1_m:
-case RISCV::BI__builtin_rvv_vloxseg8ei64_v_u16mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg8ei64_v_u16mf4_m:
-case RISCV::BI__builtin_rvv_vloxseg8ei8_v_i32m1_m:
-case RISCV::BI__builtin_rvv_vloxseg8ei8_v_i32mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg8ei8_v_u32m1_m:
-case RISCV::BI__builtin_rvv_vloxseg8ei8_v_u32mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg8ei16_v_i32m1_m:
-case RISCV::BI__builtin_rvv_vloxseg8ei16_v_i32mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg8ei16_v_u32m1_m:
-case RISCV::BI__builtin_rvv_vloxseg8ei16_v_u32mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg8ei32_v_i32m1_m:
-case RISCV::BI__builtin_rvv_vloxseg8ei32_v_i32mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg8ei32_v_u32m1_m:
-case RISCV::BI__builtin_rvv_vloxseg8ei32_v_u32mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg8ei64_v_i32m1_m:
-case RISCV::BI__builtin_rvv_vloxseg8ei64_v_i32mf2_m:
-case RISCV::BI__builtin_rvv_vloxseg8ei64_v_u32m1_m:
-case RISCV::BI__builtin_rvv_vloxseg8ei64_v_u32mf2_m:
+case RISCV::BI__builtin_rvv_vloxseg8ei8_v_i64m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg8ei8_v_u64m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg8ei16_v_i64m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg8ei16_v_u64m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg8ei32_v_i64m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg8ei32_v_u64m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg8ei64_v_i64m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg8ei64_v_u64m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg8ei8_v_f16m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg8ei8_v_f16mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg8ei8_v_f16mf4_mt:
+case RISCV::BI__builtin_rvv_vloxseg8ei16_v_f16m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg8ei16_v_f16mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg8ei16_v_f16mf4_mt:
+case RISCV::BI__builtin_rvv_vloxseg8ei32_v_f16m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg8ei32_v_f16mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg8ei32_v_f16mf4_mt:
+case RISCV::BI__builtin_rvv_vloxseg8ei64_v_f16m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg8ei64_v_f16mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg8ei64_v_f16mf4_mt:
+case RISCV::BI__builtin_rvv_vloxseg8ei8_v_f32m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg8ei8_v_f32mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg8ei16_v_f32m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg8ei16_v_f32mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg8ei32_v_f32m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg8ei32_v_f32mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg8ei64_v_f32m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg8ei64_v_f32mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg8ei8_v_f64m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg8ei16_v_f64m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg8ei32_v_f64m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg8ei64_v_f64m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg8ei8_v_i8m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg8ei8_v_i8mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg8ei8_v_i8mf4_mt:
+case RISCV::BI__builtin_rvv_vloxseg8ei8_v_i8mf8_mt:
+case RISCV::BI__builtin_rvv_vloxseg8ei8_v_u8m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg8ei8_v_u8mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg8ei8_v_u8mf4_mt:
+case RISCV::BI__builtin_rvv_vloxseg8ei8_v_u8mf8_mt:
+case RISCV::BI__builtin_rvv_vloxseg8ei16_v_i8m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg8ei16_v_i8mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg8ei16_v_i8mf4_mt:
+case RISCV::BI__builtin_rvv_vloxseg8ei16_v_i8mf8_mt:
+case RISCV::BI__builtin_rvv_vloxseg8ei16_v_u8m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg8ei16_v_u8mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg8ei16_v_u8mf4_mt:
+case RISCV::BI__builtin_rvv_vloxseg8ei16_v_u8mf8_mt:
+case RISCV::BI__builtin_rvv_vloxseg8ei32_v_i8m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg8ei32_v_i8mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg8ei32_v_i8mf4_mt:
+case RISCV::BI__builtin_rvv_vloxseg8ei32_v_i8mf8_mt:
+case RISCV::BI__builtin_rvv_vloxseg8ei32_v_u8m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg8ei32_v_u8mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg8ei32_v_u8mf4_mt:
+case RISCV::BI__builtin_rvv_vloxseg8ei32_v_u8mf8_mt:
+case RISCV::BI__builtin_rvv_vloxseg8ei64_v_i8m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg8ei64_v_i8mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg8ei64_v_i8mf4_mt:
+case RISCV::BI__builtin_rvv_vloxseg8ei64_v_i8mf8_mt:
+case RISCV::BI__builtin_rvv_vloxseg8ei64_v_u8m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg8ei64_v_u8mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg8ei64_v_u8mf4_mt:
+case RISCV::BI__builtin_rvv_vloxseg8ei64_v_u8mf8_mt:
+case RISCV::BI__builtin_rvv_vloxseg8ei8_v_i16m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg8ei8_v_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg8ei8_v_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vloxseg8ei8_v_u16m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg8ei8_v_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg8ei8_v_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vloxseg8ei16_v_i16m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg8ei16_v_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg8ei16_v_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vloxseg8ei16_v_u16m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg8ei16_v_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg8ei16_v_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vloxseg8ei32_v_i16m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg8ei32_v_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg8ei32_v_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vloxseg8ei32_v_u16m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg8ei32_v_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg8ei32_v_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vloxseg8ei64_v_i16m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg8ei64_v_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg8ei64_v_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vloxseg8ei64_v_u16m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg8ei64_v_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg8ei64_v_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vloxseg8ei8_v_i32m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg8ei8_v_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg8ei8_v_u32m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg8ei8_v_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg8ei16_v_i32m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg8ei16_v_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg8ei16_v_u32m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg8ei16_v_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg8ei32_v_i32m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg8ei32_v_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg8ei32_v_u32m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg8ei32_v_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg8ei64_v_i32m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg8ei64_v_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vloxseg8ei64_v_u32m1_mt:
+case RISCV::BI__builtin_rvv_vloxseg8ei64_v_u32mf2_mt:
   ID = Intrinsic::riscv_vloxseg8_mask;
   NF = 8;
 
@@ -8885,7 +8891,8 @@ case RISCV::BI__builtin_rvv_vloxseg8ei64_v_u32mf2_m:
       Operands.push_back(Ops[2 * NF + 2]);
       Operands.push_back(Ops[NF]);
       Operands.push_back(Ops[2 * NF + 3]);
-      assert(Operands.size() == NF + 4);
+      Operands.push_back(Ops[2 * NF + 4]);
+      assert(Operands.size() == NF + 5);
       llvm::Function *F = CGM.getIntrinsic(ID, IntrinsicTypes);
       llvm::Value *LoadValue = Builder.CreateCall(F, Operands, "");
       clang::CharUnits Align =
@@ -8962,69 +8969,69 @@ case RISCV::BI__builtin_rvv_vlse64_v_i64m8:
         IntrinsicTypes = {ResultType, Ops[2]->getType()};
         Ops[0] = Builder.CreateBitCast(Ops[0], ResultType->getPointerTo());
       break;
-case RISCV::BI__builtin_rvv_vlse64_v_u64m1_m:
-case RISCV::BI__builtin_rvv_vlse64_v_u64m2_m:
-case RISCV::BI__builtin_rvv_vlse64_v_u64m4_m:
-case RISCV::BI__builtin_rvv_vlse64_v_u64m8_m:
-case RISCV::BI__builtin_rvv_vlse64_v_f64m1_m:
-case RISCV::BI__builtin_rvv_vlse64_v_f64m2_m:
-case RISCV::BI__builtin_rvv_vlse64_v_f64m4_m:
-case RISCV::BI__builtin_rvv_vlse64_v_f64m8_m:
-case RISCV::BI__builtin_rvv_vlse8_v_i8m1_m:
-case RISCV::BI__builtin_rvv_vlse8_v_i8m2_m:
-case RISCV::BI__builtin_rvv_vlse8_v_i8m4_m:
-case RISCV::BI__builtin_rvv_vlse8_v_i8m8_m:
-case RISCV::BI__builtin_rvv_vlse8_v_i8mf2_m:
-case RISCV::BI__builtin_rvv_vlse8_v_i8mf4_m:
-case RISCV::BI__builtin_rvv_vlse8_v_i8mf8_m:
-case RISCV::BI__builtin_rvv_vlse8_v_u8m1_m:
-case RISCV::BI__builtin_rvv_vlse8_v_u8m2_m:
-case RISCV::BI__builtin_rvv_vlse8_v_u8m4_m:
-case RISCV::BI__builtin_rvv_vlse8_v_u8m8_m:
-case RISCV::BI__builtin_rvv_vlse8_v_u8mf2_m:
-case RISCV::BI__builtin_rvv_vlse8_v_u8mf4_m:
-case RISCV::BI__builtin_rvv_vlse8_v_u8mf8_m:
-case RISCV::BI__builtin_rvv_vlse16_v_i16m1_m:
-case RISCV::BI__builtin_rvv_vlse16_v_i16m2_m:
-case RISCV::BI__builtin_rvv_vlse16_v_i16m4_m:
-case RISCV::BI__builtin_rvv_vlse16_v_i16m8_m:
-case RISCV::BI__builtin_rvv_vlse16_v_i16mf2_m:
-case RISCV::BI__builtin_rvv_vlse16_v_i16mf4_m:
-case RISCV::BI__builtin_rvv_vlse16_v_u16m1_m:
-case RISCV::BI__builtin_rvv_vlse16_v_u16m2_m:
-case RISCV::BI__builtin_rvv_vlse16_v_u16m4_m:
-case RISCV::BI__builtin_rvv_vlse16_v_u16m8_m:
-case RISCV::BI__builtin_rvv_vlse16_v_u16mf2_m:
-case RISCV::BI__builtin_rvv_vlse16_v_u16mf4_m:
-case RISCV::BI__builtin_rvv_vlse16_v_f16m1_m:
-case RISCV::BI__builtin_rvv_vlse16_v_f16m2_m:
-case RISCV::BI__builtin_rvv_vlse16_v_f16m4_m:
-case RISCV::BI__builtin_rvv_vlse16_v_f16m8_m:
-case RISCV::BI__builtin_rvv_vlse16_v_f16mf2_m:
-case RISCV::BI__builtin_rvv_vlse16_v_f16mf4_m:
-case RISCV::BI__builtin_rvv_vlse32_v_i32m1_m:
-case RISCV::BI__builtin_rvv_vlse32_v_i32m2_m:
-case RISCV::BI__builtin_rvv_vlse32_v_i32m4_m:
-case RISCV::BI__builtin_rvv_vlse32_v_i32m8_m:
-case RISCV::BI__builtin_rvv_vlse32_v_i32mf2_m:
-case RISCV::BI__builtin_rvv_vlse32_v_u32m1_m:
-case RISCV::BI__builtin_rvv_vlse32_v_u32m2_m:
-case RISCV::BI__builtin_rvv_vlse32_v_u32m4_m:
-case RISCV::BI__builtin_rvv_vlse32_v_u32m8_m:
-case RISCV::BI__builtin_rvv_vlse32_v_u32mf2_m:
-case RISCV::BI__builtin_rvv_vlse32_v_f32m1_m:
-case RISCV::BI__builtin_rvv_vlse32_v_f32m2_m:
-case RISCV::BI__builtin_rvv_vlse32_v_f32m4_m:
-case RISCV::BI__builtin_rvv_vlse32_v_f32m8_m:
-case RISCV::BI__builtin_rvv_vlse32_v_f32mf2_m:
-case RISCV::BI__builtin_rvv_vlse64_v_i64m1_m:
-case RISCV::BI__builtin_rvv_vlse64_v_i64m2_m:
-case RISCV::BI__builtin_rvv_vlse64_v_i64m4_m:
-case RISCV::BI__builtin_rvv_vlse64_v_i64m8_m:
+case RISCV::BI__builtin_rvv_vlse64_v_u64m1_mt:
+case RISCV::BI__builtin_rvv_vlse64_v_u64m2_mt:
+case RISCV::BI__builtin_rvv_vlse64_v_u64m4_mt:
+case RISCV::BI__builtin_rvv_vlse64_v_u64m8_mt:
+case RISCV::BI__builtin_rvv_vlse64_v_f64m1_mt:
+case RISCV::BI__builtin_rvv_vlse64_v_f64m2_mt:
+case RISCV::BI__builtin_rvv_vlse64_v_f64m4_mt:
+case RISCV::BI__builtin_rvv_vlse64_v_f64m8_mt:
+case RISCV::BI__builtin_rvv_vlse8_v_i8m1_mt:
+case RISCV::BI__builtin_rvv_vlse8_v_i8m2_mt:
+case RISCV::BI__builtin_rvv_vlse8_v_i8m4_mt:
+case RISCV::BI__builtin_rvv_vlse8_v_i8m8_mt:
+case RISCV::BI__builtin_rvv_vlse8_v_i8mf2_mt:
+case RISCV::BI__builtin_rvv_vlse8_v_i8mf4_mt:
+case RISCV::BI__builtin_rvv_vlse8_v_i8mf8_mt:
+case RISCV::BI__builtin_rvv_vlse8_v_u8m1_mt:
+case RISCV::BI__builtin_rvv_vlse8_v_u8m2_mt:
+case RISCV::BI__builtin_rvv_vlse8_v_u8m4_mt:
+case RISCV::BI__builtin_rvv_vlse8_v_u8m8_mt:
+case RISCV::BI__builtin_rvv_vlse8_v_u8mf2_mt:
+case RISCV::BI__builtin_rvv_vlse8_v_u8mf4_mt:
+case RISCV::BI__builtin_rvv_vlse8_v_u8mf8_mt:
+case RISCV::BI__builtin_rvv_vlse16_v_i16m1_mt:
+case RISCV::BI__builtin_rvv_vlse16_v_i16m2_mt:
+case RISCV::BI__builtin_rvv_vlse16_v_i16m4_mt:
+case RISCV::BI__builtin_rvv_vlse16_v_i16m8_mt:
+case RISCV::BI__builtin_rvv_vlse16_v_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vlse16_v_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vlse16_v_u16m1_mt:
+case RISCV::BI__builtin_rvv_vlse16_v_u16m2_mt:
+case RISCV::BI__builtin_rvv_vlse16_v_u16m4_mt:
+case RISCV::BI__builtin_rvv_vlse16_v_u16m8_mt:
+case RISCV::BI__builtin_rvv_vlse16_v_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vlse16_v_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vlse16_v_f16m1_mt:
+case RISCV::BI__builtin_rvv_vlse16_v_f16m2_mt:
+case RISCV::BI__builtin_rvv_vlse16_v_f16m4_mt:
+case RISCV::BI__builtin_rvv_vlse16_v_f16m8_mt:
+case RISCV::BI__builtin_rvv_vlse16_v_f16mf2_mt:
+case RISCV::BI__builtin_rvv_vlse16_v_f16mf4_mt:
+case RISCV::BI__builtin_rvv_vlse32_v_i32m1_mt:
+case RISCV::BI__builtin_rvv_vlse32_v_i32m2_mt:
+case RISCV::BI__builtin_rvv_vlse32_v_i32m4_mt:
+case RISCV::BI__builtin_rvv_vlse32_v_i32m8_mt:
+case RISCV::BI__builtin_rvv_vlse32_v_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vlse32_v_u32m1_mt:
+case RISCV::BI__builtin_rvv_vlse32_v_u32m2_mt:
+case RISCV::BI__builtin_rvv_vlse32_v_u32m4_mt:
+case RISCV::BI__builtin_rvv_vlse32_v_u32m8_mt:
+case RISCV::BI__builtin_rvv_vlse32_v_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vlse32_v_f32m1_mt:
+case RISCV::BI__builtin_rvv_vlse32_v_f32m2_mt:
+case RISCV::BI__builtin_rvv_vlse32_v_f32m4_mt:
+case RISCV::BI__builtin_rvv_vlse32_v_f32m8_mt:
+case RISCV::BI__builtin_rvv_vlse32_v_f32mf2_mt:
+case RISCV::BI__builtin_rvv_vlse64_v_i64m1_mt:
+case RISCV::BI__builtin_rvv_vlse64_v_i64m2_mt:
+case RISCV::BI__builtin_rvv_vlse64_v_i64m4_mt:
+case RISCV::BI__builtin_rvv_vlse64_v_i64m8_mt:
   ID = Intrinsic::riscv_vlse_mask;
 
         // Move mask to right before vl.
-        std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 1);
+        std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 2);
         IntrinsicTypes = {ResultType, Ops[4]->getType()};
         Ops[1] = Builder.CreateBitCast(Ops[1], ResultType->getPointerTo());
       break;
@@ -9097,54 +9104,54 @@ case RISCV::BI__builtin_rvv_vlseg2e64_v_f64m4:
       return V;
     }
             break;
-case RISCV::BI__builtin_rvv_vlseg2e8_v_i8m1_m:
-case RISCV::BI__builtin_rvv_vlseg2e8_v_i8m2_m:
-case RISCV::BI__builtin_rvv_vlseg2e8_v_i8m4_m:
-case RISCV::BI__builtin_rvv_vlseg2e8_v_i8mf2_m:
-case RISCV::BI__builtin_rvv_vlseg2e8_v_i8mf4_m:
-case RISCV::BI__builtin_rvv_vlseg2e8_v_i8mf8_m:
-case RISCV::BI__builtin_rvv_vlseg2e8_v_u8m1_m:
-case RISCV::BI__builtin_rvv_vlseg2e8_v_u8m2_m:
-case RISCV::BI__builtin_rvv_vlseg2e8_v_u8m4_m:
-case RISCV::BI__builtin_rvv_vlseg2e8_v_u8mf2_m:
-case RISCV::BI__builtin_rvv_vlseg2e8_v_u8mf4_m:
-case RISCV::BI__builtin_rvv_vlseg2e8_v_u8mf8_m:
-case RISCV::BI__builtin_rvv_vlseg2e16_v_i16m1_m:
-case RISCV::BI__builtin_rvv_vlseg2e16_v_i16m2_m:
-case RISCV::BI__builtin_rvv_vlseg2e16_v_i16m4_m:
-case RISCV::BI__builtin_rvv_vlseg2e16_v_i16mf2_m:
-case RISCV::BI__builtin_rvv_vlseg2e16_v_i16mf4_m:
-case RISCV::BI__builtin_rvv_vlseg2e16_v_u16m1_m:
-case RISCV::BI__builtin_rvv_vlseg2e16_v_u16m2_m:
-case RISCV::BI__builtin_rvv_vlseg2e16_v_u16m4_m:
-case RISCV::BI__builtin_rvv_vlseg2e16_v_u16mf2_m:
-case RISCV::BI__builtin_rvv_vlseg2e16_v_u16mf4_m:
-case RISCV::BI__builtin_rvv_vlseg2e32_v_i32m1_m:
-case RISCV::BI__builtin_rvv_vlseg2e32_v_i32m2_m:
-case RISCV::BI__builtin_rvv_vlseg2e32_v_i32m4_m:
-case RISCV::BI__builtin_rvv_vlseg2e32_v_i32mf2_m:
-case RISCV::BI__builtin_rvv_vlseg2e32_v_u32m1_m:
-case RISCV::BI__builtin_rvv_vlseg2e32_v_u32m2_m:
-case RISCV::BI__builtin_rvv_vlseg2e32_v_u32m4_m:
-case RISCV::BI__builtin_rvv_vlseg2e32_v_u32mf2_m:
-case RISCV::BI__builtin_rvv_vlseg2e64_v_i64m1_m:
-case RISCV::BI__builtin_rvv_vlseg2e64_v_i64m2_m:
-case RISCV::BI__builtin_rvv_vlseg2e64_v_i64m4_m:
-case RISCV::BI__builtin_rvv_vlseg2e64_v_u64m1_m:
-case RISCV::BI__builtin_rvv_vlseg2e64_v_u64m2_m:
-case RISCV::BI__builtin_rvv_vlseg2e64_v_u64m4_m:
-case RISCV::BI__builtin_rvv_vlseg2e16_v_f16m1_m:
-case RISCV::BI__builtin_rvv_vlseg2e16_v_f16m2_m:
-case RISCV::BI__builtin_rvv_vlseg2e16_v_f16m4_m:
-case RISCV::BI__builtin_rvv_vlseg2e16_v_f16mf2_m:
-case RISCV::BI__builtin_rvv_vlseg2e16_v_f16mf4_m:
-case RISCV::BI__builtin_rvv_vlseg2e32_v_f32m1_m:
-case RISCV::BI__builtin_rvv_vlseg2e32_v_f32m2_m:
-case RISCV::BI__builtin_rvv_vlseg2e32_v_f32m4_m:
-case RISCV::BI__builtin_rvv_vlseg2e32_v_f32mf2_m:
-case RISCV::BI__builtin_rvv_vlseg2e64_v_f64m1_m:
-case RISCV::BI__builtin_rvv_vlseg2e64_v_f64m2_m:
-case RISCV::BI__builtin_rvv_vlseg2e64_v_f64m4_m:
+case RISCV::BI__builtin_rvv_vlseg2e8_v_i8m1_mt:
+case RISCV::BI__builtin_rvv_vlseg2e8_v_i8m2_mt:
+case RISCV::BI__builtin_rvv_vlseg2e8_v_i8m4_mt:
+case RISCV::BI__builtin_rvv_vlseg2e8_v_i8mf2_mt:
+case RISCV::BI__builtin_rvv_vlseg2e8_v_i8mf4_mt:
+case RISCV::BI__builtin_rvv_vlseg2e8_v_i8mf8_mt:
+case RISCV::BI__builtin_rvv_vlseg2e8_v_u8m1_mt:
+case RISCV::BI__builtin_rvv_vlseg2e8_v_u8m2_mt:
+case RISCV::BI__builtin_rvv_vlseg2e8_v_u8m4_mt:
+case RISCV::BI__builtin_rvv_vlseg2e8_v_u8mf2_mt:
+case RISCV::BI__builtin_rvv_vlseg2e8_v_u8mf4_mt:
+case RISCV::BI__builtin_rvv_vlseg2e8_v_u8mf8_mt:
+case RISCV::BI__builtin_rvv_vlseg2e16_v_i16m1_mt:
+case RISCV::BI__builtin_rvv_vlseg2e16_v_i16m2_mt:
+case RISCV::BI__builtin_rvv_vlseg2e16_v_i16m4_mt:
+case RISCV::BI__builtin_rvv_vlseg2e16_v_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vlseg2e16_v_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vlseg2e16_v_u16m1_mt:
+case RISCV::BI__builtin_rvv_vlseg2e16_v_u16m2_mt:
+case RISCV::BI__builtin_rvv_vlseg2e16_v_u16m4_mt:
+case RISCV::BI__builtin_rvv_vlseg2e16_v_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vlseg2e16_v_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vlseg2e32_v_i32m1_mt:
+case RISCV::BI__builtin_rvv_vlseg2e32_v_i32m2_mt:
+case RISCV::BI__builtin_rvv_vlseg2e32_v_i32m4_mt:
+case RISCV::BI__builtin_rvv_vlseg2e32_v_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vlseg2e32_v_u32m1_mt:
+case RISCV::BI__builtin_rvv_vlseg2e32_v_u32m2_mt:
+case RISCV::BI__builtin_rvv_vlseg2e32_v_u32m4_mt:
+case RISCV::BI__builtin_rvv_vlseg2e32_v_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vlseg2e64_v_i64m1_mt:
+case RISCV::BI__builtin_rvv_vlseg2e64_v_i64m2_mt:
+case RISCV::BI__builtin_rvv_vlseg2e64_v_i64m4_mt:
+case RISCV::BI__builtin_rvv_vlseg2e64_v_u64m1_mt:
+case RISCV::BI__builtin_rvv_vlseg2e64_v_u64m2_mt:
+case RISCV::BI__builtin_rvv_vlseg2e64_v_u64m4_mt:
+case RISCV::BI__builtin_rvv_vlseg2e16_v_f16m1_mt:
+case RISCV::BI__builtin_rvv_vlseg2e16_v_f16m2_mt:
+case RISCV::BI__builtin_rvv_vlseg2e16_v_f16m4_mt:
+case RISCV::BI__builtin_rvv_vlseg2e16_v_f16mf2_mt:
+case RISCV::BI__builtin_rvv_vlseg2e16_v_f16mf4_mt:
+case RISCV::BI__builtin_rvv_vlseg2e32_v_f32m1_mt:
+case RISCV::BI__builtin_rvv_vlseg2e32_v_f32m2_mt:
+case RISCV::BI__builtin_rvv_vlseg2e32_v_f32m4_mt:
+case RISCV::BI__builtin_rvv_vlseg2e32_v_f32mf2_mt:
+case RISCV::BI__builtin_rvv_vlseg2e64_v_f64m1_mt:
+case RISCV::BI__builtin_rvv_vlseg2e64_v_f64m2_mt:
+case RISCV::BI__builtin_rvv_vlseg2e64_v_f64m4_mt:
   ID = Intrinsic::riscv_vlseg2_mask;
   NF = 2;
 
@@ -9159,7 +9166,8 @@ case RISCV::BI__builtin_rvv_vlseg2e64_v_f64m4_m:
       Operands.push_back(Ops[2 * NF + 1]);
       Operands.push_back(Ops[NF]);
       Operands.push_back(Ops[2 * NF + 2]);
-      assert(Operands.size() == NF + 3);
+      Operands.push_back(Ops[2 * NF + 3]);
+      assert(Operands.size() == NF + 4);
       llvm::Function *F = CGM.getIntrinsic(ID, IntrinsicTypes);
       llvm::Value *LoadValue = Builder.CreateCall(F, Operands, "");
       clang::CharUnits Align =
@@ -9243,54 +9251,54 @@ case RISCV::BI__builtin_rvv_vlseg2e64ff_v_f64m4:
                                  Address(NewVL, Align));
     }
             break;
-case RISCV::BI__builtin_rvv_vlseg2e16ff_v_i16m1_m:
-case RISCV::BI__builtin_rvv_vlseg2e16ff_v_i16m2_m:
-case RISCV::BI__builtin_rvv_vlseg2e16ff_v_i16m4_m:
-case RISCV::BI__builtin_rvv_vlseg2e16ff_v_i16mf2_m:
-case RISCV::BI__builtin_rvv_vlseg2e16ff_v_i16mf4_m:
-case RISCV::BI__builtin_rvv_vlseg2e16ff_v_u16m1_m:
-case RISCV::BI__builtin_rvv_vlseg2e16ff_v_u16m2_m:
-case RISCV::BI__builtin_rvv_vlseg2e16ff_v_u16m4_m:
-case RISCV::BI__builtin_rvv_vlseg2e16ff_v_u16mf2_m:
-case RISCV::BI__builtin_rvv_vlseg2e16ff_v_u16mf4_m:
-case RISCV::BI__builtin_rvv_vlseg2e32ff_v_i32m1_m:
-case RISCV::BI__builtin_rvv_vlseg2e32ff_v_i32m2_m:
-case RISCV::BI__builtin_rvv_vlseg2e32ff_v_i32m4_m:
-case RISCV::BI__builtin_rvv_vlseg2e32ff_v_i32mf2_m:
-case RISCV::BI__builtin_rvv_vlseg2e8ff_v_i8m1_m:
-case RISCV::BI__builtin_rvv_vlseg2e8ff_v_i8m2_m:
-case RISCV::BI__builtin_rvv_vlseg2e8ff_v_i8m4_m:
-case RISCV::BI__builtin_rvv_vlseg2e8ff_v_i8mf2_m:
-case RISCV::BI__builtin_rvv_vlseg2e8ff_v_i8mf4_m:
-case RISCV::BI__builtin_rvv_vlseg2e8ff_v_i8mf8_m:
-case RISCV::BI__builtin_rvv_vlseg2e32ff_v_u32m1_m:
-case RISCV::BI__builtin_rvv_vlseg2e32ff_v_u32m2_m:
-case RISCV::BI__builtin_rvv_vlseg2e32ff_v_u32m4_m:
-case RISCV::BI__builtin_rvv_vlseg2e32ff_v_u32mf2_m:
-case RISCV::BI__builtin_rvv_vlseg2e8ff_v_u8m1_m:
-case RISCV::BI__builtin_rvv_vlseg2e8ff_v_u8m2_m:
-case RISCV::BI__builtin_rvv_vlseg2e8ff_v_u8m4_m:
-case RISCV::BI__builtin_rvv_vlseg2e8ff_v_u8mf2_m:
-case RISCV::BI__builtin_rvv_vlseg2e8ff_v_u8mf4_m:
-case RISCV::BI__builtin_rvv_vlseg2e8ff_v_u8mf8_m:
-case RISCV::BI__builtin_rvv_vlseg2e64ff_v_i64m1_m:
-case RISCV::BI__builtin_rvv_vlseg2e64ff_v_i64m2_m:
-case RISCV::BI__builtin_rvv_vlseg2e64ff_v_i64m4_m:
-case RISCV::BI__builtin_rvv_vlseg2e64ff_v_u64m1_m:
-case RISCV::BI__builtin_rvv_vlseg2e64ff_v_u64m2_m:
-case RISCV::BI__builtin_rvv_vlseg2e64ff_v_u64m4_m:
-case RISCV::BI__builtin_rvv_vlseg2e16ff_v_f16m1_m:
-case RISCV::BI__builtin_rvv_vlseg2e16ff_v_f16m2_m:
-case RISCV::BI__builtin_rvv_vlseg2e16ff_v_f16m4_m:
-case RISCV::BI__builtin_rvv_vlseg2e16ff_v_f16mf2_m:
-case RISCV::BI__builtin_rvv_vlseg2e16ff_v_f16mf4_m:
-case RISCV::BI__builtin_rvv_vlseg2e32ff_v_f32m1_m:
-case RISCV::BI__builtin_rvv_vlseg2e32ff_v_f32m2_m:
-case RISCV::BI__builtin_rvv_vlseg2e32ff_v_f32m4_m:
-case RISCV::BI__builtin_rvv_vlseg2e32ff_v_f32mf2_m:
-case RISCV::BI__builtin_rvv_vlseg2e64ff_v_f64m1_m:
-case RISCV::BI__builtin_rvv_vlseg2e64ff_v_f64m2_m:
-case RISCV::BI__builtin_rvv_vlseg2e64ff_v_f64m4_m:
+case RISCV::BI__builtin_rvv_vlseg2e16ff_v_i16m1_mt:
+case RISCV::BI__builtin_rvv_vlseg2e16ff_v_i16m2_mt:
+case RISCV::BI__builtin_rvv_vlseg2e16ff_v_i16m4_mt:
+case RISCV::BI__builtin_rvv_vlseg2e16ff_v_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vlseg2e16ff_v_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vlseg2e16ff_v_u16m1_mt:
+case RISCV::BI__builtin_rvv_vlseg2e16ff_v_u16m2_mt:
+case RISCV::BI__builtin_rvv_vlseg2e16ff_v_u16m4_mt:
+case RISCV::BI__builtin_rvv_vlseg2e16ff_v_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vlseg2e16ff_v_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vlseg2e32ff_v_i32m1_mt:
+case RISCV::BI__builtin_rvv_vlseg2e32ff_v_i32m2_mt:
+case RISCV::BI__builtin_rvv_vlseg2e32ff_v_i32m4_mt:
+case RISCV::BI__builtin_rvv_vlseg2e32ff_v_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vlseg2e8ff_v_i8m1_mt:
+case RISCV::BI__builtin_rvv_vlseg2e8ff_v_i8m2_mt:
+case RISCV::BI__builtin_rvv_vlseg2e8ff_v_i8m4_mt:
+case RISCV::BI__builtin_rvv_vlseg2e8ff_v_i8mf2_mt:
+case RISCV::BI__builtin_rvv_vlseg2e8ff_v_i8mf4_mt:
+case RISCV::BI__builtin_rvv_vlseg2e8ff_v_i8mf8_mt:
+case RISCV::BI__builtin_rvv_vlseg2e32ff_v_u32m1_mt:
+case RISCV::BI__builtin_rvv_vlseg2e32ff_v_u32m2_mt:
+case RISCV::BI__builtin_rvv_vlseg2e32ff_v_u32m4_mt:
+case RISCV::BI__builtin_rvv_vlseg2e32ff_v_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vlseg2e8ff_v_u8m1_mt:
+case RISCV::BI__builtin_rvv_vlseg2e8ff_v_u8m2_mt:
+case RISCV::BI__builtin_rvv_vlseg2e8ff_v_u8m4_mt:
+case RISCV::BI__builtin_rvv_vlseg2e8ff_v_u8mf2_mt:
+case RISCV::BI__builtin_rvv_vlseg2e8ff_v_u8mf4_mt:
+case RISCV::BI__builtin_rvv_vlseg2e8ff_v_u8mf8_mt:
+case RISCV::BI__builtin_rvv_vlseg2e64ff_v_i64m1_mt:
+case RISCV::BI__builtin_rvv_vlseg2e64ff_v_i64m2_mt:
+case RISCV::BI__builtin_rvv_vlseg2e64ff_v_i64m4_mt:
+case RISCV::BI__builtin_rvv_vlseg2e64ff_v_u64m1_mt:
+case RISCV::BI__builtin_rvv_vlseg2e64ff_v_u64m2_mt:
+case RISCV::BI__builtin_rvv_vlseg2e64ff_v_u64m4_mt:
+case RISCV::BI__builtin_rvv_vlseg2e16ff_v_f16m1_mt:
+case RISCV::BI__builtin_rvv_vlseg2e16ff_v_f16m2_mt:
+case RISCV::BI__builtin_rvv_vlseg2e16ff_v_f16m4_mt:
+case RISCV::BI__builtin_rvv_vlseg2e16ff_v_f16mf2_mt:
+case RISCV::BI__builtin_rvv_vlseg2e16ff_v_f16mf4_mt:
+case RISCV::BI__builtin_rvv_vlseg2e32ff_v_f32m1_mt:
+case RISCV::BI__builtin_rvv_vlseg2e32ff_v_f32m2_mt:
+case RISCV::BI__builtin_rvv_vlseg2e32ff_v_f32m4_mt:
+case RISCV::BI__builtin_rvv_vlseg2e32ff_v_f32mf2_mt:
+case RISCV::BI__builtin_rvv_vlseg2e64ff_v_f64m1_mt:
+case RISCV::BI__builtin_rvv_vlseg2e64ff_v_f64m2_mt:
+case RISCV::BI__builtin_rvv_vlseg2e64ff_v_f64m4_mt:
   ID = Intrinsic::riscv_vlseg2ff_mask;
   NF = 2;
 
@@ -9305,8 +9313,9 @@ case RISCV::BI__builtin_rvv_vlseg2e64ff_v_f64m4_m:
       Operands.push_back(Ops[2 * NF + 1]);
       Operands.push_back(Ops[NF]);
       Operands.push_back(Ops[2 * NF + 3]);
+      Operands.push_back(Ops[2 * NF + 4]);
       Value *NewVL = Ops[2 * NF + 2];
-      assert(Operands.size() == NF + 3);
+      assert(Operands.size() == NF + 4);
       llvm::Function *F = CGM.getIntrinsic(ID, IntrinsicTypes);
       llvm::Value *LoadValue = Builder.CreateCall(F, Operands, "");
       clang::CharUnits Align =
@@ -9378,43 +9387,43 @@ case RISCV::BI__builtin_rvv_vlseg3e64_v_f64m2:
       return V;
     }
             break;
-case RISCV::BI__builtin_rvv_vlseg3e8_v_i8m1_m:
-case RISCV::BI__builtin_rvv_vlseg3e8_v_i8m2_m:
-case RISCV::BI__builtin_rvv_vlseg3e8_v_i8mf2_m:
-case RISCV::BI__builtin_rvv_vlseg3e8_v_i8mf4_m:
-case RISCV::BI__builtin_rvv_vlseg3e8_v_i8mf8_m:
-case RISCV::BI__builtin_rvv_vlseg3e8_v_u8m1_m:
-case RISCV::BI__builtin_rvv_vlseg3e8_v_u8m2_m:
-case RISCV::BI__builtin_rvv_vlseg3e8_v_u8mf2_m:
-case RISCV::BI__builtin_rvv_vlseg3e8_v_u8mf4_m:
-case RISCV::BI__builtin_rvv_vlseg3e8_v_u8mf8_m:
-case RISCV::BI__builtin_rvv_vlseg3e16_v_i16m1_m:
-case RISCV::BI__builtin_rvv_vlseg3e16_v_i16m2_m:
-case RISCV::BI__builtin_rvv_vlseg3e16_v_i16mf2_m:
-case RISCV::BI__builtin_rvv_vlseg3e16_v_i16mf4_m:
-case RISCV::BI__builtin_rvv_vlseg3e16_v_u16m1_m:
-case RISCV::BI__builtin_rvv_vlseg3e16_v_u16m2_m:
-case RISCV::BI__builtin_rvv_vlseg3e16_v_u16mf2_m:
-case RISCV::BI__builtin_rvv_vlseg3e16_v_u16mf4_m:
-case RISCV::BI__builtin_rvv_vlseg3e32_v_i32m1_m:
-case RISCV::BI__builtin_rvv_vlseg3e32_v_i32m2_m:
-case RISCV::BI__builtin_rvv_vlseg3e32_v_i32mf2_m:
-case RISCV::BI__builtin_rvv_vlseg3e32_v_u32m1_m:
-case RISCV::BI__builtin_rvv_vlseg3e32_v_u32m2_m:
-case RISCV::BI__builtin_rvv_vlseg3e32_v_u32mf2_m:
-case RISCV::BI__builtin_rvv_vlseg3e64_v_i64m1_m:
-case RISCV::BI__builtin_rvv_vlseg3e64_v_i64m2_m:
-case RISCV::BI__builtin_rvv_vlseg3e64_v_u64m1_m:
-case RISCV::BI__builtin_rvv_vlseg3e64_v_u64m2_m:
-case RISCV::BI__builtin_rvv_vlseg3e16_v_f16m1_m:
-case RISCV::BI__builtin_rvv_vlseg3e16_v_f16m2_m:
-case RISCV::BI__builtin_rvv_vlseg3e16_v_f16mf2_m:
-case RISCV::BI__builtin_rvv_vlseg3e16_v_f16mf4_m:
-case RISCV::BI__builtin_rvv_vlseg3e32_v_f32m1_m:
-case RISCV::BI__builtin_rvv_vlseg3e32_v_f32m2_m:
-case RISCV::BI__builtin_rvv_vlseg3e32_v_f32mf2_m:
-case RISCV::BI__builtin_rvv_vlseg3e64_v_f64m1_m:
-case RISCV::BI__builtin_rvv_vlseg3e64_v_f64m2_m:
+case RISCV::BI__builtin_rvv_vlseg3e8_v_i8m1_mt:
+case RISCV::BI__builtin_rvv_vlseg3e8_v_i8m2_mt:
+case RISCV::BI__builtin_rvv_vlseg3e8_v_i8mf2_mt:
+case RISCV::BI__builtin_rvv_vlseg3e8_v_i8mf4_mt:
+case RISCV::BI__builtin_rvv_vlseg3e8_v_i8mf8_mt:
+case RISCV::BI__builtin_rvv_vlseg3e8_v_u8m1_mt:
+case RISCV::BI__builtin_rvv_vlseg3e8_v_u8m2_mt:
+case RISCV::BI__builtin_rvv_vlseg3e8_v_u8mf2_mt:
+case RISCV::BI__builtin_rvv_vlseg3e8_v_u8mf4_mt:
+case RISCV::BI__builtin_rvv_vlseg3e8_v_u8mf8_mt:
+case RISCV::BI__builtin_rvv_vlseg3e16_v_i16m1_mt:
+case RISCV::BI__builtin_rvv_vlseg3e16_v_i16m2_mt:
+case RISCV::BI__builtin_rvv_vlseg3e16_v_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vlseg3e16_v_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vlseg3e16_v_u16m1_mt:
+case RISCV::BI__builtin_rvv_vlseg3e16_v_u16m2_mt:
+case RISCV::BI__builtin_rvv_vlseg3e16_v_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vlseg3e16_v_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vlseg3e32_v_i32m1_mt:
+case RISCV::BI__builtin_rvv_vlseg3e32_v_i32m2_mt:
+case RISCV::BI__builtin_rvv_vlseg3e32_v_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vlseg3e32_v_u32m1_mt:
+case RISCV::BI__builtin_rvv_vlseg3e32_v_u32m2_mt:
+case RISCV::BI__builtin_rvv_vlseg3e32_v_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vlseg3e64_v_i64m1_mt:
+case RISCV::BI__builtin_rvv_vlseg3e64_v_i64m2_mt:
+case RISCV::BI__builtin_rvv_vlseg3e64_v_u64m1_mt:
+case RISCV::BI__builtin_rvv_vlseg3e64_v_u64m2_mt:
+case RISCV::BI__builtin_rvv_vlseg3e16_v_f16m1_mt:
+case RISCV::BI__builtin_rvv_vlseg3e16_v_f16m2_mt:
+case RISCV::BI__builtin_rvv_vlseg3e16_v_f16mf2_mt:
+case RISCV::BI__builtin_rvv_vlseg3e16_v_f16mf4_mt:
+case RISCV::BI__builtin_rvv_vlseg3e32_v_f32m1_mt:
+case RISCV::BI__builtin_rvv_vlseg3e32_v_f32m2_mt:
+case RISCV::BI__builtin_rvv_vlseg3e32_v_f32mf2_mt:
+case RISCV::BI__builtin_rvv_vlseg3e64_v_f64m1_mt:
+case RISCV::BI__builtin_rvv_vlseg3e64_v_f64m2_mt:
   ID = Intrinsic::riscv_vlseg3_mask;
   NF = 3;
 
@@ -9429,7 +9438,8 @@ case RISCV::BI__builtin_rvv_vlseg3e64_v_f64m2_m:
       Operands.push_back(Ops[2 * NF + 1]);
       Operands.push_back(Ops[NF]);
       Operands.push_back(Ops[2 * NF + 2]);
-      assert(Operands.size() == NF + 3);
+      Operands.push_back(Ops[2 * NF + 3]);
+      assert(Operands.size() == NF + 4);
       llvm::Function *F = CGM.getIntrinsic(ID, IntrinsicTypes);
       llvm::Value *LoadValue = Builder.CreateCall(F, Operands, "");
       clang::CharUnits Align =
@@ -9502,43 +9512,43 @@ case RISCV::BI__builtin_rvv_vlseg3e64ff_v_f64m2:
                                  Address(NewVL, Align));
     }
             break;
-case RISCV::BI__builtin_rvv_vlseg3e8ff_v_i8m1_m:
-case RISCV::BI__builtin_rvv_vlseg3e8ff_v_i8m2_m:
-case RISCV::BI__builtin_rvv_vlseg3e8ff_v_i8mf2_m:
-case RISCV::BI__builtin_rvv_vlseg3e8ff_v_i8mf4_m:
-case RISCV::BI__builtin_rvv_vlseg3e8ff_v_i8mf8_m:
-case RISCV::BI__builtin_rvv_vlseg3e8ff_v_u8m1_m:
-case RISCV::BI__builtin_rvv_vlseg3e8ff_v_u8m2_m:
-case RISCV::BI__builtin_rvv_vlseg3e8ff_v_u8mf2_m:
-case RISCV::BI__builtin_rvv_vlseg3e8ff_v_u8mf4_m:
-case RISCV::BI__builtin_rvv_vlseg3e8ff_v_u8mf8_m:
-case RISCV::BI__builtin_rvv_vlseg3e16ff_v_i16m1_m:
-case RISCV::BI__builtin_rvv_vlseg3e16ff_v_i16m2_m:
-case RISCV::BI__builtin_rvv_vlseg3e16ff_v_i16mf2_m:
-case RISCV::BI__builtin_rvv_vlseg3e16ff_v_i16mf4_m:
-case RISCV::BI__builtin_rvv_vlseg3e16ff_v_u16m1_m:
-case RISCV::BI__builtin_rvv_vlseg3e16ff_v_u16m2_m:
-case RISCV::BI__builtin_rvv_vlseg3e16ff_v_u16mf2_m:
-case RISCV::BI__builtin_rvv_vlseg3e16ff_v_u16mf4_m:
-case RISCV::BI__builtin_rvv_vlseg3e32ff_v_i32m1_m:
-case RISCV::BI__builtin_rvv_vlseg3e32ff_v_i32m2_m:
-case RISCV::BI__builtin_rvv_vlseg3e32ff_v_i32mf2_m:
-case RISCV::BI__builtin_rvv_vlseg3e32ff_v_u32m1_m:
-case RISCV::BI__builtin_rvv_vlseg3e32ff_v_u32m2_m:
-case RISCV::BI__builtin_rvv_vlseg3e32ff_v_u32mf2_m:
-case RISCV::BI__builtin_rvv_vlseg3e64ff_v_i64m1_m:
-case RISCV::BI__builtin_rvv_vlseg3e64ff_v_i64m2_m:
-case RISCV::BI__builtin_rvv_vlseg3e64ff_v_u64m1_m:
-case RISCV::BI__builtin_rvv_vlseg3e64ff_v_u64m2_m:
-case RISCV::BI__builtin_rvv_vlseg3e16ff_v_f16m1_m:
-case RISCV::BI__builtin_rvv_vlseg3e16ff_v_f16m2_m:
-case RISCV::BI__builtin_rvv_vlseg3e16ff_v_f16mf2_m:
-case RISCV::BI__builtin_rvv_vlseg3e16ff_v_f16mf4_m:
-case RISCV::BI__builtin_rvv_vlseg3e32ff_v_f32m1_m:
-case RISCV::BI__builtin_rvv_vlseg3e32ff_v_f32m2_m:
-case RISCV::BI__builtin_rvv_vlseg3e32ff_v_f32mf2_m:
-case RISCV::BI__builtin_rvv_vlseg3e64ff_v_f64m1_m:
-case RISCV::BI__builtin_rvv_vlseg3e64ff_v_f64m2_m:
+case RISCV::BI__builtin_rvv_vlseg3e8ff_v_i8m1_mt:
+case RISCV::BI__builtin_rvv_vlseg3e8ff_v_i8m2_mt:
+case RISCV::BI__builtin_rvv_vlseg3e8ff_v_i8mf2_mt:
+case RISCV::BI__builtin_rvv_vlseg3e8ff_v_i8mf4_mt:
+case RISCV::BI__builtin_rvv_vlseg3e8ff_v_i8mf8_mt:
+case RISCV::BI__builtin_rvv_vlseg3e8ff_v_u8m1_mt:
+case RISCV::BI__builtin_rvv_vlseg3e8ff_v_u8m2_mt:
+case RISCV::BI__builtin_rvv_vlseg3e8ff_v_u8mf2_mt:
+case RISCV::BI__builtin_rvv_vlseg3e8ff_v_u8mf4_mt:
+case RISCV::BI__builtin_rvv_vlseg3e8ff_v_u8mf8_mt:
+case RISCV::BI__builtin_rvv_vlseg3e16ff_v_i16m1_mt:
+case RISCV::BI__builtin_rvv_vlseg3e16ff_v_i16m2_mt:
+case RISCV::BI__builtin_rvv_vlseg3e16ff_v_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vlseg3e16ff_v_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vlseg3e16ff_v_u16m1_mt:
+case RISCV::BI__builtin_rvv_vlseg3e16ff_v_u16m2_mt:
+case RISCV::BI__builtin_rvv_vlseg3e16ff_v_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vlseg3e16ff_v_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vlseg3e32ff_v_i32m1_mt:
+case RISCV::BI__builtin_rvv_vlseg3e32ff_v_i32m2_mt:
+case RISCV::BI__builtin_rvv_vlseg3e32ff_v_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vlseg3e32ff_v_u32m1_mt:
+case RISCV::BI__builtin_rvv_vlseg3e32ff_v_u32m2_mt:
+case RISCV::BI__builtin_rvv_vlseg3e32ff_v_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vlseg3e64ff_v_i64m1_mt:
+case RISCV::BI__builtin_rvv_vlseg3e64ff_v_i64m2_mt:
+case RISCV::BI__builtin_rvv_vlseg3e64ff_v_u64m1_mt:
+case RISCV::BI__builtin_rvv_vlseg3e64ff_v_u64m2_mt:
+case RISCV::BI__builtin_rvv_vlseg3e16ff_v_f16m1_mt:
+case RISCV::BI__builtin_rvv_vlseg3e16ff_v_f16m2_mt:
+case RISCV::BI__builtin_rvv_vlseg3e16ff_v_f16mf2_mt:
+case RISCV::BI__builtin_rvv_vlseg3e16ff_v_f16mf4_mt:
+case RISCV::BI__builtin_rvv_vlseg3e32ff_v_f32m1_mt:
+case RISCV::BI__builtin_rvv_vlseg3e32ff_v_f32m2_mt:
+case RISCV::BI__builtin_rvv_vlseg3e32ff_v_f32mf2_mt:
+case RISCV::BI__builtin_rvv_vlseg3e64ff_v_f64m1_mt:
+case RISCV::BI__builtin_rvv_vlseg3e64ff_v_f64m2_mt:
   ID = Intrinsic::riscv_vlseg3ff_mask;
   NF = 3;
 
@@ -9553,8 +9563,9 @@ case RISCV::BI__builtin_rvv_vlseg3e64ff_v_f64m2_m:
       Operands.push_back(Ops[2 * NF + 1]);
       Operands.push_back(Ops[NF]);
       Operands.push_back(Ops[2 * NF + 3]);
+      Operands.push_back(Ops[2 * NF + 4]);
       Value *NewVL = Ops[2 * NF + 2];
-      assert(Operands.size() == NF + 3);
+      assert(Operands.size() == NF + 4);
       llvm::Function *F = CGM.getIntrinsic(ID, IntrinsicTypes);
       llvm::Value *LoadValue = Builder.CreateCall(F, Operands, "");
       clang::CharUnits Align =
@@ -9626,43 +9637,43 @@ case RISCV::BI__builtin_rvv_vlseg4e64_v_f64m2:
       return V;
     }
             break;
-case RISCV::BI__builtin_rvv_vlseg4e8_v_i8m1_m:
-case RISCV::BI__builtin_rvv_vlseg4e8_v_i8m2_m:
-case RISCV::BI__builtin_rvv_vlseg4e8_v_i8mf2_m:
-case RISCV::BI__builtin_rvv_vlseg4e8_v_i8mf4_m:
-case RISCV::BI__builtin_rvv_vlseg4e8_v_i8mf8_m:
-case RISCV::BI__builtin_rvv_vlseg4e8_v_u8m1_m:
-case RISCV::BI__builtin_rvv_vlseg4e8_v_u8m2_m:
-case RISCV::BI__builtin_rvv_vlseg4e8_v_u8mf2_m:
-case RISCV::BI__builtin_rvv_vlseg4e8_v_u8mf4_m:
-case RISCV::BI__builtin_rvv_vlseg4e8_v_u8mf8_m:
-case RISCV::BI__builtin_rvv_vlseg4e16_v_i16m1_m:
-case RISCV::BI__builtin_rvv_vlseg4e16_v_i16m2_m:
-case RISCV::BI__builtin_rvv_vlseg4e16_v_i16mf2_m:
-case RISCV::BI__builtin_rvv_vlseg4e16_v_i16mf4_m:
-case RISCV::BI__builtin_rvv_vlseg4e16_v_u16m1_m:
-case RISCV::BI__builtin_rvv_vlseg4e16_v_u16m2_m:
-case RISCV::BI__builtin_rvv_vlseg4e16_v_u16mf2_m:
-case RISCV::BI__builtin_rvv_vlseg4e16_v_u16mf4_m:
-case RISCV::BI__builtin_rvv_vlseg4e32_v_i32m1_m:
-case RISCV::BI__builtin_rvv_vlseg4e32_v_i32m2_m:
-case RISCV::BI__builtin_rvv_vlseg4e32_v_i32mf2_m:
-case RISCV::BI__builtin_rvv_vlseg4e32_v_u32m1_m:
-case RISCV::BI__builtin_rvv_vlseg4e32_v_u32m2_m:
-case RISCV::BI__builtin_rvv_vlseg4e32_v_u32mf2_m:
-case RISCV::BI__builtin_rvv_vlseg4e64_v_i64m1_m:
-case RISCV::BI__builtin_rvv_vlseg4e64_v_i64m2_m:
-case RISCV::BI__builtin_rvv_vlseg4e64_v_u64m1_m:
-case RISCV::BI__builtin_rvv_vlseg4e64_v_u64m2_m:
-case RISCV::BI__builtin_rvv_vlseg4e16_v_f16m1_m:
-case RISCV::BI__builtin_rvv_vlseg4e16_v_f16m2_m:
-case RISCV::BI__builtin_rvv_vlseg4e16_v_f16mf2_m:
-case RISCV::BI__builtin_rvv_vlseg4e16_v_f16mf4_m:
-case RISCV::BI__builtin_rvv_vlseg4e32_v_f32m1_m:
-case RISCV::BI__builtin_rvv_vlseg4e32_v_f32m2_m:
-case RISCV::BI__builtin_rvv_vlseg4e32_v_f32mf2_m:
-case RISCV::BI__builtin_rvv_vlseg4e64_v_f64m1_m:
-case RISCV::BI__builtin_rvv_vlseg4e64_v_f64m2_m:
+case RISCV::BI__builtin_rvv_vlseg4e8_v_i8m1_mt:
+case RISCV::BI__builtin_rvv_vlseg4e8_v_i8m2_mt:
+case RISCV::BI__builtin_rvv_vlseg4e8_v_i8mf2_mt:
+case RISCV::BI__builtin_rvv_vlseg4e8_v_i8mf4_mt:
+case RISCV::BI__builtin_rvv_vlseg4e8_v_i8mf8_mt:
+case RISCV::BI__builtin_rvv_vlseg4e8_v_u8m1_mt:
+case RISCV::BI__builtin_rvv_vlseg4e8_v_u8m2_mt:
+case RISCV::BI__builtin_rvv_vlseg4e8_v_u8mf2_mt:
+case RISCV::BI__builtin_rvv_vlseg4e8_v_u8mf4_mt:
+case RISCV::BI__builtin_rvv_vlseg4e8_v_u8mf8_mt:
+case RISCV::BI__builtin_rvv_vlseg4e16_v_i16m1_mt:
+case RISCV::BI__builtin_rvv_vlseg4e16_v_i16m2_mt:
+case RISCV::BI__builtin_rvv_vlseg4e16_v_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vlseg4e16_v_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vlseg4e16_v_u16m1_mt:
+case RISCV::BI__builtin_rvv_vlseg4e16_v_u16m2_mt:
+case RISCV::BI__builtin_rvv_vlseg4e16_v_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vlseg4e16_v_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vlseg4e32_v_i32m1_mt:
+case RISCV::BI__builtin_rvv_vlseg4e32_v_i32m2_mt:
+case RISCV::BI__builtin_rvv_vlseg4e32_v_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vlseg4e32_v_u32m1_mt:
+case RISCV::BI__builtin_rvv_vlseg4e32_v_u32m2_mt:
+case RISCV::BI__builtin_rvv_vlseg4e32_v_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vlseg4e64_v_i64m1_mt:
+case RISCV::BI__builtin_rvv_vlseg4e64_v_i64m2_mt:
+case RISCV::BI__builtin_rvv_vlseg4e64_v_u64m1_mt:
+case RISCV::BI__builtin_rvv_vlseg4e64_v_u64m2_mt:
+case RISCV::BI__builtin_rvv_vlseg4e16_v_f16m1_mt:
+case RISCV::BI__builtin_rvv_vlseg4e16_v_f16m2_mt:
+case RISCV::BI__builtin_rvv_vlseg4e16_v_f16mf2_mt:
+case RISCV::BI__builtin_rvv_vlseg4e16_v_f16mf4_mt:
+case RISCV::BI__builtin_rvv_vlseg4e32_v_f32m1_mt:
+case RISCV::BI__builtin_rvv_vlseg4e32_v_f32m2_mt:
+case RISCV::BI__builtin_rvv_vlseg4e32_v_f32mf2_mt:
+case RISCV::BI__builtin_rvv_vlseg4e64_v_f64m1_mt:
+case RISCV::BI__builtin_rvv_vlseg4e64_v_f64m2_mt:
   ID = Intrinsic::riscv_vlseg4_mask;
   NF = 4;
 
@@ -9677,7 +9688,8 @@ case RISCV::BI__builtin_rvv_vlseg4e64_v_f64m2_m:
       Operands.push_back(Ops[2 * NF + 1]);
       Operands.push_back(Ops[NF]);
       Operands.push_back(Ops[2 * NF + 2]);
-      assert(Operands.size() == NF + 3);
+      Operands.push_back(Ops[2 * NF + 3]);
+      assert(Operands.size() == NF + 4);
       llvm::Function *F = CGM.getIntrinsic(ID, IntrinsicTypes);
       llvm::Value *LoadValue = Builder.CreateCall(F, Operands, "");
       clang::CharUnits Align =
@@ -9750,43 +9762,43 @@ case RISCV::BI__builtin_rvv_vlseg4e64ff_v_f64m2:
                                  Address(NewVL, Align));
     }
             break;
-case RISCV::BI__builtin_rvv_vlseg4e8ff_v_i8m1_m:
-case RISCV::BI__builtin_rvv_vlseg4e8ff_v_i8m2_m:
-case RISCV::BI__builtin_rvv_vlseg4e8ff_v_i8mf2_m:
-case RISCV::BI__builtin_rvv_vlseg4e8ff_v_i8mf4_m:
-case RISCV::BI__builtin_rvv_vlseg4e8ff_v_i8mf8_m:
-case RISCV::BI__builtin_rvv_vlseg4e8ff_v_u8m1_m:
-case RISCV::BI__builtin_rvv_vlseg4e8ff_v_u8m2_m:
-case RISCV::BI__builtin_rvv_vlseg4e8ff_v_u8mf2_m:
-case RISCV::BI__builtin_rvv_vlseg4e8ff_v_u8mf4_m:
-case RISCV::BI__builtin_rvv_vlseg4e8ff_v_u8mf8_m:
-case RISCV::BI__builtin_rvv_vlseg4e16ff_v_i16m1_m:
-case RISCV::BI__builtin_rvv_vlseg4e16ff_v_i16m2_m:
-case RISCV::BI__builtin_rvv_vlseg4e16ff_v_i16mf2_m:
-case RISCV::BI__builtin_rvv_vlseg4e16ff_v_i16mf4_m:
-case RISCV::BI__builtin_rvv_vlseg4e16ff_v_u16m1_m:
-case RISCV::BI__builtin_rvv_vlseg4e16ff_v_u16m2_m:
-case RISCV::BI__builtin_rvv_vlseg4e16ff_v_u16mf2_m:
-case RISCV::BI__builtin_rvv_vlseg4e16ff_v_u16mf4_m:
-case RISCV::BI__builtin_rvv_vlseg4e32ff_v_i32m1_m:
-case RISCV::BI__builtin_rvv_vlseg4e32ff_v_i32m2_m:
-case RISCV::BI__builtin_rvv_vlseg4e32ff_v_i32mf2_m:
-case RISCV::BI__builtin_rvv_vlseg4e32ff_v_u32m1_m:
-case RISCV::BI__builtin_rvv_vlseg4e32ff_v_u32m2_m:
-case RISCV::BI__builtin_rvv_vlseg4e32ff_v_u32mf2_m:
-case RISCV::BI__builtin_rvv_vlseg4e64ff_v_i64m1_m:
-case RISCV::BI__builtin_rvv_vlseg4e64ff_v_i64m2_m:
-case RISCV::BI__builtin_rvv_vlseg4e64ff_v_u64m1_m:
-case RISCV::BI__builtin_rvv_vlseg4e64ff_v_u64m2_m:
-case RISCV::BI__builtin_rvv_vlseg4e16ff_v_f16m1_m:
-case RISCV::BI__builtin_rvv_vlseg4e16ff_v_f16m2_m:
-case RISCV::BI__builtin_rvv_vlseg4e16ff_v_f16mf2_m:
-case RISCV::BI__builtin_rvv_vlseg4e16ff_v_f16mf4_m:
-case RISCV::BI__builtin_rvv_vlseg4e32ff_v_f32m1_m:
-case RISCV::BI__builtin_rvv_vlseg4e32ff_v_f32m2_m:
-case RISCV::BI__builtin_rvv_vlseg4e32ff_v_f32mf2_m:
-case RISCV::BI__builtin_rvv_vlseg4e64ff_v_f64m1_m:
-case RISCV::BI__builtin_rvv_vlseg4e64ff_v_f64m2_m:
+case RISCV::BI__builtin_rvv_vlseg4e8ff_v_i8m1_mt:
+case RISCV::BI__builtin_rvv_vlseg4e8ff_v_i8m2_mt:
+case RISCV::BI__builtin_rvv_vlseg4e8ff_v_i8mf2_mt:
+case RISCV::BI__builtin_rvv_vlseg4e8ff_v_i8mf4_mt:
+case RISCV::BI__builtin_rvv_vlseg4e8ff_v_i8mf8_mt:
+case RISCV::BI__builtin_rvv_vlseg4e8ff_v_u8m1_mt:
+case RISCV::BI__builtin_rvv_vlseg4e8ff_v_u8m2_mt:
+case RISCV::BI__builtin_rvv_vlseg4e8ff_v_u8mf2_mt:
+case RISCV::BI__builtin_rvv_vlseg4e8ff_v_u8mf4_mt:
+case RISCV::BI__builtin_rvv_vlseg4e8ff_v_u8mf8_mt:
+case RISCV::BI__builtin_rvv_vlseg4e16ff_v_i16m1_mt:
+case RISCV::BI__builtin_rvv_vlseg4e16ff_v_i16m2_mt:
+case RISCV::BI__builtin_rvv_vlseg4e16ff_v_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vlseg4e16ff_v_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vlseg4e16ff_v_u16m1_mt:
+case RISCV::BI__builtin_rvv_vlseg4e16ff_v_u16m2_mt:
+case RISCV::BI__builtin_rvv_vlseg4e16ff_v_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vlseg4e16ff_v_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vlseg4e32ff_v_i32m1_mt:
+case RISCV::BI__builtin_rvv_vlseg4e32ff_v_i32m2_mt:
+case RISCV::BI__builtin_rvv_vlseg4e32ff_v_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vlseg4e32ff_v_u32m1_mt:
+case RISCV::BI__builtin_rvv_vlseg4e32ff_v_u32m2_mt:
+case RISCV::BI__builtin_rvv_vlseg4e32ff_v_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vlseg4e64ff_v_i64m1_mt:
+case RISCV::BI__builtin_rvv_vlseg4e64ff_v_i64m2_mt:
+case RISCV::BI__builtin_rvv_vlseg4e64ff_v_u64m1_mt:
+case RISCV::BI__builtin_rvv_vlseg4e64ff_v_u64m2_mt:
+case RISCV::BI__builtin_rvv_vlseg4e16ff_v_f16m1_mt:
+case RISCV::BI__builtin_rvv_vlseg4e16ff_v_f16m2_mt:
+case RISCV::BI__builtin_rvv_vlseg4e16ff_v_f16mf2_mt:
+case RISCV::BI__builtin_rvv_vlseg4e16ff_v_f16mf4_mt:
+case RISCV::BI__builtin_rvv_vlseg4e32ff_v_f32m1_mt:
+case RISCV::BI__builtin_rvv_vlseg4e32ff_v_f32m2_mt:
+case RISCV::BI__builtin_rvv_vlseg4e32ff_v_f32mf2_mt:
+case RISCV::BI__builtin_rvv_vlseg4e64ff_v_f64m1_mt:
+case RISCV::BI__builtin_rvv_vlseg4e64ff_v_f64m2_mt:
   ID = Intrinsic::riscv_vlseg4ff_mask;
   NF = 4;
 
@@ -9801,8 +9813,9 @@ case RISCV::BI__builtin_rvv_vlseg4e64ff_v_f64m2_m:
       Operands.push_back(Ops[2 * NF + 1]);
       Operands.push_back(Ops[NF]);
       Operands.push_back(Ops[2 * NF + 3]);
+      Operands.push_back(Ops[2 * NF + 4]);
       Value *NewVL = Ops[2 * NF + 2];
-      assert(Operands.size() == NF + 3);
+      assert(Operands.size() == NF + 4);
       llvm::Function *F = CGM.getIntrinsic(ID, IntrinsicTypes);
       llvm::Value *LoadValue = Builder.CreateCall(F, Operands, "");
       clang::CharUnits Align =
@@ -9863,32 +9876,32 @@ case RISCV::BI__builtin_rvv_vlseg5e64_v_f64m1:
       return V;
     }
             break;
-case RISCV::BI__builtin_rvv_vlseg5e8_v_i8m1_m:
-case RISCV::BI__builtin_rvv_vlseg5e8_v_i8mf2_m:
-case RISCV::BI__builtin_rvv_vlseg5e8_v_i8mf4_m:
-case RISCV::BI__builtin_rvv_vlseg5e8_v_i8mf8_m:
-case RISCV::BI__builtin_rvv_vlseg5e8_v_u8m1_m:
-case RISCV::BI__builtin_rvv_vlseg5e8_v_u8mf2_m:
-case RISCV::BI__builtin_rvv_vlseg5e8_v_u8mf4_m:
-case RISCV::BI__builtin_rvv_vlseg5e8_v_u8mf8_m:
-case RISCV::BI__builtin_rvv_vlseg5e16_v_i16m1_m:
-case RISCV::BI__builtin_rvv_vlseg5e16_v_i16mf2_m:
-case RISCV::BI__builtin_rvv_vlseg5e16_v_i16mf4_m:
-case RISCV::BI__builtin_rvv_vlseg5e16_v_u16m1_m:
-case RISCV::BI__builtin_rvv_vlseg5e16_v_u16mf2_m:
-case RISCV::BI__builtin_rvv_vlseg5e16_v_u16mf4_m:
-case RISCV::BI__builtin_rvv_vlseg5e32_v_i32m1_m:
-case RISCV::BI__builtin_rvv_vlseg5e32_v_i32mf2_m:
-case RISCV::BI__builtin_rvv_vlseg5e32_v_u32m1_m:
-case RISCV::BI__builtin_rvv_vlseg5e32_v_u32mf2_m:
-case RISCV::BI__builtin_rvv_vlseg5e64_v_i64m1_m:
-case RISCV::BI__builtin_rvv_vlseg5e64_v_u64m1_m:
-case RISCV::BI__builtin_rvv_vlseg5e16_v_f16m1_m:
-case RISCV::BI__builtin_rvv_vlseg5e16_v_f16mf2_m:
-case RISCV::BI__builtin_rvv_vlseg5e16_v_f16mf4_m:
-case RISCV::BI__builtin_rvv_vlseg5e32_v_f32m1_m:
-case RISCV::BI__builtin_rvv_vlseg5e32_v_f32mf2_m:
-case RISCV::BI__builtin_rvv_vlseg5e64_v_f64m1_m:
+case RISCV::BI__builtin_rvv_vlseg5e8_v_i8m1_mt:
+case RISCV::BI__builtin_rvv_vlseg5e8_v_i8mf2_mt:
+case RISCV::BI__builtin_rvv_vlseg5e8_v_i8mf4_mt:
+case RISCV::BI__builtin_rvv_vlseg5e8_v_i8mf8_mt:
+case RISCV::BI__builtin_rvv_vlseg5e8_v_u8m1_mt:
+case RISCV::BI__builtin_rvv_vlseg5e8_v_u8mf2_mt:
+case RISCV::BI__builtin_rvv_vlseg5e8_v_u8mf4_mt:
+case RISCV::BI__builtin_rvv_vlseg5e8_v_u8mf8_mt:
+case RISCV::BI__builtin_rvv_vlseg5e16_v_i16m1_mt:
+case RISCV::BI__builtin_rvv_vlseg5e16_v_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vlseg5e16_v_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vlseg5e16_v_u16m1_mt:
+case RISCV::BI__builtin_rvv_vlseg5e16_v_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vlseg5e16_v_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vlseg5e32_v_i32m1_mt:
+case RISCV::BI__builtin_rvv_vlseg5e32_v_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vlseg5e32_v_u32m1_mt:
+case RISCV::BI__builtin_rvv_vlseg5e32_v_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vlseg5e64_v_i64m1_mt:
+case RISCV::BI__builtin_rvv_vlseg5e64_v_u64m1_mt:
+case RISCV::BI__builtin_rvv_vlseg5e16_v_f16m1_mt:
+case RISCV::BI__builtin_rvv_vlseg5e16_v_f16mf2_mt:
+case RISCV::BI__builtin_rvv_vlseg5e16_v_f16mf4_mt:
+case RISCV::BI__builtin_rvv_vlseg5e32_v_f32m1_mt:
+case RISCV::BI__builtin_rvv_vlseg5e32_v_f32mf2_mt:
+case RISCV::BI__builtin_rvv_vlseg5e64_v_f64m1_mt:
   ID = Intrinsic::riscv_vlseg5_mask;
   NF = 5;
 
@@ -9903,7 +9916,8 @@ case RISCV::BI__builtin_rvv_vlseg5e64_v_f64m1_m:
       Operands.push_back(Ops[2 * NF + 1]);
       Operands.push_back(Ops[NF]);
       Operands.push_back(Ops[2 * NF + 2]);
-      assert(Operands.size() == NF + 3);
+      Operands.push_back(Ops[2 * NF + 3]);
+      assert(Operands.size() == NF + 4);
       llvm::Function *F = CGM.getIntrinsic(ID, IntrinsicTypes);
       llvm::Value *LoadValue = Builder.CreateCall(F, Operands, "");
       clang::CharUnits Align =
@@ -9965,32 +9979,32 @@ case RISCV::BI__builtin_rvv_vlseg5e64ff_v_f64m1:
                                  Address(NewVL, Align));
     }
             break;
-case RISCV::BI__builtin_rvv_vlseg5e8ff_v_i8m1_m:
-case RISCV::BI__builtin_rvv_vlseg5e8ff_v_i8mf2_m:
-case RISCV::BI__builtin_rvv_vlseg5e8ff_v_i8mf4_m:
-case RISCV::BI__builtin_rvv_vlseg5e8ff_v_i8mf8_m:
-case RISCV::BI__builtin_rvv_vlseg5e8ff_v_u8m1_m:
-case RISCV::BI__builtin_rvv_vlseg5e8ff_v_u8mf2_m:
-case RISCV::BI__builtin_rvv_vlseg5e8ff_v_u8mf4_m:
-case RISCV::BI__builtin_rvv_vlseg5e8ff_v_u8mf8_m:
-case RISCV::BI__builtin_rvv_vlseg5e16ff_v_i16m1_m:
-case RISCV::BI__builtin_rvv_vlseg5e16ff_v_i16mf2_m:
-case RISCV::BI__builtin_rvv_vlseg5e16ff_v_i16mf4_m:
-case RISCV::BI__builtin_rvv_vlseg5e16ff_v_u16m1_m:
-case RISCV::BI__builtin_rvv_vlseg5e16ff_v_u16mf2_m:
-case RISCV::BI__builtin_rvv_vlseg5e16ff_v_u16mf4_m:
-case RISCV::BI__builtin_rvv_vlseg5e32ff_v_i32m1_m:
-case RISCV::BI__builtin_rvv_vlseg5e32ff_v_i32mf2_m:
-case RISCV::BI__builtin_rvv_vlseg5e32ff_v_u32m1_m:
-case RISCV::BI__builtin_rvv_vlseg5e32ff_v_u32mf2_m:
-case RISCV::BI__builtin_rvv_vlseg5e64ff_v_i64m1_m:
-case RISCV::BI__builtin_rvv_vlseg5e64ff_v_u64m1_m:
-case RISCV::BI__builtin_rvv_vlseg5e16ff_v_f16m1_m:
-case RISCV::BI__builtin_rvv_vlseg5e16ff_v_f16mf2_m:
-case RISCV::BI__builtin_rvv_vlseg5e16ff_v_f16mf4_m:
-case RISCV::BI__builtin_rvv_vlseg5e32ff_v_f32m1_m:
-case RISCV::BI__builtin_rvv_vlseg5e32ff_v_f32mf2_m:
-case RISCV::BI__builtin_rvv_vlseg5e64ff_v_f64m1_m:
+case RISCV::BI__builtin_rvv_vlseg5e8ff_v_i8m1_mt:
+case RISCV::BI__builtin_rvv_vlseg5e8ff_v_i8mf2_mt:
+case RISCV::BI__builtin_rvv_vlseg5e8ff_v_i8mf4_mt:
+case RISCV::BI__builtin_rvv_vlseg5e8ff_v_i8mf8_mt:
+case RISCV::BI__builtin_rvv_vlseg5e8ff_v_u8m1_mt:
+case RISCV::BI__builtin_rvv_vlseg5e8ff_v_u8mf2_mt:
+case RISCV::BI__builtin_rvv_vlseg5e8ff_v_u8mf4_mt:
+case RISCV::BI__builtin_rvv_vlseg5e8ff_v_u8mf8_mt:
+case RISCV::BI__builtin_rvv_vlseg5e16ff_v_i16m1_mt:
+case RISCV::BI__builtin_rvv_vlseg5e16ff_v_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vlseg5e16ff_v_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vlseg5e16ff_v_u16m1_mt:
+case RISCV::BI__builtin_rvv_vlseg5e16ff_v_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vlseg5e16ff_v_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vlseg5e32ff_v_i32m1_mt:
+case RISCV::BI__builtin_rvv_vlseg5e32ff_v_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vlseg5e32ff_v_u32m1_mt:
+case RISCV::BI__builtin_rvv_vlseg5e32ff_v_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vlseg5e64ff_v_i64m1_mt:
+case RISCV::BI__builtin_rvv_vlseg5e64ff_v_u64m1_mt:
+case RISCV::BI__builtin_rvv_vlseg5e16ff_v_f16m1_mt:
+case RISCV::BI__builtin_rvv_vlseg5e16ff_v_f16mf2_mt:
+case RISCV::BI__builtin_rvv_vlseg5e16ff_v_f16mf4_mt:
+case RISCV::BI__builtin_rvv_vlseg5e32ff_v_f32m1_mt:
+case RISCV::BI__builtin_rvv_vlseg5e32ff_v_f32mf2_mt:
+case RISCV::BI__builtin_rvv_vlseg5e64ff_v_f64m1_mt:
   ID = Intrinsic::riscv_vlseg5ff_mask;
   NF = 5;
 
@@ -10005,8 +10019,9 @@ case RISCV::BI__builtin_rvv_vlseg5e64ff_v_f64m1_m:
       Operands.push_back(Ops[2 * NF + 1]);
       Operands.push_back(Ops[NF]);
       Operands.push_back(Ops[2 * NF + 3]);
+      Operands.push_back(Ops[2 * NF + 4]);
       Value *NewVL = Ops[2 * NF + 2];
-      assert(Operands.size() == NF + 3);
+      assert(Operands.size() == NF + 4);
       llvm::Function *F = CGM.getIntrinsic(ID, IntrinsicTypes);
       llvm::Value *LoadValue = Builder.CreateCall(F, Operands, "");
       clang::CharUnits Align =
@@ -10067,32 +10082,32 @@ case RISCV::BI__builtin_rvv_vlseg6e64_v_f64m1:
       return V;
     }
             break;
-case RISCV::BI__builtin_rvv_vlseg6e8_v_i8m1_m:
-case RISCV::BI__builtin_rvv_vlseg6e8_v_i8mf2_m:
-case RISCV::BI__builtin_rvv_vlseg6e8_v_i8mf4_m:
-case RISCV::BI__builtin_rvv_vlseg6e8_v_i8mf8_m:
-case RISCV::BI__builtin_rvv_vlseg6e8_v_u8m1_m:
-case RISCV::BI__builtin_rvv_vlseg6e8_v_u8mf2_m:
-case RISCV::BI__builtin_rvv_vlseg6e8_v_u8mf4_m:
-case RISCV::BI__builtin_rvv_vlseg6e8_v_u8mf8_m:
-case RISCV::BI__builtin_rvv_vlseg6e16_v_i16m1_m:
-case RISCV::BI__builtin_rvv_vlseg6e16_v_i16mf2_m:
-case RISCV::BI__builtin_rvv_vlseg6e16_v_i16mf4_m:
-case RISCV::BI__builtin_rvv_vlseg6e16_v_u16m1_m:
-case RISCV::BI__builtin_rvv_vlseg6e16_v_u16mf2_m:
-case RISCV::BI__builtin_rvv_vlseg6e16_v_u16mf4_m:
-case RISCV::BI__builtin_rvv_vlseg6e32_v_i32m1_m:
-case RISCV::BI__builtin_rvv_vlseg6e32_v_i32mf2_m:
-case RISCV::BI__builtin_rvv_vlseg6e32_v_u32m1_m:
-case RISCV::BI__builtin_rvv_vlseg6e32_v_u32mf2_m:
-case RISCV::BI__builtin_rvv_vlseg6e64_v_i64m1_m:
-case RISCV::BI__builtin_rvv_vlseg6e64_v_u64m1_m:
-case RISCV::BI__builtin_rvv_vlseg6e16_v_f16m1_m:
-case RISCV::BI__builtin_rvv_vlseg6e16_v_f16mf2_m:
-case RISCV::BI__builtin_rvv_vlseg6e16_v_f16mf4_m:
-case RISCV::BI__builtin_rvv_vlseg6e32_v_f32m1_m:
-case RISCV::BI__builtin_rvv_vlseg6e32_v_f32mf2_m:
-case RISCV::BI__builtin_rvv_vlseg6e64_v_f64m1_m:
+case RISCV::BI__builtin_rvv_vlseg6e8_v_i8m1_mt:
+case RISCV::BI__builtin_rvv_vlseg6e8_v_i8mf2_mt:
+case RISCV::BI__builtin_rvv_vlseg6e8_v_i8mf4_mt:
+case RISCV::BI__builtin_rvv_vlseg6e8_v_i8mf8_mt:
+case RISCV::BI__builtin_rvv_vlseg6e8_v_u8m1_mt:
+case RISCV::BI__builtin_rvv_vlseg6e8_v_u8mf2_mt:
+case RISCV::BI__builtin_rvv_vlseg6e8_v_u8mf4_mt:
+case RISCV::BI__builtin_rvv_vlseg6e8_v_u8mf8_mt:
+case RISCV::BI__builtin_rvv_vlseg6e16_v_i16m1_mt:
+case RISCV::BI__builtin_rvv_vlseg6e16_v_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vlseg6e16_v_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vlseg6e16_v_u16m1_mt:
+case RISCV::BI__builtin_rvv_vlseg6e16_v_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vlseg6e16_v_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vlseg6e32_v_i32m1_mt:
+case RISCV::BI__builtin_rvv_vlseg6e32_v_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vlseg6e32_v_u32m1_mt:
+case RISCV::BI__builtin_rvv_vlseg6e32_v_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vlseg6e64_v_i64m1_mt:
+case RISCV::BI__builtin_rvv_vlseg6e64_v_u64m1_mt:
+case RISCV::BI__builtin_rvv_vlseg6e16_v_f16m1_mt:
+case RISCV::BI__builtin_rvv_vlseg6e16_v_f16mf2_mt:
+case RISCV::BI__builtin_rvv_vlseg6e16_v_f16mf4_mt:
+case RISCV::BI__builtin_rvv_vlseg6e32_v_f32m1_mt:
+case RISCV::BI__builtin_rvv_vlseg6e32_v_f32mf2_mt:
+case RISCV::BI__builtin_rvv_vlseg6e64_v_f64m1_mt:
   ID = Intrinsic::riscv_vlseg6_mask;
   NF = 6;
 
@@ -10107,7 +10122,8 @@ case RISCV::BI__builtin_rvv_vlseg6e64_v_f64m1_m:
       Operands.push_back(Ops[2 * NF + 1]);
       Operands.push_back(Ops[NF]);
       Operands.push_back(Ops[2 * NF + 2]);
-      assert(Operands.size() == NF + 3);
+      Operands.push_back(Ops[2 * NF + 3]);
+      assert(Operands.size() == NF + 4);
       llvm::Function *F = CGM.getIntrinsic(ID, IntrinsicTypes);
       llvm::Value *LoadValue = Builder.CreateCall(F, Operands, "");
       clang::CharUnits Align =
@@ -10169,32 +10185,32 @@ case RISCV::BI__builtin_rvv_vlseg6e64ff_v_f64m1:
                                  Address(NewVL, Align));
     }
             break;
-case RISCV::BI__builtin_rvv_vlseg6e8ff_v_i8m1_m:
-case RISCV::BI__builtin_rvv_vlseg6e8ff_v_i8mf2_m:
-case RISCV::BI__builtin_rvv_vlseg6e8ff_v_i8mf4_m:
-case RISCV::BI__builtin_rvv_vlseg6e8ff_v_i8mf8_m:
-case RISCV::BI__builtin_rvv_vlseg6e8ff_v_u8m1_m:
-case RISCV::BI__builtin_rvv_vlseg6e8ff_v_u8mf2_m:
-case RISCV::BI__builtin_rvv_vlseg6e8ff_v_u8mf4_m:
-case RISCV::BI__builtin_rvv_vlseg6e8ff_v_u8mf8_m:
-case RISCV::BI__builtin_rvv_vlseg6e16ff_v_i16m1_m:
-case RISCV::BI__builtin_rvv_vlseg6e16ff_v_i16mf2_m:
-case RISCV::BI__builtin_rvv_vlseg6e16ff_v_i16mf4_m:
-case RISCV::BI__builtin_rvv_vlseg6e16ff_v_u16m1_m:
-case RISCV::BI__builtin_rvv_vlseg6e16ff_v_u16mf2_m:
-case RISCV::BI__builtin_rvv_vlseg6e16ff_v_u16mf4_m:
-case RISCV::BI__builtin_rvv_vlseg6e32ff_v_i32m1_m:
-case RISCV::BI__builtin_rvv_vlseg6e32ff_v_i32mf2_m:
-case RISCV::BI__builtin_rvv_vlseg6e32ff_v_u32m1_m:
-case RISCV::BI__builtin_rvv_vlseg6e32ff_v_u32mf2_m:
-case RISCV::BI__builtin_rvv_vlseg6e64ff_v_i64m1_m:
-case RISCV::BI__builtin_rvv_vlseg6e64ff_v_u64m1_m:
-case RISCV::BI__builtin_rvv_vlseg6e16ff_v_f16m1_m:
-case RISCV::BI__builtin_rvv_vlseg6e16ff_v_f16mf2_m:
-case RISCV::BI__builtin_rvv_vlseg6e16ff_v_f16mf4_m:
-case RISCV::BI__builtin_rvv_vlseg6e32ff_v_f32m1_m:
-case RISCV::BI__builtin_rvv_vlseg6e32ff_v_f32mf2_m:
-case RISCV::BI__builtin_rvv_vlseg6e64ff_v_f64m1_m:
+case RISCV::BI__builtin_rvv_vlseg6e8ff_v_i8m1_mt:
+case RISCV::BI__builtin_rvv_vlseg6e8ff_v_i8mf2_mt:
+case RISCV::BI__builtin_rvv_vlseg6e8ff_v_i8mf4_mt:
+case RISCV::BI__builtin_rvv_vlseg6e8ff_v_i8mf8_mt:
+case RISCV::BI__builtin_rvv_vlseg6e8ff_v_u8m1_mt:
+case RISCV::BI__builtin_rvv_vlseg6e8ff_v_u8mf2_mt:
+case RISCV::BI__builtin_rvv_vlseg6e8ff_v_u8mf4_mt:
+case RISCV::BI__builtin_rvv_vlseg6e8ff_v_u8mf8_mt:
+case RISCV::BI__builtin_rvv_vlseg6e16ff_v_i16m1_mt:
+case RISCV::BI__builtin_rvv_vlseg6e16ff_v_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vlseg6e16ff_v_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vlseg6e16ff_v_u16m1_mt:
+case RISCV::BI__builtin_rvv_vlseg6e16ff_v_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vlseg6e16ff_v_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vlseg6e32ff_v_i32m1_mt:
+case RISCV::BI__builtin_rvv_vlseg6e32ff_v_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vlseg6e32ff_v_u32m1_mt:
+case RISCV::BI__builtin_rvv_vlseg6e32ff_v_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vlseg6e64ff_v_i64m1_mt:
+case RISCV::BI__builtin_rvv_vlseg6e64ff_v_u64m1_mt:
+case RISCV::BI__builtin_rvv_vlseg6e16ff_v_f16m1_mt:
+case RISCV::BI__builtin_rvv_vlseg6e16ff_v_f16mf2_mt:
+case RISCV::BI__builtin_rvv_vlseg6e16ff_v_f16mf4_mt:
+case RISCV::BI__builtin_rvv_vlseg6e32ff_v_f32m1_mt:
+case RISCV::BI__builtin_rvv_vlseg6e32ff_v_f32mf2_mt:
+case RISCV::BI__builtin_rvv_vlseg6e64ff_v_f64m1_mt:
   ID = Intrinsic::riscv_vlseg6ff_mask;
   NF = 6;
 
@@ -10209,8 +10225,9 @@ case RISCV::BI__builtin_rvv_vlseg6e64ff_v_f64m1_m:
       Operands.push_back(Ops[2 * NF + 1]);
       Operands.push_back(Ops[NF]);
       Operands.push_back(Ops[2 * NF + 3]);
+      Operands.push_back(Ops[2 * NF + 4]);
       Value *NewVL = Ops[2 * NF + 2];
-      assert(Operands.size() == NF + 3);
+      assert(Operands.size() == NF + 4);
       llvm::Function *F = CGM.getIntrinsic(ID, IntrinsicTypes);
       llvm::Value *LoadValue = Builder.CreateCall(F, Operands, "");
       clang::CharUnits Align =
@@ -10271,32 +10288,32 @@ case RISCV::BI__builtin_rvv_vlseg7e64_v_f64m1:
       return V;
     }
             break;
-case RISCV::BI__builtin_rvv_vlseg7e8_v_i8m1_m:
-case RISCV::BI__builtin_rvv_vlseg7e8_v_i8mf2_m:
-case RISCV::BI__builtin_rvv_vlseg7e8_v_i8mf4_m:
-case RISCV::BI__builtin_rvv_vlseg7e8_v_i8mf8_m:
-case RISCV::BI__builtin_rvv_vlseg7e8_v_u8m1_m:
-case RISCV::BI__builtin_rvv_vlseg7e8_v_u8mf2_m:
-case RISCV::BI__builtin_rvv_vlseg7e8_v_u8mf4_m:
-case RISCV::BI__builtin_rvv_vlseg7e8_v_u8mf8_m:
-case RISCV::BI__builtin_rvv_vlseg7e16_v_i16m1_m:
-case RISCV::BI__builtin_rvv_vlseg7e16_v_i16mf2_m:
-case RISCV::BI__builtin_rvv_vlseg7e16_v_i16mf4_m:
-case RISCV::BI__builtin_rvv_vlseg7e16_v_u16m1_m:
-case RISCV::BI__builtin_rvv_vlseg7e16_v_u16mf2_m:
-case RISCV::BI__builtin_rvv_vlseg7e16_v_u16mf4_m:
-case RISCV::BI__builtin_rvv_vlseg7e32_v_i32m1_m:
-case RISCV::BI__builtin_rvv_vlseg7e32_v_i32mf2_m:
-case RISCV::BI__builtin_rvv_vlseg7e32_v_u32m1_m:
-case RISCV::BI__builtin_rvv_vlseg7e32_v_u32mf2_m:
-case RISCV::BI__builtin_rvv_vlseg7e64_v_i64m1_m:
-case RISCV::BI__builtin_rvv_vlseg7e64_v_u64m1_m:
-case RISCV::BI__builtin_rvv_vlseg7e16_v_f16m1_m:
-case RISCV::BI__builtin_rvv_vlseg7e16_v_f16mf2_m:
-case RISCV::BI__builtin_rvv_vlseg7e16_v_f16mf4_m:
-case RISCV::BI__builtin_rvv_vlseg7e32_v_f32m1_m:
-case RISCV::BI__builtin_rvv_vlseg7e32_v_f32mf2_m:
-case RISCV::BI__builtin_rvv_vlseg7e64_v_f64m1_m:
+case RISCV::BI__builtin_rvv_vlseg7e8_v_i8m1_mt:
+case RISCV::BI__builtin_rvv_vlseg7e8_v_i8mf2_mt:
+case RISCV::BI__builtin_rvv_vlseg7e8_v_i8mf4_mt:
+case RISCV::BI__builtin_rvv_vlseg7e8_v_i8mf8_mt:
+case RISCV::BI__builtin_rvv_vlseg7e8_v_u8m1_mt:
+case RISCV::BI__builtin_rvv_vlseg7e8_v_u8mf2_mt:
+case RISCV::BI__builtin_rvv_vlseg7e8_v_u8mf4_mt:
+case RISCV::BI__builtin_rvv_vlseg7e8_v_u8mf8_mt:
+case RISCV::BI__builtin_rvv_vlseg7e16_v_i16m1_mt:
+case RISCV::BI__builtin_rvv_vlseg7e16_v_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vlseg7e16_v_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vlseg7e16_v_u16m1_mt:
+case RISCV::BI__builtin_rvv_vlseg7e16_v_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vlseg7e16_v_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vlseg7e32_v_i32m1_mt:
+case RISCV::BI__builtin_rvv_vlseg7e32_v_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vlseg7e32_v_u32m1_mt:
+case RISCV::BI__builtin_rvv_vlseg7e32_v_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vlseg7e64_v_i64m1_mt:
+case RISCV::BI__builtin_rvv_vlseg7e64_v_u64m1_mt:
+case RISCV::BI__builtin_rvv_vlseg7e16_v_f16m1_mt:
+case RISCV::BI__builtin_rvv_vlseg7e16_v_f16mf2_mt:
+case RISCV::BI__builtin_rvv_vlseg7e16_v_f16mf4_mt:
+case RISCV::BI__builtin_rvv_vlseg7e32_v_f32m1_mt:
+case RISCV::BI__builtin_rvv_vlseg7e32_v_f32mf2_mt:
+case RISCV::BI__builtin_rvv_vlseg7e64_v_f64m1_mt:
   ID = Intrinsic::riscv_vlseg7_mask;
   NF = 7;
 
@@ -10311,7 +10328,8 @@ case RISCV::BI__builtin_rvv_vlseg7e64_v_f64m1_m:
       Operands.push_back(Ops[2 * NF + 1]);
       Operands.push_back(Ops[NF]);
       Operands.push_back(Ops[2 * NF + 2]);
-      assert(Operands.size() == NF + 3);
+      Operands.push_back(Ops[2 * NF + 3]);
+      assert(Operands.size() == NF + 4);
       llvm::Function *F = CGM.getIntrinsic(ID, IntrinsicTypes);
       llvm::Value *LoadValue = Builder.CreateCall(F, Operands, "");
       clang::CharUnits Align =
@@ -10373,32 +10391,32 @@ case RISCV::BI__builtin_rvv_vlseg7e64ff_v_f64m1:
                                  Address(NewVL, Align));
     }
             break;
-case RISCV::BI__builtin_rvv_vlseg7e8ff_v_i8m1_m:
-case RISCV::BI__builtin_rvv_vlseg7e8ff_v_i8mf2_m:
-case RISCV::BI__builtin_rvv_vlseg7e8ff_v_i8mf4_m:
-case RISCV::BI__builtin_rvv_vlseg7e8ff_v_i8mf8_m:
-case RISCV::BI__builtin_rvv_vlseg7e8ff_v_u8m1_m:
-case RISCV::BI__builtin_rvv_vlseg7e8ff_v_u8mf2_m:
-case RISCV::BI__builtin_rvv_vlseg7e8ff_v_u8mf4_m:
-case RISCV::BI__builtin_rvv_vlseg7e8ff_v_u8mf8_m:
-case RISCV::BI__builtin_rvv_vlseg7e16ff_v_i16m1_m:
-case RISCV::BI__builtin_rvv_vlseg7e16ff_v_i16mf2_m:
-case RISCV::BI__builtin_rvv_vlseg7e16ff_v_i16mf4_m:
-case RISCV::BI__builtin_rvv_vlseg7e16ff_v_u16m1_m:
-case RISCV::BI__builtin_rvv_vlseg7e16ff_v_u16mf2_m:
-case RISCV::BI__builtin_rvv_vlseg7e16ff_v_u16mf4_m:
-case RISCV::BI__builtin_rvv_vlseg7e32ff_v_i32m1_m:
-case RISCV::BI__builtin_rvv_vlseg7e32ff_v_i32mf2_m:
-case RISCV::BI__builtin_rvv_vlseg7e32ff_v_u32m1_m:
-case RISCV::BI__builtin_rvv_vlseg7e32ff_v_u32mf2_m:
-case RISCV::BI__builtin_rvv_vlseg7e64ff_v_i64m1_m:
-case RISCV::BI__builtin_rvv_vlseg7e64ff_v_u64m1_m:
-case RISCV::BI__builtin_rvv_vlseg7e16ff_v_f16m1_m:
-case RISCV::BI__builtin_rvv_vlseg7e16ff_v_f16mf2_m:
-case RISCV::BI__builtin_rvv_vlseg7e16ff_v_f16mf4_m:
-case RISCV::BI__builtin_rvv_vlseg7e32ff_v_f32m1_m:
-case RISCV::BI__builtin_rvv_vlseg7e32ff_v_f32mf2_m:
-case RISCV::BI__builtin_rvv_vlseg7e64ff_v_f64m1_m:
+case RISCV::BI__builtin_rvv_vlseg7e8ff_v_i8m1_mt:
+case RISCV::BI__builtin_rvv_vlseg7e8ff_v_i8mf2_mt:
+case RISCV::BI__builtin_rvv_vlseg7e8ff_v_i8mf4_mt:
+case RISCV::BI__builtin_rvv_vlseg7e8ff_v_i8mf8_mt:
+case RISCV::BI__builtin_rvv_vlseg7e8ff_v_u8m1_mt:
+case RISCV::BI__builtin_rvv_vlseg7e8ff_v_u8mf2_mt:
+case RISCV::BI__builtin_rvv_vlseg7e8ff_v_u8mf4_mt:
+case RISCV::BI__builtin_rvv_vlseg7e8ff_v_u8mf8_mt:
+case RISCV::BI__builtin_rvv_vlseg7e16ff_v_i16m1_mt:
+case RISCV::BI__builtin_rvv_vlseg7e16ff_v_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vlseg7e16ff_v_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vlseg7e16ff_v_u16m1_mt:
+case RISCV::BI__builtin_rvv_vlseg7e16ff_v_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vlseg7e16ff_v_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vlseg7e32ff_v_i32m1_mt:
+case RISCV::BI__builtin_rvv_vlseg7e32ff_v_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vlseg7e32ff_v_u32m1_mt:
+case RISCV::BI__builtin_rvv_vlseg7e32ff_v_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vlseg7e64ff_v_i64m1_mt:
+case RISCV::BI__builtin_rvv_vlseg7e64ff_v_u64m1_mt:
+case RISCV::BI__builtin_rvv_vlseg7e16ff_v_f16m1_mt:
+case RISCV::BI__builtin_rvv_vlseg7e16ff_v_f16mf2_mt:
+case RISCV::BI__builtin_rvv_vlseg7e16ff_v_f16mf4_mt:
+case RISCV::BI__builtin_rvv_vlseg7e32ff_v_f32m1_mt:
+case RISCV::BI__builtin_rvv_vlseg7e32ff_v_f32mf2_mt:
+case RISCV::BI__builtin_rvv_vlseg7e64ff_v_f64m1_mt:
   ID = Intrinsic::riscv_vlseg7ff_mask;
   NF = 7;
 
@@ -10413,8 +10431,9 @@ case RISCV::BI__builtin_rvv_vlseg7e64ff_v_f64m1_m:
       Operands.push_back(Ops[2 * NF + 1]);
       Operands.push_back(Ops[NF]);
       Operands.push_back(Ops[2 * NF + 3]);
+      Operands.push_back(Ops[2 * NF + 4]);
       Value *NewVL = Ops[2 * NF + 2];
-      assert(Operands.size() == NF + 3);
+      assert(Operands.size() == NF + 4);
       llvm::Function *F = CGM.getIntrinsic(ID, IntrinsicTypes);
       llvm::Value *LoadValue = Builder.CreateCall(F, Operands, "");
       clang::CharUnits Align =
@@ -10475,32 +10494,32 @@ case RISCV::BI__builtin_rvv_vlseg8e64_v_f64m1:
       return V;
     }
             break;
-case RISCV::BI__builtin_rvv_vlseg8e8_v_i8m1_m:
-case RISCV::BI__builtin_rvv_vlseg8e8_v_i8mf2_m:
-case RISCV::BI__builtin_rvv_vlseg8e8_v_i8mf4_m:
-case RISCV::BI__builtin_rvv_vlseg8e8_v_i8mf8_m:
-case RISCV::BI__builtin_rvv_vlseg8e8_v_u8m1_m:
-case RISCV::BI__builtin_rvv_vlseg8e8_v_u8mf2_m:
-case RISCV::BI__builtin_rvv_vlseg8e8_v_u8mf4_m:
-case RISCV::BI__builtin_rvv_vlseg8e8_v_u8mf8_m:
-case RISCV::BI__builtin_rvv_vlseg8e16_v_i16m1_m:
-case RISCV::BI__builtin_rvv_vlseg8e16_v_i16mf2_m:
-case RISCV::BI__builtin_rvv_vlseg8e16_v_i16mf4_m:
-case RISCV::BI__builtin_rvv_vlseg8e16_v_u16m1_m:
-case RISCV::BI__builtin_rvv_vlseg8e16_v_u16mf2_m:
-case RISCV::BI__builtin_rvv_vlseg8e16_v_u16mf4_m:
-case RISCV::BI__builtin_rvv_vlseg8e32_v_i32m1_m:
-case RISCV::BI__builtin_rvv_vlseg8e32_v_i32mf2_m:
-case RISCV::BI__builtin_rvv_vlseg8e32_v_u32m1_m:
-case RISCV::BI__builtin_rvv_vlseg8e32_v_u32mf2_m:
-case RISCV::BI__builtin_rvv_vlseg8e64_v_i64m1_m:
-case RISCV::BI__builtin_rvv_vlseg8e64_v_u64m1_m:
-case RISCV::BI__builtin_rvv_vlseg8e16_v_f16m1_m:
-case RISCV::BI__builtin_rvv_vlseg8e16_v_f16mf2_m:
-case RISCV::BI__builtin_rvv_vlseg8e16_v_f16mf4_m:
-case RISCV::BI__builtin_rvv_vlseg8e32_v_f32m1_m:
-case RISCV::BI__builtin_rvv_vlseg8e32_v_f32mf2_m:
-case RISCV::BI__builtin_rvv_vlseg8e64_v_f64m1_m:
+case RISCV::BI__builtin_rvv_vlseg8e8_v_i8m1_mt:
+case RISCV::BI__builtin_rvv_vlseg8e8_v_i8mf2_mt:
+case RISCV::BI__builtin_rvv_vlseg8e8_v_i8mf4_mt:
+case RISCV::BI__builtin_rvv_vlseg8e8_v_i8mf8_mt:
+case RISCV::BI__builtin_rvv_vlseg8e8_v_u8m1_mt:
+case RISCV::BI__builtin_rvv_vlseg8e8_v_u8mf2_mt:
+case RISCV::BI__builtin_rvv_vlseg8e8_v_u8mf4_mt:
+case RISCV::BI__builtin_rvv_vlseg8e8_v_u8mf8_mt:
+case RISCV::BI__builtin_rvv_vlseg8e16_v_i16m1_mt:
+case RISCV::BI__builtin_rvv_vlseg8e16_v_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vlseg8e16_v_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vlseg8e16_v_u16m1_mt:
+case RISCV::BI__builtin_rvv_vlseg8e16_v_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vlseg8e16_v_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vlseg8e32_v_i32m1_mt:
+case RISCV::BI__builtin_rvv_vlseg8e32_v_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vlseg8e32_v_u32m1_mt:
+case RISCV::BI__builtin_rvv_vlseg8e32_v_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vlseg8e64_v_i64m1_mt:
+case RISCV::BI__builtin_rvv_vlseg8e64_v_u64m1_mt:
+case RISCV::BI__builtin_rvv_vlseg8e16_v_f16m1_mt:
+case RISCV::BI__builtin_rvv_vlseg8e16_v_f16mf2_mt:
+case RISCV::BI__builtin_rvv_vlseg8e16_v_f16mf4_mt:
+case RISCV::BI__builtin_rvv_vlseg8e32_v_f32m1_mt:
+case RISCV::BI__builtin_rvv_vlseg8e32_v_f32mf2_mt:
+case RISCV::BI__builtin_rvv_vlseg8e64_v_f64m1_mt:
   ID = Intrinsic::riscv_vlseg8_mask;
   NF = 8;
 
@@ -10515,7 +10534,8 @@ case RISCV::BI__builtin_rvv_vlseg8e64_v_f64m1_m:
       Operands.push_back(Ops[2 * NF + 1]);
       Operands.push_back(Ops[NF]);
       Operands.push_back(Ops[2 * NF + 2]);
-      assert(Operands.size() == NF + 3);
+      Operands.push_back(Ops[2 * NF + 3]);
+      assert(Operands.size() == NF + 4);
       llvm::Function *F = CGM.getIntrinsic(ID, IntrinsicTypes);
       llvm::Value *LoadValue = Builder.CreateCall(F, Operands, "");
       clang::CharUnits Align =
@@ -10577,32 +10597,32 @@ case RISCV::BI__builtin_rvv_vlseg8e64ff_v_f64m1:
                                  Address(NewVL, Align));
     }
             break;
-case RISCV::BI__builtin_rvv_vlseg8e8ff_v_i8m1_m:
-case RISCV::BI__builtin_rvv_vlseg8e8ff_v_i8mf2_m:
-case RISCV::BI__builtin_rvv_vlseg8e8ff_v_i8mf4_m:
-case RISCV::BI__builtin_rvv_vlseg8e8ff_v_i8mf8_m:
-case RISCV::BI__builtin_rvv_vlseg8e8ff_v_u8m1_m:
-case RISCV::BI__builtin_rvv_vlseg8e8ff_v_u8mf2_m:
-case RISCV::BI__builtin_rvv_vlseg8e8ff_v_u8mf4_m:
-case RISCV::BI__builtin_rvv_vlseg8e8ff_v_u8mf8_m:
-case RISCV::BI__builtin_rvv_vlseg8e16ff_v_i16m1_m:
-case RISCV::BI__builtin_rvv_vlseg8e16ff_v_i16mf2_m:
-case RISCV::BI__builtin_rvv_vlseg8e16ff_v_i16mf4_m:
-case RISCV::BI__builtin_rvv_vlseg8e16ff_v_u16m1_m:
-case RISCV::BI__builtin_rvv_vlseg8e16ff_v_u16mf2_m:
-case RISCV::BI__builtin_rvv_vlseg8e16ff_v_u16mf4_m:
-case RISCV::BI__builtin_rvv_vlseg8e32ff_v_i32m1_m:
-case RISCV::BI__builtin_rvv_vlseg8e32ff_v_i32mf2_m:
-case RISCV::BI__builtin_rvv_vlseg8e32ff_v_u32m1_m:
-case RISCV::BI__builtin_rvv_vlseg8e32ff_v_u32mf2_m:
-case RISCV::BI__builtin_rvv_vlseg8e64ff_v_i64m1_m:
-case RISCV::BI__builtin_rvv_vlseg8e64ff_v_u64m1_m:
-case RISCV::BI__builtin_rvv_vlseg8e16ff_v_f16m1_m:
-case RISCV::BI__builtin_rvv_vlseg8e16ff_v_f16mf2_m:
-case RISCV::BI__builtin_rvv_vlseg8e16ff_v_f16mf4_m:
-case RISCV::BI__builtin_rvv_vlseg8e32ff_v_f32m1_m:
-case RISCV::BI__builtin_rvv_vlseg8e32ff_v_f32mf2_m:
-case RISCV::BI__builtin_rvv_vlseg8e64ff_v_f64m1_m:
+case RISCV::BI__builtin_rvv_vlseg8e8ff_v_i8m1_mt:
+case RISCV::BI__builtin_rvv_vlseg8e8ff_v_i8mf2_mt:
+case RISCV::BI__builtin_rvv_vlseg8e8ff_v_i8mf4_mt:
+case RISCV::BI__builtin_rvv_vlseg8e8ff_v_i8mf8_mt:
+case RISCV::BI__builtin_rvv_vlseg8e8ff_v_u8m1_mt:
+case RISCV::BI__builtin_rvv_vlseg8e8ff_v_u8mf2_mt:
+case RISCV::BI__builtin_rvv_vlseg8e8ff_v_u8mf4_mt:
+case RISCV::BI__builtin_rvv_vlseg8e8ff_v_u8mf8_mt:
+case RISCV::BI__builtin_rvv_vlseg8e16ff_v_i16m1_mt:
+case RISCV::BI__builtin_rvv_vlseg8e16ff_v_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vlseg8e16ff_v_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vlseg8e16ff_v_u16m1_mt:
+case RISCV::BI__builtin_rvv_vlseg8e16ff_v_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vlseg8e16ff_v_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vlseg8e32ff_v_i32m1_mt:
+case RISCV::BI__builtin_rvv_vlseg8e32ff_v_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vlseg8e32ff_v_u32m1_mt:
+case RISCV::BI__builtin_rvv_vlseg8e32ff_v_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vlseg8e64ff_v_i64m1_mt:
+case RISCV::BI__builtin_rvv_vlseg8e64ff_v_u64m1_mt:
+case RISCV::BI__builtin_rvv_vlseg8e16ff_v_f16m1_mt:
+case RISCV::BI__builtin_rvv_vlseg8e16ff_v_f16mf2_mt:
+case RISCV::BI__builtin_rvv_vlseg8e16ff_v_f16mf4_mt:
+case RISCV::BI__builtin_rvv_vlseg8e32ff_v_f32m1_mt:
+case RISCV::BI__builtin_rvv_vlseg8e32ff_v_f32mf2_mt:
+case RISCV::BI__builtin_rvv_vlseg8e64ff_v_f64m1_mt:
   ID = Intrinsic::riscv_vlseg8ff_mask;
   NF = 8;
 
@@ -10617,8 +10637,9 @@ case RISCV::BI__builtin_rvv_vlseg8e64ff_v_f64m1_m:
       Operands.push_back(Ops[2 * NF + 1]);
       Operands.push_back(Ops[NF]);
       Operands.push_back(Ops[2 * NF + 3]);
+      Operands.push_back(Ops[2 * NF + 4]);
       Value *NewVL = Ops[2 * NF + 2];
-      assert(Operands.size() == NF + 3);
+      assert(Operands.size() == NF + 4);
       llvm::Function *F = CGM.getIntrinsic(ID, IntrinsicTypes);
       llvm::Value *LoadValue = Builder.CreateCall(F, Operands, "");
       clang::CharUnits Align =
@@ -10701,54 +10722,54 @@ case RISCV::BI__builtin_rvv_vlsseg2e64_v_f64m4:
       return V;
     }
             break;
-case RISCV::BI__builtin_rvv_vlsseg2e8_v_i8m1_m:
-case RISCV::BI__builtin_rvv_vlsseg2e8_v_i8m2_m:
-case RISCV::BI__builtin_rvv_vlsseg2e8_v_i8m4_m:
-case RISCV::BI__builtin_rvv_vlsseg2e8_v_i8mf2_m:
-case RISCV::BI__builtin_rvv_vlsseg2e8_v_i8mf4_m:
-case RISCV::BI__builtin_rvv_vlsseg2e8_v_i8mf8_m:
-case RISCV::BI__builtin_rvv_vlsseg2e8_v_u8m1_m:
-case RISCV::BI__builtin_rvv_vlsseg2e8_v_u8m2_m:
-case RISCV::BI__builtin_rvv_vlsseg2e8_v_u8m4_m:
-case RISCV::BI__builtin_rvv_vlsseg2e8_v_u8mf2_m:
-case RISCV::BI__builtin_rvv_vlsseg2e8_v_u8mf4_m:
-case RISCV::BI__builtin_rvv_vlsseg2e8_v_u8mf8_m:
-case RISCV::BI__builtin_rvv_vlsseg2e16_v_i16m1_m:
-case RISCV::BI__builtin_rvv_vlsseg2e16_v_i16m2_m:
-case RISCV::BI__builtin_rvv_vlsseg2e16_v_i16m4_m:
-case RISCV::BI__builtin_rvv_vlsseg2e16_v_i16mf2_m:
-case RISCV::BI__builtin_rvv_vlsseg2e16_v_i16mf4_m:
-case RISCV::BI__builtin_rvv_vlsseg2e16_v_u16m1_m:
-case RISCV::BI__builtin_rvv_vlsseg2e16_v_u16m2_m:
-case RISCV::BI__builtin_rvv_vlsseg2e16_v_u16m4_m:
-case RISCV::BI__builtin_rvv_vlsseg2e16_v_u16mf2_m:
-case RISCV::BI__builtin_rvv_vlsseg2e16_v_u16mf4_m:
-case RISCV::BI__builtin_rvv_vlsseg2e32_v_i32m1_m:
-case RISCV::BI__builtin_rvv_vlsseg2e32_v_i32m2_m:
-case RISCV::BI__builtin_rvv_vlsseg2e32_v_i32m4_m:
-case RISCV::BI__builtin_rvv_vlsseg2e32_v_i32mf2_m:
-case RISCV::BI__builtin_rvv_vlsseg2e32_v_u32m1_m:
-case RISCV::BI__builtin_rvv_vlsseg2e32_v_u32m2_m:
-case RISCV::BI__builtin_rvv_vlsseg2e32_v_u32m4_m:
-case RISCV::BI__builtin_rvv_vlsseg2e32_v_u32mf2_m:
-case RISCV::BI__builtin_rvv_vlsseg2e64_v_i64m1_m:
-case RISCV::BI__builtin_rvv_vlsseg2e64_v_i64m2_m:
-case RISCV::BI__builtin_rvv_vlsseg2e64_v_i64m4_m:
-case RISCV::BI__builtin_rvv_vlsseg2e64_v_u64m1_m:
-case RISCV::BI__builtin_rvv_vlsseg2e64_v_u64m2_m:
-case RISCV::BI__builtin_rvv_vlsseg2e64_v_u64m4_m:
-case RISCV::BI__builtin_rvv_vlsseg2e16_v_f16m1_m:
-case RISCV::BI__builtin_rvv_vlsseg2e16_v_f16m2_m:
-case RISCV::BI__builtin_rvv_vlsseg2e16_v_f16m4_m:
-case RISCV::BI__builtin_rvv_vlsseg2e16_v_f16mf2_m:
-case RISCV::BI__builtin_rvv_vlsseg2e16_v_f16mf4_m:
-case RISCV::BI__builtin_rvv_vlsseg2e32_v_f32m1_m:
-case RISCV::BI__builtin_rvv_vlsseg2e32_v_f32m2_m:
-case RISCV::BI__builtin_rvv_vlsseg2e32_v_f32m4_m:
-case RISCV::BI__builtin_rvv_vlsseg2e32_v_f32mf2_m:
-case RISCV::BI__builtin_rvv_vlsseg2e64_v_f64m1_m:
-case RISCV::BI__builtin_rvv_vlsseg2e64_v_f64m2_m:
-case RISCV::BI__builtin_rvv_vlsseg2e64_v_f64m4_m:
+case RISCV::BI__builtin_rvv_vlsseg2e8_v_i8m1_mt:
+case RISCV::BI__builtin_rvv_vlsseg2e8_v_i8m2_mt:
+case RISCV::BI__builtin_rvv_vlsseg2e8_v_i8m4_mt:
+case RISCV::BI__builtin_rvv_vlsseg2e8_v_i8mf2_mt:
+case RISCV::BI__builtin_rvv_vlsseg2e8_v_i8mf4_mt:
+case RISCV::BI__builtin_rvv_vlsseg2e8_v_i8mf8_mt:
+case RISCV::BI__builtin_rvv_vlsseg2e8_v_u8m1_mt:
+case RISCV::BI__builtin_rvv_vlsseg2e8_v_u8m2_mt:
+case RISCV::BI__builtin_rvv_vlsseg2e8_v_u8m4_mt:
+case RISCV::BI__builtin_rvv_vlsseg2e8_v_u8mf2_mt:
+case RISCV::BI__builtin_rvv_vlsseg2e8_v_u8mf4_mt:
+case RISCV::BI__builtin_rvv_vlsseg2e8_v_u8mf8_mt:
+case RISCV::BI__builtin_rvv_vlsseg2e16_v_i16m1_mt:
+case RISCV::BI__builtin_rvv_vlsseg2e16_v_i16m2_mt:
+case RISCV::BI__builtin_rvv_vlsseg2e16_v_i16m4_mt:
+case RISCV::BI__builtin_rvv_vlsseg2e16_v_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vlsseg2e16_v_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vlsseg2e16_v_u16m1_mt:
+case RISCV::BI__builtin_rvv_vlsseg2e16_v_u16m2_mt:
+case RISCV::BI__builtin_rvv_vlsseg2e16_v_u16m4_mt:
+case RISCV::BI__builtin_rvv_vlsseg2e16_v_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vlsseg2e16_v_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vlsseg2e32_v_i32m1_mt:
+case RISCV::BI__builtin_rvv_vlsseg2e32_v_i32m2_mt:
+case RISCV::BI__builtin_rvv_vlsseg2e32_v_i32m4_mt:
+case RISCV::BI__builtin_rvv_vlsseg2e32_v_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vlsseg2e32_v_u32m1_mt:
+case RISCV::BI__builtin_rvv_vlsseg2e32_v_u32m2_mt:
+case RISCV::BI__builtin_rvv_vlsseg2e32_v_u32m4_mt:
+case RISCV::BI__builtin_rvv_vlsseg2e32_v_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vlsseg2e64_v_i64m1_mt:
+case RISCV::BI__builtin_rvv_vlsseg2e64_v_i64m2_mt:
+case RISCV::BI__builtin_rvv_vlsseg2e64_v_i64m4_mt:
+case RISCV::BI__builtin_rvv_vlsseg2e64_v_u64m1_mt:
+case RISCV::BI__builtin_rvv_vlsseg2e64_v_u64m2_mt:
+case RISCV::BI__builtin_rvv_vlsseg2e64_v_u64m4_mt:
+case RISCV::BI__builtin_rvv_vlsseg2e16_v_f16m1_mt:
+case RISCV::BI__builtin_rvv_vlsseg2e16_v_f16m2_mt:
+case RISCV::BI__builtin_rvv_vlsseg2e16_v_f16m4_mt:
+case RISCV::BI__builtin_rvv_vlsseg2e16_v_f16mf2_mt:
+case RISCV::BI__builtin_rvv_vlsseg2e16_v_f16mf4_mt:
+case RISCV::BI__builtin_rvv_vlsseg2e32_v_f32m1_mt:
+case RISCV::BI__builtin_rvv_vlsseg2e32_v_f32m2_mt:
+case RISCV::BI__builtin_rvv_vlsseg2e32_v_f32m4_mt:
+case RISCV::BI__builtin_rvv_vlsseg2e32_v_f32mf2_mt:
+case RISCV::BI__builtin_rvv_vlsseg2e64_v_f64m1_mt:
+case RISCV::BI__builtin_rvv_vlsseg2e64_v_f64m2_mt:
+case RISCV::BI__builtin_rvv_vlsseg2e64_v_f64m4_mt:
   ID = Intrinsic::riscv_vlsseg2_mask;
   NF = 2;
 
@@ -10764,7 +10785,8 @@ case RISCV::BI__builtin_rvv_vlsseg2e64_v_f64m4_m:
       Operands.push_back(Ops[2 * NF + 2]);
       Operands.push_back(Ops[NF]);
       Operands.push_back(Ops[2 * NF + 3]);
-      assert(Operands.size() == NF + 4);
+      Operands.push_back(Ops[2 * NF + 4]);
+      assert(Operands.size() == NF + 5);
       llvm::Function *F = CGM.getIntrinsic(ID, IntrinsicTypes);
       llvm::Value *LoadValue = Builder.CreateCall(F, Operands, "");
       clang::CharUnits Align =
@@ -10835,43 +10857,43 @@ case RISCV::BI__builtin_rvv_vlsseg3e64_v_f64m2:
       return V;
     }
             break;
-case RISCV::BI__builtin_rvv_vlsseg3e8_v_i8m1_m:
-case RISCV::BI__builtin_rvv_vlsseg3e8_v_i8m2_m:
-case RISCV::BI__builtin_rvv_vlsseg3e8_v_i8mf2_m:
-case RISCV::BI__builtin_rvv_vlsseg3e8_v_i8mf4_m:
-case RISCV::BI__builtin_rvv_vlsseg3e8_v_i8mf8_m:
-case RISCV::BI__builtin_rvv_vlsseg3e8_v_u8m1_m:
-case RISCV::BI__builtin_rvv_vlsseg3e8_v_u8m2_m:
-case RISCV::BI__builtin_rvv_vlsseg3e8_v_u8mf2_m:
-case RISCV::BI__builtin_rvv_vlsseg3e8_v_u8mf4_m:
-case RISCV::BI__builtin_rvv_vlsseg3e8_v_u8mf8_m:
-case RISCV::BI__builtin_rvv_vlsseg3e16_v_i16m1_m:
-case RISCV::BI__builtin_rvv_vlsseg3e16_v_i16m2_m:
-case RISCV::BI__builtin_rvv_vlsseg3e16_v_i16mf2_m:
-case RISCV::BI__builtin_rvv_vlsseg3e16_v_i16mf4_m:
-case RISCV::BI__builtin_rvv_vlsseg3e16_v_u16m1_m:
-case RISCV::BI__builtin_rvv_vlsseg3e16_v_u16m2_m:
-case RISCV::BI__builtin_rvv_vlsseg3e16_v_u16mf2_m:
-case RISCV::BI__builtin_rvv_vlsseg3e16_v_u16mf4_m:
-case RISCV::BI__builtin_rvv_vlsseg3e32_v_i32m1_m:
-case RISCV::BI__builtin_rvv_vlsseg3e32_v_i32m2_m:
-case RISCV::BI__builtin_rvv_vlsseg3e32_v_i32mf2_m:
-case RISCV::BI__builtin_rvv_vlsseg3e32_v_u32m1_m:
-case RISCV::BI__builtin_rvv_vlsseg3e32_v_u32m2_m:
-case RISCV::BI__builtin_rvv_vlsseg3e32_v_u32mf2_m:
-case RISCV::BI__builtin_rvv_vlsseg3e64_v_i64m1_m:
-case RISCV::BI__builtin_rvv_vlsseg3e64_v_i64m2_m:
-case RISCV::BI__builtin_rvv_vlsseg3e64_v_u64m1_m:
-case RISCV::BI__builtin_rvv_vlsseg3e64_v_u64m2_m:
-case RISCV::BI__builtin_rvv_vlsseg3e16_v_f16m1_m:
-case RISCV::BI__builtin_rvv_vlsseg3e16_v_f16m2_m:
-case RISCV::BI__builtin_rvv_vlsseg3e16_v_f16mf2_m:
-case RISCV::BI__builtin_rvv_vlsseg3e16_v_f16mf4_m:
-case RISCV::BI__builtin_rvv_vlsseg3e32_v_f32m1_m:
-case RISCV::BI__builtin_rvv_vlsseg3e32_v_f32m2_m:
-case RISCV::BI__builtin_rvv_vlsseg3e32_v_f32mf2_m:
-case RISCV::BI__builtin_rvv_vlsseg3e64_v_f64m1_m:
-case RISCV::BI__builtin_rvv_vlsseg3e64_v_f64m2_m:
+case RISCV::BI__builtin_rvv_vlsseg3e8_v_i8m1_mt:
+case RISCV::BI__builtin_rvv_vlsseg3e8_v_i8m2_mt:
+case RISCV::BI__builtin_rvv_vlsseg3e8_v_i8mf2_mt:
+case RISCV::BI__builtin_rvv_vlsseg3e8_v_i8mf4_mt:
+case RISCV::BI__builtin_rvv_vlsseg3e8_v_i8mf8_mt:
+case RISCV::BI__builtin_rvv_vlsseg3e8_v_u8m1_mt:
+case RISCV::BI__builtin_rvv_vlsseg3e8_v_u8m2_mt:
+case RISCV::BI__builtin_rvv_vlsseg3e8_v_u8mf2_mt:
+case RISCV::BI__builtin_rvv_vlsseg3e8_v_u8mf4_mt:
+case RISCV::BI__builtin_rvv_vlsseg3e8_v_u8mf8_mt:
+case RISCV::BI__builtin_rvv_vlsseg3e16_v_i16m1_mt:
+case RISCV::BI__builtin_rvv_vlsseg3e16_v_i16m2_mt:
+case RISCV::BI__builtin_rvv_vlsseg3e16_v_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vlsseg3e16_v_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vlsseg3e16_v_u16m1_mt:
+case RISCV::BI__builtin_rvv_vlsseg3e16_v_u16m2_mt:
+case RISCV::BI__builtin_rvv_vlsseg3e16_v_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vlsseg3e16_v_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vlsseg3e32_v_i32m1_mt:
+case RISCV::BI__builtin_rvv_vlsseg3e32_v_i32m2_mt:
+case RISCV::BI__builtin_rvv_vlsseg3e32_v_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vlsseg3e32_v_u32m1_mt:
+case RISCV::BI__builtin_rvv_vlsseg3e32_v_u32m2_mt:
+case RISCV::BI__builtin_rvv_vlsseg3e32_v_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vlsseg3e64_v_i64m1_mt:
+case RISCV::BI__builtin_rvv_vlsseg3e64_v_i64m2_mt:
+case RISCV::BI__builtin_rvv_vlsseg3e64_v_u64m1_mt:
+case RISCV::BI__builtin_rvv_vlsseg3e64_v_u64m2_mt:
+case RISCV::BI__builtin_rvv_vlsseg3e16_v_f16m1_mt:
+case RISCV::BI__builtin_rvv_vlsseg3e16_v_f16m2_mt:
+case RISCV::BI__builtin_rvv_vlsseg3e16_v_f16mf2_mt:
+case RISCV::BI__builtin_rvv_vlsseg3e16_v_f16mf4_mt:
+case RISCV::BI__builtin_rvv_vlsseg3e32_v_f32m1_mt:
+case RISCV::BI__builtin_rvv_vlsseg3e32_v_f32m2_mt:
+case RISCV::BI__builtin_rvv_vlsseg3e32_v_f32mf2_mt:
+case RISCV::BI__builtin_rvv_vlsseg3e64_v_f64m1_mt:
+case RISCV::BI__builtin_rvv_vlsseg3e64_v_f64m2_mt:
   ID = Intrinsic::riscv_vlsseg3_mask;
   NF = 3;
 
@@ -10887,7 +10909,8 @@ case RISCV::BI__builtin_rvv_vlsseg3e64_v_f64m2_m:
       Operands.push_back(Ops[2 * NF + 2]);
       Operands.push_back(Ops[NF]);
       Operands.push_back(Ops[2 * NF + 3]);
-      assert(Operands.size() == NF + 4);
+      Operands.push_back(Ops[2 * NF + 4]);
+      assert(Operands.size() == NF + 5);
       llvm::Function *F = CGM.getIntrinsic(ID, IntrinsicTypes);
       llvm::Value *LoadValue = Builder.CreateCall(F, Operands, "");
       clang::CharUnits Align =
@@ -10958,43 +10981,43 @@ case RISCV::BI__builtin_rvv_vlsseg4e64_v_f64m2:
       return V;
     }
             break;
-case RISCV::BI__builtin_rvv_vlsseg4e8_v_i8m1_m:
-case RISCV::BI__builtin_rvv_vlsseg4e8_v_i8m2_m:
-case RISCV::BI__builtin_rvv_vlsseg4e8_v_i8mf2_m:
-case RISCV::BI__builtin_rvv_vlsseg4e8_v_i8mf4_m:
-case RISCV::BI__builtin_rvv_vlsseg4e8_v_i8mf8_m:
-case RISCV::BI__builtin_rvv_vlsseg4e8_v_u8m1_m:
-case RISCV::BI__builtin_rvv_vlsseg4e8_v_u8m2_m:
-case RISCV::BI__builtin_rvv_vlsseg4e8_v_u8mf2_m:
-case RISCV::BI__builtin_rvv_vlsseg4e8_v_u8mf4_m:
-case RISCV::BI__builtin_rvv_vlsseg4e8_v_u8mf8_m:
-case RISCV::BI__builtin_rvv_vlsseg4e16_v_i16m1_m:
-case RISCV::BI__builtin_rvv_vlsseg4e16_v_i16m2_m:
-case RISCV::BI__builtin_rvv_vlsseg4e16_v_i16mf2_m:
-case RISCV::BI__builtin_rvv_vlsseg4e16_v_i16mf4_m:
-case RISCV::BI__builtin_rvv_vlsseg4e16_v_u16m1_m:
-case RISCV::BI__builtin_rvv_vlsseg4e16_v_u16m2_m:
-case RISCV::BI__builtin_rvv_vlsseg4e16_v_u16mf2_m:
-case RISCV::BI__builtin_rvv_vlsseg4e16_v_u16mf4_m:
-case RISCV::BI__builtin_rvv_vlsseg4e32_v_i32m1_m:
-case RISCV::BI__builtin_rvv_vlsseg4e32_v_i32m2_m:
-case RISCV::BI__builtin_rvv_vlsseg4e32_v_i32mf2_m:
-case RISCV::BI__builtin_rvv_vlsseg4e32_v_u32m1_m:
-case RISCV::BI__builtin_rvv_vlsseg4e32_v_u32m2_m:
-case RISCV::BI__builtin_rvv_vlsseg4e32_v_u32mf2_m:
-case RISCV::BI__builtin_rvv_vlsseg4e64_v_i64m1_m:
-case RISCV::BI__builtin_rvv_vlsseg4e64_v_i64m2_m:
-case RISCV::BI__builtin_rvv_vlsseg4e64_v_u64m1_m:
-case RISCV::BI__builtin_rvv_vlsseg4e64_v_u64m2_m:
-case RISCV::BI__builtin_rvv_vlsseg4e16_v_f16m1_m:
-case RISCV::BI__builtin_rvv_vlsseg4e16_v_f16m2_m:
-case RISCV::BI__builtin_rvv_vlsseg4e16_v_f16mf2_m:
-case RISCV::BI__builtin_rvv_vlsseg4e16_v_f16mf4_m:
-case RISCV::BI__builtin_rvv_vlsseg4e32_v_f32m1_m:
-case RISCV::BI__builtin_rvv_vlsseg4e32_v_f32m2_m:
-case RISCV::BI__builtin_rvv_vlsseg4e32_v_f32mf2_m:
-case RISCV::BI__builtin_rvv_vlsseg4e64_v_f64m1_m:
-case RISCV::BI__builtin_rvv_vlsseg4e64_v_f64m2_m:
+case RISCV::BI__builtin_rvv_vlsseg4e8_v_i8m1_mt:
+case RISCV::BI__builtin_rvv_vlsseg4e8_v_i8m2_mt:
+case RISCV::BI__builtin_rvv_vlsseg4e8_v_i8mf2_mt:
+case RISCV::BI__builtin_rvv_vlsseg4e8_v_i8mf4_mt:
+case RISCV::BI__builtin_rvv_vlsseg4e8_v_i8mf8_mt:
+case RISCV::BI__builtin_rvv_vlsseg4e8_v_u8m1_mt:
+case RISCV::BI__builtin_rvv_vlsseg4e8_v_u8m2_mt:
+case RISCV::BI__builtin_rvv_vlsseg4e8_v_u8mf2_mt:
+case RISCV::BI__builtin_rvv_vlsseg4e8_v_u8mf4_mt:
+case RISCV::BI__builtin_rvv_vlsseg4e8_v_u8mf8_mt:
+case RISCV::BI__builtin_rvv_vlsseg4e16_v_i16m1_mt:
+case RISCV::BI__builtin_rvv_vlsseg4e16_v_i16m2_mt:
+case RISCV::BI__builtin_rvv_vlsseg4e16_v_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vlsseg4e16_v_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vlsseg4e16_v_u16m1_mt:
+case RISCV::BI__builtin_rvv_vlsseg4e16_v_u16m2_mt:
+case RISCV::BI__builtin_rvv_vlsseg4e16_v_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vlsseg4e16_v_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vlsseg4e32_v_i32m1_mt:
+case RISCV::BI__builtin_rvv_vlsseg4e32_v_i32m2_mt:
+case RISCV::BI__builtin_rvv_vlsseg4e32_v_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vlsseg4e32_v_u32m1_mt:
+case RISCV::BI__builtin_rvv_vlsseg4e32_v_u32m2_mt:
+case RISCV::BI__builtin_rvv_vlsseg4e32_v_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vlsseg4e64_v_i64m1_mt:
+case RISCV::BI__builtin_rvv_vlsseg4e64_v_i64m2_mt:
+case RISCV::BI__builtin_rvv_vlsseg4e64_v_u64m1_mt:
+case RISCV::BI__builtin_rvv_vlsseg4e64_v_u64m2_mt:
+case RISCV::BI__builtin_rvv_vlsseg4e16_v_f16m1_mt:
+case RISCV::BI__builtin_rvv_vlsseg4e16_v_f16m2_mt:
+case RISCV::BI__builtin_rvv_vlsseg4e16_v_f16mf2_mt:
+case RISCV::BI__builtin_rvv_vlsseg4e16_v_f16mf4_mt:
+case RISCV::BI__builtin_rvv_vlsseg4e32_v_f32m1_mt:
+case RISCV::BI__builtin_rvv_vlsseg4e32_v_f32m2_mt:
+case RISCV::BI__builtin_rvv_vlsseg4e32_v_f32mf2_mt:
+case RISCV::BI__builtin_rvv_vlsseg4e64_v_f64m1_mt:
+case RISCV::BI__builtin_rvv_vlsseg4e64_v_f64m2_mt:
   ID = Intrinsic::riscv_vlsseg4_mask;
   NF = 4;
 
@@ -11010,7 +11033,8 @@ case RISCV::BI__builtin_rvv_vlsseg4e64_v_f64m2_m:
       Operands.push_back(Ops[2 * NF + 2]);
       Operands.push_back(Ops[NF]);
       Operands.push_back(Ops[2 * NF + 3]);
-      assert(Operands.size() == NF + 4);
+      Operands.push_back(Ops[2 * NF + 4]);
+      assert(Operands.size() == NF + 5);
       llvm::Function *F = CGM.getIntrinsic(ID, IntrinsicTypes);
       llvm::Value *LoadValue = Builder.CreateCall(F, Operands, "");
       clang::CharUnits Align =
@@ -11070,32 +11094,32 @@ case RISCV::BI__builtin_rvv_vlsseg5e64_v_f64m1:
       return V;
     }
             break;
-case RISCV::BI__builtin_rvv_vlsseg5e8_v_i8m1_m:
-case RISCV::BI__builtin_rvv_vlsseg5e8_v_i8mf2_m:
-case RISCV::BI__builtin_rvv_vlsseg5e8_v_i8mf4_m:
-case RISCV::BI__builtin_rvv_vlsseg5e8_v_i8mf8_m:
-case RISCV::BI__builtin_rvv_vlsseg5e8_v_u8m1_m:
-case RISCV::BI__builtin_rvv_vlsseg5e8_v_u8mf2_m:
-case RISCV::BI__builtin_rvv_vlsseg5e8_v_u8mf4_m:
-case RISCV::BI__builtin_rvv_vlsseg5e8_v_u8mf8_m:
-case RISCV::BI__builtin_rvv_vlsseg5e16_v_i16m1_m:
-case RISCV::BI__builtin_rvv_vlsseg5e16_v_i16mf2_m:
-case RISCV::BI__builtin_rvv_vlsseg5e16_v_i16mf4_m:
-case RISCV::BI__builtin_rvv_vlsseg5e16_v_u16m1_m:
-case RISCV::BI__builtin_rvv_vlsseg5e16_v_u16mf2_m:
-case RISCV::BI__builtin_rvv_vlsseg5e16_v_u16mf4_m:
-case RISCV::BI__builtin_rvv_vlsseg5e32_v_i32m1_m:
-case RISCV::BI__builtin_rvv_vlsseg5e32_v_i32mf2_m:
-case RISCV::BI__builtin_rvv_vlsseg5e32_v_u32m1_m:
-case RISCV::BI__builtin_rvv_vlsseg5e32_v_u32mf2_m:
-case RISCV::BI__builtin_rvv_vlsseg5e64_v_i64m1_m:
-case RISCV::BI__builtin_rvv_vlsseg5e64_v_u64m1_m:
-case RISCV::BI__builtin_rvv_vlsseg5e16_v_f16m1_m:
-case RISCV::BI__builtin_rvv_vlsseg5e16_v_f16mf2_m:
-case RISCV::BI__builtin_rvv_vlsseg5e16_v_f16mf4_m:
-case RISCV::BI__builtin_rvv_vlsseg5e32_v_f32m1_m:
-case RISCV::BI__builtin_rvv_vlsseg5e32_v_f32mf2_m:
-case RISCV::BI__builtin_rvv_vlsseg5e64_v_f64m1_m:
+case RISCV::BI__builtin_rvv_vlsseg5e8_v_i8m1_mt:
+case RISCV::BI__builtin_rvv_vlsseg5e8_v_i8mf2_mt:
+case RISCV::BI__builtin_rvv_vlsseg5e8_v_i8mf4_mt:
+case RISCV::BI__builtin_rvv_vlsseg5e8_v_i8mf8_mt:
+case RISCV::BI__builtin_rvv_vlsseg5e8_v_u8m1_mt:
+case RISCV::BI__builtin_rvv_vlsseg5e8_v_u8mf2_mt:
+case RISCV::BI__builtin_rvv_vlsseg5e8_v_u8mf4_mt:
+case RISCV::BI__builtin_rvv_vlsseg5e8_v_u8mf8_mt:
+case RISCV::BI__builtin_rvv_vlsseg5e16_v_i16m1_mt:
+case RISCV::BI__builtin_rvv_vlsseg5e16_v_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vlsseg5e16_v_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vlsseg5e16_v_u16m1_mt:
+case RISCV::BI__builtin_rvv_vlsseg5e16_v_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vlsseg5e16_v_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vlsseg5e32_v_i32m1_mt:
+case RISCV::BI__builtin_rvv_vlsseg5e32_v_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vlsseg5e32_v_u32m1_mt:
+case RISCV::BI__builtin_rvv_vlsseg5e32_v_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vlsseg5e64_v_i64m1_mt:
+case RISCV::BI__builtin_rvv_vlsseg5e64_v_u64m1_mt:
+case RISCV::BI__builtin_rvv_vlsseg5e16_v_f16m1_mt:
+case RISCV::BI__builtin_rvv_vlsseg5e16_v_f16mf2_mt:
+case RISCV::BI__builtin_rvv_vlsseg5e16_v_f16mf4_mt:
+case RISCV::BI__builtin_rvv_vlsseg5e32_v_f32m1_mt:
+case RISCV::BI__builtin_rvv_vlsseg5e32_v_f32mf2_mt:
+case RISCV::BI__builtin_rvv_vlsseg5e64_v_f64m1_mt:
   ID = Intrinsic::riscv_vlsseg5_mask;
   NF = 5;
 
@@ -11111,7 +11135,8 @@ case RISCV::BI__builtin_rvv_vlsseg5e64_v_f64m1_m:
       Operands.push_back(Ops[2 * NF + 2]);
       Operands.push_back(Ops[NF]);
       Operands.push_back(Ops[2 * NF + 3]);
-      assert(Operands.size() == NF + 4);
+      Operands.push_back(Ops[2 * NF + 4]);
+      assert(Operands.size() == NF + 5);
       llvm::Function *F = CGM.getIntrinsic(ID, IntrinsicTypes);
       llvm::Value *LoadValue = Builder.CreateCall(F, Operands, "");
       clang::CharUnits Align =
@@ -11171,32 +11196,32 @@ case RISCV::BI__builtin_rvv_vlsseg6e64_v_f64m1:
       return V;
     }
             break;
-case RISCV::BI__builtin_rvv_vlsseg6e8_v_i8m1_m:
-case RISCV::BI__builtin_rvv_vlsseg6e8_v_i8mf2_m:
-case RISCV::BI__builtin_rvv_vlsseg6e8_v_i8mf4_m:
-case RISCV::BI__builtin_rvv_vlsseg6e8_v_i8mf8_m:
-case RISCV::BI__builtin_rvv_vlsseg6e8_v_u8m1_m:
-case RISCV::BI__builtin_rvv_vlsseg6e8_v_u8mf2_m:
-case RISCV::BI__builtin_rvv_vlsseg6e8_v_u8mf4_m:
-case RISCV::BI__builtin_rvv_vlsseg6e8_v_u8mf8_m:
-case RISCV::BI__builtin_rvv_vlsseg6e16_v_i16m1_m:
-case RISCV::BI__builtin_rvv_vlsseg6e16_v_i16mf2_m:
-case RISCV::BI__builtin_rvv_vlsseg6e16_v_i16mf4_m:
-case RISCV::BI__builtin_rvv_vlsseg6e16_v_u16m1_m:
-case RISCV::BI__builtin_rvv_vlsseg6e16_v_u16mf2_m:
-case RISCV::BI__builtin_rvv_vlsseg6e16_v_u16mf4_m:
-case RISCV::BI__builtin_rvv_vlsseg6e32_v_i32m1_m:
-case RISCV::BI__builtin_rvv_vlsseg6e32_v_i32mf2_m:
-case RISCV::BI__builtin_rvv_vlsseg6e32_v_u32m1_m:
-case RISCV::BI__builtin_rvv_vlsseg6e32_v_u32mf2_m:
-case RISCV::BI__builtin_rvv_vlsseg6e64_v_i64m1_m:
-case RISCV::BI__builtin_rvv_vlsseg6e64_v_u64m1_m:
-case RISCV::BI__builtin_rvv_vlsseg6e16_v_f16m1_m:
-case RISCV::BI__builtin_rvv_vlsseg6e16_v_f16mf2_m:
-case RISCV::BI__builtin_rvv_vlsseg6e16_v_f16mf4_m:
-case RISCV::BI__builtin_rvv_vlsseg6e32_v_f32m1_m:
-case RISCV::BI__builtin_rvv_vlsseg6e32_v_f32mf2_m:
-case RISCV::BI__builtin_rvv_vlsseg6e64_v_f64m1_m:
+case RISCV::BI__builtin_rvv_vlsseg6e8_v_i8m1_mt:
+case RISCV::BI__builtin_rvv_vlsseg6e8_v_i8mf2_mt:
+case RISCV::BI__builtin_rvv_vlsseg6e8_v_i8mf4_mt:
+case RISCV::BI__builtin_rvv_vlsseg6e8_v_i8mf8_mt:
+case RISCV::BI__builtin_rvv_vlsseg6e8_v_u8m1_mt:
+case RISCV::BI__builtin_rvv_vlsseg6e8_v_u8mf2_mt:
+case RISCV::BI__builtin_rvv_vlsseg6e8_v_u8mf4_mt:
+case RISCV::BI__builtin_rvv_vlsseg6e8_v_u8mf8_mt:
+case RISCV::BI__builtin_rvv_vlsseg6e16_v_i16m1_mt:
+case RISCV::BI__builtin_rvv_vlsseg6e16_v_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vlsseg6e16_v_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vlsseg6e16_v_u16m1_mt:
+case RISCV::BI__builtin_rvv_vlsseg6e16_v_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vlsseg6e16_v_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vlsseg6e32_v_i32m1_mt:
+case RISCV::BI__builtin_rvv_vlsseg6e32_v_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vlsseg6e32_v_u32m1_mt:
+case RISCV::BI__builtin_rvv_vlsseg6e32_v_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vlsseg6e64_v_i64m1_mt:
+case RISCV::BI__builtin_rvv_vlsseg6e64_v_u64m1_mt:
+case RISCV::BI__builtin_rvv_vlsseg6e16_v_f16m1_mt:
+case RISCV::BI__builtin_rvv_vlsseg6e16_v_f16mf2_mt:
+case RISCV::BI__builtin_rvv_vlsseg6e16_v_f16mf4_mt:
+case RISCV::BI__builtin_rvv_vlsseg6e32_v_f32m1_mt:
+case RISCV::BI__builtin_rvv_vlsseg6e32_v_f32mf2_mt:
+case RISCV::BI__builtin_rvv_vlsseg6e64_v_f64m1_mt:
   ID = Intrinsic::riscv_vlsseg6_mask;
   NF = 6;
 
@@ -11212,7 +11237,8 @@ case RISCV::BI__builtin_rvv_vlsseg6e64_v_f64m1_m:
       Operands.push_back(Ops[2 * NF + 2]);
       Operands.push_back(Ops[NF]);
       Operands.push_back(Ops[2 * NF + 3]);
-      assert(Operands.size() == NF + 4);
+      Operands.push_back(Ops[2 * NF + 4]);
+      assert(Operands.size() == NF + 5);
       llvm::Function *F = CGM.getIntrinsic(ID, IntrinsicTypes);
       llvm::Value *LoadValue = Builder.CreateCall(F, Operands, "");
       clang::CharUnits Align =
@@ -11272,32 +11298,32 @@ case RISCV::BI__builtin_rvv_vlsseg7e64_v_f64m1:
       return V;
     }
             break;
-case RISCV::BI__builtin_rvv_vlsseg7e8_v_i8m1_m:
-case RISCV::BI__builtin_rvv_vlsseg7e8_v_i8mf2_m:
-case RISCV::BI__builtin_rvv_vlsseg7e8_v_i8mf4_m:
-case RISCV::BI__builtin_rvv_vlsseg7e8_v_i8mf8_m:
-case RISCV::BI__builtin_rvv_vlsseg7e8_v_u8m1_m:
-case RISCV::BI__builtin_rvv_vlsseg7e8_v_u8mf2_m:
-case RISCV::BI__builtin_rvv_vlsseg7e8_v_u8mf4_m:
-case RISCV::BI__builtin_rvv_vlsseg7e8_v_u8mf8_m:
-case RISCV::BI__builtin_rvv_vlsseg7e16_v_i16m1_m:
-case RISCV::BI__builtin_rvv_vlsseg7e16_v_i16mf2_m:
-case RISCV::BI__builtin_rvv_vlsseg7e16_v_i16mf4_m:
-case RISCV::BI__builtin_rvv_vlsseg7e16_v_u16m1_m:
-case RISCV::BI__builtin_rvv_vlsseg7e16_v_u16mf2_m:
-case RISCV::BI__builtin_rvv_vlsseg7e16_v_u16mf4_m:
-case RISCV::BI__builtin_rvv_vlsseg7e32_v_i32m1_m:
-case RISCV::BI__builtin_rvv_vlsseg7e32_v_i32mf2_m:
-case RISCV::BI__builtin_rvv_vlsseg7e32_v_u32m1_m:
-case RISCV::BI__builtin_rvv_vlsseg7e32_v_u32mf2_m:
-case RISCV::BI__builtin_rvv_vlsseg7e64_v_i64m1_m:
-case RISCV::BI__builtin_rvv_vlsseg7e64_v_u64m1_m:
-case RISCV::BI__builtin_rvv_vlsseg7e16_v_f16m1_m:
-case RISCV::BI__builtin_rvv_vlsseg7e16_v_f16mf2_m:
-case RISCV::BI__builtin_rvv_vlsseg7e16_v_f16mf4_m:
-case RISCV::BI__builtin_rvv_vlsseg7e32_v_f32m1_m:
-case RISCV::BI__builtin_rvv_vlsseg7e32_v_f32mf2_m:
-case RISCV::BI__builtin_rvv_vlsseg7e64_v_f64m1_m:
+case RISCV::BI__builtin_rvv_vlsseg7e8_v_i8m1_mt:
+case RISCV::BI__builtin_rvv_vlsseg7e8_v_i8mf2_mt:
+case RISCV::BI__builtin_rvv_vlsseg7e8_v_i8mf4_mt:
+case RISCV::BI__builtin_rvv_vlsseg7e8_v_i8mf8_mt:
+case RISCV::BI__builtin_rvv_vlsseg7e8_v_u8m1_mt:
+case RISCV::BI__builtin_rvv_vlsseg7e8_v_u8mf2_mt:
+case RISCV::BI__builtin_rvv_vlsseg7e8_v_u8mf4_mt:
+case RISCV::BI__builtin_rvv_vlsseg7e8_v_u8mf8_mt:
+case RISCV::BI__builtin_rvv_vlsseg7e16_v_i16m1_mt:
+case RISCV::BI__builtin_rvv_vlsseg7e16_v_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vlsseg7e16_v_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vlsseg7e16_v_u16m1_mt:
+case RISCV::BI__builtin_rvv_vlsseg7e16_v_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vlsseg7e16_v_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vlsseg7e32_v_i32m1_mt:
+case RISCV::BI__builtin_rvv_vlsseg7e32_v_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vlsseg7e32_v_u32m1_mt:
+case RISCV::BI__builtin_rvv_vlsseg7e32_v_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vlsseg7e64_v_i64m1_mt:
+case RISCV::BI__builtin_rvv_vlsseg7e64_v_u64m1_mt:
+case RISCV::BI__builtin_rvv_vlsseg7e16_v_f16m1_mt:
+case RISCV::BI__builtin_rvv_vlsseg7e16_v_f16mf2_mt:
+case RISCV::BI__builtin_rvv_vlsseg7e16_v_f16mf4_mt:
+case RISCV::BI__builtin_rvv_vlsseg7e32_v_f32m1_mt:
+case RISCV::BI__builtin_rvv_vlsseg7e32_v_f32mf2_mt:
+case RISCV::BI__builtin_rvv_vlsseg7e64_v_f64m1_mt:
   ID = Intrinsic::riscv_vlsseg7_mask;
   NF = 7;
 
@@ -11313,7 +11339,8 @@ case RISCV::BI__builtin_rvv_vlsseg7e64_v_f64m1_m:
       Operands.push_back(Ops[2 * NF + 2]);
       Operands.push_back(Ops[NF]);
       Operands.push_back(Ops[2 * NF + 3]);
-      assert(Operands.size() == NF + 4);
+      Operands.push_back(Ops[2 * NF + 4]);
+      assert(Operands.size() == NF + 5);
       llvm::Function *F = CGM.getIntrinsic(ID, IntrinsicTypes);
       llvm::Value *LoadValue = Builder.CreateCall(F, Operands, "");
       clang::CharUnits Align =
@@ -11373,32 +11400,32 @@ case RISCV::BI__builtin_rvv_vlsseg8e64_v_f64m1:
       return V;
     }
             break;
-case RISCV::BI__builtin_rvv_vlsseg8e8_v_i8m1_m:
-case RISCV::BI__builtin_rvv_vlsseg8e8_v_i8mf2_m:
-case RISCV::BI__builtin_rvv_vlsseg8e8_v_i8mf4_m:
-case RISCV::BI__builtin_rvv_vlsseg8e8_v_i8mf8_m:
-case RISCV::BI__builtin_rvv_vlsseg8e8_v_u8m1_m:
-case RISCV::BI__builtin_rvv_vlsseg8e8_v_u8mf2_m:
-case RISCV::BI__builtin_rvv_vlsseg8e8_v_u8mf4_m:
-case RISCV::BI__builtin_rvv_vlsseg8e8_v_u8mf8_m:
-case RISCV::BI__builtin_rvv_vlsseg8e16_v_i16m1_m:
-case RISCV::BI__builtin_rvv_vlsseg8e16_v_i16mf2_m:
-case RISCV::BI__builtin_rvv_vlsseg8e16_v_i16mf4_m:
-case RISCV::BI__builtin_rvv_vlsseg8e16_v_u16m1_m:
-case RISCV::BI__builtin_rvv_vlsseg8e16_v_u16mf2_m:
-case RISCV::BI__builtin_rvv_vlsseg8e16_v_u16mf4_m:
-case RISCV::BI__builtin_rvv_vlsseg8e32_v_i32m1_m:
-case RISCV::BI__builtin_rvv_vlsseg8e32_v_i32mf2_m:
-case RISCV::BI__builtin_rvv_vlsseg8e32_v_u32m1_m:
-case RISCV::BI__builtin_rvv_vlsseg8e32_v_u32mf2_m:
-case RISCV::BI__builtin_rvv_vlsseg8e64_v_i64m1_m:
-case RISCV::BI__builtin_rvv_vlsseg8e64_v_u64m1_m:
-case RISCV::BI__builtin_rvv_vlsseg8e16_v_f16m1_m:
-case RISCV::BI__builtin_rvv_vlsseg8e16_v_f16mf2_m:
-case RISCV::BI__builtin_rvv_vlsseg8e16_v_f16mf4_m:
-case RISCV::BI__builtin_rvv_vlsseg8e32_v_f32m1_m:
-case RISCV::BI__builtin_rvv_vlsseg8e32_v_f32mf2_m:
-case RISCV::BI__builtin_rvv_vlsseg8e64_v_f64m1_m:
+case RISCV::BI__builtin_rvv_vlsseg8e8_v_i8m1_mt:
+case RISCV::BI__builtin_rvv_vlsseg8e8_v_i8mf2_mt:
+case RISCV::BI__builtin_rvv_vlsseg8e8_v_i8mf4_mt:
+case RISCV::BI__builtin_rvv_vlsseg8e8_v_i8mf8_mt:
+case RISCV::BI__builtin_rvv_vlsseg8e8_v_u8m1_mt:
+case RISCV::BI__builtin_rvv_vlsseg8e8_v_u8mf2_mt:
+case RISCV::BI__builtin_rvv_vlsseg8e8_v_u8mf4_mt:
+case RISCV::BI__builtin_rvv_vlsseg8e8_v_u8mf8_mt:
+case RISCV::BI__builtin_rvv_vlsseg8e16_v_i16m1_mt:
+case RISCV::BI__builtin_rvv_vlsseg8e16_v_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vlsseg8e16_v_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vlsseg8e16_v_u16m1_mt:
+case RISCV::BI__builtin_rvv_vlsseg8e16_v_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vlsseg8e16_v_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vlsseg8e32_v_i32m1_mt:
+case RISCV::BI__builtin_rvv_vlsseg8e32_v_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vlsseg8e32_v_u32m1_mt:
+case RISCV::BI__builtin_rvv_vlsseg8e32_v_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vlsseg8e64_v_i64m1_mt:
+case RISCV::BI__builtin_rvv_vlsseg8e64_v_u64m1_mt:
+case RISCV::BI__builtin_rvv_vlsseg8e16_v_f16m1_mt:
+case RISCV::BI__builtin_rvv_vlsseg8e16_v_f16mf2_mt:
+case RISCV::BI__builtin_rvv_vlsseg8e16_v_f16mf4_mt:
+case RISCV::BI__builtin_rvv_vlsseg8e32_v_f32m1_mt:
+case RISCV::BI__builtin_rvv_vlsseg8e32_v_f32mf2_mt:
+case RISCV::BI__builtin_rvv_vlsseg8e64_v_f64m1_mt:
   ID = Intrinsic::riscv_vlsseg8_mask;
   NF = 8;
 
@@ -11414,7 +11441,8 @@ case RISCV::BI__builtin_rvv_vlsseg8e64_v_f64m1_m:
       Operands.push_back(Ops[2 * NF + 2]);
       Operands.push_back(Ops[NF]);
       Operands.push_back(Ops[2 * NF + 3]);
-      assert(Operands.size() == NF + 4);
+      Operands.push_back(Ops[2 * NF + 4]);
+      assert(Operands.size() == NF + 5);
       llvm::Function *F = CGM.getIntrinsic(ID, IntrinsicTypes);
       llvm::Value *LoadValue = Builder.CreateCall(F, Operands, "");
       clang::CharUnits Align =
@@ -11644,222 +11672,222 @@ case RISCV::BI__builtin_rvv_vluxei8_v_i8mf8:
         IntrinsicTypes = {ResultType, Ops[1]->getType(), Ops[2]->getType()};
         Ops[0] = Builder.CreateBitCast(Ops[0], ResultType->getPointerTo());
       break;
-case RISCV::BI__builtin_rvv_vluxei8_v_u8m1_m:
-case RISCV::BI__builtin_rvv_vluxei8_v_u8m2_m:
-case RISCV::BI__builtin_rvv_vluxei8_v_u8m4_m:
-case RISCV::BI__builtin_rvv_vluxei8_v_u8m8_m:
-case RISCV::BI__builtin_rvv_vluxei8_v_u8mf2_m:
-case RISCV::BI__builtin_rvv_vluxei8_v_u8mf4_m:
-case RISCV::BI__builtin_rvv_vluxei8_v_u8mf8_m:
-case RISCV::BI__builtin_rvv_vluxei16_v_i8m1_m:
-case RISCV::BI__builtin_rvv_vluxei16_v_i8m2_m:
-case RISCV::BI__builtin_rvv_vluxei16_v_i8m4_m:
-case RISCV::BI__builtin_rvv_vluxei16_v_i8mf2_m:
-case RISCV::BI__builtin_rvv_vluxei16_v_i8mf4_m:
-case RISCV::BI__builtin_rvv_vluxei16_v_i8mf8_m:
-case RISCV::BI__builtin_rvv_vluxei16_v_u8m1_m:
-case RISCV::BI__builtin_rvv_vluxei16_v_u8m2_m:
-case RISCV::BI__builtin_rvv_vluxei16_v_u8m4_m:
-case RISCV::BI__builtin_rvv_vluxei16_v_u8mf2_m:
-case RISCV::BI__builtin_rvv_vluxei16_v_u8mf4_m:
-case RISCV::BI__builtin_rvv_vluxei16_v_u8mf8_m:
-case RISCV::BI__builtin_rvv_vluxei32_v_i8m1_m:
-case RISCV::BI__builtin_rvv_vluxei32_v_i8m2_m:
-case RISCV::BI__builtin_rvv_vluxei32_v_i8mf2_m:
-case RISCV::BI__builtin_rvv_vluxei32_v_i8mf4_m:
-case RISCV::BI__builtin_rvv_vluxei32_v_i8mf8_m:
-case RISCV::BI__builtin_rvv_vluxei32_v_u8m1_m:
-case RISCV::BI__builtin_rvv_vluxei32_v_u8m2_m:
-case RISCV::BI__builtin_rvv_vluxei32_v_u8mf2_m:
-case RISCV::BI__builtin_rvv_vluxei32_v_u8mf4_m:
-case RISCV::BI__builtin_rvv_vluxei32_v_u8mf8_m:
-case RISCV::BI__builtin_rvv_vluxei64_v_i8m1_m:
-case RISCV::BI__builtin_rvv_vluxei64_v_i8mf2_m:
-case RISCV::BI__builtin_rvv_vluxei64_v_i8mf4_m:
-case RISCV::BI__builtin_rvv_vluxei64_v_i8mf8_m:
-case RISCV::BI__builtin_rvv_vluxei64_v_u8m1_m:
-case RISCV::BI__builtin_rvv_vluxei64_v_u8mf2_m:
-case RISCV::BI__builtin_rvv_vluxei64_v_u8mf4_m:
-case RISCV::BI__builtin_rvv_vluxei64_v_u8mf8_m:
-case RISCV::BI__builtin_rvv_vluxei8_v_i16m1_m:
-case RISCV::BI__builtin_rvv_vluxei8_v_i16m2_m:
-case RISCV::BI__builtin_rvv_vluxei8_v_i16m4_m:
-case RISCV::BI__builtin_rvv_vluxei8_v_i16m8_m:
-case RISCV::BI__builtin_rvv_vluxei8_v_i16mf2_m:
-case RISCV::BI__builtin_rvv_vluxei8_v_i16mf4_m:
-case RISCV::BI__builtin_rvv_vluxei8_v_u16m1_m:
-case RISCV::BI__builtin_rvv_vluxei8_v_u16m2_m:
-case RISCV::BI__builtin_rvv_vluxei8_v_u16m4_m:
-case RISCV::BI__builtin_rvv_vluxei8_v_u16m8_m:
-case RISCV::BI__builtin_rvv_vluxei8_v_u16mf2_m:
-case RISCV::BI__builtin_rvv_vluxei8_v_u16mf4_m:
-case RISCV::BI__builtin_rvv_vluxei16_v_i16m1_m:
-case RISCV::BI__builtin_rvv_vluxei16_v_i16m2_m:
-case RISCV::BI__builtin_rvv_vluxei16_v_i16m4_m:
-case RISCV::BI__builtin_rvv_vluxei16_v_i16m8_m:
-case RISCV::BI__builtin_rvv_vluxei16_v_i16mf2_m:
-case RISCV::BI__builtin_rvv_vluxei16_v_i16mf4_m:
-case RISCV::BI__builtin_rvv_vluxei16_v_u16m1_m:
-case RISCV::BI__builtin_rvv_vluxei16_v_u16m2_m:
-case RISCV::BI__builtin_rvv_vluxei16_v_u16m4_m:
-case RISCV::BI__builtin_rvv_vluxei16_v_u16m8_m:
-case RISCV::BI__builtin_rvv_vluxei16_v_u16mf2_m:
-case RISCV::BI__builtin_rvv_vluxei16_v_u16mf4_m:
-case RISCV::BI__builtin_rvv_vluxei32_v_i16m1_m:
-case RISCV::BI__builtin_rvv_vluxei32_v_i16m2_m:
-case RISCV::BI__builtin_rvv_vluxei32_v_i16m4_m:
-case RISCV::BI__builtin_rvv_vluxei32_v_i16mf2_m:
-case RISCV::BI__builtin_rvv_vluxei32_v_i16mf4_m:
-case RISCV::BI__builtin_rvv_vluxei32_v_u16m1_m:
-case RISCV::BI__builtin_rvv_vluxei32_v_u16m2_m:
-case RISCV::BI__builtin_rvv_vluxei32_v_u16m4_m:
-case RISCV::BI__builtin_rvv_vluxei32_v_u16mf2_m:
-case RISCV::BI__builtin_rvv_vluxei32_v_u16mf4_m:
-case RISCV::BI__builtin_rvv_vluxei64_v_i16m1_m:
-case RISCV::BI__builtin_rvv_vluxei64_v_i16m2_m:
-case RISCV::BI__builtin_rvv_vluxei64_v_i16mf2_m:
-case RISCV::BI__builtin_rvv_vluxei64_v_i16mf4_m:
-case RISCV::BI__builtin_rvv_vluxei64_v_u16m1_m:
-case RISCV::BI__builtin_rvv_vluxei64_v_u16m2_m:
-case RISCV::BI__builtin_rvv_vluxei64_v_u16mf2_m:
-case RISCV::BI__builtin_rvv_vluxei64_v_u16mf4_m:
-case RISCV::BI__builtin_rvv_vluxei8_v_i32m1_m:
-case RISCV::BI__builtin_rvv_vluxei8_v_i32m2_m:
-case RISCV::BI__builtin_rvv_vluxei8_v_i32m4_m:
-case RISCV::BI__builtin_rvv_vluxei8_v_i32m8_m:
-case RISCV::BI__builtin_rvv_vluxei8_v_i32mf2_m:
-case RISCV::BI__builtin_rvv_vluxei8_v_u32m1_m:
-case RISCV::BI__builtin_rvv_vluxei8_v_u32m2_m:
-case RISCV::BI__builtin_rvv_vluxei8_v_u32m4_m:
-case RISCV::BI__builtin_rvv_vluxei8_v_u32m8_m:
-case RISCV::BI__builtin_rvv_vluxei8_v_u32mf2_m:
-case RISCV::BI__builtin_rvv_vluxei16_v_i32m1_m:
-case RISCV::BI__builtin_rvv_vluxei16_v_i32m2_m:
-case RISCV::BI__builtin_rvv_vluxei16_v_i32m4_m:
-case RISCV::BI__builtin_rvv_vluxei16_v_i32m8_m:
-case RISCV::BI__builtin_rvv_vluxei16_v_i32mf2_m:
-case RISCV::BI__builtin_rvv_vluxei16_v_u32m1_m:
-case RISCV::BI__builtin_rvv_vluxei16_v_u32m2_m:
-case RISCV::BI__builtin_rvv_vluxei16_v_u32m4_m:
-case RISCV::BI__builtin_rvv_vluxei16_v_u32m8_m:
-case RISCV::BI__builtin_rvv_vluxei16_v_u32mf2_m:
-case RISCV::BI__builtin_rvv_vluxei32_v_i32m1_m:
-case RISCV::BI__builtin_rvv_vluxei32_v_i32m2_m:
-case RISCV::BI__builtin_rvv_vluxei32_v_i32m4_m:
-case RISCV::BI__builtin_rvv_vluxei32_v_i32m8_m:
-case RISCV::BI__builtin_rvv_vluxei32_v_i32mf2_m:
-case RISCV::BI__builtin_rvv_vluxei32_v_u32m1_m:
-case RISCV::BI__builtin_rvv_vluxei32_v_u32m2_m:
-case RISCV::BI__builtin_rvv_vluxei32_v_u32m4_m:
-case RISCV::BI__builtin_rvv_vluxei32_v_u32m8_m:
-case RISCV::BI__builtin_rvv_vluxei32_v_u32mf2_m:
-case RISCV::BI__builtin_rvv_vluxei64_v_i32m1_m:
-case RISCV::BI__builtin_rvv_vluxei64_v_i32m2_m:
-case RISCV::BI__builtin_rvv_vluxei64_v_i32m4_m:
-case RISCV::BI__builtin_rvv_vluxei64_v_i32mf2_m:
-case RISCV::BI__builtin_rvv_vluxei64_v_u32m1_m:
-case RISCV::BI__builtin_rvv_vluxei64_v_u32m2_m:
-case RISCV::BI__builtin_rvv_vluxei64_v_u32m4_m:
-case RISCV::BI__builtin_rvv_vluxei64_v_u32mf2_m:
-case RISCV::BI__builtin_rvv_vluxei8_v_i64m1_m:
-case RISCV::BI__builtin_rvv_vluxei8_v_i64m2_m:
-case RISCV::BI__builtin_rvv_vluxei8_v_i64m4_m:
-case RISCV::BI__builtin_rvv_vluxei8_v_i64m8_m:
-case RISCV::BI__builtin_rvv_vluxei8_v_u64m1_m:
-case RISCV::BI__builtin_rvv_vluxei8_v_u64m2_m:
-case RISCV::BI__builtin_rvv_vluxei8_v_u64m4_m:
-case RISCV::BI__builtin_rvv_vluxei8_v_u64m8_m:
-case RISCV::BI__builtin_rvv_vluxei16_v_i64m1_m:
-case RISCV::BI__builtin_rvv_vluxei16_v_i64m2_m:
-case RISCV::BI__builtin_rvv_vluxei16_v_i64m4_m:
-case RISCV::BI__builtin_rvv_vluxei16_v_i64m8_m:
-case RISCV::BI__builtin_rvv_vluxei16_v_u64m1_m:
-case RISCV::BI__builtin_rvv_vluxei16_v_u64m2_m:
-case RISCV::BI__builtin_rvv_vluxei16_v_u64m4_m:
-case RISCV::BI__builtin_rvv_vluxei16_v_u64m8_m:
-case RISCV::BI__builtin_rvv_vluxei32_v_i64m1_m:
-case RISCV::BI__builtin_rvv_vluxei32_v_i64m2_m:
-case RISCV::BI__builtin_rvv_vluxei32_v_i64m4_m:
-case RISCV::BI__builtin_rvv_vluxei32_v_i64m8_m:
-case RISCV::BI__builtin_rvv_vluxei32_v_u64m1_m:
-case RISCV::BI__builtin_rvv_vluxei32_v_u64m2_m:
-case RISCV::BI__builtin_rvv_vluxei32_v_u64m4_m:
-case RISCV::BI__builtin_rvv_vluxei32_v_u64m8_m:
-case RISCV::BI__builtin_rvv_vluxei64_v_i64m1_m:
-case RISCV::BI__builtin_rvv_vluxei64_v_i64m2_m:
-case RISCV::BI__builtin_rvv_vluxei64_v_i64m4_m:
-case RISCV::BI__builtin_rvv_vluxei64_v_i64m8_m:
-case RISCV::BI__builtin_rvv_vluxei64_v_u64m1_m:
-case RISCV::BI__builtin_rvv_vluxei64_v_u64m2_m:
-case RISCV::BI__builtin_rvv_vluxei64_v_u64m4_m:
-case RISCV::BI__builtin_rvv_vluxei64_v_u64m8_m:
-case RISCV::BI__builtin_rvv_vluxei8_v_f16m1_m:
-case RISCV::BI__builtin_rvv_vluxei8_v_f16m2_m:
-case RISCV::BI__builtin_rvv_vluxei8_v_f16m4_m:
-case RISCV::BI__builtin_rvv_vluxei8_v_f16m8_m:
-case RISCV::BI__builtin_rvv_vluxei8_v_f16mf2_m:
-case RISCV::BI__builtin_rvv_vluxei8_v_f16mf4_m:
-case RISCV::BI__builtin_rvv_vluxei16_v_f16m1_m:
-case RISCV::BI__builtin_rvv_vluxei16_v_f16m2_m:
-case RISCV::BI__builtin_rvv_vluxei16_v_f16m4_m:
-case RISCV::BI__builtin_rvv_vluxei16_v_f16m8_m:
-case RISCV::BI__builtin_rvv_vluxei16_v_f16mf2_m:
-case RISCV::BI__builtin_rvv_vluxei16_v_f16mf4_m:
-case RISCV::BI__builtin_rvv_vluxei32_v_f16m1_m:
-case RISCV::BI__builtin_rvv_vluxei32_v_f16m2_m:
-case RISCV::BI__builtin_rvv_vluxei32_v_f16m4_m:
-case RISCV::BI__builtin_rvv_vluxei32_v_f16mf2_m:
-case RISCV::BI__builtin_rvv_vluxei32_v_f16mf4_m:
-case RISCV::BI__builtin_rvv_vluxei64_v_f16m1_m:
-case RISCV::BI__builtin_rvv_vluxei64_v_f16m2_m:
-case RISCV::BI__builtin_rvv_vluxei64_v_f16mf2_m:
-case RISCV::BI__builtin_rvv_vluxei64_v_f16mf4_m:
-case RISCV::BI__builtin_rvv_vluxei8_v_f32m1_m:
-case RISCV::BI__builtin_rvv_vluxei8_v_f32m2_m:
-case RISCV::BI__builtin_rvv_vluxei8_v_f32m4_m:
-case RISCV::BI__builtin_rvv_vluxei8_v_f32m8_m:
-case RISCV::BI__builtin_rvv_vluxei8_v_f32mf2_m:
-case RISCV::BI__builtin_rvv_vluxei16_v_f32m1_m:
-case RISCV::BI__builtin_rvv_vluxei16_v_f32m2_m:
-case RISCV::BI__builtin_rvv_vluxei16_v_f32m4_m:
-case RISCV::BI__builtin_rvv_vluxei16_v_f32m8_m:
-case RISCV::BI__builtin_rvv_vluxei16_v_f32mf2_m:
-case RISCV::BI__builtin_rvv_vluxei32_v_f32m1_m:
-case RISCV::BI__builtin_rvv_vluxei32_v_f32m2_m:
-case RISCV::BI__builtin_rvv_vluxei32_v_f32m4_m:
-case RISCV::BI__builtin_rvv_vluxei32_v_f32m8_m:
-case RISCV::BI__builtin_rvv_vluxei32_v_f32mf2_m:
-case RISCV::BI__builtin_rvv_vluxei64_v_f32m1_m:
-case RISCV::BI__builtin_rvv_vluxei64_v_f32m2_m:
-case RISCV::BI__builtin_rvv_vluxei64_v_f32m4_m:
-case RISCV::BI__builtin_rvv_vluxei64_v_f32mf2_m:
-case RISCV::BI__builtin_rvv_vluxei8_v_f64m1_m:
-case RISCV::BI__builtin_rvv_vluxei8_v_f64m2_m:
-case RISCV::BI__builtin_rvv_vluxei8_v_f64m4_m:
-case RISCV::BI__builtin_rvv_vluxei8_v_f64m8_m:
-case RISCV::BI__builtin_rvv_vluxei16_v_f64m1_m:
-case RISCV::BI__builtin_rvv_vluxei16_v_f64m2_m:
-case RISCV::BI__builtin_rvv_vluxei16_v_f64m4_m:
-case RISCV::BI__builtin_rvv_vluxei16_v_f64m8_m:
-case RISCV::BI__builtin_rvv_vluxei32_v_f64m1_m:
-case RISCV::BI__builtin_rvv_vluxei32_v_f64m2_m:
-case RISCV::BI__builtin_rvv_vluxei32_v_f64m4_m:
-case RISCV::BI__builtin_rvv_vluxei32_v_f64m8_m:
-case RISCV::BI__builtin_rvv_vluxei64_v_f64m1_m:
-case RISCV::BI__builtin_rvv_vluxei64_v_f64m2_m:
-case RISCV::BI__builtin_rvv_vluxei64_v_f64m4_m:
-case RISCV::BI__builtin_rvv_vluxei64_v_f64m8_m:
-case RISCV::BI__builtin_rvv_vluxei8_v_i8m1_m:
-case RISCV::BI__builtin_rvv_vluxei8_v_i8m2_m:
-case RISCV::BI__builtin_rvv_vluxei8_v_i8m4_m:
-case RISCV::BI__builtin_rvv_vluxei8_v_i8m8_m:
-case RISCV::BI__builtin_rvv_vluxei8_v_i8mf2_m:
-case RISCV::BI__builtin_rvv_vluxei8_v_i8mf4_m:
-case RISCV::BI__builtin_rvv_vluxei8_v_i8mf8_m:
+case RISCV::BI__builtin_rvv_vluxei8_v_u8m1_mt:
+case RISCV::BI__builtin_rvv_vluxei8_v_u8m2_mt:
+case RISCV::BI__builtin_rvv_vluxei8_v_u8m4_mt:
+case RISCV::BI__builtin_rvv_vluxei8_v_u8m8_mt:
+case RISCV::BI__builtin_rvv_vluxei8_v_u8mf2_mt:
+case RISCV::BI__builtin_rvv_vluxei8_v_u8mf4_mt:
+case RISCV::BI__builtin_rvv_vluxei8_v_u8mf8_mt:
+case RISCV::BI__builtin_rvv_vluxei16_v_i8m1_mt:
+case RISCV::BI__builtin_rvv_vluxei16_v_i8m2_mt:
+case RISCV::BI__builtin_rvv_vluxei16_v_i8m4_mt:
+case RISCV::BI__builtin_rvv_vluxei16_v_i8mf2_mt:
+case RISCV::BI__builtin_rvv_vluxei16_v_i8mf4_mt:
+case RISCV::BI__builtin_rvv_vluxei16_v_i8mf8_mt:
+case RISCV::BI__builtin_rvv_vluxei16_v_u8m1_mt:
+case RISCV::BI__builtin_rvv_vluxei16_v_u8m2_mt:
+case RISCV::BI__builtin_rvv_vluxei16_v_u8m4_mt:
+case RISCV::BI__builtin_rvv_vluxei16_v_u8mf2_mt:
+case RISCV::BI__builtin_rvv_vluxei16_v_u8mf4_mt:
+case RISCV::BI__builtin_rvv_vluxei16_v_u8mf8_mt:
+case RISCV::BI__builtin_rvv_vluxei32_v_i8m1_mt:
+case RISCV::BI__builtin_rvv_vluxei32_v_i8m2_mt:
+case RISCV::BI__builtin_rvv_vluxei32_v_i8mf2_mt:
+case RISCV::BI__builtin_rvv_vluxei32_v_i8mf4_mt:
+case RISCV::BI__builtin_rvv_vluxei32_v_i8mf8_mt:
+case RISCV::BI__builtin_rvv_vluxei32_v_u8m1_mt:
+case RISCV::BI__builtin_rvv_vluxei32_v_u8m2_mt:
+case RISCV::BI__builtin_rvv_vluxei32_v_u8mf2_mt:
+case RISCV::BI__builtin_rvv_vluxei32_v_u8mf4_mt:
+case RISCV::BI__builtin_rvv_vluxei32_v_u8mf8_mt:
+case RISCV::BI__builtin_rvv_vluxei64_v_i8m1_mt:
+case RISCV::BI__builtin_rvv_vluxei64_v_i8mf2_mt:
+case RISCV::BI__builtin_rvv_vluxei64_v_i8mf4_mt:
+case RISCV::BI__builtin_rvv_vluxei64_v_i8mf8_mt:
+case RISCV::BI__builtin_rvv_vluxei64_v_u8m1_mt:
+case RISCV::BI__builtin_rvv_vluxei64_v_u8mf2_mt:
+case RISCV::BI__builtin_rvv_vluxei64_v_u8mf4_mt:
+case RISCV::BI__builtin_rvv_vluxei64_v_u8mf8_mt:
+case RISCV::BI__builtin_rvv_vluxei8_v_i16m1_mt:
+case RISCV::BI__builtin_rvv_vluxei8_v_i16m2_mt:
+case RISCV::BI__builtin_rvv_vluxei8_v_i16m4_mt:
+case RISCV::BI__builtin_rvv_vluxei8_v_i16m8_mt:
+case RISCV::BI__builtin_rvv_vluxei8_v_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vluxei8_v_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vluxei8_v_u16m1_mt:
+case RISCV::BI__builtin_rvv_vluxei8_v_u16m2_mt:
+case RISCV::BI__builtin_rvv_vluxei8_v_u16m4_mt:
+case RISCV::BI__builtin_rvv_vluxei8_v_u16m8_mt:
+case RISCV::BI__builtin_rvv_vluxei8_v_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vluxei8_v_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vluxei16_v_i16m1_mt:
+case RISCV::BI__builtin_rvv_vluxei16_v_i16m2_mt:
+case RISCV::BI__builtin_rvv_vluxei16_v_i16m4_mt:
+case RISCV::BI__builtin_rvv_vluxei16_v_i16m8_mt:
+case RISCV::BI__builtin_rvv_vluxei16_v_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vluxei16_v_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vluxei16_v_u16m1_mt:
+case RISCV::BI__builtin_rvv_vluxei16_v_u16m2_mt:
+case RISCV::BI__builtin_rvv_vluxei16_v_u16m4_mt:
+case RISCV::BI__builtin_rvv_vluxei16_v_u16m8_mt:
+case RISCV::BI__builtin_rvv_vluxei16_v_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vluxei16_v_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vluxei32_v_i16m1_mt:
+case RISCV::BI__builtin_rvv_vluxei32_v_i16m2_mt:
+case RISCV::BI__builtin_rvv_vluxei32_v_i16m4_mt:
+case RISCV::BI__builtin_rvv_vluxei32_v_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vluxei32_v_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vluxei32_v_u16m1_mt:
+case RISCV::BI__builtin_rvv_vluxei32_v_u16m2_mt:
+case RISCV::BI__builtin_rvv_vluxei32_v_u16m4_mt:
+case RISCV::BI__builtin_rvv_vluxei32_v_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vluxei32_v_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vluxei64_v_i16m1_mt:
+case RISCV::BI__builtin_rvv_vluxei64_v_i16m2_mt:
+case RISCV::BI__builtin_rvv_vluxei64_v_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vluxei64_v_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vluxei64_v_u16m1_mt:
+case RISCV::BI__builtin_rvv_vluxei64_v_u16m2_mt:
+case RISCV::BI__builtin_rvv_vluxei64_v_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vluxei64_v_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vluxei8_v_i32m1_mt:
+case RISCV::BI__builtin_rvv_vluxei8_v_i32m2_mt:
+case RISCV::BI__builtin_rvv_vluxei8_v_i32m4_mt:
+case RISCV::BI__builtin_rvv_vluxei8_v_i32m8_mt:
+case RISCV::BI__builtin_rvv_vluxei8_v_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vluxei8_v_u32m1_mt:
+case RISCV::BI__builtin_rvv_vluxei8_v_u32m2_mt:
+case RISCV::BI__builtin_rvv_vluxei8_v_u32m4_mt:
+case RISCV::BI__builtin_rvv_vluxei8_v_u32m8_mt:
+case RISCV::BI__builtin_rvv_vluxei8_v_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vluxei16_v_i32m1_mt:
+case RISCV::BI__builtin_rvv_vluxei16_v_i32m2_mt:
+case RISCV::BI__builtin_rvv_vluxei16_v_i32m4_mt:
+case RISCV::BI__builtin_rvv_vluxei16_v_i32m8_mt:
+case RISCV::BI__builtin_rvv_vluxei16_v_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vluxei16_v_u32m1_mt:
+case RISCV::BI__builtin_rvv_vluxei16_v_u32m2_mt:
+case RISCV::BI__builtin_rvv_vluxei16_v_u32m4_mt:
+case RISCV::BI__builtin_rvv_vluxei16_v_u32m8_mt:
+case RISCV::BI__builtin_rvv_vluxei16_v_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vluxei32_v_i32m1_mt:
+case RISCV::BI__builtin_rvv_vluxei32_v_i32m2_mt:
+case RISCV::BI__builtin_rvv_vluxei32_v_i32m4_mt:
+case RISCV::BI__builtin_rvv_vluxei32_v_i32m8_mt:
+case RISCV::BI__builtin_rvv_vluxei32_v_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vluxei32_v_u32m1_mt:
+case RISCV::BI__builtin_rvv_vluxei32_v_u32m2_mt:
+case RISCV::BI__builtin_rvv_vluxei32_v_u32m4_mt:
+case RISCV::BI__builtin_rvv_vluxei32_v_u32m8_mt:
+case RISCV::BI__builtin_rvv_vluxei32_v_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vluxei64_v_i32m1_mt:
+case RISCV::BI__builtin_rvv_vluxei64_v_i32m2_mt:
+case RISCV::BI__builtin_rvv_vluxei64_v_i32m4_mt:
+case RISCV::BI__builtin_rvv_vluxei64_v_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vluxei64_v_u32m1_mt:
+case RISCV::BI__builtin_rvv_vluxei64_v_u32m2_mt:
+case RISCV::BI__builtin_rvv_vluxei64_v_u32m4_mt:
+case RISCV::BI__builtin_rvv_vluxei64_v_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vluxei8_v_i64m1_mt:
+case RISCV::BI__builtin_rvv_vluxei8_v_i64m2_mt:
+case RISCV::BI__builtin_rvv_vluxei8_v_i64m4_mt:
+case RISCV::BI__builtin_rvv_vluxei8_v_i64m8_mt:
+case RISCV::BI__builtin_rvv_vluxei8_v_u64m1_mt:
+case RISCV::BI__builtin_rvv_vluxei8_v_u64m2_mt:
+case RISCV::BI__builtin_rvv_vluxei8_v_u64m4_mt:
+case RISCV::BI__builtin_rvv_vluxei8_v_u64m8_mt:
+case RISCV::BI__builtin_rvv_vluxei16_v_i64m1_mt:
+case RISCV::BI__builtin_rvv_vluxei16_v_i64m2_mt:
+case RISCV::BI__builtin_rvv_vluxei16_v_i64m4_mt:
+case RISCV::BI__builtin_rvv_vluxei16_v_i64m8_mt:
+case RISCV::BI__builtin_rvv_vluxei16_v_u64m1_mt:
+case RISCV::BI__builtin_rvv_vluxei16_v_u64m2_mt:
+case RISCV::BI__builtin_rvv_vluxei16_v_u64m4_mt:
+case RISCV::BI__builtin_rvv_vluxei16_v_u64m8_mt:
+case RISCV::BI__builtin_rvv_vluxei32_v_i64m1_mt:
+case RISCV::BI__builtin_rvv_vluxei32_v_i64m2_mt:
+case RISCV::BI__builtin_rvv_vluxei32_v_i64m4_mt:
+case RISCV::BI__builtin_rvv_vluxei32_v_i64m8_mt:
+case RISCV::BI__builtin_rvv_vluxei32_v_u64m1_mt:
+case RISCV::BI__builtin_rvv_vluxei32_v_u64m2_mt:
+case RISCV::BI__builtin_rvv_vluxei32_v_u64m4_mt:
+case RISCV::BI__builtin_rvv_vluxei32_v_u64m8_mt:
+case RISCV::BI__builtin_rvv_vluxei64_v_i64m1_mt:
+case RISCV::BI__builtin_rvv_vluxei64_v_i64m2_mt:
+case RISCV::BI__builtin_rvv_vluxei64_v_i64m4_mt:
+case RISCV::BI__builtin_rvv_vluxei64_v_i64m8_mt:
+case RISCV::BI__builtin_rvv_vluxei64_v_u64m1_mt:
+case RISCV::BI__builtin_rvv_vluxei64_v_u64m2_mt:
+case RISCV::BI__builtin_rvv_vluxei64_v_u64m4_mt:
+case RISCV::BI__builtin_rvv_vluxei64_v_u64m8_mt:
+case RISCV::BI__builtin_rvv_vluxei8_v_f16m1_mt:
+case RISCV::BI__builtin_rvv_vluxei8_v_f16m2_mt:
+case RISCV::BI__builtin_rvv_vluxei8_v_f16m4_mt:
+case RISCV::BI__builtin_rvv_vluxei8_v_f16m8_mt:
+case RISCV::BI__builtin_rvv_vluxei8_v_f16mf2_mt:
+case RISCV::BI__builtin_rvv_vluxei8_v_f16mf4_mt:
+case RISCV::BI__builtin_rvv_vluxei16_v_f16m1_mt:
+case RISCV::BI__builtin_rvv_vluxei16_v_f16m2_mt:
+case RISCV::BI__builtin_rvv_vluxei16_v_f16m4_mt:
+case RISCV::BI__builtin_rvv_vluxei16_v_f16m8_mt:
+case RISCV::BI__builtin_rvv_vluxei16_v_f16mf2_mt:
+case RISCV::BI__builtin_rvv_vluxei16_v_f16mf4_mt:
+case RISCV::BI__builtin_rvv_vluxei32_v_f16m1_mt:
+case RISCV::BI__builtin_rvv_vluxei32_v_f16m2_mt:
+case RISCV::BI__builtin_rvv_vluxei32_v_f16m4_mt:
+case RISCV::BI__builtin_rvv_vluxei32_v_f16mf2_mt:
+case RISCV::BI__builtin_rvv_vluxei32_v_f16mf4_mt:
+case RISCV::BI__builtin_rvv_vluxei64_v_f16m1_mt:
+case RISCV::BI__builtin_rvv_vluxei64_v_f16m2_mt:
+case RISCV::BI__builtin_rvv_vluxei64_v_f16mf2_mt:
+case RISCV::BI__builtin_rvv_vluxei64_v_f16mf4_mt:
+case RISCV::BI__builtin_rvv_vluxei8_v_f32m1_mt:
+case RISCV::BI__builtin_rvv_vluxei8_v_f32m2_mt:
+case RISCV::BI__builtin_rvv_vluxei8_v_f32m4_mt:
+case RISCV::BI__builtin_rvv_vluxei8_v_f32m8_mt:
+case RISCV::BI__builtin_rvv_vluxei8_v_f32mf2_mt:
+case RISCV::BI__builtin_rvv_vluxei16_v_f32m1_mt:
+case RISCV::BI__builtin_rvv_vluxei16_v_f32m2_mt:
+case RISCV::BI__builtin_rvv_vluxei16_v_f32m4_mt:
+case RISCV::BI__builtin_rvv_vluxei16_v_f32m8_mt:
+case RISCV::BI__builtin_rvv_vluxei16_v_f32mf2_mt:
+case RISCV::BI__builtin_rvv_vluxei32_v_f32m1_mt:
+case RISCV::BI__builtin_rvv_vluxei32_v_f32m2_mt:
+case RISCV::BI__builtin_rvv_vluxei32_v_f32m4_mt:
+case RISCV::BI__builtin_rvv_vluxei32_v_f32m8_mt:
+case RISCV::BI__builtin_rvv_vluxei32_v_f32mf2_mt:
+case RISCV::BI__builtin_rvv_vluxei64_v_f32m1_mt:
+case RISCV::BI__builtin_rvv_vluxei64_v_f32m2_mt:
+case RISCV::BI__builtin_rvv_vluxei64_v_f32m4_mt:
+case RISCV::BI__builtin_rvv_vluxei64_v_f32mf2_mt:
+case RISCV::BI__builtin_rvv_vluxei8_v_f64m1_mt:
+case RISCV::BI__builtin_rvv_vluxei8_v_f64m2_mt:
+case RISCV::BI__builtin_rvv_vluxei8_v_f64m4_mt:
+case RISCV::BI__builtin_rvv_vluxei8_v_f64m8_mt:
+case RISCV::BI__builtin_rvv_vluxei16_v_f64m1_mt:
+case RISCV::BI__builtin_rvv_vluxei16_v_f64m2_mt:
+case RISCV::BI__builtin_rvv_vluxei16_v_f64m4_mt:
+case RISCV::BI__builtin_rvv_vluxei16_v_f64m8_mt:
+case RISCV::BI__builtin_rvv_vluxei32_v_f64m1_mt:
+case RISCV::BI__builtin_rvv_vluxei32_v_f64m2_mt:
+case RISCV::BI__builtin_rvv_vluxei32_v_f64m4_mt:
+case RISCV::BI__builtin_rvv_vluxei32_v_f64m8_mt:
+case RISCV::BI__builtin_rvv_vluxei64_v_f64m1_mt:
+case RISCV::BI__builtin_rvv_vluxei64_v_f64m2_mt:
+case RISCV::BI__builtin_rvv_vluxei64_v_f64m4_mt:
+case RISCV::BI__builtin_rvv_vluxei64_v_f64m8_mt:
+case RISCV::BI__builtin_rvv_vluxei8_v_i8m1_mt:
+case RISCV::BI__builtin_rvv_vluxei8_v_i8m2_mt:
+case RISCV::BI__builtin_rvv_vluxei8_v_i8m4_mt:
+case RISCV::BI__builtin_rvv_vluxei8_v_i8m8_mt:
+case RISCV::BI__builtin_rvv_vluxei8_v_i8mf2_mt:
+case RISCV::BI__builtin_rvv_vluxei8_v_i8mf4_mt:
+case RISCV::BI__builtin_rvv_vluxei8_v_i8mf8_mt:
   ID = Intrinsic::riscv_vluxei_mask;
 
         // Move mask to right before vl.
-        std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 1);
+        std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 2);
         IntrinsicTypes = {ResultType, Ops[2]->getType(), Ops[4]->getType()};
         Ops[1] = Builder.CreateBitCast(Ops[1], ResultType->getPointerTo());
       break;
@@ -12067,189 +12095,189 @@ case RISCV::BI__builtin_rvv_vluxseg2ei64_v_f64m4:
       return V;
     }
             break;
-case RISCV::BI__builtin_rvv_vluxseg2ei8_v_i8m1_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei8_v_i8m2_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei8_v_i8m4_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei8_v_i8mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei8_v_i8mf4_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei8_v_i8mf8_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei8_v_u8m1_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei8_v_u8m2_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei8_v_u8m4_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei8_v_u8mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei8_v_u8mf4_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei8_v_u8mf8_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei16_v_i8m1_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei16_v_i8m2_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei16_v_i8m4_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei16_v_i8mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei16_v_i8mf4_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei16_v_i8mf8_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei16_v_u8m1_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei16_v_u8m2_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei16_v_u8m4_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei16_v_u8mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei16_v_u8mf4_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei16_v_u8mf8_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei32_v_i8m1_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei32_v_i8m2_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei32_v_i8mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei32_v_i8mf4_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei32_v_i8mf8_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei32_v_u8m1_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei32_v_u8m2_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei32_v_u8mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei32_v_u8mf4_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei32_v_u8mf8_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei64_v_i8m1_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei64_v_i8mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei64_v_i8mf4_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei64_v_i8mf8_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei64_v_u8m1_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei64_v_u8mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei64_v_u8mf4_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei64_v_u8mf8_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei8_v_i16m1_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei8_v_i16m2_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei8_v_i16m4_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei8_v_i16mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei8_v_i16mf4_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei8_v_u16m1_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei8_v_u16m2_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei8_v_u16m4_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei8_v_u16mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei8_v_u16mf4_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei16_v_i16m1_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei16_v_i16m2_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei16_v_i16m4_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei16_v_i16mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei16_v_i16mf4_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei16_v_u16m1_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei16_v_u16m2_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei16_v_u16m4_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei16_v_u16mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei16_v_u16mf4_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei32_v_i16m1_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei32_v_i16m2_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei32_v_i16m4_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei32_v_i16mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei32_v_i16mf4_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei32_v_u16m1_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei32_v_u16m2_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei32_v_u16m4_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei32_v_u16mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei32_v_u16mf4_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei64_v_i16m1_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei64_v_i16m2_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei64_v_i16mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei64_v_i16mf4_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei64_v_u16m1_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei64_v_u16m2_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei64_v_u16mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei64_v_u16mf4_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei8_v_i32m1_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei8_v_i32m2_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei8_v_i32m4_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei8_v_i32mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei8_v_u32m1_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei8_v_u32m2_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei8_v_u32m4_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei8_v_u32mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei16_v_i32m1_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei16_v_i32m2_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei16_v_i32m4_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei16_v_i32mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei16_v_u32m1_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei16_v_u32m2_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei16_v_u32m4_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei16_v_u32mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei32_v_i32m1_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei32_v_i32m2_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei32_v_i32m4_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei32_v_i32mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei32_v_u32m1_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei32_v_u32m2_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei32_v_u32m4_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei32_v_u32mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei64_v_i32m1_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei64_v_i32m2_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei64_v_i32m4_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei64_v_i32mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei64_v_u32m1_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei64_v_u32m2_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei64_v_u32m4_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei64_v_u32mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei8_v_i64m1_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei8_v_i64m2_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei8_v_i64m4_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei8_v_u64m1_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei8_v_u64m2_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei8_v_u64m4_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei16_v_i64m1_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei16_v_i64m2_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei16_v_i64m4_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei16_v_u64m1_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei16_v_u64m2_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei16_v_u64m4_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei32_v_i64m1_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei32_v_i64m2_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei32_v_i64m4_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei32_v_u64m1_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei32_v_u64m2_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei32_v_u64m4_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei64_v_i64m1_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei64_v_i64m2_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei64_v_i64m4_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei64_v_u64m1_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei64_v_u64m2_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei64_v_u64m4_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei8_v_f16m1_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei8_v_f16m2_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei8_v_f16m4_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei8_v_f16mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei8_v_f16mf4_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei16_v_f16m1_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei16_v_f16m2_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei16_v_f16m4_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei16_v_f16mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei16_v_f16mf4_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei32_v_f16m1_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei32_v_f16m2_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei32_v_f16m4_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei32_v_f16mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei32_v_f16mf4_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei64_v_f16m1_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei64_v_f16m2_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei64_v_f16mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei64_v_f16mf4_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei8_v_f32m1_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei8_v_f32m2_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei8_v_f32m4_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei8_v_f32mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei16_v_f32m1_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei16_v_f32m2_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei16_v_f32m4_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei16_v_f32mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei32_v_f32m1_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei32_v_f32m2_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei32_v_f32m4_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei32_v_f32mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei64_v_f32m1_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei64_v_f32m2_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei64_v_f32m4_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei64_v_f32mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei8_v_f64m1_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei8_v_f64m2_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei8_v_f64m4_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei16_v_f64m1_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei16_v_f64m2_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei16_v_f64m4_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei32_v_f64m1_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei32_v_f64m2_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei32_v_f64m4_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei64_v_f64m1_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei64_v_f64m2_m:
-case RISCV::BI__builtin_rvv_vluxseg2ei64_v_f64m4_m:
+case RISCV::BI__builtin_rvv_vluxseg2ei8_v_i8m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei8_v_i8m2_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei8_v_i8m4_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei8_v_i8mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei8_v_i8mf4_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei8_v_i8mf8_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei8_v_u8m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei8_v_u8m2_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei8_v_u8m4_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei8_v_u8mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei8_v_u8mf4_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei8_v_u8mf8_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei16_v_i8m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei16_v_i8m2_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei16_v_i8m4_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei16_v_i8mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei16_v_i8mf4_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei16_v_i8mf8_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei16_v_u8m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei16_v_u8m2_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei16_v_u8m4_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei16_v_u8mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei16_v_u8mf4_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei16_v_u8mf8_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei32_v_i8m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei32_v_i8m2_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei32_v_i8mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei32_v_i8mf4_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei32_v_i8mf8_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei32_v_u8m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei32_v_u8m2_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei32_v_u8mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei32_v_u8mf4_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei32_v_u8mf8_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei64_v_i8m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei64_v_i8mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei64_v_i8mf4_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei64_v_i8mf8_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei64_v_u8m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei64_v_u8mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei64_v_u8mf4_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei64_v_u8mf8_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei8_v_i16m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei8_v_i16m2_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei8_v_i16m4_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei8_v_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei8_v_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei8_v_u16m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei8_v_u16m2_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei8_v_u16m4_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei8_v_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei8_v_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei16_v_i16m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei16_v_i16m2_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei16_v_i16m4_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei16_v_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei16_v_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei16_v_u16m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei16_v_u16m2_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei16_v_u16m4_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei16_v_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei16_v_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei32_v_i16m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei32_v_i16m2_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei32_v_i16m4_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei32_v_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei32_v_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei32_v_u16m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei32_v_u16m2_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei32_v_u16m4_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei32_v_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei32_v_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei64_v_i16m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei64_v_i16m2_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei64_v_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei64_v_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei64_v_u16m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei64_v_u16m2_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei64_v_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei64_v_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei8_v_i32m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei8_v_i32m2_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei8_v_i32m4_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei8_v_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei8_v_u32m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei8_v_u32m2_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei8_v_u32m4_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei8_v_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei16_v_i32m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei16_v_i32m2_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei16_v_i32m4_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei16_v_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei16_v_u32m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei16_v_u32m2_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei16_v_u32m4_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei16_v_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei32_v_i32m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei32_v_i32m2_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei32_v_i32m4_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei32_v_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei32_v_u32m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei32_v_u32m2_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei32_v_u32m4_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei32_v_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei64_v_i32m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei64_v_i32m2_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei64_v_i32m4_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei64_v_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei64_v_u32m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei64_v_u32m2_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei64_v_u32m4_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei64_v_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei8_v_i64m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei8_v_i64m2_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei8_v_i64m4_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei8_v_u64m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei8_v_u64m2_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei8_v_u64m4_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei16_v_i64m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei16_v_i64m2_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei16_v_i64m4_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei16_v_u64m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei16_v_u64m2_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei16_v_u64m4_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei32_v_i64m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei32_v_i64m2_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei32_v_i64m4_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei32_v_u64m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei32_v_u64m2_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei32_v_u64m4_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei64_v_i64m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei64_v_i64m2_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei64_v_i64m4_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei64_v_u64m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei64_v_u64m2_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei64_v_u64m4_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei8_v_f16m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei8_v_f16m2_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei8_v_f16m4_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei8_v_f16mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei8_v_f16mf4_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei16_v_f16m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei16_v_f16m2_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei16_v_f16m4_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei16_v_f16mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei16_v_f16mf4_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei32_v_f16m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei32_v_f16m2_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei32_v_f16m4_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei32_v_f16mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei32_v_f16mf4_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei64_v_f16m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei64_v_f16m2_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei64_v_f16mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei64_v_f16mf4_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei8_v_f32m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei8_v_f32m2_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei8_v_f32m4_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei8_v_f32mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei16_v_f32m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei16_v_f32m2_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei16_v_f32m4_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei16_v_f32mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei32_v_f32m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei32_v_f32m2_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei32_v_f32m4_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei32_v_f32mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei64_v_f32m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei64_v_f32m2_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei64_v_f32m4_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei64_v_f32mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei8_v_f64m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei8_v_f64m2_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei8_v_f64m4_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei16_v_f64m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei16_v_f64m2_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei16_v_f64m4_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei32_v_f64m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei32_v_f64m2_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei32_v_f64m4_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei64_v_f64m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei64_v_f64m2_mt:
+case RISCV::BI__builtin_rvv_vluxseg2ei64_v_f64m4_mt:
   ID = Intrinsic::riscv_vluxseg2_mask;
   NF = 2;
 
@@ -12265,7 +12293,8 @@ case RISCV::BI__builtin_rvv_vluxseg2ei64_v_f64m4_m:
       Operands.push_back(Ops[2 * NF + 2]);
       Operands.push_back(Ops[NF]);
       Operands.push_back(Ops[2 * NF + 3]);
-      assert(Operands.size() == NF + 4);
+      Operands.push_back(Ops[2 * NF + 4]);
+      assert(Operands.size() == NF + 5);
       llvm::Function *F = CGM.getIntrinsic(ID, IntrinsicTypes);
       llvm::Value *LoadValue = Builder.CreateCall(F, Operands, "");
       clang::CharUnits Align =
@@ -12445,152 +12474,152 @@ case RISCV::BI__builtin_rvv_vluxseg3ei64_v_f64m2:
       return V;
     }
             break;
-case RISCV::BI__builtin_rvv_vluxseg3ei8_v_i8m1_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei8_v_i8m2_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei8_v_i8mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei8_v_i8mf4_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei8_v_i8mf8_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei8_v_u8m1_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei8_v_u8m2_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei8_v_u8mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei8_v_u8mf4_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei8_v_u8mf8_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei16_v_i8m1_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei16_v_i8m2_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei16_v_i8mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei16_v_i8mf4_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei16_v_i8mf8_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei16_v_u8m1_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei16_v_u8m2_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei16_v_u8mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei16_v_u8mf4_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei16_v_u8mf8_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei32_v_i8m1_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei32_v_i8m2_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei32_v_i8mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei32_v_i8mf4_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei32_v_i8mf8_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei32_v_u8m1_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei32_v_u8m2_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei32_v_u8mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei32_v_u8mf4_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei32_v_u8mf8_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei64_v_i8m1_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei64_v_i8mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei64_v_i8mf4_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei64_v_i8mf8_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei64_v_u8m1_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei64_v_u8mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei64_v_u8mf4_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei64_v_u8mf8_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei8_v_i16m1_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei8_v_i16m2_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei8_v_i16mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei8_v_i16mf4_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei8_v_u16m1_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei8_v_u16m2_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei8_v_u16mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei8_v_u16mf4_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei16_v_i16m1_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei16_v_i16m2_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei16_v_i16mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei16_v_i16mf4_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei16_v_u16m1_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei16_v_u16m2_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei16_v_u16mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei16_v_u16mf4_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei32_v_i16m1_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei32_v_i16m2_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei32_v_i16mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei32_v_i16mf4_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei32_v_u16m1_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei32_v_u16m2_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei32_v_u16mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei32_v_u16mf4_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei64_v_i16m1_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei64_v_i16m2_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei64_v_i16mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei64_v_i16mf4_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei64_v_u16m1_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei64_v_u16m2_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei64_v_u16mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei64_v_u16mf4_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei8_v_i32m1_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei8_v_i32m2_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei8_v_i32mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei8_v_u32m1_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei8_v_u32m2_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei8_v_u32mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei16_v_i32m1_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei16_v_i32m2_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei16_v_i32mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei16_v_u32m1_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei16_v_u32m2_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei16_v_u32mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei32_v_i32m1_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei32_v_i32m2_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei32_v_i32mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei32_v_u32m1_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei32_v_u32m2_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei32_v_u32mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei64_v_i32m1_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei64_v_i32m2_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei64_v_i32mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei64_v_u32m1_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei64_v_u32m2_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei64_v_u32mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei8_v_i64m1_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei8_v_i64m2_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei8_v_u64m1_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei8_v_u64m2_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei16_v_i64m1_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei16_v_i64m2_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei16_v_u64m1_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei16_v_u64m2_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei32_v_i64m1_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei32_v_i64m2_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei32_v_u64m1_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei32_v_u64m2_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei64_v_i64m1_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei64_v_i64m2_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei64_v_u64m1_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei64_v_u64m2_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei8_v_f16m1_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei8_v_f16m2_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei8_v_f16mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei8_v_f16mf4_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei16_v_f16m1_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei16_v_f16m2_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei16_v_f16mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei16_v_f16mf4_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei32_v_f16m1_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei32_v_f16m2_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei32_v_f16mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei32_v_f16mf4_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei64_v_f16m1_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei64_v_f16m2_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei64_v_f16mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei64_v_f16mf4_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei8_v_f32m1_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei8_v_f32m2_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei8_v_f32mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei16_v_f32m1_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei16_v_f32m2_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei16_v_f32mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei32_v_f32m1_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei32_v_f32m2_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei32_v_f32mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei64_v_f32m1_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei64_v_f32m2_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei64_v_f32mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei8_v_f64m1_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei8_v_f64m2_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei16_v_f64m1_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei16_v_f64m2_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei32_v_f64m1_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei32_v_f64m2_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei64_v_f64m1_m:
-case RISCV::BI__builtin_rvv_vluxseg3ei64_v_f64m2_m:
+case RISCV::BI__builtin_rvv_vluxseg3ei8_v_i8m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei8_v_i8m2_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei8_v_i8mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei8_v_i8mf4_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei8_v_i8mf8_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei8_v_u8m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei8_v_u8m2_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei8_v_u8mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei8_v_u8mf4_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei8_v_u8mf8_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei16_v_i8m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei16_v_i8m2_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei16_v_i8mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei16_v_i8mf4_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei16_v_i8mf8_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei16_v_u8m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei16_v_u8m2_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei16_v_u8mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei16_v_u8mf4_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei16_v_u8mf8_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei32_v_i8m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei32_v_i8m2_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei32_v_i8mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei32_v_i8mf4_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei32_v_i8mf8_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei32_v_u8m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei32_v_u8m2_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei32_v_u8mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei32_v_u8mf4_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei32_v_u8mf8_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei64_v_i8m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei64_v_i8mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei64_v_i8mf4_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei64_v_i8mf8_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei64_v_u8m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei64_v_u8mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei64_v_u8mf4_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei64_v_u8mf8_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei8_v_i16m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei8_v_i16m2_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei8_v_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei8_v_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei8_v_u16m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei8_v_u16m2_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei8_v_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei8_v_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei16_v_i16m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei16_v_i16m2_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei16_v_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei16_v_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei16_v_u16m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei16_v_u16m2_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei16_v_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei16_v_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei32_v_i16m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei32_v_i16m2_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei32_v_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei32_v_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei32_v_u16m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei32_v_u16m2_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei32_v_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei32_v_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei64_v_i16m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei64_v_i16m2_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei64_v_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei64_v_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei64_v_u16m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei64_v_u16m2_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei64_v_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei64_v_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei8_v_i32m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei8_v_i32m2_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei8_v_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei8_v_u32m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei8_v_u32m2_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei8_v_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei16_v_i32m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei16_v_i32m2_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei16_v_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei16_v_u32m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei16_v_u32m2_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei16_v_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei32_v_i32m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei32_v_i32m2_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei32_v_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei32_v_u32m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei32_v_u32m2_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei32_v_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei64_v_i32m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei64_v_i32m2_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei64_v_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei64_v_u32m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei64_v_u32m2_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei64_v_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei8_v_i64m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei8_v_i64m2_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei8_v_u64m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei8_v_u64m2_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei16_v_i64m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei16_v_i64m2_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei16_v_u64m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei16_v_u64m2_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei32_v_i64m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei32_v_i64m2_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei32_v_u64m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei32_v_u64m2_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei64_v_i64m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei64_v_i64m2_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei64_v_u64m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei64_v_u64m2_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei8_v_f16m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei8_v_f16m2_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei8_v_f16mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei8_v_f16mf4_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei16_v_f16m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei16_v_f16m2_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei16_v_f16mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei16_v_f16mf4_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei32_v_f16m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei32_v_f16m2_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei32_v_f16mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei32_v_f16mf4_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei64_v_f16m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei64_v_f16m2_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei64_v_f16mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei64_v_f16mf4_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei8_v_f32m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei8_v_f32m2_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei8_v_f32mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei16_v_f32m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei16_v_f32m2_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei16_v_f32mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei32_v_f32m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei32_v_f32m2_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei32_v_f32mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei64_v_f32m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei64_v_f32m2_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei64_v_f32mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei8_v_f64m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei8_v_f64m2_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei16_v_f64m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei16_v_f64m2_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei32_v_f64m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei32_v_f64m2_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei64_v_f64m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg3ei64_v_f64m2_mt:
   ID = Intrinsic::riscv_vluxseg3_mask;
   NF = 3;
 
@@ -12606,7 +12635,8 @@ case RISCV::BI__builtin_rvv_vluxseg3ei64_v_f64m2_m:
       Operands.push_back(Ops[2 * NF + 2]);
       Operands.push_back(Ops[NF]);
       Operands.push_back(Ops[2 * NF + 3]);
-      assert(Operands.size() == NF + 4);
+      Operands.push_back(Ops[2 * NF + 4]);
+      assert(Operands.size() == NF + 5);
       llvm::Function *F = CGM.getIntrinsic(ID, IntrinsicTypes);
       llvm::Value *LoadValue = Builder.CreateCall(F, Operands, "");
       clang::CharUnits Align =
@@ -12786,152 +12816,152 @@ case RISCV::BI__builtin_rvv_vluxseg4ei64_v_f64m2:
       return V;
     }
             break;
-case RISCV::BI__builtin_rvv_vluxseg4ei8_v_i8m1_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei8_v_i8m2_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei8_v_i8mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei8_v_i8mf4_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei8_v_i8mf8_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei8_v_u8m1_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei8_v_u8m2_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei8_v_u8mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei8_v_u8mf4_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei8_v_u8mf8_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei16_v_i8m1_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei16_v_i8m2_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei16_v_i8mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei16_v_i8mf4_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei16_v_i8mf8_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei16_v_u8m1_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei16_v_u8m2_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei16_v_u8mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei16_v_u8mf4_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei16_v_u8mf8_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei32_v_i8m1_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei32_v_i8m2_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei32_v_i8mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei32_v_i8mf4_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei32_v_i8mf8_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei32_v_u8m1_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei32_v_u8m2_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei32_v_u8mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei32_v_u8mf4_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei32_v_u8mf8_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei64_v_i8m1_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei64_v_i8mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei64_v_i8mf4_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei64_v_i8mf8_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei64_v_u8m1_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei64_v_u8mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei64_v_u8mf4_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei64_v_u8mf8_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei8_v_i16m1_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei8_v_i16m2_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei8_v_i16mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei8_v_i16mf4_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei8_v_u16m1_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei8_v_u16m2_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei8_v_u16mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei8_v_u16mf4_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei16_v_i16m1_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei16_v_i16m2_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei16_v_i16mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei16_v_i16mf4_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei16_v_u16m1_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei16_v_u16m2_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei16_v_u16mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei16_v_u16mf4_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei32_v_i16m1_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei32_v_i16m2_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei32_v_i16mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei32_v_i16mf4_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei32_v_u16m1_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei32_v_u16m2_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei32_v_u16mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei32_v_u16mf4_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei64_v_i16m1_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei64_v_i16m2_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei64_v_i16mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei64_v_i16mf4_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei64_v_u16m1_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei64_v_u16m2_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei64_v_u16mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei64_v_u16mf4_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei8_v_i32m1_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei8_v_i32m2_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei8_v_i32mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei8_v_u32m1_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei8_v_u32m2_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei8_v_u32mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei16_v_i32m1_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei16_v_i32m2_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei16_v_i32mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei16_v_u32m1_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei16_v_u32m2_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei16_v_u32mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei32_v_i32m1_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei32_v_i32m2_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei32_v_i32mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei32_v_u32m1_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei32_v_u32m2_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei32_v_u32mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei64_v_i32m1_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei64_v_i32m2_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei64_v_i32mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei64_v_u32m1_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei64_v_u32m2_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei64_v_u32mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei8_v_i64m1_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei8_v_i64m2_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei8_v_u64m1_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei8_v_u64m2_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei16_v_i64m1_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei16_v_i64m2_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei16_v_u64m1_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei16_v_u64m2_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei32_v_i64m1_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei32_v_i64m2_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei32_v_u64m1_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei32_v_u64m2_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei64_v_i64m1_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei64_v_i64m2_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei64_v_u64m1_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei64_v_u64m2_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei8_v_f16m1_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei8_v_f16m2_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei8_v_f16mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei8_v_f16mf4_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei16_v_f16m1_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei16_v_f16m2_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei16_v_f16mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei16_v_f16mf4_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei32_v_f16m1_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei32_v_f16m2_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei32_v_f16mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei32_v_f16mf4_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei64_v_f16m1_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei64_v_f16m2_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei64_v_f16mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei64_v_f16mf4_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei8_v_f32m1_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei8_v_f32m2_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei8_v_f32mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei16_v_f32m1_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei16_v_f32m2_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei16_v_f32mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei32_v_f32m1_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei32_v_f32m2_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei32_v_f32mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei64_v_f32m1_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei64_v_f32m2_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei64_v_f32mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei8_v_f64m1_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei8_v_f64m2_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei16_v_f64m1_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei16_v_f64m2_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei32_v_f64m1_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei32_v_f64m2_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei64_v_f64m1_m:
-case RISCV::BI__builtin_rvv_vluxseg4ei64_v_f64m2_m:
+case RISCV::BI__builtin_rvv_vluxseg4ei8_v_i8m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei8_v_i8m2_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei8_v_i8mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei8_v_i8mf4_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei8_v_i8mf8_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei8_v_u8m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei8_v_u8m2_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei8_v_u8mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei8_v_u8mf4_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei8_v_u8mf8_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei16_v_i8m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei16_v_i8m2_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei16_v_i8mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei16_v_i8mf4_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei16_v_i8mf8_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei16_v_u8m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei16_v_u8m2_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei16_v_u8mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei16_v_u8mf4_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei16_v_u8mf8_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei32_v_i8m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei32_v_i8m2_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei32_v_i8mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei32_v_i8mf4_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei32_v_i8mf8_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei32_v_u8m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei32_v_u8m2_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei32_v_u8mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei32_v_u8mf4_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei32_v_u8mf8_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei64_v_i8m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei64_v_i8mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei64_v_i8mf4_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei64_v_i8mf8_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei64_v_u8m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei64_v_u8mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei64_v_u8mf4_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei64_v_u8mf8_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei8_v_i16m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei8_v_i16m2_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei8_v_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei8_v_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei8_v_u16m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei8_v_u16m2_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei8_v_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei8_v_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei16_v_i16m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei16_v_i16m2_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei16_v_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei16_v_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei16_v_u16m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei16_v_u16m2_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei16_v_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei16_v_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei32_v_i16m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei32_v_i16m2_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei32_v_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei32_v_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei32_v_u16m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei32_v_u16m2_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei32_v_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei32_v_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei64_v_i16m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei64_v_i16m2_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei64_v_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei64_v_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei64_v_u16m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei64_v_u16m2_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei64_v_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei64_v_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei8_v_i32m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei8_v_i32m2_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei8_v_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei8_v_u32m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei8_v_u32m2_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei8_v_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei16_v_i32m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei16_v_i32m2_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei16_v_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei16_v_u32m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei16_v_u32m2_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei16_v_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei32_v_i32m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei32_v_i32m2_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei32_v_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei32_v_u32m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei32_v_u32m2_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei32_v_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei64_v_i32m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei64_v_i32m2_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei64_v_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei64_v_u32m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei64_v_u32m2_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei64_v_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei8_v_i64m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei8_v_i64m2_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei8_v_u64m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei8_v_u64m2_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei16_v_i64m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei16_v_i64m2_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei16_v_u64m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei16_v_u64m2_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei32_v_i64m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei32_v_i64m2_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei32_v_u64m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei32_v_u64m2_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei64_v_i64m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei64_v_i64m2_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei64_v_u64m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei64_v_u64m2_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei8_v_f16m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei8_v_f16m2_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei8_v_f16mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei8_v_f16mf4_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei16_v_f16m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei16_v_f16m2_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei16_v_f16mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei16_v_f16mf4_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei32_v_f16m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei32_v_f16m2_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei32_v_f16mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei32_v_f16mf4_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei64_v_f16m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei64_v_f16m2_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei64_v_f16mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei64_v_f16mf4_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei8_v_f32m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei8_v_f32m2_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei8_v_f32mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei16_v_f32m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei16_v_f32m2_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei16_v_f32mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei32_v_f32m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei32_v_f32m2_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei32_v_f32mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei64_v_f32m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei64_v_f32m2_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei64_v_f32mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei8_v_f64m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei8_v_f64m2_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei16_v_f64m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei16_v_f64m2_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei32_v_f64m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei32_v_f64m2_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei64_v_f64m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg4ei64_v_f64m2_mt:
   ID = Intrinsic::riscv_vluxseg4_mask;
   NF = 4;
 
@@ -12947,7 +12977,8 @@ case RISCV::BI__builtin_rvv_vluxseg4ei64_v_f64m2_m:
       Operands.push_back(Ops[2 * NF + 2]);
       Operands.push_back(Ops[NF]);
       Operands.push_back(Ops[2 * NF + 3]);
-      assert(Operands.size() == NF + 4);
+      Operands.push_back(Ops[2 * NF + 4]);
+      assert(Operands.size() == NF + 5);
       llvm::Function *F = CGM.getIntrinsic(ID, IntrinsicTypes);
       llvm::Value *LoadValue = Builder.CreateCall(F, Operands, "");
       clang::CharUnits Align =
@@ -13085,110 +13116,110 @@ case RISCV::BI__builtin_rvv_vluxseg5ei64_v_f64m1:
       return V;
     }
             break;
-case RISCV::BI__builtin_rvv_vluxseg5ei8_v_i8m1_m:
-case RISCV::BI__builtin_rvv_vluxseg5ei8_v_i8mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg5ei8_v_i8mf4_m:
-case RISCV::BI__builtin_rvv_vluxseg5ei8_v_i8mf8_m:
-case RISCV::BI__builtin_rvv_vluxseg5ei8_v_u8m1_m:
-case RISCV::BI__builtin_rvv_vluxseg5ei8_v_u8mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg5ei8_v_u8mf4_m:
-case RISCV::BI__builtin_rvv_vluxseg5ei8_v_u8mf8_m:
-case RISCV::BI__builtin_rvv_vluxseg5ei16_v_i8m1_m:
-case RISCV::BI__builtin_rvv_vluxseg5ei16_v_i8mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg5ei16_v_i8mf4_m:
-case RISCV::BI__builtin_rvv_vluxseg5ei16_v_i8mf8_m:
-case RISCV::BI__builtin_rvv_vluxseg5ei16_v_u8m1_m:
-case RISCV::BI__builtin_rvv_vluxseg5ei16_v_u8mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg5ei16_v_u8mf4_m:
-case RISCV::BI__builtin_rvv_vluxseg5ei16_v_u8mf8_m:
-case RISCV::BI__builtin_rvv_vluxseg5ei32_v_i8m1_m:
-case RISCV::BI__builtin_rvv_vluxseg5ei32_v_i8mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg5ei32_v_i8mf4_m:
-case RISCV::BI__builtin_rvv_vluxseg5ei32_v_i8mf8_m:
-case RISCV::BI__builtin_rvv_vluxseg5ei32_v_u8m1_m:
-case RISCV::BI__builtin_rvv_vluxseg5ei32_v_u8mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg5ei32_v_u8mf4_m:
-case RISCV::BI__builtin_rvv_vluxseg5ei32_v_u8mf8_m:
-case RISCV::BI__builtin_rvv_vluxseg5ei64_v_i8m1_m:
-case RISCV::BI__builtin_rvv_vluxseg5ei64_v_i8mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg5ei64_v_i8mf4_m:
-case RISCV::BI__builtin_rvv_vluxseg5ei64_v_i8mf8_m:
-case RISCV::BI__builtin_rvv_vluxseg5ei64_v_u8m1_m:
-case RISCV::BI__builtin_rvv_vluxseg5ei64_v_u8mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg5ei64_v_u8mf4_m:
-case RISCV::BI__builtin_rvv_vluxseg5ei64_v_u8mf8_m:
-case RISCV::BI__builtin_rvv_vluxseg5ei8_v_i16m1_m:
-case RISCV::BI__builtin_rvv_vluxseg5ei8_v_i16mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg5ei8_v_i16mf4_m:
-case RISCV::BI__builtin_rvv_vluxseg5ei8_v_u16m1_m:
-case RISCV::BI__builtin_rvv_vluxseg5ei8_v_u16mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg5ei8_v_u16mf4_m:
-case RISCV::BI__builtin_rvv_vluxseg5ei16_v_i16m1_m:
-case RISCV::BI__builtin_rvv_vluxseg5ei16_v_i16mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg5ei16_v_i16mf4_m:
-case RISCV::BI__builtin_rvv_vluxseg5ei16_v_u16m1_m:
-case RISCV::BI__builtin_rvv_vluxseg5ei16_v_u16mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg5ei16_v_u16mf4_m:
-case RISCV::BI__builtin_rvv_vluxseg5ei32_v_i16m1_m:
-case RISCV::BI__builtin_rvv_vluxseg5ei32_v_i16mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg5ei32_v_i16mf4_m:
-case RISCV::BI__builtin_rvv_vluxseg5ei32_v_u16m1_m:
-case RISCV::BI__builtin_rvv_vluxseg5ei32_v_u16mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg5ei32_v_u16mf4_m:
-case RISCV::BI__builtin_rvv_vluxseg5ei64_v_i16m1_m:
-case RISCV::BI__builtin_rvv_vluxseg5ei64_v_i16mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg5ei64_v_i16mf4_m:
-case RISCV::BI__builtin_rvv_vluxseg5ei64_v_u16m1_m:
-case RISCV::BI__builtin_rvv_vluxseg5ei64_v_u16mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg5ei64_v_u16mf4_m:
-case RISCV::BI__builtin_rvv_vluxseg5ei8_v_i32m1_m:
-case RISCV::BI__builtin_rvv_vluxseg5ei8_v_i32mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg5ei8_v_u32m1_m:
-case RISCV::BI__builtin_rvv_vluxseg5ei8_v_u32mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg5ei16_v_i32m1_m:
-case RISCV::BI__builtin_rvv_vluxseg5ei16_v_i32mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg5ei16_v_u32m1_m:
-case RISCV::BI__builtin_rvv_vluxseg5ei16_v_u32mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg5ei32_v_i32m1_m:
-case RISCV::BI__builtin_rvv_vluxseg5ei32_v_i32mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg5ei32_v_u32m1_m:
-case RISCV::BI__builtin_rvv_vluxseg5ei32_v_u32mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg5ei64_v_i32m1_m:
-case RISCV::BI__builtin_rvv_vluxseg5ei64_v_i32mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg5ei64_v_u32m1_m:
-case RISCV::BI__builtin_rvv_vluxseg5ei64_v_u32mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg5ei8_v_i64m1_m:
-case RISCV::BI__builtin_rvv_vluxseg5ei8_v_u64m1_m:
-case RISCV::BI__builtin_rvv_vluxseg5ei16_v_i64m1_m:
-case RISCV::BI__builtin_rvv_vluxseg5ei16_v_u64m1_m:
-case RISCV::BI__builtin_rvv_vluxseg5ei32_v_i64m1_m:
-case RISCV::BI__builtin_rvv_vluxseg5ei32_v_u64m1_m:
-case RISCV::BI__builtin_rvv_vluxseg5ei64_v_i64m1_m:
-case RISCV::BI__builtin_rvv_vluxseg5ei64_v_u64m1_m:
-case RISCV::BI__builtin_rvv_vluxseg5ei8_v_f16m1_m:
-case RISCV::BI__builtin_rvv_vluxseg5ei8_v_f16mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg5ei8_v_f16mf4_m:
-case RISCV::BI__builtin_rvv_vluxseg5ei16_v_f16m1_m:
-case RISCV::BI__builtin_rvv_vluxseg5ei16_v_f16mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg5ei16_v_f16mf4_m:
-case RISCV::BI__builtin_rvv_vluxseg5ei32_v_f16m1_m:
-case RISCV::BI__builtin_rvv_vluxseg5ei32_v_f16mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg5ei32_v_f16mf4_m:
-case RISCV::BI__builtin_rvv_vluxseg5ei64_v_f16m1_m:
-case RISCV::BI__builtin_rvv_vluxseg5ei64_v_f16mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg5ei64_v_f16mf4_m:
-case RISCV::BI__builtin_rvv_vluxseg5ei8_v_f32m1_m:
-case RISCV::BI__builtin_rvv_vluxseg5ei8_v_f32mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg5ei16_v_f32m1_m:
-case RISCV::BI__builtin_rvv_vluxseg5ei16_v_f32mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg5ei32_v_f32m1_m:
-case RISCV::BI__builtin_rvv_vluxseg5ei32_v_f32mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg5ei64_v_f32m1_m:
-case RISCV::BI__builtin_rvv_vluxseg5ei64_v_f32mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg5ei8_v_f64m1_m:
-case RISCV::BI__builtin_rvv_vluxseg5ei16_v_f64m1_m:
-case RISCV::BI__builtin_rvv_vluxseg5ei32_v_f64m1_m:
-case RISCV::BI__builtin_rvv_vluxseg5ei64_v_f64m1_m:
+case RISCV::BI__builtin_rvv_vluxseg5ei8_v_i8m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg5ei8_v_i8mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg5ei8_v_i8mf4_mt:
+case RISCV::BI__builtin_rvv_vluxseg5ei8_v_i8mf8_mt:
+case RISCV::BI__builtin_rvv_vluxseg5ei8_v_u8m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg5ei8_v_u8mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg5ei8_v_u8mf4_mt:
+case RISCV::BI__builtin_rvv_vluxseg5ei8_v_u8mf8_mt:
+case RISCV::BI__builtin_rvv_vluxseg5ei16_v_i8m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg5ei16_v_i8mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg5ei16_v_i8mf4_mt:
+case RISCV::BI__builtin_rvv_vluxseg5ei16_v_i8mf8_mt:
+case RISCV::BI__builtin_rvv_vluxseg5ei16_v_u8m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg5ei16_v_u8mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg5ei16_v_u8mf4_mt:
+case RISCV::BI__builtin_rvv_vluxseg5ei16_v_u8mf8_mt:
+case RISCV::BI__builtin_rvv_vluxseg5ei32_v_i8m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg5ei32_v_i8mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg5ei32_v_i8mf4_mt:
+case RISCV::BI__builtin_rvv_vluxseg5ei32_v_i8mf8_mt:
+case RISCV::BI__builtin_rvv_vluxseg5ei32_v_u8m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg5ei32_v_u8mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg5ei32_v_u8mf4_mt:
+case RISCV::BI__builtin_rvv_vluxseg5ei32_v_u8mf8_mt:
+case RISCV::BI__builtin_rvv_vluxseg5ei64_v_i8m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg5ei64_v_i8mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg5ei64_v_i8mf4_mt:
+case RISCV::BI__builtin_rvv_vluxseg5ei64_v_i8mf8_mt:
+case RISCV::BI__builtin_rvv_vluxseg5ei64_v_u8m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg5ei64_v_u8mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg5ei64_v_u8mf4_mt:
+case RISCV::BI__builtin_rvv_vluxseg5ei64_v_u8mf8_mt:
+case RISCV::BI__builtin_rvv_vluxseg5ei8_v_i16m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg5ei8_v_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg5ei8_v_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vluxseg5ei8_v_u16m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg5ei8_v_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg5ei8_v_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vluxseg5ei16_v_i16m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg5ei16_v_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg5ei16_v_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vluxseg5ei16_v_u16m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg5ei16_v_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg5ei16_v_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vluxseg5ei32_v_i16m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg5ei32_v_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg5ei32_v_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vluxseg5ei32_v_u16m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg5ei32_v_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg5ei32_v_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vluxseg5ei64_v_i16m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg5ei64_v_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg5ei64_v_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vluxseg5ei64_v_u16m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg5ei64_v_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg5ei64_v_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vluxseg5ei8_v_i32m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg5ei8_v_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg5ei8_v_u32m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg5ei8_v_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg5ei16_v_i32m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg5ei16_v_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg5ei16_v_u32m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg5ei16_v_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg5ei32_v_i32m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg5ei32_v_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg5ei32_v_u32m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg5ei32_v_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg5ei64_v_i32m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg5ei64_v_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg5ei64_v_u32m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg5ei64_v_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg5ei8_v_i64m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg5ei8_v_u64m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg5ei16_v_i64m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg5ei16_v_u64m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg5ei32_v_i64m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg5ei32_v_u64m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg5ei64_v_i64m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg5ei64_v_u64m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg5ei8_v_f16m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg5ei8_v_f16mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg5ei8_v_f16mf4_mt:
+case RISCV::BI__builtin_rvv_vluxseg5ei16_v_f16m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg5ei16_v_f16mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg5ei16_v_f16mf4_mt:
+case RISCV::BI__builtin_rvv_vluxseg5ei32_v_f16m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg5ei32_v_f16mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg5ei32_v_f16mf4_mt:
+case RISCV::BI__builtin_rvv_vluxseg5ei64_v_f16m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg5ei64_v_f16mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg5ei64_v_f16mf4_mt:
+case RISCV::BI__builtin_rvv_vluxseg5ei8_v_f32m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg5ei8_v_f32mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg5ei16_v_f32m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg5ei16_v_f32mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg5ei32_v_f32m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg5ei32_v_f32mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg5ei64_v_f32m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg5ei64_v_f32mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg5ei8_v_f64m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg5ei16_v_f64m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg5ei32_v_f64m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg5ei64_v_f64m1_mt:
   ID = Intrinsic::riscv_vluxseg5_mask;
   NF = 5;
 
@@ -13204,7 +13235,8 @@ case RISCV::BI__builtin_rvv_vluxseg5ei64_v_f64m1_m:
       Operands.push_back(Ops[2 * NF + 2]);
       Operands.push_back(Ops[NF]);
       Operands.push_back(Ops[2 * NF + 3]);
-      assert(Operands.size() == NF + 4);
+      Operands.push_back(Ops[2 * NF + 4]);
+      assert(Operands.size() == NF + 5);
       llvm::Function *F = CGM.getIntrinsic(ID, IntrinsicTypes);
       llvm::Value *LoadValue = Builder.CreateCall(F, Operands, "");
       clang::CharUnits Align =
@@ -13342,110 +13374,110 @@ case RISCV::BI__builtin_rvv_vluxseg6ei64_v_f64m1:
       return V;
     }
             break;
-case RISCV::BI__builtin_rvv_vluxseg6ei8_v_i8m1_m:
-case RISCV::BI__builtin_rvv_vluxseg6ei8_v_i8mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg6ei8_v_i8mf4_m:
-case RISCV::BI__builtin_rvv_vluxseg6ei8_v_i8mf8_m:
-case RISCV::BI__builtin_rvv_vluxseg6ei8_v_u8m1_m:
-case RISCV::BI__builtin_rvv_vluxseg6ei8_v_u8mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg6ei8_v_u8mf4_m:
-case RISCV::BI__builtin_rvv_vluxseg6ei8_v_u8mf8_m:
-case RISCV::BI__builtin_rvv_vluxseg6ei16_v_i8m1_m:
-case RISCV::BI__builtin_rvv_vluxseg6ei16_v_i8mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg6ei16_v_i8mf4_m:
-case RISCV::BI__builtin_rvv_vluxseg6ei16_v_i8mf8_m:
-case RISCV::BI__builtin_rvv_vluxseg6ei16_v_u8m1_m:
-case RISCV::BI__builtin_rvv_vluxseg6ei16_v_u8mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg6ei16_v_u8mf4_m:
-case RISCV::BI__builtin_rvv_vluxseg6ei16_v_u8mf8_m:
-case RISCV::BI__builtin_rvv_vluxseg6ei32_v_i8m1_m:
-case RISCV::BI__builtin_rvv_vluxseg6ei32_v_i8mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg6ei32_v_i8mf4_m:
-case RISCV::BI__builtin_rvv_vluxseg6ei32_v_i8mf8_m:
-case RISCV::BI__builtin_rvv_vluxseg6ei32_v_u8m1_m:
-case RISCV::BI__builtin_rvv_vluxseg6ei32_v_u8mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg6ei32_v_u8mf4_m:
-case RISCV::BI__builtin_rvv_vluxseg6ei32_v_u8mf8_m:
-case RISCV::BI__builtin_rvv_vluxseg6ei64_v_i8m1_m:
-case RISCV::BI__builtin_rvv_vluxseg6ei64_v_i8mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg6ei64_v_i8mf4_m:
-case RISCV::BI__builtin_rvv_vluxseg6ei64_v_i8mf8_m:
-case RISCV::BI__builtin_rvv_vluxseg6ei64_v_u8m1_m:
-case RISCV::BI__builtin_rvv_vluxseg6ei64_v_u8mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg6ei64_v_u8mf4_m:
-case RISCV::BI__builtin_rvv_vluxseg6ei64_v_u8mf8_m:
-case RISCV::BI__builtin_rvv_vluxseg6ei8_v_i16m1_m:
-case RISCV::BI__builtin_rvv_vluxseg6ei8_v_i16mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg6ei8_v_i16mf4_m:
-case RISCV::BI__builtin_rvv_vluxseg6ei8_v_u16m1_m:
-case RISCV::BI__builtin_rvv_vluxseg6ei8_v_u16mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg6ei8_v_u16mf4_m:
-case RISCV::BI__builtin_rvv_vluxseg6ei16_v_i16m1_m:
-case RISCV::BI__builtin_rvv_vluxseg6ei16_v_i16mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg6ei16_v_i16mf4_m:
-case RISCV::BI__builtin_rvv_vluxseg6ei16_v_u16m1_m:
-case RISCV::BI__builtin_rvv_vluxseg6ei16_v_u16mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg6ei16_v_u16mf4_m:
-case RISCV::BI__builtin_rvv_vluxseg6ei32_v_i16m1_m:
-case RISCV::BI__builtin_rvv_vluxseg6ei32_v_i16mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg6ei32_v_i16mf4_m:
-case RISCV::BI__builtin_rvv_vluxseg6ei32_v_u16m1_m:
-case RISCV::BI__builtin_rvv_vluxseg6ei32_v_u16mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg6ei32_v_u16mf4_m:
-case RISCV::BI__builtin_rvv_vluxseg6ei64_v_i16m1_m:
-case RISCV::BI__builtin_rvv_vluxseg6ei64_v_i16mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg6ei64_v_i16mf4_m:
-case RISCV::BI__builtin_rvv_vluxseg6ei64_v_u16m1_m:
-case RISCV::BI__builtin_rvv_vluxseg6ei64_v_u16mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg6ei64_v_u16mf4_m:
-case RISCV::BI__builtin_rvv_vluxseg6ei8_v_i32m1_m:
-case RISCV::BI__builtin_rvv_vluxseg6ei8_v_i32mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg6ei8_v_u32m1_m:
-case RISCV::BI__builtin_rvv_vluxseg6ei8_v_u32mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg6ei16_v_i32m1_m:
-case RISCV::BI__builtin_rvv_vluxseg6ei16_v_i32mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg6ei16_v_u32m1_m:
-case RISCV::BI__builtin_rvv_vluxseg6ei16_v_u32mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg6ei32_v_i32m1_m:
-case RISCV::BI__builtin_rvv_vluxseg6ei32_v_i32mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg6ei32_v_u32m1_m:
-case RISCV::BI__builtin_rvv_vluxseg6ei32_v_u32mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg6ei64_v_i32m1_m:
-case RISCV::BI__builtin_rvv_vluxseg6ei64_v_i32mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg6ei64_v_u32m1_m:
-case RISCV::BI__builtin_rvv_vluxseg6ei64_v_u32mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg6ei8_v_i64m1_m:
-case RISCV::BI__builtin_rvv_vluxseg6ei8_v_u64m1_m:
-case RISCV::BI__builtin_rvv_vluxseg6ei16_v_i64m1_m:
-case RISCV::BI__builtin_rvv_vluxseg6ei16_v_u64m1_m:
-case RISCV::BI__builtin_rvv_vluxseg6ei32_v_i64m1_m:
-case RISCV::BI__builtin_rvv_vluxseg6ei32_v_u64m1_m:
-case RISCV::BI__builtin_rvv_vluxseg6ei64_v_i64m1_m:
-case RISCV::BI__builtin_rvv_vluxseg6ei64_v_u64m1_m:
-case RISCV::BI__builtin_rvv_vluxseg6ei8_v_f16m1_m:
-case RISCV::BI__builtin_rvv_vluxseg6ei8_v_f16mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg6ei8_v_f16mf4_m:
-case RISCV::BI__builtin_rvv_vluxseg6ei16_v_f16m1_m:
-case RISCV::BI__builtin_rvv_vluxseg6ei16_v_f16mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg6ei16_v_f16mf4_m:
-case RISCV::BI__builtin_rvv_vluxseg6ei32_v_f16m1_m:
-case RISCV::BI__builtin_rvv_vluxseg6ei32_v_f16mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg6ei32_v_f16mf4_m:
-case RISCV::BI__builtin_rvv_vluxseg6ei64_v_f16m1_m:
-case RISCV::BI__builtin_rvv_vluxseg6ei64_v_f16mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg6ei64_v_f16mf4_m:
-case RISCV::BI__builtin_rvv_vluxseg6ei8_v_f32m1_m:
-case RISCV::BI__builtin_rvv_vluxseg6ei8_v_f32mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg6ei16_v_f32m1_m:
-case RISCV::BI__builtin_rvv_vluxseg6ei16_v_f32mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg6ei32_v_f32m1_m:
-case RISCV::BI__builtin_rvv_vluxseg6ei32_v_f32mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg6ei64_v_f32m1_m:
-case RISCV::BI__builtin_rvv_vluxseg6ei64_v_f32mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg6ei8_v_f64m1_m:
-case RISCV::BI__builtin_rvv_vluxseg6ei16_v_f64m1_m:
-case RISCV::BI__builtin_rvv_vluxseg6ei32_v_f64m1_m:
-case RISCV::BI__builtin_rvv_vluxseg6ei64_v_f64m1_m:
+case RISCV::BI__builtin_rvv_vluxseg6ei8_v_i8m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg6ei8_v_i8mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg6ei8_v_i8mf4_mt:
+case RISCV::BI__builtin_rvv_vluxseg6ei8_v_i8mf8_mt:
+case RISCV::BI__builtin_rvv_vluxseg6ei8_v_u8m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg6ei8_v_u8mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg6ei8_v_u8mf4_mt:
+case RISCV::BI__builtin_rvv_vluxseg6ei8_v_u8mf8_mt:
+case RISCV::BI__builtin_rvv_vluxseg6ei16_v_i8m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg6ei16_v_i8mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg6ei16_v_i8mf4_mt:
+case RISCV::BI__builtin_rvv_vluxseg6ei16_v_i8mf8_mt:
+case RISCV::BI__builtin_rvv_vluxseg6ei16_v_u8m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg6ei16_v_u8mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg6ei16_v_u8mf4_mt:
+case RISCV::BI__builtin_rvv_vluxseg6ei16_v_u8mf8_mt:
+case RISCV::BI__builtin_rvv_vluxseg6ei32_v_i8m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg6ei32_v_i8mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg6ei32_v_i8mf4_mt:
+case RISCV::BI__builtin_rvv_vluxseg6ei32_v_i8mf8_mt:
+case RISCV::BI__builtin_rvv_vluxseg6ei32_v_u8m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg6ei32_v_u8mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg6ei32_v_u8mf4_mt:
+case RISCV::BI__builtin_rvv_vluxseg6ei32_v_u8mf8_mt:
+case RISCV::BI__builtin_rvv_vluxseg6ei64_v_i8m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg6ei64_v_i8mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg6ei64_v_i8mf4_mt:
+case RISCV::BI__builtin_rvv_vluxseg6ei64_v_i8mf8_mt:
+case RISCV::BI__builtin_rvv_vluxseg6ei64_v_u8m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg6ei64_v_u8mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg6ei64_v_u8mf4_mt:
+case RISCV::BI__builtin_rvv_vluxseg6ei64_v_u8mf8_mt:
+case RISCV::BI__builtin_rvv_vluxseg6ei8_v_i16m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg6ei8_v_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg6ei8_v_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vluxseg6ei8_v_u16m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg6ei8_v_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg6ei8_v_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vluxseg6ei16_v_i16m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg6ei16_v_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg6ei16_v_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vluxseg6ei16_v_u16m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg6ei16_v_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg6ei16_v_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vluxseg6ei32_v_i16m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg6ei32_v_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg6ei32_v_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vluxseg6ei32_v_u16m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg6ei32_v_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg6ei32_v_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vluxseg6ei64_v_i16m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg6ei64_v_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg6ei64_v_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vluxseg6ei64_v_u16m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg6ei64_v_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg6ei64_v_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vluxseg6ei8_v_i32m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg6ei8_v_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg6ei8_v_u32m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg6ei8_v_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg6ei16_v_i32m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg6ei16_v_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg6ei16_v_u32m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg6ei16_v_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg6ei32_v_i32m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg6ei32_v_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg6ei32_v_u32m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg6ei32_v_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg6ei64_v_i32m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg6ei64_v_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg6ei64_v_u32m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg6ei64_v_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg6ei8_v_i64m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg6ei8_v_u64m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg6ei16_v_i64m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg6ei16_v_u64m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg6ei32_v_i64m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg6ei32_v_u64m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg6ei64_v_i64m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg6ei64_v_u64m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg6ei8_v_f16m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg6ei8_v_f16mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg6ei8_v_f16mf4_mt:
+case RISCV::BI__builtin_rvv_vluxseg6ei16_v_f16m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg6ei16_v_f16mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg6ei16_v_f16mf4_mt:
+case RISCV::BI__builtin_rvv_vluxseg6ei32_v_f16m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg6ei32_v_f16mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg6ei32_v_f16mf4_mt:
+case RISCV::BI__builtin_rvv_vluxseg6ei64_v_f16m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg6ei64_v_f16mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg6ei64_v_f16mf4_mt:
+case RISCV::BI__builtin_rvv_vluxseg6ei8_v_f32m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg6ei8_v_f32mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg6ei16_v_f32m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg6ei16_v_f32mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg6ei32_v_f32m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg6ei32_v_f32mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg6ei64_v_f32m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg6ei64_v_f32mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg6ei8_v_f64m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg6ei16_v_f64m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg6ei32_v_f64m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg6ei64_v_f64m1_mt:
   ID = Intrinsic::riscv_vluxseg6_mask;
   NF = 6;
 
@@ -13461,7 +13493,8 @@ case RISCV::BI__builtin_rvv_vluxseg6ei64_v_f64m1_m:
       Operands.push_back(Ops[2 * NF + 2]);
       Operands.push_back(Ops[NF]);
       Operands.push_back(Ops[2 * NF + 3]);
-      assert(Operands.size() == NF + 4);
+      Operands.push_back(Ops[2 * NF + 4]);
+      assert(Operands.size() == NF + 5);
       llvm::Function *F = CGM.getIntrinsic(ID, IntrinsicTypes);
       llvm::Value *LoadValue = Builder.CreateCall(F, Operands, "");
       clang::CharUnits Align =
@@ -13599,110 +13632,110 @@ case RISCV::BI__builtin_rvv_vluxseg7ei64_v_f64m1:
       return V;
     }
             break;
-case RISCV::BI__builtin_rvv_vluxseg7ei8_v_i8m1_m:
-case RISCV::BI__builtin_rvv_vluxseg7ei8_v_i8mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg7ei8_v_i8mf4_m:
-case RISCV::BI__builtin_rvv_vluxseg7ei8_v_i8mf8_m:
-case RISCV::BI__builtin_rvv_vluxseg7ei8_v_u8m1_m:
-case RISCV::BI__builtin_rvv_vluxseg7ei8_v_u8mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg7ei8_v_u8mf4_m:
-case RISCV::BI__builtin_rvv_vluxseg7ei8_v_u8mf8_m:
-case RISCV::BI__builtin_rvv_vluxseg7ei16_v_i8m1_m:
-case RISCV::BI__builtin_rvv_vluxseg7ei16_v_i8mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg7ei16_v_i8mf4_m:
-case RISCV::BI__builtin_rvv_vluxseg7ei16_v_i8mf8_m:
-case RISCV::BI__builtin_rvv_vluxseg7ei16_v_u8m1_m:
-case RISCV::BI__builtin_rvv_vluxseg7ei16_v_u8mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg7ei16_v_u8mf4_m:
-case RISCV::BI__builtin_rvv_vluxseg7ei16_v_u8mf8_m:
-case RISCV::BI__builtin_rvv_vluxseg7ei32_v_i8m1_m:
-case RISCV::BI__builtin_rvv_vluxseg7ei32_v_i8mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg7ei32_v_i8mf4_m:
-case RISCV::BI__builtin_rvv_vluxseg7ei32_v_i8mf8_m:
-case RISCV::BI__builtin_rvv_vluxseg7ei32_v_u8m1_m:
-case RISCV::BI__builtin_rvv_vluxseg7ei32_v_u8mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg7ei32_v_u8mf4_m:
-case RISCV::BI__builtin_rvv_vluxseg7ei32_v_u8mf8_m:
-case RISCV::BI__builtin_rvv_vluxseg7ei64_v_i8m1_m:
-case RISCV::BI__builtin_rvv_vluxseg7ei64_v_i8mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg7ei64_v_i8mf4_m:
-case RISCV::BI__builtin_rvv_vluxseg7ei64_v_i8mf8_m:
-case RISCV::BI__builtin_rvv_vluxseg7ei64_v_u8m1_m:
-case RISCV::BI__builtin_rvv_vluxseg7ei64_v_u8mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg7ei64_v_u8mf4_m:
-case RISCV::BI__builtin_rvv_vluxseg7ei64_v_u8mf8_m:
-case RISCV::BI__builtin_rvv_vluxseg7ei8_v_i16m1_m:
-case RISCV::BI__builtin_rvv_vluxseg7ei8_v_i16mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg7ei8_v_i16mf4_m:
-case RISCV::BI__builtin_rvv_vluxseg7ei8_v_u16m1_m:
-case RISCV::BI__builtin_rvv_vluxseg7ei8_v_u16mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg7ei8_v_u16mf4_m:
-case RISCV::BI__builtin_rvv_vluxseg7ei16_v_i16m1_m:
-case RISCV::BI__builtin_rvv_vluxseg7ei16_v_i16mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg7ei16_v_i16mf4_m:
-case RISCV::BI__builtin_rvv_vluxseg7ei16_v_u16m1_m:
-case RISCV::BI__builtin_rvv_vluxseg7ei16_v_u16mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg7ei16_v_u16mf4_m:
-case RISCV::BI__builtin_rvv_vluxseg7ei32_v_i16m1_m:
-case RISCV::BI__builtin_rvv_vluxseg7ei32_v_i16mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg7ei32_v_i16mf4_m:
-case RISCV::BI__builtin_rvv_vluxseg7ei32_v_u16m1_m:
-case RISCV::BI__builtin_rvv_vluxseg7ei32_v_u16mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg7ei32_v_u16mf4_m:
-case RISCV::BI__builtin_rvv_vluxseg7ei64_v_i16m1_m:
-case RISCV::BI__builtin_rvv_vluxseg7ei64_v_i16mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg7ei64_v_i16mf4_m:
-case RISCV::BI__builtin_rvv_vluxseg7ei64_v_u16m1_m:
-case RISCV::BI__builtin_rvv_vluxseg7ei64_v_u16mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg7ei64_v_u16mf4_m:
-case RISCV::BI__builtin_rvv_vluxseg7ei8_v_i32m1_m:
-case RISCV::BI__builtin_rvv_vluxseg7ei8_v_i32mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg7ei8_v_u32m1_m:
-case RISCV::BI__builtin_rvv_vluxseg7ei8_v_u32mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg7ei16_v_i32m1_m:
-case RISCV::BI__builtin_rvv_vluxseg7ei16_v_i32mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg7ei16_v_u32m1_m:
-case RISCV::BI__builtin_rvv_vluxseg7ei16_v_u32mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg7ei32_v_i32m1_m:
-case RISCV::BI__builtin_rvv_vluxseg7ei32_v_i32mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg7ei32_v_u32m1_m:
-case RISCV::BI__builtin_rvv_vluxseg7ei32_v_u32mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg7ei64_v_i32m1_m:
-case RISCV::BI__builtin_rvv_vluxseg7ei64_v_i32mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg7ei64_v_u32m1_m:
-case RISCV::BI__builtin_rvv_vluxseg7ei64_v_u32mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg7ei8_v_i64m1_m:
-case RISCV::BI__builtin_rvv_vluxseg7ei8_v_u64m1_m:
-case RISCV::BI__builtin_rvv_vluxseg7ei16_v_i64m1_m:
-case RISCV::BI__builtin_rvv_vluxseg7ei16_v_u64m1_m:
-case RISCV::BI__builtin_rvv_vluxseg7ei32_v_i64m1_m:
-case RISCV::BI__builtin_rvv_vluxseg7ei32_v_u64m1_m:
-case RISCV::BI__builtin_rvv_vluxseg7ei64_v_i64m1_m:
-case RISCV::BI__builtin_rvv_vluxseg7ei64_v_u64m1_m:
-case RISCV::BI__builtin_rvv_vluxseg7ei8_v_f16m1_m:
-case RISCV::BI__builtin_rvv_vluxseg7ei8_v_f16mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg7ei8_v_f16mf4_m:
-case RISCV::BI__builtin_rvv_vluxseg7ei16_v_f16m1_m:
-case RISCV::BI__builtin_rvv_vluxseg7ei16_v_f16mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg7ei16_v_f16mf4_m:
-case RISCV::BI__builtin_rvv_vluxseg7ei32_v_f16m1_m:
-case RISCV::BI__builtin_rvv_vluxseg7ei32_v_f16mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg7ei32_v_f16mf4_m:
-case RISCV::BI__builtin_rvv_vluxseg7ei64_v_f16m1_m:
-case RISCV::BI__builtin_rvv_vluxseg7ei64_v_f16mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg7ei64_v_f16mf4_m:
-case RISCV::BI__builtin_rvv_vluxseg7ei8_v_f32m1_m:
-case RISCV::BI__builtin_rvv_vluxseg7ei8_v_f32mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg7ei16_v_f32m1_m:
-case RISCV::BI__builtin_rvv_vluxseg7ei16_v_f32mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg7ei32_v_f32m1_m:
-case RISCV::BI__builtin_rvv_vluxseg7ei32_v_f32mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg7ei64_v_f32m1_m:
-case RISCV::BI__builtin_rvv_vluxseg7ei64_v_f32mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg7ei8_v_f64m1_m:
-case RISCV::BI__builtin_rvv_vluxseg7ei16_v_f64m1_m:
-case RISCV::BI__builtin_rvv_vluxseg7ei32_v_f64m1_m:
-case RISCV::BI__builtin_rvv_vluxseg7ei64_v_f64m1_m:
+case RISCV::BI__builtin_rvv_vluxseg7ei8_v_i8m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg7ei8_v_i8mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg7ei8_v_i8mf4_mt:
+case RISCV::BI__builtin_rvv_vluxseg7ei8_v_i8mf8_mt:
+case RISCV::BI__builtin_rvv_vluxseg7ei8_v_u8m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg7ei8_v_u8mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg7ei8_v_u8mf4_mt:
+case RISCV::BI__builtin_rvv_vluxseg7ei8_v_u8mf8_mt:
+case RISCV::BI__builtin_rvv_vluxseg7ei16_v_i8m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg7ei16_v_i8mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg7ei16_v_i8mf4_mt:
+case RISCV::BI__builtin_rvv_vluxseg7ei16_v_i8mf8_mt:
+case RISCV::BI__builtin_rvv_vluxseg7ei16_v_u8m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg7ei16_v_u8mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg7ei16_v_u8mf4_mt:
+case RISCV::BI__builtin_rvv_vluxseg7ei16_v_u8mf8_mt:
+case RISCV::BI__builtin_rvv_vluxseg7ei32_v_i8m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg7ei32_v_i8mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg7ei32_v_i8mf4_mt:
+case RISCV::BI__builtin_rvv_vluxseg7ei32_v_i8mf8_mt:
+case RISCV::BI__builtin_rvv_vluxseg7ei32_v_u8m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg7ei32_v_u8mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg7ei32_v_u8mf4_mt:
+case RISCV::BI__builtin_rvv_vluxseg7ei32_v_u8mf8_mt:
+case RISCV::BI__builtin_rvv_vluxseg7ei64_v_i8m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg7ei64_v_i8mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg7ei64_v_i8mf4_mt:
+case RISCV::BI__builtin_rvv_vluxseg7ei64_v_i8mf8_mt:
+case RISCV::BI__builtin_rvv_vluxseg7ei64_v_u8m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg7ei64_v_u8mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg7ei64_v_u8mf4_mt:
+case RISCV::BI__builtin_rvv_vluxseg7ei64_v_u8mf8_mt:
+case RISCV::BI__builtin_rvv_vluxseg7ei8_v_i16m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg7ei8_v_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg7ei8_v_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vluxseg7ei8_v_u16m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg7ei8_v_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg7ei8_v_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vluxseg7ei16_v_i16m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg7ei16_v_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg7ei16_v_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vluxseg7ei16_v_u16m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg7ei16_v_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg7ei16_v_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vluxseg7ei32_v_i16m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg7ei32_v_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg7ei32_v_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vluxseg7ei32_v_u16m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg7ei32_v_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg7ei32_v_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vluxseg7ei64_v_i16m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg7ei64_v_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg7ei64_v_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vluxseg7ei64_v_u16m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg7ei64_v_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg7ei64_v_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vluxseg7ei8_v_i32m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg7ei8_v_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg7ei8_v_u32m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg7ei8_v_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg7ei16_v_i32m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg7ei16_v_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg7ei16_v_u32m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg7ei16_v_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg7ei32_v_i32m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg7ei32_v_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg7ei32_v_u32m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg7ei32_v_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg7ei64_v_i32m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg7ei64_v_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg7ei64_v_u32m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg7ei64_v_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg7ei8_v_i64m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg7ei8_v_u64m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg7ei16_v_i64m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg7ei16_v_u64m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg7ei32_v_i64m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg7ei32_v_u64m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg7ei64_v_i64m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg7ei64_v_u64m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg7ei8_v_f16m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg7ei8_v_f16mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg7ei8_v_f16mf4_mt:
+case RISCV::BI__builtin_rvv_vluxseg7ei16_v_f16m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg7ei16_v_f16mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg7ei16_v_f16mf4_mt:
+case RISCV::BI__builtin_rvv_vluxseg7ei32_v_f16m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg7ei32_v_f16mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg7ei32_v_f16mf4_mt:
+case RISCV::BI__builtin_rvv_vluxseg7ei64_v_f16m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg7ei64_v_f16mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg7ei64_v_f16mf4_mt:
+case RISCV::BI__builtin_rvv_vluxseg7ei8_v_f32m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg7ei8_v_f32mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg7ei16_v_f32m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg7ei16_v_f32mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg7ei32_v_f32m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg7ei32_v_f32mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg7ei64_v_f32m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg7ei64_v_f32mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg7ei8_v_f64m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg7ei16_v_f64m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg7ei32_v_f64m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg7ei64_v_f64m1_mt:
   ID = Intrinsic::riscv_vluxseg7_mask;
   NF = 7;
 
@@ -13718,7 +13751,8 @@ case RISCV::BI__builtin_rvv_vluxseg7ei64_v_f64m1_m:
       Operands.push_back(Ops[2 * NF + 2]);
       Operands.push_back(Ops[NF]);
       Operands.push_back(Ops[2 * NF + 3]);
-      assert(Operands.size() == NF + 4);
+      Operands.push_back(Ops[2 * NF + 4]);
+      assert(Operands.size() == NF + 5);
       llvm::Function *F = CGM.getIntrinsic(ID, IntrinsicTypes);
       llvm::Value *LoadValue = Builder.CreateCall(F, Operands, "");
       clang::CharUnits Align =
@@ -13856,110 +13890,110 @@ case RISCV::BI__builtin_rvv_vluxseg8ei64_v_f64m1:
       return V;
     }
             break;
-case RISCV::BI__builtin_rvv_vluxseg8ei8_v_i8m1_m:
-case RISCV::BI__builtin_rvv_vluxseg8ei8_v_i8mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg8ei8_v_i8mf4_m:
-case RISCV::BI__builtin_rvv_vluxseg8ei8_v_i8mf8_m:
-case RISCV::BI__builtin_rvv_vluxseg8ei8_v_u8m1_m:
-case RISCV::BI__builtin_rvv_vluxseg8ei8_v_u8mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg8ei8_v_u8mf4_m:
-case RISCV::BI__builtin_rvv_vluxseg8ei8_v_u8mf8_m:
-case RISCV::BI__builtin_rvv_vluxseg8ei16_v_i8m1_m:
-case RISCV::BI__builtin_rvv_vluxseg8ei16_v_i8mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg8ei16_v_i8mf4_m:
-case RISCV::BI__builtin_rvv_vluxseg8ei16_v_i8mf8_m:
-case RISCV::BI__builtin_rvv_vluxseg8ei16_v_u8m1_m:
-case RISCV::BI__builtin_rvv_vluxseg8ei16_v_u8mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg8ei16_v_u8mf4_m:
-case RISCV::BI__builtin_rvv_vluxseg8ei16_v_u8mf8_m:
-case RISCV::BI__builtin_rvv_vluxseg8ei32_v_i8m1_m:
-case RISCV::BI__builtin_rvv_vluxseg8ei32_v_i8mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg8ei32_v_i8mf4_m:
-case RISCV::BI__builtin_rvv_vluxseg8ei32_v_i8mf8_m:
-case RISCV::BI__builtin_rvv_vluxseg8ei32_v_u8m1_m:
-case RISCV::BI__builtin_rvv_vluxseg8ei32_v_u8mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg8ei32_v_u8mf4_m:
-case RISCV::BI__builtin_rvv_vluxseg8ei32_v_u8mf8_m:
-case RISCV::BI__builtin_rvv_vluxseg8ei64_v_i8m1_m:
-case RISCV::BI__builtin_rvv_vluxseg8ei64_v_i8mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg8ei64_v_i8mf4_m:
-case RISCV::BI__builtin_rvv_vluxseg8ei64_v_i8mf8_m:
-case RISCV::BI__builtin_rvv_vluxseg8ei64_v_u8m1_m:
-case RISCV::BI__builtin_rvv_vluxseg8ei64_v_u8mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg8ei64_v_u8mf4_m:
-case RISCV::BI__builtin_rvv_vluxseg8ei64_v_u8mf8_m:
-case RISCV::BI__builtin_rvv_vluxseg8ei8_v_i16m1_m:
-case RISCV::BI__builtin_rvv_vluxseg8ei8_v_i16mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg8ei8_v_i16mf4_m:
-case RISCV::BI__builtin_rvv_vluxseg8ei8_v_u16m1_m:
-case RISCV::BI__builtin_rvv_vluxseg8ei8_v_u16mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg8ei8_v_u16mf4_m:
-case RISCV::BI__builtin_rvv_vluxseg8ei16_v_i16m1_m:
-case RISCV::BI__builtin_rvv_vluxseg8ei16_v_i16mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg8ei16_v_i16mf4_m:
-case RISCV::BI__builtin_rvv_vluxseg8ei16_v_u16m1_m:
-case RISCV::BI__builtin_rvv_vluxseg8ei16_v_u16mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg8ei16_v_u16mf4_m:
-case RISCV::BI__builtin_rvv_vluxseg8ei32_v_i16m1_m:
-case RISCV::BI__builtin_rvv_vluxseg8ei32_v_i16mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg8ei32_v_i16mf4_m:
-case RISCV::BI__builtin_rvv_vluxseg8ei32_v_u16m1_m:
-case RISCV::BI__builtin_rvv_vluxseg8ei32_v_u16mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg8ei32_v_u16mf4_m:
-case RISCV::BI__builtin_rvv_vluxseg8ei64_v_i16m1_m:
-case RISCV::BI__builtin_rvv_vluxseg8ei64_v_i16mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg8ei64_v_i16mf4_m:
-case RISCV::BI__builtin_rvv_vluxseg8ei64_v_u16m1_m:
-case RISCV::BI__builtin_rvv_vluxseg8ei64_v_u16mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg8ei64_v_u16mf4_m:
-case RISCV::BI__builtin_rvv_vluxseg8ei8_v_i32m1_m:
-case RISCV::BI__builtin_rvv_vluxseg8ei8_v_i32mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg8ei8_v_u32m1_m:
-case RISCV::BI__builtin_rvv_vluxseg8ei8_v_u32mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg8ei16_v_i32m1_m:
-case RISCV::BI__builtin_rvv_vluxseg8ei16_v_i32mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg8ei16_v_u32m1_m:
-case RISCV::BI__builtin_rvv_vluxseg8ei16_v_u32mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg8ei32_v_i32m1_m:
-case RISCV::BI__builtin_rvv_vluxseg8ei32_v_i32mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg8ei32_v_u32m1_m:
-case RISCV::BI__builtin_rvv_vluxseg8ei32_v_u32mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg8ei64_v_i32m1_m:
-case RISCV::BI__builtin_rvv_vluxseg8ei64_v_i32mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg8ei64_v_u32m1_m:
-case RISCV::BI__builtin_rvv_vluxseg8ei64_v_u32mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg8ei8_v_i64m1_m:
-case RISCV::BI__builtin_rvv_vluxseg8ei8_v_u64m1_m:
-case RISCV::BI__builtin_rvv_vluxseg8ei16_v_i64m1_m:
-case RISCV::BI__builtin_rvv_vluxseg8ei16_v_u64m1_m:
-case RISCV::BI__builtin_rvv_vluxseg8ei32_v_i64m1_m:
-case RISCV::BI__builtin_rvv_vluxseg8ei32_v_u64m1_m:
-case RISCV::BI__builtin_rvv_vluxseg8ei64_v_i64m1_m:
-case RISCV::BI__builtin_rvv_vluxseg8ei64_v_u64m1_m:
-case RISCV::BI__builtin_rvv_vluxseg8ei8_v_f16m1_m:
-case RISCV::BI__builtin_rvv_vluxseg8ei8_v_f16mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg8ei8_v_f16mf4_m:
-case RISCV::BI__builtin_rvv_vluxseg8ei16_v_f16m1_m:
-case RISCV::BI__builtin_rvv_vluxseg8ei16_v_f16mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg8ei16_v_f16mf4_m:
-case RISCV::BI__builtin_rvv_vluxseg8ei32_v_f16m1_m:
-case RISCV::BI__builtin_rvv_vluxseg8ei32_v_f16mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg8ei32_v_f16mf4_m:
-case RISCV::BI__builtin_rvv_vluxseg8ei64_v_f16m1_m:
-case RISCV::BI__builtin_rvv_vluxseg8ei64_v_f16mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg8ei64_v_f16mf4_m:
-case RISCV::BI__builtin_rvv_vluxseg8ei8_v_f32m1_m:
-case RISCV::BI__builtin_rvv_vluxseg8ei8_v_f32mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg8ei16_v_f32m1_m:
-case RISCV::BI__builtin_rvv_vluxseg8ei16_v_f32mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg8ei32_v_f32m1_m:
-case RISCV::BI__builtin_rvv_vluxseg8ei32_v_f32mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg8ei64_v_f32m1_m:
-case RISCV::BI__builtin_rvv_vluxseg8ei64_v_f32mf2_m:
-case RISCV::BI__builtin_rvv_vluxseg8ei8_v_f64m1_m:
-case RISCV::BI__builtin_rvv_vluxseg8ei16_v_f64m1_m:
-case RISCV::BI__builtin_rvv_vluxseg8ei32_v_f64m1_m:
-case RISCV::BI__builtin_rvv_vluxseg8ei64_v_f64m1_m:
+case RISCV::BI__builtin_rvv_vluxseg8ei8_v_i8m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg8ei8_v_i8mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg8ei8_v_i8mf4_mt:
+case RISCV::BI__builtin_rvv_vluxseg8ei8_v_i8mf8_mt:
+case RISCV::BI__builtin_rvv_vluxseg8ei8_v_u8m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg8ei8_v_u8mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg8ei8_v_u8mf4_mt:
+case RISCV::BI__builtin_rvv_vluxseg8ei8_v_u8mf8_mt:
+case RISCV::BI__builtin_rvv_vluxseg8ei16_v_i8m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg8ei16_v_i8mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg8ei16_v_i8mf4_mt:
+case RISCV::BI__builtin_rvv_vluxseg8ei16_v_i8mf8_mt:
+case RISCV::BI__builtin_rvv_vluxseg8ei16_v_u8m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg8ei16_v_u8mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg8ei16_v_u8mf4_mt:
+case RISCV::BI__builtin_rvv_vluxseg8ei16_v_u8mf8_mt:
+case RISCV::BI__builtin_rvv_vluxseg8ei32_v_i8m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg8ei32_v_i8mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg8ei32_v_i8mf4_mt:
+case RISCV::BI__builtin_rvv_vluxseg8ei32_v_i8mf8_mt:
+case RISCV::BI__builtin_rvv_vluxseg8ei32_v_u8m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg8ei32_v_u8mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg8ei32_v_u8mf4_mt:
+case RISCV::BI__builtin_rvv_vluxseg8ei32_v_u8mf8_mt:
+case RISCV::BI__builtin_rvv_vluxseg8ei64_v_i8m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg8ei64_v_i8mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg8ei64_v_i8mf4_mt:
+case RISCV::BI__builtin_rvv_vluxseg8ei64_v_i8mf8_mt:
+case RISCV::BI__builtin_rvv_vluxseg8ei64_v_u8m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg8ei64_v_u8mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg8ei64_v_u8mf4_mt:
+case RISCV::BI__builtin_rvv_vluxseg8ei64_v_u8mf8_mt:
+case RISCV::BI__builtin_rvv_vluxseg8ei8_v_i16m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg8ei8_v_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg8ei8_v_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vluxseg8ei8_v_u16m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg8ei8_v_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg8ei8_v_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vluxseg8ei16_v_i16m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg8ei16_v_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg8ei16_v_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vluxseg8ei16_v_u16m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg8ei16_v_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg8ei16_v_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vluxseg8ei32_v_i16m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg8ei32_v_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg8ei32_v_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vluxseg8ei32_v_u16m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg8ei32_v_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg8ei32_v_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vluxseg8ei64_v_i16m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg8ei64_v_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg8ei64_v_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vluxseg8ei64_v_u16m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg8ei64_v_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg8ei64_v_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vluxseg8ei8_v_i32m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg8ei8_v_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg8ei8_v_u32m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg8ei8_v_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg8ei16_v_i32m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg8ei16_v_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg8ei16_v_u32m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg8ei16_v_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg8ei32_v_i32m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg8ei32_v_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg8ei32_v_u32m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg8ei32_v_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg8ei64_v_i32m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg8ei64_v_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg8ei64_v_u32m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg8ei64_v_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg8ei8_v_i64m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg8ei8_v_u64m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg8ei16_v_i64m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg8ei16_v_u64m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg8ei32_v_i64m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg8ei32_v_u64m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg8ei64_v_i64m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg8ei64_v_u64m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg8ei8_v_f16m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg8ei8_v_f16mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg8ei8_v_f16mf4_mt:
+case RISCV::BI__builtin_rvv_vluxseg8ei16_v_f16m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg8ei16_v_f16mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg8ei16_v_f16mf4_mt:
+case RISCV::BI__builtin_rvv_vluxseg8ei32_v_f16m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg8ei32_v_f16mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg8ei32_v_f16mf4_mt:
+case RISCV::BI__builtin_rvv_vluxseg8ei64_v_f16m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg8ei64_v_f16mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg8ei64_v_f16mf4_mt:
+case RISCV::BI__builtin_rvv_vluxseg8ei8_v_f32m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg8ei8_v_f32mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg8ei16_v_f32m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg8ei16_v_f32mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg8ei32_v_f32m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg8ei32_v_f32mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg8ei64_v_f32m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg8ei64_v_f32mf2_mt:
+case RISCV::BI__builtin_rvv_vluxseg8ei8_v_f64m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg8ei16_v_f64m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg8ei32_v_f64m1_mt:
+case RISCV::BI__builtin_rvv_vluxseg8ei64_v_f64m1_mt:
   ID = Intrinsic::riscv_vluxseg8_mask;
   NF = 8;
 
@@ -13975,7 +14009,8 @@ case RISCV::BI__builtin_rvv_vluxseg8ei64_v_f64m1_m:
       Operands.push_back(Ops[2 * NF + 2]);
       Operands.push_back(Ops[NF]);
       Operands.push_back(Ops[2 * NF + 3]);
-      assert(Operands.size() == NF + 4);
+      Operands.push_back(Ops[2 * NF + 4]);
+      assert(Operands.size() == NF + 5);
       llvm::Function *F = CGM.getIntrinsic(ID, IntrinsicTypes);
       llvm::Value *LoadValue = Builder.CreateCall(F, Operands, "");
       clang::CharUnits Align =
@@ -14620,52 +14655,52 @@ case RISCV::BI__builtin_rvv_vmax_vx_i64m8:
   ID = Intrinsic::riscv_vmax;
   IntrinsicTypes = {ResultType, Ops[1]->getType(), Ops.back()->getType()};
   break;
-case RISCV::BI__builtin_rvv_vmax_vv_i8m1_m:
-case RISCV::BI__builtin_rvv_vmax_vv_i8m2_m:
-case RISCV::BI__builtin_rvv_vmax_vv_i8m4_m:
-case RISCV::BI__builtin_rvv_vmax_vv_i8m8_m:
-case RISCV::BI__builtin_rvv_vmax_vv_i8mf2_m:
-case RISCV::BI__builtin_rvv_vmax_vv_i8mf4_m:
-case RISCV::BI__builtin_rvv_vmax_vv_i8mf8_m:
-case RISCV::BI__builtin_rvv_vmax_vv_i16m1_m:
-case RISCV::BI__builtin_rvv_vmax_vv_i16m2_m:
-case RISCV::BI__builtin_rvv_vmax_vv_i16m4_m:
-case RISCV::BI__builtin_rvv_vmax_vv_i16m8_m:
-case RISCV::BI__builtin_rvv_vmax_vv_i16mf2_m:
-case RISCV::BI__builtin_rvv_vmax_vv_i16mf4_m:
-case RISCV::BI__builtin_rvv_vmax_vv_i32m1_m:
-case RISCV::BI__builtin_rvv_vmax_vv_i32m2_m:
-case RISCV::BI__builtin_rvv_vmax_vv_i32m4_m:
-case RISCV::BI__builtin_rvv_vmax_vv_i32m8_m:
-case RISCV::BI__builtin_rvv_vmax_vv_i32mf2_m:
-case RISCV::BI__builtin_rvv_vmax_vv_i64m1_m:
-case RISCV::BI__builtin_rvv_vmax_vv_i64m2_m:
-case RISCV::BI__builtin_rvv_vmax_vv_i64m4_m:
-case RISCV::BI__builtin_rvv_vmax_vv_i64m8_m:
-case RISCV::BI__builtin_rvv_vmax_vx_i8m1_m:
-case RISCV::BI__builtin_rvv_vmax_vx_i8m2_m:
-case RISCV::BI__builtin_rvv_vmax_vx_i8m4_m:
-case RISCV::BI__builtin_rvv_vmax_vx_i8m8_m:
-case RISCV::BI__builtin_rvv_vmax_vx_i8mf2_m:
-case RISCV::BI__builtin_rvv_vmax_vx_i8mf4_m:
-case RISCV::BI__builtin_rvv_vmax_vx_i8mf8_m:
-case RISCV::BI__builtin_rvv_vmax_vx_i16m1_m:
-case RISCV::BI__builtin_rvv_vmax_vx_i16m2_m:
-case RISCV::BI__builtin_rvv_vmax_vx_i16m4_m:
-case RISCV::BI__builtin_rvv_vmax_vx_i16m8_m:
-case RISCV::BI__builtin_rvv_vmax_vx_i16mf2_m:
-case RISCV::BI__builtin_rvv_vmax_vx_i16mf4_m:
-case RISCV::BI__builtin_rvv_vmax_vx_i32m1_m:
-case RISCV::BI__builtin_rvv_vmax_vx_i32m2_m:
-case RISCV::BI__builtin_rvv_vmax_vx_i32m4_m:
-case RISCV::BI__builtin_rvv_vmax_vx_i32m8_m:
-case RISCV::BI__builtin_rvv_vmax_vx_i32mf2_m:
-case RISCV::BI__builtin_rvv_vmax_vx_i64m1_m:
-case RISCV::BI__builtin_rvv_vmax_vx_i64m2_m:
-case RISCV::BI__builtin_rvv_vmax_vx_i64m4_m:
-case RISCV::BI__builtin_rvv_vmax_vx_i64m8_m:
+case RISCV::BI__builtin_rvv_vmax_vv_i8m1_mt:
+case RISCV::BI__builtin_rvv_vmax_vv_i8m2_mt:
+case RISCV::BI__builtin_rvv_vmax_vv_i8m4_mt:
+case RISCV::BI__builtin_rvv_vmax_vv_i8m8_mt:
+case RISCV::BI__builtin_rvv_vmax_vv_i8mf2_mt:
+case RISCV::BI__builtin_rvv_vmax_vv_i8mf4_mt:
+case RISCV::BI__builtin_rvv_vmax_vv_i8mf8_mt:
+case RISCV::BI__builtin_rvv_vmax_vv_i16m1_mt:
+case RISCV::BI__builtin_rvv_vmax_vv_i16m2_mt:
+case RISCV::BI__builtin_rvv_vmax_vv_i16m4_mt:
+case RISCV::BI__builtin_rvv_vmax_vv_i16m8_mt:
+case RISCV::BI__builtin_rvv_vmax_vv_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vmax_vv_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vmax_vv_i32m1_mt:
+case RISCV::BI__builtin_rvv_vmax_vv_i32m2_mt:
+case RISCV::BI__builtin_rvv_vmax_vv_i32m4_mt:
+case RISCV::BI__builtin_rvv_vmax_vv_i32m8_mt:
+case RISCV::BI__builtin_rvv_vmax_vv_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vmax_vv_i64m1_mt:
+case RISCV::BI__builtin_rvv_vmax_vv_i64m2_mt:
+case RISCV::BI__builtin_rvv_vmax_vv_i64m4_mt:
+case RISCV::BI__builtin_rvv_vmax_vv_i64m8_mt:
+case RISCV::BI__builtin_rvv_vmax_vx_i8m1_mt:
+case RISCV::BI__builtin_rvv_vmax_vx_i8m2_mt:
+case RISCV::BI__builtin_rvv_vmax_vx_i8m4_mt:
+case RISCV::BI__builtin_rvv_vmax_vx_i8m8_mt:
+case RISCV::BI__builtin_rvv_vmax_vx_i8mf2_mt:
+case RISCV::BI__builtin_rvv_vmax_vx_i8mf4_mt:
+case RISCV::BI__builtin_rvv_vmax_vx_i8mf8_mt:
+case RISCV::BI__builtin_rvv_vmax_vx_i16m1_mt:
+case RISCV::BI__builtin_rvv_vmax_vx_i16m2_mt:
+case RISCV::BI__builtin_rvv_vmax_vx_i16m4_mt:
+case RISCV::BI__builtin_rvv_vmax_vx_i16m8_mt:
+case RISCV::BI__builtin_rvv_vmax_vx_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vmax_vx_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vmax_vx_i32m1_mt:
+case RISCV::BI__builtin_rvv_vmax_vx_i32m2_mt:
+case RISCV::BI__builtin_rvv_vmax_vx_i32m4_mt:
+case RISCV::BI__builtin_rvv_vmax_vx_i32m8_mt:
+case RISCV::BI__builtin_rvv_vmax_vx_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vmax_vx_i64m1_mt:
+case RISCV::BI__builtin_rvv_vmax_vx_i64m2_mt:
+case RISCV::BI__builtin_rvv_vmax_vx_i64m4_mt:
+case RISCV::BI__builtin_rvv_vmax_vx_i64m8_mt:
   ID = Intrinsic::riscv_vmax_mask;
-  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 1);
+  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 2);
   IntrinsicTypes = {ResultType, Ops[2]->getType(), Ops.back()->getType()};
   break;
 case RISCV::BI__builtin_rvv_vmaxu_vv_u8m1:
@@ -14715,52 +14750,52 @@ case RISCV::BI__builtin_rvv_vmaxu_vx_u64m8:
   ID = Intrinsic::riscv_vmaxu;
   IntrinsicTypes = {ResultType, Ops[1]->getType(), Ops.back()->getType()};
   break;
-case RISCV::BI__builtin_rvv_vmaxu_vv_u8m1_m:
-case RISCV::BI__builtin_rvv_vmaxu_vv_u8m2_m:
-case RISCV::BI__builtin_rvv_vmaxu_vv_u8m4_m:
-case RISCV::BI__builtin_rvv_vmaxu_vv_u8m8_m:
-case RISCV::BI__builtin_rvv_vmaxu_vv_u8mf2_m:
-case RISCV::BI__builtin_rvv_vmaxu_vv_u8mf4_m:
-case RISCV::BI__builtin_rvv_vmaxu_vv_u8mf8_m:
-case RISCV::BI__builtin_rvv_vmaxu_vv_u16m1_m:
-case RISCV::BI__builtin_rvv_vmaxu_vv_u16m2_m:
-case RISCV::BI__builtin_rvv_vmaxu_vv_u16m4_m:
-case RISCV::BI__builtin_rvv_vmaxu_vv_u16m8_m:
-case RISCV::BI__builtin_rvv_vmaxu_vv_u16mf2_m:
-case RISCV::BI__builtin_rvv_vmaxu_vv_u16mf4_m:
-case RISCV::BI__builtin_rvv_vmaxu_vv_u32m1_m:
-case RISCV::BI__builtin_rvv_vmaxu_vv_u32m2_m:
-case RISCV::BI__builtin_rvv_vmaxu_vv_u32m4_m:
-case RISCV::BI__builtin_rvv_vmaxu_vv_u32m8_m:
-case RISCV::BI__builtin_rvv_vmaxu_vv_u32mf2_m:
-case RISCV::BI__builtin_rvv_vmaxu_vv_u64m1_m:
-case RISCV::BI__builtin_rvv_vmaxu_vv_u64m2_m:
-case RISCV::BI__builtin_rvv_vmaxu_vv_u64m4_m:
-case RISCV::BI__builtin_rvv_vmaxu_vv_u64m8_m:
-case RISCV::BI__builtin_rvv_vmaxu_vx_u8m1_m:
-case RISCV::BI__builtin_rvv_vmaxu_vx_u8m2_m:
-case RISCV::BI__builtin_rvv_vmaxu_vx_u8m4_m:
-case RISCV::BI__builtin_rvv_vmaxu_vx_u8m8_m:
-case RISCV::BI__builtin_rvv_vmaxu_vx_u8mf2_m:
-case RISCV::BI__builtin_rvv_vmaxu_vx_u8mf4_m:
-case RISCV::BI__builtin_rvv_vmaxu_vx_u8mf8_m:
-case RISCV::BI__builtin_rvv_vmaxu_vx_u16m1_m:
-case RISCV::BI__builtin_rvv_vmaxu_vx_u16m2_m:
-case RISCV::BI__builtin_rvv_vmaxu_vx_u16m4_m:
-case RISCV::BI__builtin_rvv_vmaxu_vx_u16m8_m:
-case RISCV::BI__builtin_rvv_vmaxu_vx_u16mf2_m:
-case RISCV::BI__builtin_rvv_vmaxu_vx_u16mf4_m:
-case RISCV::BI__builtin_rvv_vmaxu_vx_u32m1_m:
-case RISCV::BI__builtin_rvv_vmaxu_vx_u32m2_m:
-case RISCV::BI__builtin_rvv_vmaxu_vx_u32m4_m:
-case RISCV::BI__builtin_rvv_vmaxu_vx_u32m8_m:
-case RISCV::BI__builtin_rvv_vmaxu_vx_u32mf2_m:
-case RISCV::BI__builtin_rvv_vmaxu_vx_u64m1_m:
-case RISCV::BI__builtin_rvv_vmaxu_vx_u64m2_m:
-case RISCV::BI__builtin_rvv_vmaxu_vx_u64m4_m:
-case RISCV::BI__builtin_rvv_vmaxu_vx_u64m8_m:
+case RISCV::BI__builtin_rvv_vmaxu_vv_u8m1_mt:
+case RISCV::BI__builtin_rvv_vmaxu_vv_u8m2_mt:
+case RISCV::BI__builtin_rvv_vmaxu_vv_u8m4_mt:
+case RISCV::BI__builtin_rvv_vmaxu_vv_u8m8_mt:
+case RISCV::BI__builtin_rvv_vmaxu_vv_u8mf2_mt:
+case RISCV::BI__builtin_rvv_vmaxu_vv_u8mf4_mt:
+case RISCV::BI__builtin_rvv_vmaxu_vv_u8mf8_mt:
+case RISCV::BI__builtin_rvv_vmaxu_vv_u16m1_mt:
+case RISCV::BI__builtin_rvv_vmaxu_vv_u16m2_mt:
+case RISCV::BI__builtin_rvv_vmaxu_vv_u16m4_mt:
+case RISCV::BI__builtin_rvv_vmaxu_vv_u16m8_mt:
+case RISCV::BI__builtin_rvv_vmaxu_vv_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vmaxu_vv_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vmaxu_vv_u32m1_mt:
+case RISCV::BI__builtin_rvv_vmaxu_vv_u32m2_mt:
+case RISCV::BI__builtin_rvv_vmaxu_vv_u32m4_mt:
+case RISCV::BI__builtin_rvv_vmaxu_vv_u32m8_mt:
+case RISCV::BI__builtin_rvv_vmaxu_vv_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vmaxu_vv_u64m1_mt:
+case RISCV::BI__builtin_rvv_vmaxu_vv_u64m2_mt:
+case RISCV::BI__builtin_rvv_vmaxu_vv_u64m4_mt:
+case RISCV::BI__builtin_rvv_vmaxu_vv_u64m8_mt:
+case RISCV::BI__builtin_rvv_vmaxu_vx_u8m1_mt:
+case RISCV::BI__builtin_rvv_vmaxu_vx_u8m2_mt:
+case RISCV::BI__builtin_rvv_vmaxu_vx_u8m4_mt:
+case RISCV::BI__builtin_rvv_vmaxu_vx_u8m8_mt:
+case RISCV::BI__builtin_rvv_vmaxu_vx_u8mf2_mt:
+case RISCV::BI__builtin_rvv_vmaxu_vx_u8mf4_mt:
+case RISCV::BI__builtin_rvv_vmaxu_vx_u8mf8_mt:
+case RISCV::BI__builtin_rvv_vmaxu_vx_u16m1_mt:
+case RISCV::BI__builtin_rvv_vmaxu_vx_u16m2_mt:
+case RISCV::BI__builtin_rvv_vmaxu_vx_u16m4_mt:
+case RISCV::BI__builtin_rvv_vmaxu_vx_u16m8_mt:
+case RISCV::BI__builtin_rvv_vmaxu_vx_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vmaxu_vx_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vmaxu_vx_u32m1_mt:
+case RISCV::BI__builtin_rvv_vmaxu_vx_u32m2_mt:
+case RISCV::BI__builtin_rvv_vmaxu_vx_u32m4_mt:
+case RISCV::BI__builtin_rvv_vmaxu_vx_u32m8_mt:
+case RISCV::BI__builtin_rvv_vmaxu_vx_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vmaxu_vx_u64m1_mt:
+case RISCV::BI__builtin_rvv_vmaxu_vx_u64m2_mt:
+case RISCV::BI__builtin_rvv_vmaxu_vx_u64m4_mt:
+case RISCV::BI__builtin_rvv_vmaxu_vx_u64m8_mt:
   ID = Intrinsic::riscv_vmaxu_mask;
-  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 1);
+  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 2);
   IntrinsicTypes = {ResultType, Ops[2]->getType(), Ops.back()->getType()};
   break;
 case RISCV::BI__builtin_rvv_vmclr_m_b8:
@@ -15315,52 +15350,52 @@ case RISCV::BI__builtin_rvv_vmin_vx_i64m8:
   ID = Intrinsic::riscv_vmin;
   IntrinsicTypes = {ResultType, Ops[1]->getType(), Ops.back()->getType()};
   break;
-case RISCV::BI__builtin_rvv_vmin_vv_i8m1_m:
-case RISCV::BI__builtin_rvv_vmin_vv_i8m2_m:
-case RISCV::BI__builtin_rvv_vmin_vv_i8m4_m:
-case RISCV::BI__builtin_rvv_vmin_vv_i8m8_m:
-case RISCV::BI__builtin_rvv_vmin_vv_i8mf2_m:
-case RISCV::BI__builtin_rvv_vmin_vv_i8mf4_m:
-case RISCV::BI__builtin_rvv_vmin_vv_i8mf8_m:
-case RISCV::BI__builtin_rvv_vmin_vv_i16m1_m:
-case RISCV::BI__builtin_rvv_vmin_vv_i16m2_m:
-case RISCV::BI__builtin_rvv_vmin_vv_i16m4_m:
-case RISCV::BI__builtin_rvv_vmin_vv_i16m8_m:
-case RISCV::BI__builtin_rvv_vmin_vv_i16mf2_m:
-case RISCV::BI__builtin_rvv_vmin_vv_i16mf4_m:
-case RISCV::BI__builtin_rvv_vmin_vv_i32m1_m:
-case RISCV::BI__builtin_rvv_vmin_vv_i32m2_m:
-case RISCV::BI__builtin_rvv_vmin_vv_i32m4_m:
-case RISCV::BI__builtin_rvv_vmin_vv_i32m8_m:
-case RISCV::BI__builtin_rvv_vmin_vv_i32mf2_m:
-case RISCV::BI__builtin_rvv_vmin_vv_i64m1_m:
-case RISCV::BI__builtin_rvv_vmin_vv_i64m2_m:
-case RISCV::BI__builtin_rvv_vmin_vv_i64m4_m:
-case RISCV::BI__builtin_rvv_vmin_vv_i64m8_m:
-case RISCV::BI__builtin_rvv_vmin_vx_i8m1_m:
-case RISCV::BI__builtin_rvv_vmin_vx_i8m2_m:
-case RISCV::BI__builtin_rvv_vmin_vx_i8m4_m:
-case RISCV::BI__builtin_rvv_vmin_vx_i8m8_m:
-case RISCV::BI__builtin_rvv_vmin_vx_i8mf2_m:
-case RISCV::BI__builtin_rvv_vmin_vx_i8mf4_m:
-case RISCV::BI__builtin_rvv_vmin_vx_i8mf8_m:
-case RISCV::BI__builtin_rvv_vmin_vx_i16m1_m:
-case RISCV::BI__builtin_rvv_vmin_vx_i16m2_m:
-case RISCV::BI__builtin_rvv_vmin_vx_i16m4_m:
-case RISCV::BI__builtin_rvv_vmin_vx_i16m8_m:
-case RISCV::BI__builtin_rvv_vmin_vx_i16mf2_m:
-case RISCV::BI__builtin_rvv_vmin_vx_i16mf4_m:
-case RISCV::BI__builtin_rvv_vmin_vx_i32m1_m:
-case RISCV::BI__builtin_rvv_vmin_vx_i32m2_m:
-case RISCV::BI__builtin_rvv_vmin_vx_i32m4_m:
-case RISCV::BI__builtin_rvv_vmin_vx_i32m8_m:
-case RISCV::BI__builtin_rvv_vmin_vx_i32mf2_m:
-case RISCV::BI__builtin_rvv_vmin_vx_i64m1_m:
-case RISCV::BI__builtin_rvv_vmin_vx_i64m2_m:
-case RISCV::BI__builtin_rvv_vmin_vx_i64m4_m:
-case RISCV::BI__builtin_rvv_vmin_vx_i64m8_m:
+case RISCV::BI__builtin_rvv_vmin_vv_i8m1_mt:
+case RISCV::BI__builtin_rvv_vmin_vv_i8m2_mt:
+case RISCV::BI__builtin_rvv_vmin_vv_i8m4_mt:
+case RISCV::BI__builtin_rvv_vmin_vv_i8m8_mt:
+case RISCV::BI__builtin_rvv_vmin_vv_i8mf2_mt:
+case RISCV::BI__builtin_rvv_vmin_vv_i8mf4_mt:
+case RISCV::BI__builtin_rvv_vmin_vv_i8mf8_mt:
+case RISCV::BI__builtin_rvv_vmin_vv_i16m1_mt:
+case RISCV::BI__builtin_rvv_vmin_vv_i16m2_mt:
+case RISCV::BI__builtin_rvv_vmin_vv_i16m4_mt:
+case RISCV::BI__builtin_rvv_vmin_vv_i16m8_mt:
+case RISCV::BI__builtin_rvv_vmin_vv_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vmin_vv_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vmin_vv_i32m1_mt:
+case RISCV::BI__builtin_rvv_vmin_vv_i32m2_mt:
+case RISCV::BI__builtin_rvv_vmin_vv_i32m4_mt:
+case RISCV::BI__builtin_rvv_vmin_vv_i32m8_mt:
+case RISCV::BI__builtin_rvv_vmin_vv_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vmin_vv_i64m1_mt:
+case RISCV::BI__builtin_rvv_vmin_vv_i64m2_mt:
+case RISCV::BI__builtin_rvv_vmin_vv_i64m4_mt:
+case RISCV::BI__builtin_rvv_vmin_vv_i64m8_mt:
+case RISCV::BI__builtin_rvv_vmin_vx_i8m1_mt:
+case RISCV::BI__builtin_rvv_vmin_vx_i8m2_mt:
+case RISCV::BI__builtin_rvv_vmin_vx_i8m4_mt:
+case RISCV::BI__builtin_rvv_vmin_vx_i8m8_mt:
+case RISCV::BI__builtin_rvv_vmin_vx_i8mf2_mt:
+case RISCV::BI__builtin_rvv_vmin_vx_i8mf4_mt:
+case RISCV::BI__builtin_rvv_vmin_vx_i8mf8_mt:
+case RISCV::BI__builtin_rvv_vmin_vx_i16m1_mt:
+case RISCV::BI__builtin_rvv_vmin_vx_i16m2_mt:
+case RISCV::BI__builtin_rvv_vmin_vx_i16m4_mt:
+case RISCV::BI__builtin_rvv_vmin_vx_i16m8_mt:
+case RISCV::BI__builtin_rvv_vmin_vx_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vmin_vx_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vmin_vx_i32m1_mt:
+case RISCV::BI__builtin_rvv_vmin_vx_i32m2_mt:
+case RISCV::BI__builtin_rvv_vmin_vx_i32m4_mt:
+case RISCV::BI__builtin_rvv_vmin_vx_i32m8_mt:
+case RISCV::BI__builtin_rvv_vmin_vx_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vmin_vx_i64m1_mt:
+case RISCV::BI__builtin_rvv_vmin_vx_i64m2_mt:
+case RISCV::BI__builtin_rvv_vmin_vx_i64m4_mt:
+case RISCV::BI__builtin_rvv_vmin_vx_i64m8_mt:
   ID = Intrinsic::riscv_vmin_mask;
-  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 1);
+  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 2);
   IntrinsicTypes = {ResultType, Ops[2]->getType(), Ops.back()->getType()};
   break;
 case RISCV::BI__builtin_rvv_vminu_vv_u8m1:
@@ -15410,52 +15445,52 @@ case RISCV::BI__builtin_rvv_vminu_vx_u64m8:
   ID = Intrinsic::riscv_vminu;
   IntrinsicTypes = {ResultType, Ops[1]->getType(), Ops.back()->getType()};
   break;
-case RISCV::BI__builtin_rvv_vminu_vv_u8m1_m:
-case RISCV::BI__builtin_rvv_vminu_vv_u8m2_m:
-case RISCV::BI__builtin_rvv_vminu_vv_u8m4_m:
-case RISCV::BI__builtin_rvv_vminu_vv_u8m8_m:
-case RISCV::BI__builtin_rvv_vminu_vv_u8mf2_m:
-case RISCV::BI__builtin_rvv_vminu_vv_u8mf4_m:
-case RISCV::BI__builtin_rvv_vminu_vv_u8mf8_m:
-case RISCV::BI__builtin_rvv_vminu_vv_u16m1_m:
-case RISCV::BI__builtin_rvv_vminu_vv_u16m2_m:
-case RISCV::BI__builtin_rvv_vminu_vv_u16m4_m:
-case RISCV::BI__builtin_rvv_vminu_vv_u16m8_m:
-case RISCV::BI__builtin_rvv_vminu_vv_u16mf2_m:
-case RISCV::BI__builtin_rvv_vminu_vv_u16mf4_m:
-case RISCV::BI__builtin_rvv_vminu_vv_u32m1_m:
-case RISCV::BI__builtin_rvv_vminu_vv_u32m2_m:
-case RISCV::BI__builtin_rvv_vminu_vv_u32m4_m:
-case RISCV::BI__builtin_rvv_vminu_vv_u32m8_m:
-case RISCV::BI__builtin_rvv_vminu_vv_u32mf2_m:
-case RISCV::BI__builtin_rvv_vminu_vv_u64m1_m:
-case RISCV::BI__builtin_rvv_vminu_vv_u64m2_m:
-case RISCV::BI__builtin_rvv_vminu_vv_u64m4_m:
-case RISCV::BI__builtin_rvv_vminu_vv_u64m8_m:
-case RISCV::BI__builtin_rvv_vminu_vx_u8m1_m:
-case RISCV::BI__builtin_rvv_vminu_vx_u8m2_m:
-case RISCV::BI__builtin_rvv_vminu_vx_u8m4_m:
-case RISCV::BI__builtin_rvv_vminu_vx_u8m8_m:
-case RISCV::BI__builtin_rvv_vminu_vx_u8mf2_m:
-case RISCV::BI__builtin_rvv_vminu_vx_u8mf4_m:
-case RISCV::BI__builtin_rvv_vminu_vx_u8mf8_m:
-case RISCV::BI__builtin_rvv_vminu_vx_u16m1_m:
-case RISCV::BI__builtin_rvv_vminu_vx_u16m2_m:
-case RISCV::BI__builtin_rvv_vminu_vx_u16m4_m:
-case RISCV::BI__builtin_rvv_vminu_vx_u16m8_m:
-case RISCV::BI__builtin_rvv_vminu_vx_u16mf2_m:
-case RISCV::BI__builtin_rvv_vminu_vx_u16mf4_m:
-case RISCV::BI__builtin_rvv_vminu_vx_u32m1_m:
-case RISCV::BI__builtin_rvv_vminu_vx_u32m2_m:
-case RISCV::BI__builtin_rvv_vminu_vx_u32m4_m:
-case RISCV::BI__builtin_rvv_vminu_vx_u32m8_m:
-case RISCV::BI__builtin_rvv_vminu_vx_u32mf2_m:
-case RISCV::BI__builtin_rvv_vminu_vx_u64m1_m:
-case RISCV::BI__builtin_rvv_vminu_vx_u64m2_m:
-case RISCV::BI__builtin_rvv_vminu_vx_u64m4_m:
-case RISCV::BI__builtin_rvv_vminu_vx_u64m8_m:
+case RISCV::BI__builtin_rvv_vminu_vv_u8m1_mt:
+case RISCV::BI__builtin_rvv_vminu_vv_u8m2_mt:
+case RISCV::BI__builtin_rvv_vminu_vv_u8m4_mt:
+case RISCV::BI__builtin_rvv_vminu_vv_u8m8_mt:
+case RISCV::BI__builtin_rvv_vminu_vv_u8mf2_mt:
+case RISCV::BI__builtin_rvv_vminu_vv_u8mf4_mt:
+case RISCV::BI__builtin_rvv_vminu_vv_u8mf8_mt:
+case RISCV::BI__builtin_rvv_vminu_vv_u16m1_mt:
+case RISCV::BI__builtin_rvv_vminu_vv_u16m2_mt:
+case RISCV::BI__builtin_rvv_vminu_vv_u16m4_mt:
+case RISCV::BI__builtin_rvv_vminu_vv_u16m8_mt:
+case RISCV::BI__builtin_rvv_vminu_vv_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vminu_vv_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vminu_vv_u32m1_mt:
+case RISCV::BI__builtin_rvv_vminu_vv_u32m2_mt:
+case RISCV::BI__builtin_rvv_vminu_vv_u32m4_mt:
+case RISCV::BI__builtin_rvv_vminu_vv_u32m8_mt:
+case RISCV::BI__builtin_rvv_vminu_vv_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vminu_vv_u64m1_mt:
+case RISCV::BI__builtin_rvv_vminu_vv_u64m2_mt:
+case RISCV::BI__builtin_rvv_vminu_vv_u64m4_mt:
+case RISCV::BI__builtin_rvv_vminu_vv_u64m8_mt:
+case RISCV::BI__builtin_rvv_vminu_vx_u8m1_mt:
+case RISCV::BI__builtin_rvv_vminu_vx_u8m2_mt:
+case RISCV::BI__builtin_rvv_vminu_vx_u8m4_mt:
+case RISCV::BI__builtin_rvv_vminu_vx_u8m8_mt:
+case RISCV::BI__builtin_rvv_vminu_vx_u8mf2_mt:
+case RISCV::BI__builtin_rvv_vminu_vx_u8mf4_mt:
+case RISCV::BI__builtin_rvv_vminu_vx_u8mf8_mt:
+case RISCV::BI__builtin_rvv_vminu_vx_u16m1_mt:
+case RISCV::BI__builtin_rvv_vminu_vx_u16m2_mt:
+case RISCV::BI__builtin_rvv_vminu_vx_u16m4_mt:
+case RISCV::BI__builtin_rvv_vminu_vx_u16m8_mt:
+case RISCV::BI__builtin_rvv_vminu_vx_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vminu_vx_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vminu_vx_u32m1_mt:
+case RISCV::BI__builtin_rvv_vminu_vx_u32m2_mt:
+case RISCV::BI__builtin_rvv_vminu_vx_u32m4_mt:
+case RISCV::BI__builtin_rvv_vminu_vx_u32m8_mt:
+case RISCV::BI__builtin_rvv_vminu_vx_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vminu_vx_u64m1_mt:
+case RISCV::BI__builtin_rvv_vminu_vx_u64m2_mt:
+case RISCV::BI__builtin_rvv_vminu_vx_u64m4_mt:
+case RISCV::BI__builtin_rvv_vminu_vx_u64m8_mt:
   ID = Intrinsic::riscv_vminu_mask;
-  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 1);
+  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 2);
   IntrinsicTypes = {ResultType, Ops[2]->getType(), Ops.back()->getType()};
   break;
 case RISCV::BI__builtin_rvv_vmnot_m_b8:
@@ -16987,96 +17022,96 @@ case RISCV::BI__builtin_rvv_vmul_vx_u64m8:
   ID = Intrinsic::riscv_vmul;
   IntrinsicTypes = {ResultType, Ops[1]->getType(), Ops.back()->getType()};
   break;
-case RISCV::BI__builtin_rvv_vmul_vv_i8m1_m:
-case RISCV::BI__builtin_rvv_vmul_vv_i8m2_m:
-case RISCV::BI__builtin_rvv_vmul_vv_i8m4_m:
-case RISCV::BI__builtin_rvv_vmul_vv_i8m8_m:
-case RISCV::BI__builtin_rvv_vmul_vv_i8mf2_m:
-case RISCV::BI__builtin_rvv_vmul_vv_i8mf4_m:
-case RISCV::BI__builtin_rvv_vmul_vv_i8mf8_m:
-case RISCV::BI__builtin_rvv_vmul_vv_i16m1_m:
-case RISCV::BI__builtin_rvv_vmul_vv_i16m2_m:
-case RISCV::BI__builtin_rvv_vmul_vv_i16m4_m:
-case RISCV::BI__builtin_rvv_vmul_vv_i16m8_m:
-case RISCV::BI__builtin_rvv_vmul_vv_i16mf2_m:
-case RISCV::BI__builtin_rvv_vmul_vv_i16mf4_m:
-case RISCV::BI__builtin_rvv_vmul_vv_i32m1_m:
-case RISCV::BI__builtin_rvv_vmul_vv_i32m2_m:
-case RISCV::BI__builtin_rvv_vmul_vv_i32m4_m:
-case RISCV::BI__builtin_rvv_vmul_vv_i32m8_m:
-case RISCV::BI__builtin_rvv_vmul_vv_i32mf2_m:
-case RISCV::BI__builtin_rvv_vmul_vv_i64m1_m:
-case RISCV::BI__builtin_rvv_vmul_vv_i64m2_m:
-case RISCV::BI__builtin_rvv_vmul_vv_i64m4_m:
-case RISCV::BI__builtin_rvv_vmul_vv_i64m8_m:
-case RISCV::BI__builtin_rvv_vmul_vx_i8m1_m:
-case RISCV::BI__builtin_rvv_vmul_vx_i8m2_m:
-case RISCV::BI__builtin_rvv_vmul_vx_i8m4_m:
-case RISCV::BI__builtin_rvv_vmul_vx_i8m8_m:
-case RISCV::BI__builtin_rvv_vmul_vx_i8mf2_m:
-case RISCV::BI__builtin_rvv_vmul_vx_i8mf4_m:
-case RISCV::BI__builtin_rvv_vmul_vx_i8mf8_m:
-case RISCV::BI__builtin_rvv_vmul_vx_i16m1_m:
-case RISCV::BI__builtin_rvv_vmul_vx_i16m2_m:
-case RISCV::BI__builtin_rvv_vmul_vx_i16m4_m:
-case RISCV::BI__builtin_rvv_vmul_vx_i16m8_m:
-case RISCV::BI__builtin_rvv_vmul_vx_i16mf2_m:
-case RISCV::BI__builtin_rvv_vmul_vx_i16mf4_m:
-case RISCV::BI__builtin_rvv_vmul_vx_i32m1_m:
-case RISCV::BI__builtin_rvv_vmul_vx_i32m2_m:
-case RISCV::BI__builtin_rvv_vmul_vx_i32m4_m:
-case RISCV::BI__builtin_rvv_vmul_vx_i32m8_m:
-case RISCV::BI__builtin_rvv_vmul_vx_i32mf2_m:
-case RISCV::BI__builtin_rvv_vmul_vx_i64m1_m:
-case RISCV::BI__builtin_rvv_vmul_vx_i64m2_m:
-case RISCV::BI__builtin_rvv_vmul_vx_i64m4_m:
-case RISCV::BI__builtin_rvv_vmul_vx_i64m8_m:
-case RISCV::BI__builtin_rvv_vmul_vv_u8m1_m:
-case RISCV::BI__builtin_rvv_vmul_vv_u8m2_m:
-case RISCV::BI__builtin_rvv_vmul_vv_u8m4_m:
-case RISCV::BI__builtin_rvv_vmul_vv_u8m8_m:
-case RISCV::BI__builtin_rvv_vmul_vv_u8mf2_m:
-case RISCV::BI__builtin_rvv_vmul_vv_u8mf4_m:
-case RISCV::BI__builtin_rvv_vmul_vv_u8mf8_m:
-case RISCV::BI__builtin_rvv_vmul_vv_u16m1_m:
-case RISCV::BI__builtin_rvv_vmul_vv_u16m2_m:
-case RISCV::BI__builtin_rvv_vmul_vv_u16m4_m:
-case RISCV::BI__builtin_rvv_vmul_vv_u16m8_m:
-case RISCV::BI__builtin_rvv_vmul_vv_u16mf2_m:
-case RISCV::BI__builtin_rvv_vmul_vv_u16mf4_m:
-case RISCV::BI__builtin_rvv_vmul_vv_u32m1_m:
-case RISCV::BI__builtin_rvv_vmul_vv_u32m2_m:
-case RISCV::BI__builtin_rvv_vmul_vv_u32m4_m:
-case RISCV::BI__builtin_rvv_vmul_vv_u32m8_m:
-case RISCV::BI__builtin_rvv_vmul_vv_u32mf2_m:
-case RISCV::BI__builtin_rvv_vmul_vv_u64m1_m:
-case RISCV::BI__builtin_rvv_vmul_vv_u64m2_m:
-case RISCV::BI__builtin_rvv_vmul_vv_u64m4_m:
-case RISCV::BI__builtin_rvv_vmul_vv_u64m8_m:
-case RISCV::BI__builtin_rvv_vmul_vx_u8m1_m:
-case RISCV::BI__builtin_rvv_vmul_vx_u8m2_m:
-case RISCV::BI__builtin_rvv_vmul_vx_u8m4_m:
-case RISCV::BI__builtin_rvv_vmul_vx_u8m8_m:
-case RISCV::BI__builtin_rvv_vmul_vx_u8mf2_m:
-case RISCV::BI__builtin_rvv_vmul_vx_u8mf4_m:
-case RISCV::BI__builtin_rvv_vmul_vx_u8mf8_m:
-case RISCV::BI__builtin_rvv_vmul_vx_u16m1_m:
-case RISCV::BI__builtin_rvv_vmul_vx_u16m2_m:
-case RISCV::BI__builtin_rvv_vmul_vx_u16m4_m:
-case RISCV::BI__builtin_rvv_vmul_vx_u16m8_m:
-case RISCV::BI__builtin_rvv_vmul_vx_u16mf2_m:
-case RISCV::BI__builtin_rvv_vmul_vx_u16mf4_m:
-case RISCV::BI__builtin_rvv_vmul_vx_u32m1_m:
-case RISCV::BI__builtin_rvv_vmul_vx_u32m2_m:
-case RISCV::BI__builtin_rvv_vmul_vx_u32m4_m:
-case RISCV::BI__builtin_rvv_vmul_vx_u32m8_m:
-case RISCV::BI__builtin_rvv_vmul_vx_u32mf2_m:
-case RISCV::BI__builtin_rvv_vmul_vx_u64m1_m:
-case RISCV::BI__builtin_rvv_vmul_vx_u64m2_m:
-case RISCV::BI__builtin_rvv_vmul_vx_u64m4_m:
-case RISCV::BI__builtin_rvv_vmul_vx_u64m8_m:
+case RISCV::BI__builtin_rvv_vmul_vv_i8m1_mt:
+case RISCV::BI__builtin_rvv_vmul_vv_i8m2_mt:
+case RISCV::BI__builtin_rvv_vmul_vv_i8m4_mt:
+case RISCV::BI__builtin_rvv_vmul_vv_i8m8_mt:
+case RISCV::BI__builtin_rvv_vmul_vv_i8mf2_mt:
+case RISCV::BI__builtin_rvv_vmul_vv_i8mf4_mt:
+case RISCV::BI__builtin_rvv_vmul_vv_i8mf8_mt:
+case RISCV::BI__builtin_rvv_vmul_vv_i16m1_mt:
+case RISCV::BI__builtin_rvv_vmul_vv_i16m2_mt:
+case RISCV::BI__builtin_rvv_vmul_vv_i16m4_mt:
+case RISCV::BI__builtin_rvv_vmul_vv_i16m8_mt:
+case RISCV::BI__builtin_rvv_vmul_vv_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vmul_vv_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vmul_vv_i32m1_mt:
+case RISCV::BI__builtin_rvv_vmul_vv_i32m2_mt:
+case RISCV::BI__builtin_rvv_vmul_vv_i32m4_mt:
+case RISCV::BI__builtin_rvv_vmul_vv_i32m8_mt:
+case RISCV::BI__builtin_rvv_vmul_vv_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vmul_vv_i64m1_mt:
+case RISCV::BI__builtin_rvv_vmul_vv_i64m2_mt:
+case RISCV::BI__builtin_rvv_vmul_vv_i64m4_mt:
+case RISCV::BI__builtin_rvv_vmul_vv_i64m8_mt:
+case RISCV::BI__builtin_rvv_vmul_vx_i8m1_mt:
+case RISCV::BI__builtin_rvv_vmul_vx_i8m2_mt:
+case RISCV::BI__builtin_rvv_vmul_vx_i8m4_mt:
+case RISCV::BI__builtin_rvv_vmul_vx_i8m8_mt:
+case RISCV::BI__builtin_rvv_vmul_vx_i8mf2_mt:
+case RISCV::BI__builtin_rvv_vmul_vx_i8mf4_mt:
+case RISCV::BI__builtin_rvv_vmul_vx_i8mf8_mt:
+case RISCV::BI__builtin_rvv_vmul_vx_i16m1_mt:
+case RISCV::BI__builtin_rvv_vmul_vx_i16m2_mt:
+case RISCV::BI__builtin_rvv_vmul_vx_i16m4_mt:
+case RISCV::BI__builtin_rvv_vmul_vx_i16m8_mt:
+case RISCV::BI__builtin_rvv_vmul_vx_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vmul_vx_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vmul_vx_i32m1_mt:
+case RISCV::BI__builtin_rvv_vmul_vx_i32m2_mt:
+case RISCV::BI__builtin_rvv_vmul_vx_i32m4_mt:
+case RISCV::BI__builtin_rvv_vmul_vx_i32m8_mt:
+case RISCV::BI__builtin_rvv_vmul_vx_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vmul_vx_i64m1_mt:
+case RISCV::BI__builtin_rvv_vmul_vx_i64m2_mt:
+case RISCV::BI__builtin_rvv_vmul_vx_i64m4_mt:
+case RISCV::BI__builtin_rvv_vmul_vx_i64m8_mt:
+case RISCV::BI__builtin_rvv_vmul_vv_u8m1_mt:
+case RISCV::BI__builtin_rvv_vmul_vv_u8m2_mt:
+case RISCV::BI__builtin_rvv_vmul_vv_u8m4_mt:
+case RISCV::BI__builtin_rvv_vmul_vv_u8m8_mt:
+case RISCV::BI__builtin_rvv_vmul_vv_u8mf2_mt:
+case RISCV::BI__builtin_rvv_vmul_vv_u8mf4_mt:
+case RISCV::BI__builtin_rvv_vmul_vv_u8mf8_mt:
+case RISCV::BI__builtin_rvv_vmul_vv_u16m1_mt:
+case RISCV::BI__builtin_rvv_vmul_vv_u16m2_mt:
+case RISCV::BI__builtin_rvv_vmul_vv_u16m4_mt:
+case RISCV::BI__builtin_rvv_vmul_vv_u16m8_mt:
+case RISCV::BI__builtin_rvv_vmul_vv_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vmul_vv_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vmul_vv_u32m1_mt:
+case RISCV::BI__builtin_rvv_vmul_vv_u32m2_mt:
+case RISCV::BI__builtin_rvv_vmul_vv_u32m4_mt:
+case RISCV::BI__builtin_rvv_vmul_vv_u32m8_mt:
+case RISCV::BI__builtin_rvv_vmul_vv_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vmul_vv_u64m1_mt:
+case RISCV::BI__builtin_rvv_vmul_vv_u64m2_mt:
+case RISCV::BI__builtin_rvv_vmul_vv_u64m4_mt:
+case RISCV::BI__builtin_rvv_vmul_vv_u64m8_mt:
+case RISCV::BI__builtin_rvv_vmul_vx_u8m1_mt:
+case RISCV::BI__builtin_rvv_vmul_vx_u8m2_mt:
+case RISCV::BI__builtin_rvv_vmul_vx_u8m4_mt:
+case RISCV::BI__builtin_rvv_vmul_vx_u8m8_mt:
+case RISCV::BI__builtin_rvv_vmul_vx_u8mf2_mt:
+case RISCV::BI__builtin_rvv_vmul_vx_u8mf4_mt:
+case RISCV::BI__builtin_rvv_vmul_vx_u8mf8_mt:
+case RISCV::BI__builtin_rvv_vmul_vx_u16m1_mt:
+case RISCV::BI__builtin_rvv_vmul_vx_u16m2_mt:
+case RISCV::BI__builtin_rvv_vmul_vx_u16m4_mt:
+case RISCV::BI__builtin_rvv_vmul_vx_u16m8_mt:
+case RISCV::BI__builtin_rvv_vmul_vx_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vmul_vx_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vmul_vx_u32m1_mt:
+case RISCV::BI__builtin_rvv_vmul_vx_u32m2_mt:
+case RISCV::BI__builtin_rvv_vmul_vx_u32m4_mt:
+case RISCV::BI__builtin_rvv_vmul_vx_u32m8_mt:
+case RISCV::BI__builtin_rvv_vmul_vx_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vmul_vx_u64m1_mt:
+case RISCV::BI__builtin_rvv_vmul_vx_u64m2_mt:
+case RISCV::BI__builtin_rvv_vmul_vx_u64m4_mt:
+case RISCV::BI__builtin_rvv_vmul_vx_u64m8_mt:
   ID = Intrinsic::riscv_vmul_mask;
-  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 1);
+  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 2);
   IntrinsicTypes = {ResultType, Ops[2]->getType(), Ops.back()->getType()};
   break;
 case RISCV::BI__builtin_rvv_vmulh_vv_i8m1:
@@ -17126,52 +17161,52 @@ case RISCV::BI__builtin_rvv_vmulh_vx_i64m8:
   ID = Intrinsic::riscv_vmulh;
   IntrinsicTypes = {ResultType, Ops[1]->getType(), Ops.back()->getType()};
   break;
-case RISCV::BI__builtin_rvv_vmulh_vv_i8m1_m:
-case RISCV::BI__builtin_rvv_vmulh_vv_i8m2_m:
-case RISCV::BI__builtin_rvv_vmulh_vv_i8m4_m:
-case RISCV::BI__builtin_rvv_vmulh_vv_i8m8_m:
-case RISCV::BI__builtin_rvv_vmulh_vv_i8mf2_m:
-case RISCV::BI__builtin_rvv_vmulh_vv_i8mf4_m:
-case RISCV::BI__builtin_rvv_vmulh_vv_i8mf8_m:
-case RISCV::BI__builtin_rvv_vmulh_vv_i16m1_m:
-case RISCV::BI__builtin_rvv_vmulh_vv_i16m2_m:
-case RISCV::BI__builtin_rvv_vmulh_vv_i16m4_m:
-case RISCV::BI__builtin_rvv_vmulh_vv_i16m8_m:
-case RISCV::BI__builtin_rvv_vmulh_vv_i16mf2_m:
-case RISCV::BI__builtin_rvv_vmulh_vv_i16mf4_m:
-case RISCV::BI__builtin_rvv_vmulh_vv_i32m1_m:
-case RISCV::BI__builtin_rvv_vmulh_vv_i32m2_m:
-case RISCV::BI__builtin_rvv_vmulh_vv_i32m4_m:
-case RISCV::BI__builtin_rvv_vmulh_vv_i32m8_m:
-case RISCV::BI__builtin_rvv_vmulh_vv_i32mf2_m:
-case RISCV::BI__builtin_rvv_vmulh_vv_i64m1_m:
-case RISCV::BI__builtin_rvv_vmulh_vv_i64m2_m:
-case RISCV::BI__builtin_rvv_vmulh_vv_i64m4_m:
-case RISCV::BI__builtin_rvv_vmulh_vv_i64m8_m:
-case RISCV::BI__builtin_rvv_vmulh_vx_i8m1_m:
-case RISCV::BI__builtin_rvv_vmulh_vx_i8m2_m:
-case RISCV::BI__builtin_rvv_vmulh_vx_i8m4_m:
-case RISCV::BI__builtin_rvv_vmulh_vx_i8m8_m:
-case RISCV::BI__builtin_rvv_vmulh_vx_i8mf2_m:
-case RISCV::BI__builtin_rvv_vmulh_vx_i8mf4_m:
-case RISCV::BI__builtin_rvv_vmulh_vx_i8mf8_m:
-case RISCV::BI__builtin_rvv_vmulh_vx_i16m1_m:
-case RISCV::BI__builtin_rvv_vmulh_vx_i16m2_m:
-case RISCV::BI__builtin_rvv_vmulh_vx_i16m4_m:
-case RISCV::BI__builtin_rvv_vmulh_vx_i16m8_m:
-case RISCV::BI__builtin_rvv_vmulh_vx_i16mf2_m:
-case RISCV::BI__builtin_rvv_vmulh_vx_i16mf4_m:
-case RISCV::BI__builtin_rvv_vmulh_vx_i32m1_m:
-case RISCV::BI__builtin_rvv_vmulh_vx_i32m2_m:
-case RISCV::BI__builtin_rvv_vmulh_vx_i32m4_m:
-case RISCV::BI__builtin_rvv_vmulh_vx_i32m8_m:
-case RISCV::BI__builtin_rvv_vmulh_vx_i32mf2_m:
-case RISCV::BI__builtin_rvv_vmulh_vx_i64m1_m:
-case RISCV::BI__builtin_rvv_vmulh_vx_i64m2_m:
-case RISCV::BI__builtin_rvv_vmulh_vx_i64m4_m:
-case RISCV::BI__builtin_rvv_vmulh_vx_i64m8_m:
+case RISCV::BI__builtin_rvv_vmulh_vv_i8m1_mt:
+case RISCV::BI__builtin_rvv_vmulh_vv_i8m2_mt:
+case RISCV::BI__builtin_rvv_vmulh_vv_i8m4_mt:
+case RISCV::BI__builtin_rvv_vmulh_vv_i8m8_mt:
+case RISCV::BI__builtin_rvv_vmulh_vv_i8mf2_mt:
+case RISCV::BI__builtin_rvv_vmulh_vv_i8mf4_mt:
+case RISCV::BI__builtin_rvv_vmulh_vv_i8mf8_mt:
+case RISCV::BI__builtin_rvv_vmulh_vv_i16m1_mt:
+case RISCV::BI__builtin_rvv_vmulh_vv_i16m2_mt:
+case RISCV::BI__builtin_rvv_vmulh_vv_i16m4_mt:
+case RISCV::BI__builtin_rvv_vmulh_vv_i16m8_mt:
+case RISCV::BI__builtin_rvv_vmulh_vv_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vmulh_vv_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vmulh_vv_i32m1_mt:
+case RISCV::BI__builtin_rvv_vmulh_vv_i32m2_mt:
+case RISCV::BI__builtin_rvv_vmulh_vv_i32m4_mt:
+case RISCV::BI__builtin_rvv_vmulh_vv_i32m8_mt:
+case RISCV::BI__builtin_rvv_vmulh_vv_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vmulh_vv_i64m1_mt:
+case RISCV::BI__builtin_rvv_vmulh_vv_i64m2_mt:
+case RISCV::BI__builtin_rvv_vmulh_vv_i64m4_mt:
+case RISCV::BI__builtin_rvv_vmulh_vv_i64m8_mt:
+case RISCV::BI__builtin_rvv_vmulh_vx_i8m1_mt:
+case RISCV::BI__builtin_rvv_vmulh_vx_i8m2_mt:
+case RISCV::BI__builtin_rvv_vmulh_vx_i8m4_mt:
+case RISCV::BI__builtin_rvv_vmulh_vx_i8m8_mt:
+case RISCV::BI__builtin_rvv_vmulh_vx_i8mf2_mt:
+case RISCV::BI__builtin_rvv_vmulh_vx_i8mf4_mt:
+case RISCV::BI__builtin_rvv_vmulh_vx_i8mf8_mt:
+case RISCV::BI__builtin_rvv_vmulh_vx_i16m1_mt:
+case RISCV::BI__builtin_rvv_vmulh_vx_i16m2_mt:
+case RISCV::BI__builtin_rvv_vmulh_vx_i16m4_mt:
+case RISCV::BI__builtin_rvv_vmulh_vx_i16m8_mt:
+case RISCV::BI__builtin_rvv_vmulh_vx_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vmulh_vx_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vmulh_vx_i32m1_mt:
+case RISCV::BI__builtin_rvv_vmulh_vx_i32m2_mt:
+case RISCV::BI__builtin_rvv_vmulh_vx_i32m4_mt:
+case RISCV::BI__builtin_rvv_vmulh_vx_i32m8_mt:
+case RISCV::BI__builtin_rvv_vmulh_vx_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vmulh_vx_i64m1_mt:
+case RISCV::BI__builtin_rvv_vmulh_vx_i64m2_mt:
+case RISCV::BI__builtin_rvv_vmulh_vx_i64m4_mt:
+case RISCV::BI__builtin_rvv_vmulh_vx_i64m8_mt:
   ID = Intrinsic::riscv_vmulh_mask;
-  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 1);
+  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 2);
   IntrinsicTypes = {ResultType, Ops[2]->getType(), Ops.back()->getType()};
   break;
 case RISCV::BI__builtin_rvv_vmulhsu_vv_i8m1:
@@ -17221,52 +17256,52 @@ case RISCV::BI__builtin_rvv_vmulhsu_vx_i64m8:
   ID = Intrinsic::riscv_vmulhsu;
   IntrinsicTypes = {ResultType, Ops[1]->getType(), Ops.back()->getType()};
   break;
-case RISCV::BI__builtin_rvv_vmulhsu_vv_i8m1_m:
-case RISCV::BI__builtin_rvv_vmulhsu_vv_i8m2_m:
-case RISCV::BI__builtin_rvv_vmulhsu_vv_i8m4_m:
-case RISCV::BI__builtin_rvv_vmulhsu_vv_i8m8_m:
-case RISCV::BI__builtin_rvv_vmulhsu_vv_i8mf2_m:
-case RISCV::BI__builtin_rvv_vmulhsu_vv_i8mf4_m:
-case RISCV::BI__builtin_rvv_vmulhsu_vv_i8mf8_m:
-case RISCV::BI__builtin_rvv_vmulhsu_vv_i16m1_m:
-case RISCV::BI__builtin_rvv_vmulhsu_vv_i16m2_m:
-case RISCV::BI__builtin_rvv_vmulhsu_vv_i16m4_m:
-case RISCV::BI__builtin_rvv_vmulhsu_vv_i16m8_m:
-case RISCV::BI__builtin_rvv_vmulhsu_vv_i16mf2_m:
-case RISCV::BI__builtin_rvv_vmulhsu_vv_i16mf4_m:
-case RISCV::BI__builtin_rvv_vmulhsu_vv_i32m1_m:
-case RISCV::BI__builtin_rvv_vmulhsu_vv_i32m2_m:
-case RISCV::BI__builtin_rvv_vmulhsu_vv_i32m4_m:
-case RISCV::BI__builtin_rvv_vmulhsu_vv_i32m8_m:
-case RISCV::BI__builtin_rvv_vmulhsu_vv_i32mf2_m:
-case RISCV::BI__builtin_rvv_vmulhsu_vv_i64m1_m:
-case RISCV::BI__builtin_rvv_vmulhsu_vv_i64m2_m:
-case RISCV::BI__builtin_rvv_vmulhsu_vv_i64m4_m:
-case RISCV::BI__builtin_rvv_vmulhsu_vv_i64m8_m:
-case RISCV::BI__builtin_rvv_vmulhsu_vx_i8m1_m:
-case RISCV::BI__builtin_rvv_vmulhsu_vx_i8m2_m:
-case RISCV::BI__builtin_rvv_vmulhsu_vx_i8m4_m:
-case RISCV::BI__builtin_rvv_vmulhsu_vx_i8m8_m:
-case RISCV::BI__builtin_rvv_vmulhsu_vx_i8mf2_m:
-case RISCV::BI__builtin_rvv_vmulhsu_vx_i8mf4_m:
-case RISCV::BI__builtin_rvv_vmulhsu_vx_i8mf8_m:
-case RISCV::BI__builtin_rvv_vmulhsu_vx_i16m1_m:
-case RISCV::BI__builtin_rvv_vmulhsu_vx_i16m2_m:
-case RISCV::BI__builtin_rvv_vmulhsu_vx_i16m4_m:
-case RISCV::BI__builtin_rvv_vmulhsu_vx_i16m8_m:
-case RISCV::BI__builtin_rvv_vmulhsu_vx_i16mf2_m:
-case RISCV::BI__builtin_rvv_vmulhsu_vx_i16mf4_m:
-case RISCV::BI__builtin_rvv_vmulhsu_vx_i32m1_m:
-case RISCV::BI__builtin_rvv_vmulhsu_vx_i32m2_m:
-case RISCV::BI__builtin_rvv_vmulhsu_vx_i32m4_m:
-case RISCV::BI__builtin_rvv_vmulhsu_vx_i32m8_m:
-case RISCV::BI__builtin_rvv_vmulhsu_vx_i32mf2_m:
-case RISCV::BI__builtin_rvv_vmulhsu_vx_i64m1_m:
-case RISCV::BI__builtin_rvv_vmulhsu_vx_i64m2_m:
-case RISCV::BI__builtin_rvv_vmulhsu_vx_i64m4_m:
-case RISCV::BI__builtin_rvv_vmulhsu_vx_i64m8_m:
+case RISCV::BI__builtin_rvv_vmulhsu_vv_i8m1_mt:
+case RISCV::BI__builtin_rvv_vmulhsu_vv_i8m2_mt:
+case RISCV::BI__builtin_rvv_vmulhsu_vv_i8m4_mt:
+case RISCV::BI__builtin_rvv_vmulhsu_vv_i8m8_mt:
+case RISCV::BI__builtin_rvv_vmulhsu_vv_i8mf2_mt:
+case RISCV::BI__builtin_rvv_vmulhsu_vv_i8mf4_mt:
+case RISCV::BI__builtin_rvv_vmulhsu_vv_i8mf8_mt:
+case RISCV::BI__builtin_rvv_vmulhsu_vv_i16m1_mt:
+case RISCV::BI__builtin_rvv_vmulhsu_vv_i16m2_mt:
+case RISCV::BI__builtin_rvv_vmulhsu_vv_i16m4_mt:
+case RISCV::BI__builtin_rvv_vmulhsu_vv_i16m8_mt:
+case RISCV::BI__builtin_rvv_vmulhsu_vv_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vmulhsu_vv_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vmulhsu_vv_i32m1_mt:
+case RISCV::BI__builtin_rvv_vmulhsu_vv_i32m2_mt:
+case RISCV::BI__builtin_rvv_vmulhsu_vv_i32m4_mt:
+case RISCV::BI__builtin_rvv_vmulhsu_vv_i32m8_mt:
+case RISCV::BI__builtin_rvv_vmulhsu_vv_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vmulhsu_vv_i64m1_mt:
+case RISCV::BI__builtin_rvv_vmulhsu_vv_i64m2_mt:
+case RISCV::BI__builtin_rvv_vmulhsu_vv_i64m4_mt:
+case RISCV::BI__builtin_rvv_vmulhsu_vv_i64m8_mt:
+case RISCV::BI__builtin_rvv_vmulhsu_vx_i8m1_mt:
+case RISCV::BI__builtin_rvv_vmulhsu_vx_i8m2_mt:
+case RISCV::BI__builtin_rvv_vmulhsu_vx_i8m4_mt:
+case RISCV::BI__builtin_rvv_vmulhsu_vx_i8m8_mt:
+case RISCV::BI__builtin_rvv_vmulhsu_vx_i8mf2_mt:
+case RISCV::BI__builtin_rvv_vmulhsu_vx_i8mf4_mt:
+case RISCV::BI__builtin_rvv_vmulhsu_vx_i8mf8_mt:
+case RISCV::BI__builtin_rvv_vmulhsu_vx_i16m1_mt:
+case RISCV::BI__builtin_rvv_vmulhsu_vx_i16m2_mt:
+case RISCV::BI__builtin_rvv_vmulhsu_vx_i16m4_mt:
+case RISCV::BI__builtin_rvv_vmulhsu_vx_i16m8_mt:
+case RISCV::BI__builtin_rvv_vmulhsu_vx_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vmulhsu_vx_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vmulhsu_vx_i32m1_mt:
+case RISCV::BI__builtin_rvv_vmulhsu_vx_i32m2_mt:
+case RISCV::BI__builtin_rvv_vmulhsu_vx_i32m4_mt:
+case RISCV::BI__builtin_rvv_vmulhsu_vx_i32m8_mt:
+case RISCV::BI__builtin_rvv_vmulhsu_vx_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vmulhsu_vx_i64m1_mt:
+case RISCV::BI__builtin_rvv_vmulhsu_vx_i64m2_mt:
+case RISCV::BI__builtin_rvv_vmulhsu_vx_i64m4_mt:
+case RISCV::BI__builtin_rvv_vmulhsu_vx_i64m8_mt:
   ID = Intrinsic::riscv_vmulhsu_mask;
-  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 1);
+  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 2);
   IntrinsicTypes = {ResultType, Ops[2]->getType(), Ops.back()->getType()};
   break;
 case RISCV::BI__builtin_rvv_vmulhu_vv_u8m1:
@@ -17316,52 +17351,52 @@ case RISCV::BI__builtin_rvv_vmulhu_vx_u64m8:
   ID = Intrinsic::riscv_vmulhu;
   IntrinsicTypes = {ResultType, Ops[1]->getType(), Ops.back()->getType()};
   break;
-case RISCV::BI__builtin_rvv_vmulhu_vv_u8m1_m:
-case RISCV::BI__builtin_rvv_vmulhu_vv_u8m2_m:
-case RISCV::BI__builtin_rvv_vmulhu_vv_u8m4_m:
-case RISCV::BI__builtin_rvv_vmulhu_vv_u8m8_m:
-case RISCV::BI__builtin_rvv_vmulhu_vv_u8mf2_m:
-case RISCV::BI__builtin_rvv_vmulhu_vv_u8mf4_m:
-case RISCV::BI__builtin_rvv_vmulhu_vv_u8mf8_m:
-case RISCV::BI__builtin_rvv_vmulhu_vv_u16m1_m:
-case RISCV::BI__builtin_rvv_vmulhu_vv_u16m2_m:
-case RISCV::BI__builtin_rvv_vmulhu_vv_u16m4_m:
-case RISCV::BI__builtin_rvv_vmulhu_vv_u16m8_m:
-case RISCV::BI__builtin_rvv_vmulhu_vv_u16mf2_m:
-case RISCV::BI__builtin_rvv_vmulhu_vv_u16mf4_m:
-case RISCV::BI__builtin_rvv_vmulhu_vv_u32m1_m:
-case RISCV::BI__builtin_rvv_vmulhu_vv_u32m2_m:
-case RISCV::BI__builtin_rvv_vmulhu_vv_u32m4_m:
-case RISCV::BI__builtin_rvv_vmulhu_vv_u32m8_m:
-case RISCV::BI__builtin_rvv_vmulhu_vv_u32mf2_m:
-case RISCV::BI__builtin_rvv_vmulhu_vv_u64m1_m:
-case RISCV::BI__builtin_rvv_vmulhu_vv_u64m2_m:
-case RISCV::BI__builtin_rvv_vmulhu_vv_u64m4_m:
-case RISCV::BI__builtin_rvv_vmulhu_vv_u64m8_m:
-case RISCV::BI__builtin_rvv_vmulhu_vx_u8m1_m:
-case RISCV::BI__builtin_rvv_vmulhu_vx_u8m2_m:
-case RISCV::BI__builtin_rvv_vmulhu_vx_u8m4_m:
-case RISCV::BI__builtin_rvv_vmulhu_vx_u8m8_m:
-case RISCV::BI__builtin_rvv_vmulhu_vx_u8mf2_m:
-case RISCV::BI__builtin_rvv_vmulhu_vx_u8mf4_m:
-case RISCV::BI__builtin_rvv_vmulhu_vx_u8mf8_m:
-case RISCV::BI__builtin_rvv_vmulhu_vx_u16m1_m:
-case RISCV::BI__builtin_rvv_vmulhu_vx_u16m2_m:
-case RISCV::BI__builtin_rvv_vmulhu_vx_u16m4_m:
-case RISCV::BI__builtin_rvv_vmulhu_vx_u16m8_m:
-case RISCV::BI__builtin_rvv_vmulhu_vx_u16mf2_m:
-case RISCV::BI__builtin_rvv_vmulhu_vx_u16mf4_m:
-case RISCV::BI__builtin_rvv_vmulhu_vx_u32m1_m:
-case RISCV::BI__builtin_rvv_vmulhu_vx_u32m2_m:
-case RISCV::BI__builtin_rvv_vmulhu_vx_u32m4_m:
-case RISCV::BI__builtin_rvv_vmulhu_vx_u32m8_m:
-case RISCV::BI__builtin_rvv_vmulhu_vx_u32mf2_m:
-case RISCV::BI__builtin_rvv_vmulhu_vx_u64m1_m:
-case RISCV::BI__builtin_rvv_vmulhu_vx_u64m2_m:
-case RISCV::BI__builtin_rvv_vmulhu_vx_u64m4_m:
-case RISCV::BI__builtin_rvv_vmulhu_vx_u64m8_m:
+case RISCV::BI__builtin_rvv_vmulhu_vv_u8m1_mt:
+case RISCV::BI__builtin_rvv_vmulhu_vv_u8m2_mt:
+case RISCV::BI__builtin_rvv_vmulhu_vv_u8m4_mt:
+case RISCV::BI__builtin_rvv_vmulhu_vv_u8m8_mt:
+case RISCV::BI__builtin_rvv_vmulhu_vv_u8mf2_mt:
+case RISCV::BI__builtin_rvv_vmulhu_vv_u8mf4_mt:
+case RISCV::BI__builtin_rvv_vmulhu_vv_u8mf8_mt:
+case RISCV::BI__builtin_rvv_vmulhu_vv_u16m1_mt:
+case RISCV::BI__builtin_rvv_vmulhu_vv_u16m2_mt:
+case RISCV::BI__builtin_rvv_vmulhu_vv_u16m4_mt:
+case RISCV::BI__builtin_rvv_vmulhu_vv_u16m8_mt:
+case RISCV::BI__builtin_rvv_vmulhu_vv_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vmulhu_vv_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vmulhu_vv_u32m1_mt:
+case RISCV::BI__builtin_rvv_vmulhu_vv_u32m2_mt:
+case RISCV::BI__builtin_rvv_vmulhu_vv_u32m4_mt:
+case RISCV::BI__builtin_rvv_vmulhu_vv_u32m8_mt:
+case RISCV::BI__builtin_rvv_vmulhu_vv_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vmulhu_vv_u64m1_mt:
+case RISCV::BI__builtin_rvv_vmulhu_vv_u64m2_mt:
+case RISCV::BI__builtin_rvv_vmulhu_vv_u64m4_mt:
+case RISCV::BI__builtin_rvv_vmulhu_vv_u64m8_mt:
+case RISCV::BI__builtin_rvv_vmulhu_vx_u8m1_mt:
+case RISCV::BI__builtin_rvv_vmulhu_vx_u8m2_mt:
+case RISCV::BI__builtin_rvv_vmulhu_vx_u8m4_mt:
+case RISCV::BI__builtin_rvv_vmulhu_vx_u8m8_mt:
+case RISCV::BI__builtin_rvv_vmulhu_vx_u8mf2_mt:
+case RISCV::BI__builtin_rvv_vmulhu_vx_u8mf4_mt:
+case RISCV::BI__builtin_rvv_vmulhu_vx_u8mf8_mt:
+case RISCV::BI__builtin_rvv_vmulhu_vx_u16m1_mt:
+case RISCV::BI__builtin_rvv_vmulhu_vx_u16m2_mt:
+case RISCV::BI__builtin_rvv_vmulhu_vx_u16m4_mt:
+case RISCV::BI__builtin_rvv_vmulhu_vx_u16m8_mt:
+case RISCV::BI__builtin_rvv_vmulhu_vx_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vmulhu_vx_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vmulhu_vx_u32m1_mt:
+case RISCV::BI__builtin_rvv_vmulhu_vx_u32m2_mt:
+case RISCV::BI__builtin_rvv_vmulhu_vx_u32m4_mt:
+case RISCV::BI__builtin_rvv_vmulhu_vx_u32m8_mt:
+case RISCV::BI__builtin_rvv_vmulhu_vx_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vmulhu_vx_u64m1_mt:
+case RISCV::BI__builtin_rvv_vmulhu_vx_u64m2_mt:
+case RISCV::BI__builtin_rvv_vmulhu_vx_u64m4_mt:
+case RISCV::BI__builtin_rvv_vmulhu_vx_u64m8_mt:
   ID = Intrinsic::riscv_vmulhu_mask;
-  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 1);
+  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 2);
   IntrinsicTypes = {ResultType, Ops[2]->getType(), Ops.back()->getType()};
   break;
 case RISCV::BI__builtin_rvv_vmv_s_x_i8m1:
@@ -17620,38 +17655,38 @@ case RISCV::BI__builtin_rvv_vnclip_wx_i32mf2:
   ID = Intrinsic::riscv_vnclip;
   IntrinsicTypes = {ResultType, Ops[0]->getType(), Ops[1]->getType(), Ops.back()->getType()};
   break;
-case RISCV::BI__builtin_rvv_vnclip_wv_i8m1_m:
-case RISCV::BI__builtin_rvv_vnclip_wv_i8m2_m:
-case RISCV::BI__builtin_rvv_vnclip_wv_i8m4_m:
-case RISCV::BI__builtin_rvv_vnclip_wv_i8mf2_m:
-case RISCV::BI__builtin_rvv_vnclip_wv_i8mf4_m:
-case RISCV::BI__builtin_rvv_vnclip_wv_i8mf8_m:
-case RISCV::BI__builtin_rvv_vnclip_wv_i16m1_m:
-case RISCV::BI__builtin_rvv_vnclip_wv_i16m2_m:
-case RISCV::BI__builtin_rvv_vnclip_wv_i16m4_m:
-case RISCV::BI__builtin_rvv_vnclip_wv_i16mf2_m:
-case RISCV::BI__builtin_rvv_vnclip_wv_i16mf4_m:
-case RISCV::BI__builtin_rvv_vnclip_wv_i32m1_m:
-case RISCV::BI__builtin_rvv_vnclip_wv_i32m2_m:
-case RISCV::BI__builtin_rvv_vnclip_wv_i32m4_m:
-case RISCV::BI__builtin_rvv_vnclip_wv_i32mf2_m:
-case RISCV::BI__builtin_rvv_vnclip_wx_i8m1_m:
-case RISCV::BI__builtin_rvv_vnclip_wx_i8m2_m:
-case RISCV::BI__builtin_rvv_vnclip_wx_i8m4_m:
-case RISCV::BI__builtin_rvv_vnclip_wx_i8mf2_m:
-case RISCV::BI__builtin_rvv_vnclip_wx_i8mf4_m:
-case RISCV::BI__builtin_rvv_vnclip_wx_i8mf8_m:
-case RISCV::BI__builtin_rvv_vnclip_wx_i16m1_m:
-case RISCV::BI__builtin_rvv_vnclip_wx_i16m2_m:
-case RISCV::BI__builtin_rvv_vnclip_wx_i16m4_m:
-case RISCV::BI__builtin_rvv_vnclip_wx_i16mf2_m:
-case RISCV::BI__builtin_rvv_vnclip_wx_i16mf4_m:
-case RISCV::BI__builtin_rvv_vnclip_wx_i32m1_m:
-case RISCV::BI__builtin_rvv_vnclip_wx_i32m2_m:
-case RISCV::BI__builtin_rvv_vnclip_wx_i32m4_m:
-case RISCV::BI__builtin_rvv_vnclip_wx_i32mf2_m:
+case RISCV::BI__builtin_rvv_vnclip_wv_i8m1_mt:
+case RISCV::BI__builtin_rvv_vnclip_wv_i8m2_mt:
+case RISCV::BI__builtin_rvv_vnclip_wv_i8m4_mt:
+case RISCV::BI__builtin_rvv_vnclip_wv_i8mf2_mt:
+case RISCV::BI__builtin_rvv_vnclip_wv_i8mf4_mt:
+case RISCV::BI__builtin_rvv_vnclip_wv_i8mf8_mt:
+case RISCV::BI__builtin_rvv_vnclip_wv_i16m1_mt:
+case RISCV::BI__builtin_rvv_vnclip_wv_i16m2_mt:
+case RISCV::BI__builtin_rvv_vnclip_wv_i16m4_mt:
+case RISCV::BI__builtin_rvv_vnclip_wv_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vnclip_wv_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vnclip_wv_i32m1_mt:
+case RISCV::BI__builtin_rvv_vnclip_wv_i32m2_mt:
+case RISCV::BI__builtin_rvv_vnclip_wv_i32m4_mt:
+case RISCV::BI__builtin_rvv_vnclip_wv_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vnclip_wx_i8m1_mt:
+case RISCV::BI__builtin_rvv_vnclip_wx_i8m2_mt:
+case RISCV::BI__builtin_rvv_vnclip_wx_i8m4_mt:
+case RISCV::BI__builtin_rvv_vnclip_wx_i8mf2_mt:
+case RISCV::BI__builtin_rvv_vnclip_wx_i8mf4_mt:
+case RISCV::BI__builtin_rvv_vnclip_wx_i8mf8_mt:
+case RISCV::BI__builtin_rvv_vnclip_wx_i16m1_mt:
+case RISCV::BI__builtin_rvv_vnclip_wx_i16m2_mt:
+case RISCV::BI__builtin_rvv_vnclip_wx_i16m4_mt:
+case RISCV::BI__builtin_rvv_vnclip_wx_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vnclip_wx_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vnclip_wx_i32m1_mt:
+case RISCV::BI__builtin_rvv_vnclip_wx_i32m2_mt:
+case RISCV::BI__builtin_rvv_vnclip_wx_i32m4_mt:
+case RISCV::BI__builtin_rvv_vnclip_wx_i32mf2_mt:
   ID = Intrinsic::riscv_vnclip_mask;
-  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 1);
+  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 2);
   IntrinsicTypes = {ResultType, Ops[1]->getType(), Ops[2]->getType(), Ops.back()->getType()};
   break;
 case RISCV::BI__builtin_rvv_vnclipu_wv_u8m1:
@@ -17687,38 +17722,38 @@ case RISCV::BI__builtin_rvv_vnclipu_wx_u32mf2:
   ID = Intrinsic::riscv_vnclipu;
   IntrinsicTypes = {ResultType, Ops[0]->getType(), Ops[1]->getType(), Ops.back()->getType()};
   break;
-case RISCV::BI__builtin_rvv_vnclipu_wv_u8m1_m:
-case RISCV::BI__builtin_rvv_vnclipu_wv_u8m2_m:
-case RISCV::BI__builtin_rvv_vnclipu_wv_u8m4_m:
-case RISCV::BI__builtin_rvv_vnclipu_wv_u8mf2_m:
-case RISCV::BI__builtin_rvv_vnclipu_wv_u8mf4_m:
-case RISCV::BI__builtin_rvv_vnclipu_wv_u8mf8_m:
-case RISCV::BI__builtin_rvv_vnclipu_wv_u16m1_m:
-case RISCV::BI__builtin_rvv_vnclipu_wv_u16m2_m:
-case RISCV::BI__builtin_rvv_vnclipu_wv_u16m4_m:
-case RISCV::BI__builtin_rvv_vnclipu_wv_u16mf2_m:
-case RISCV::BI__builtin_rvv_vnclipu_wv_u16mf4_m:
-case RISCV::BI__builtin_rvv_vnclipu_wv_u32m1_m:
-case RISCV::BI__builtin_rvv_vnclipu_wv_u32m2_m:
-case RISCV::BI__builtin_rvv_vnclipu_wv_u32m4_m:
-case RISCV::BI__builtin_rvv_vnclipu_wv_u32mf2_m:
-case RISCV::BI__builtin_rvv_vnclipu_wx_u8m1_m:
-case RISCV::BI__builtin_rvv_vnclipu_wx_u8m2_m:
-case RISCV::BI__builtin_rvv_vnclipu_wx_u8m4_m:
-case RISCV::BI__builtin_rvv_vnclipu_wx_u8mf2_m:
-case RISCV::BI__builtin_rvv_vnclipu_wx_u8mf4_m:
-case RISCV::BI__builtin_rvv_vnclipu_wx_u8mf8_m:
-case RISCV::BI__builtin_rvv_vnclipu_wx_u16m1_m:
-case RISCV::BI__builtin_rvv_vnclipu_wx_u16m2_m:
-case RISCV::BI__builtin_rvv_vnclipu_wx_u16m4_m:
-case RISCV::BI__builtin_rvv_vnclipu_wx_u16mf2_m:
-case RISCV::BI__builtin_rvv_vnclipu_wx_u16mf4_m:
-case RISCV::BI__builtin_rvv_vnclipu_wx_u32m1_m:
-case RISCV::BI__builtin_rvv_vnclipu_wx_u32m2_m:
-case RISCV::BI__builtin_rvv_vnclipu_wx_u32m4_m:
-case RISCV::BI__builtin_rvv_vnclipu_wx_u32mf2_m:
+case RISCV::BI__builtin_rvv_vnclipu_wv_u8m1_mt:
+case RISCV::BI__builtin_rvv_vnclipu_wv_u8m2_mt:
+case RISCV::BI__builtin_rvv_vnclipu_wv_u8m4_mt:
+case RISCV::BI__builtin_rvv_vnclipu_wv_u8mf2_mt:
+case RISCV::BI__builtin_rvv_vnclipu_wv_u8mf4_mt:
+case RISCV::BI__builtin_rvv_vnclipu_wv_u8mf8_mt:
+case RISCV::BI__builtin_rvv_vnclipu_wv_u16m1_mt:
+case RISCV::BI__builtin_rvv_vnclipu_wv_u16m2_mt:
+case RISCV::BI__builtin_rvv_vnclipu_wv_u16m4_mt:
+case RISCV::BI__builtin_rvv_vnclipu_wv_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vnclipu_wv_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vnclipu_wv_u32m1_mt:
+case RISCV::BI__builtin_rvv_vnclipu_wv_u32m2_mt:
+case RISCV::BI__builtin_rvv_vnclipu_wv_u32m4_mt:
+case RISCV::BI__builtin_rvv_vnclipu_wv_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vnclipu_wx_u8m1_mt:
+case RISCV::BI__builtin_rvv_vnclipu_wx_u8m2_mt:
+case RISCV::BI__builtin_rvv_vnclipu_wx_u8m4_mt:
+case RISCV::BI__builtin_rvv_vnclipu_wx_u8mf2_mt:
+case RISCV::BI__builtin_rvv_vnclipu_wx_u8mf4_mt:
+case RISCV::BI__builtin_rvv_vnclipu_wx_u8mf8_mt:
+case RISCV::BI__builtin_rvv_vnclipu_wx_u16m1_mt:
+case RISCV::BI__builtin_rvv_vnclipu_wx_u16m2_mt:
+case RISCV::BI__builtin_rvv_vnclipu_wx_u16m4_mt:
+case RISCV::BI__builtin_rvv_vnclipu_wx_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vnclipu_wx_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vnclipu_wx_u32m1_mt:
+case RISCV::BI__builtin_rvv_vnclipu_wx_u32m2_mt:
+case RISCV::BI__builtin_rvv_vnclipu_wx_u32m4_mt:
+case RISCV::BI__builtin_rvv_vnclipu_wx_u32mf2_mt:
   ID = Intrinsic::riscv_vnclipu_mask;
-  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 1);
+  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 2);
   IntrinsicTypes = {ResultType, Ops[1]->getType(), Ops[2]->getType(), Ops.back()->getType()};
   break;
 case RISCV::BI__builtin_rvv_vnmsac_vv_i8m1:
@@ -18120,38 +18155,38 @@ case RISCV::BI__builtin_rvv_vnsra_wx_i32mf2:
   ID = Intrinsic::riscv_vnsra;
   IntrinsicTypes = {ResultType, Ops[0]->getType(), Ops[1]->getType(), Ops.back()->getType()};
   break;
-case RISCV::BI__builtin_rvv_vnsra_wv_i8m1_m:
-case RISCV::BI__builtin_rvv_vnsra_wv_i8m2_m:
-case RISCV::BI__builtin_rvv_vnsra_wv_i8m4_m:
-case RISCV::BI__builtin_rvv_vnsra_wv_i8mf2_m:
-case RISCV::BI__builtin_rvv_vnsra_wv_i8mf4_m:
-case RISCV::BI__builtin_rvv_vnsra_wv_i8mf8_m:
-case RISCV::BI__builtin_rvv_vnsra_wv_i16m1_m:
-case RISCV::BI__builtin_rvv_vnsra_wv_i16m2_m:
-case RISCV::BI__builtin_rvv_vnsra_wv_i16m4_m:
-case RISCV::BI__builtin_rvv_vnsra_wv_i16mf2_m:
-case RISCV::BI__builtin_rvv_vnsra_wv_i16mf4_m:
-case RISCV::BI__builtin_rvv_vnsra_wv_i32m1_m:
-case RISCV::BI__builtin_rvv_vnsra_wv_i32m2_m:
-case RISCV::BI__builtin_rvv_vnsra_wv_i32m4_m:
-case RISCV::BI__builtin_rvv_vnsra_wv_i32mf2_m:
-case RISCV::BI__builtin_rvv_vnsra_wx_i8m1_m:
-case RISCV::BI__builtin_rvv_vnsra_wx_i8m2_m:
-case RISCV::BI__builtin_rvv_vnsra_wx_i8m4_m:
-case RISCV::BI__builtin_rvv_vnsra_wx_i8mf2_m:
-case RISCV::BI__builtin_rvv_vnsra_wx_i8mf4_m:
-case RISCV::BI__builtin_rvv_vnsra_wx_i8mf8_m:
-case RISCV::BI__builtin_rvv_vnsra_wx_i16m1_m:
-case RISCV::BI__builtin_rvv_vnsra_wx_i16m2_m:
-case RISCV::BI__builtin_rvv_vnsra_wx_i16m4_m:
-case RISCV::BI__builtin_rvv_vnsra_wx_i16mf2_m:
-case RISCV::BI__builtin_rvv_vnsra_wx_i16mf4_m:
-case RISCV::BI__builtin_rvv_vnsra_wx_i32m1_m:
-case RISCV::BI__builtin_rvv_vnsra_wx_i32m2_m:
-case RISCV::BI__builtin_rvv_vnsra_wx_i32m4_m:
-case RISCV::BI__builtin_rvv_vnsra_wx_i32mf2_m:
+case RISCV::BI__builtin_rvv_vnsra_wv_i8m1_mt:
+case RISCV::BI__builtin_rvv_vnsra_wv_i8m2_mt:
+case RISCV::BI__builtin_rvv_vnsra_wv_i8m4_mt:
+case RISCV::BI__builtin_rvv_vnsra_wv_i8mf2_mt:
+case RISCV::BI__builtin_rvv_vnsra_wv_i8mf4_mt:
+case RISCV::BI__builtin_rvv_vnsra_wv_i8mf8_mt:
+case RISCV::BI__builtin_rvv_vnsra_wv_i16m1_mt:
+case RISCV::BI__builtin_rvv_vnsra_wv_i16m2_mt:
+case RISCV::BI__builtin_rvv_vnsra_wv_i16m4_mt:
+case RISCV::BI__builtin_rvv_vnsra_wv_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vnsra_wv_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vnsra_wv_i32m1_mt:
+case RISCV::BI__builtin_rvv_vnsra_wv_i32m2_mt:
+case RISCV::BI__builtin_rvv_vnsra_wv_i32m4_mt:
+case RISCV::BI__builtin_rvv_vnsra_wv_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vnsra_wx_i8m1_mt:
+case RISCV::BI__builtin_rvv_vnsra_wx_i8m2_mt:
+case RISCV::BI__builtin_rvv_vnsra_wx_i8m4_mt:
+case RISCV::BI__builtin_rvv_vnsra_wx_i8mf2_mt:
+case RISCV::BI__builtin_rvv_vnsra_wx_i8mf4_mt:
+case RISCV::BI__builtin_rvv_vnsra_wx_i8mf8_mt:
+case RISCV::BI__builtin_rvv_vnsra_wx_i16m1_mt:
+case RISCV::BI__builtin_rvv_vnsra_wx_i16m2_mt:
+case RISCV::BI__builtin_rvv_vnsra_wx_i16m4_mt:
+case RISCV::BI__builtin_rvv_vnsra_wx_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vnsra_wx_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vnsra_wx_i32m1_mt:
+case RISCV::BI__builtin_rvv_vnsra_wx_i32m2_mt:
+case RISCV::BI__builtin_rvv_vnsra_wx_i32m4_mt:
+case RISCV::BI__builtin_rvv_vnsra_wx_i32mf2_mt:
   ID = Intrinsic::riscv_vnsra_mask;
-  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 1);
+  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 2);
   IntrinsicTypes = {ResultType, Ops[1]->getType(), Ops[2]->getType(), Ops.back()->getType()};
   break;
 case RISCV::BI__builtin_rvv_vnsrl_wv_u8m1:
@@ -18229,74 +18264,74 @@ case RISCV::BI__builtin_rvv_vncvt_x_x_w_i32mf2:
         break;
       }
       break;
-case RISCV::BI__builtin_rvv_vnsrl_wv_u8m1_m:
-case RISCV::BI__builtin_rvv_vnsrl_wv_u8m2_m:
-case RISCV::BI__builtin_rvv_vnsrl_wv_u8m4_m:
-case RISCV::BI__builtin_rvv_vnsrl_wv_u8mf2_m:
-case RISCV::BI__builtin_rvv_vnsrl_wv_u8mf4_m:
-case RISCV::BI__builtin_rvv_vnsrl_wv_u8mf8_m:
-case RISCV::BI__builtin_rvv_vnsrl_wv_u16m1_m:
-case RISCV::BI__builtin_rvv_vnsrl_wv_u16m2_m:
-case RISCV::BI__builtin_rvv_vnsrl_wv_u16m4_m:
-case RISCV::BI__builtin_rvv_vnsrl_wv_u16mf2_m:
-case RISCV::BI__builtin_rvv_vnsrl_wv_u16mf4_m:
-case RISCV::BI__builtin_rvv_vnsrl_wv_u32m1_m:
-case RISCV::BI__builtin_rvv_vnsrl_wv_u32m2_m:
-case RISCV::BI__builtin_rvv_vnsrl_wv_u32m4_m:
-case RISCV::BI__builtin_rvv_vnsrl_wv_u32mf2_m:
-case RISCV::BI__builtin_rvv_vnsrl_wx_u8m1_m:
-case RISCV::BI__builtin_rvv_vnsrl_wx_u8m2_m:
-case RISCV::BI__builtin_rvv_vnsrl_wx_u8m4_m:
-case RISCV::BI__builtin_rvv_vnsrl_wx_u8mf2_m:
-case RISCV::BI__builtin_rvv_vnsrl_wx_u8mf4_m:
-case RISCV::BI__builtin_rvv_vnsrl_wx_u8mf8_m:
-case RISCV::BI__builtin_rvv_vnsrl_wx_u16m1_m:
-case RISCV::BI__builtin_rvv_vnsrl_wx_u16m2_m:
-case RISCV::BI__builtin_rvv_vnsrl_wx_u16m4_m:
-case RISCV::BI__builtin_rvv_vnsrl_wx_u16mf2_m:
-case RISCV::BI__builtin_rvv_vnsrl_wx_u16mf4_m:
-case RISCV::BI__builtin_rvv_vnsrl_wx_u32m1_m:
-case RISCV::BI__builtin_rvv_vnsrl_wx_u32m2_m:
-case RISCV::BI__builtin_rvv_vnsrl_wx_u32m4_m:
-case RISCV::BI__builtin_rvv_vnsrl_wx_u32mf2_m:
+case RISCV::BI__builtin_rvv_vnsrl_wv_u8m1_mt:
+case RISCV::BI__builtin_rvv_vnsrl_wv_u8m2_mt:
+case RISCV::BI__builtin_rvv_vnsrl_wv_u8m4_mt:
+case RISCV::BI__builtin_rvv_vnsrl_wv_u8mf2_mt:
+case RISCV::BI__builtin_rvv_vnsrl_wv_u8mf4_mt:
+case RISCV::BI__builtin_rvv_vnsrl_wv_u8mf8_mt:
+case RISCV::BI__builtin_rvv_vnsrl_wv_u16m1_mt:
+case RISCV::BI__builtin_rvv_vnsrl_wv_u16m2_mt:
+case RISCV::BI__builtin_rvv_vnsrl_wv_u16m4_mt:
+case RISCV::BI__builtin_rvv_vnsrl_wv_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vnsrl_wv_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vnsrl_wv_u32m1_mt:
+case RISCV::BI__builtin_rvv_vnsrl_wv_u32m2_mt:
+case RISCV::BI__builtin_rvv_vnsrl_wv_u32m4_mt:
+case RISCV::BI__builtin_rvv_vnsrl_wv_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vnsrl_wx_u8m1_mt:
+case RISCV::BI__builtin_rvv_vnsrl_wx_u8m2_mt:
+case RISCV::BI__builtin_rvv_vnsrl_wx_u8m4_mt:
+case RISCV::BI__builtin_rvv_vnsrl_wx_u8mf2_mt:
+case RISCV::BI__builtin_rvv_vnsrl_wx_u8mf4_mt:
+case RISCV::BI__builtin_rvv_vnsrl_wx_u8mf8_mt:
+case RISCV::BI__builtin_rvv_vnsrl_wx_u16m1_mt:
+case RISCV::BI__builtin_rvv_vnsrl_wx_u16m2_mt:
+case RISCV::BI__builtin_rvv_vnsrl_wx_u16m4_mt:
+case RISCV::BI__builtin_rvv_vnsrl_wx_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vnsrl_wx_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vnsrl_wx_u32m1_mt:
+case RISCV::BI__builtin_rvv_vnsrl_wx_u32m2_mt:
+case RISCV::BI__builtin_rvv_vnsrl_wx_u32m4_mt:
+case RISCV::BI__builtin_rvv_vnsrl_wx_u32mf2_mt:
   ID = Intrinsic::riscv_vnsrl_mask;
-  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 1);
+  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 2);
   IntrinsicTypes = {ResultType, Ops[1]->getType(), Ops[2]->getType(), Ops.back()->getType()};
   break;
-case RISCV::BI__builtin_rvv_vncvt_x_x_w_u8m1_m:
-case RISCV::BI__builtin_rvv_vncvt_x_x_w_u8m2_m:
-case RISCV::BI__builtin_rvv_vncvt_x_x_w_u8m4_m:
-case RISCV::BI__builtin_rvv_vncvt_x_x_w_u8mf2_m:
-case RISCV::BI__builtin_rvv_vncvt_x_x_w_u8mf4_m:
-case RISCV::BI__builtin_rvv_vncvt_x_x_w_u8mf8_m:
-case RISCV::BI__builtin_rvv_vncvt_x_x_w_u16m1_m:
-case RISCV::BI__builtin_rvv_vncvt_x_x_w_u16m2_m:
-case RISCV::BI__builtin_rvv_vncvt_x_x_w_u16m4_m:
-case RISCV::BI__builtin_rvv_vncvt_x_x_w_u16mf2_m:
-case RISCV::BI__builtin_rvv_vncvt_x_x_w_u16mf4_m:
-case RISCV::BI__builtin_rvv_vncvt_x_x_w_u32m1_m:
-case RISCV::BI__builtin_rvv_vncvt_x_x_w_u32m2_m:
-case RISCV::BI__builtin_rvv_vncvt_x_x_w_u32m4_m:
-case RISCV::BI__builtin_rvv_vncvt_x_x_w_u32mf2_m:
-case RISCV::BI__builtin_rvv_vncvt_x_x_w_i8m1_m:
-case RISCV::BI__builtin_rvv_vncvt_x_x_w_i8m2_m:
-case RISCV::BI__builtin_rvv_vncvt_x_x_w_i8m4_m:
-case RISCV::BI__builtin_rvv_vncvt_x_x_w_i8mf2_m:
-case RISCV::BI__builtin_rvv_vncvt_x_x_w_i8mf4_m:
-case RISCV::BI__builtin_rvv_vncvt_x_x_w_i8mf8_m:
-case RISCV::BI__builtin_rvv_vncvt_x_x_w_i16m1_m:
-case RISCV::BI__builtin_rvv_vncvt_x_x_w_i16m2_m:
-case RISCV::BI__builtin_rvv_vncvt_x_x_w_i16m4_m:
-case RISCV::BI__builtin_rvv_vncvt_x_x_w_i16mf2_m:
-case RISCV::BI__builtin_rvv_vncvt_x_x_w_i16mf4_m:
-case RISCV::BI__builtin_rvv_vncvt_x_x_w_i32m1_m:
-case RISCV::BI__builtin_rvv_vncvt_x_x_w_i32m2_m:
-case RISCV::BI__builtin_rvv_vncvt_x_x_w_i32m4_m:
-case RISCV::BI__builtin_rvv_vncvt_x_x_w_i32mf2_m:
+case RISCV::BI__builtin_rvv_vncvt_x_x_w_u8m1_mt:
+case RISCV::BI__builtin_rvv_vncvt_x_x_w_u8m2_mt:
+case RISCV::BI__builtin_rvv_vncvt_x_x_w_u8m4_mt:
+case RISCV::BI__builtin_rvv_vncvt_x_x_w_u8mf2_mt:
+case RISCV::BI__builtin_rvv_vncvt_x_x_w_u8mf4_mt:
+case RISCV::BI__builtin_rvv_vncvt_x_x_w_u8mf8_mt:
+case RISCV::BI__builtin_rvv_vncvt_x_x_w_u16m1_mt:
+case RISCV::BI__builtin_rvv_vncvt_x_x_w_u16m2_mt:
+case RISCV::BI__builtin_rvv_vncvt_x_x_w_u16m4_mt:
+case RISCV::BI__builtin_rvv_vncvt_x_x_w_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vncvt_x_x_w_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vncvt_x_x_w_u32m1_mt:
+case RISCV::BI__builtin_rvv_vncvt_x_x_w_u32m2_mt:
+case RISCV::BI__builtin_rvv_vncvt_x_x_w_u32m4_mt:
+case RISCV::BI__builtin_rvv_vncvt_x_x_w_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vncvt_x_x_w_i8m1_mt:
+case RISCV::BI__builtin_rvv_vncvt_x_x_w_i8m2_mt:
+case RISCV::BI__builtin_rvv_vncvt_x_x_w_i8m4_mt:
+case RISCV::BI__builtin_rvv_vncvt_x_x_w_i8mf2_mt:
+case RISCV::BI__builtin_rvv_vncvt_x_x_w_i8mf4_mt:
+case RISCV::BI__builtin_rvv_vncvt_x_x_w_i8mf8_mt:
+case RISCV::BI__builtin_rvv_vncvt_x_x_w_i16m1_mt:
+case RISCV::BI__builtin_rvv_vncvt_x_x_w_i16m2_mt:
+case RISCV::BI__builtin_rvv_vncvt_x_x_w_i16m4_mt:
+case RISCV::BI__builtin_rvv_vncvt_x_x_w_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vncvt_x_x_w_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vncvt_x_x_w_i32m1_mt:
+case RISCV::BI__builtin_rvv_vncvt_x_x_w_i32m2_mt:
+case RISCV::BI__builtin_rvv_vncvt_x_x_w_i32m4_mt:
+case RISCV::BI__builtin_rvv_vncvt_x_x_w_i32mf2_mt:
   ID = Intrinsic::riscv_vnsrl_mask;
 
       {
-        std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 1);
+        std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 2);
         // maskedoff, op1, mask, vl
         IntrinsicTypes = {ResultType,
                           Ops[1]->getType(),
@@ -18397,96 +18432,96 @@ case RISCV::BI__builtin_rvv_vor_vx_u64m8:
   ID = Intrinsic::riscv_vor;
   IntrinsicTypes = {ResultType, Ops[1]->getType(), Ops.back()->getType()};
   break;
-case RISCV::BI__builtin_rvv_vor_vv_i8m1_m:
-case RISCV::BI__builtin_rvv_vor_vv_i8m2_m:
-case RISCV::BI__builtin_rvv_vor_vv_i8m4_m:
-case RISCV::BI__builtin_rvv_vor_vv_i8m8_m:
-case RISCV::BI__builtin_rvv_vor_vv_i8mf2_m:
-case RISCV::BI__builtin_rvv_vor_vv_i8mf4_m:
-case RISCV::BI__builtin_rvv_vor_vv_i8mf8_m:
-case RISCV::BI__builtin_rvv_vor_vv_i16m1_m:
-case RISCV::BI__builtin_rvv_vor_vv_i16m2_m:
-case RISCV::BI__builtin_rvv_vor_vv_i16m4_m:
-case RISCV::BI__builtin_rvv_vor_vv_i16m8_m:
-case RISCV::BI__builtin_rvv_vor_vv_i16mf2_m:
-case RISCV::BI__builtin_rvv_vor_vv_i16mf4_m:
-case RISCV::BI__builtin_rvv_vor_vv_i32m1_m:
-case RISCV::BI__builtin_rvv_vor_vv_i32m2_m:
-case RISCV::BI__builtin_rvv_vor_vv_i32m4_m:
-case RISCV::BI__builtin_rvv_vor_vv_i32m8_m:
-case RISCV::BI__builtin_rvv_vor_vv_i32mf2_m:
-case RISCV::BI__builtin_rvv_vor_vv_i64m1_m:
-case RISCV::BI__builtin_rvv_vor_vv_i64m2_m:
-case RISCV::BI__builtin_rvv_vor_vv_i64m4_m:
-case RISCV::BI__builtin_rvv_vor_vv_i64m8_m:
-case RISCV::BI__builtin_rvv_vor_vx_i8m1_m:
-case RISCV::BI__builtin_rvv_vor_vx_i8m2_m:
-case RISCV::BI__builtin_rvv_vor_vx_i8m4_m:
-case RISCV::BI__builtin_rvv_vor_vx_i8m8_m:
-case RISCV::BI__builtin_rvv_vor_vx_i8mf2_m:
-case RISCV::BI__builtin_rvv_vor_vx_i8mf4_m:
-case RISCV::BI__builtin_rvv_vor_vx_i8mf8_m:
-case RISCV::BI__builtin_rvv_vor_vx_i16m1_m:
-case RISCV::BI__builtin_rvv_vor_vx_i16m2_m:
-case RISCV::BI__builtin_rvv_vor_vx_i16m4_m:
-case RISCV::BI__builtin_rvv_vor_vx_i16m8_m:
-case RISCV::BI__builtin_rvv_vor_vx_i16mf2_m:
-case RISCV::BI__builtin_rvv_vor_vx_i16mf4_m:
-case RISCV::BI__builtin_rvv_vor_vx_i32m1_m:
-case RISCV::BI__builtin_rvv_vor_vx_i32m2_m:
-case RISCV::BI__builtin_rvv_vor_vx_i32m4_m:
-case RISCV::BI__builtin_rvv_vor_vx_i32m8_m:
-case RISCV::BI__builtin_rvv_vor_vx_i32mf2_m:
-case RISCV::BI__builtin_rvv_vor_vx_i64m1_m:
-case RISCV::BI__builtin_rvv_vor_vx_i64m2_m:
-case RISCV::BI__builtin_rvv_vor_vx_i64m4_m:
-case RISCV::BI__builtin_rvv_vor_vx_i64m8_m:
-case RISCV::BI__builtin_rvv_vor_vv_u8m1_m:
-case RISCV::BI__builtin_rvv_vor_vv_u8m2_m:
-case RISCV::BI__builtin_rvv_vor_vv_u8m4_m:
-case RISCV::BI__builtin_rvv_vor_vv_u8m8_m:
-case RISCV::BI__builtin_rvv_vor_vv_u8mf2_m:
-case RISCV::BI__builtin_rvv_vor_vv_u8mf4_m:
-case RISCV::BI__builtin_rvv_vor_vv_u8mf8_m:
-case RISCV::BI__builtin_rvv_vor_vv_u16m1_m:
-case RISCV::BI__builtin_rvv_vor_vv_u16m2_m:
-case RISCV::BI__builtin_rvv_vor_vv_u16m4_m:
-case RISCV::BI__builtin_rvv_vor_vv_u16m8_m:
-case RISCV::BI__builtin_rvv_vor_vv_u16mf2_m:
-case RISCV::BI__builtin_rvv_vor_vv_u16mf4_m:
-case RISCV::BI__builtin_rvv_vor_vv_u32m1_m:
-case RISCV::BI__builtin_rvv_vor_vv_u32m2_m:
-case RISCV::BI__builtin_rvv_vor_vv_u32m4_m:
-case RISCV::BI__builtin_rvv_vor_vv_u32m8_m:
-case RISCV::BI__builtin_rvv_vor_vv_u32mf2_m:
-case RISCV::BI__builtin_rvv_vor_vv_u64m1_m:
-case RISCV::BI__builtin_rvv_vor_vv_u64m2_m:
-case RISCV::BI__builtin_rvv_vor_vv_u64m4_m:
-case RISCV::BI__builtin_rvv_vor_vv_u64m8_m:
-case RISCV::BI__builtin_rvv_vor_vx_u8m1_m:
-case RISCV::BI__builtin_rvv_vor_vx_u8m2_m:
-case RISCV::BI__builtin_rvv_vor_vx_u8m4_m:
-case RISCV::BI__builtin_rvv_vor_vx_u8m8_m:
-case RISCV::BI__builtin_rvv_vor_vx_u8mf2_m:
-case RISCV::BI__builtin_rvv_vor_vx_u8mf4_m:
-case RISCV::BI__builtin_rvv_vor_vx_u8mf8_m:
-case RISCV::BI__builtin_rvv_vor_vx_u16m1_m:
-case RISCV::BI__builtin_rvv_vor_vx_u16m2_m:
-case RISCV::BI__builtin_rvv_vor_vx_u16m4_m:
-case RISCV::BI__builtin_rvv_vor_vx_u16m8_m:
-case RISCV::BI__builtin_rvv_vor_vx_u16mf2_m:
-case RISCV::BI__builtin_rvv_vor_vx_u16mf4_m:
-case RISCV::BI__builtin_rvv_vor_vx_u32m1_m:
-case RISCV::BI__builtin_rvv_vor_vx_u32m2_m:
-case RISCV::BI__builtin_rvv_vor_vx_u32m4_m:
-case RISCV::BI__builtin_rvv_vor_vx_u32m8_m:
-case RISCV::BI__builtin_rvv_vor_vx_u32mf2_m:
-case RISCV::BI__builtin_rvv_vor_vx_u64m1_m:
-case RISCV::BI__builtin_rvv_vor_vx_u64m2_m:
-case RISCV::BI__builtin_rvv_vor_vx_u64m4_m:
-case RISCV::BI__builtin_rvv_vor_vx_u64m8_m:
+case RISCV::BI__builtin_rvv_vor_vv_i8m1_mt:
+case RISCV::BI__builtin_rvv_vor_vv_i8m2_mt:
+case RISCV::BI__builtin_rvv_vor_vv_i8m4_mt:
+case RISCV::BI__builtin_rvv_vor_vv_i8m8_mt:
+case RISCV::BI__builtin_rvv_vor_vv_i8mf2_mt:
+case RISCV::BI__builtin_rvv_vor_vv_i8mf4_mt:
+case RISCV::BI__builtin_rvv_vor_vv_i8mf8_mt:
+case RISCV::BI__builtin_rvv_vor_vv_i16m1_mt:
+case RISCV::BI__builtin_rvv_vor_vv_i16m2_mt:
+case RISCV::BI__builtin_rvv_vor_vv_i16m4_mt:
+case RISCV::BI__builtin_rvv_vor_vv_i16m8_mt:
+case RISCV::BI__builtin_rvv_vor_vv_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vor_vv_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vor_vv_i32m1_mt:
+case RISCV::BI__builtin_rvv_vor_vv_i32m2_mt:
+case RISCV::BI__builtin_rvv_vor_vv_i32m4_mt:
+case RISCV::BI__builtin_rvv_vor_vv_i32m8_mt:
+case RISCV::BI__builtin_rvv_vor_vv_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vor_vv_i64m1_mt:
+case RISCV::BI__builtin_rvv_vor_vv_i64m2_mt:
+case RISCV::BI__builtin_rvv_vor_vv_i64m4_mt:
+case RISCV::BI__builtin_rvv_vor_vv_i64m8_mt:
+case RISCV::BI__builtin_rvv_vor_vx_i8m1_mt:
+case RISCV::BI__builtin_rvv_vor_vx_i8m2_mt:
+case RISCV::BI__builtin_rvv_vor_vx_i8m4_mt:
+case RISCV::BI__builtin_rvv_vor_vx_i8m8_mt:
+case RISCV::BI__builtin_rvv_vor_vx_i8mf2_mt:
+case RISCV::BI__builtin_rvv_vor_vx_i8mf4_mt:
+case RISCV::BI__builtin_rvv_vor_vx_i8mf8_mt:
+case RISCV::BI__builtin_rvv_vor_vx_i16m1_mt:
+case RISCV::BI__builtin_rvv_vor_vx_i16m2_mt:
+case RISCV::BI__builtin_rvv_vor_vx_i16m4_mt:
+case RISCV::BI__builtin_rvv_vor_vx_i16m8_mt:
+case RISCV::BI__builtin_rvv_vor_vx_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vor_vx_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vor_vx_i32m1_mt:
+case RISCV::BI__builtin_rvv_vor_vx_i32m2_mt:
+case RISCV::BI__builtin_rvv_vor_vx_i32m4_mt:
+case RISCV::BI__builtin_rvv_vor_vx_i32m8_mt:
+case RISCV::BI__builtin_rvv_vor_vx_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vor_vx_i64m1_mt:
+case RISCV::BI__builtin_rvv_vor_vx_i64m2_mt:
+case RISCV::BI__builtin_rvv_vor_vx_i64m4_mt:
+case RISCV::BI__builtin_rvv_vor_vx_i64m8_mt:
+case RISCV::BI__builtin_rvv_vor_vv_u8m1_mt:
+case RISCV::BI__builtin_rvv_vor_vv_u8m2_mt:
+case RISCV::BI__builtin_rvv_vor_vv_u8m4_mt:
+case RISCV::BI__builtin_rvv_vor_vv_u8m8_mt:
+case RISCV::BI__builtin_rvv_vor_vv_u8mf2_mt:
+case RISCV::BI__builtin_rvv_vor_vv_u8mf4_mt:
+case RISCV::BI__builtin_rvv_vor_vv_u8mf8_mt:
+case RISCV::BI__builtin_rvv_vor_vv_u16m1_mt:
+case RISCV::BI__builtin_rvv_vor_vv_u16m2_mt:
+case RISCV::BI__builtin_rvv_vor_vv_u16m4_mt:
+case RISCV::BI__builtin_rvv_vor_vv_u16m8_mt:
+case RISCV::BI__builtin_rvv_vor_vv_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vor_vv_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vor_vv_u32m1_mt:
+case RISCV::BI__builtin_rvv_vor_vv_u32m2_mt:
+case RISCV::BI__builtin_rvv_vor_vv_u32m4_mt:
+case RISCV::BI__builtin_rvv_vor_vv_u32m8_mt:
+case RISCV::BI__builtin_rvv_vor_vv_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vor_vv_u64m1_mt:
+case RISCV::BI__builtin_rvv_vor_vv_u64m2_mt:
+case RISCV::BI__builtin_rvv_vor_vv_u64m4_mt:
+case RISCV::BI__builtin_rvv_vor_vv_u64m8_mt:
+case RISCV::BI__builtin_rvv_vor_vx_u8m1_mt:
+case RISCV::BI__builtin_rvv_vor_vx_u8m2_mt:
+case RISCV::BI__builtin_rvv_vor_vx_u8m4_mt:
+case RISCV::BI__builtin_rvv_vor_vx_u8m8_mt:
+case RISCV::BI__builtin_rvv_vor_vx_u8mf2_mt:
+case RISCV::BI__builtin_rvv_vor_vx_u8mf4_mt:
+case RISCV::BI__builtin_rvv_vor_vx_u8mf8_mt:
+case RISCV::BI__builtin_rvv_vor_vx_u16m1_mt:
+case RISCV::BI__builtin_rvv_vor_vx_u16m2_mt:
+case RISCV::BI__builtin_rvv_vor_vx_u16m4_mt:
+case RISCV::BI__builtin_rvv_vor_vx_u16m8_mt:
+case RISCV::BI__builtin_rvv_vor_vx_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vor_vx_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vor_vx_u32m1_mt:
+case RISCV::BI__builtin_rvv_vor_vx_u32m2_mt:
+case RISCV::BI__builtin_rvv_vor_vx_u32m4_mt:
+case RISCV::BI__builtin_rvv_vor_vx_u32m8_mt:
+case RISCV::BI__builtin_rvv_vor_vx_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vor_vx_u64m1_mt:
+case RISCV::BI__builtin_rvv_vor_vx_u64m2_mt:
+case RISCV::BI__builtin_rvv_vor_vx_u64m4_mt:
+case RISCV::BI__builtin_rvv_vor_vx_u64m8_mt:
   ID = Intrinsic::riscv_vor_mask;
-  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 1);
+  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 2);
   IntrinsicTypes = {ResultType, Ops[2]->getType(), Ops.back()->getType()};
   break;
 case RISCV::BI__builtin_rvv_vpopc_m_b8:
@@ -19141,52 +19176,52 @@ case RISCV::BI__builtin_rvv_vrem_vx_i64m8:
   ID = Intrinsic::riscv_vrem;
   IntrinsicTypes = {ResultType, Ops[1]->getType(), Ops.back()->getType()};
   break;
-case RISCV::BI__builtin_rvv_vrem_vv_i8m1_m:
-case RISCV::BI__builtin_rvv_vrem_vv_i8m2_m:
-case RISCV::BI__builtin_rvv_vrem_vv_i8m4_m:
-case RISCV::BI__builtin_rvv_vrem_vv_i8m8_m:
-case RISCV::BI__builtin_rvv_vrem_vv_i8mf2_m:
-case RISCV::BI__builtin_rvv_vrem_vv_i8mf4_m:
-case RISCV::BI__builtin_rvv_vrem_vv_i8mf8_m:
-case RISCV::BI__builtin_rvv_vrem_vv_i16m1_m:
-case RISCV::BI__builtin_rvv_vrem_vv_i16m2_m:
-case RISCV::BI__builtin_rvv_vrem_vv_i16m4_m:
-case RISCV::BI__builtin_rvv_vrem_vv_i16m8_m:
-case RISCV::BI__builtin_rvv_vrem_vv_i16mf2_m:
-case RISCV::BI__builtin_rvv_vrem_vv_i16mf4_m:
-case RISCV::BI__builtin_rvv_vrem_vv_i32m1_m:
-case RISCV::BI__builtin_rvv_vrem_vv_i32m2_m:
-case RISCV::BI__builtin_rvv_vrem_vv_i32m4_m:
-case RISCV::BI__builtin_rvv_vrem_vv_i32m8_m:
-case RISCV::BI__builtin_rvv_vrem_vv_i32mf2_m:
-case RISCV::BI__builtin_rvv_vrem_vv_i64m1_m:
-case RISCV::BI__builtin_rvv_vrem_vv_i64m2_m:
-case RISCV::BI__builtin_rvv_vrem_vv_i64m4_m:
-case RISCV::BI__builtin_rvv_vrem_vv_i64m8_m:
-case RISCV::BI__builtin_rvv_vrem_vx_i8m1_m:
-case RISCV::BI__builtin_rvv_vrem_vx_i8m2_m:
-case RISCV::BI__builtin_rvv_vrem_vx_i8m4_m:
-case RISCV::BI__builtin_rvv_vrem_vx_i8m8_m:
-case RISCV::BI__builtin_rvv_vrem_vx_i8mf2_m:
-case RISCV::BI__builtin_rvv_vrem_vx_i8mf4_m:
-case RISCV::BI__builtin_rvv_vrem_vx_i8mf8_m:
-case RISCV::BI__builtin_rvv_vrem_vx_i16m1_m:
-case RISCV::BI__builtin_rvv_vrem_vx_i16m2_m:
-case RISCV::BI__builtin_rvv_vrem_vx_i16m4_m:
-case RISCV::BI__builtin_rvv_vrem_vx_i16m8_m:
-case RISCV::BI__builtin_rvv_vrem_vx_i16mf2_m:
-case RISCV::BI__builtin_rvv_vrem_vx_i16mf4_m:
-case RISCV::BI__builtin_rvv_vrem_vx_i32m1_m:
-case RISCV::BI__builtin_rvv_vrem_vx_i32m2_m:
-case RISCV::BI__builtin_rvv_vrem_vx_i32m4_m:
-case RISCV::BI__builtin_rvv_vrem_vx_i32m8_m:
-case RISCV::BI__builtin_rvv_vrem_vx_i32mf2_m:
-case RISCV::BI__builtin_rvv_vrem_vx_i64m1_m:
-case RISCV::BI__builtin_rvv_vrem_vx_i64m2_m:
-case RISCV::BI__builtin_rvv_vrem_vx_i64m4_m:
-case RISCV::BI__builtin_rvv_vrem_vx_i64m8_m:
+case RISCV::BI__builtin_rvv_vrem_vv_i8m1_mt:
+case RISCV::BI__builtin_rvv_vrem_vv_i8m2_mt:
+case RISCV::BI__builtin_rvv_vrem_vv_i8m4_mt:
+case RISCV::BI__builtin_rvv_vrem_vv_i8m8_mt:
+case RISCV::BI__builtin_rvv_vrem_vv_i8mf2_mt:
+case RISCV::BI__builtin_rvv_vrem_vv_i8mf4_mt:
+case RISCV::BI__builtin_rvv_vrem_vv_i8mf8_mt:
+case RISCV::BI__builtin_rvv_vrem_vv_i16m1_mt:
+case RISCV::BI__builtin_rvv_vrem_vv_i16m2_mt:
+case RISCV::BI__builtin_rvv_vrem_vv_i16m4_mt:
+case RISCV::BI__builtin_rvv_vrem_vv_i16m8_mt:
+case RISCV::BI__builtin_rvv_vrem_vv_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vrem_vv_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vrem_vv_i32m1_mt:
+case RISCV::BI__builtin_rvv_vrem_vv_i32m2_mt:
+case RISCV::BI__builtin_rvv_vrem_vv_i32m4_mt:
+case RISCV::BI__builtin_rvv_vrem_vv_i32m8_mt:
+case RISCV::BI__builtin_rvv_vrem_vv_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vrem_vv_i64m1_mt:
+case RISCV::BI__builtin_rvv_vrem_vv_i64m2_mt:
+case RISCV::BI__builtin_rvv_vrem_vv_i64m4_mt:
+case RISCV::BI__builtin_rvv_vrem_vv_i64m8_mt:
+case RISCV::BI__builtin_rvv_vrem_vx_i8m1_mt:
+case RISCV::BI__builtin_rvv_vrem_vx_i8m2_mt:
+case RISCV::BI__builtin_rvv_vrem_vx_i8m4_mt:
+case RISCV::BI__builtin_rvv_vrem_vx_i8m8_mt:
+case RISCV::BI__builtin_rvv_vrem_vx_i8mf2_mt:
+case RISCV::BI__builtin_rvv_vrem_vx_i8mf4_mt:
+case RISCV::BI__builtin_rvv_vrem_vx_i8mf8_mt:
+case RISCV::BI__builtin_rvv_vrem_vx_i16m1_mt:
+case RISCV::BI__builtin_rvv_vrem_vx_i16m2_mt:
+case RISCV::BI__builtin_rvv_vrem_vx_i16m4_mt:
+case RISCV::BI__builtin_rvv_vrem_vx_i16m8_mt:
+case RISCV::BI__builtin_rvv_vrem_vx_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vrem_vx_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vrem_vx_i32m1_mt:
+case RISCV::BI__builtin_rvv_vrem_vx_i32m2_mt:
+case RISCV::BI__builtin_rvv_vrem_vx_i32m4_mt:
+case RISCV::BI__builtin_rvv_vrem_vx_i32m8_mt:
+case RISCV::BI__builtin_rvv_vrem_vx_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vrem_vx_i64m1_mt:
+case RISCV::BI__builtin_rvv_vrem_vx_i64m2_mt:
+case RISCV::BI__builtin_rvv_vrem_vx_i64m4_mt:
+case RISCV::BI__builtin_rvv_vrem_vx_i64m8_mt:
   ID = Intrinsic::riscv_vrem_mask;
-  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 1);
+  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 2);
   IntrinsicTypes = {ResultType, Ops[2]->getType(), Ops.back()->getType()};
   break;
 case RISCV::BI__builtin_rvv_vremu_vv_u8m1:
@@ -19236,52 +19271,52 @@ case RISCV::BI__builtin_rvv_vremu_vx_u64m8:
   ID = Intrinsic::riscv_vremu;
   IntrinsicTypes = {ResultType, Ops[1]->getType(), Ops.back()->getType()};
   break;
-case RISCV::BI__builtin_rvv_vremu_vv_u8m1_m:
-case RISCV::BI__builtin_rvv_vremu_vv_u8m2_m:
-case RISCV::BI__builtin_rvv_vremu_vv_u8m4_m:
-case RISCV::BI__builtin_rvv_vremu_vv_u8m8_m:
-case RISCV::BI__builtin_rvv_vremu_vv_u8mf2_m:
-case RISCV::BI__builtin_rvv_vremu_vv_u8mf4_m:
-case RISCV::BI__builtin_rvv_vremu_vv_u8mf8_m:
-case RISCV::BI__builtin_rvv_vremu_vv_u16m1_m:
-case RISCV::BI__builtin_rvv_vremu_vv_u16m2_m:
-case RISCV::BI__builtin_rvv_vremu_vv_u16m4_m:
-case RISCV::BI__builtin_rvv_vremu_vv_u16m8_m:
-case RISCV::BI__builtin_rvv_vremu_vv_u16mf2_m:
-case RISCV::BI__builtin_rvv_vremu_vv_u16mf4_m:
-case RISCV::BI__builtin_rvv_vremu_vv_u32m1_m:
-case RISCV::BI__builtin_rvv_vremu_vv_u32m2_m:
-case RISCV::BI__builtin_rvv_vremu_vv_u32m4_m:
-case RISCV::BI__builtin_rvv_vremu_vv_u32m8_m:
-case RISCV::BI__builtin_rvv_vremu_vv_u32mf2_m:
-case RISCV::BI__builtin_rvv_vremu_vv_u64m1_m:
-case RISCV::BI__builtin_rvv_vremu_vv_u64m2_m:
-case RISCV::BI__builtin_rvv_vremu_vv_u64m4_m:
-case RISCV::BI__builtin_rvv_vremu_vv_u64m8_m:
-case RISCV::BI__builtin_rvv_vremu_vx_u8m1_m:
-case RISCV::BI__builtin_rvv_vremu_vx_u8m2_m:
-case RISCV::BI__builtin_rvv_vremu_vx_u8m4_m:
-case RISCV::BI__builtin_rvv_vremu_vx_u8m8_m:
-case RISCV::BI__builtin_rvv_vremu_vx_u8mf2_m:
-case RISCV::BI__builtin_rvv_vremu_vx_u8mf4_m:
-case RISCV::BI__builtin_rvv_vremu_vx_u8mf8_m:
-case RISCV::BI__builtin_rvv_vremu_vx_u16m1_m:
-case RISCV::BI__builtin_rvv_vremu_vx_u16m2_m:
-case RISCV::BI__builtin_rvv_vremu_vx_u16m4_m:
-case RISCV::BI__builtin_rvv_vremu_vx_u16m8_m:
-case RISCV::BI__builtin_rvv_vremu_vx_u16mf2_m:
-case RISCV::BI__builtin_rvv_vremu_vx_u16mf4_m:
-case RISCV::BI__builtin_rvv_vremu_vx_u32m1_m:
-case RISCV::BI__builtin_rvv_vremu_vx_u32m2_m:
-case RISCV::BI__builtin_rvv_vremu_vx_u32m4_m:
-case RISCV::BI__builtin_rvv_vremu_vx_u32m8_m:
-case RISCV::BI__builtin_rvv_vremu_vx_u32mf2_m:
-case RISCV::BI__builtin_rvv_vremu_vx_u64m1_m:
-case RISCV::BI__builtin_rvv_vremu_vx_u64m2_m:
-case RISCV::BI__builtin_rvv_vremu_vx_u64m4_m:
-case RISCV::BI__builtin_rvv_vremu_vx_u64m8_m:
+case RISCV::BI__builtin_rvv_vremu_vv_u8m1_mt:
+case RISCV::BI__builtin_rvv_vremu_vv_u8m2_mt:
+case RISCV::BI__builtin_rvv_vremu_vv_u8m4_mt:
+case RISCV::BI__builtin_rvv_vremu_vv_u8m8_mt:
+case RISCV::BI__builtin_rvv_vremu_vv_u8mf2_mt:
+case RISCV::BI__builtin_rvv_vremu_vv_u8mf4_mt:
+case RISCV::BI__builtin_rvv_vremu_vv_u8mf8_mt:
+case RISCV::BI__builtin_rvv_vremu_vv_u16m1_mt:
+case RISCV::BI__builtin_rvv_vremu_vv_u16m2_mt:
+case RISCV::BI__builtin_rvv_vremu_vv_u16m4_mt:
+case RISCV::BI__builtin_rvv_vremu_vv_u16m8_mt:
+case RISCV::BI__builtin_rvv_vremu_vv_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vremu_vv_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vremu_vv_u32m1_mt:
+case RISCV::BI__builtin_rvv_vremu_vv_u32m2_mt:
+case RISCV::BI__builtin_rvv_vremu_vv_u32m4_mt:
+case RISCV::BI__builtin_rvv_vremu_vv_u32m8_mt:
+case RISCV::BI__builtin_rvv_vremu_vv_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vremu_vv_u64m1_mt:
+case RISCV::BI__builtin_rvv_vremu_vv_u64m2_mt:
+case RISCV::BI__builtin_rvv_vremu_vv_u64m4_mt:
+case RISCV::BI__builtin_rvv_vremu_vv_u64m8_mt:
+case RISCV::BI__builtin_rvv_vremu_vx_u8m1_mt:
+case RISCV::BI__builtin_rvv_vremu_vx_u8m2_mt:
+case RISCV::BI__builtin_rvv_vremu_vx_u8m4_mt:
+case RISCV::BI__builtin_rvv_vremu_vx_u8m8_mt:
+case RISCV::BI__builtin_rvv_vremu_vx_u8mf2_mt:
+case RISCV::BI__builtin_rvv_vremu_vx_u8mf4_mt:
+case RISCV::BI__builtin_rvv_vremu_vx_u8mf8_mt:
+case RISCV::BI__builtin_rvv_vremu_vx_u16m1_mt:
+case RISCV::BI__builtin_rvv_vremu_vx_u16m2_mt:
+case RISCV::BI__builtin_rvv_vremu_vx_u16m4_mt:
+case RISCV::BI__builtin_rvv_vremu_vx_u16m8_mt:
+case RISCV::BI__builtin_rvv_vremu_vx_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vremu_vx_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vremu_vx_u32m1_mt:
+case RISCV::BI__builtin_rvv_vremu_vx_u32m2_mt:
+case RISCV::BI__builtin_rvv_vremu_vx_u32m4_mt:
+case RISCV::BI__builtin_rvv_vremu_vx_u32m8_mt:
+case RISCV::BI__builtin_rvv_vremu_vx_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vremu_vx_u64m1_mt:
+case RISCV::BI__builtin_rvv_vremu_vx_u64m2_mt:
+case RISCV::BI__builtin_rvv_vremu_vx_u64m4_mt:
+case RISCV::BI__builtin_rvv_vremu_vx_u64m8_mt:
   ID = Intrinsic::riscv_vremu_mask;
-  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 1);
+  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 2);
   IntrinsicTypes = {ResultType, Ops[2]->getType(), Ops.back()->getType()};
   break;
 case RISCV::BI__builtin_rvv_vrgather_vv_i8m1:
@@ -19346,67 +19381,67 @@ case RISCV::BI__builtin_rvv_vrgather_vv_u64m8:
   ID = Intrinsic::riscv_vrgather_vv;
   IntrinsicTypes = {ResultType, Ops.back()->getType()};
   break;
-case RISCV::BI__builtin_rvv_vrgather_vv_i8m1_m:
-case RISCV::BI__builtin_rvv_vrgather_vv_i8m2_m:
-case RISCV::BI__builtin_rvv_vrgather_vv_i8m4_m:
-case RISCV::BI__builtin_rvv_vrgather_vv_i8m8_m:
-case RISCV::BI__builtin_rvv_vrgather_vv_i8mf2_m:
-case RISCV::BI__builtin_rvv_vrgather_vv_i8mf4_m:
-case RISCV::BI__builtin_rvv_vrgather_vv_i8mf8_m:
-case RISCV::BI__builtin_rvv_vrgather_vv_i16m1_m:
-case RISCV::BI__builtin_rvv_vrgather_vv_i16m2_m:
-case RISCV::BI__builtin_rvv_vrgather_vv_i16m4_m:
-case RISCV::BI__builtin_rvv_vrgather_vv_i16m8_m:
-case RISCV::BI__builtin_rvv_vrgather_vv_i16mf2_m:
-case RISCV::BI__builtin_rvv_vrgather_vv_i16mf4_m:
-case RISCV::BI__builtin_rvv_vrgather_vv_i32m1_m:
-case RISCV::BI__builtin_rvv_vrgather_vv_i32m2_m:
-case RISCV::BI__builtin_rvv_vrgather_vv_i32m4_m:
-case RISCV::BI__builtin_rvv_vrgather_vv_i32m8_m:
-case RISCV::BI__builtin_rvv_vrgather_vv_i32mf2_m:
-case RISCV::BI__builtin_rvv_vrgather_vv_i64m1_m:
-case RISCV::BI__builtin_rvv_vrgather_vv_i64m2_m:
-case RISCV::BI__builtin_rvv_vrgather_vv_i64m4_m:
-case RISCV::BI__builtin_rvv_vrgather_vv_i64m8_m:
-case RISCV::BI__builtin_rvv_vrgather_vv_f16m1_m:
-case RISCV::BI__builtin_rvv_vrgather_vv_f16m2_m:
-case RISCV::BI__builtin_rvv_vrgather_vv_f16m4_m:
-case RISCV::BI__builtin_rvv_vrgather_vv_f16m8_m:
-case RISCV::BI__builtin_rvv_vrgather_vv_f16mf2_m:
-case RISCV::BI__builtin_rvv_vrgather_vv_f16mf4_m:
-case RISCV::BI__builtin_rvv_vrgather_vv_f32m1_m:
-case RISCV::BI__builtin_rvv_vrgather_vv_f32m2_m:
-case RISCV::BI__builtin_rvv_vrgather_vv_f32m4_m:
-case RISCV::BI__builtin_rvv_vrgather_vv_f32m8_m:
-case RISCV::BI__builtin_rvv_vrgather_vv_f32mf2_m:
-case RISCV::BI__builtin_rvv_vrgather_vv_f64m1_m:
-case RISCV::BI__builtin_rvv_vrgather_vv_f64m2_m:
-case RISCV::BI__builtin_rvv_vrgather_vv_f64m4_m:
-case RISCV::BI__builtin_rvv_vrgather_vv_f64m8_m:
-case RISCV::BI__builtin_rvv_vrgather_vv_u8m1_m:
-case RISCV::BI__builtin_rvv_vrgather_vv_u8m2_m:
-case RISCV::BI__builtin_rvv_vrgather_vv_u8m4_m:
-case RISCV::BI__builtin_rvv_vrgather_vv_u8m8_m:
-case RISCV::BI__builtin_rvv_vrgather_vv_u8mf2_m:
-case RISCV::BI__builtin_rvv_vrgather_vv_u8mf4_m:
-case RISCV::BI__builtin_rvv_vrgather_vv_u8mf8_m:
-case RISCV::BI__builtin_rvv_vrgather_vv_u16m1_m:
-case RISCV::BI__builtin_rvv_vrgather_vv_u16m2_m:
-case RISCV::BI__builtin_rvv_vrgather_vv_u16m4_m:
-case RISCV::BI__builtin_rvv_vrgather_vv_u16m8_m:
-case RISCV::BI__builtin_rvv_vrgather_vv_u16mf2_m:
-case RISCV::BI__builtin_rvv_vrgather_vv_u16mf4_m:
-case RISCV::BI__builtin_rvv_vrgather_vv_u32m1_m:
-case RISCV::BI__builtin_rvv_vrgather_vv_u32m2_m:
-case RISCV::BI__builtin_rvv_vrgather_vv_u32m4_m:
-case RISCV::BI__builtin_rvv_vrgather_vv_u32m8_m:
-case RISCV::BI__builtin_rvv_vrgather_vv_u32mf2_m:
-case RISCV::BI__builtin_rvv_vrgather_vv_u64m1_m:
-case RISCV::BI__builtin_rvv_vrgather_vv_u64m2_m:
-case RISCV::BI__builtin_rvv_vrgather_vv_u64m4_m:
-case RISCV::BI__builtin_rvv_vrgather_vv_u64m8_m:
+case RISCV::BI__builtin_rvv_vrgather_vv_i8m1_mt:
+case RISCV::BI__builtin_rvv_vrgather_vv_i8m2_mt:
+case RISCV::BI__builtin_rvv_vrgather_vv_i8m4_mt:
+case RISCV::BI__builtin_rvv_vrgather_vv_i8m8_mt:
+case RISCV::BI__builtin_rvv_vrgather_vv_i8mf2_mt:
+case RISCV::BI__builtin_rvv_vrgather_vv_i8mf4_mt:
+case RISCV::BI__builtin_rvv_vrgather_vv_i8mf8_mt:
+case RISCV::BI__builtin_rvv_vrgather_vv_i16m1_mt:
+case RISCV::BI__builtin_rvv_vrgather_vv_i16m2_mt:
+case RISCV::BI__builtin_rvv_vrgather_vv_i16m4_mt:
+case RISCV::BI__builtin_rvv_vrgather_vv_i16m8_mt:
+case RISCV::BI__builtin_rvv_vrgather_vv_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vrgather_vv_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vrgather_vv_i32m1_mt:
+case RISCV::BI__builtin_rvv_vrgather_vv_i32m2_mt:
+case RISCV::BI__builtin_rvv_vrgather_vv_i32m4_mt:
+case RISCV::BI__builtin_rvv_vrgather_vv_i32m8_mt:
+case RISCV::BI__builtin_rvv_vrgather_vv_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vrgather_vv_i64m1_mt:
+case RISCV::BI__builtin_rvv_vrgather_vv_i64m2_mt:
+case RISCV::BI__builtin_rvv_vrgather_vv_i64m4_mt:
+case RISCV::BI__builtin_rvv_vrgather_vv_i64m8_mt:
+case RISCV::BI__builtin_rvv_vrgather_vv_f16m1_mt:
+case RISCV::BI__builtin_rvv_vrgather_vv_f16m2_mt:
+case RISCV::BI__builtin_rvv_vrgather_vv_f16m4_mt:
+case RISCV::BI__builtin_rvv_vrgather_vv_f16m8_mt:
+case RISCV::BI__builtin_rvv_vrgather_vv_f16mf2_mt:
+case RISCV::BI__builtin_rvv_vrgather_vv_f16mf4_mt:
+case RISCV::BI__builtin_rvv_vrgather_vv_f32m1_mt:
+case RISCV::BI__builtin_rvv_vrgather_vv_f32m2_mt:
+case RISCV::BI__builtin_rvv_vrgather_vv_f32m4_mt:
+case RISCV::BI__builtin_rvv_vrgather_vv_f32m8_mt:
+case RISCV::BI__builtin_rvv_vrgather_vv_f32mf2_mt:
+case RISCV::BI__builtin_rvv_vrgather_vv_f64m1_mt:
+case RISCV::BI__builtin_rvv_vrgather_vv_f64m2_mt:
+case RISCV::BI__builtin_rvv_vrgather_vv_f64m4_mt:
+case RISCV::BI__builtin_rvv_vrgather_vv_f64m8_mt:
+case RISCV::BI__builtin_rvv_vrgather_vv_u8m1_mt:
+case RISCV::BI__builtin_rvv_vrgather_vv_u8m2_mt:
+case RISCV::BI__builtin_rvv_vrgather_vv_u8m4_mt:
+case RISCV::BI__builtin_rvv_vrgather_vv_u8m8_mt:
+case RISCV::BI__builtin_rvv_vrgather_vv_u8mf2_mt:
+case RISCV::BI__builtin_rvv_vrgather_vv_u8mf4_mt:
+case RISCV::BI__builtin_rvv_vrgather_vv_u8mf8_mt:
+case RISCV::BI__builtin_rvv_vrgather_vv_u16m1_mt:
+case RISCV::BI__builtin_rvv_vrgather_vv_u16m2_mt:
+case RISCV::BI__builtin_rvv_vrgather_vv_u16m4_mt:
+case RISCV::BI__builtin_rvv_vrgather_vv_u16m8_mt:
+case RISCV::BI__builtin_rvv_vrgather_vv_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vrgather_vv_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vrgather_vv_u32m1_mt:
+case RISCV::BI__builtin_rvv_vrgather_vv_u32m2_mt:
+case RISCV::BI__builtin_rvv_vrgather_vv_u32m4_mt:
+case RISCV::BI__builtin_rvv_vrgather_vv_u32m8_mt:
+case RISCV::BI__builtin_rvv_vrgather_vv_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vrgather_vv_u64m1_mt:
+case RISCV::BI__builtin_rvv_vrgather_vv_u64m2_mt:
+case RISCV::BI__builtin_rvv_vrgather_vv_u64m4_mt:
+case RISCV::BI__builtin_rvv_vrgather_vv_u64m8_mt:
   ID = Intrinsic::riscv_vrgather_vv_mask;
-  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 1);
+  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 2);
   IntrinsicTypes = {ResultType, Ops.back()->getType()};
   break;
 case RISCV::BI__builtin_rvv_vrgather_vx_i8m1:
@@ -19471,67 +19506,67 @@ case RISCV::BI__builtin_rvv_vrgather_vx_u64m8:
   ID = Intrinsic::riscv_vrgather_vx;
   IntrinsicTypes = {ResultType, Ops.back()->getType()};
   break;
-case RISCV::BI__builtin_rvv_vrgather_vx_i8m1_m:
-case RISCV::BI__builtin_rvv_vrgather_vx_i8m2_m:
-case RISCV::BI__builtin_rvv_vrgather_vx_i8m4_m:
-case RISCV::BI__builtin_rvv_vrgather_vx_i8m8_m:
-case RISCV::BI__builtin_rvv_vrgather_vx_i8mf2_m:
-case RISCV::BI__builtin_rvv_vrgather_vx_i8mf4_m:
-case RISCV::BI__builtin_rvv_vrgather_vx_i8mf8_m:
-case RISCV::BI__builtin_rvv_vrgather_vx_i16m1_m:
-case RISCV::BI__builtin_rvv_vrgather_vx_i16m2_m:
-case RISCV::BI__builtin_rvv_vrgather_vx_i16m4_m:
-case RISCV::BI__builtin_rvv_vrgather_vx_i16m8_m:
-case RISCV::BI__builtin_rvv_vrgather_vx_i16mf2_m:
-case RISCV::BI__builtin_rvv_vrgather_vx_i16mf4_m:
-case RISCV::BI__builtin_rvv_vrgather_vx_i32m1_m:
-case RISCV::BI__builtin_rvv_vrgather_vx_i32m2_m:
-case RISCV::BI__builtin_rvv_vrgather_vx_i32m4_m:
-case RISCV::BI__builtin_rvv_vrgather_vx_i32m8_m:
-case RISCV::BI__builtin_rvv_vrgather_vx_i32mf2_m:
-case RISCV::BI__builtin_rvv_vrgather_vx_i64m1_m:
-case RISCV::BI__builtin_rvv_vrgather_vx_i64m2_m:
-case RISCV::BI__builtin_rvv_vrgather_vx_i64m4_m:
-case RISCV::BI__builtin_rvv_vrgather_vx_i64m8_m:
-case RISCV::BI__builtin_rvv_vrgather_vx_f16m1_m:
-case RISCV::BI__builtin_rvv_vrgather_vx_f16m2_m:
-case RISCV::BI__builtin_rvv_vrgather_vx_f16m4_m:
-case RISCV::BI__builtin_rvv_vrgather_vx_f16m8_m:
-case RISCV::BI__builtin_rvv_vrgather_vx_f16mf2_m:
-case RISCV::BI__builtin_rvv_vrgather_vx_f16mf4_m:
-case RISCV::BI__builtin_rvv_vrgather_vx_f32m1_m:
-case RISCV::BI__builtin_rvv_vrgather_vx_f32m2_m:
-case RISCV::BI__builtin_rvv_vrgather_vx_f32m4_m:
-case RISCV::BI__builtin_rvv_vrgather_vx_f32m8_m:
-case RISCV::BI__builtin_rvv_vrgather_vx_f32mf2_m:
-case RISCV::BI__builtin_rvv_vrgather_vx_f64m1_m:
-case RISCV::BI__builtin_rvv_vrgather_vx_f64m2_m:
-case RISCV::BI__builtin_rvv_vrgather_vx_f64m4_m:
-case RISCV::BI__builtin_rvv_vrgather_vx_f64m8_m:
-case RISCV::BI__builtin_rvv_vrgather_vx_u8m1_m:
-case RISCV::BI__builtin_rvv_vrgather_vx_u8m2_m:
-case RISCV::BI__builtin_rvv_vrgather_vx_u8m4_m:
-case RISCV::BI__builtin_rvv_vrgather_vx_u8m8_m:
-case RISCV::BI__builtin_rvv_vrgather_vx_u8mf2_m:
-case RISCV::BI__builtin_rvv_vrgather_vx_u8mf4_m:
-case RISCV::BI__builtin_rvv_vrgather_vx_u8mf8_m:
-case RISCV::BI__builtin_rvv_vrgather_vx_u16m1_m:
-case RISCV::BI__builtin_rvv_vrgather_vx_u16m2_m:
-case RISCV::BI__builtin_rvv_vrgather_vx_u16m4_m:
-case RISCV::BI__builtin_rvv_vrgather_vx_u16m8_m:
-case RISCV::BI__builtin_rvv_vrgather_vx_u16mf2_m:
-case RISCV::BI__builtin_rvv_vrgather_vx_u16mf4_m:
-case RISCV::BI__builtin_rvv_vrgather_vx_u32m1_m:
-case RISCV::BI__builtin_rvv_vrgather_vx_u32m2_m:
-case RISCV::BI__builtin_rvv_vrgather_vx_u32m4_m:
-case RISCV::BI__builtin_rvv_vrgather_vx_u32m8_m:
-case RISCV::BI__builtin_rvv_vrgather_vx_u32mf2_m:
-case RISCV::BI__builtin_rvv_vrgather_vx_u64m1_m:
-case RISCV::BI__builtin_rvv_vrgather_vx_u64m2_m:
-case RISCV::BI__builtin_rvv_vrgather_vx_u64m4_m:
-case RISCV::BI__builtin_rvv_vrgather_vx_u64m8_m:
+case RISCV::BI__builtin_rvv_vrgather_vx_i8m1_mt:
+case RISCV::BI__builtin_rvv_vrgather_vx_i8m2_mt:
+case RISCV::BI__builtin_rvv_vrgather_vx_i8m4_mt:
+case RISCV::BI__builtin_rvv_vrgather_vx_i8m8_mt:
+case RISCV::BI__builtin_rvv_vrgather_vx_i8mf2_mt:
+case RISCV::BI__builtin_rvv_vrgather_vx_i8mf4_mt:
+case RISCV::BI__builtin_rvv_vrgather_vx_i8mf8_mt:
+case RISCV::BI__builtin_rvv_vrgather_vx_i16m1_mt:
+case RISCV::BI__builtin_rvv_vrgather_vx_i16m2_mt:
+case RISCV::BI__builtin_rvv_vrgather_vx_i16m4_mt:
+case RISCV::BI__builtin_rvv_vrgather_vx_i16m8_mt:
+case RISCV::BI__builtin_rvv_vrgather_vx_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vrgather_vx_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vrgather_vx_i32m1_mt:
+case RISCV::BI__builtin_rvv_vrgather_vx_i32m2_mt:
+case RISCV::BI__builtin_rvv_vrgather_vx_i32m4_mt:
+case RISCV::BI__builtin_rvv_vrgather_vx_i32m8_mt:
+case RISCV::BI__builtin_rvv_vrgather_vx_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vrgather_vx_i64m1_mt:
+case RISCV::BI__builtin_rvv_vrgather_vx_i64m2_mt:
+case RISCV::BI__builtin_rvv_vrgather_vx_i64m4_mt:
+case RISCV::BI__builtin_rvv_vrgather_vx_i64m8_mt:
+case RISCV::BI__builtin_rvv_vrgather_vx_f16m1_mt:
+case RISCV::BI__builtin_rvv_vrgather_vx_f16m2_mt:
+case RISCV::BI__builtin_rvv_vrgather_vx_f16m4_mt:
+case RISCV::BI__builtin_rvv_vrgather_vx_f16m8_mt:
+case RISCV::BI__builtin_rvv_vrgather_vx_f16mf2_mt:
+case RISCV::BI__builtin_rvv_vrgather_vx_f16mf4_mt:
+case RISCV::BI__builtin_rvv_vrgather_vx_f32m1_mt:
+case RISCV::BI__builtin_rvv_vrgather_vx_f32m2_mt:
+case RISCV::BI__builtin_rvv_vrgather_vx_f32m4_mt:
+case RISCV::BI__builtin_rvv_vrgather_vx_f32m8_mt:
+case RISCV::BI__builtin_rvv_vrgather_vx_f32mf2_mt:
+case RISCV::BI__builtin_rvv_vrgather_vx_f64m1_mt:
+case RISCV::BI__builtin_rvv_vrgather_vx_f64m2_mt:
+case RISCV::BI__builtin_rvv_vrgather_vx_f64m4_mt:
+case RISCV::BI__builtin_rvv_vrgather_vx_f64m8_mt:
+case RISCV::BI__builtin_rvv_vrgather_vx_u8m1_mt:
+case RISCV::BI__builtin_rvv_vrgather_vx_u8m2_mt:
+case RISCV::BI__builtin_rvv_vrgather_vx_u8m4_mt:
+case RISCV::BI__builtin_rvv_vrgather_vx_u8m8_mt:
+case RISCV::BI__builtin_rvv_vrgather_vx_u8mf2_mt:
+case RISCV::BI__builtin_rvv_vrgather_vx_u8mf4_mt:
+case RISCV::BI__builtin_rvv_vrgather_vx_u8mf8_mt:
+case RISCV::BI__builtin_rvv_vrgather_vx_u16m1_mt:
+case RISCV::BI__builtin_rvv_vrgather_vx_u16m2_mt:
+case RISCV::BI__builtin_rvv_vrgather_vx_u16m4_mt:
+case RISCV::BI__builtin_rvv_vrgather_vx_u16m8_mt:
+case RISCV::BI__builtin_rvv_vrgather_vx_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vrgather_vx_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vrgather_vx_u32m1_mt:
+case RISCV::BI__builtin_rvv_vrgather_vx_u32m2_mt:
+case RISCV::BI__builtin_rvv_vrgather_vx_u32m4_mt:
+case RISCV::BI__builtin_rvv_vrgather_vx_u32m8_mt:
+case RISCV::BI__builtin_rvv_vrgather_vx_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vrgather_vx_u64m1_mt:
+case RISCV::BI__builtin_rvv_vrgather_vx_u64m2_mt:
+case RISCV::BI__builtin_rvv_vrgather_vx_u64m4_mt:
+case RISCV::BI__builtin_rvv_vrgather_vx_u64m8_mt:
   ID = Intrinsic::riscv_vrgather_vx_mask;
-  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 1);
+  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 2);
   IntrinsicTypes = {ResultType, Ops.back()->getType()};
   break;
 case RISCV::BI__builtin_rvv_vrgatherei16_vv_i8m1:
@@ -19594,65 +19629,65 @@ case RISCV::BI__builtin_rvv_vrgatherei16_vv_u64m8:
   ID = Intrinsic::riscv_vrgatherei16_vv;
   IntrinsicTypes = {ResultType, Ops.back()->getType()};
   break;
-case RISCV::BI__builtin_rvv_vrgatherei16_vv_i8m1_m:
-case RISCV::BI__builtin_rvv_vrgatherei16_vv_i8m2_m:
-case RISCV::BI__builtin_rvv_vrgatherei16_vv_i8m4_m:
-case RISCV::BI__builtin_rvv_vrgatherei16_vv_i8mf2_m:
-case RISCV::BI__builtin_rvv_vrgatherei16_vv_i8mf4_m:
-case RISCV::BI__builtin_rvv_vrgatherei16_vv_i8mf8_m:
-case RISCV::BI__builtin_rvv_vrgatherei16_vv_i16m1_m:
-case RISCV::BI__builtin_rvv_vrgatherei16_vv_i16m2_m:
-case RISCV::BI__builtin_rvv_vrgatherei16_vv_i16m4_m:
-case RISCV::BI__builtin_rvv_vrgatherei16_vv_i16m8_m:
-case RISCV::BI__builtin_rvv_vrgatherei16_vv_i16mf2_m:
-case RISCV::BI__builtin_rvv_vrgatherei16_vv_i16mf4_m:
-case RISCV::BI__builtin_rvv_vrgatherei16_vv_i32m1_m:
-case RISCV::BI__builtin_rvv_vrgatherei16_vv_i32m2_m:
-case RISCV::BI__builtin_rvv_vrgatherei16_vv_i32m4_m:
-case RISCV::BI__builtin_rvv_vrgatherei16_vv_i32m8_m:
-case RISCV::BI__builtin_rvv_vrgatherei16_vv_i32mf2_m:
-case RISCV::BI__builtin_rvv_vrgatherei16_vv_i64m1_m:
-case RISCV::BI__builtin_rvv_vrgatherei16_vv_i64m2_m:
-case RISCV::BI__builtin_rvv_vrgatherei16_vv_i64m4_m:
-case RISCV::BI__builtin_rvv_vrgatherei16_vv_i64m8_m:
-case RISCV::BI__builtin_rvv_vrgatherei16_vv_f16m1_m:
-case RISCV::BI__builtin_rvv_vrgatherei16_vv_f16m2_m:
-case RISCV::BI__builtin_rvv_vrgatherei16_vv_f16m4_m:
-case RISCV::BI__builtin_rvv_vrgatherei16_vv_f16m8_m:
-case RISCV::BI__builtin_rvv_vrgatherei16_vv_f16mf2_m:
-case RISCV::BI__builtin_rvv_vrgatherei16_vv_f16mf4_m:
-case RISCV::BI__builtin_rvv_vrgatherei16_vv_f32m1_m:
-case RISCV::BI__builtin_rvv_vrgatherei16_vv_f32m2_m:
-case RISCV::BI__builtin_rvv_vrgatherei16_vv_f32m4_m:
-case RISCV::BI__builtin_rvv_vrgatherei16_vv_f32m8_m:
-case RISCV::BI__builtin_rvv_vrgatherei16_vv_f32mf2_m:
-case RISCV::BI__builtin_rvv_vrgatherei16_vv_f64m1_m:
-case RISCV::BI__builtin_rvv_vrgatherei16_vv_f64m2_m:
-case RISCV::BI__builtin_rvv_vrgatherei16_vv_f64m4_m:
-case RISCV::BI__builtin_rvv_vrgatherei16_vv_f64m8_m:
-case RISCV::BI__builtin_rvv_vrgatherei16_vv_u8m1_m:
-case RISCV::BI__builtin_rvv_vrgatherei16_vv_u8m2_m:
-case RISCV::BI__builtin_rvv_vrgatherei16_vv_u8m4_m:
-case RISCV::BI__builtin_rvv_vrgatherei16_vv_u8mf2_m:
-case RISCV::BI__builtin_rvv_vrgatherei16_vv_u8mf4_m:
-case RISCV::BI__builtin_rvv_vrgatherei16_vv_u8mf8_m:
-case RISCV::BI__builtin_rvv_vrgatherei16_vv_u16m1_m:
-case RISCV::BI__builtin_rvv_vrgatherei16_vv_u16m2_m:
-case RISCV::BI__builtin_rvv_vrgatherei16_vv_u16m4_m:
-case RISCV::BI__builtin_rvv_vrgatherei16_vv_u16m8_m:
-case RISCV::BI__builtin_rvv_vrgatherei16_vv_u16mf2_m:
-case RISCV::BI__builtin_rvv_vrgatherei16_vv_u16mf4_m:
-case RISCV::BI__builtin_rvv_vrgatherei16_vv_u32m1_m:
-case RISCV::BI__builtin_rvv_vrgatherei16_vv_u32m2_m:
-case RISCV::BI__builtin_rvv_vrgatherei16_vv_u32m4_m:
-case RISCV::BI__builtin_rvv_vrgatherei16_vv_u32m8_m:
-case RISCV::BI__builtin_rvv_vrgatherei16_vv_u32mf2_m:
-case RISCV::BI__builtin_rvv_vrgatherei16_vv_u64m1_m:
-case RISCV::BI__builtin_rvv_vrgatherei16_vv_u64m2_m:
-case RISCV::BI__builtin_rvv_vrgatherei16_vv_u64m4_m:
-case RISCV::BI__builtin_rvv_vrgatherei16_vv_u64m8_m:
+case RISCV::BI__builtin_rvv_vrgatherei16_vv_i8m1_mt:
+case RISCV::BI__builtin_rvv_vrgatherei16_vv_i8m2_mt:
+case RISCV::BI__builtin_rvv_vrgatherei16_vv_i8m4_mt:
+case RISCV::BI__builtin_rvv_vrgatherei16_vv_i8mf2_mt:
+case RISCV::BI__builtin_rvv_vrgatherei16_vv_i8mf4_mt:
+case RISCV::BI__builtin_rvv_vrgatherei16_vv_i8mf8_mt:
+case RISCV::BI__builtin_rvv_vrgatherei16_vv_i16m1_mt:
+case RISCV::BI__builtin_rvv_vrgatherei16_vv_i16m2_mt:
+case RISCV::BI__builtin_rvv_vrgatherei16_vv_i16m4_mt:
+case RISCV::BI__builtin_rvv_vrgatherei16_vv_i16m8_mt:
+case RISCV::BI__builtin_rvv_vrgatherei16_vv_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vrgatherei16_vv_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vrgatherei16_vv_i32m1_mt:
+case RISCV::BI__builtin_rvv_vrgatherei16_vv_i32m2_mt:
+case RISCV::BI__builtin_rvv_vrgatherei16_vv_i32m4_mt:
+case RISCV::BI__builtin_rvv_vrgatherei16_vv_i32m8_mt:
+case RISCV::BI__builtin_rvv_vrgatherei16_vv_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vrgatherei16_vv_i64m1_mt:
+case RISCV::BI__builtin_rvv_vrgatherei16_vv_i64m2_mt:
+case RISCV::BI__builtin_rvv_vrgatherei16_vv_i64m4_mt:
+case RISCV::BI__builtin_rvv_vrgatherei16_vv_i64m8_mt:
+case RISCV::BI__builtin_rvv_vrgatherei16_vv_f16m1_mt:
+case RISCV::BI__builtin_rvv_vrgatherei16_vv_f16m2_mt:
+case RISCV::BI__builtin_rvv_vrgatherei16_vv_f16m4_mt:
+case RISCV::BI__builtin_rvv_vrgatherei16_vv_f16m8_mt:
+case RISCV::BI__builtin_rvv_vrgatherei16_vv_f16mf2_mt:
+case RISCV::BI__builtin_rvv_vrgatherei16_vv_f16mf4_mt:
+case RISCV::BI__builtin_rvv_vrgatherei16_vv_f32m1_mt:
+case RISCV::BI__builtin_rvv_vrgatherei16_vv_f32m2_mt:
+case RISCV::BI__builtin_rvv_vrgatherei16_vv_f32m4_mt:
+case RISCV::BI__builtin_rvv_vrgatherei16_vv_f32m8_mt:
+case RISCV::BI__builtin_rvv_vrgatherei16_vv_f32mf2_mt:
+case RISCV::BI__builtin_rvv_vrgatherei16_vv_f64m1_mt:
+case RISCV::BI__builtin_rvv_vrgatherei16_vv_f64m2_mt:
+case RISCV::BI__builtin_rvv_vrgatherei16_vv_f64m4_mt:
+case RISCV::BI__builtin_rvv_vrgatherei16_vv_f64m8_mt:
+case RISCV::BI__builtin_rvv_vrgatherei16_vv_u8m1_mt:
+case RISCV::BI__builtin_rvv_vrgatherei16_vv_u8m2_mt:
+case RISCV::BI__builtin_rvv_vrgatherei16_vv_u8m4_mt:
+case RISCV::BI__builtin_rvv_vrgatherei16_vv_u8mf2_mt:
+case RISCV::BI__builtin_rvv_vrgatherei16_vv_u8mf4_mt:
+case RISCV::BI__builtin_rvv_vrgatherei16_vv_u8mf8_mt:
+case RISCV::BI__builtin_rvv_vrgatherei16_vv_u16m1_mt:
+case RISCV::BI__builtin_rvv_vrgatherei16_vv_u16m2_mt:
+case RISCV::BI__builtin_rvv_vrgatherei16_vv_u16m4_mt:
+case RISCV::BI__builtin_rvv_vrgatherei16_vv_u16m8_mt:
+case RISCV::BI__builtin_rvv_vrgatherei16_vv_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vrgatherei16_vv_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vrgatherei16_vv_u32m1_mt:
+case RISCV::BI__builtin_rvv_vrgatherei16_vv_u32m2_mt:
+case RISCV::BI__builtin_rvv_vrgatherei16_vv_u32m4_mt:
+case RISCV::BI__builtin_rvv_vrgatherei16_vv_u32m8_mt:
+case RISCV::BI__builtin_rvv_vrgatherei16_vv_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vrgatherei16_vv_u64m1_mt:
+case RISCV::BI__builtin_rvv_vrgatherei16_vv_u64m2_mt:
+case RISCV::BI__builtin_rvv_vrgatherei16_vv_u64m4_mt:
+case RISCV::BI__builtin_rvv_vrgatherei16_vv_u64m8_mt:
   ID = Intrinsic::riscv_vrgatherei16_vv_mask;
-  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 1);
+  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 2);
   IntrinsicTypes = {ResultType, Ops.back()->getType()};
   break;
 case RISCV::BI__builtin_rvv_vrsub_vx_i8m1:
@@ -19735,80 +19770,80 @@ case RISCV::BI__builtin_rvv_vneg_v_i64m8:
         break;
       }
       break;
-case RISCV::BI__builtin_rvv_vrsub_vx_i8m1_m:
-case RISCV::BI__builtin_rvv_vrsub_vx_i8m2_m:
-case RISCV::BI__builtin_rvv_vrsub_vx_i8m4_m:
-case RISCV::BI__builtin_rvv_vrsub_vx_i8m8_m:
-case RISCV::BI__builtin_rvv_vrsub_vx_i8mf2_m:
-case RISCV::BI__builtin_rvv_vrsub_vx_i8mf4_m:
-case RISCV::BI__builtin_rvv_vrsub_vx_i8mf8_m:
-case RISCV::BI__builtin_rvv_vrsub_vx_i16m1_m:
-case RISCV::BI__builtin_rvv_vrsub_vx_i16m2_m:
-case RISCV::BI__builtin_rvv_vrsub_vx_i16m4_m:
-case RISCV::BI__builtin_rvv_vrsub_vx_i16m8_m:
-case RISCV::BI__builtin_rvv_vrsub_vx_i16mf2_m:
-case RISCV::BI__builtin_rvv_vrsub_vx_i16mf4_m:
-case RISCV::BI__builtin_rvv_vrsub_vx_i32m1_m:
-case RISCV::BI__builtin_rvv_vrsub_vx_i32m2_m:
-case RISCV::BI__builtin_rvv_vrsub_vx_i32m4_m:
-case RISCV::BI__builtin_rvv_vrsub_vx_i32m8_m:
-case RISCV::BI__builtin_rvv_vrsub_vx_i32mf2_m:
-case RISCV::BI__builtin_rvv_vrsub_vx_i64m1_m:
-case RISCV::BI__builtin_rvv_vrsub_vx_i64m2_m:
-case RISCV::BI__builtin_rvv_vrsub_vx_i64m4_m:
-case RISCV::BI__builtin_rvv_vrsub_vx_i64m8_m:
-case RISCV::BI__builtin_rvv_vrsub_vx_u8m1_m:
-case RISCV::BI__builtin_rvv_vrsub_vx_u8m2_m:
-case RISCV::BI__builtin_rvv_vrsub_vx_u8m4_m:
-case RISCV::BI__builtin_rvv_vrsub_vx_u8m8_m:
-case RISCV::BI__builtin_rvv_vrsub_vx_u8mf2_m:
-case RISCV::BI__builtin_rvv_vrsub_vx_u8mf4_m:
-case RISCV::BI__builtin_rvv_vrsub_vx_u8mf8_m:
-case RISCV::BI__builtin_rvv_vrsub_vx_u16m1_m:
-case RISCV::BI__builtin_rvv_vrsub_vx_u16m2_m:
-case RISCV::BI__builtin_rvv_vrsub_vx_u16m4_m:
-case RISCV::BI__builtin_rvv_vrsub_vx_u16m8_m:
-case RISCV::BI__builtin_rvv_vrsub_vx_u16mf2_m:
-case RISCV::BI__builtin_rvv_vrsub_vx_u16mf4_m:
-case RISCV::BI__builtin_rvv_vrsub_vx_u32m1_m:
-case RISCV::BI__builtin_rvv_vrsub_vx_u32m2_m:
-case RISCV::BI__builtin_rvv_vrsub_vx_u32m4_m:
-case RISCV::BI__builtin_rvv_vrsub_vx_u32m8_m:
-case RISCV::BI__builtin_rvv_vrsub_vx_u32mf2_m:
-case RISCV::BI__builtin_rvv_vrsub_vx_u64m1_m:
-case RISCV::BI__builtin_rvv_vrsub_vx_u64m2_m:
-case RISCV::BI__builtin_rvv_vrsub_vx_u64m4_m:
-case RISCV::BI__builtin_rvv_vrsub_vx_u64m8_m:
+case RISCV::BI__builtin_rvv_vrsub_vx_i8m1_mt:
+case RISCV::BI__builtin_rvv_vrsub_vx_i8m2_mt:
+case RISCV::BI__builtin_rvv_vrsub_vx_i8m4_mt:
+case RISCV::BI__builtin_rvv_vrsub_vx_i8m8_mt:
+case RISCV::BI__builtin_rvv_vrsub_vx_i8mf2_mt:
+case RISCV::BI__builtin_rvv_vrsub_vx_i8mf4_mt:
+case RISCV::BI__builtin_rvv_vrsub_vx_i8mf8_mt:
+case RISCV::BI__builtin_rvv_vrsub_vx_i16m1_mt:
+case RISCV::BI__builtin_rvv_vrsub_vx_i16m2_mt:
+case RISCV::BI__builtin_rvv_vrsub_vx_i16m4_mt:
+case RISCV::BI__builtin_rvv_vrsub_vx_i16m8_mt:
+case RISCV::BI__builtin_rvv_vrsub_vx_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vrsub_vx_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vrsub_vx_i32m1_mt:
+case RISCV::BI__builtin_rvv_vrsub_vx_i32m2_mt:
+case RISCV::BI__builtin_rvv_vrsub_vx_i32m4_mt:
+case RISCV::BI__builtin_rvv_vrsub_vx_i32m8_mt:
+case RISCV::BI__builtin_rvv_vrsub_vx_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vrsub_vx_i64m1_mt:
+case RISCV::BI__builtin_rvv_vrsub_vx_i64m2_mt:
+case RISCV::BI__builtin_rvv_vrsub_vx_i64m4_mt:
+case RISCV::BI__builtin_rvv_vrsub_vx_i64m8_mt:
+case RISCV::BI__builtin_rvv_vrsub_vx_u8m1_mt:
+case RISCV::BI__builtin_rvv_vrsub_vx_u8m2_mt:
+case RISCV::BI__builtin_rvv_vrsub_vx_u8m4_mt:
+case RISCV::BI__builtin_rvv_vrsub_vx_u8m8_mt:
+case RISCV::BI__builtin_rvv_vrsub_vx_u8mf2_mt:
+case RISCV::BI__builtin_rvv_vrsub_vx_u8mf4_mt:
+case RISCV::BI__builtin_rvv_vrsub_vx_u8mf8_mt:
+case RISCV::BI__builtin_rvv_vrsub_vx_u16m1_mt:
+case RISCV::BI__builtin_rvv_vrsub_vx_u16m2_mt:
+case RISCV::BI__builtin_rvv_vrsub_vx_u16m4_mt:
+case RISCV::BI__builtin_rvv_vrsub_vx_u16m8_mt:
+case RISCV::BI__builtin_rvv_vrsub_vx_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vrsub_vx_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vrsub_vx_u32m1_mt:
+case RISCV::BI__builtin_rvv_vrsub_vx_u32m2_mt:
+case RISCV::BI__builtin_rvv_vrsub_vx_u32m4_mt:
+case RISCV::BI__builtin_rvv_vrsub_vx_u32m8_mt:
+case RISCV::BI__builtin_rvv_vrsub_vx_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vrsub_vx_u64m1_mt:
+case RISCV::BI__builtin_rvv_vrsub_vx_u64m2_mt:
+case RISCV::BI__builtin_rvv_vrsub_vx_u64m4_mt:
+case RISCV::BI__builtin_rvv_vrsub_vx_u64m8_mt:
   ID = Intrinsic::riscv_vrsub_mask;
-  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 1);
+  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 2);
   IntrinsicTypes = {ResultType, Ops[2]->getType(), Ops.back()->getType()};
   break;
-case RISCV::BI__builtin_rvv_vneg_v_i8m1_m:
-case RISCV::BI__builtin_rvv_vneg_v_i8m2_m:
-case RISCV::BI__builtin_rvv_vneg_v_i8m4_m:
-case RISCV::BI__builtin_rvv_vneg_v_i8m8_m:
-case RISCV::BI__builtin_rvv_vneg_v_i8mf2_m:
-case RISCV::BI__builtin_rvv_vneg_v_i8mf4_m:
-case RISCV::BI__builtin_rvv_vneg_v_i8mf8_m:
-case RISCV::BI__builtin_rvv_vneg_v_i16m1_m:
-case RISCV::BI__builtin_rvv_vneg_v_i16m2_m:
-case RISCV::BI__builtin_rvv_vneg_v_i16m4_m:
-case RISCV::BI__builtin_rvv_vneg_v_i16m8_m:
-case RISCV::BI__builtin_rvv_vneg_v_i16mf2_m:
-case RISCV::BI__builtin_rvv_vneg_v_i16mf4_m:
-case RISCV::BI__builtin_rvv_vneg_v_i32m1_m:
-case RISCV::BI__builtin_rvv_vneg_v_i32m2_m:
-case RISCV::BI__builtin_rvv_vneg_v_i32m4_m:
-case RISCV::BI__builtin_rvv_vneg_v_i32m8_m:
-case RISCV::BI__builtin_rvv_vneg_v_i32mf2_m:
-case RISCV::BI__builtin_rvv_vneg_v_i64m1_m:
-case RISCV::BI__builtin_rvv_vneg_v_i64m2_m:
-case RISCV::BI__builtin_rvv_vneg_v_i64m4_m:
-case RISCV::BI__builtin_rvv_vneg_v_i64m8_m:
+case RISCV::BI__builtin_rvv_vneg_v_i8m1_mt:
+case RISCV::BI__builtin_rvv_vneg_v_i8m2_mt:
+case RISCV::BI__builtin_rvv_vneg_v_i8m4_mt:
+case RISCV::BI__builtin_rvv_vneg_v_i8m8_mt:
+case RISCV::BI__builtin_rvv_vneg_v_i8mf2_mt:
+case RISCV::BI__builtin_rvv_vneg_v_i8mf4_mt:
+case RISCV::BI__builtin_rvv_vneg_v_i8mf8_mt:
+case RISCV::BI__builtin_rvv_vneg_v_i16m1_mt:
+case RISCV::BI__builtin_rvv_vneg_v_i16m2_mt:
+case RISCV::BI__builtin_rvv_vneg_v_i16m4_mt:
+case RISCV::BI__builtin_rvv_vneg_v_i16m8_mt:
+case RISCV::BI__builtin_rvv_vneg_v_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vneg_v_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vneg_v_i32m1_mt:
+case RISCV::BI__builtin_rvv_vneg_v_i32m2_mt:
+case RISCV::BI__builtin_rvv_vneg_v_i32m4_mt:
+case RISCV::BI__builtin_rvv_vneg_v_i32m8_mt:
+case RISCV::BI__builtin_rvv_vneg_v_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vneg_v_i64m1_mt:
+case RISCV::BI__builtin_rvv_vneg_v_i64m2_mt:
+case RISCV::BI__builtin_rvv_vneg_v_i64m4_mt:
+case RISCV::BI__builtin_rvv_vneg_v_i64m8_mt:
   ID = Intrinsic::riscv_vrsub_mask;
 
       {
-        std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 1);
+        std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 2);
         // maskedoff, op1, mask, vl
         IntrinsicTypes = {ResultType,
                           cast<llvm::VectorType>(ResultType)->getElementType(),
@@ -19864,52 +19899,52 @@ case RISCV::BI__builtin_rvv_vsadd_vx_i64m8:
   ID = Intrinsic::riscv_vsadd;
   IntrinsicTypes = {ResultType, Ops[1]->getType(), Ops.back()->getType()};
   break;
-case RISCV::BI__builtin_rvv_vsadd_vv_i8m1_m:
-case RISCV::BI__builtin_rvv_vsadd_vv_i8m2_m:
-case RISCV::BI__builtin_rvv_vsadd_vv_i8m4_m:
-case RISCV::BI__builtin_rvv_vsadd_vv_i8m8_m:
-case RISCV::BI__builtin_rvv_vsadd_vv_i8mf2_m:
-case RISCV::BI__builtin_rvv_vsadd_vv_i8mf4_m:
-case RISCV::BI__builtin_rvv_vsadd_vv_i8mf8_m:
-case RISCV::BI__builtin_rvv_vsadd_vv_i16m1_m:
-case RISCV::BI__builtin_rvv_vsadd_vv_i16m2_m:
-case RISCV::BI__builtin_rvv_vsadd_vv_i16m4_m:
-case RISCV::BI__builtin_rvv_vsadd_vv_i16m8_m:
-case RISCV::BI__builtin_rvv_vsadd_vv_i16mf2_m:
-case RISCV::BI__builtin_rvv_vsadd_vv_i16mf4_m:
-case RISCV::BI__builtin_rvv_vsadd_vv_i32m1_m:
-case RISCV::BI__builtin_rvv_vsadd_vv_i32m2_m:
-case RISCV::BI__builtin_rvv_vsadd_vv_i32m4_m:
-case RISCV::BI__builtin_rvv_vsadd_vv_i32m8_m:
-case RISCV::BI__builtin_rvv_vsadd_vv_i32mf2_m:
-case RISCV::BI__builtin_rvv_vsadd_vv_i64m1_m:
-case RISCV::BI__builtin_rvv_vsadd_vv_i64m2_m:
-case RISCV::BI__builtin_rvv_vsadd_vv_i64m4_m:
-case RISCV::BI__builtin_rvv_vsadd_vv_i64m8_m:
-case RISCV::BI__builtin_rvv_vsadd_vx_i8m1_m:
-case RISCV::BI__builtin_rvv_vsadd_vx_i8m2_m:
-case RISCV::BI__builtin_rvv_vsadd_vx_i8m4_m:
-case RISCV::BI__builtin_rvv_vsadd_vx_i8m8_m:
-case RISCV::BI__builtin_rvv_vsadd_vx_i8mf2_m:
-case RISCV::BI__builtin_rvv_vsadd_vx_i8mf4_m:
-case RISCV::BI__builtin_rvv_vsadd_vx_i8mf8_m:
-case RISCV::BI__builtin_rvv_vsadd_vx_i16m1_m:
-case RISCV::BI__builtin_rvv_vsadd_vx_i16m2_m:
-case RISCV::BI__builtin_rvv_vsadd_vx_i16m4_m:
-case RISCV::BI__builtin_rvv_vsadd_vx_i16m8_m:
-case RISCV::BI__builtin_rvv_vsadd_vx_i16mf2_m:
-case RISCV::BI__builtin_rvv_vsadd_vx_i16mf4_m:
-case RISCV::BI__builtin_rvv_vsadd_vx_i32m1_m:
-case RISCV::BI__builtin_rvv_vsadd_vx_i32m2_m:
-case RISCV::BI__builtin_rvv_vsadd_vx_i32m4_m:
-case RISCV::BI__builtin_rvv_vsadd_vx_i32m8_m:
-case RISCV::BI__builtin_rvv_vsadd_vx_i32mf2_m:
-case RISCV::BI__builtin_rvv_vsadd_vx_i64m1_m:
-case RISCV::BI__builtin_rvv_vsadd_vx_i64m2_m:
-case RISCV::BI__builtin_rvv_vsadd_vx_i64m4_m:
-case RISCV::BI__builtin_rvv_vsadd_vx_i64m8_m:
+case RISCV::BI__builtin_rvv_vsadd_vv_i8m1_mt:
+case RISCV::BI__builtin_rvv_vsadd_vv_i8m2_mt:
+case RISCV::BI__builtin_rvv_vsadd_vv_i8m4_mt:
+case RISCV::BI__builtin_rvv_vsadd_vv_i8m8_mt:
+case RISCV::BI__builtin_rvv_vsadd_vv_i8mf2_mt:
+case RISCV::BI__builtin_rvv_vsadd_vv_i8mf4_mt:
+case RISCV::BI__builtin_rvv_vsadd_vv_i8mf8_mt:
+case RISCV::BI__builtin_rvv_vsadd_vv_i16m1_mt:
+case RISCV::BI__builtin_rvv_vsadd_vv_i16m2_mt:
+case RISCV::BI__builtin_rvv_vsadd_vv_i16m4_mt:
+case RISCV::BI__builtin_rvv_vsadd_vv_i16m8_mt:
+case RISCV::BI__builtin_rvv_vsadd_vv_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vsadd_vv_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vsadd_vv_i32m1_mt:
+case RISCV::BI__builtin_rvv_vsadd_vv_i32m2_mt:
+case RISCV::BI__builtin_rvv_vsadd_vv_i32m4_mt:
+case RISCV::BI__builtin_rvv_vsadd_vv_i32m8_mt:
+case RISCV::BI__builtin_rvv_vsadd_vv_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vsadd_vv_i64m1_mt:
+case RISCV::BI__builtin_rvv_vsadd_vv_i64m2_mt:
+case RISCV::BI__builtin_rvv_vsadd_vv_i64m4_mt:
+case RISCV::BI__builtin_rvv_vsadd_vv_i64m8_mt:
+case RISCV::BI__builtin_rvv_vsadd_vx_i8m1_mt:
+case RISCV::BI__builtin_rvv_vsadd_vx_i8m2_mt:
+case RISCV::BI__builtin_rvv_vsadd_vx_i8m4_mt:
+case RISCV::BI__builtin_rvv_vsadd_vx_i8m8_mt:
+case RISCV::BI__builtin_rvv_vsadd_vx_i8mf2_mt:
+case RISCV::BI__builtin_rvv_vsadd_vx_i8mf4_mt:
+case RISCV::BI__builtin_rvv_vsadd_vx_i8mf8_mt:
+case RISCV::BI__builtin_rvv_vsadd_vx_i16m1_mt:
+case RISCV::BI__builtin_rvv_vsadd_vx_i16m2_mt:
+case RISCV::BI__builtin_rvv_vsadd_vx_i16m4_mt:
+case RISCV::BI__builtin_rvv_vsadd_vx_i16m8_mt:
+case RISCV::BI__builtin_rvv_vsadd_vx_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vsadd_vx_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vsadd_vx_i32m1_mt:
+case RISCV::BI__builtin_rvv_vsadd_vx_i32m2_mt:
+case RISCV::BI__builtin_rvv_vsadd_vx_i32m4_mt:
+case RISCV::BI__builtin_rvv_vsadd_vx_i32m8_mt:
+case RISCV::BI__builtin_rvv_vsadd_vx_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vsadd_vx_i64m1_mt:
+case RISCV::BI__builtin_rvv_vsadd_vx_i64m2_mt:
+case RISCV::BI__builtin_rvv_vsadd_vx_i64m4_mt:
+case RISCV::BI__builtin_rvv_vsadd_vx_i64m8_mt:
   ID = Intrinsic::riscv_vsadd_mask;
-  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 1);
+  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 2);
   IntrinsicTypes = {ResultType, Ops[2]->getType(), Ops.back()->getType()};
   break;
 case RISCV::BI__builtin_rvv_vsaddu_vv_u8m1:
@@ -19959,52 +19994,52 @@ case RISCV::BI__builtin_rvv_vsaddu_vx_u64m8:
   ID = Intrinsic::riscv_vsaddu;
   IntrinsicTypes = {ResultType, Ops[1]->getType(), Ops.back()->getType()};
   break;
-case RISCV::BI__builtin_rvv_vsaddu_vv_u8m1_m:
-case RISCV::BI__builtin_rvv_vsaddu_vv_u8m2_m:
-case RISCV::BI__builtin_rvv_vsaddu_vv_u8m4_m:
-case RISCV::BI__builtin_rvv_vsaddu_vv_u8m8_m:
-case RISCV::BI__builtin_rvv_vsaddu_vv_u8mf2_m:
-case RISCV::BI__builtin_rvv_vsaddu_vv_u8mf4_m:
-case RISCV::BI__builtin_rvv_vsaddu_vv_u8mf8_m:
-case RISCV::BI__builtin_rvv_vsaddu_vv_u16m1_m:
-case RISCV::BI__builtin_rvv_vsaddu_vv_u16m2_m:
-case RISCV::BI__builtin_rvv_vsaddu_vv_u16m4_m:
-case RISCV::BI__builtin_rvv_vsaddu_vv_u16m8_m:
-case RISCV::BI__builtin_rvv_vsaddu_vv_u16mf2_m:
-case RISCV::BI__builtin_rvv_vsaddu_vv_u16mf4_m:
-case RISCV::BI__builtin_rvv_vsaddu_vv_u32m1_m:
-case RISCV::BI__builtin_rvv_vsaddu_vv_u32m2_m:
-case RISCV::BI__builtin_rvv_vsaddu_vv_u32m4_m:
-case RISCV::BI__builtin_rvv_vsaddu_vv_u32m8_m:
-case RISCV::BI__builtin_rvv_vsaddu_vv_u32mf2_m:
-case RISCV::BI__builtin_rvv_vsaddu_vv_u64m1_m:
-case RISCV::BI__builtin_rvv_vsaddu_vv_u64m2_m:
-case RISCV::BI__builtin_rvv_vsaddu_vv_u64m4_m:
-case RISCV::BI__builtin_rvv_vsaddu_vv_u64m8_m:
-case RISCV::BI__builtin_rvv_vsaddu_vx_u8m1_m:
-case RISCV::BI__builtin_rvv_vsaddu_vx_u8m2_m:
-case RISCV::BI__builtin_rvv_vsaddu_vx_u8m4_m:
-case RISCV::BI__builtin_rvv_vsaddu_vx_u8m8_m:
-case RISCV::BI__builtin_rvv_vsaddu_vx_u8mf2_m:
-case RISCV::BI__builtin_rvv_vsaddu_vx_u8mf4_m:
-case RISCV::BI__builtin_rvv_vsaddu_vx_u8mf8_m:
-case RISCV::BI__builtin_rvv_vsaddu_vx_u16m1_m:
-case RISCV::BI__builtin_rvv_vsaddu_vx_u16m2_m:
-case RISCV::BI__builtin_rvv_vsaddu_vx_u16m4_m:
-case RISCV::BI__builtin_rvv_vsaddu_vx_u16m8_m:
-case RISCV::BI__builtin_rvv_vsaddu_vx_u16mf2_m:
-case RISCV::BI__builtin_rvv_vsaddu_vx_u16mf4_m:
-case RISCV::BI__builtin_rvv_vsaddu_vx_u32m1_m:
-case RISCV::BI__builtin_rvv_vsaddu_vx_u32m2_m:
-case RISCV::BI__builtin_rvv_vsaddu_vx_u32m4_m:
-case RISCV::BI__builtin_rvv_vsaddu_vx_u32m8_m:
-case RISCV::BI__builtin_rvv_vsaddu_vx_u32mf2_m:
-case RISCV::BI__builtin_rvv_vsaddu_vx_u64m1_m:
-case RISCV::BI__builtin_rvv_vsaddu_vx_u64m2_m:
-case RISCV::BI__builtin_rvv_vsaddu_vx_u64m4_m:
-case RISCV::BI__builtin_rvv_vsaddu_vx_u64m8_m:
+case RISCV::BI__builtin_rvv_vsaddu_vv_u8m1_mt:
+case RISCV::BI__builtin_rvv_vsaddu_vv_u8m2_mt:
+case RISCV::BI__builtin_rvv_vsaddu_vv_u8m4_mt:
+case RISCV::BI__builtin_rvv_vsaddu_vv_u8m8_mt:
+case RISCV::BI__builtin_rvv_vsaddu_vv_u8mf2_mt:
+case RISCV::BI__builtin_rvv_vsaddu_vv_u8mf4_mt:
+case RISCV::BI__builtin_rvv_vsaddu_vv_u8mf8_mt:
+case RISCV::BI__builtin_rvv_vsaddu_vv_u16m1_mt:
+case RISCV::BI__builtin_rvv_vsaddu_vv_u16m2_mt:
+case RISCV::BI__builtin_rvv_vsaddu_vv_u16m4_mt:
+case RISCV::BI__builtin_rvv_vsaddu_vv_u16m8_mt:
+case RISCV::BI__builtin_rvv_vsaddu_vv_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vsaddu_vv_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vsaddu_vv_u32m1_mt:
+case RISCV::BI__builtin_rvv_vsaddu_vv_u32m2_mt:
+case RISCV::BI__builtin_rvv_vsaddu_vv_u32m4_mt:
+case RISCV::BI__builtin_rvv_vsaddu_vv_u32m8_mt:
+case RISCV::BI__builtin_rvv_vsaddu_vv_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vsaddu_vv_u64m1_mt:
+case RISCV::BI__builtin_rvv_vsaddu_vv_u64m2_mt:
+case RISCV::BI__builtin_rvv_vsaddu_vv_u64m4_mt:
+case RISCV::BI__builtin_rvv_vsaddu_vv_u64m8_mt:
+case RISCV::BI__builtin_rvv_vsaddu_vx_u8m1_mt:
+case RISCV::BI__builtin_rvv_vsaddu_vx_u8m2_mt:
+case RISCV::BI__builtin_rvv_vsaddu_vx_u8m4_mt:
+case RISCV::BI__builtin_rvv_vsaddu_vx_u8m8_mt:
+case RISCV::BI__builtin_rvv_vsaddu_vx_u8mf2_mt:
+case RISCV::BI__builtin_rvv_vsaddu_vx_u8mf4_mt:
+case RISCV::BI__builtin_rvv_vsaddu_vx_u8mf8_mt:
+case RISCV::BI__builtin_rvv_vsaddu_vx_u16m1_mt:
+case RISCV::BI__builtin_rvv_vsaddu_vx_u16m2_mt:
+case RISCV::BI__builtin_rvv_vsaddu_vx_u16m4_mt:
+case RISCV::BI__builtin_rvv_vsaddu_vx_u16m8_mt:
+case RISCV::BI__builtin_rvv_vsaddu_vx_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vsaddu_vx_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vsaddu_vx_u32m1_mt:
+case RISCV::BI__builtin_rvv_vsaddu_vx_u32m2_mt:
+case RISCV::BI__builtin_rvv_vsaddu_vx_u32m4_mt:
+case RISCV::BI__builtin_rvv_vsaddu_vx_u32m8_mt:
+case RISCV::BI__builtin_rvv_vsaddu_vx_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vsaddu_vx_u64m1_mt:
+case RISCV::BI__builtin_rvv_vsaddu_vx_u64m2_mt:
+case RISCV::BI__builtin_rvv_vsaddu_vx_u64m4_mt:
+case RISCV::BI__builtin_rvv_vsaddu_vx_u64m8_mt:
   ID = Intrinsic::riscv_vsaddu_mask;
-  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 1);
+  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 2);
   IntrinsicTypes = {ResultType, Ops[2]->getType(), Ops.back()->getType()};
   break;
 case RISCV::BI__builtin_rvv_vsbc_vvm_i8m1:
@@ -20281,36 +20316,36 @@ case RISCV::BI__builtin_rvv_vsext_vf8_i64m8:
   ID = Intrinsic::riscv_vsext;
   IntrinsicTypes = {ResultType, Ops[0]->getType(), Ops.back()->getType()};
   break;
-case RISCV::BI__builtin_rvv_vsext_vf2_i16mf4_m:
-case RISCV::BI__builtin_rvv_vsext_vf2_i16mf2_m:
-case RISCV::BI__builtin_rvv_vsext_vf2_i16m1_m:
-case RISCV::BI__builtin_rvv_vsext_vf2_i16m2_m:
-case RISCV::BI__builtin_rvv_vsext_vf2_i16m4_m:
-case RISCV::BI__builtin_rvv_vsext_vf2_i16m8_m:
-case RISCV::BI__builtin_rvv_vsext_vf2_i32mf2_m:
-case RISCV::BI__builtin_rvv_vsext_vf2_i32m1_m:
-case RISCV::BI__builtin_rvv_vsext_vf2_i32m2_m:
-case RISCV::BI__builtin_rvv_vsext_vf2_i32m4_m:
-case RISCV::BI__builtin_rvv_vsext_vf2_i32m8_m:
-case RISCV::BI__builtin_rvv_vsext_vf2_i64m1_m:
-case RISCV::BI__builtin_rvv_vsext_vf2_i64m2_m:
-case RISCV::BI__builtin_rvv_vsext_vf2_i64m4_m:
-case RISCV::BI__builtin_rvv_vsext_vf2_i64m8_m:
-case RISCV::BI__builtin_rvv_vsext_vf4_i32mf2_m:
-case RISCV::BI__builtin_rvv_vsext_vf4_i32m1_m:
-case RISCV::BI__builtin_rvv_vsext_vf4_i32m2_m:
-case RISCV::BI__builtin_rvv_vsext_vf4_i32m4_m:
-case RISCV::BI__builtin_rvv_vsext_vf4_i32m8_m:
-case RISCV::BI__builtin_rvv_vsext_vf4_i64m1_m:
-case RISCV::BI__builtin_rvv_vsext_vf4_i64m2_m:
-case RISCV::BI__builtin_rvv_vsext_vf4_i64m4_m:
-case RISCV::BI__builtin_rvv_vsext_vf4_i64m8_m:
-case RISCV::BI__builtin_rvv_vsext_vf8_i64m1_m:
-case RISCV::BI__builtin_rvv_vsext_vf8_i64m2_m:
-case RISCV::BI__builtin_rvv_vsext_vf8_i64m4_m:
-case RISCV::BI__builtin_rvv_vsext_vf8_i64m8_m:
+case RISCV::BI__builtin_rvv_vsext_vf2_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vsext_vf2_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vsext_vf2_i16m1_mt:
+case RISCV::BI__builtin_rvv_vsext_vf2_i16m2_mt:
+case RISCV::BI__builtin_rvv_vsext_vf2_i16m4_mt:
+case RISCV::BI__builtin_rvv_vsext_vf2_i16m8_mt:
+case RISCV::BI__builtin_rvv_vsext_vf2_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vsext_vf2_i32m1_mt:
+case RISCV::BI__builtin_rvv_vsext_vf2_i32m2_mt:
+case RISCV::BI__builtin_rvv_vsext_vf2_i32m4_mt:
+case RISCV::BI__builtin_rvv_vsext_vf2_i32m8_mt:
+case RISCV::BI__builtin_rvv_vsext_vf2_i64m1_mt:
+case RISCV::BI__builtin_rvv_vsext_vf2_i64m2_mt:
+case RISCV::BI__builtin_rvv_vsext_vf2_i64m4_mt:
+case RISCV::BI__builtin_rvv_vsext_vf2_i64m8_mt:
+case RISCV::BI__builtin_rvv_vsext_vf4_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vsext_vf4_i32m1_mt:
+case RISCV::BI__builtin_rvv_vsext_vf4_i32m2_mt:
+case RISCV::BI__builtin_rvv_vsext_vf4_i32m4_mt:
+case RISCV::BI__builtin_rvv_vsext_vf4_i32m8_mt:
+case RISCV::BI__builtin_rvv_vsext_vf4_i64m1_mt:
+case RISCV::BI__builtin_rvv_vsext_vf4_i64m2_mt:
+case RISCV::BI__builtin_rvv_vsext_vf4_i64m4_mt:
+case RISCV::BI__builtin_rvv_vsext_vf4_i64m8_mt:
+case RISCV::BI__builtin_rvv_vsext_vf8_i64m1_mt:
+case RISCV::BI__builtin_rvv_vsext_vf8_i64m2_mt:
+case RISCV::BI__builtin_rvv_vsext_vf8_i64m4_mt:
+case RISCV::BI__builtin_rvv_vsext_vf8_i64m8_mt:
   ID = Intrinsic::riscv_vsext_mask;
-  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 1);
+  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 2);
   IntrinsicTypes = {ResultType, Ops[1]->getType(), Ops.back()->getType()};
   break;
 case RISCV::BI__builtin_rvv_vslide1down_vx_i8m1:
@@ -20360,52 +20395,52 @@ case RISCV::BI__builtin_rvv_vslide1down_vx_u64m8:
   ID = Intrinsic::riscv_vslide1down;
   IntrinsicTypes = {ResultType, Ops[1]->getType(), Ops.back()->getType()};
   break;
-case RISCV::BI__builtin_rvv_vslide1down_vx_i8m1_m:
-case RISCV::BI__builtin_rvv_vslide1down_vx_i8m2_m:
-case RISCV::BI__builtin_rvv_vslide1down_vx_i8m4_m:
-case RISCV::BI__builtin_rvv_vslide1down_vx_i8m8_m:
-case RISCV::BI__builtin_rvv_vslide1down_vx_i8mf2_m:
-case RISCV::BI__builtin_rvv_vslide1down_vx_i8mf4_m:
-case RISCV::BI__builtin_rvv_vslide1down_vx_i8mf8_m:
-case RISCV::BI__builtin_rvv_vslide1down_vx_i16m1_m:
-case RISCV::BI__builtin_rvv_vslide1down_vx_i16m2_m:
-case RISCV::BI__builtin_rvv_vslide1down_vx_i16m4_m:
-case RISCV::BI__builtin_rvv_vslide1down_vx_i16m8_m:
-case RISCV::BI__builtin_rvv_vslide1down_vx_i16mf2_m:
-case RISCV::BI__builtin_rvv_vslide1down_vx_i16mf4_m:
-case RISCV::BI__builtin_rvv_vslide1down_vx_i32m1_m:
-case RISCV::BI__builtin_rvv_vslide1down_vx_i32m2_m:
-case RISCV::BI__builtin_rvv_vslide1down_vx_i32m4_m:
-case RISCV::BI__builtin_rvv_vslide1down_vx_i32m8_m:
-case RISCV::BI__builtin_rvv_vslide1down_vx_i32mf2_m:
-case RISCV::BI__builtin_rvv_vslide1down_vx_i64m1_m:
-case RISCV::BI__builtin_rvv_vslide1down_vx_i64m2_m:
-case RISCV::BI__builtin_rvv_vslide1down_vx_i64m4_m:
-case RISCV::BI__builtin_rvv_vslide1down_vx_i64m8_m:
-case RISCV::BI__builtin_rvv_vslide1down_vx_u8m1_m:
-case RISCV::BI__builtin_rvv_vslide1down_vx_u8m2_m:
-case RISCV::BI__builtin_rvv_vslide1down_vx_u8m4_m:
-case RISCV::BI__builtin_rvv_vslide1down_vx_u8m8_m:
-case RISCV::BI__builtin_rvv_vslide1down_vx_u8mf2_m:
-case RISCV::BI__builtin_rvv_vslide1down_vx_u8mf4_m:
-case RISCV::BI__builtin_rvv_vslide1down_vx_u8mf8_m:
-case RISCV::BI__builtin_rvv_vslide1down_vx_u16m1_m:
-case RISCV::BI__builtin_rvv_vslide1down_vx_u16m2_m:
-case RISCV::BI__builtin_rvv_vslide1down_vx_u16m4_m:
-case RISCV::BI__builtin_rvv_vslide1down_vx_u16m8_m:
-case RISCV::BI__builtin_rvv_vslide1down_vx_u16mf2_m:
-case RISCV::BI__builtin_rvv_vslide1down_vx_u16mf4_m:
-case RISCV::BI__builtin_rvv_vslide1down_vx_u32m1_m:
-case RISCV::BI__builtin_rvv_vslide1down_vx_u32m2_m:
-case RISCV::BI__builtin_rvv_vslide1down_vx_u32m4_m:
-case RISCV::BI__builtin_rvv_vslide1down_vx_u32m8_m:
-case RISCV::BI__builtin_rvv_vslide1down_vx_u32mf2_m:
-case RISCV::BI__builtin_rvv_vslide1down_vx_u64m1_m:
-case RISCV::BI__builtin_rvv_vslide1down_vx_u64m2_m:
-case RISCV::BI__builtin_rvv_vslide1down_vx_u64m4_m:
-case RISCV::BI__builtin_rvv_vslide1down_vx_u64m8_m:
+case RISCV::BI__builtin_rvv_vslide1down_vx_i8m1_mt:
+case RISCV::BI__builtin_rvv_vslide1down_vx_i8m2_mt:
+case RISCV::BI__builtin_rvv_vslide1down_vx_i8m4_mt:
+case RISCV::BI__builtin_rvv_vslide1down_vx_i8m8_mt:
+case RISCV::BI__builtin_rvv_vslide1down_vx_i8mf2_mt:
+case RISCV::BI__builtin_rvv_vslide1down_vx_i8mf4_mt:
+case RISCV::BI__builtin_rvv_vslide1down_vx_i8mf8_mt:
+case RISCV::BI__builtin_rvv_vslide1down_vx_i16m1_mt:
+case RISCV::BI__builtin_rvv_vslide1down_vx_i16m2_mt:
+case RISCV::BI__builtin_rvv_vslide1down_vx_i16m4_mt:
+case RISCV::BI__builtin_rvv_vslide1down_vx_i16m8_mt:
+case RISCV::BI__builtin_rvv_vslide1down_vx_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vslide1down_vx_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vslide1down_vx_i32m1_mt:
+case RISCV::BI__builtin_rvv_vslide1down_vx_i32m2_mt:
+case RISCV::BI__builtin_rvv_vslide1down_vx_i32m4_mt:
+case RISCV::BI__builtin_rvv_vslide1down_vx_i32m8_mt:
+case RISCV::BI__builtin_rvv_vslide1down_vx_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vslide1down_vx_i64m1_mt:
+case RISCV::BI__builtin_rvv_vslide1down_vx_i64m2_mt:
+case RISCV::BI__builtin_rvv_vslide1down_vx_i64m4_mt:
+case RISCV::BI__builtin_rvv_vslide1down_vx_i64m8_mt:
+case RISCV::BI__builtin_rvv_vslide1down_vx_u8m1_mt:
+case RISCV::BI__builtin_rvv_vslide1down_vx_u8m2_mt:
+case RISCV::BI__builtin_rvv_vslide1down_vx_u8m4_mt:
+case RISCV::BI__builtin_rvv_vslide1down_vx_u8m8_mt:
+case RISCV::BI__builtin_rvv_vslide1down_vx_u8mf2_mt:
+case RISCV::BI__builtin_rvv_vslide1down_vx_u8mf4_mt:
+case RISCV::BI__builtin_rvv_vslide1down_vx_u8mf8_mt:
+case RISCV::BI__builtin_rvv_vslide1down_vx_u16m1_mt:
+case RISCV::BI__builtin_rvv_vslide1down_vx_u16m2_mt:
+case RISCV::BI__builtin_rvv_vslide1down_vx_u16m4_mt:
+case RISCV::BI__builtin_rvv_vslide1down_vx_u16m8_mt:
+case RISCV::BI__builtin_rvv_vslide1down_vx_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vslide1down_vx_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vslide1down_vx_u32m1_mt:
+case RISCV::BI__builtin_rvv_vslide1down_vx_u32m2_mt:
+case RISCV::BI__builtin_rvv_vslide1down_vx_u32m4_mt:
+case RISCV::BI__builtin_rvv_vslide1down_vx_u32m8_mt:
+case RISCV::BI__builtin_rvv_vslide1down_vx_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vslide1down_vx_u64m1_mt:
+case RISCV::BI__builtin_rvv_vslide1down_vx_u64m2_mt:
+case RISCV::BI__builtin_rvv_vslide1down_vx_u64m4_mt:
+case RISCV::BI__builtin_rvv_vslide1down_vx_u64m8_mt:
   ID = Intrinsic::riscv_vslide1down_mask;
-  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 1);
+  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 2);
   IntrinsicTypes = {ResultType, Ops[2]->getType(), Ops.back()->getType()};
   break;
 case RISCV::BI__builtin_rvv_vslide1up_vx_i8m1:
@@ -20455,52 +20490,52 @@ case RISCV::BI__builtin_rvv_vslide1up_vx_u64m8:
   ID = Intrinsic::riscv_vslide1up;
   IntrinsicTypes = {ResultType, Ops[1]->getType(), Ops.back()->getType()};
   break;
-case RISCV::BI__builtin_rvv_vslide1up_vx_i8m1_m:
-case RISCV::BI__builtin_rvv_vslide1up_vx_i8m2_m:
-case RISCV::BI__builtin_rvv_vslide1up_vx_i8m4_m:
-case RISCV::BI__builtin_rvv_vslide1up_vx_i8m8_m:
-case RISCV::BI__builtin_rvv_vslide1up_vx_i8mf2_m:
-case RISCV::BI__builtin_rvv_vslide1up_vx_i8mf4_m:
-case RISCV::BI__builtin_rvv_vslide1up_vx_i8mf8_m:
-case RISCV::BI__builtin_rvv_vslide1up_vx_i16m1_m:
-case RISCV::BI__builtin_rvv_vslide1up_vx_i16m2_m:
-case RISCV::BI__builtin_rvv_vslide1up_vx_i16m4_m:
-case RISCV::BI__builtin_rvv_vslide1up_vx_i16m8_m:
-case RISCV::BI__builtin_rvv_vslide1up_vx_i16mf2_m:
-case RISCV::BI__builtin_rvv_vslide1up_vx_i16mf4_m:
-case RISCV::BI__builtin_rvv_vslide1up_vx_i32m1_m:
-case RISCV::BI__builtin_rvv_vslide1up_vx_i32m2_m:
-case RISCV::BI__builtin_rvv_vslide1up_vx_i32m4_m:
-case RISCV::BI__builtin_rvv_vslide1up_vx_i32m8_m:
-case RISCV::BI__builtin_rvv_vslide1up_vx_i32mf2_m:
-case RISCV::BI__builtin_rvv_vslide1up_vx_i64m1_m:
-case RISCV::BI__builtin_rvv_vslide1up_vx_i64m2_m:
-case RISCV::BI__builtin_rvv_vslide1up_vx_i64m4_m:
-case RISCV::BI__builtin_rvv_vslide1up_vx_i64m8_m:
-case RISCV::BI__builtin_rvv_vslide1up_vx_u8m1_m:
-case RISCV::BI__builtin_rvv_vslide1up_vx_u8m2_m:
-case RISCV::BI__builtin_rvv_vslide1up_vx_u8m4_m:
-case RISCV::BI__builtin_rvv_vslide1up_vx_u8m8_m:
-case RISCV::BI__builtin_rvv_vslide1up_vx_u8mf2_m:
-case RISCV::BI__builtin_rvv_vslide1up_vx_u8mf4_m:
-case RISCV::BI__builtin_rvv_vslide1up_vx_u8mf8_m:
-case RISCV::BI__builtin_rvv_vslide1up_vx_u16m1_m:
-case RISCV::BI__builtin_rvv_vslide1up_vx_u16m2_m:
-case RISCV::BI__builtin_rvv_vslide1up_vx_u16m4_m:
-case RISCV::BI__builtin_rvv_vslide1up_vx_u16m8_m:
-case RISCV::BI__builtin_rvv_vslide1up_vx_u16mf2_m:
-case RISCV::BI__builtin_rvv_vslide1up_vx_u16mf4_m:
-case RISCV::BI__builtin_rvv_vslide1up_vx_u32m1_m:
-case RISCV::BI__builtin_rvv_vslide1up_vx_u32m2_m:
-case RISCV::BI__builtin_rvv_vslide1up_vx_u32m4_m:
-case RISCV::BI__builtin_rvv_vslide1up_vx_u32m8_m:
-case RISCV::BI__builtin_rvv_vslide1up_vx_u32mf2_m:
-case RISCV::BI__builtin_rvv_vslide1up_vx_u64m1_m:
-case RISCV::BI__builtin_rvv_vslide1up_vx_u64m2_m:
-case RISCV::BI__builtin_rvv_vslide1up_vx_u64m4_m:
-case RISCV::BI__builtin_rvv_vslide1up_vx_u64m8_m:
+case RISCV::BI__builtin_rvv_vslide1up_vx_i8m1_mt:
+case RISCV::BI__builtin_rvv_vslide1up_vx_i8m2_mt:
+case RISCV::BI__builtin_rvv_vslide1up_vx_i8m4_mt:
+case RISCV::BI__builtin_rvv_vslide1up_vx_i8m8_mt:
+case RISCV::BI__builtin_rvv_vslide1up_vx_i8mf2_mt:
+case RISCV::BI__builtin_rvv_vslide1up_vx_i8mf4_mt:
+case RISCV::BI__builtin_rvv_vslide1up_vx_i8mf8_mt:
+case RISCV::BI__builtin_rvv_vslide1up_vx_i16m1_mt:
+case RISCV::BI__builtin_rvv_vslide1up_vx_i16m2_mt:
+case RISCV::BI__builtin_rvv_vslide1up_vx_i16m4_mt:
+case RISCV::BI__builtin_rvv_vslide1up_vx_i16m8_mt:
+case RISCV::BI__builtin_rvv_vslide1up_vx_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vslide1up_vx_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vslide1up_vx_i32m1_mt:
+case RISCV::BI__builtin_rvv_vslide1up_vx_i32m2_mt:
+case RISCV::BI__builtin_rvv_vslide1up_vx_i32m4_mt:
+case RISCV::BI__builtin_rvv_vslide1up_vx_i32m8_mt:
+case RISCV::BI__builtin_rvv_vslide1up_vx_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vslide1up_vx_i64m1_mt:
+case RISCV::BI__builtin_rvv_vslide1up_vx_i64m2_mt:
+case RISCV::BI__builtin_rvv_vslide1up_vx_i64m4_mt:
+case RISCV::BI__builtin_rvv_vslide1up_vx_i64m8_mt:
+case RISCV::BI__builtin_rvv_vslide1up_vx_u8m1_mt:
+case RISCV::BI__builtin_rvv_vslide1up_vx_u8m2_mt:
+case RISCV::BI__builtin_rvv_vslide1up_vx_u8m4_mt:
+case RISCV::BI__builtin_rvv_vslide1up_vx_u8m8_mt:
+case RISCV::BI__builtin_rvv_vslide1up_vx_u8mf2_mt:
+case RISCV::BI__builtin_rvv_vslide1up_vx_u8mf4_mt:
+case RISCV::BI__builtin_rvv_vslide1up_vx_u8mf8_mt:
+case RISCV::BI__builtin_rvv_vslide1up_vx_u16m1_mt:
+case RISCV::BI__builtin_rvv_vslide1up_vx_u16m2_mt:
+case RISCV::BI__builtin_rvv_vslide1up_vx_u16m4_mt:
+case RISCV::BI__builtin_rvv_vslide1up_vx_u16m8_mt:
+case RISCV::BI__builtin_rvv_vslide1up_vx_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vslide1up_vx_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vslide1up_vx_u32m1_mt:
+case RISCV::BI__builtin_rvv_vslide1up_vx_u32m2_mt:
+case RISCV::BI__builtin_rvv_vslide1up_vx_u32m4_mt:
+case RISCV::BI__builtin_rvv_vslide1up_vx_u32m8_mt:
+case RISCV::BI__builtin_rvv_vslide1up_vx_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vslide1up_vx_u64m1_mt:
+case RISCV::BI__builtin_rvv_vslide1up_vx_u64m2_mt:
+case RISCV::BI__builtin_rvv_vslide1up_vx_u64m4_mt:
+case RISCV::BI__builtin_rvv_vslide1up_vx_u64m8_mt:
   ID = Intrinsic::riscv_vslide1up_mask;
-  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 1);
+  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 2);
   IntrinsicTypes = {ResultType, Ops[2]->getType(), Ops.back()->getType()};
   break;
 case RISCV::BI__builtin_rvv_vslidedown_vx_i8m1:
@@ -20844,96 +20879,96 @@ case RISCV::BI__builtin_rvv_vsll_vx_u64m8:
   ID = Intrinsic::riscv_vsll;
   IntrinsicTypes = {ResultType, Ops[1]->getType(), Ops.back()->getType()};
   break;
-case RISCV::BI__builtin_rvv_vsll_vv_i8m1_m:
-case RISCV::BI__builtin_rvv_vsll_vv_i8m2_m:
-case RISCV::BI__builtin_rvv_vsll_vv_i8m4_m:
-case RISCV::BI__builtin_rvv_vsll_vv_i8m8_m:
-case RISCV::BI__builtin_rvv_vsll_vv_i8mf2_m:
-case RISCV::BI__builtin_rvv_vsll_vv_i8mf4_m:
-case RISCV::BI__builtin_rvv_vsll_vv_i8mf8_m:
-case RISCV::BI__builtin_rvv_vsll_vv_i16m1_m:
-case RISCV::BI__builtin_rvv_vsll_vv_i16m2_m:
-case RISCV::BI__builtin_rvv_vsll_vv_i16m4_m:
-case RISCV::BI__builtin_rvv_vsll_vv_i16m8_m:
-case RISCV::BI__builtin_rvv_vsll_vv_i16mf2_m:
-case RISCV::BI__builtin_rvv_vsll_vv_i16mf4_m:
-case RISCV::BI__builtin_rvv_vsll_vv_i32m1_m:
-case RISCV::BI__builtin_rvv_vsll_vv_i32m2_m:
-case RISCV::BI__builtin_rvv_vsll_vv_i32m4_m:
-case RISCV::BI__builtin_rvv_vsll_vv_i32m8_m:
-case RISCV::BI__builtin_rvv_vsll_vv_i32mf2_m:
-case RISCV::BI__builtin_rvv_vsll_vv_i64m1_m:
-case RISCV::BI__builtin_rvv_vsll_vv_i64m2_m:
-case RISCV::BI__builtin_rvv_vsll_vv_i64m4_m:
-case RISCV::BI__builtin_rvv_vsll_vv_i64m8_m:
-case RISCV::BI__builtin_rvv_vsll_vx_i8m1_m:
-case RISCV::BI__builtin_rvv_vsll_vx_i8m2_m:
-case RISCV::BI__builtin_rvv_vsll_vx_i8m4_m:
-case RISCV::BI__builtin_rvv_vsll_vx_i8m8_m:
-case RISCV::BI__builtin_rvv_vsll_vx_i8mf2_m:
-case RISCV::BI__builtin_rvv_vsll_vx_i8mf4_m:
-case RISCV::BI__builtin_rvv_vsll_vx_i8mf8_m:
-case RISCV::BI__builtin_rvv_vsll_vx_i16m1_m:
-case RISCV::BI__builtin_rvv_vsll_vx_i16m2_m:
-case RISCV::BI__builtin_rvv_vsll_vx_i16m4_m:
-case RISCV::BI__builtin_rvv_vsll_vx_i16m8_m:
-case RISCV::BI__builtin_rvv_vsll_vx_i16mf2_m:
-case RISCV::BI__builtin_rvv_vsll_vx_i16mf4_m:
-case RISCV::BI__builtin_rvv_vsll_vx_i32m1_m:
-case RISCV::BI__builtin_rvv_vsll_vx_i32m2_m:
-case RISCV::BI__builtin_rvv_vsll_vx_i32m4_m:
-case RISCV::BI__builtin_rvv_vsll_vx_i32m8_m:
-case RISCV::BI__builtin_rvv_vsll_vx_i32mf2_m:
-case RISCV::BI__builtin_rvv_vsll_vx_i64m1_m:
-case RISCV::BI__builtin_rvv_vsll_vx_i64m2_m:
-case RISCV::BI__builtin_rvv_vsll_vx_i64m4_m:
-case RISCV::BI__builtin_rvv_vsll_vx_i64m8_m:
-case RISCV::BI__builtin_rvv_vsll_vv_u8m1_m:
-case RISCV::BI__builtin_rvv_vsll_vv_u8m2_m:
-case RISCV::BI__builtin_rvv_vsll_vv_u8m4_m:
-case RISCV::BI__builtin_rvv_vsll_vv_u8m8_m:
-case RISCV::BI__builtin_rvv_vsll_vv_u8mf2_m:
-case RISCV::BI__builtin_rvv_vsll_vv_u8mf4_m:
-case RISCV::BI__builtin_rvv_vsll_vv_u8mf8_m:
-case RISCV::BI__builtin_rvv_vsll_vv_u16m1_m:
-case RISCV::BI__builtin_rvv_vsll_vv_u16m2_m:
-case RISCV::BI__builtin_rvv_vsll_vv_u16m4_m:
-case RISCV::BI__builtin_rvv_vsll_vv_u16m8_m:
-case RISCV::BI__builtin_rvv_vsll_vv_u16mf2_m:
-case RISCV::BI__builtin_rvv_vsll_vv_u16mf4_m:
-case RISCV::BI__builtin_rvv_vsll_vv_u32m1_m:
-case RISCV::BI__builtin_rvv_vsll_vv_u32m2_m:
-case RISCV::BI__builtin_rvv_vsll_vv_u32m4_m:
-case RISCV::BI__builtin_rvv_vsll_vv_u32m8_m:
-case RISCV::BI__builtin_rvv_vsll_vv_u32mf2_m:
-case RISCV::BI__builtin_rvv_vsll_vv_u64m1_m:
-case RISCV::BI__builtin_rvv_vsll_vv_u64m2_m:
-case RISCV::BI__builtin_rvv_vsll_vv_u64m4_m:
-case RISCV::BI__builtin_rvv_vsll_vv_u64m8_m:
-case RISCV::BI__builtin_rvv_vsll_vx_u8m1_m:
-case RISCV::BI__builtin_rvv_vsll_vx_u8m2_m:
-case RISCV::BI__builtin_rvv_vsll_vx_u8m4_m:
-case RISCV::BI__builtin_rvv_vsll_vx_u8m8_m:
-case RISCV::BI__builtin_rvv_vsll_vx_u8mf2_m:
-case RISCV::BI__builtin_rvv_vsll_vx_u8mf4_m:
-case RISCV::BI__builtin_rvv_vsll_vx_u8mf8_m:
-case RISCV::BI__builtin_rvv_vsll_vx_u16m1_m:
-case RISCV::BI__builtin_rvv_vsll_vx_u16m2_m:
-case RISCV::BI__builtin_rvv_vsll_vx_u16m4_m:
-case RISCV::BI__builtin_rvv_vsll_vx_u16m8_m:
-case RISCV::BI__builtin_rvv_vsll_vx_u16mf2_m:
-case RISCV::BI__builtin_rvv_vsll_vx_u16mf4_m:
-case RISCV::BI__builtin_rvv_vsll_vx_u32m1_m:
-case RISCV::BI__builtin_rvv_vsll_vx_u32m2_m:
-case RISCV::BI__builtin_rvv_vsll_vx_u32m4_m:
-case RISCV::BI__builtin_rvv_vsll_vx_u32m8_m:
-case RISCV::BI__builtin_rvv_vsll_vx_u32mf2_m:
-case RISCV::BI__builtin_rvv_vsll_vx_u64m1_m:
-case RISCV::BI__builtin_rvv_vsll_vx_u64m2_m:
-case RISCV::BI__builtin_rvv_vsll_vx_u64m4_m:
-case RISCV::BI__builtin_rvv_vsll_vx_u64m8_m:
+case RISCV::BI__builtin_rvv_vsll_vv_i8m1_mt:
+case RISCV::BI__builtin_rvv_vsll_vv_i8m2_mt:
+case RISCV::BI__builtin_rvv_vsll_vv_i8m4_mt:
+case RISCV::BI__builtin_rvv_vsll_vv_i8m8_mt:
+case RISCV::BI__builtin_rvv_vsll_vv_i8mf2_mt:
+case RISCV::BI__builtin_rvv_vsll_vv_i8mf4_mt:
+case RISCV::BI__builtin_rvv_vsll_vv_i8mf8_mt:
+case RISCV::BI__builtin_rvv_vsll_vv_i16m1_mt:
+case RISCV::BI__builtin_rvv_vsll_vv_i16m2_mt:
+case RISCV::BI__builtin_rvv_vsll_vv_i16m4_mt:
+case RISCV::BI__builtin_rvv_vsll_vv_i16m8_mt:
+case RISCV::BI__builtin_rvv_vsll_vv_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vsll_vv_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vsll_vv_i32m1_mt:
+case RISCV::BI__builtin_rvv_vsll_vv_i32m2_mt:
+case RISCV::BI__builtin_rvv_vsll_vv_i32m4_mt:
+case RISCV::BI__builtin_rvv_vsll_vv_i32m8_mt:
+case RISCV::BI__builtin_rvv_vsll_vv_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vsll_vv_i64m1_mt:
+case RISCV::BI__builtin_rvv_vsll_vv_i64m2_mt:
+case RISCV::BI__builtin_rvv_vsll_vv_i64m4_mt:
+case RISCV::BI__builtin_rvv_vsll_vv_i64m8_mt:
+case RISCV::BI__builtin_rvv_vsll_vx_i8m1_mt:
+case RISCV::BI__builtin_rvv_vsll_vx_i8m2_mt:
+case RISCV::BI__builtin_rvv_vsll_vx_i8m4_mt:
+case RISCV::BI__builtin_rvv_vsll_vx_i8m8_mt:
+case RISCV::BI__builtin_rvv_vsll_vx_i8mf2_mt:
+case RISCV::BI__builtin_rvv_vsll_vx_i8mf4_mt:
+case RISCV::BI__builtin_rvv_vsll_vx_i8mf8_mt:
+case RISCV::BI__builtin_rvv_vsll_vx_i16m1_mt:
+case RISCV::BI__builtin_rvv_vsll_vx_i16m2_mt:
+case RISCV::BI__builtin_rvv_vsll_vx_i16m4_mt:
+case RISCV::BI__builtin_rvv_vsll_vx_i16m8_mt:
+case RISCV::BI__builtin_rvv_vsll_vx_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vsll_vx_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vsll_vx_i32m1_mt:
+case RISCV::BI__builtin_rvv_vsll_vx_i32m2_mt:
+case RISCV::BI__builtin_rvv_vsll_vx_i32m4_mt:
+case RISCV::BI__builtin_rvv_vsll_vx_i32m8_mt:
+case RISCV::BI__builtin_rvv_vsll_vx_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vsll_vx_i64m1_mt:
+case RISCV::BI__builtin_rvv_vsll_vx_i64m2_mt:
+case RISCV::BI__builtin_rvv_vsll_vx_i64m4_mt:
+case RISCV::BI__builtin_rvv_vsll_vx_i64m8_mt:
+case RISCV::BI__builtin_rvv_vsll_vv_u8m1_mt:
+case RISCV::BI__builtin_rvv_vsll_vv_u8m2_mt:
+case RISCV::BI__builtin_rvv_vsll_vv_u8m4_mt:
+case RISCV::BI__builtin_rvv_vsll_vv_u8m8_mt:
+case RISCV::BI__builtin_rvv_vsll_vv_u8mf2_mt:
+case RISCV::BI__builtin_rvv_vsll_vv_u8mf4_mt:
+case RISCV::BI__builtin_rvv_vsll_vv_u8mf8_mt:
+case RISCV::BI__builtin_rvv_vsll_vv_u16m1_mt:
+case RISCV::BI__builtin_rvv_vsll_vv_u16m2_mt:
+case RISCV::BI__builtin_rvv_vsll_vv_u16m4_mt:
+case RISCV::BI__builtin_rvv_vsll_vv_u16m8_mt:
+case RISCV::BI__builtin_rvv_vsll_vv_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vsll_vv_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vsll_vv_u32m1_mt:
+case RISCV::BI__builtin_rvv_vsll_vv_u32m2_mt:
+case RISCV::BI__builtin_rvv_vsll_vv_u32m4_mt:
+case RISCV::BI__builtin_rvv_vsll_vv_u32m8_mt:
+case RISCV::BI__builtin_rvv_vsll_vv_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vsll_vv_u64m1_mt:
+case RISCV::BI__builtin_rvv_vsll_vv_u64m2_mt:
+case RISCV::BI__builtin_rvv_vsll_vv_u64m4_mt:
+case RISCV::BI__builtin_rvv_vsll_vv_u64m8_mt:
+case RISCV::BI__builtin_rvv_vsll_vx_u8m1_mt:
+case RISCV::BI__builtin_rvv_vsll_vx_u8m2_mt:
+case RISCV::BI__builtin_rvv_vsll_vx_u8m4_mt:
+case RISCV::BI__builtin_rvv_vsll_vx_u8m8_mt:
+case RISCV::BI__builtin_rvv_vsll_vx_u8mf2_mt:
+case RISCV::BI__builtin_rvv_vsll_vx_u8mf4_mt:
+case RISCV::BI__builtin_rvv_vsll_vx_u8mf8_mt:
+case RISCV::BI__builtin_rvv_vsll_vx_u16m1_mt:
+case RISCV::BI__builtin_rvv_vsll_vx_u16m2_mt:
+case RISCV::BI__builtin_rvv_vsll_vx_u16m4_mt:
+case RISCV::BI__builtin_rvv_vsll_vx_u16m8_mt:
+case RISCV::BI__builtin_rvv_vsll_vx_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vsll_vx_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vsll_vx_u32m1_mt:
+case RISCV::BI__builtin_rvv_vsll_vx_u32m2_mt:
+case RISCV::BI__builtin_rvv_vsll_vx_u32m4_mt:
+case RISCV::BI__builtin_rvv_vsll_vx_u32m8_mt:
+case RISCV::BI__builtin_rvv_vsll_vx_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vsll_vx_u64m1_mt:
+case RISCV::BI__builtin_rvv_vsll_vx_u64m2_mt:
+case RISCV::BI__builtin_rvv_vsll_vx_u64m4_mt:
+case RISCV::BI__builtin_rvv_vsll_vx_u64m8_mt:
   ID = Intrinsic::riscv_vsll_mask;
-  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 1);
+  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 2);
   IntrinsicTypes = {ResultType, Ops[2]->getType(), Ops.back()->getType()};
   break;
 case RISCV::BI__builtin_rvv_vsmul_vv_i8m1:
@@ -20983,52 +21018,52 @@ case RISCV::BI__builtin_rvv_vsmul_vx_i64m8:
   ID = Intrinsic::riscv_vsmul;
   IntrinsicTypes = {ResultType, Ops[1]->getType(), Ops.back()->getType()};
   break;
-case RISCV::BI__builtin_rvv_vsmul_vv_i8m1_m:
-case RISCV::BI__builtin_rvv_vsmul_vv_i8m2_m:
-case RISCV::BI__builtin_rvv_vsmul_vv_i8m4_m:
-case RISCV::BI__builtin_rvv_vsmul_vv_i8m8_m:
-case RISCV::BI__builtin_rvv_vsmul_vv_i8mf2_m:
-case RISCV::BI__builtin_rvv_vsmul_vv_i8mf4_m:
-case RISCV::BI__builtin_rvv_vsmul_vv_i8mf8_m:
-case RISCV::BI__builtin_rvv_vsmul_vv_i16m1_m:
-case RISCV::BI__builtin_rvv_vsmul_vv_i16m2_m:
-case RISCV::BI__builtin_rvv_vsmul_vv_i16m4_m:
-case RISCV::BI__builtin_rvv_vsmul_vv_i16m8_m:
-case RISCV::BI__builtin_rvv_vsmul_vv_i16mf2_m:
-case RISCV::BI__builtin_rvv_vsmul_vv_i16mf4_m:
-case RISCV::BI__builtin_rvv_vsmul_vv_i32m1_m:
-case RISCV::BI__builtin_rvv_vsmul_vv_i32m2_m:
-case RISCV::BI__builtin_rvv_vsmul_vv_i32m4_m:
-case RISCV::BI__builtin_rvv_vsmul_vv_i32m8_m:
-case RISCV::BI__builtin_rvv_vsmul_vv_i32mf2_m:
-case RISCV::BI__builtin_rvv_vsmul_vv_i64m1_m:
-case RISCV::BI__builtin_rvv_vsmul_vv_i64m2_m:
-case RISCV::BI__builtin_rvv_vsmul_vv_i64m4_m:
-case RISCV::BI__builtin_rvv_vsmul_vv_i64m8_m:
-case RISCV::BI__builtin_rvv_vsmul_vx_i8m1_m:
-case RISCV::BI__builtin_rvv_vsmul_vx_i8m2_m:
-case RISCV::BI__builtin_rvv_vsmul_vx_i8m4_m:
-case RISCV::BI__builtin_rvv_vsmul_vx_i8m8_m:
-case RISCV::BI__builtin_rvv_vsmul_vx_i8mf2_m:
-case RISCV::BI__builtin_rvv_vsmul_vx_i8mf4_m:
-case RISCV::BI__builtin_rvv_vsmul_vx_i8mf8_m:
-case RISCV::BI__builtin_rvv_vsmul_vx_i16m1_m:
-case RISCV::BI__builtin_rvv_vsmul_vx_i16m2_m:
-case RISCV::BI__builtin_rvv_vsmul_vx_i16m4_m:
-case RISCV::BI__builtin_rvv_vsmul_vx_i16m8_m:
-case RISCV::BI__builtin_rvv_vsmul_vx_i16mf2_m:
-case RISCV::BI__builtin_rvv_vsmul_vx_i16mf4_m:
-case RISCV::BI__builtin_rvv_vsmul_vx_i32m1_m:
-case RISCV::BI__builtin_rvv_vsmul_vx_i32m2_m:
-case RISCV::BI__builtin_rvv_vsmul_vx_i32m4_m:
-case RISCV::BI__builtin_rvv_vsmul_vx_i32m8_m:
-case RISCV::BI__builtin_rvv_vsmul_vx_i32mf2_m:
-case RISCV::BI__builtin_rvv_vsmul_vx_i64m1_m:
-case RISCV::BI__builtin_rvv_vsmul_vx_i64m2_m:
-case RISCV::BI__builtin_rvv_vsmul_vx_i64m4_m:
-case RISCV::BI__builtin_rvv_vsmul_vx_i64m8_m:
+case RISCV::BI__builtin_rvv_vsmul_vv_i8m1_mt:
+case RISCV::BI__builtin_rvv_vsmul_vv_i8m2_mt:
+case RISCV::BI__builtin_rvv_vsmul_vv_i8m4_mt:
+case RISCV::BI__builtin_rvv_vsmul_vv_i8m8_mt:
+case RISCV::BI__builtin_rvv_vsmul_vv_i8mf2_mt:
+case RISCV::BI__builtin_rvv_vsmul_vv_i8mf4_mt:
+case RISCV::BI__builtin_rvv_vsmul_vv_i8mf8_mt:
+case RISCV::BI__builtin_rvv_vsmul_vv_i16m1_mt:
+case RISCV::BI__builtin_rvv_vsmul_vv_i16m2_mt:
+case RISCV::BI__builtin_rvv_vsmul_vv_i16m4_mt:
+case RISCV::BI__builtin_rvv_vsmul_vv_i16m8_mt:
+case RISCV::BI__builtin_rvv_vsmul_vv_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vsmul_vv_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vsmul_vv_i32m1_mt:
+case RISCV::BI__builtin_rvv_vsmul_vv_i32m2_mt:
+case RISCV::BI__builtin_rvv_vsmul_vv_i32m4_mt:
+case RISCV::BI__builtin_rvv_vsmul_vv_i32m8_mt:
+case RISCV::BI__builtin_rvv_vsmul_vv_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vsmul_vv_i64m1_mt:
+case RISCV::BI__builtin_rvv_vsmul_vv_i64m2_mt:
+case RISCV::BI__builtin_rvv_vsmul_vv_i64m4_mt:
+case RISCV::BI__builtin_rvv_vsmul_vv_i64m8_mt:
+case RISCV::BI__builtin_rvv_vsmul_vx_i8m1_mt:
+case RISCV::BI__builtin_rvv_vsmul_vx_i8m2_mt:
+case RISCV::BI__builtin_rvv_vsmul_vx_i8m4_mt:
+case RISCV::BI__builtin_rvv_vsmul_vx_i8m8_mt:
+case RISCV::BI__builtin_rvv_vsmul_vx_i8mf2_mt:
+case RISCV::BI__builtin_rvv_vsmul_vx_i8mf4_mt:
+case RISCV::BI__builtin_rvv_vsmul_vx_i8mf8_mt:
+case RISCV::BI__builtin_rvv_vsmul_vx_i16m1_mt:
+case RISCV::BI__builtin_rvv_vsmul_vx_i16m2_mt:
+case RISCV::BI__builtin_rvv_vsmul_vx_i16m4_mt:
+case RISCV::BI__builtin_rvv_vsmul_vx_i16m8_mt:
+case RISCV::BI__builtin_rvv_vsmul_vx_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vsmul_vx_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vsmul_vx_i32m1_mt:
+case RISCV::BI__builtin_rvv_vsmul_vx_i32m2_mt:
+case RISCV::BI__builtin_rvv_vsmul_vx_i32m4_mt:
+case RISCV::BI__builtin_rvv_vsmul_vx_i32m8_mt:
+case RISCV::BI__builtin_rvv_vsmul_vx_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vsmul_vx_i64m1_mt:
+case RISCV::BI__builtin_rvv_vsmul_vx_i64m2_mt:
+case RISCV::BI__builtin_rvv_vsmul_vx_i64m4_mt:
+case RISCV::BI__builtin_rvv_vsmul_vx_i64m8_mt:
   ID = Intrinsic::riscv_vsmul_mask;
-  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 1);
+  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 2);
   IntrinsicTypes = {ResultType, Ops[2]->getType(), Ops.back()->getType()};
   break;
 case RISCV::BI__builtin_rvv_vsoxei8_v_i8m1:
@@ -23473,52 +23508,52 @@ case RISCV::BI__builtin_rvv_vsra_vx_i64m8:
   ID = Intrinsic::riscv_vsra;
   IntrinsicTypes = {ResultType, Ops[1]->getType(), Ops.back()->getType()};
   break;
-case RISCV::BI__builtin_rvv_vsra_vv_i8m1_m:
-case RISCV::BI__builtin_rvv_vsra_vv_i8m2_m:
-case RISCV::BI__builtin_rvv_vsra_vv_i8m4_m:
-case RISCV::BI__builtin_rvv_vsra_vv_i8m8_m:
-case RISCV::BI__builtin_rvv_vsra_vv_i8mf2_m:
-case RISCV::BI__builtin_rvv_vsra_vv_i8mf4_m:
-case RISCV::BI__builtin_rvv_vsra_vv_i8mf8_m:
-case RISCV::BI__builtin_rvv_vsra_vv_i16m1_m:
-case RISCV::BI__builtin_rvv_vsra_vv_i16m2_m:
-case RISCV::BI__builtin_rvv_vsra_vv_i16m4_m:
-case RISCV::BI__builtin_rvv_vsra_vv_i16m8_m:
-case RISCV::BI__builtin_rvv_vsra_vv_i16mf2_m:
-case RISCV::BI__builtin_rvv_vsra_vv_i16mf4_m:
-case RISCV::BI__builtin_rvv_vsra_vv_i32m1_m:
-case RISCV::BI__builtin_rvv_vsra_vv_i32m2_m:
-case RISCV::BI__builtin_rvv_vsra_vv_i32m4_m:
-case RISCV::BI__builtin_rvv_vsra_vv_i32m8_m:
-case RISCV::BI__builtin_rvv_vsra_vv_i32mf2_m:
-case RISCV::BI__builtin_rvv_vsra_vv_i64m1_m:
-case RISCV::BI__builtin_rvv_vsra_vv_i64m2_m:
-case RISCV::BI__builtin_rvv_vsra_vv_i64m4_m:
-case RISCV::BI__builtin_rvv_vsra_vv_i64m8_m:
-case RISCV::BI__builtin_rvv_vsra_vx_i8m1_m:
-case RISCV::BI__builtin_rvv_vsra_vx_i8m2_m:
-case RISCV::BI__builtin_rvv_vsra_vx_i8m4_m:
-case RISCV::BI__builtin_rvv_vsra_vx_i8m8_m:
-case RISCV::BI__builtin_rvv_vsra_vx_i8mf2_m:
-case RISCV::BI__builtin_rvv_vsra_vx_i8mf4_m:
-case RISCV::BI__builtin_rvv_vsra_vx_i8mf8_m:
-case RISCV::BI__builtin_rvv_vsra_vx_i16m1_m:
-case RISCV::BI__builtin_rvv_vsra_vx_i16m2_m:
-case RISCV::BI__builtin_rvv_vsra_vx_i16m4_m:
-case RISCV::BI__builtin_rvv_vsra_vx_i16m8_m:
-case RISCV::BI__builtin_rvv_vsra_vx_i16mf2_m:
-case RISCV::BI__builtin_rvv_vsra_vx_i16mf4_m:
-case RISCV::BI__builtin_rvv_vsra_vx_i32m1_m:
-case RISCV::BI__builtin_rvv_vsra_vx_i32m2_m:
-case RISCV::BI__builtin_rvv_vsra_vx_i32m4_m:
-case RISCV::BI__builtin_rvv_vsra_vx_i32m8_m:
-case RISCV::BI__builtin_rvv_vsra_vx_i32mf2_m:
-case RISCV::BI__builtin_rvv_vsra_vx_i64m1_m:
-case RISCV::BI__builtin_rvv_vsra_vx_i64m2_m:
-case RISCV::BI__builtin_rvv_vsra_vx_i64m4_m:
-case RISCV::BI__builtin_rvv_vsra_vx_i64m8_m:
+case RISCV::BI__builtin_rvv_vsra_vv_i8m1_mt:
+case RISCV::BI__builtin_rvv_vsra_vv_i8m2_mt:
+case RISCV::BI__builtin_rvv_vsra_vv_i8m4_mt:
+case RISCV::BI__builtin_rvv_vsra_vv_i8m8_mt:
+case RISCV::BI__builtin_rvv_vsra_vv_i8mf2_mt:
+case RISCV::BI__builtin_rvv_vsra_vv_i8mf4_mt:
+case RISCV::BI__builtin_rvv_vsra_vv_i8mf8_mt:
+case RISCV::BI__builtin_rvv_vsra_vv_i16m1_mt:
+case RISCV::BI__builtin_rvv_vsra_vv_i16m2_mt:
+case RISCV::BI__builtin_rvv_vsra_vv_i16m4_mt:
+case RISCV::BI__builtin_rvv_vsra_vv_i16m8_mt:
+case RISCV::BI__builtin_rvv_vsra_vv_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vsra_vv_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vsra_vv_i32m1_mt:
+case RISCV::BI__builtin_rvv_vsra_vv_i32m2_mt:
+case RISCV::BI__builtin_rvv_vsra_vv_i32m4_mt:
+case RISCV::BI__builtin_rvv_vsra_vv_i32m8_mt:
+case RISCV::BI__builtin_rvv_vsra_vv_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vsra_vv_i64m1_mt:
+case RISCV::BI__builtin_rvv_vsra_vv_i64m2_mt:
+case RISCV::BI__builtin_rvv_vsra_vv_i64m4_mt:
+case RISCV::BI__builtin_rvv_vsra_vv_i64m8_mt:
+case RISCV::BI__builtin_rvv_vsra_vx_i8m1_mt:
+case RISCV::BI__builtin_rvv_vsra_vx_i8m2_mt:
+case RISCV::BI__builtin_rvv_vsra_vx_i8m4_mt:
+case RISCV::BI__builtin_rvv_vsra_vx_i8m8_mt:
+case RISCV::BI__builtin_rvv_vsra_vx_i8mf2_mt:
+case RISCV::BI__builtin_rvv_vsra_vx_i8mf4_mt:
+case RISCV::BI__builtin_rvv_vsra_vx_i8mf8_mt:
+case RISCV::BI__builtin_rvv_vsra_vx_i16m1_mt:
+case RISCV::BI__builtin_rvv_vsra_vx_i16m2_mt:
+case RISCV::BI__builtin_rvv_vsra_vx_i16m4_mt:
+case RISCV::BI__builtin_rvv_vsra_vx_i16m8_mt:
+case RISCV::BI__builtin_rvv_vsra_vx_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vsra_vx_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vsra_vx_i32m1_mt:
+case RISCV::BI__builtin_rvv_vsra_vx_i32m2_mt:
+case RISCV::BI__builtin_rvv_vsra_vx_i32m4_mt:
+case RISCV::BI__builtin_rvv_vsra_vx_i32m8_mt:
+case RISCV::BI__builtin_rvv_vsra_vx_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vsra_vx_i64m1_mt:
+case RISCV::BI__builtin_rvv_vsra_vx_i64m2_mt:
+case RISCV::BI__builtin_rvv_vsra_vx_i64m4_mt:
+case RISCV::BI__builtin_rvv_vsra_vx_i64m8_mt:
   ID = Intrinsic::riscv_vsra_mask;
-  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 1);
+  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 2);
   IntrinsicTypes = {ResultType, Ops[2]->getType(), Ops.back()->getType()};
   break;
 case RISCV::BI__builtin_rvv_vsrl_vv_u8m1:
@@ -23568,52 +23603,52 @@ case RISCV::BI__builtin_rvv_vsrl_vx_u64m8:
   ID = Intrinsic::riscv_vsrl;
   IntrinsicTypes = {ResultType, Ops[1]->getType(), Ops.back()->getType()};
   break;
-case RISCV::BI__builtin_rvv_vsrl_vv_u8m1_m:
-case RISCV::BI__builtin_rvv_vsrl_vv_u8m2_m:
-case RISCV::BI__builtin_rvv_vsrl_vv_u8m4_m:
-case RISCV::BI__builtin_rvv_vsrl_vv_u8m8_m:
-case RISCV::BI__builtin_rvv_vsrl_vv_u8mf2_m:
-case RISCV::BI__builtin_rvv_vsrl_vv_u8mf4_m:
-case RISCV::BI__builtin_rvv_vsrl_vv_u8mf8_m:
-case RISCV::BI__builtin_rvv_vsrl_vv_u16m1_m:
-case RISCV::BI__builtin_rvv_vsrl_vv_u16m2_m:
-case RISCV::BI__builtin_rvv_vsrl_vv_u16m4_m:
-case RISCV::BI__builtin_rvv_vsrl_vv_u16m8_m:
-case RISCV::BI__builtin_rvv_vsrl_vv_u16mf2_m:
-case RISCV::BI__builtin_rvv_vsrl_vv_u16mf4_m:
-case RISCV::BI__builtin_rvv_vsrl_vv_u32m1_m:
-case RISCV::BI__builtin_rvv_vsrl_vv_u32m2_m:
-case RISCV::BI__builtin_rvv_vsrl_vv_u32m4_m:
-case RISCV::BI__builtin_rvv_vsrl_vv_u32m8_m:
-case RISCV::BI__builtin_rvv_vsrl_vv_u32mf2_m:
-case RISCV::BI__builtin_rvv_vsrl_vv_u64m1_m:
-case RISCV::BI__builtin_rvv_vsrl_vv_u64m2_m:
-case RISCV::BI__builtin_rvv_vsrl_vv_u64m4_m:
-case RISCV::BI__builtin_rvv_vsrl_vv_u64m8_m:
-case RISCV::BI__builtin_rvv_vsrl_vx_u8m1_m:
-case RISCV::BI__builtin_rvv_vsrl_vx_u8m2_m:
-case RISCV::BI__builtin_rvv_vsrl_vx_u8m4_m:
-case RISCV::BI__builtin_rvv_vsrl_vx_u8m8_m:
-case RISCV::BI__builtin_rvv_vsrl_vx_u8mf2_m:
-case RISCV::BI__builtin_rvv_vsrl_vx_u8mf4_m:
-case RISCV::BI__builtin_rvv_vsrl_vx_u8mf8_m:
-case RISCV::BI__builtin_rvv_vsrl_vx_u16m1_m:
-case RISCV::BI__builtin_rvv_vsrl_vx_u16m2_m:
-case RISCV::BI__builtin_rvv_vsrl_vx_u16m4_m:
-case RISCV::BI__builtin_rvv_vsrl_vx_u16m8_m:
-case RISCV::BI__builtin_rvv_vsrl_vx_u16mf2_m:
-case RISCV::BI__builtin_rvv_vsrl_vx_u16mf4_m:
-case RISCV::BI__builtin_rvv_vsrl_vx_u32m1_m:
-case RISCV::BI__builtin_rvv_vsrl_vx_u32m2_m:
-case RISCV::BI__builtin_rvv_vsrl_vx_u32m4_m:
-case RISCV::BI__builtin_rvv_vsrl_vx_u32m8_m:
-case RISCV::BI__builtin_rvv_vsrl_vx_u32mf2_m:
-case RISCV::BI__builtin_rvv_vsrl_vx_u64m1_m:
-case RISCV::BI__builtin_rvv_vsrl_vx_u64m2_m:
-case RISCV::BI__builtin_rvv_vsrl_vx_u64m4_m:
-case RISCV::BI__builtin_rvv_vsrl_vx_u64m8_m:
+case RISCV::BI__builtin_rvv_vsrl_vv_u8m1_mt:
+case RISCV::BI__builtin_rvv_vsrl_vv_u8m2_mt:
+case RISCV::BI__builtin_rvv_vsrl_vv_u8m4_mt:
+case RISCV::BI__builtin_rvv_vsrl_vv_u8m8_mt:
+case RISCV::BI__builtin_rvv_vsrl_vv_u8mf2_mt:
+case RISCV::BI__builtin_rvv_vsrl_vv_u8mf4_mt:
+case RISCV::BI__builtin_rvv_vsrl_vv_u8mf8_mt:
+case RISCV::BI__builtin_rvv_vsrl_vv_u16m1_mt:
+case RISCV::BI__builtin_rvv_vsrl_vv_u16m2_mt:
+case RISCV::BI__builtin_rvv_vsrl_vv_u16m4_mt:
+case RISCV::BI__builtin_rvv_vsrl_vv_u16m8_mt:
+case RISCV::BI__builtin_rvv_vsrl_vv_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vsrl_vv_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vsrl_vv_u32m1_mt:
+case RISCV::BI__builtin_rvv_vsrl_vv_u32m2_mt:
+case RISCV::BI__builtin_rvv_vsrl_vv_u32m4_mt:
+case RISCV::BI__builtin_rvv_vsrl_vv_u32m8_mt:
+case RISCV::BI__builtin_rvv_vsrl_vv_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vsrl_vv_u64m1_mt:
+case RISCV::BI__builtin_rvv_vsrl_vv_u64m2_mt:
+case RISCV::BI__builtin_rvv_vsrl_vv_u64m4_mt:
+case RISCV::BI__builtin_rvv_vsrl_vv_u64m8_mt:
+case RISCV::BI__builtin_rvv_vsrl_vx_u8m1_mt:
+case RISCV::BI__builtin_rvv_vsrl_vx_u8m2_mt:
+case RISCV::BI__builtin_rvv_vsrl_vx_u8m4_mt:
+case RISCV::BI__builtin_rvv_vsrl_vx_u8m8_mt:
+case RISCV::BI__builtin_rvv_vsrl_vx_u8mf2_mt:
+case RISCV::BI__builtin_rvv_vsrl_vx_u8mf4_mt:
+case RISCV::BI__builtin_rvv_vsrl_vx_u8mf8_mt:
+case RISCV::BI__builtin_rvv_vsrl_vx_u16m1_mt:
+case RISCV::BI__builtin_rvv_vsrl_vx_u16m2_mt:
+case RISCV::BI__builtin_rvv_vsrl_vx_u16m4_mt:
+case RISCV::BI__builtin_rvv_vsrl_vx_u16m8_mt:
+case RISCV::BI__builtin_rvv_vsrl_vx_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vsrl_vx_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vsrl_vx_u32m1_mt:
+case RISCV::BI__builtin_rvv_vsrl_vx_u32m2_mt:
+case RISCV::BI__builtin_rvv_vsrl_vx_u32m4_mt:
+case RISCV::BI__builtin_rvv_vsrl_vx_u32m8_mt:
+case RISCV::BI__builtin_rvv_vsrl_vx_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vsrl_vx_u64m1_mt:
+case RISCV::BI__builtin_rvv_vsrl_vx_u64m2_mt:
+case RISCV::BI__builtin_rvv_vsrl_vx_u64m4_mt:
+case RISCV::BI__builtin_rvv_vsrl_vx_u64m8_mt:
   ID = Intrinsic::riscv_vsrl_mask;
-  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 1);
+  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 2);
   IntrinsicTypes = {ResultType, Ops[2]->getType(), Ops.back()->getType()};
   break;
 case RISCV::BI__builtin_rvv_vsse16_v_i16m1:
@@ -24408,52 +24443,52 @@ case RISCV::BI__builtin_rvv_vssra_vx_i64m8:
   ID = Intrinsic::riscv_vssra;
   IntrinsicTypes = {ResultType, Ops[1]->getType(), Ops.back()->getType()};
   break;
-case RISCV::BI__builtin_rvv_vssra_vv_i8m1_m:
-case RISCV::BI__builtin_rvv_vssra_vv_i8m2_m:
-case RISCV::BI__builtin_rvv_vssra_vv_i8m4_m:
-case RISCV::BI__builtin_rvv_vssra_vv_i8m8_m:
-case RISCV::BI__builtin_rvv_vssra_vv_i8mf2_m:
-case RISCV::BI__builtin_rvv_vssra_vv_i8mf4_m:
-case RISCV::BI__builtin_rvv_vssra_vv_i8mf8_m:
-case RISCV::BI__builtin_rvv_vssra_vv_i16m1_m:
-case RISCV::BI__builtin_rvv_vssra_vv_i16m2_m:
-case RISCV::BI__builtin_rvv_vssra_vv_i16m4_m:
-case RISCV::BI__builtin_rvv_vssra_vv_i16m8_m:
-case RISCV::BI__builtin_rvv_vssra_vv_i16mf2_m:
-case RISCV::BI__builtin_rvv_vssra_vv_i16mf4_m:
-case RISCV::BI__builtin_rvv_vssra_vv_i32m1_m:
-case RISCV::BI__builtin_rvv_vssra_vv_i32m2_m:
-case RISCV::BI__builtin_rvv_vssra_vv_i32m4_m:
-case RISCV::BI__builtin_rvv_vssra_vv_i32m8_m:
-case RISCV::BI__builtin_rvv_vssra_vv_i32mf2_m:
-case RISCV::BI__builtin_rvv_vssra_vv_i64m1_m:
-case RISCV::BI__builtin_rvv_vssra_vv_i64m2_m:
-case RISCV::BI__builtin_rvv_vssra_vv_i64m4_m:
-case RISCV::BI__builtin_rvv_vssra_vv_i64m8_m:
-case RISCV::BI__builtin_rvv_vssra_vx_i8m1_m:
-case RISCV::BI__builtin_rvv_vssra_vx_i8m2_m:
-case RISCV::BI__builtin_rvv_vssra_vx_i8m4_m:
-case RISCV::BI__builtin_rvv_vssra_vx_i8m8_m:
-case RISCV::BI__builtin_rvv_vssra_vx_i8mf2_m:
-case RISCV::BI__builtin_rvv_vssra_vx_i8mf4_m:
-case RISCV::BI__builtin_rvv_vssra_vx_i8mf8_m:
-case RISCV::BI__builtin_rvv_vssra_vx_i16m1_m:
-case RISCV::BI__builtin_rvv_vssra_vx_i16m2_m:
-case RISCV::BI__builtin_rvv_vssra_vx_i16m4_m:
-case RISCV::BI__builtin_rvv_vssra_vx_i16m8_m:
-case RISCV::BI__builtin_rvv_vssra_vx_i16mf2_m:
-case RISCV::BI__builtin_rvv_vssra_vx_i16mf4_m:
-case RISCV::BI__builtin_rvv_vssra_vx_i32m1_m:
-case RISCV::BI__builtin_rvv_vssra_vx_i32m2_m:
-case RISCV::BI__builtin_rvv_vssra_vx_i32m4_m:
-case RISCV::BI__builtin_rvv_vssra_vx_i32m8_m:
-case RISCV::BI__builtin_rvv_vssra_vx_i32mf2_m:
-case RISCV::BI__builtin_rvv_vssra_vx_i64m1_m:
-case RISCV::BI__builtin_rvv_vssra_vx_i64m2_m:
-case RISCV::BI__builtin_rvv_vssra_vx_i64m4_m:
-case RISCV::BI__builtin_rvv_vssra_vx_i64m8_m:
+case RISCV::BI__builtin_rvv_vssra_vv_i8m1_mt:
+case RISCV::BI__builtin_rvv_vssra_vv_i8m2_mt:
+case RISCV::BI__builtin_rvv_vssra_vv_i8m4_mt:
+case RISCV::BI__builtin_rvv_vssra_vv_i8m8_mt:
+case RISCV::BI__builtin_rvv_vssra_vv_i8mf2_mt:
+case RISCV::BI__builtin_rvv_vssra_vv_i8mf4_mt:
+case RISCV::BI__builtin_rvv_vssra_vv_i8mf8_mt:
+case RISCV::BI__builtin_rvv_vssra_vv_i16m1_mt:
+case RISCV::BI__builtin_rvv_vssra_vv_i16m2_mt:
+case RISCV::BI__builtin_rvv_vssra_vv_i16m4_mt:
+case RISCV::BI__builtin_rvv_vssra_vv_i16m8_mt:
+case RISCV::BI__builtin_rvv_vssra_vv_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vssra_vv_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vssra_vv_i32m1_mt:
+case RISCV::BI__builtin_rvv_vssra_vv_i32m2_mt:
+case RISCV::BI__builtin_rvv_vssra_vv_i32m4_mt:
+case RISCV::BI__builtin_rvv_vssra_vv_i32m8_mt:
+case RISCV::BI__builtin_rvv_vssra_vv_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vssra_vv_i64m1_mt:
+case RISCV::BI__builtin_rvv_vssra_vv_i64m2_mt:
+case RISCV::BI__builtin_rvv_vssra_vv_i64m4_mt:
+case RISCV::BI__builtin_rvv_vssra_vv_i64m8_mt:
+case RISCV::BI__builtin_rvv_vssra_vx_i8m1_mt:
+case RISCV::BI__builtin_rvv_vssra_vx_i8m2_mt:
+case RISCV::BI__builtin_rvv_vssra_vx_i8m4_mt:
+case RISCV::BI__builtin_rvv_vssra_vx_i8m8_mt:
+case RISCV::BI__builtin_rvv_vssra_vx_i8mf2_mt:
+case RISCV::BI__builtin_rvv_vssra_vx_i8mf4_mt:
+case RISCV::BI__builtin_rvv_vssra_vx_i8mf8_mt:
+case RISCV::BI__builtin_rvv_vssra_vx_i16m1_mt:
+case RISCV::BI__builtin_rvv_vssra_vx_i16m2_mt:
+case RISCV::BI__builtin_rvv_vssra_vx_i16m4_mt:
+case RISCV::BI__builtin_rvv_vssra_vx_i16m8_mt:
+case RISCV::BI__builtin_rvv_vssra_vx_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vssra_vx_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vssra_vx_i32m1_mt:
+case RISCV::BI__builtin_rvv_vssra_vx_i32m2_mt:
+case RISCV::BI__builtin_rvv_vssra_vx_i32m4_mt:
+case RISCV::BI__builtin_rvv_vssra_vx_i32m8_mt:
+case RISCV::BI__builtin_rvv_vssra_vx_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vssra_vx_i64m1_mt:
+case RISCV::BI__builtin_rvv_vssra_vx_i64m2_mt:
+case RISCV::BI__builtin_rvv_vssra_vx_i64m4_mt:
+case RISCV::BI__builtin_rvv_vssra_vx_i64m8_mt:
   ID = Intrinsic::riscv_vssra_mask;
-  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 1);
+  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 2);
   IntrinsicTypes = {ResultType, Ops[2]->getType(), Ops.back()->getType()};
   break;
 case RISCV::BI__builtin_rvv_vssrl_vv_u8m1:
@@ -24503,52 +24538,52 @@ case RISCV::BI__builtin_rvv_vssrl_vx_u64m8:
   ID = Intrinsic::riscv_vssrl;
   IntrinsicTypes = {ResultType, Ops[1]->getType(), Ops.back()->getType()};
   break;
-case RISCV::BI__builtin_rvv_vssrl_vv_u8m1_m:
-case RISCV::BI__builtin_rvv_vssrl_vv_u8m2_m:
-case RISCV::BI__builtin_rvv_vssrl_vv_u8m4_m:
-case RISCV::BI__builtin_rvv_vssrl_vv_u8m8_m:
-case RISCV::BI__builtin_rvv_vssrl_vv_u8mf2_m:
-case RISCV::BI__builtin_rvv_vssrl_vv_u8mf4_m:
-case RISCV::BI__builtin_rvv_vssrl_vv_u8mf8_m:
-case RISCV::BI__builtin_rvv_vssrl_vv_u16m1_m:
-case RISCV::BI__builtin_rvv_vssrl_vv_u16m2_m:
-case RISCV::BI__builtin_rvv_vssrl_vv_u16m4_m:
-case RISCV::BI__builtin_rvv_vssrl_vv_u16m8_m:
-case RISCV::BI__builtin_rvv_vssrl_vv_u16mf2_m:
-case RISCV::BI__builtin_rvv_vssrl_vv_u16mf4_m:
-case RISCV::BI__builtin_rvv_vssrl_vv_u32m1_m:
-case RISCV::BI__builtin_rvv_vssrl_vv_u32m2_m:
-case RISCV::BI__builtin_rvv_vssrl_vv_u32m4_m:
-case RISCV::BI__builtin_rvv_vssrl_vv_u32m8_m:
-case RISCV::BI__builtin_rvv_vssrl_vv_u32mf2_m:
-case RISCV::BI__builtin_rvv_vssrl_vv_u64m1_m:
-case RISCV::BI__builtin_rvv_vssrl_vv_u64m2_m:
-case RISCV::BI__builtin_rvv_vssrl_vv_u64m4_m:
-case RISCV::BI__builtin_rvv_vssrl_vv_u64m8_m:
-case RISCV::BI__builtin_rvv_vssrl_vx_u8m1_m:
-case RISCV::BI__builtin_rvv_vssrl_vx_u8m2_m:
-case RISCV::BI__builtin_rvv_vssrl_vx_u8m4_m:
-case RISCV::BI__builtin_rvv_vssrl_vx_u8m8_m:
-case RISCV::BI__builtin_rvv_vssrl_vx_u8mf2_m:
-case RISCV::BI__builtin_rvv_vssrl_vx_u8mf4_m:
-case RISCV::BI__builtin_rvv_vssrl_vx_u8mf8_m:
-case RISCV::BI__builtin_rvv_vssrl_vx_u16m1_m:
-case RISCV::BI__builtin_rvv_vssrl_vx_u16m2_m:
-case RISCV::BI__builtin_rvv_vssrl_vx_u16m4_m:
-case RISCV::BI__builtin_rvv_vssrl_vx_u16m8_m:
-case RISCV::BI__builtin_rvv_vssrl_vx_u16mf2_m:
-case RISCV::BI__builtin_rvv_vssrl_vx_u16mf4_m:
-case RISCV::BI__builtin_rvv_vssrl_vx_u32m1_m:
-case RISCV::BI__builtin_rvv_vssrl_vx_u32m2_m:
-case RISCV::BI__builtin_rvv_vssrl_vx_u32m4_m:
-case RISCV::BI__builtin_rvv_vssrl_vx_u32m8_m:
-case RISCV::BI__builtin_rvv_vssrl_vx_u32mf2_m:
-case RISCV::BI__builtin_rvv_vssrl_vx_u64m1_m:
-case RISCV::BI__builtin_rvv_vssrl_vx_u64m2_m:
-case RISCV::BI__builtin_rvv_vssrl_vx_u64m4_m:
-case RISCV::BI__builtin_rvv_vssrl_vx_u64m8_m:
+case RISCV::BI__builtin_rvv_vssrl_vv_u8m1_mt:
+case RISCV::BI__builtin_rvv_vssrl_vv_u8m2_mt:
+case RISCV::BI__builtin_rvv_vssrl_vv_u8m4_mt:
+case RISCV::BI__builtin_rvv_vssrl_vv_u8m8_mt:
+case RISCV::BI__builtin_rvv_vssrl_vv_u8mf2_mt:
+case RISCV::BI__builtin_rvv_vssrl_vv_u8mf4_mt:
+case RISCV::BI__builtin_rvv_vssrl_vv_u8mf8_mt:
+case RISCV::BI__builtin_rvv_vssrl_vv_u16m1_mt:
+case RISCV::BI__builtin_rvv_vssrl_vv_u16m2_mt:
+case RISCV::BI__builtin_rvv_vssrl_vv_u16m4_mt:
+case RISCV::BI__builtin_rvv_vssrl_vv_u16m8_mt:
+case RISCV::BI__builtin_rvv_vssrl_vv_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vssrl_vv_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vssrl_vv_u32m1_mt:
+case RISCV::BI__builtin_rvv_vssrl_vv_u32m2_mt:
+case RISCV::BI__builtin_rvv_vssrl_vv_u32m4_mt:
+case RISCV::BI__builtin_rvv_vssrl_vv_u32m8_mt:
+case RISCV::BI__builtin_rvv_vssrl_vv_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vssrl_vv_u64m1_mt:
+case RISCV::BI__builtin_rvv_vssrl_vv_u64m2_mt:
+case RISCV::BI__builtin_rvv_vssrl_vv_u64m4_mt:
+case RISCV::BI__builtin_rvv_vssrl_vv_u64m8_mt:
+case RISCV::BI__builtin_rvv_vssrl_vx_u8m1_mt:
+case RISCV::BI__builtin_rvv_vssrl_vx_u8m2_mt:
+case RISCV::BI__builtin_rvv_vssrl_vx_u8m4_mt:
+case RISCV::BI__builtin_rvv_vssrl_vx_u8m8_mt:
+case RISCV::BI__builtin_rvv_vssrl_vx_u8mf2_mt:
+case RISCV::BI__builtin_rvv_vssrl_vx_u8mf4_mt:
+case RISCV::BI__builtin_rvv_vssrl_vx_u8mf8_mt:
+case RISCV::BI__builtin_rvv_vssrl_vx_u16m1_mt:
+case RISCV::BI__builtin_rvv_vssrl_vx_u16m2_mt:
+case RISCV::BI__builtin_rvv_vssrl_vx_u16m4_mt:
+case RISCV::BI__builtin_rvv_vssrl_vx_u16m8_mt:
+case RISCV::BI__builtin_rvv_vssrl_vx_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vssrl_vx_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vssrl_vx_u32m1_mt:
+case RISCV::BI__builtin_rvv_vssrl_vx_u32m2_mt:
+case RISCV::BI__builtin_rvv_vssrl_vx_u32m4_mt:
+case RISCV::BI__builtin_rvv_vssrl_vx_u32m8_mt:
+case RISCV::BI__builtin_rvv_vssrl_vx_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vssrl_vx_u64m1_mt:
+case RISCV::BI__builtin_rvv_vssrl_vx_u64m2_mt:
+case RISCV::BI__builtin_rvv_vssrl_vx_u64m4_mt:
+case RISCV::BI__builtin_rvv_vssrl_vx_u64m8_mt:
   ID = Intrinsic::riscv_vssrl_mask;
-  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 1);
+  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 2);
   IntrinsicTypes = {ResultType, Ops[2]->getType(), Ops.back()->getType()};
   break;
 case RISCV::BI__builtin_rvv_vssseg2e16_v_i16m1:
@@ -25211,52 +25246,52 @@ case RISCV::BI__builtin_rvv_vssub_vx_i64m8:
   ID = Intrinsic::riscv_vssub;
   IntrinsicTypes = {ResultType, Ops[1]->getType(), Ops.back()->getType()};
   break;
-case RISCV::BI__builtin_rvv_vssub_vv_i8m1_m:
-case RISCV::BI__builtin_rvv_vssub_vv_i8m2_m:
-case RISCV::BI__builtin_rvv_vssub_vv_i8m4_m:
-case RISCV::BI__builtin_rvv_vssub_vv_i8m8_m:
-case RISCV::BI__builtin_rvv_vssub_vv_i8mf2_m:
-case RISCV::BI__builtin_rvv_vssub_vv_i8mf4_m:
-case RISCV::BI__builtin_rvv_vssub_vv_i8mf8_m:
-case RISCV::BI__builtin_rvv_vssub_vv_i16m1_m:
-case RISCV::BI__builtin_rvv_vssub_vv_i16m2_m:
-case RISCV::BI__builtin_rvv_vssub_vv_i16m4_m:
-case RISCV::BI__builtin_rvv_vssub_vv_i16m8_m:
-case RISCV::BI__builtin_rvv_vssub_vv_i16mf2_m:
-case RISCV::BI__builtin_rvv_vssub_vv_i16mf4_m:
-case RISCV::BI__builtin_rvv_vssub_vv_i32m1_m:
-case RISCV::BI__builtin_rvv_vssub_vv_i32m2_m:
-case RISCV::BI__builtin_rvv_vssub_vv_i32m4_m:
-case RISCV::BI__builtin_rvv_vssub_vv_i32m8_m:
-case RISCV::BI__builtin_rvv_vssub_vv_i32mf2_m:
-case RISCV::BI__builtin_rvv_vssub_vv_i64m1_m:
-case RISCV::BI__builtin_rvv_vssub_vv_i64m2_m:
-case RISCV::BI__builtin_rvv_vssub_vv_i64m4_m:
-case RISCV::BI__builtin_rvv_vssub_vv_i64m8_m:
-case RISCV::BI__builtin_rvv_vssub_vx_i8m1_m:
-case RISCV::BI__builtin_rvv_vssub_vx_i8m2_m:
-case RISCV::BI__builtin_rvv_vssub_vx_i8m4_m:
-case RISCV::BI__builtin_rvv_vssub_vx_i8m8_m:
-case RISCV::BI__builtin_rvv_vssub_vx_i8mf2_m:
-case RISCV::BI__builtin_rvv_vssub_vx_i8mf4_m:
-case RISCV::BI__builtin_rvv_vssub_vx_i8mf8_m:
-case RISCV::BI__builtin_rvv_vssub_vx_i16m1_m:
-case RISCV::BI__builtin_rvv_vssub_vx_i16m2_m:
-case RISCV::BI__builtin_rvv_vssub_vx_i16m4_m:
-case RISCV::BI__builtin_rvv_vssub_vx_i16m8_m:
-case RISCV::BI__builtin_rvv_vssub_vx_i16mf2_m:
-case RISCV::BI__builtin_rvv_vssub_vx_i16mf4_m:
-case RISCV::BI__builtin_rvv_vssub_vx_i32m1_m:
-case RISCV::BI__builtin_rvv_vssub_vx_i32m2_m:
-case RISCV::BI__builtin_rvv_vssub_vx_i32m4_m:
-case RISCV::BI__builtin_rvv_vssub_vx_i32m8_m:
-case RISCV::BI__builtin_rvv_vssub_vx_i32mf2_m:
-case RISCV::BI__builtin_rvv_vssub_vx_i64m1_m:
-case RISCV::BI__builtin_rvv_vssub_vx_i64m2_m:
-case RISCV::BI__builtin_rvv_vssub_vx_i64m4_m:
-case RISCV::BI__builtin_rvv_vssub_vx_i64m8_m:
+case RISCV::BI__builtin_rvv_vssub_vv_i8m1_mt:
+case RISCV::BI__builtin_rvv_vssub_vv_i8m2_mt:
+case RISCV::BI__builtin_rvv_vssub_vv_i8m4_mt:
+case RISCV::BI__builtin_rvv_vssub_vv_i8m8_mt:
+case RISCV::BI__builtin_rvv_vssub_vv_i8mf2_mt:
+case RISCV::BI__builtin_rvv_vssub_vv_i8mf4_mt:
+case RISCV::BI__builtin_rvv_vssub_vv_i8mf8_mt:
+case RISCV::BI__builtin_rvv_vssub_vv_i16m1_mt:
+case RISCV::BI__builtin_rvv_vssub_vv_i16m2_mt:
+case RISCV::BI__builtin_rvv_vssub_vv_i16m4_mt:
+case RISCV::BI__builtin_rvv_vssub_vv_i16m8_mt:
+case RISCV::BI__builtin_rvv_vssub_vv_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vssub_vv_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vssub_vv_i32m1_mt:
+case RISCV::BI__builtin_rvv_vssub_vv_i32m2_mt:
+case RISCV::BI__builtin_rvv_vssub_vv_i32m4_mt:
+case RISCV::BI__builtin_rvv_vssub_vv_i32m8_mt:
+case RISCV::BI__builtin_rvv_vssub_vv_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vssub_vv_i64m1_mt:
+case RISCV::BI__builtin_rvv_vssub_vv_i64m2_mt:
+case RISCV::BI__builtin_rvv_vssub_vv_i64m4_mt:
+case RISCV::BI__builtin_rvv_vssub_vv_i64m8_mt:
+case RISCV::BI__builtin_rvv_vssub_vx_i8m1_mt:
+case RISCV::BI__builtin_rvv_vssub_vx_i8m2_mt:
+case RISCV::BI__builtin_rvv_vssub_vx_i8m4_mt:
+case RISCV::BI__builtin_rvv_vssub_vx_i8m8_mt:
+case RISCV::BI__builtin_rvv_vssub_vx_i8mf2_mt:
+case RISCV::BI__builtin_rvv_vssub_vx_i8mf4_mt:
+case RISCV::BI__builtin_rvv_vssub_vx_i8mf8_mt:
+case RISCV::BI__builtin_rvv_vssub_vx_i16m1_mt:
+case RISCV::BI__builtin_rvv_vssub_vx_i16m2_mt:
+case RISCV::BI__builtin_rvv_vssub_vx_i16m4_mt:
+case RISCV::BI__builtin_rvv_vssub_vx_i16m8_mt:
+case RISCV::BI__builtin_rvv_vssub_vx_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vssub_vx_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vssub_vx_i32m1_mt:
+case RISCV::BI__builtin_rvv_vssub_vx_i32m2_mt:
+case RISCV::BI__builtin_rvv_vssub_vx_i32m4_mt:
+case RISCV::BI__builtin_rvv_vssub_vx_i32m8_mt:
+case RISCV::BI__builtin_rvv_vssub_vx_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vssub_vx_i64m1_mt:
+case RISCV::BI__builtin_rvv_vssub_vx_i64m2_mt:
+case RISCV::BI__builtin_rvv_vssub_vx_i64m4_mt:
+case RISCV::BI__builtin_rvv_vssub_vx_i64m8_mt:
   ID = Intrinsic::riscv_vssub_mask;
-  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 1);
+  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 2);
   IntrinsicTypes = {ResultType, Ops[2]->getType(), Ops.back()->getType()};
   break;
 case RISCV::BI__builtin_rvv_vssubu_vv_u8m1:
@@ -25306,52 +25341,52 @@ case RISCV::BI__builtin_rvv_vssubu_vx_u64m8:
   ID = Intrinsic::riscv_vssubu;
   IntrinsicTypes = {ResultType, Ops[1]->getType(), Ops.back()->getType()};
   break;
-case RISCV::BI__builtin_rvv_vssubu_vv_u8m1_m:
-case RISCV::BI__builtin_rvv_vssubu_vv_u8m2_m:
-case RISCV::BI__builtin_rvv_vssubu_vv_u8m4_m:
-case RISCV::BI__builtin_rvv_vssubu_vv_u8m8_m:
-case RISCV::BI__builtin_rvv_vssubu_vv_u8mf2_m:
-case RISCV::BI__builtin_rvv_vssubu_vv_u8mf4_m:
-case RISCV::BI__builtin_rvv_vssubu_vv_u8mf8_m:
-case RISCV::BI__builtin_rvv_vssubu_vv_u16m1_m:
-case RISCV::BI__builtin_rvv_vssubu_vv_u16m2_m:
-case RISCV::BI__builtin_rvv_vssubu_vv_u16m4_m:
-case RISCV::BI__builtin_rvv_vssubu_vv_u16m8_m:
-case RISCV::BI__builtin_rvv_vssubu_vv_u16mf2_m:
-case RISCV::BI__builtin_rvv_vssubu_vv_u16mf4_m:
-case RISCV::BI__builtin_rvv_vssubu_vv_u32m1_m:
-case RISCV::BI__builtin_rvv_vssubu_vv_u32m2_m:
-case RISCV::BI__builtin_rvv_vssubu_vv_u32m4_m:
-case RISCV::BI__builtin_rvv_vssubu_vv_u32m8_m:
-case RISCV::BI__builtin_rvv_vssubu_vv_u32mf2_m:
-case RISCV::BI__builtin_rvv_vssubu_vv_u64m1_m:
-case RISCV::BI__builtin_rvv_vssubu_vv_u64m2_m:
-case RISCV::BI__builtin_rvv_vssubu_vv_u64m4_m:
-case RISCV::BI__builtin_rvv_vssubu_vv_u64m8_m:
-case RISCV::BI__builtin_rvv_vssubu_vx_u8m1_m:
-case RISCV::BI__builtin_rvv_vssubu_vx_u8m2_m:
-case RISCV::BI__builtin_rvv_vssubu_vx_u8m4_m:
-case RISCV::BI__builtin_rvv_vssubu_vx_u8m8_m:
-case RISCV::BI__builtin_rvv_vssubu_vx_u8mf2_m:
-case RISCV::BI__builtin_rvv_vssubu_vx_u8mf4_m:
-case RISCV::BI__builtin_rvv_vssubu_vx_u8mf8_m:
-case RISCV::BI__builtin_rvv_vssubu_vx_u16m1_m:
-case RISCV::BI__builtin_rvv_vssubu_vx_u16m2_m:
-case RISCV::BI__builtin_rvv_vssubu_vx_u16m4_m:
-case RISCV::BI__builtin_rvv_vssubu_vx_u16m8_m:
-case RISCV::BI__builtin_rvv_vssubu_vx_u16mf2_m:
-case RISCV::BI__builtin_rvv_vssubu_vx_u16mf4_m:
-case RISCV::BI__builtin_rvv_vssubu_vx_u32m1_m:
-case RISCV::BI__builtin_rvv_vssubu_vx_u32m2_m:
-case RISCV::BI__builtin_rvv_vssubu_vx_u32m4_m:
-case RISCV::BI__builtin_rvv_vssubu_vx_u32m8_m:
-case RISCV::BI__builtin_rvv_vssubu_vx_u32mf2_m:
-case RISCV::BI__builtin_rvv_vssubu_vx_u64m1_m:
-case RISCV::BI__builtin_rvv_vssubu_vx_u64m2_m:
-case RISCV::BI__builtin_rvv_vssubu_vx_u64m4_m:
-case RISCV::BI__builtin_rvv_vssubu_vx_u64m8_m:
+case RISCV::BI__builtin_rvv_vssubu_vv_u8m1_mt:
+case RISCV::BI__builtin_rvv_vssubu_vv_u8m2_mt:
+case RISCV::BI__builtin_rvv_vssubu_vv_u8m4_mt:
+case RISCV::BI__builtin_rvv_vssubu_vv_u8m8_mt:
+case RISCV::BI__builtin_rvv_vssubu_vv_u8mf2_mt:
+case RISCV::BI__builtin_rvv_vssubu_vv_u8mf4_mt:
+case RISCV::BI__builtin_rvv_vssubu_vv_u8mf8_mt:
+case RISCV::BI__builtin_rvv_vssubu_vv_u16m1_mt:
+case RISCV::BI__builtin_rvv_vssubu_vv_u16m2_mt:
+case RISCV::BI__builtin_rvv_vssubu_vv_u16m4_mt:
+case RISCV::BI__builtin_rvv_vssubu_vv_u16m8_mt:
+case RISCV::BI__builtin_rvv_vssubu_vv_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vssubu_vv_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vssubu_vv_u32m1_mt:
+case RISCV::BI__builtin_rvv_vssubu_vv_u32m2_mt:
+case RISCV::BI__builtin_rvv_vssubu_vv_u32m4_mt:
+case RISCV::BI__builtin_rvv_vssubu_vv_u32m8_mt:
+case RISCV::BI__builtin_rvv_vssubu_vv_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vssubu_vv_u64m1_mt:
+case RISCV::BI__builtin_rvv_vssubu_vv_u64m2_mt:
+case RISCV::BI__builtin_rvv_vssubu_vv_u64m4_mt:
+case RISCV::BI__builtin_rvv_vssubu_vv_u64m8_mt:
+case RISCV::BI__builtin_rvv_vssubu_vx_u8m1_mt:
+case RISCV::BI__builtin_rvv_vssubu_vx_u8m2_mt:
+case RISCV::BI__builtin_rvv_vssubu_vx_u8m4_mt:
+case RISCV::BI__builtin_rvv_vssubu_vx_u8m8_mt:
+case RISCV::BI__builtin_rvv_vssubu_vx_u8mf2_mt:
+case RISCV::BI__builtin_rvv_vssubu_vx_u8mf4_mt:
+case RISCV::BI__builtin_rvv_vssubu_vx_u8mf8_mt:
+case RISCV::BI__builtin_rvv_vssubu_vx_u16m1_mt:
+case RISCV::BI__builtin_rvv_vssubu_vx_u16m2_mt:
+case RISCV::BI__builtin_rvv_vssubu_vx_u16m4_mt:
+case RISCV::BI__builtin_rvv_vssubu_vx_u16m8_mt:
+case RISCV::BI__builtin_rvv_vssubu_vx_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vssubu_vx_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vssubu_vx_u32m1_mt:
+case RISCV::BI__builtin_rvv_vssubu_vx_u32m2_mt:
+case RISCV::BI__builtin_rvv_vssubu_vx_u32m4_mt:
+case RISCV::BI__builtin_rvv_vssubu_vx_u32m8_mt:
+case RISCV::BI__builtin_rvv_vssubu_vx_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vssubu_vx_u64m1_mt:
+case RISCV::BI__builtin_rvv_vssubu_vx_u64m2_mt:
+case RISCV::BI__builtin_rvv_vssubu_vx_u64m4_mt:
+case RISCV::BI__builtin_rvv_vssubu_vx_u64m8_mt:
   ID = Intrinsic::riscv_vssubu_mask;
-  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 1);
+  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 2);
   IntrinsicTypes = {ResultType, Ops[2]->getType(), Ops.back()->getType()};
   break;
 case RISCV::BI__builtin_rvv_vsub_vv_i8m1:
@@ -25445,96 +25480,96 @@ case RISCV::BI__builtin_rvv_vsub_vx_u64m8:
   ID = Intrinsic::riscv_vsub;
   IntrinsicTypes = {ResultType, Ops[1]->getType(), Ops.back()->getType()};
   break;
-case RISCV::BI__builtin_rvv_vsub_vv_i8m1_m:
-case RISCV::BI__builtin_rvv_vsub_vv_i8m2_m:
-case RISCV::BI__builtin_rvv_vsub_vv_i8m4_m:
-case RISCV::BI__builtin_rvv_vsub_vv_i8m8_m:
-case RISCV::BI__builtin_rvv_vsub_vv_i8mf2_m:
-case RISCV::BI__builtin_rvv_vsub_vv_i8mf4_m:
-case RISCV::BI__builtin_rvv_vsub_vv_i8mf8_m:
-case RISCV::BI__builtin_rvv_vsub_vv_i16m1_m:
-case RISCV::BI__builtin_rvv_vsub_vv_i16m2_m:
-case RISCV::BI__builtin_rvv_vsub_vv_i16m4_m:
-case RISCV::BI__builtin_rvv_vsub_vv_i16m8_m:
-case RISCV::BI__builtin_rvv_vsub_vv_i16mf2_m:
-case RISCV::BI__builtin_rvv_vsub_vv_i16mf4_m:
-case RISCV::BI__builtin_rvv_vsub_vv_i32m1_m:
-case RISCV::BI__builtin_rvv_vsub_vv_i32m2_m:
-case RISCV::BI__builtin_rvv_vsub_vv_i32m4_m:
-case RISCV::BI__builtin_rvv_vsub_vv_i32m8_m:
-case RISCV::BI__builtin_rvv_vsub_vv_i32mf2_m:
-case RISCV::BI__builtin_rvv_vsub_vv_i64m1_m:
-case RISCV::BI__builtin_rvv_vsub_vv_i64m2_m:
-case RISCV::BI__builtin_rvv_vsub_vv_i64m4_m:
-case RISCV::BI__builtin_rvv_vsub_vv_i64m8_m:
-case RISCV::BI__builtin_rvv_vsub_vx_i8m1_m:
-case RISCV::BI__builtin_rvv_vsub_vx_i8m2_m:
-case RISCV::BI__builtin_rvv_vsub_vx_i8m4_m:
-case RISCV::BI__builtin_rvv_vsub_vx_i8m8_m:
-case RISCV::BI__builtin_rvv_vsub_vx_i8mf2_m:
-case RISCV::BI__builtin_rvv_vsub_vx_i8mf4_m:
-case RISCV::BI__builtin_rvv_vsub_vx_i8mf8_m:
-case RISCV::BI__builtin_rvv_vsub_vx_i16m1_m:
-case RISCV::BI__builtin_rvv_vsub_vx_i16m2_m:
-case RISCV::BI__builtin_rvv_vsub_vx_i16m4_m:
-case RISCV::BI__builtin_rvv_vsub_vx_i16m8_m:
-case RISCV::BI__builtin_rvv_vsub_vx_i16mf2_m:
-case RISCV::BI__builtin_rvv_vsub_vx_i16mf4_m:
-case RISCV::BI__builtin_rvv_vsub_vx_i32m1_m:
-case RISCV::BI__builtin_rvv_vsub_vx_i32m2_m:
-case RISCV::BI__builtin_rvv_vsub_vx_i32m4_m:
-case RISCV::BI__builtin_rvv_vsub_vx_i32m8_m:
-case RISCV::BI__builtin_rvv_vsub_vx_i32mf2_m:
-case RISCV::BI__builtin_rvv_vsub_vx_i64m1_m:
-case RISCV::BI__builtin_rvv_vsub_vx_i64m2_m:
-case RISCV::BI__builtin_rvv_vsub_vx_i64m4_m:
-case RISCV::BI__builtin_rvv_vsub_vx_i64m8_m:
-case RISCV::BI__builtin_rvv_vsub_vv_u8m1_m:
-case RISCV::BI__builtin_rvv_vsub_vv_u8m2_m:
-case RISCV::BI__builtin_rvv_vsub_vv_u8m4_m:
-case RISCV::BI__builtin_rvv_vsub_vv_u8m8_m:
-case RISCV::BI__builtin_rvv_vsub_vv_u8mf2_m:
-case RISCV::BI__builtin_rvv_vsub_vv_u8mf4_m:
-case RISCV::BI__builtin_rvv_vsub_vv_u8mf8_m:
-case RISCV::BI__builtin_rvv_vsub_vv_u16m1_m:
-case RISCV::BI__builtin_rvv_vsub_vv_u16m2_m:
-case RISCV::BI__builtin_rvv_vsub_vv_u16m4_m:
-case RISCV::BI__builtin_rvv_vsub_vv_u16m8_m:
-case RISCV::BI__builtin_rvv_vsub_vv_u16mf2_m:
-case RISCV::BI__builtin_rvv_vsub_vv_u16mf4_m:
-case RISCV::BI__builtin_rvv_vsub_vv_u32m1_m:
-case RISCV::BI__builtin_rvv_vsub_vv_u32m2_m:
-case RISCV::BI__builtin_rvv_vsub_vv_u32m4_m:
-case RISCV::BI__builtin_rvv_vsub_vv_u32m8_m:
-case RISCV::BI__builtin_rvv_vsub_vv_u32mf2_m:
-case RISCV::BI__builtin_rvv_vsub_vv_u64m1_m:
-case RISCV::BI__builtin_rvv_vsub_vv_u64m2_m:
-case RISCV::BI__builtin_rvv_vsub_vv_u64m4_m:
-case RISCV::BI__builtin_rvv_vsub_vv_u64m8_m:
-case RISCV::BI__builtin_rvv_vsub_vx_u8m1_m:
-case RISCV::BI__builtin_rvv_vsub_vx_u8m2_m:
-case RISCV::BI__builtin_rvv_vsub_vx_u8m4_m:
-case RISCV::BI__builtin_rvv_vsub_vx_u8m8_m:
-case RISCV::BI__builtin_rvv_vsub_vx_u8mf2_m:
-case RISCV::BI__builtin_rvv_vsub_vx_u8mf4_m:
-case RISCV::BI__builtin_rvv_vsub_vx_u8mf8_m:
-case RISCV::BI__builtin_rvv_vsub_vx_u16m1_m:
-case RISCV::BI__builtin_rvv_vsub_vx_u16m2_m:
-case RISCV::BI__builtin_rvv_vsub_vx_u16m4_m:
-case RISCV::BI__builtin_rvv_vsub_vx_u16m8_m:
-case RISCV::BI__builtin_rvv_vsub_vx_u16mf2_m:
-case RISCV::BI__builtin_rvv_vsub_vx_u16mf4_m:
-case RISCV::BI__builtin_rvv_vsub_vx_u32m1_m:
-case RISCV::BI__builtin_rvv_vsub_vx_u32m2_m:
-case RISCV::BI__builtin_rvv_vsub_vx_u32m4_m:
-case RISCV::BI__builtin_rvv_vsub_vx_u32m8_m:
-case RISCV::BI__builtin_rvv_vsub_vx_u32mf2_m:
-case RISCV::BI__builtin_rvv_vsub_vx_u64m1_m:
-case RISCV::BI__builtin_rvv_vsub_vx_u64m2_m:
-case RISCV::BI__builtin_rvv_vsub_vx_u64m4_m:
-case RISCV::BI__builtin_rvv_vsub_vx_u64m8_m:
+case RISCV::BI__builtin_rvv_vsub_vv_i8m1_mt:
+case RISCV::BI__builtin_rvv_vsub_vv_i8m2_mt:
+case RISCV::BI__builtin_rvv_vsub_vv_i8m4_mt:
+case RISCV::BI__builtin_rvv_vsub_vv_i8m8_mt:
+case RISCV::BI__builtin_rvv_vsub_vv_i8mf2_mt:
+case RISCV::BI__builtin_rvv_vsub_vv_i8mf4_mt:
+case RISCV::BI__builtin_rvv_vsub_vv_i8mf8_mt:
+case RISCV::BI__builtin_rvv_vsub_vv_i16m1_mt:
+case RISCV::BI__builtin_rvv_vsub_vv_i16m2_mt:
+case RISCV::BI__builtin_rvv_vsub_vv_i16m4_mt:
+case RISCV::BI__builtin_rvv_vsub_vv_i16m8_mt:
+case RISCV::BI__builtin_rvv_vsub_vv_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vsub_vv_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vsub_vv_i32m1_mt:
+case RISCV::BI__builtin_rvv_vsub_vv_i32m2_mt:
+case RISCV::BI__builtin_rvv_vsub_vv_i32m4_mt:
+case RISCV::BI__builtin_rvv_vsub_vv_i32m8_mt:
+case RISCV::BI__builtin_rvv_vsub_vv_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vsub_vv_i64m1_mt:
+case RISCV::BI__builtin_rvv_vsub_vv_i64m2_mt:
+case RISCV::BI__builtin_rvv_vsub_vv_i64m4_mt:
+case RISCV::BI__builtin_rvv_vsub_vv_i64m8_mt:
+case RISCV::BI__builtin_rvv_vsub_vx_i8m1_mt:
+case RISCV::BI__builtin_rvv_vsub_vx_i8m2_mt:
+case RISCV::BI__builtin_rvv_vsub_vx_i8m4_mt:
+case RISCV::BI__builtin_rvv_vsub_vx_i8m8_mt:
+case RISCV::BI__builtin_rvv_vsub_vx_i8mf2_mt:
+case RISCV::BI__builtin_rvv_vsub_vx_i8mf4_mt:
+case RISCV::BI__builtin_rvv_vsub_vx_i8mf8_mt:
+case RISCV::BI__builtin_rvv_vsub_vx_i16m1_mt:
+case RISCV::BI__builtin_rvv_vsub_vx_i16m2_mt:
+case RISCV::BI__builtin_rvv_vsub_vx_i16m4_mt:
+case RISCV::BI__builtin_rvv_vsub_vx_i16m8_mt:
+case RISCV::BI__builtin_rvv_vsub_vx_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vsub_vx_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vsub_vx_i32m1_mt:
+case RISCV::BI__builtin_rvv_vsub_vx_i32m2_mt:
+case RISCV::BI__builtin_rvv_vsub_vx_i32m4_mt:
+case RISCV::BI__builtin_rvv_vsub_vx_i32m8_mt:
+case RISCV::BI__builtin_rvv_vsub_vx_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vsub_vx_i64m1_mt:
+case RISCV::BI__builtin_rvv_vsub_vx_i64m2_mt:
+case RISCV::BI__builtin_rvv_vsub_vx_i64m4_mt:
+case RISCV::BI__builtin_rvv_vsub_vx_i64m8_mt:
+case RISCV::BI__builtin_rvv_vsub_vv_u8m1_mt:
+case RISCV::BI__builtin_rvv_vsub_vv_u8m2_mt:
+case RISCV::BI__builtin_rvv_vsub_vv_u8m4_mt:
+case RISCV::BI__builtin_rvv_vsub_vv_u8m8_mt:
+case RISCV::BI__builtin_rvv_vsub_vv_u8mf2_mt:
+case RISCV::BI__builtin_rvv_vsub_vv_u8mf4_mt:
+case RISCV::BI__builtin_rvv_vsub_vv_u8mf8_mt:
+case RISCV::BI__builtin_rvv_vsub_vv_u16m1_mt:
+case RISCV::BI__builtin_rvv_vsub_vv_u16m2_mt:
+case RISCV::BI__builtin_rvv_vsub_vv_u16m4_mt:
+case RISCV::BI__builtin_rvv_vsub_vv_u16m8_mt:
+case RISCV::BI__builtin_rvv_vsub_vv_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vsub_vv_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vsub_vv_u32m1_mt:
+case RISCV::BI__builtin_rvv_vsub_vv_u32m2_mt:
+case RISCV::BI__builtin_rvv_vsub_vv_u32m4_mt:
+case RISCV::BI__builtin_rvv_vsub_vv_u32m8_mt:
+case RISCV::BI__builtin_rvv_vsub_vv_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vsub_vv_u64m1_mt:
+case RISCV::BI__builtin_rvv_vsub_vv_u64m2_mt:
+case RISCV::BI__builtin_rvv_vsub_vv_u64m4_mt:
+case RISCV::BI__builtin_rvv_vsub_vv_u64m8_mt:
+case RISCV::BI__builtin_rvv_vsub_vx_u8m1_mt:
+case RISCV::BI__builtin_rvv_vsub_vx_u8m2_mt:
+case RISCV::BI__builtin_rvv_vsub_vx_u8m4_mt:
+case RISCV::BI__builtin_rvv_vsub_vx_u8m8_mt:
+case RISCV::BI__builtin_rvv_vsub_vx_u8mf2_mt:
+case RISCV::BI__builtin_rvv_vsub_vx_u8mf4_mt:
+case RISCV::BI__builtin_rvv_vsub_vx_u8mf8_mt:
+case RISCV::BI__builtin_rvv_vsub_vx_u16m1_mt:
+case RISCV::BI__builtin_rvv_vsub_vx_u16m2_mt:
+case RISCV::BI__builtin_rvv_vsub_vx_u16m4_mt:
+case RISCV::BI__builtin_rvv_vsub_vx_u16m8_mt:
+case RISCV::BI__builtin_rvv_vsub_vx_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vsub_vx_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vsub_vx_u32m1_mt:
+case RISCV::BI__builtin_rvv_vsub_vx_u32m2_mt:
+case RISCV::BI__builtin_rvv_vsub_vx_u32m4_mt:
+case RISCV::BI__builtin_rvv_vsub_vx_u32m8_mt:
+case RISCV::BI__builtin_rvv_vsub_vx_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vsub_vx_u64m1_mt:
+case RISCV::BI__builtin_rvv_vsub_vx_u64m2_mt:
+case RISCV::BI__builtin_rvv_vsub_vx_u64m4_mt:
+case RISCV::BI__builtin_rvv_vsub_vx_u64m8_mt:
   ID = Intrinsic::riscv_vsub_mask;
-  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 1);
+  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 2);
   IntrinsicTypes = {ResultType, Ops[2]->getType(), Ops.back()->getType()};
   break;
 case RISCV::BI__builtin_rvv_vsuxei16_v_i8m1:
@@ -27992,59 +28027,59 @@ case RISCV::BI__builtin_rvv_vwcvt_x_x_v_i64m1:
         break;
       }
       break;
-case RISCV::BI__builtin_rvv_vwadd_vv_i16mf4_m:
-case RISCV::BI__builtin_rvv_vwadd_vv_i16mf2_m:
-case RISCV::BI__builtin_rvv_vwadd_vv_i16m1_m:
-case RISCV::BI__builtin_rvv_vwadd_vv_i16m2_m:
-case RISCV::BI__builtin_rvv_vwadd_vv_i16m4_m:
-case RISCV::BI__builtin_rvv_vwadd_vv_i16m8_m:
-case RISCV::BI__builtin_rvv_vwadd_vv_i32mf2_m:
-case RISCV::BI__builtin_rvv_vwadd_vv_i32m1_m:
-case RISCV::BI__builtin_rvv_vwadd_vv_i32m2_m:
-case RISCV::BI__builtin_rvv_vwadd_vv_i32m4_m:
-case RISCV::BI__builtin_rvv_vwadd_vv_i32m8_m:
-case RISCV::BI__builtin_rvv_vwadd_vv_i64m1_m:
-case RISCV::BI__builtin_rvv_vwadd_vv_i64m2_m:
-case RISCV::BI__builtin_rvv_vwadd_vv_i64m4_m:
-case RISCV::BI__builtin_rvv_vwadd_vv_i64m8_m:
-case RISCV::BI__builtin_rvv_vwadd_vx_i16mf4_m:
-case RISCV::BI__builtin_rvv_vwadd_vx_i16mf2_m:
-case RISCV::BI__builtin_rvv_vwadd_vx_i16m1_m:
-case RISCV::BI__builtin_rvv_vwadd_vx_i16m2_m:
-case RISCV::BI__builtin_rvv_vwadd_vx_i16m4_m:
-case RISCV::BI__builtin_rvv_vwadd_vx_i16m8_m:
-case RISCV::BI__builtin_rvv_vwadd_vx_i32mf2_m:
-case RISCV::BI__builtin_rvv_vwadd_vx_i32m1_m:
-case RISCV::BI__builtin_rvv_vwadd_vx_i32m2_m:
-case RISCV::BI__builtin_rvv_vwadd_vx_i32m4_m:
-case RISCV::BI__builtin_rvv_vwadd_vx_i32m8_m:
-case RISCV::BI__builtin_rvv_vwadd_vx_i64m1_m:
-case RISCV::BI__builtin_rvv_vwadd_vx_i64m2_m:
-case RISCV::BI__builtin_rvv_vwadd_vx_i64m4_m:
-case RISCV::BI__builtin_rvv_vwadd_vx_i64m8_m:
+case RISCV::BI__builtin_rvv_vwadd_vv_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vwadd_vv_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vwadd_vv_i16m1_mt:
+case RISCV::BI__builtin_rvv_vwadd_vv_i16m2_mt:
+case RISCV::BI__builtin_rvv_vwadd_vv_i16m4_mt:
+case RISCV::BI__builtin_rvv_vwadd_vv_i16m8_mt:
+case RISCV::BI__builtin_rvv_vwadd_vv_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vwadd_vv_i32m1_mt:
+case RISCV::BI__builtin_rvv_vwadd_vv_i32m2_mt:
+case RISCV::BI__builtin_rvv_vwadd_vv_i32m4_mt:
+case RISCV::BI__builtin_rvv_vwadd_vv_i32m8_mt:
+case RISCV::BI__builtin_rvv_vwadd_vv_i64m1_mt:
+case RISCV::BI__builtin_rvv_vwadd_vv_i64m2_mt:
+case RISCV::BI__builtin_rvv_vwadd_vv_i64m4_mt:
+case RISCV::BI__builtin_rvv_vwadd_vv_i64m8_mt:
+case RISCV::BI__builtin_rvv_vwadd_vx_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vwadd_vx_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vwadd_vx_i16m1_mt:
+case RISCV::BI__builtin_rvv_vwadd_vx_i16m2_mt:
+case RISCV::BI__builtin_rvv_vwadd_vx_i16m4_mt:
+case RISCV::BI__builtin_rvv_vwadd_vx_i16m8_mt:
+case RISCV::BI__builtin_rvv_vwadd_vx_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vwadd_vx_i32m1_mt:
+case RISCV::BI__builtin_rvv_vwadd_vx_i32m2_mt:
+case RISCV::BI__builtin_rvv_vwadd_vx_i32m4_mt:
+case RISCV::BI__builtin_rvv_vwadd_vx_i32m8_mt:
+case RISCV::BI__builtin_rvv_vwadd_vx_i64m1_mt:
+case RISCV::BI__builtin_rvv_vwadd_vx_i64m2_mt:
+case RISCV::BI__builtin_rvv_vwadd_vx_i64m4_mt:
+case RISCV::BI__builtin_rvv_vwadd_vx_i64m8_mt:
   ID = Intrinsic::riscv_vwadd_mask;
-  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 1);
+  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 2);
   IntrinsicTypes = {ResultType, Ops[1]->getType(), Ops[2]->getType(), Ops.back()->getType()};
   break;
-case RISCV::BI__builtin_rvv_vwcvt_x_x_v_i16m2_m:
-case RISCV::BI__builtin_rvv_vwcvt_x_x_v_i16m4_m:
-case RISCV::BI__builtin_rvv_vwcvt_x_x_v_i16m8_m:
-case RISCV::BI__builtin_rvv_vwcvt_x_x_v_i16m1_m:
-case RISCV::BI__builtin_rvv_vwcvt_x_x_v_i16mf2_m:
-case RISCV::BI__builtin_rvv_vwcvt_x_x_v_i16mf4_m:
-case RISCV::BI__builtin_rvv_vwcvt_x_x_v_i32m2_m:
-case RISCV::BI__builtin_rvv_vwcvt_x_x_v_i32m4_m:
-case RISCV::BI__builtin_rvv_vwcvt_x_x_v_i32m8_m:
-case RISCV::BI__builtin_rvv_vwcvt_x_x_v_i32m1_m:
-case RISCV::BI__builtin_rvv_vwcvt_x_x_v_i32mf2_m:
-case RISCV::BI__builtin_rvv_vwcvt_x_x_v_i64m2_m:
-case RISCV::BI__builtin_rvv_vwcvt_x_x_v_i64m4_m:
-case RISCV::BI__builtin_rvv_vwcvt_x_x_v_i64m8_m:
-case RISCV::BI__builtin_rvv_vwcvt_x_x_v_i64m1_m:
+case RISCV::BI__builtin_rvv_vwcvt_x_x_v_i16m2_mt:
+case RISCV::BI__builtin_rvv_vwcvt_x_x_v_i16m4_mt:
+case RISCV::BI__builtin_rvv_vwcvt_x_x_v_i16m8_mt:
+case RISCV::BI__builtin_rvv_vwcvt_x_x_v_i16m1_mt:
+case RISCV::BI__builtin_rvv_vwcvt_x_x_v_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vwcvt_x_x_v_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vwcvt_x_x_v_i32m2_mt:
+case RISCV::BI__builtin_rvv_vwcvt_x_x_v_i32m4_mt:
+case RISCV::BI__builtin_rvv_vwcvt_x_x_v_i32m8_mt:
+case RISCV::BI__builtin_rvv_vwcvt_x_x_v_i32m1_mt:
+case RISCV::BI__builtin_rvv_vwcvt_x_x_v_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vwcvt_x_x_v_i64m2_mt:
+case RISCV::BI__builtin_rvv_vwcvt_x_x_v_i64m4_mt:
+case RISCV::BI__builtin_rvv_vwcvt_x_x_v_i64m8_mt:
+case RISCV::BI__builtin_rvv_vwcvt_x_x_v_i64m1_mt:
   ID = Intrinsic::riscv_vwadd_mask;
 
       {
-        std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 1);
+        std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 2);
         // maskedoff, op1, mask, vl
         IntrinsicTypes = {ResultType,
                           Ops[1]->getType(),
@@ -28087,38 +28122,38 @@ case RISCV::BI__builtin_rvv_vwadd_wx_i64m8:
   ID = Intrinsic::riscv_vwadd_w;
   IntrinsicTypes = {ResultType, Ops[1]->getType(), Ops.back()->getType()};
   break;
-case RISCV::BI__builtin_rvv_vwadd_wv_i16mf4_m:
-case RISCV::BI__builtin_rvv_vwadd_wv_i16mf2_m:
-case RISCV::BI__builtin_rvv_vwadd_wv_i16m1_m:
-case RISCV::BI__builtin_rvv_vwadd_wv_i16m2_m:
-case RISCV::BI__builtin_rvv_vwadd_wv_i16m4_m:
-case RISCV::BI__builtin_rvv_vwadd_wv_i16m8_m:
-case RISCV::BI__builtin_rvv_vwadd_wv_i32mf2_m:
-case RISCV::BI__builtin_rvv_vwadd_wv_i32m1_m:
-case RISCV::BI__builtin_rvv_vwadd_wv_i32m2_m:
-case RISCV::BI__builtin_rvv_vwadd_wv_i32m4_m:
-case RISCV::BI__builtin_rvv_vwadd_wv_i32m8_m:
-case RISCV::BI__builtin_rvv_vwadd_wv_i64m1_m:
-case RISCV::BI__builtin_rvv_vwadd_wv_i64m2_m:
-case RISCV::BI__builtin_rvv_vwadd_wv_i64m4_m:
-case RISCV::BI__builtin_rvv_vwadd_wv_i64m8_m:
-case RISCV::BI__builtin_rvv_vwadd_wx_i16mf4_m:
-case RISCV::BI__builtin_rvv_vwadd_wx_i16mf2_m:
-case RISCV::BI__builtin_rvv_vwadd_wx_i16m1_m:
-case RISCV::BI__builtin_rvv_vwadd_wx_i16m2_m:
-case RISCV::BI__builtin_rvv_vwadd_wx_i16m4_m:
-case RISCV::BI__builtin_rvv_vwadd_wx_i16m8_m:
-case RISCV::BI__builtin_rvv_vwadd_wx_i32mf2_m:
-case RISCV::BI__builtin_rvv_vwadd_wx_i32m1_m:
-case RISCV::BI__builtin_rvv_vwadd_wx_i32m2_m:
-case RISCV::BI__builtin_rvv_vwadd_wx_i32m4_m:
-case RISCV::BI__builtin_rvv_vwadd_wx_i32m8_m:
-case RISCV::BI__builtin_rvv_vwadd_wx_i64m1_m:
-case RISCV::BI__builtin_rvv_vwadd_wx_i64m2_m:
-case RISCV::BI__builtin_rvv_vwadd_wx_i64m4_m:
-case RISCV::BI__builtin_rvv_vwadd_wx_i64m8_m:
+case RISCV::BI__builtin_rvv_vwadd_wv_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vwadd_wv_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vwadd_wv_i16m1_mt:
+case RISCV::BI__builtin_rvv_vwadd_wv_i16m2_mt:
+case RISCV::BI__builtin_rvv_vwadd_wv_i16m4_mt:
+case RISCV::BI__builtin_rvv_vwadd_wv_i16m8_mt:
+case RISCV::BI__builtin_rvv_vwadd_wv_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vwadd_wv_i32m1_mt:
+case RISCV::BI__builtin_rvv_vwadd_wv_i32m2_mt:
+case RISCV::BI__builtin_rvv_vwadd_wv_i32m4_mt:
+case RISCV::BI__builtin_rvv_vwadd_wv_i32m8_mt:
+case RISCV::BI__builtin_rvv_vwadd_wv_i64m1_mt:
+case RISCV::BI__builtin_rvv_vwadd_wv_i64m2_mt:
+case RISCV::BI__builtin_rvv_vwadd_wv_i64m4_mt:
+case RISCV::BI__builtin_rvv_vwadd_wv_i64m8_mt:
+case RISCV::BI__builtin_rvv_vwadd_wx_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vwadd_wx_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vwadd_wx_i16m1_mt:
+case RISCV::BI__builtin_rvv_vwadd_wx_i16m2_mt:
+case RISCV::BI__builtin_rvv_vwadd_wx_i16m4_mt:
+case RISCV::BI__builtin_rvv_vwadd_wx_i16m8_mt:
+case RISCV::BI__builtin_rvv_vwadd_wx_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vwadd_wx_i32m1_mt:
+case RISCV::BI__builtin_rvv_vwadd_wx_i32m2_mt:
+case RISCV::BI__builtin_rvv_vwadd_wx_i32m4_mt:
+case RISCV::BI__builtin_rvv_vwadd_wx_i32m8_mt:
+case RISCV::BI__builtin_rvv_vwadd_wx_i64m1_mt:
+case RISCV::BI__builtin_rvv_vwadd_wx_i64m2_mt:
+case RISCV::BI__builtin_rvv_vwadd_wx_i64m4_mt:
+case RISCV::BI__builtin_rvv_vwadd_wx_i64m8_mt:
   ID = Intrinsic::riscv_vwadd_w_mask;
-  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 1);
+  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 2);
   IntrinsicTypes = {ResultType, Ops[2]->getType(), Ops.back()->getType()};
   break;
 case RISCV::BI__builtin_rvv_vwaddu_vv_u16mf4:
@@ -28181,59 +28216,59 @@ case RISCV::BI__builtin_rvv_vwcvtu_x_x_v_u64m1:
         break;
       }
       break;
-case RISCV::BI__builtin_rvv_vwaddu_vv_u16mf4_m:
-case RISCV::BI__builtin_rvv_vwaddu_vv_u16mf2_m:
-case RISCV::BI__builtin_rvv_vwaddu_vv_u16m1_m:
-case RISCV::BI__builtin_rvv_vwaddu_vv_u16m2_m:
-case RISCV::BI__builtin_rvv_vwaddu_vv_u16m4_m:
-case RISCV::BI__builtin_rvv_vwaddu_vv_u16m8_m:
-case RISCV::BI__builtin_rvv_vwaddu_vv_u32mf2_m:
-case RISCV::BI__builtin_rvv_vwaddu_vv_u32m1_m:
-case RISCV::BI__builtin_rvv_vwaddu_vv_u32m2_m:
-case RISCV::BI__builtin_rvv_vwaddu_vv_u32m4_m:
-case RISCV::BI__builtin_rvv_vwaddu_vv_u32m8_m:
-case RISCV::BI__builtin_rvv_vwaddu_vv_u64m1_m:
-case RISCV::BI__builtin_rvv_vwaddu_vv_u64m2_m:
-case RISCV::BI__builtin_rvv_vwaddu_vv_u64m4_m:
-case RISCV::BI__builtin_rvv_vwaddu_vv_u64m8_m:
-case RISCV::BI__builtin_rvv_vwaddu_vx_u16mf4_m:
-case RISCV::BI__builtin_rvv_vwaddu_vx_u16mf2_m:
-case RISCV::BI__builtin_rvv_vwaddu_vx_u16m1_m:
-case RISCV::BI__builtin_rvv_vwaddu_vx_u16m2_m:
-case RISCV::BI__builtin_rvv_vwaddu_vx_u16m4_m:
-case RISCV::BI__builtin_rvv_vwaddu_vx_u16m8_m:
-case RISCV::BI__builtin_rvv_vwaddu_vx_u32mf2_m:
-case RISCV::BI__builtin_rvv_vwaddu_vx_u32m1_m:
-case RISCV::BI__builtin_rvv_vwaddu_vx_u32m2_m:
-case RISCV::BI__builtin_rvv_vwaddu_vx_u32m4_m:
-case RISCV::BI__builtin_rvv_vwaddu_vx_u32m8_m:
-case RISCV::BI__builtin_rvv_vwaddu_vx_u64m1_m:
-case RISCV::BI__builtin_rvv_vwaddu_vx_u64m2_m:
-case RISCV::BI__builtin_rvv_vwaddu_vx_u64m4_m:
-case RISCV::BI__builtin_rvv_vwaddu_vx_u64m8_m:
+case RISCV::BI__builtin_rvv_vwaddu_vv_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vwaddu_vv_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vwaddu_vv_u16m1_mt:
+case RISCV::BI__builtin_rvv_vwaddu_vv_u16m2_mt:
+case RISCV::BI__builtin_rvv_vwaddu_vv_u16m4_mt:
+case RISCV::BI__builtin_rvv_vwaddu_vv_u16m8_mt:
+case RISCV::BI__builtin_rvv_vwaddu_vv_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vwaddu_vv_u32m1_mt:
+case RISCV::BI__builtin_rvv_vwaddu_vv_u32m2_mt:
+case RISCV::BI__builtin_rvv_vwaddu_vv_u32m4_mt:
+case RISCV::BI__builtin_rvv_vwaddu_vv_u32m8_mt:
+case RISCV::BI__builtin_rvv_vwaddu_vv_u64m1_mt:
+case RISCV::BI__builtin_rvv_vwaddu_vv_u64m2_mt:
+case RISCV::BI__builtin_rvv_vwaddu_vv_u64m4_mt:
+case RISCV::BI__builtin_rvv_vwaddu_vv_u64m8_mt:
+case RISCV::BI__builtin_rvv_vwaddu_vx_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vwaddu_vx_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vwaddu_vx_u16m1_mt:
+case RISCV::BI__builtin_rvv_vwaddu_vx_u16m2_mt:
+case RISCV::BI__builtin_rvv_vwaddu_vx_u16m4_mt:
+case RISCV::BI__builtin_rvv_vwaddu_vx_u16m8_mt:
+case RISCV::BI__builtin_rvv_vwaddu_vx_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vwaddu_vx_u32m1_mt:
+case RISCV::BI__builtin_rvv_vwaddu_vx_u32m2_mt:
+case RISCV::BI__builtin_rvv_vwaddu_vx_u32m4_mt:
+case RISCV::BI__builtin_rvv_vwaddu_vx_u32m8_mt:
+case RISCV::BI__builtin_rvv_vwaddu_vx_u64m1_mt:
+case RISCV::BI__builtin_rvv_vwaddu_vx_u64m2_mt:
+case RISCV::BI__builtin_rvv_vwaddu_vx_u64m4_mt:
+case RISCV::BI__builtin_rvv_vwaddu_vx_u64m8_mt:
   ID = Intrinsic::riscv_vwaddu_mask;
-  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 1);
+  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 2);
   IntrinsicTypes = {ResultType, Ops[1]->getType(), Ops[2]->getType(), Ops.back()->getType()};
   break;
-case RISCV::BI__builtin_rvv_vwcvtu_x_x_v_u16m2_m:
-case RISCV::BI__builtin_rvv_vwcvtu_x_x_v_u16m4_m:
-case RISCV::BI__builtin_rvv_vwcvtu_x_x_v_u16m8_m:
-case RISCV::BI__builtin_rvv_vwcvtu_x_x_v_u16m1_m:
-case RISCV::BI__builtin_rvv_vwcvtu_x_x_v_u16mf2_m:
-case RISCV::BI__builtin_rvv_vwcvtu_x_x_v_u16mf4_m:
-case RISCV::BI__builtin_rvv_vwcvtu_x_x_v_u32m2_m:
-case RISCV::BI__builtin_rvv_vwcvtu_x_x_v_u32m4_m:
-case RISCV::BI__builtin_rvv_vwcvtu_x_x_v_u32m8_m:
-case RISCV::BI__builtin_rvv_vwcvtu_x_x_v_u32m1_m:
-case RISCV::BI__builtin_rvv_vwcvtu_x_x_v_u32mf2_m:
-case RISCV::BI__builtin_rvv_vwcvtu_x_x_v_u64m2_m:
-case RISCV::BI__builtin_rvv_vwcvtu_x_x_v_u64m4_m:
-case RISCV::BI__builtin_rvv_vwcvtu_x_x_v_u64m8_m:
-case RISCV::BI__builtin_rvv_vwcvtu_x_x_v_u64m1_m:
+case RISCV::BI__builtin_rvv_vwcvtu_x_x_v_u16m2_mt:
+case RISCV::BI__builtin_rvv_vwcvtu_x_x_v_u16m4_mt:
+case RISCV::BI__builtin_rvv_vwcvtu_x_x_v_u16m8_mt:
+case RISCV::BI__builtin_rvv_vwcvtu_x_x_v_u16m1_mt:
+case RISCV::BI__builtin_rvv_vwcvtu_x_x_v_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vwcvtu_x_x_v_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vwcvtu_x_x_v_u32m2_mt:
+case RISCV::BI__builtin_rvv_vwcvtu_x_x_v_u32m4_mt:
+case RISCV::BI__builtin_rvv_vwcvtu_x_x_v_u32m8_mt:
+case RISCV::BI__builtin_rvv_vwcvtu_x_x_v_u32m1_mt:
+case RISCV::BI__builtin_rvv_vwcvtu_x_x_v_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vwcvtu_x_x_v_u64m2_mt:
+case RISCV::BI__builtin_rvv_vwcvtu_x_x_v_u64m4_mt:
+case RISCV::BI__builtin_rvv_vwcvtu_x_x_v_u64m8_mt:
+case RISCV::BI__builtin_rvv_vwcvtu_x_x_v_u64m1_mt:
   ID = Intrinsic::riscv_vwaddu_mask;
 
       {
-        std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 1);
+        std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 2);
         // maskedoff, op1, mask, vl
         IntrinsicTypes = {ResultType,
                           Ops[1]->getType(),
@@ -28276,38 +28311,38 @@ case RISCV::BI__builtin_rvv_vwaddu_wx_u64m8:
   ID = Intrinsic::riscv_vwaddu_w;
   IntrinsicTypes = {ResultType, Ops[1]->getType(), Ops.back()->getType()};
   break;
-case RISCV::BI__builtin_rvv_vwaddu_wv_u16mf4_m:
-case RISCV::BI__builtin_rvv_vwaddu_wv_u16mf2_m:
-case RISCV::BI__builtin_rvv_vwaddu_wv_u16m1_m:
-case RISCV::BI__builtin_rvv_vwaddu_wv_u16m2_m:
-case RISCV::BI__builtin_rvv_vwaddu_wv_u16m4_m:
-case RISCV::BI__builtin_rvv_vwaddu_wv_u16m8_m:
-case RISCV::BI__builtin_rvv_vwaddu_wv_u32mf2_m:
-case RISCV::BI__builtin_rvv_vwaddu_wv_u32m1_m:
-case RISCV::BI__builtin_rvv_vwaddu_wv_u32m2_m:
-case RISCV::BI__builtin_rvv_vwaddu_wv_u32m4_m:
-case RISCV::BI__builtin_rvv_vwaddu_wv_u32m8_m:
-case RISCV::BI__builtin_rvv_vwaddu_wv_u64m1_m:
-case RISCV::BI__builtin_rvv_vwaddu_wv_u64m2_m:
-case RISCV::BI__builtin_rvv_vwaddu_wv_u64m4_m:
-case RISCV::BI__builtin_rvv_vwaddu_wv_u64m8_m:
-case RISCV::BI__builtin_rvv_vwaddu_wx_u16mf4_m:
-case RISCV::BI__builtin_rvv_vwaddu_wx_u16mf2_m:
-case RISCV::BI__builtin_rvv_vwaddu_wx_u16m1_m:
-case RISCV::BI__builtin_rvv_vwaddu_wx_u16m2_m:
-case RISCV::BI__builtin_rvv_vwaddu_wx_u16m4_m:
-case RISCV::BI__builtin_rvv_vwaddu_wx_u16m8_m:
-case RISCV::BI__builtin_rvv_vwaddu_wx_u32mf2_m:
-case RISCV::BI__builtin_rvv_vwaddu_wx_u32m1_m:
-case RISCV::BI__builtin_rvv_vwaddu_wx_u32m2_m:
-case RISCV::BI__builtin_rvv_vwaddu_wx_u32m4_m:
-case RISCV::BI__builtin_rvv_vwaddu_wx_u32m8_m:
-case RISCV::BI__builtin_rvv_vwaddu_wx_u64m1_m:
-case RISCV::BI__builtin_rvv_vwaddu_wx_u64m2_m:
-case RISCV::BI__builtin_rvv_vwaddu_wx_u64m4_m:
-case RISCV::BI__builtin_rvv_vwaddu_wx_u64m8_m:
+case RISCV::BI__builtin_rvv_vwaddu_wv_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vwaddu_wv_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vwaddu_wv_u16m1_mt:
+case RISCV::BI__builtin_rvv_vwaddu_wv_u16m2_mt:
+case RISCV::BI__builtin_rvv_vwaddu_wv_u16m4_mt:
+case RISCV::BI__builtin_rvv_vwaddu_wv_u16m8_mt:
+case RISCV::BI__builtin_rvv_vwaddu_wv_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vwaddu_wv_u32m1_mt:
+case RISCV::BI__builtin_rvv_vwaddu_wv_u32m2_mt:
+case RISCV::BI__builtin_rvv_vwaddu_wv_u32m4_mt:
+case RISCV::BI__builtin_rvv_vwaddu_wv_u32m8_mt:
+case RISCV::BI__builtin_rvv_vwaddu_wv_u64m1_mt:
+case RISCV::BI__builtin_rvv_vwaddu_wv_u64m2_mt:
+case RISCV::BI__builtin_rvv_vwaddu_wv_u64m4_mt:
+case RISCV::BI__builtin_rvv_vwaddu_wv_u64m8_mt:
+case RISCV::BI__builtin_rvv_vwaddu_wx_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vwaddu_wx_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vwaddu_wx_u16m1_mt:
+case RISCV::BI__builtin_rvv_vwaddu_wx_u16m2_mt:
+case RISCV::BI__builtin_rvv_vwaddu_wx_u16m4_mt:
+case RISCV::BI__builtin_rvv_vwaddu_wx_u16m8_mt:
+case RISCV::BI__builtin_rvv_vwaddu_wx_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vwaddu_wx_u32m1_mt:
+case RISCV::BI__builtin_rvv_vwaddu_wx_u32m2_mt:
+case RISCV::BI__builtin_rvv_vwaddu_wx_u32m4_mt:
+case RISCV::BI__builtin_rvv_vwaddu_wx_u32m8_mt:
+case RISCV::BI__builtin_rvv_vwaddu_wx_u64m1_mt:
+case RISCV::BI__builtin_rvv_vwaddu_wx_u64m2_mt:
+case RISCV::BI__builtin_rvv_vwaddu_wx_u64m4_mt:
+case RISCV::BI__builtin_rvv_vwaddu_wx_u64m8_mt:
   ID = Intrinsic::riscv_vwaddu_w_mask;
-  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 1);
+  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 2);
   IntrinsicTypes = {ResultType, Ops[2]->getType(), Ops.back()->getType()};
   break;
 case RISCV::BI__builtin_rvv_vwmacc_vv_i16mf4:
@@ -28581,38 +28616,38 @@ case RISCV::BI__builtin_rvv_vwmul_vx_i64m8:
   ID = Intrinsic::riscv_vwmul;
   IntrinsicTypes = {ResultType, Ops[0]->getType(), Ops[1]->getType(), Ops.back()->getType()};
   break;
-case RISCV::BI__builtin_rvv_vwmul_vv_i16mf4_m:
-case RISCV::BI__builtin_rvv_vwmul_vv_i16mf2_m:
-case RISCV::BI__builtin_rvv_vwmul_vv_i16m1_m:
-case RISCV::BI__builtin_rvv_vwmul_vv_i16m2_m:
-case RISCV::BI__builtin_rvv_vwmul_vv_i16m4_m:
-case RISCV::BI__builtin_rvv_vwmul_vv_i16m8_m:
-case RISCV::BI__builtin_rvv_vwmul_vv_i32mf2_m:
-case RISCV::BI__builtin_rvv_vwmul_vv_i32m1_m:
-case RISCV::BI__builtin_rvv_vwmul_vv_i32m2_m:
-case RISCV::BI__builtin_rvv_vwmul_vv_i32m4_m:
-case RISCV::BI__builtin_rvv_vwmul_vv_i32m8_m:
-case RISCV::BI__builtin_rvv_vwmul_vv_i64m1_m:
-case RISCV::BI__builtin_rvv_vwmul_vv_i64m2_m:
-case RISCV::BI__builtin_rvv_vwmul_vv_i64m4_m:
-case RISCV::BI__builtin_rvv_vwmul_vv_i64m8_m:
-case RISCV::BI__builtin_rvv_vwmul_vx_i16mf4_m:
-case RISCV::BI__builtin_rvv_vwmul_vx_i16mf2_m:
-case RISCV::BI__builtin_rvv_vwmul_vx_i16m1_m:
-case RISCV::BI__builtin_rvv_vwmul_vx_i16m2_m:
-case RISCV::BI__builtin_rvv_vwmul_vx_i16m4_m:
-case RISCV::BI__builtin_rvv_vwmul_vx_i16m8_m:
-case RISCV::BI__builtin_rvv_vwmul_vx_i32mf2_m:
-case RISCV::BI__builtin_rvv_vwmul_vx_i32m1_m:
-case RISCV::BI__builtin_rvv_vwmul_vx_i32m2_m:
-case RISCV::BI__builtin_rvv_vwmul_vx_i32m4_m:
-case RISCV::BI__builtin_rvv_vwmul_vx_i32m8_m:
-case RISCV::BI__builtin_rvv_vwmul_vx_i64m1_m:
-case RISCV::BI__builtin_rvv_vwmul_vx_i64m2_m:
-case RISCV::BI__builtin_rvv_vwmul_vx_i64m4_m:
-case RISCV::BI__builtin_rvv_vwmul_vx_i64m8_m:
+case RISCV::BI__builtin_rvv_vwmul_vv_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vwmul_vv_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vwmul_vv_i16m1_mt:
+case RISCV::BI__builtin_rvv_vwmul_vv_i16m2_mt:
+case RISCV::BI__builtin_rvv_vwmul_vv_i16m4_mt:
+case RISCV::BI__builtin_rvv_vwmul_vv_i16m8_mt:
+case RISCV::BI__builtin_rvv_vwmul_vv_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vwmul_vv_i32m1_mt:
+case RISCV::BI__builtin_rvv_vwmul_vv_i32m2_mt:
+case RISCV::BI__builtin_rvv_vwmul_vv_i32m4_mt:
+case RISCV::BI__builtin_rvv_vwmul_vv_i32m8_mt:
+case RISCV::BI__builtin_rvv_vwmul_vv_i64m1_mt:
+case RISCV::BI__builtin_rvv_vwmul_vv_i64m2_mt:
+case RISCV::BI__builtin_rvv_vwmul_vv_i64m4_mt:
+case RISCV::BI__builtin_rvv_vwmul_vv_i64m8_mt:
+case RISCV::BI__builtin_rvv_vwmul_vx_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vwmul_vx_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vwmul_vx_i16m1_mt:
+case RISCV::BI__builtin_rvv_vwmul_vx_i16m2_mt:
+case RISCV::BI__builtin_rvv_vwmul_vx_i16m4_mt:
+case RISCV::BI__builtin_rvv_vwmul_vx_i16m8_mt:
+case RISCV::BI__builtin_rvv_vwmul_vx_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vwmul_vx_i32m1_mt:
+case RISCV::BI__builtin_rvv_vwmul_vx_i32m2_mt:
+case RISCV::BI__builtin_rvv_vwmul_vx_i32m4_mt:
+case RISCV::BI__builtin_rvv_vwmul_vx_i32m8_mt:
+case RISCV::BI__builtin_rvv_vwmul_vx_i64m1_mt:
+case RISCV::BI__builtin_rvv_vwmul_vx_i64m2_mt:
+case RISCV::BI__builtin_rvv_vwmul_vx_i64m4_mt:
+case RISCV::BI__builtin_rvv_vwmul_vx_i64m8_mt:
   ID = Intrinsic::riscv_vwmul_mask;
-  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 1);
+  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 2);
   IntrinsicTypes = {ResultType, Ops[1]->getType(), Ops[2]->getType(), Ops.back()->getType()};
   break;
 case RISCV::BI__builtin_rvv_vwmulsu_vv_i16mf4:
@@ -28648,38 +28683,38 @@ case RISCV::BI__builtin_rvv_vwmulsu_vx_i64m8:
   ID = Intrinsic::riscv_vwmulsu;
   IntrinsicTypes = {ResultType, Ops[0]->getType(), Ops[1]->getType(), Ops.back()->getType()};
   break;
-case RISCV::BI__builtin_rvv_vwmulsu_vv_i16mf4_m:
-case RISCV::BI__builtin_rvv_vwmulsu_vv_i16mf2_m:
-case RISCV::BI__builtin_rvv_vwmulsu_vv_i16m1_m:
-case RISCV::BI__builtin_rvv_vwmulsu_vv_i16m2_m:
-case RISCV::BI__builtin_rvv_vwmulsu_vv_i16m4_m:
-case RISCV::BI__builtin_rvv_vwmulsu_vv_i16m8_m:
-case RISCV::BI__builtin_rvv_vwmulsu_vv_i32mf2_m:
-case RISCV::BI__builtin_rvv_vwmulsu_vv_i32m1_m:
-case RISCV::BI__builtin_rvv_vwmulsu_vv_i32m2_m:
-case RISCV::BI__builtin_rvv_vwmulsu_vv_i32m4_m:
-case RISCV::BI__builtin_rvv_vwmulsu_vv_i32m8_m:
-case RISCV::BI__builtin_rvv_vwmulsu_vv_i64m1_m:
-case RISCV::BI__builtin_rvv_vwmulsu_vv_i64m2_m:
-case RISCV::BI__builtin_rvv_vwmulsu_vv_i64m4_m:
-case RISCV::BI__builtin_rvv_vwmulsu_vv_i64m8_m:
-case RISCV::BI__builtin_rvv_vwmulsu_vx_i16mf4_m:
-case RISCV::BI__builtin_rvv_vwmulsu_vx_i16mf2_m:
-case RISCV::BI__builtin_rvv_vwmulsu_vx_i16m1_m:
-case RISCV::BI__builtin_rvv_vwmulsu_vx_i16m2_m:
-case RISCV::BI__builtin_rvv_vwmulsu_vx_i16m4_m:
-case RISCV::BI__builtin_rvv_vwmulsu_vx_i16m8_m:
-case RISCV::BI__builtin_rvv_vwmulsu_vx_i32mf2_m:
-case RISCV::BI__builtin_rvv_vwmulsu_vx_i32m1_m:
-case RISCV::BI__builtin_rvv_vwmulsu_vx_i32m2_m:
-case RISCV::BI__builtin_rvv_vwmulsu_vx_i32m4_m:
-case RISCV::BI__builtin_rvv_vwmulsu_vx_i32m8_m:
-case RISCV::BI__builtin_rvv_vwmulsu_vx_i64m1_m:
-case RISCV::BI__builtin_rvv_vwmulsu_vx_i64m2_m:
-case RISCV::BI__builtin_rvv_vwmulsu_vx_i64m4_m:
-case RISCV::BI__builtin_rvv_vwmulsu_vx_i64m8_m:
+case RISCV::BI__builtin_rvv_vwmulsu_vv_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vwmulsu_vv_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vwmulsu_vv_i16m1_mt:
+case RISCV::BI__builtin_rvv_vwmulsu_vv_i16m2_mt:
+case RISCV::BI__builtin_rvv_vwmulsu_vv_i16m4_mt:
+case RISCV::BI__builtin_rvv_vwmulsu_vv_i16m8_mt:
+case RISCV::BI__builtin_rvv_vwmulsu_vv_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vwmulsu_vv_i32m1_mt:
+case RISCV::BI__builtin_rvv_vwmulsu_vv_i32m2_mt:
+case RISCV::BI__builtin_rvv_vwmulsu_vv_i32m4_mt:
+case RISCV::BI__builtin_rvv_vwmulsu_vv_i32m8_mt:
+case RISCV::BI__builtin_rvv_vwmulsu_vv_i64m1_mt:
+case RISCV::BI__builtin_rvv_vwmulsu_vv_i64m2_mt:
+case RISCV::BI__builtin_rvv_vwmulsu_vv_i64m4_mt:
+case RISCV::BI__builtin_rvv_vwmulsu_vv_i64m8_mt:
+case RISCV::BI__builtin_rvv_vwmulsu_vx_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vwmulsu_vx_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vwmulsu_vx_i16m1_mt:
+case RISCV::BI__builtin_rvv_vwmulsu_vx_i16m2_mt:
+case RISCV::BI__builtin_rvv_vwmulsu_vx_i16m4_mt:
+case RISCV::BI__builtin_rvv_vwmulsu_vx_i16m8_mt:
+case RISCV::BI__builtin_rvv_vwmulsu_vx_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vwmulsu_vx_i32m1_mt:
+case RISCV::BI__builtin_rvv_vwmulsu_vx_i32m2_mt:
+case RISCV::BI__builtin_rvv_vwmulsu_vx_i32m4_mt:
+case RISCV::BI__builtin_rvv_vwmulsu_vx_i32m8_mt:
+case RISCV::BI__builtin_rvv_vwmulsu_vx_i64m1_mt:
+case RISCV::BI__builtin_rvv_vwmulsu_vx_i64m2_mt:
+case RISCV::BI__builtin_rvv_vwmulsu_vx_i64m4_mt:
+case RISCV::BI__builtin_rvv_vwmulsu_vx_i64m8_mt:
   ID = Intrinsic::riscv_vwmulsu_mask;
-  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 1);
+  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 2);
   IntrinsicTypes = {ResultType, Ops[1]->getType(), Ops[2]->getType(), Ops.back()->getType()};
   break;
 case RISCV::BI__builtin_rvv_vwmulu_vv_u16mf4:
@@ -28715,38 +28750,38 @@ case RISCV::BI__builtin_rvv_vwmulu_vx_u64m8:
   ID = Intrinsic::riscv_vwmulu;
   IntrinsicTypes = {ResultType, Ops[0]->getType(), Ops[1]->getType(), Ops.back()->getType()};
   break;
-case RISCV::BI__builtin_rvv_vwmulu_vv_u16mf4_m:
-case RISCV::BI__builtin_rvv_vwmulu_vv_u16mf2_m:
-case RISCV::BI__builtin_rvv_vwmulu_vv_u16m1_m:
-case RISCV::BI__builtin_rvv_vwmulu_vv_u16m2_m:
-case RISCV::BI__builtin_rvv_vwmulu_vv_u16m4_m:
-case RISCV::BI__builtin_rvv_vwmulu_vv_u16m8_m:
-case RISCV::BI__builtin_rvv_vwmulu_vv_u32mf2_m:
-case RISCV::BI__builtin_rvv_vwmulu_vv_u32m1_m:
-case RISCV::BI__builtin_rvv_vwmulu_vv_u32m2_m:
-case RISCV::BI__builtin_rvv_vwmulu_vv_u32m4_m:
-case RISCV::BI__builtin_rvv_vwmulu_vv_u32m8_m:
-case RISCV::BI__builtin_rvv_vwmulu_vv_u64m1_m:
-case RISCV::BI__builtin_rvv_vwmulu_vv_u64m2_m:
-case RISCV::BI__builtin_rvv_vwmulu_vv_u64m4_m:
-case RISCV::BI__builtin_rvv_vwmulu_vv_u64m8_m:
-case RISCV::BI__builtin_rvv_vwmulu_vx_u16mf4_m:
-case RISCV::BI__builtin_rvv_vwmulu_vx_u16mf2_m:
-case RISCV::BI__builtin_rvv_vwmulu_vx_u16m1_m:
-case RISCV::BI__builtin_rvv_vwmulu_vx_u16m2_m:
-case RISCV::BI__builtin_rvv_vwmulu_vx_u16m4_m:
-case RISCV::BI__builtin_rvv_vwmulu_vx_u16m8_m:
-case RISCV::BI__builtin_rvv_vwmulu_vx_u32mf2_m:
-case RISCV::BI__builtin_rvv_vwmulu_vx_u32m1_m:
-case RISCV::BI__builtin_rvv_vwmulu_vx_u32m2_m:
-case RISCV::BI__builtin_rvv_vwmulu_vx_u32m4_m:
-case RISCV::BI__builtin_rvv_vwmulu_vx_u32m8_m:
-case RISCV::BI__builtin_rvv_vwmulu_vx_u64m1_m:
-case RISCV::BI__builtin_rvv_vwmulu_vx_u64m2_m:
-case RISCV::BI__builtin_rvv_vwmulu_vx_u64m4_m:
-case RISCV::BI__builtin_rvv_vwmulu_vx_u64m8_m:
+case RISCV::BI__builtin_rvv_vwmulu_vv_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vwmulu_vv_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vwmulu_vv_u16m1_mt:
+case RISCV::BI__builtin_rvv_vwmulu_vv_u16m2_mt:
+case RISCV::BI__builtin_rvv_vwmulu_vv_u16m4_mt:
+case RISCV::BI__builtin_rvv_vwmulu_vv_u16m8_mt:
+case RISCV::BI__builtin_rvv_vwmulu_vv_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vwmulu_vv_u32m1_mt:
+case RISCV::BI__builtin_rvv_vwmulu_vv_u32m2_mt:
+case RISCV::BI__builtin_rvv_vwmulu_vv_u32m4_mt:
+case RISCV::BI__builtin_rvv_vwmulu_vv_u32m8_mt:
+case RISCV::BI__builtin_rvv_vwmulu_vv_u64m1_mt:
+case RISCV::BI__builtin_rvv_vwmulu_vv_u64m2_mt:
+case RISCV::BI__builtin_rvv_vwmulu_vv_u64m4_mt:
+case RISCV::BI__builtin_rvv_vwmulu_vv_u64m8_mt:
+case RISCV::BI__builtin_rvv_vwmulu_vx_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vwmulu_vx_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vwmulu_vx_u16m1_mt:
+case RISCV::BI__builtin_rvv_vwmulu_vx_u16m2_mt:
+case RISCV::BI__builtin_rvv_vwmulu_vx_u16m4_mt:
+case RISCV::BI__builtin_rvv_vwmulu_vx_u16m8_mt:
+case RISCV::BI__builtin_rvv_vwmulu_vx_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vwmulu_vx_u32m1_mt:
+case RISCV::BI__builtin_rvv_vwmulu_vx_u32m2_mt:
+case RISCV::BI__builtin_rvv_vwmulu_vx_u32m4_mt:
+case RISCV::BI__builtin_rvv_vwmulu_vx_u32m8_mt:
+case RISCV::BI__builtin_rvv_vwmulu_vx_u64m1_mt:
+case RISCV::BI__builtin_rvv_vwmulu_vx_u64m2_mt:
+case RISCV::BI__builtin_rvv_vwmulu_vx_u64m4_mt:
+case RISCV::BI__builtin_rvv_vwmulu_vx_u64m8_mt:
   ID = Intrinsic::riscv_vwmulu_mask;
-  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 1);
+  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 2);
   IntrinsicTypes = {ResultType, Ops[1]->getType(), Ops[2]->getType(), Ops.back()->getType()};
   break;
 case RISCV::BI__builtin_rvv_vwredsum_vs_i8m1_i16m1:
@@ -28868,38 +28903,38 @@ case RISCV::BI__builtin_rvv_vwsub_vx_i64m8:
   ID = Intrinsic::riscv_vwsub;
   IntrinsicTypes = {ResultType, Ops[0]->getType(), Ops[1]->getType(), Ops.back()->getType()};
   break;
-case RISCV::BI__builtin_rvv_vwsub_vv_i16mf4_m:
-case RISCV::BI__builtin_rvv_vwsub_vv_i16mf2_m:
-case RISCV::BI__builtin_rvv_vwsub_vv_i16m1_m:
-case RISCV::BI__builtin_rvv_vwsub_vv_i16m2_m:
-case RISCV::BI__builtin_rvv_vwsub_vv_i16m4_m:
-case RISCV::BI__builtin_rvv_vwsub_vv_i16m8_m:
-case RISCV::BI__builtin_rvv_vwsub_vv_i32mf2_m:
-case RISCV::BI__builtin_rvv_vwsub_vv_i32m1_m:
-case RISCV::BI__builtin_rvv_vwsub_vv_i32m2_m:
-case RISCV::BI__builtin_rvv_vwsub_vv_i32m4_m:
-case RISCV::BI__builtin_rvv_vwsub_vv_i32m8_m:
-case RISCV::BI__builtin_rvv_vwsub_vv_i64m1_m:
-case RISCV::BI__builtin_rvv_vwsub_vv_i64m2_m:
-case RISCV::BI__builtin_rvv_vwsub_vv_i64m4_m:
-case RISCV::BI__builtin_rvv_vwsub_vv_i64m8_m:
-case RISCV::BI__builtin_rvv_vwsub_vx_i16mf4_m:
-case RISCV::BI__builtin_rvv_vwsub_vx_i16mf2_m:
-case RISCV::BI__builtin_rvv_vwsub_vx_i16m1_m:
-case RISCV::BI__builtin_rvv_vwsub_vx_i16m2_m:
-case RISCV::BI__builtin_rvv_vwsub_vx_i16m4_m:
-case RISCV::BI__builtin_rvv_vwsub_vx_i16m8_m:
-case RISCV::BI__builtin_rvv_vwsub_vx_i32mf2_m:
-case RISCV::BI__builtin_rvv_vwsub_vx_i32m1_m:
-case RISCV::BI__builtin_rvv_vwsub_vx_i32m2_m:
-case RISCV::BI__builtin_rvv_vwsub_vx_i32m4_m:
-case RISCV::BI__builtin_rvv_vwsub_vx_i32m8_m:
-case RISCV::BI__builtin_rvv_vwsub_vx_i64m1_m:
-case RISCV::BI__builtin_rvv_vwsub_vx_i64m2_m:
-case RISCV::BI__builtin_rvv_vwsub_vx_i64m4_m:
-case RISCV::BI__builtin_rvv_vwsub_vx_i64m8_m:
+case RISCV::BI__builtin_rvv_vwsub_vv_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vwsub_vv_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vwsub_vv_i16m1_mt:
+case RISCV::BI__builtin_rvv_vwsub_vv_i16m2_mt:
+case RISCV::BI__builtin_rvv_vwsub_vv_i16m4_mt:
+case RISCV::BI__builtin_rvv_vwsub_vv_i16m8_mt:
+case RISCV::BI__builtin_rvv_vwsub_vv_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vwsub_vv_i32m1_mt:
+case RISCV::BI__builtin_rvv_vwsub_vv_i32m2_mt:
+case RISCV::BI__builtin_rvv_vwsub_vv_i32m4_mt:
+case RISCV::BI__builtin_rvv_vwsub_vv_i32m8_mt:
+case RISCV::BI__builtin_rvv_vwsub_vv_i64m1_mt:
+case RISCV::BI__builtin_rvv_vwsub_vv_i64m2_mt:
+case RISCV::BI__builtin_rvv_vwsub_vv_i64m4_mt:
+case RISCV::BI__builtin_rvv_vwsub_vv_i64m8_mt:
+case RISCV::BI__builtin_rvv_vwsub_vx_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vwsub_vx_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vwsub_vx_i16m1_mt:
+case RISCV::BI__builtin_rvv_vwsub_vx_i16m2_mt:
+case RISCV::BI__builtin_rvv_vwsub_vx_i16m4_mt:
+case RISCV::BI__builtin_rvv_vwsub_vx_i16m8_mt:
+case RISCV::BI__builtin_rvv_vwsub_vx_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vwsub_vx_i32m1_mt:
+case RISCV::BI__builtin_rvv_vwsub_vx_i32m2_mt:
+case RISCV::BI__builtin_rvv_vwsub_vx_i32m4_mt:
+case RISCV::BI__builtin_rvv_vwsub_vx_i32m8_mt:
+case RISCV::BI__builtin_rvv_vwsub_vx_i64m1_mt:
+case RISCV::BI__builtin_rvv_vwsub_vx_i64m2_mt:
+case RISCV::BI__builtin_rvv_vwsub_vx_i64m4_mt:
+case RISCV::BI__builtin_rvv_vwsub_vx_i64m8_mt:
   ID = Intrinsic::riscv_vwsub_mask;
-  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 1);
+  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 2);
   IntrinsicTypes = {ResultType, Ops[1]->getType(), Ops[2]->getType(), Ops.back()->getType()};
   break;
 case RISCV::BI__builtin_rvv_vwsub_wv_i16mf4:
@@ -28935,38 +28970,38 @@ case RISCV::BI__builtin_rvv_vwsub_wx_i64m8:
   ID = Intrinsic::riscv_vwsub_w;
   IntrinsicTypes = {ResultType, Ops[1]->getType(), Ops.back()->getType()};
   break;
-case RISCV::BI__builtin_rvv_vwsub_wv_i16mf4_m:
-case RISCV::BI__builtin_rvv_vwsub_wv_i16mf2_m:
-case RISCV::BI__builtin_rvv_vwsub_wv_i16m1_m:
-case RISCV::BI__builtin_rvv_vwsub_wv_i16m2_m:
-case RISCV::BI__builtin_rvv_vwsub_wv_i16m4_m:
-case RISCV::BI__builtin_rvv_vwsub_wv_i16m8_m:
-case RISCV::BI__builtin_rvv_vwsub_wv_i32mf2_m:
-case RISCV::BI__builtin_rvv_vwsub_wv_i32m1_m:
-case RISCV::BI__builtin_rvv_vwsub_wv_i32m2_m:
-case RISCV::BI__builtin_rvv_vwsub_wv_i32m4_m:
-case RISCV::BI__builtin_rvv_vwsub_wv_i32m8_m:
-case RISCV::BI__builtin_rvv_vwsub_wv_i64m1_m:
-case RISCV::BI__builtin_rvv_vwsub_wv_i64m2_m:
-case RISCV::BI__builtin_rvv_vwsub_wv_i64m4_m:
-case RISCV::BI__builtin_rvv_vwsub_wv_i64m8_m:
-case RISCV::BI__builtin_rvv_vwsub_wx_i16mf4_m:
-case RISCV::BI__builtin_rvv_vwsub_wx_i16mf2_m:
-case RISCV::BI__builtin_rvv_vwsub_wx_i16m1_m:
-case RISCV::BI__builtin_rvv_vwsub_wx_i16m2_m:
-case RISCV::BI__builtin_rvv_vwsub_wx_i16m4_m:
-case RISCV::BI__builtin_rvv_vwsub_wx_i16m8_m:
-case RISCV::BI__builtin_rvv_vwsub_wx_i32mf2_m:
-case RISCV::BI__builtin_rvv_vwsub_wx_i32m1_m:
-case RISCV::BI__builtin_rvv_vwsub_wx_i32m2_m:
-case RISCV::BI__builtin_rvv_vwsub_wx_i32m4_m:
-case RISCV::BI__builtin_rvv_vwsub_wx_i32m8_m:
-case RISCV::BI__builtin_rvv_vwsub_wx_i64m1_m:
-case RISCV::BI__builtin_rvv_vwsub_wx_i64m2_m:
-case RISCV::BI__builtin_rvv_vwsub_wx_i64m4_m:
-case RISCV::BI__builtin_rvv_vwsub_wx_i64m8_m:
+case RISCV::BI__builtin_rvv_vwsub_wv_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vwsub_wv_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vwsub_wv_i16m1_mt:
+case RISCV::BI__builtin_rvv_vwsub_wv_i16m2_mt:
+case RISCV::BI__builtin_rvv_vwsub_wv_i16m4_mt:
+case RISCV::BI__builtin_rvv_vwsub_wv_i16m8_mt:
+case RISCV::BI__builtin_rvv_vwsub_wv_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vwsub_wv_i32m1_mt:
+case RISCV::BI__builtin_rvv_vwsub_wv_i32m2_mt:
+case RISCV::BI__builtin_rvv_vwsub_wv_i32m4_mt:
+case RISCV::BI__builtin_rvv_vwsub_wv_i32m8_mt:
+case RISCV::BI__builtin_rvv_vwsub_wv_i64m1_mt:
+case RISCV::BI__builtin_rvv_vwsub_wv_i64m2_mt:
+case RISCV::BI__builtin_rvv_vwsub_wv_i64m4_mt:
+case RISCV::BI__builtin_rvv_vwsub_wv_i64m8_mt:
+case RISCV::BI__builtin_rvv_vwsub_wx_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vwsub_wx_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vwsub_wx_i16m1_mt:
+case RISCV::BI__builtin_rvv_vwsub_wx_i16m2_mt:
+case RISCV::BI__builtin_rvv_vwsub_wx_i16m4_mt:
+case RISCV::BI__builtin_rvv_vwsub_wx_i16m8_mt:
+case RISCV::BI__builtin_rvv_vwsub_wx_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vwsub_wx_i32m1_mt:
+case RISCV::BI__builtin_rvv_vwsub_wx_i32m2_mt:
+case RISCV::BI__builtin_rvv_vwsub_wx_i32m4_mt:
+case RISCV::BI__builtin_rvv_vwsub_wx_i32m8_mt:
+case RISCV::BI__builtin_rvv_vwsub_wx_i64m1_mt:
+case RISCV::BI__builtin_rvv_vwsub_wx_i64m2_mt:
+case RISCV::BI__builtin_rvv_vwsub_wx_i64m4_mt:
+case RISCV::BI__builtin_rvv_vwsub_wx_i64m8_mt:
   ID = Intrinsic::riscv_vwsub_w_mask;
-  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 1);
+  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 2);
   IntrinsicTypes = {ResultType, Ops[2]->getType(), Ops.back()->getType()};
   break;
 case RISCV::BI__builtin_rvv_vwsubu_vv_u16mf4:
@@ -29002,38 +29037,38 @@ case RISCV::BI__builtin_rvv_vwsubu_vx_u64m8:
   ID = Intrinsic::riscv_vwsubu;
   IntrinsicTypes = {ResultType, Ops[0]->getType(), Ops[1]->getType(), Ops.back()->getType()};
   break;
-case RISCV::BI__builtin_rvv_vwsubu_vv_u16mf4_m:
-case RISCV::BI__builtin_rvv_vwsubu_vv_u16mf2_m:
-case RISCV::BI__builtin_rvv_vwsubu_vv_u16m1_m:
-case RISCV::BI__builtin_rvv_vwsubu_vv_u16m2_m:
-case RISCV::BI__builtin_rvv_vwsubu_vv_u16m4_m:
-case RISCV::BI__builtin_rvv_vwsubu_vv_u16m8_m:
-case RISCV::BI__builtin_rvv_vwsubu_vv_u32mf2_m:
-case RISCV::BI__builtin_rvv_vwsubu_vv_u32m1_m:
-case RISCV::BI__builtin_rvv_vwsubu_vv_u32m2_m:
-case RISCV::BI__builtin_rvv_vwsubu_vv_u32m4_m:
-case RISCV::BI__builtin_rvv_vwsubu_vv_u32m8_m:
-case RISCV::BI__builtin_rvv_vwsubu_vv_u64m1_m:
-case RISCV::BI__builtin_rvv_vwsubu_vv_u64m2_m:
-case RISCV::BI__builtin_rvv_vwsubu_vv_u64m4_m:
-case RISCV::BI__builtin_rvv_vwsubu_vv_u64m8_m:
-case RISCV::BI__builtin_rvv_vwsubu_vx_u16mf4_m:
-case RISCV::BI__builtin_rvv_vwsubu_vx_u16mf2_m:
-case RISCV::BI__builtin_rvv_vwsubu_vx_u16m1_m:
-case RISCV::BI__builtin_rvv_vwsubu_vx_u16m2_m:
-case RISCV::BI__builtin_rvv_vwsubu_vx_u16m4_m:
-case RISCV::BI__builtin_rvv_vwsubu_vx_u16m8_m:
-case RISCV::BI__builtin_rvv_vwsubu_vx_u32mf2_m:
-case RISCV::BI__builtin_rvv_vwsubu_vx_u32m1_m:
-case RISCV::BI__builtin_rvv_vwsubu_vx_u32m2_m:
-case RISCV::BI__builtin_rvv_vwsubu_vx_u32m4_m:
-case RISCV::BI__builtin_rvv_vwsubu_vx_u32m8_m:
-case RISCV::BI__builtin_rvv_vwsubu_vx_u64m1_m:
-case RISCV::BI__builtin_rvv_vwsubu_vx_u64m2_m:
-case RISCV::BI__builtin_rvv_vwsubu_vx_u64m4_m:
-case RISCV::BI__builtin_rvv_vwsubu_vx_u64m8_m:
+case RISCV::BI__builtin_rvv_vwsubu_vv_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vwsubu_vv_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vwsubu_vv_u16m1_mt:
+case RISCV::BI__builtin_rvv_vwsubu_vv_u16m2_mt:
+case RISCV::BI__builtin_rvv_vwsubu_vv_u16m4_mt:
+case RISCV::BI__builtin_rvv_vwsubu_vv_u16m8_mt:
+case RISCV::BI__builtin_rvv_vwsubu_vv_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vwsubu_vv_u32m1_mt:
+case RISCV::BI__builtin_rvv_vwsubu_vv_u32m2_mt:
+case RISCV::BI__builtin_rvv_vwsubu_vv_u32m4_mt:
+case RISCV::BI__builtin_rvv_vwsubu_vv_u32m8_mt:
+case RISCV::BI__builtin_rvv_vwsubu_vv_u64m1_mt:
+case RISCV::BI__builtin_rvv_vwsubu_vv_u64m2_mt:
+case RISCV::BI__builtin_rvv_vwsubu_vv_u64m4_mt:
+case RISCV::BI__builtin_rvv_vwsubu_vv_u64m8_mt:
+case RISCV::BI__builtin_rvv_vwsubu_vx_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vwsubu_vx_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vwsubu_vx_u16m1_mt:
+case RISCV::BI__builtin_rvv_vwsubu_vx_u16m2_mt:
+case RISCV::BI__builtin_rvv_vwsubu_vx_u16m4_mt:
+case RISCV::BI__builtin_rvv_vwsubu_vx_u16m8_mt:
+case RISCV::BI__builtin_rvv_vwsubu_vx_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vwsubu_vx_u32m1_mt:
+case RISCV::BI__builtin_rvv_vwsubu_vx_u32m2_mt:
+case RISCV::BI__builtin_rvv_vwsubu_vx_u32m4_mt:
+case RISCV::BI__builtin_rvv_vwsubu_vx_u32m8_mt:
+case RISCV::BI__builtin_rvv_vwsubu_vx_u64m1_mt:
+case RISCV::BI__builtin_rvv_vwsubu_vx_u64m2_mt:
+case RISCV::BI__builtin_rvv_vwsubu_vx_u64m4_mt:
+case RISCV::BI__builtin_rvv_vwsubu_vx_u64m8_mt:
   ID = Intrinsic::riscv_vwsubu_mask;
-  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 1);
+  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 2);
   IntrinsicTypes = {ResultType, Ops[1]->getType(), Ops[2]->getType(), Ops.back()->getType()};
   break;
 case RISCV::BI__builtin_rvv_vwsubu_wv_u16mf4:
@@ -29069,38 +29104,38 @@ case RISCV::BI__builtin_rvv_vwsubu_wx_u64m8:
   ID = Intrinsic::riscv_vwsubu_w;
   IntrinsicTypes = {ResultType, Ops[1]->getType(), Ops.back()->getType()};
   break;
-case RISCV::BI__builtin_rvv_vwsubu_wv_u16mf4_m:
-case RISCV::BI__builtin_rvv_vwsubu_wv_u16mf2_m:
-case RISCV::BI__builtin_rvv_vwsubu_wv_u16m1_m:
-case RISCV::BI__builtin_rvv_vwsubu_wv_u16m2_m:
-case RISCV::BI__builtin_rvv_vwsubu_wv_u16m4_m:
-case RISCV::BI__builtin_rvv_vwsubu_wv_u16m8_m:
-case RISCV::BI__builtin_rvv_vwsubu_wv_u32mf2_m:
-case RISCV::BI__builtin_rvv_vwsubu_wv_u32m1_m:
-case RISCV::BI__builtin_rvv_vwsubu_wv_u32m2_m:
-case RISCV::BI__builtin_rvv_vwsubu_wv_u32m4_m:
-case RISCV::BI__builtin_rvv_vwsubu_wv_u32m8_m:
-case RISCV::BI__builtin_rvv_vwsubu_wv_u64m1_m:
-case RISCV::BI__builtin_rvv_vwsubu_wv_u64m2_m:
-case RISCV::BI__builtin_rvv_vwsubu_wv_u64m4_m:
-case RISCV::BI__builtin_rvv_vwsubu_wv_u64m8_m:
-case RISCV::BI__builtin_rvv_vwsubu_wx_u16mf4_m:
-case RISCV::BI__builtin_rvv_vwsubu_wx_u16mf2_m:
-case RISCV::BI__builtin_rvv_vwsubu_wx_u16m1_m:
-case RISCV::BI__builtin_rvv_vwsubu_wx_u16m2_m:
-case RISCV::BI__builtin_rvv_vwsubu_wx_u16m4_m:
-case RISCV::BI__builtin_rvv_vwsubu_wx_u16m8_m:
-case RISCV::BI__builtin_rvv_vwsubu_wx_u32mf2_m:
-case RISCV::BI__builtin_rvv_vwsubu_wx_u32m1_m:
-case RISCV::BI__builtin_rvv_vwsubu_wx_u32m2_m:
-case RISCV::BI__builtin_rvv_vwsubu_wx_u32m4_m:
-case RISCV::BI__builtin_rvv_vwsubu_wx_u32m8_m:
-case RISCV::BI__builtin_rvv_vwsubu_wx_u64m1_m:
-case RISCV::BI__builtin_rvv_vwsubu_wx_u64m2_m:
-case RISCV::BI__builtin_rvv_vwsubu_wx_u64m4_m:
-case RISCV::BI__builtin_rvv_vwsubu_wx_u64m8_m:
+case RISCV::BI__builtin_rvv_vwsubu_wv_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vwsubu_wv_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vwsubu_wv_u16m1_mt:
+case RISCV::BI__builtin_rvv_vwsubu_wv_u16m2_mt:
+case RISCV::BI__builtin_rvv_vwsubu_wv_u16m4_mt:
+case RISCV::BI__builtin_rvv_vwsubu_wv_u16m8_mt:
+case RISCV::BI__builtin_rvv_vwsubu_wv_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vwsubu_wv_u32m1_mt:
+case RISCV::BI__builtin_rvv_vwsubu_wv_u32m2_mt:
+case RISCV::BI__builtin_rvv_vwsubu_wv_u32m4_mt:
+case RISCV::BI__builtin_rvv_vwsubu_wv_u32m8_mt:
+case RISCV::BI__builtin_rvv_vwsubu_wv_u64m1_mt:
+case RISCV::BI__builtin_rvv_vwsubu_wv_u64m2_mt:
+case RISCV::BI__builtin_rvv_vwsubu_wv_u64m4_mt:
+case RISCV::BI__builtin_rvv_vwsubu_wv_u64m8_mt:
+case RISCV::BI__builtin_rvv_vwsubu_wx_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vwsubu_wx_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vwsubu_wx_u16m1_mt:
+case RISCV::BI__builtin_rvv_vwsubu_wx_u16m2_mt:
+case RISCV::BI__builtin_rvv_vwsubu_wx_u16m4_mt:
+case RISCV::BI__builtin_rvv_vwsubu_wx_u16m8_mt:
+case RISCV::BI__builtin_rvv_vwsubu_wx_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vwsubu_wx_u32m1_mt:
+case RISCV::BI__builtin_rvv_vwsubu_wx_u32m2_mt:
+case RISCV::BI__builtin_rvv_vwsubu_wx_u32m4_mt:
+case RISCV::BI__builtin_rvv_vwsubu_wx_u32m8_mt:
+case RISCV::BI__builtin_rvv_vwsubu_wx_u64m1_mt:
+case RISCV::BI__builtin_rvv_vwsubu_wx_u64m2_mt:
+case RISCV::BI__builtin_rvv_vwsubu_wx_u64m4_mt:
+case RISCV::BI__builtin_rvv_vwsubu_wx_u64m8_mt:
   ID = Intrinsic::riscv_vwsubu_w_mask;
-  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 1);
+  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 2);
   IntrinsicTypes = {ResultType, Ops[2]->getType(), Ops.back()->getType()};
   break;
 case RISCV::BI__builtin_rvv_vxor_vv_i8m1:
@@ -29250,146 +29285,146 @@ case RISCV::BI__builtin_rvv_vnot_v_u64m8:
         break;
       }
       break;
-case RISCV::BI__builtin_rvv_vxor_vv_i8m1_m:
-case RISCV::BI__builtin_rvv_vxor_vv_i8m2_m:
-case RISCV::BI__builtin_rvv_vxor_vv_i8m4_m:
-case RISCV::BI__builtin_rvv_vxor_vv_i8m8_m:
-case RISCV::BI__builtin_rvv_vxor_vv_i8mf2_m:
-case RISCV::BI__builtin_rvv_vxor_vv_i8mf4_m:
-case RISCV::BI__builtin_rvv_vxor_vv_i8mf8_m:
-case RISCV::BI__builtin_rvv_vxor_vv_i16m1_m:
-case RISCV::BI__builtin_rvv_vxor_vv_i16m2_m:
-case RISCV::BI__builtin_rvv_vxor_vv_i16m4_m:
-case RISCV::BI__builtin_rvv_vxor_vv_i16m8_m:
-case RISCV::BI__builtin_rvv_vxor_vv_i16mf2_m:
-case RISCV::BI__builtin_rvv_vxor_vv_i16mf4_m:
-case RISCV::BI__builtin_rvv_vxor_vv_i32m1_m:
-case RISCV::BI__builtin_rvv_vxor_vv_i32m2_m:
-case RISCV::BI__builtin_rvv_vxor_vv_i32m4_m:
-case RISCV::BI__builtin_rvv_vxor_vv_i32m8_m:
-case RISCV::BI__builtin_rvv_vxor_vv_i32mf2_m:
-case RISCV::BI__builtin_rvv_vxor_vv_i64m1_m:
-case RISCV::BI__builtin_rvv_vxor_vv_i64m2_m:
-case RISCV::BI__builtin_rvv_vxor_vv_i64m4_m:
-case RISCV::BI__builtin_rvv_vxor_vv_i64m8_m:
-case RISCV::BI__builtin_rvv_vxor_vx_i8m1_m:
-case RISCV::BI__builtin_rvv_vxor_vx_i8m2_m:
-case RISCV::BI__builtin_rvv_vxor_vx_i8m4_m:
-case RISCV::BI__builtin_rvv_vxor_vx_i8m8_m:
-case RISCV::BI__builtin_rvv_vxor_vx_i8mf2_m:
-case RISCV::BI__builtin_rvv_vxor_vx_i8mf4_m:
-case RISCV::BI__builtin_rvv_vxor_vx_i8mf8_m:
-case RISCV::BI__builtin_rvv_vxor_vx_i16m1_m:
-case RISCV::BI__builtin_rvv_vxor_vx_i16m2_m:
-case RISCV::BI__builtin_rvv_vxor_vx_i16m4_m:
-case RISCV::BI__builtin_rvv_vxor_vx_i16m8_m:
-case RISCV::BI__builtin_rvv_vxor_vx_i16mf2_m:
-case RISCV::BI__builtin_rvv_vxor_vx_i16mf4_m:
-case RISCV::BI__builtin_rvv_vxor_vx_i32m1_m:
-case RISCV::BI__builtin_rvv_vxor_vx_i32m2_m:
-case RISCV::BI__builtin_rvv_vxor_vx_i32m4_m:
-case RISCV::BI__builtin_rvv_vxor_vx_i32m8_m:
-case RISCV::BI__builtin_rvv_vxor_vx_i32mf2_m:
-case RISCV::BI__builtin_rvv_vxor_vx_i64m1_m:
-case RISCV::BI__builtin_rvv_vxor_vx_i64m2_m:
-case RISCV::BI__builtin_rvv_vxor_vx_i64m4_m:
-case RISCV::BI__builtin_rvv_vxor_vx_i64m8_m:
-case RISCV::BI__builtin_rvv_vxor_vv_u8m1_m:
-case RISCV::BI__builtin_rvv_vxor_vv_u8m2_m:
-case RISCV::BI__builtin_rvv_vxor_vv_u8m4_m:
-case RISCV::BI__builtin_rvv_vxor_vv_u8m8_m:
-case RISCV::BI__builtin_rvv_vxor_vv_u8mf2_m:
-case RISCV::BI__builtin_rvv_vxor_vv_u8mf4_m:
-case RISCV::BI__builtin_rvv_vxor_vv_u8mf8_m:
-case RISCV::BI__builtin_rvv_vxor_vv_u16m1_m:
-case RISCV::BI__builtin_rvv_vxor_vv_u16m2_m:
-case RISCV::BI__builtin_rvv_vxor_vv_u16m4_m:
-case RISCV::BI__builtin_rvv_vxor_vv_u16m8_m:
-case RISCV::BI__builtin_rvv_vxor_vv_u16mf2_m:
-case RISCV::BI__builtin_rvv_vxor_vv_u16mf4_m:
-case RISCV::BI__builtin_rvv_vxor_vv_u32m1_m:
-case RISCV::BI__builtin_rvv_vxor_vv_u32m2_m:
-case RISCV::BI__builtin_rvv_vxor_vv_u32m4_m:
-case RISCV::BI__builtin_rvv_vxor_vv_u32m8_m:
-case RISCV::BI__builtin_rvv_vxor_vv_u32mf2_m:
-case RISCV::BI__builtin_rvv_vxor_vv_u64m1_m:
-case RISCV::BI__builtin_rvv_vxor_vv_u64m2_m:
-case RISCV::BI__builtin_rvv_vxor_vv_u64m4_m:
-case RISCV::BI__builtin_rvv_vxor_vv_u64m8_m:
-case RISCV::BI__builtin_rvv_vxor_vx_u8m1_m:
-case RISCV::BI__builtin_rvv_vxor_vx_u8m2_m:
-case RISCV::BI__builtin_rvv_vxor_vx_u8m4_m:
-case RISCV::BI__builtin_rvv_vxor_vx_u8m8_m:
-case RISCV::BI__builtin_rvv_vxor_vx_u8mf2_m:
-case RISCV::BI__builtin_rvv_vxor_vx_u8mf4_m:
-case RISCV::BI__builtin_rvv_vxor_vx_u8mf8_m:
-case RISCV::BI__builtin_rvv_vxor_vx_u16m1_m:
-case RISCV::BI__builtin_rvv_vxor_vx_u16m2_m:
-case RISCV::BI__builtin_rvv_vxor_vx_u16m4_m:
-case RISCV::BI__builtin_rvv_vxor_vx_u16m8_m:
-case RISCV::BI__builtin_rvv_vxor_vx_u16mf2_m:
-case RISCV::BI__builtin_rvv_vxor_vx_u16mf4_m:
-case RISCV::BI__builtin_rvv_vxor_vx_u32m1_m:
-case RISCV::BI__builtin_rvv_vxor_vx_u32m2_m:
-case RISCV::BI__builtin_rvv_vxor_vx_u32m4_m:
-case RISCV::BI__builtin_rvv_vxor_vx_u32m8_m:
-case RISCV::BI__builtin_rvv_vxor_vx_u32mf2_m:
-case RISCV::BI__builtin_rvv_vxor_vx_u64m1_m:
-case RISCV::BI__builtin_rvv_vxor_vx_u64m2_m:
-case RISCV::BI__builtin_rvv_vxor_vx_u64m4_m:
-case RISCV::BI__builtin_rvv_vxor_vx_u64m8_m:
+case RISCV::BI__builtin_rvv_vxor_vv_i8m1_mt:
+case RISCV::BI__builtin_rvv_vxor_vv_i8m2_mt:
+case RISCV::BI__builtin_rvv_vxor_vv_i8m4_mt:
+case RISCV::BI__builtin_rvv_vxor_vv_i8m8_mt:
+case RISCV::BI__builtin_rvv_vxor_vv_i8mf2_mt:
+case RISCV::BI__builtin_rvv_vxor_vv_i8mf4_mt:
+case RISCV::BI__builtin_rvv_vxor_vv_i8mf8_mt:
+case RISCV::BI__builtin_rvv_vxor_vv_i16m1_mt:
+case RISCV::BI__builtin_rvv_vxor_vv_i16m2_mt:
+case RISCV::BI__builtin_rvv_vxor_vv_i16m4_mt:
+case RISCV::BI__builtin_rvv_vxor_vv_i16m8_mt:
+case RISCV::BI__builtin_rvv_vxor_vv_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vxor_vv_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vxor_vv_i32m1_mt:
+case RISCV::BI__builtin_rvv_vxor_vv_i32m2_mt:
+case RISCV::BI__builtin_rvv_vxor_vv_i32m4_mt:
+case RISCV::BI__builtin_rvv_vxor_vv_i32m8_mt:
+case RISCV::BI__builtin_rvv_vxor_vv_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vxor_vv_i64m1_mt:
+case RISCV::BI__builtin_rvv_vxor_vv_i64m2_mt:
+case RISCV::BI__builtin_rvv_vxor_vv_i64m4_mt:
+case RISCV::BI__builtin_rvv_vxor_vv_i64m8_mt:
+case RISCV::BI__builtin_rvv_vxor_vx_i8m1_mt:
+case RISCV::BI__builtin_rvv_vxor_vx_i8m2_mt:
+case RISCV::BI__builtin_rvv_vxor_vx_i8m4_mt:
+case RISCV::BI__builtin_rvv_vxor_vx_i8m8_mt:
+case RISCV::BI__builtin_rvv_vxor_vx_i8mf2_mt:
+case RISCV::BI__builtin_rvv_vxor_vx_i8mf4_mt:
+case RISCV::BI__builtin_rvv_vxor_vx_i8mf8_mt:
+case RISCV::BI__builtin_rvv_vxor_vx_i16m1_mt:
+case RISCV::BI__builtin_rvv_vxor_vx_i16m2_mt:
+case RISCV::BI__builtin_rvv_vxor_vx_i16m4_mt:
+case RISCV::BI__builtin_rvv_vxor_vx_i16m8_mt:
+case RISCV::BI__builtin_rvv_vxor_vx_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vxor_vx_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vxor_vx_i32m1_mt:
+case RISCV::BI__builtin_rvv_vxor_vx_i32m2_mt:
+case RISCV::BI__builtin_rvv_vxor_vx_i32m4_mt:
+case RISCV::BI__builtin_rvv_vxor_vx_i32m8_mt:
+case RISCV::BI__builtin_rvv_vxor_vx_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vxor_vx_i64m1_mt:
+case RISCV::BI__builtin_rvv_vxor_vx_i64m2_mt:
+case RISCV::BI__builtin_rvv_vxor_vx_i64m4_mt:
+case RISCV::BI__builtin_rvv_vxor_vx_i64m8_mt:
+case RISCV::BI__builtin_rvv_vxor_vv_u8m1_mt:
+case RISCV::BI__builtin_rvv_vxor_vv_u8m2_mt:
+case RISCV::BI__builtin_rvv_vxor_vv_u8m4_mt:
+case RISCV::BI__builtin_rvv_vxor_vv_u8m8_mt:
+case RISCV::BI__builtin_rvv_vxor_vv_u8mf2_mt:
+case RISCV::BI__builtin_rvv_vxor_vv_u8mf4_mt:
+case RISCV::BI__builtin_rvv_vxor_vv_u8mf8_mt:
+case RISCV::BI__builtin_rvv_vxor_vv_u16m1_mt:
+case RISCV::BI__builtin_rvv_vxor_vv_u16m2_mt:
+case RISCV::BI__builtin_rvv_vxor_vv_u16m4_mt:
+case RISCV::BI__builtin_rvv_vxor_vv_u16m8_mt:
+case RISCV::BI__builtin_rvv_vxor_vv_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vxor_vv_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vxor_vv_u32m1_mt:
+case RISCV::BI__builtin_rvv_vxor_vv_u32m2_mt:
+case RISCV::BI__builtin_rvv_vxor_vv_u32m4_mt:
+case RISCV::BI__builtin_rvv_vxor_vv_u32m8_mt:
+case RISCV::BI__builtin_rvv_vxor_vv_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vxor_vv_u64m1_mt:
+case RISCV::BI__builtin_rvv_vxor_vv_u64m2_mt:
+case RISCV::BI__builtin_rvv_vxor_vv_u64m4_mt:
+case RISCV::BI__builtin_rvv_vxor_vv_u64m8_mt:
+case RISCV::BI__builtin_rvv_vxor_vx_u8m1_mt:
+case RISCV::BI__builtin_rvv_vxor_vx_u8m2_mt:
+case RISCV::BI__builtin_rvv_vxor_vx_u8m4_mt:
+case RISCV::BI__builtin_rvv_vxor_vx_u8m8_mt:
+case RISCV::BI__builtin_rvv_vxor_vx_u8mf2_mt:
+case RISCV::BI__builtin_rvv_vxor_vx_u8mf4_mt:
+case RISCV::BI__builtin_rvv_vxor_vx_u8mf8_mt:
+case RISCV::BI__builtin_rvv_vxor_vx_u16m1_mt:
+case RISCV::BI__builtin_rvv_vxor_vx_u16m2_mt:
+case RISCV::BI__builtin_rvv_vxor_vx_u16m4_mt:
+case RISCV::BI__builtin_rvv_vxor_vx_u16m8_mt:
+case RISCV::BI__builtin_rvv_vxor_vx_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vxor_vx_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vxor_vx_u32m1_mt:
+case RISCV::BI__builtin_rvv_vxor_vx_u32m2_mt:
+case RISCV::BI__builtin_rvv_vxor_vx_u32m4_mt:
+case RISCV::BI__builtin_rvv_vxor_vx_u32m8_mt:
+case RISCV::BI__builtin_rvv_vxor_vx_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vxor_vx_u64m1_mt:
+case RISCV::BI__builtin_rvv_vxor_vx_u64m2_mt:
+case RISCV::BI__builtin_rvv_vxor_vx_u64m4_mt:
+case RISCV::BI__builtin_rvv_vxor_vx_u64m8_mt:
   ID = Intrinsic::riscv_vxor_mask;
-  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 1);
+  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 2);
   IntrinsicTypes = {ResultType, Ops[2]->getType(), Ops.back()->getType()};
   break;
-case RISCV::BI__builtin_rvv_vnot_v_i8m1_m:
-case RISCV::BI__builtin_rvv_vnot_v_i8m2_m:
-case RISCV::BI__builtin_rvv_vnot_v_i8m4_m:
-case RISCV::BI__builtin_rvv_vnot_v_i8m8_m:
-case RISCV::BI__builtin_rvv_vnot_v_i8mf2_m:
-case RISCV::BI__builtin_rvv_vnot_v_i8mf4_m:
-case RISCV::BI__builtin_rvv_vnot_v_i8mf8_m:
-case RISCV::BI__builtin_rvv_vnot_v_i16m1_m:
-case RISCV::BI__builtin_rvv_vnot_v_i16m2_m:
-case RISCV::BI__builtin_rvv_vnot_v_i16m4_m:
-case RISCV::BI__builtin_rvv_vnot_v_i16m8_m:
-case RISCV::BI__builtin_rvv_vnot_v_i16mf2_m:
-case RISCV::BI__builtin_rvv_vnot_v_i16mf4_m:
-case RISCV::BI__builtin_rvv_vnot_v_i32m1_m:
-case RISCV::BI__builtin_rvv_vnot_v_i32m2_m:
-case RISCV::BI__builtin_rvv_vnot_v_i32m4_m:
-case RISCV::BI__builtin_rvv_vnot_v_i32m8_m:
-case RISCV::BI__builtin_rvv_vnot_v_i32mf2_m:
-case RISCV::BI__builtin_rvv_vnot_v_i64m1_m:
-case RISCV::BI__builtin_rvv_vnot_v_i64m2_m:
-case RISCV::BI__builtin_rvv_vnot_v_i64m4_m:
-case RISCV::BI__builtin_rvv_vnot_v_i64m8_m:
-case RISCV::BI__builtin_rvv_vnot_v_u8m1_m:
-case RISCV::BI__builtin_rvv_vnot_v_u8m2_m:
-case RISCV::BI__builtin_rvv_vnot_v_u8m4_m:
-case RISCV::BI__builtin_rvv_vnot_v_u8m8_m:
-case RISCV::BI__builtin_rvv_vnot_v_u8mf2_m:
-case RISCV::BI__builtin_rvv_vnot_v_u8mf4_m:
-case RISCV::BI__builtin_rvv_vnot_v_u8mf8_m:
-case RISCV::BI__builtin_rvv_vnot_v_u16m1_m:
-case RISCV::BI__builtin_rvv_vnot_v_u16m2_m:
-case RISCV::BI__builtin_rvv_vnot_v_u16m4_m:
-case RISCV::BI__builtin_rvv_vnot_v_u16m8_m:
-case RISCV::BI__builtin_rvv_vnot_v_u16mf2_m:
-case RISCV::BI__builtin_rvv_vnot_v_u16mf4_m:
-case RISCV::BI__builtin_rvv_vnot_v_u32m1_m:
-case RISCV::BI__builtin_rvv_vnot_v_u32m2_m:
-case RISCV::BI__builtin_rvv_vnot_v_u32m4_m:
-case RISCV::BI__builtin_rvv_vnot_v_u32m8_m:
-case RISCV::BI__builtin_rvv_vnot_v_u32mf2_m:
-case RISCV::BI__builtin_rvv_vnot_v_u64m1_m:
-case RISCV::BI__builtin_rvv_vnot_v_u64m2_m:
-case RISCV::BI__builtin_rvv_vnot_v_u64m4_m:
-case RISCV::BI__builtin_rvv_vnot_v_u64m8_m:
+case RISCV::BI__builtin_rvv_vnot_v_i8m1_mt:
+case RISCV::BI__builtin_rvv_vnot_v_i8m2_mt:
+case RISCV::BI__builtin_rvv_vnot_v_i8m4_mt:
+case RISCV::BI__builtin_rvv_vnot_v_i8m8_mt:
+case RISCV::BI__builtin_rvv_vnot_v_i8mf2_mt:
+case RISCV::BI__builtin_rvv_vnot_v_i8mf4_mt:
+case RISCV::BI__builtin_rvv_vnot_v_i8mf8_mt:
+case RISCV::BI__builtin_rvv_vnot_v_i16m1_mt:
+case RISCV::BI__builtin_rvv_vnot_v_i16m2_mt:
+case RISCV::BI__builtin_rvv_vnot_v_i16m4_mt:
+case RISCV::BI__builtin_rvv_vnot_v_i16m8_mt:
+case RISCV::BI__builtin_rvv_vnot_v_i16mf2_mt:
+case RISCV::BI__builtin_rvv_vnot_v_i16mf4_mt:
+case RISCV::BI__builtin_rvv_vnot_v_i32m1_mt:
+case RISCV::BI__builtin_rvv_vnot_v_i32m2_mt:
+case RISCV::BI__builtin_rvv_vnot_v_i32m4_mt:
+case RISCV::BI__builtin_rvv_vnot_v_i32m8_mt:
+case RISCV::BI__builtin_rvv_vnot_v_i32mf2_mt:
+case RISCV::BI__builtin_rvv_vnot_v_i64m1_mt:
+case RISCV::BI__builtin_rvv_vnot_v_i64m2_mt:
+case RISCV::BI__builtin_rvv_vnot_v_i64m4_mt:
+case RISCV::BI__builtin_rvv_vnot_v_i64m8_mt:
+case RISCV::BI__builtin_rvv_vnot_v_u8m1_mt:
+case RISCV::BI__builtin_rvv_vnot_v_u8m2_mt:
+case RISCV::BI__builtin_rvv_vnot_v_u8m4_mt:
+case RISCV::BI__builtin_rvv_vnot_v_u8m8_mt:
+case RISCV::BI__builtin_rvv_vnot_v_u8mf2_mt:
+case RISCV::BI__builtin_rvv_vnot_v_u8mf4_mt:
+case RISCV::BI__builtin_rvv_vnot_v_u8mf8_mt:
+case RISCV::BI__builtin_rvv_vnot_v_u16m1_mt:
+case RISCV::BI__builtin_rvv_vnot_v_u16m2_mt:
+case RISCV::BI__builtin_rvv_vnot_v_u16m4_mt:
+case RISCV::BI__builtin_rvv_vnot_v_u16m8_mt:
+case RISCV::BI__builtin_rvv_vnot_v_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vnot_v_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vnot_v_u32m1_mt:
+case RISCV::BI__builtin_rvv_vnot_v_u32m2_mt:
+case RISCV::BI__builtin_rvv_vnot_v_u32m4_mt:
+case RISCV::BI__builtin_rvv_vnot_v_u32m8_mt:
+case RISCV::BI__builtin_rvv_vnot_v_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vnot_v_u64m1_mt:
+case RISCV::BI__builtin_rvv_vnot_v_u64m2_mt:
+case RISCV::BI__builtin_rvv_vnot_v_u64m4_mt:
+case RISCV::BI__builtin_rvv_vnot_v_u64m8_mt:
   ID = Intrinsic::riscv_vxor_mask;
 
       {
-        std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 1);
+        std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 2);
         // maskedoff, op1, mask, vl
         IntrinsicTypes = {ResultType,
                           cast<llvm::VectorType>(ResultType)->getElementType(),
@@ -29430,36 +29465,36 @@ case RISCV::BI__builtin_rvv_vzext_vf8_u64m8:
   ID = Intrinsic::riscv_vzext;
   IntrinsicTypes = {ResultType, Ops[0]->getType(), Ops.back()->getType()};
   break;
-case RISCV::BI__builtin_rvv_vzext_vf2_u16mf4_m:
-case RISCV::BI__builtin_rvv_vzext_vf2_u16mf2_m:
-case RISCV::BI__builtin_rvv_vzext_vf2_u16m1_m:
-case RISCV::BI__builtin_rvv_vzext_vf2_u16m2_m:
-case RISCV::BI__builtin_rvv_vzext_vf2_u16m4_m:
-case RISCV::BI__builtin_rvv_vzext_vf2_u16m8_m:
-case RISCV::BI__builtin_rvv_vzext_vf2_u32mf2_m:
-case RISCV::BI__builtin_rvv_vzext_vf2_u32m1_m:
-case RISCV::BI__builtin_rvv_vzext_vf2_u32m2_m:
-case RISCV::BI__builtin_rvv_vzext_vf2_u32m4_m:
-case RISCV::BI__builtin_rvv_vzext_vf2_u32m8_m:
-case RISCV::BI__builtin_rvv_vzext_vf2_u64m1_m:
-case RISCV::BI__builtin_rvv_vzext_vf2_u64m2_m:
-case RISCV::BI__builtin_rvv_vzext_vf2_u64m4_m:
-case RISCV::BI__builtin_rvv_vzext_vf2_u64m8_m:
-case RISCV::BI__builtin_rvv_vzext_vf4_u32mf2_m:
-case RISCV::BI__builtin_rvv_vzext_vf4_u32m1_m:
-case RISCV::BI__builtin_rvv_vzext_vf4_u32m2_m:
-case RISCV::BI__builtin_rvv_vzext_vf4_u32m4_m:
-case RISCV::BI__builtin_rvv_vzext_vf4_u32m8_m:
-case RISCV::BI__builtin_rvv_vzext_vf4_u64m1_m:
-case RISCV::BI__builtin_rvv_vzext_vf4_u64m2_m:
-case RISCV::BI__builtin_rvv_vzext_vf4_u64m4_m:
-case RISCV::BI__builtin_rvv_vzext_vf4_u64m8_m:
-case RISCV::BI__builtin_rvv_vzext_vf8_u64m1_m:
-case RISCV::BI__builtin_rvv_vzext_vf8_u64m2_m:
-case RISCV::BI__builtin_rvv_vzext_vf8_u64m4_m:
-case RISCV::BI__builtin_rvv_vzext_vf8_u64m8_m:
+case RISCV::BI__builtin_rvv_vzext_vf2_u16mf4_mt:
+case RISCV::BI__builtin_rvv_vzext_vf2_u16mf2_mt:
+case RISCV::BI__builtin_rvv_vzext_vf2_u16m1_mt:
+case RISCV::BI__builtin_rvv_vzext_vf2_u16m2_mt:
+case RISCV::BI__builtin_rvv_vzext_vf2_u16m4_mt:
+case RISCV::BI__builtin_rvv_vzext_vf2_u16m8_mt:
+case RISCV::BI__builtin_rvv_vzext_vf2_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vzext_vf2_u32m1_mt:
+case RISCV::BI__builtin_rvv_vzext_vf2_u32m2_mt:
+case RISCV::BI__builtin_rvv_vzext_vf2_u32m4_mt:
+case RISCV::BI__builtin_rvv_vzext_vf2_u32m8_mt:
+case RISCV::BI__builtin_rvv_vzext_vf2_u64m1_mt:
+case RISCV::BI__builtin_rvv_vzext_vf2_u64m2_mt:
+case RISCV::BI__builtin_rvv_vzext_vf2_u64m4_mt:
+case RISCV::BI__builtin_rvv_vzext_vf2_u64m8_mt:
+case RISCV::BI__builtin_rvv_vzext_vf4_u32mf2_mt:
+case RISCV::BI__builtin_rvv_vzext_vf4_u32m1_mt:
+case RISCV::BI__builtin_rvv_vzext_vf4_u32m2_mt:
+case RISCV::BI__builtin_rvv_vzext_vf4_u32m4_mt:
+case RISCV::BI__builtin_rvv_vzext_vf4_u32m8_mt:
+case RISCV::BI__builtin_rvv_vzext_vf4_u64m1_mt:
+case RISCV::BI__builtin_rvv_vzext_vf4_u64m2_mt:
+case RISCV::BI__builtin_rvv_vzext_vf4_u64m4_mt:
+case RISCV::BI__builtin_rvv_vzext_vf4_u64m8_mt:
+case RISCV::BI__builtin_rvv_vzext_vf8_u64m1_mt:
+case RISCV::BI__builtin_rvv_vzext_vf8_u64m2_mt:
+case RISCV::BI__builtin_rvv_vzext_vf8_u64m4_mt:
+case RISCV::BI__builtin_rvv_vzext_vf8_u64m8_mt:
   ID = Intrinsic::riscv_vzext_mask;
-  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 1);
+  std::rotate(Ops.begin(), Ops.begin() + 1, Ops.end() - 2);
   IntrinsicTypes = {ResultType, Ops[1]->getType(), Ops.back()->getType()};
   break;
 

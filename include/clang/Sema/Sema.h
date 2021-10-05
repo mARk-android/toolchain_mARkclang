@@ -914,10 +914,6 @@ public:
     OpaqueParser = P;
   }
 
-  // Does the work necessary to deal with a SYCL kernel lambda. At the moment,
-  // this just marks the list of lambdas required to name the kernel.
-  void AddSYCLKernelLambda(const FunctionDecl *FD);
-
   class DelayedDiagnostics;
 
   class DelayedDiagnosticsState {
@@ -5118,13 +5114,13 @@ public:
   /// conversion.
   ExprResult tryConvertExprToType(Expr *E, QualType Ty);
 
-  /// Conditionally issue a diagnostic based on the statement's reachability
-  /// analysis evaluation context.
+  /// Conditionally issue a diagnostic based on the statements's reachability
+  /// analysis.
   ///
-  /// \param Statement If Statement is non-null, delay reporting the
-  /// diagnostic until the function body is parsed, and then do a basic
-  /// reachability analysis to determine if the statement is reachable.
-  /// If it is unreachable, the diagnostic will not be emitted.
+  /// \param Stmts If Stmts is non-empty, delay reporting the diagnostic until
+  /// the function body is parsed, and then do a basic reachability analysis to
+  /// determine if the statement is reachable. If it is unreachable, the
+  /// diagnostic will not be emitted.
   bool DiagIfReachable(SourceLocation Loc, ArrayRef<const Stmt *> Stmts,
                        const PartialDiagnostic &PD);
 
@@ -9487,9 +9483,9 @@ public:
   SubstTemplateName(NestedNameSpecifierLoc QualifierLoc, TemplateName Name,
                     SourceLocation Loc,
                     const MultiLevelTemplateArgumentList &TemplateArgs);
-  bool Subst(const TemplateArgumentLoc *Args, unsigned NumArgs,
-             TemplateArgumentListInfo &Result,
-             const MultiLevelTemplateArgumentList &TemplateArgs);
+
+  bool SubstTypeConstraint(TemplateTypeParmDecl *Inst, const TypeConstraint *TC,
+                           const MultiLevelTemplateArgumentList &TemplateArgs);
 
   bool InstantiateDefaultArgument(SourceLocation CallLoc, FunctionDecl *FD,
                                   ParmVarDecl *Param);

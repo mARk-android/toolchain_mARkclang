@@ -13,7 +13,7 @@ namespace llvm {
 namespace Intrinsic {
 enum PPCIntrinsics : unsigned {
 // Enum values for intrinsics
-    ppc_addex = 6443,                                 // llvm.ppc.addex
+    ppc_addex = 6444,                                 // llvm.ppc.addex
     ppc_addf128_round_to_odd,                  // llvm.ppc.addf128.round.to.odd
     ppc_altivec_crypto_vcipher,                // llvm.ppc.altivec.crypto.vcipher
     ppc_altivec_crypto_vcipherlast,            // llvm.ppc.altivec.crypto.vcipherlast
@@ -71,6 +71,7 @@ enum PPCIntrinsics : unsigned {
     ppc_altivec_vavgub,                        // llvm.ppc.altivec.vavgub
     ppc_altivec_vavguh,                        // llvm.ppc.altivec.vavguh
     ppc_altivec_vavguw,                        // llvm.ppc.altivec.vavguw
+    ppc_altivec_vbpermd,                       // llvm.ppc.altivec.vbpermd
     ppc_altivec_vbpermq,                       // llvm.ppc.altivec.vbpermq
     ppc_altivec_vcfsx,                         // llvm.ppc.altivec.vcfsx
     ppc_altivec_vcfuged,                       // llvm.ppc.altivec.vcfuged
@@ -337,6 +338,10 @@ enum PPCIntrinsics : unsigned {
     ppc_cmpxchg_i128,                          // llvm.ppc.cmpxchg.i128
     ppc_cntlzdm,                               // llvm.ppc.cntlzdm
     ppc_cnttzdm,                               // llvm.ppc.cnttzdm
+    ppc_compare_exp_eq,                        // llvm.ppc.compare.exp.eq
+    ppc_compare_exp_gt,                        // llvm.ppc.compare.exp.gt
+    ppc_compare_exp_lt,                        // llvm.ppc.compare.exp.lt
+    ppc_compare_exp_uo,                        // llvm.ppc.compare.exp.uo
     ppc_darn,                                  // llvm.ppc.darn
     ppc_darn32,                                // llvm.ppc.darn32
     ppc_darnraw,                               // llvm.ppc.darnraw
@@ -513,6 +518,8 @@ enum PPCIntrinsics : unsigned {
     ppc_tdw,                                   // llvm.ppc.tdw
     ppc_tend,                                  // llvm.ppc.tend
     ppc_tendall,                               // llvm.ppc.tendall
+    ppc_test_data_class_d,                     // llvm.ppc.test.data.class.d
+    ppc_test_data_class_f,                     // llvm.ppc.test.data.class.f
     ppc_trap,                                  // llvm.ppc.trap
     ppc_trapd,                                 // llvm.ppc.trapd
     ppc_trechkpt,                              // llvm.ppc.trechkpt

@@ -2533,6 +2533,8 @@ OPTION(prefix_1, &"-funsafe-math-optimizations"[1], funsafe_math_optimizations, 
 OPTION(prefix_1, &"-funsigned-bitfields"[1], funsigned_bitfields, Flag, f_Group, INVALID, nullptr, 0, 0, nullptr, nullptr, nullptr)
 OPTION(prefix_1, &"-funsigned-char"[1], funsigned_char, Flag, f_Group, INVALID, nullptr, 0, 0, nullptr, nullptr, nullptr)
 OPTION(prefix_1, &"-funswitch-loops"[1], funswitch_loops, Flag, clang_ignored_gcc_optimization_f_Group, INVALID, nullptr, Ignored, 0, nullptr, nullptr, nullptr)
+OPTION(prefix_1, &"-funwind-tables="[1], funwind_tables_EQ, Joined, INVALID, INVALID, nullptr, CC1Option | NoDriverOption, 0,
+       "Generate unwinding tables for all functions", nullptr, nullptr)
 OPTION(prefix_1, &"-funwind-tables"[1], funwind_tables, Flag, f_Group, INVALID, nullptr, 0, 0, nullptr, nullptr, nullptr)
 OPTION(prefix_1, &"-fuse-ctor-homing"[1], fuse_ctor_homing, Flag, INVALID, INVALID, nullptr, CC1Option | CC1AsOption | NoDriverOption, 0,
        "Use constructor homing if we are using limited debug info already", nullptr, nullptr)
@@ -2750,7 +2752,7 @@ OPTION(prefix_2, &"/Gr"[1], _SLASH_Gr, Flag, cl_Group, INVALID, nullptr, CLOptio
 OPTION(prefix_2, &"/GS-"[1], _SLASH_GS_, Flag, cl_Group, INVALID, nullptr, CLOption | NoXarchOption | CLOption, 0,
        "Disable buffer security check", nullptr, nullptr)
 OPTION(prefix_1, &"-gsce"[1], gsce, Flag, gTune_Group, INVALID, nullptr, 0, 0, nullptr, nullptr, nullptr)
-OPTION(prefix_1, &"-gsimple-template-names="[1], gsimple_template_names_EQ, Joined, g_flags_Group, INVALID, nullptr, CC1Option, 0,
+OPTION(prefix_1, &"-gsimple-template-names="[1], gsimple_template_names_EQ, Joined, INVALID, INVALID, nullptr, CC1Option | NoDriverOption, 0,
        "Use simple template names in DWARF, or include the full template name with a modified prefix for validation", nullptr, "simple,mangled")
 OPTION(prefix_1, &"-gsimple-template-names"[1], gsimple_template_names, Flag, g_flags_Group, INVALID, nullptr, 0, 0, nullptr, nullptr, nullptr)
 OPTION(prefix_1, &"-gsplit-dwarf="[1], gsplit_dwarf_EQ, Joined, g_flags_Group, INVALID, nullptr, 0, 0,
@@ -3701,8 +3703,6 @@ OPTION(prefix_1, &"-munaligned-access"[1], munaligned_access, Flag, m_arm_Featur
 OPTION(prefix_1, &"-municode"[1], municode, Joined, m_Group, INVALID, nullptr, NoXarchOption, 0, nullptr, nullptr, nullptr)
 OPTION(prefix_1, &"-munsafe-fp-atomics"[1], munsafe_fp_atomics, Flag, m_Group, INVALID, nullptr, CC1Option, 0,
        "Enable unsafe floating point atomic instructions (AMDGPU only)", nullptr, nullptr)
-OPTION(prefix_1, &"-munwind-tables"[1], munwind_tables, Flag, INVALID, INVALID, nullptr, CC1Option | NoDriverOption, 0,
-       "Generate unwinding tables for all functions", nullptr, nullptr)
 OPTION(prefix_1, &"-mv55"[1], mv55, Flag, m_hexagon_Features_Group, mcpu_EQ, "hexagonv55\0", 0, 0, nullptr, nullptr, nullptr)
 OPTION(prefix_1, &"-mv5"[1], mv5, Flag, m_hexagon_Features_Group, mcpu_EQ, "hexagonv5\0", 0, 0, nullptr, nullptr, nullptr)
 OPTION(prefix_1, &"-mv60"[1], mv60, Flag, m_hexagon_Features_Group, mcpu_EQ, "hexagonv60\0", 0, 0, nullptr, nullptr, nullptr)
@@ -4332,13 +4332,9 @@ OPTION(prefix_2, &"/Wall"[1], _SLASH_Wall, Flag, cl_Group, W_Joined, "everything
 OPTION(prefix_3, &"--warn-="[2], _warn__EQ, Joined, INVALID, W_Joined, nullptr, 0, 0, nullptr, nullptr, nullptr)
 OPTION(prefix_3, &"--warn-"[2], _warn_, Joined, INVALID, W_Joined, nullptr, 0, 0, nullptr, nullptr, nullptr)
 OPTION(prefix_1, &"-WCL4"[1], WCL4, Flag, W_Group, INVALID, nullptr, CC1Option | HelpHidden, 0, nullptr, nullptr, nullptr)
-OPTION(prefix_2, &"/wd4005"[1], _SLASH_wd4005, Flag, cl_Group, W_Joined, "no-macro-redefined\0", CLOption | NoXarchOption | CLOption, 0, nullptr, nullptr, nullptr)
-OPTION(prefix_2, &"/wd4018"[1], _SLASH_wd4018, Flag, cl_Group, W_Joined, "no-sign-compare\0", CLOption | NoXarchOption | CLOption, 0, nullptr, nullptr, nullptr)
-OPTION(prefix_2, &"/wd4100"[1], _SLASH_wd4100, Flag, cl_Group, W_Joined, "no-unused-parameter\0", CLOption | NoXarchOption | CLOption, 0, nullptr, nullptr, nullptr)
-OPTION(prefix_2, &"/wd4910"[1], _SLASH_wd4910, Flag, cl_Group, W_Joined, "no-dllexport-explicit-instantiation-decl\0", CLOption | NoXarchOption | CLOption, 0, nullptr, nullptr, nullptr)
-OPTION(prefix_2, &"/wd4996"[1], _SLASH_wd4996, Flag, cl_Group, W_Joined, "no-deprecated-declarations\0", CLOption | NoXarchOption | CLOption, 0, nullptr, nullptr, nullptr)
 OPTION(prefix_1, &"-Wdeprecated"[1], Wdeprecated, Flag, W_Group, INVALID, nullptr, CC1Option, 0,
        "Enable warnings for deprecated constructs and define __DEPRECATED", nullptr, nullptr)
+OPTION(prefix_2, &"/wd"[1], _SLASH_wd, Joined, cl_compile_Group, INVALID, nullptr, CLOption | NoXarchOption, 0, nullptr, nullptr, nullptr)
 OPTION(prefix_1, &"-weak-l"[1], weak_l, Joined, INVALID, INVALID, nullptr, LinkerInput, 0, nullptr, nullptr, nullptr)
 OPTION(prefix_1, &"-weak_framework"[1], weak__framework, Separate, INVALID, INVALID, nullptr, LinkerInput, 0, nullptr, nullptr, nullptr)
 OPTION(prefix_1, &"-weak_library"[1], weak__library, Separate, INVALID, INVALID, nullptr, LinkerInput, 0, nullptr, nullptr, nullptr)
@@ -6812,8 +6808,8 @@ CODEGEN_OPTION_WITH_MARSHALLING(prefix_1, &"-msmall-data-limit"[1], msmall_data_
        "Put global and static data smaller than the limit into a special section", nullptr, nullptr, "-msmall-data-limit", true, 0, CodeGenOpts.SmallDataLimit, 0, false, 0, normalizeStringIntegral<unsigned>, denormalizeString<unsigned>, mergeForwardValue, extractForwardValue, -1)
 #endif // CODEGEN_OPTION_WITH_MARSHALLING
 #ifdef CODEGEN_OPTION_WITH_MARSHALLING
-CODEGEN_OPTION_WITH_MARSHALLING(prefix_1, &"-munwind-tables"[1], munwind_tables, Flag, INVALID, INVALID, nullptr, CC1Option | NoDriverOption, 0,
-       "Generate unwinding tables for all functions", nullptr, nullptr, "-munwind-tables", true, 0, CodeGenOpts.UnwindTables, false, false, false, normalizeSimpleFlag, denormalizeSimpleFlag, mergeForwardValue, extractForwardValue, -1)
+CODEGEN_OPTION_WITH_MARSHALLING(prefix_1, &"-funwind-tables="[1], funwind_tables_EQ, Joined, INVALID, INVALID, nullptr, CC1Option | NoDriverOption, 0,
+       "Generate unwinding tables for all functions", nullptr, nullptr, "-funwind-tables=", true, 0, CodeGenOpts.UnwindTables, 0, false, 0, normalizeStringIntegral<unsigned>, denormalizeString<unsigned>, mergeForwardValue, extractForwardValue, -1)
 #endif // CODEGEN_OPTION_WITH_MARSHALLING
 #ifdef CODEGEN_OPTION_WITH_MARSHALLING
 CODEGEN_OPTION_WITH_MARSHALLING(prefix_1, &"-mconstructor-aliases"[1], mconstructor_aliases, Flag, INVALID, INVALID, nullptr, CC1Option | NoDriverOption, 0,

@@ -141,6 +141,7 @@
     experimental_vector_insert,                // llvm.experimental.vector.insert
     experimental_vector_reverse,               // llvm.experimental.vector.reverse
     experimental_vector_splice,                // llvm.experimental.vector.splice
+    experimental_vp_splice,                    // llvm.experimental.vp.splice
     experimental_widenable_condition,          // llvm.experimental.widenable.condition
     fabs,                                      // llvm.fabs
     floor,                                     // llvm.floor
@@ -361,4 +362,4 @@
     write_register,                            // llvm.write_register
     xray_customevent,                          // llvm.xray.customevent
     xray_typedevent,                           // llvm.xray.typedevent
-    num_intrinsics = 10530
+    num_intrinsics = 10540
