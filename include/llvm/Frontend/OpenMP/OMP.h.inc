@@ -208,6 +208,7 @@ constexpr auto OMPD_masked = llvm::omp::Directive::OMPD_masked;
 enum class Clause {
   OMPC_acq_rel,
   OMPC_acquire,
+  OMPC_adjust_args,
   OMPC_affinity,
   OMPC_aligned,
   OMPC_allocate,
@@ -294,10 +295,11 @@ enum class Clause {
   OMPC_write,
 };
 
-static constexpr std::size_t Clause_enumSize = 86;
+static constexpr std::size_t Clause_enumSize = 87;
 
 constexpr auto OMPC_acq_rel = llvm::omp::Clause::OMPC_acq_rel;
 constexpr auto OMPC_acquire = llvm::omp::Clause::OMPC_acquire;
+constexpr auto OMPC_adjust_args = llvm::omp::Clause::OMPC_adjust_args;
 constexpr auto OMPC_affinity = llvm::omp::Clause::OMPC_affinity;
 constexpr auto OMPC_aligned = llvm::omp::Clause::OMPC_aligned;
 constexpr auto OMPC_allocate = llvm::omp::Clause::OMPC_allocate;

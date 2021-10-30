@@ -1677,26 +1677,26 @@ void getPragmaAttributeMatchRules(llvm::SmallVectorImpl<std::pair<attr::SubjectM
 static const ParsedAttrInfoBPFPreserveAccessIndex Instance;
 };
 const ParsedAttrInfoBPFPreserveAccessIndex ParsedAttrInfoBPFPreserveAccessIndex::Instance;
-static constexpr ParsedAttrInfo::Spelling BTFTagSpellings[] = {
-  {AttributeCommonInfo::AS_GNU, "btf_tag"},
-  {AttributeCommonInfo::AS_CXX11, "clang::btf_tag"},
-  {AttributeCommonInfo::AS_C2x, "clang::btf_tag"},
+static constexpr ParsedAttrInfo::Spelling BTFDeclTagSpellings[] = {
+  {AttributeCommonInfo::AS_GNU, "btf_decl_tag"},
+  {AttributeCommonInfo::AS_CXX11, "clang::btf_decl_tag"},
+  {AttributeCommonInfo::AS_C2x, "clang::btf_decl_tag"},
 };
-static constexpr const char *BTFTagArgNames[] = {
-"BTFTag",};
-struct ParsedAttrInfoBTFTag final : public ParsedAttrInfo {
-  ParsedAttrInfoBTFTag() {
-    AttrKind = ParsedAttr::AT_BTFTag;
+static constexpr const char *BTFDeclTagArgNames[] = {
+"BTFDeclTag",};
+struct ParsedAttrInfoBTFDeclTag final : public ParsedAttrInfo {
+  ParsedAttrInfoBTFDeclTag() {
+    AttrKind = ParsedAttr::AT_BTFDeclTag;
     NumArgs = 1;
     OptArgs = 0;
     HasCustomParsing = 0;
     IsTargetSpecific = 0;
-    IsType = 1;
+    IsType = 0;
     IsStmt = 0;
     IsKnownToGCC = 0;
     IsSupportedByPragmaAttribute = 1;
-    Spellings = BTFTagSpellings;
-    ArgNames = BTFTagArgNames;
+    Spellings = BTFDeclTagSpellings;
+    ArgNames = BTFDeclTagArgNames;
   }
 bool diagAppertainsToDecl(Sema &S, const ParsedAttr &Attr, const Decl *D) const override {
   if (!isa<VarDecl>(D) && !isa<FunctionDecl>(D) && !isa<RecordDecl>(D) && !isa<FieldDecl>(D)) {
@@ -1724,9 +1724,9 @@ void getPragmaAttributeMatchRules(llvm::SmallVectorImpl<std::pair<attr::SubjectM
   MatchRules.push_back(std::make_pair(attr::SubjectMatchRule_field, /*IsSupported=*/true));
 }
 
-static const ParsedAttrInfoBTFTag Instance;
+static const ParsedAttrInfoBTFDeclTag Instance;
 };
-const ParsedAttrInfoBTFTag ParsedAttrInfoBTFTag::Instance;
+const ParsedAttrInfoBTFDeclTag ParsedAttrInfoBTFDeclTag::Instance;
 static constexpr ParsedAttrInfo::Spelling BlocksSpellings[] = {
   {AttributeCommonInfo::AS_GNU, "blocks"},
   {AttributeCommonInfo::AS_CXX11, "clang::blocks"},
@@ -6946,9 +6946,9 @@ struct ParsedAttrInfoNoInstrumentFunction final : public ParsedAttrInfo {
     Spellings = NoInstrumentFunctionSpellings;
   }
 bool diagAppertainsToDecl(Sema &S, const ParsedAttr &Attr, const Decl *D) const override {
-  if (!isa<FunctionDecl>(D)) {
+  if (!isa<FunctionDecl>(D) && !isa<ObjCMethodDecl>(D)) {
     S.Diag(Attr.getLoc(), diag::warn_attribute_wrong_decl_type_str)
-      << Attr << "functions";
+      << Attr << "functions and Objective-C methods";
     return false;
   }
   return true;
@@ -6962,6 +6962,7 @@ bool diagAppertainsToStmt(Sema &S, const ParsedAttr &AL, const Stmt *St) const o
 
 void getPragmaAttributeMatchRules(llvm::SmallVectorImpl<std::pair<attr::SubjectMatchRule, bool>> &MatchRules, const LangOptions &LangOpts) const override {
   MatchRules.push_back(std::make_pair(attr::SubjectMatchRule_function, /*IsSupported=*/true));
+  MatchRules.push_back(std::make_pair(attr::SubjectMatchRule_objc_method, /*IsSupported=*/LangOpts.ObjC));
 }
 
 AttrHandling handleDeclAttribute(Sema &S, Decl *D,const ParsedAttr &Attr) const override {
@@ -13588,7 +13589,7 @@ static const ParsedAttrInfo *AttrInfoMap[] = {
 &ParsedAttrInfoAssumption::Instance,
 &ParsedAttrInfoAvailability::Instance,
 &ParsedAttrInfoBPFPreserveAccessIndex::Instance,
-&ParsedAttrInfoBTFTag::Instance,
+&ParsedAttrInfoBTFDeclTag::Instance,
 &ParsedAttrInfoBlocks::Instance,
 &ParsedAttrInfoBuiltinAlias::Instance,
 &ParsedAttrInfoCDecl::Instance,

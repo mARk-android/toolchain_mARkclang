@@ -100,8 +100,4 @@
 /* Define if the xar_open() function is supported on this platform. */
 /* #undef LLVM_HAVE_LIBXAR */
 
-/* Whether Timers signpost passes in Xcode Instruments */
-#define LLVM_SUPPORT_XCODE_SIGNPOSTS 0
-
-
 #endif

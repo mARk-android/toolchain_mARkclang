@@ -1631,6 +1631,7 @@ public:
 static llvm::StringRef getPrettyPlatformName(llvm::StringRef Platform) {
     return llvm::StringSwitch<llvm::StringRef>(Platform)
              .Case("android", "Android")
+             .Case("fuchsia", "Fuchsia")
              .Case("ios", "iOS")
              .Case("macos", "macOS")
              .Case("tvos", "tvOS")
@@ -1706,50 +1707,50 @@ public:
   static bool classof(const Attr *A) { return A->getKind() == attr::BPFPreserveAccessIndex; }
 };
 
-class BTFTagAttr : public InheritableAttr {
-unsigned bTFTagLength;
-char *bTFTag;
+class BTFDeclTagAttr : public InheritableAttr {
+unsigned bTFDeclTagLength;
+char *bTFDeclTag;
 
 public:
   enum Spelling {
-    GNU_btf_tag = 0,
-    CXX11_clang_btf_tag = 1,
-    C2x_clang_btf_tag = 2,
+    GNU_btf_decl_tag = 0,
+    CXX11_clang_btf_decl_tag = 1,
+    C2x_clang_btf_decl_tag = 2,
   SpellingNotCalculated = 15
 
   };
 
   // Factory methods
-  static BTFTagAttr *CreateImplicit(ASTContext &Ctx, llvm::StringRef BTFTag, const AttributeCommonInfo &CommonInfo = {SourceRange{}});
-  static BTFTagAttr *Create(ASTContext &Ctx, llvm::StringRef BTFTag, const AttributeCommonInfo &CommonInfo);
-  static BTFTagAttr *CreateImplicit(ASTContext &Ctx, llvm::StringRef BTFTag, SourceRange Range, AttributeCommonInfo::Syntax Syntax);
-  static BTFTagAttr *Create(ASTContext &Ctx, llvm::StringRef BTFTag, SourceRange Range, AttributeCommonInfo::Syntax Syntax);
+  static BTFDeclTagAttr *CreateImplicit(ASTContext &Ctx, llvm::StringRef BTFDeclTag, const AttributeCommonInfo &CommonInfo = {SourceRange{}});
+  static BTFDeclTagAttr *Create(ASTContext &Ctx, llvm::StringRef BTFDeclTag, const AttributeCommonInfo &CommonInfo);
+  static BTFDeclTagAttr *CreateImplicit(ASTContext &Ctx, llvm::StringRef BTFDeclTag, SourceRange Range, AttributeCommonInfo::Syntax Syntax);
+  static BTFDeclTagAttr *Create(ASTContext &Ctx, llvm::StringRef BTFDeclTag, SourceRange Range, AttributeCommonInfo::Syntax Syntax);
 
   // Constructors
-  BTFTagAttr(ASTContext &Ctx, const AttributeCommonInfo &CommonInfo
-              , llvm::StringRef BTFTag
+  BTFDeclTagAttr(ASTContext &Ctx, const AttributeCommonInfo &CommonInfo
+              , llvm::StringRef BTFDeclTag
              );
 
-  BTFTagAttr *clone(ASTContext &C) const;
+  BTFDeclTagAttr *clone(ASTContext &C) const;
   void printPretty(raw_ostream &OS,
                    const PrintingPolicy &Policy) const;
   const char *getSpelling() const;
-  llvm::StringRef getBTFTag() const {
-    return llvm::StringRef(bTFTag, bTFTagLength);
+  llvm::StringRef getBTFDeclTag() const {
+    return llvm::StringRef(bTFDeclTag, bTFDeclTagLength);
   }
-  unsigned getBTFTagLength() const {
-    return bTFTagLength;
+  unsigned getBTFDeclTagLength() const {
+    return bTFDeclTagLength;
   }
-  void setBTFTag(ASTContext &C, llvm::StringRef S) {
-    bTFTagLength = S.size();
-    this->bTFTag = new (C, 1) char [bTFTagLength];
+  void setBTFDeclTag(ASTContext &C, llvm::StringRef S) {
+    bTFDeclTagLength = S.size();
+    this->bTFDeclTag = new (C, 1) char [bTFDeclTagLength];
     if (!S.empty())
-      std::memcpy(this->bTFTag, S.data(), bTFTagLength);
+      std::memcpy(this->bTFDeclTag, S.data(), bTFDeclTagLength);
   }
 
 
 
-  static bool classof(const Attr *A) { return A->getKind() == attr::BTFTag; }
+  static bool classof(const Attr *A) { return A->getKind() == attr::BTFDeclTag; }
 };
 
 class BlocksAttr : public InheritableAttr {
@@ -6752,14 +6753,26 @@ Expr * variantFuncRef;
 
 OMPTraitInfo * traitInfos;
 
+  unsigned adjustArgsNothing_Size;
+  Expr * *adjustArgsNothing_;
+
+  unsigned adjustArgsNeedDevicePtr_Size;
+  Expr * *adjustArgsNeedDevicePtr_;
+
 public:
   // Factory methods
-  static OMPDeclareVariantAttr *CreateImplicit(ASTContext &Ctx, Expr * VariantFuncRef, OMPTraitInfo * TraitInfos, const AttributeCommonInfo &CommonInfo = {SourceRange{}});
-  static OMPDeclareVariantAttr *Create(ASTContext &Ctx, Expr * VariantFuncRef, OMPTraitInfo * TraitInfos, const AttributeCommonInfo &CommonInfo);
-  static OMPDeclareVariantAttr *CreateImplicit(ASTContext &Ctx, Expr * VariantFuncRef, OMPTraitInfo * TraitInfos, SourceRange Range, AttributeCommonInfo::Syntax Syntax);
-  static OMPDeclareVariantAttr *Create(ASTContext &Ctx, Expr * VariantFuncRef, OMPTraitInfo * TraitInfos, SourceRange Range, AttributeCommonInfo::Syntax Syntax);
+  static OMPDeclareVariantAttr *CreateImplicit(ASTContext &Ctx, Expr * VariantFuncRef, OMPTraitInfo * TraitInfos, Expr * *AdjustArgsNothing, unsigned AdjustArgsNothingSize, Expr * *AdjustArgsNeedDevicePtr, unsigned AdjustArgsNeedDevicePtrSize, const AttributeCommonInfo &CommonInfo = {SourceRange{}});
+  static OMPDeclareVariantAttr *Create(ASTContext &Ctx, Expr * VariantFuncRef, OMPTraitInfo * TraitInfos, Expr * *AdjustArgsNothing, unsigned AdjustArgsNothingSize, Expr * *AdjustArgsNeedDevicePtr, unsigned AdjustArgsNeedDevicePtrSize, const AttributeCommonInfo &CommonInfo);
+  static OMPDeclareVariantAttr *CreateImplicit(ASTContext &Ctx, Expr * VariantFuncRef, OMPTraitInfo * TraitInfos, Expr * *AdjustArgsNothing, unsigned AdjustArgsNothingSize, Expr * *AdjustArgsNeedDevicePtr, unsigned AdjustArgsNeedDevicePtrSize, SourceRange Range, AttributeCommonInfo::Syntax Syntax);
+  static OMPDeclareVariantAttr *Create(ASTContext &Ctx, Expr * VariantFuncRef, OMPTraitInfo * TraitInfos, Expr * *AdjustArgsNothing, unsigned AdjustArgsNothingSize, Expr * *AdjustArgsNeedDevicePtr, unsigned AdjustArgsNeedDevicePtrSize, SourceRange Range, AttributeCommonInfo::Syntax Syntax);
 
   // Constructors
+  OMPDeclareVariantAttr(ASTContext &Ctx, const AttributeCommonInfo &CommonInfo
+              , Expr * VariantFuncRef
+              , OMPTraitInfo * TraitInfos
+              , Expr * *AdjustArgsNothing, unsigned AdjustArgsNothingSize
+              , Expr * *AdjustArgsNeedDevicePtr, unsigned AdjustArgsNeedDevicePtrSize
+             );
   OMPDeclareVariantAttr(ASTContext &Ctx, const AttributeCommonInfo &CommonInfo
               , Expr * VariantFuncRef
               , OMPTraitInfo * TraitInfos
@@ -6776,6 +6789,20 @@ public:
   OMPTraitInfo * getTraitInfos() const {
     return traitInfos;
   }
+
+  typedef Expr ** adjustArgsNothing_iterator;
+  adjustArgsNothing_iterator adjustArgsNothing_begin() const { return adjustArgsNothing_; }
+  adjustArgsNothing_iterator adjustArgsNothing_end() const { return adjustArgsNothing_ + adjustArgsNothing_Size; }
+  unsigned adjustArgsNothing_size() const { return adjustArgsNothing_Size; }
+  llvm::iterator_range<adjustArgsNothing_iterator> adjustArgsNothing() const { return llvm::make_range(adjustArgsNothing_begin(), adjustArgsNothing_end()); }
+
+
+  typedef Expr ** adjustArgsNeedDevicePtr_iterator;
+  adjustArgsNeedDevicePtr_iterator adjustArgsNeedDevicePtr_begin() const { return adjustArgsNeedDevicePtr_; }
+  adjustArgsNeedDevicePtr_iterator adjustArgsNeedDevicePtr_end() const { return adjustArgsNeedDevicePtr_ + adjustArgsNeedDevicePtr_Size; }
+  unsigned adjustArgsNeedDevicePtr_size() const { return adjustArgsNeedDevicePtr_Size; }
+  llvm::iterator_range<adjustArgsNeedDevicePtr_iterator> adjustArgsNeedDevicePtr() const { return llvm::make_range(adjustArgsNeedDevicePtr_begin(), adjustArgsNeedDevicePtr_end()); }
+
 
 
     OMPTraitInfo &getTraitInfo() { return *traitInfos; }

@@ -1,7 +1,7 @@
 # This file allows users to call find_package(Polly) and pick up our targets.
 
 find_package(LLVM REQUIRED CONFIG
-             HINTS "/home/mark/toolchain/bld/build/llvm/stage3/lib/cmake/llvm")
+             HINTS "/home/mark/toolchain/bld/build/llvm/stage2/lib/cmake/llvm")
 
 set(Polly_CMAKE_DIR ${CMAKE_CURRENT_LIST_DIR})
 set(Polly_BUNDLED_ISL ON)

@@ -494,7 +494,7 @@ set_target_properties(LLVMAArch64Desc PROPERTIES
 add_library(LLVMAArch64Info STATIC IMPORTED)
 
 set_target_properties(LLVMAArch64Info PROPERTIES
-  INTERFACE_LINK_LIBRARIES "LLVMSupport"
+  INTERFACE_LINK_LIBRARIES "LLVMMC;LLVMSupport"
 )
 
 # Create imported target LLVMAArch64Utils
@@ -536,7 +536,7 @@ set_target_properties(LLVMARMDesc PROPERTIES
 add_library(LLVMARMInfo STATIC IMPORTED)
 
 set_target_properties(LLVMARMInfo PROPERTIES
-  INTERFACE_LINK_LIBRARIES "LLVMSupport"
+  INTERFACE_LINK_LIBRARIES "LLVMMC;LLVMSupport"
 )
 
 # Create imported target LLVMARMUtils
@@ -578,7 +578,7 @@ set_target_properties(LLVMX86Desc PROPERTIES
 add_library(LLVMX86Info STATIC IMPORTED)
 
 set_target_properties(LLVMX86Info PROPERTIES
-  INTERFACE_LINK_LIBRARIES "LLVMSupport"
+  INTERFACE_LINK_LIBRARIES "LLVMMC;LLVMSupport"
 )
 
 # Create imported target LLVMAsmParser

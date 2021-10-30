@@ -235,6 +235,7 @@ namespace omp {
   };
 
   static OmpClauseSet allowedExclusiveClauses_OMPD_declare_variant {
+    llvm::omp::Clause::OMPC_adjust_args,
   };
 
   static OmpClauseSet requiredClauses_OMPD_declare_variant {
@@ -3049,6 +3050,7 @@ namespace omp {
 
 EMPTY_CLASS(AcqRel);
 EMPTY_CLASS(Acquire);
+EMPTY_CLASS(AdjustArgs);
 EMPTY_CLASS(Affinity);
 WRAPPER_CLASS(Aligned, OmpAlignedClause);
 WRAPPER_CLASS(Allocate, OmpAllocateClause);
@@ -3141,6 +3143,7 @@ EMPTY_CLASS(Write);
 
 AcqRel
 , Acquire
+, AdjustArgs
 , Affinity
 , Aligned
 , Allocate
@@ -3233,6 +3236,7 @@ AcqRel
 
 NODE(OmpClause, AcqRel)
 NODE(OmpClause, Acquire)
+NODE(OmpClause, AdjustArgs)
 NODE(OmpClause, Affinity)
 NODE(OmpClause, Aligned)
 NODE(OmpClause, Allocate)
@@ -3325,6 +3329,7 @@ NODE(OmpClause, Write)
 
 void Before(const OmpClause::AcqRel &) { Word("ACQ_REL"); }
 void Before(const OmpClause::Acquire &) { Word("ACQUIRE"); }
+void Before(const OmpClause::AdjustArgs &) { Word("ADJUST_ARGS"); }
 void Before(const OmpClause::Affinity &) { Word("AFFINITY"); }
 void Unparse(const OmpClause::Aligned &x) {
   Word("ALIGNED");
@@ -3628,6 +3633,7 @@ void Before(const OmpClause::Write &) { Word("WRITE"); }
 
 void Enter(const parser::OmpClause::AcqRel &);
 void Enter(const parser::OmpClause::Acquire &);
+void Enter(const parser::OmpClause::AdjustArgs &);
 void Enter(const parser::OmpClause::Affinity &);
 void Enter(const parser::OmpClause::Aligned &);
 void Enter(const parser::OmpClause::Allocate &);
@@ -3722,6 +3728,8 @@ if constexpr (std::is_same_v<A, parser::OmpClause::AcqRel>)
   return llvm::omp::Clause::OMPC_acq_rel;
 if constexpr (std::is_same_v<A, parser::OmpClause::Acquire>)
   return llvm::omp::Clause::OMPC_acquire;
+if constexpr (std::is_same_v<A, parser::OmpClause::AdjustArgs>)
+  return llvm::omp::Clause::OMPC_adjust_args;
 if constexpr (std::is_same_v<A, parser::OmpClause::Affinity>)
   return llvm::omp::Clause::OMPC_affinity;
 if constexpr (std::is_same_v<A, parser::OmpClause::Aligned>)
@@ -3922,6 +3930,7 @@ llvm_unreachable("Invalid OpenMP Parser clause");
 
 __CLAUSE(acq_rel, OMPAcqRelClause)
 __CLAUSE(acquire, OMPAcquireClause)
+__CLAUSE_NO_CLASS(adjust_args)
 __CLAUSE(affinity, OMPAffinityClause)
 __CLAUSE(aligned, OMPAlignedClause)
 __CLAUSE(allocate, OMPAllocateClause)
@@ -4319,6 +4328,7 @@ Clause llvm::omp::getOpenMPClauseKind(llvm::StringRef Str) {
   return llvm::StringSwitch<Clause>(Str)
     .Case("acq_rel",OMPC_acq_rel)
     .Case("acquire",OMPC_acquire)
+    .Case("adjust_args",OMPC_adjust_args)
     .Case("affinity",OMPC_affinity)
     .Case("aligned",OMPC_aligned)
     .Case("allocate",OMPC_allocate)
@@ -4412,6 +4422,8 @@ llvm::StringRef llvm::omp::getOpenMPClauseName(Clause Kind) {
       return "acq_rel";
     case OMPC_acquire:
       return "acquire";
+    case OMPC_adjust_args:
+      return "adjust_args";
     case OMPC_affinity:
       return "affinity";
     case OMPC_aligned:
@@ -4780,6 +4792,8 @@ bool llvm::omp::isAllowedClauseForDirective(Directive D, Clause C, unsigned Vers
       switch (C) {
         case OMPC_match:
           return 1 <= Version && 2147483647 >= Version;
+        case OMPC_adjust_args:
+          return 51 <= Version && 2147483647 >= Version;
         default:
           return false;
       }

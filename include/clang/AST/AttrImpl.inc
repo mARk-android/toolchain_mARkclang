@@ -4177,54 +4177,54 @@ const char *BPFPreserveAccessIndexAttr::getSpelling() const {
 }
 
 
-// BTFTagAttr implementation
+// BTFDeclTagAttr implementation
 
-BTFTagAttr *BTFTagAttr::CreateImplicit(ASTContext &Ctx, llvm::StringRef BTFTag, const AttributeCommonInfo &CommonInfo) {
-  auto *A = new (Ctx) BTFTagAttr(Ctx, CommonInfo, BTFTag);
+BTFDeclTagAttr *BTFDeclTagAttr::CreateImplicit(ASTContext &Ctx, llvm::StringRef BTFDeclTag, const AttributeCommonInfo &CommonInfo) {
+  auto *A = new (Ctx) BTFDeclTagAttr(Ctx, CommonInfo, BTFDeclTag);
   A->setImplicit(true);
   if (!A->isAttributeSpellingListCalculated() && !A->getAttrName())
     A->setAttributeSpellingListIndex(0);
   return A;
 }
 
-BTFTagAttr *BTFTagAttr::Create(ASTContext &Ctx, llvm::StringRef BTFTag, const AttributeCommonInfo &CommonInfo) {
-  auto *A = new (Ctx) BTFTagAttr(Ctx, CommonInfo, BTFTag);
+BTFDeclTagAttr *BTFDeclTagAttr::Create(ASTContext &Ctx, llvm::StringRef BTFDeclTag, const AttributeCommonInfo &CommonInfo) {
+  auto *A = new (Ctx) BTFDeclTagAttr(Ctx, CommonInfo, BTFDeclTag);
   if (!A->isAttributeSpellingListCalculated() && !A->getAttrName())
     A->setAttributeSpellingListIndex(0);
   return A;
 }
 
-BTFTagAttr *BTFTagAttr::CreateImplicit(ASTContext &Ctx, llvm::StringRef BTFTag, SourceRange Range, AttributeCommonInfo::Syntax Syntax) {
+BTFDeclTagAttr *BTFDeclTagAttr::CreateImplicit(ASTContext &Ctx, llvm::StringRef BTFDeclTag, SourceRange Range, AttributeCommonInfo::Syntax Syntax) {
   AttributeCommonInfo I(Range, NoSemaHandlerAttribute, Syntax);
-  return CreateImplicit(Ctx, BTFTag, I);
+  return CreateImplicit(Ctx, BTFDeclTag, I);
 }
 
-BTFTagAttr *BTFTagAttr::Create(ASTContext &Ctx, llvm::StringRef BTFTag, SourceRange Range, AttributeCommonInfo::Syntax Syntax) {
+BTFDeclTagAttr *BTFDeclTagAttr::Create(ASTContext &Ctx, llvm::StringRef BTFDeclTag, SourceRange Range, AttributeCommonInfo::Syntax Syntax) {
   AttributeCommonInfo I(Range, NoSemaHandlerAttribute, Syntax);
-  return Create(Ctx, BTFTag, I);
+  return Create(Ctx, BTFDeclTag, I);
 }
 
-BTFTagAttr::BTFTagAttr(ASTContext &Ctx, const AttributeCommonInfo &CommonInfo
-              , llvm::StringRef BTFTag
+BTFDeclTagAttr::BTFDeclTagAttr(ASTContext &Ctx, const AttributeCommonInfo &CommonInfo
+              , llvm::StringRef BTFDeclTag
              )
-  : InheritableAttr(Ctx, CommonInfo, attr::BTFTag, false, false)
-              , bTFTagLength(BTFTag.size()),bTFTag(new (Ctx, 1) char[bTFTagLength])
+  : InheritableAttr(Ctx, CommonInfo, attr::BTFDeclTag, false, false)
+              , bTFDeclTagLength(BTFDeclTag.size()),bTFDeclTag(new (Ctx, 1) char[bTFDeclTagLength])
   {
-    if (!BTFTag.empty())
-      std::memcpy(bTFTag, BTFTag.data(), bTFTagLength);
+    if (!BTFDeclTag.empty())
+      std::memcpy(bTFDeclTag, BTFDeclTag.data(), bTFDeclTagLength);
 }
 
 
 
-BTFTagAttr *BTFTagAttr::clone(ASTContext &C) const {
-  auto *A = new (C) BTFTagAttr(C, *this, getBTFTag());
+BTFDeclTagAttr *BTFDeclTagAttr::clone(ASTContext &C) const {
+  auto *A = new (C) BTFDeclTagAttr(C, *this, getBTFDeclTag());
   A->Inherited = Inherited;
   A->IsPackExpansion = IsPackExpansion;
   A->setImplicit(Implicit);
   return A;
 }
 
-void BTFTagAttr::printPretty(raw_ostream &OS, const PrintingPolicy &Policy) const {
+void BTFDeclTagAttr::printPretty(raw_ostream &OS, const PrintingPolicy &Policy) const {
   bool IsFirstArgument = true; (void)IsFirstArgument;
   unsigned TrailingOmittedArgs = 0; (void)TrailingOmittedArgs;
   switch (getAttributeSpellingListIndex()) {
@@ -4232,27 +4232,27 @@ void BTFTagAttr::printPretty(raw_ostream &OS, const PrintingPolicy &Policy) cons
     llvm_unreachable("Unknown attribute spelling!");
     break;
   case 0 : {
-    OS << " __attribute__((btf_tag";
+    OS << " __attribute__((btf_decl_tag";
     DelimitAttributeArgument(OS, IsFirstArgument);
-    OS << "\"" << getBTFTag() << "\"";
+    OS << "\"" << getBTFDeclTag() << "\"";
     if (!IsFirstArgument)
       OS << ")";
     OS << "))";
     break;
   }
   case 1 : {
-    OS << " [[clang::btf_tag";
+    OS << " [[clang::btf_decl_tag";
     DelimitAttributeArgument(OS, IsFirstArgument);
-    OS << "\"" << getBTFTag() << "\"";
+    OS << "\"" << getBTFDeclTag() << "\"";
     if (!IsFirstArgument)
       OS << ")";
     OS << "]]";
     break;
   }
   case 2 : {
-    OS << " [[clang::btf_tag";
+    OS << " [[clang::btf_decl_tag";
     DelimitAttributeArgument(OS, IsFirstArgument);
-    OS << "\"" << getBTFTag() << "\"";
+    OS << "\"" << getBTFDeclTag() << "\"";
     if (!IsFirstArgument)
       OS << ")";
     OS << "]]";
@@ -4261,17 +4261,17 @@ void BTFTagAttr::printPretty(raw_ostream &OS, const PrintingPolicy &Policy) cons
 }
 }
 
-const char *BTFTagAttr::getSpelling() const {
+const char *BTFDeclTagAttr::getSpelling() const {
   switch (getAttributeSpellingListIndex()) {
   default:
     llvm_unreachable("Unknown attribute spelling!");
     return "(No spelling)";
   case 0:
-    return "btf_tag";
+    return "btf_decl_tag";
   case 1:
-    return "btf_tag";
+    return "btf_decl_tag";
   case 2:
-    return "btf_tag";
+    return "btf_decl_tag";
   }
 }
 
@@ -17044,29 +17044,45 @@ const char *OMPDeclareTargetDeclAttr::getSpelling() const {
 
 // OMPDeclareVariantAttr implementation
 
-OMPDeclareVariantAttr *OMPDeclareVariantAttr::CreateImplicit(ASTContext &Ctx, Expr * VariantFuncRef, OMPTraitInfo * TraitInfos, const AttributeCommonInfo &CommonInfo) {
-  auto *A = new (Ctx) OMPDeclareVariantAttr(Ctx, CommonInfo, VariantFuncRef, TraitInfos);
+OMPDeclareVariantAttr *OMPDeclareVariantAttr::CreateImplicit(ASTContext &Ctx, Expr * VariantFuncRef, OMPTraitInfo * TraitInfos, Expr * *AdjustArgsNothing, unsigned AdjustArgsNothingSize, Expr * *AdjustArgsNeedDevicePtr, unsigned AdjustArgsNeedDevicePtrSize, const AttributeCommonInfo &CommonInfo) {
+  auto *A = new (Ctx) OMPDeclareVariantAttr(Ctx, CommonInfo, VariantFuncRef, TraitInfos, AdjustArgsNothing, AdjustArgsNothingSize, AdjustArgsNeedDevicePtr, AdjustArgsNeedDevicePtrSize);
   A->setImplicit(true);
   if (!A->isAttributeSpellingListCalculated() && !A->getAttrName())
     A->setAttributeSpellingListIndex(0);
   return A;
 }
 
-OMPDeclareVariantAttr *OMPDeclareVariantAttr::Create(ASTContext &Ctx, Expr * VariantFuncRef, OMPTraitInfo * TraitInfos, const AttributeCommonInfo &CommonInfo) {
-  auto *A = new (Ctx) OMPDeclareVariantAttr(Ctx, CommonInfo, VariantFuncRef, TraitInfos);
+OMPDeclareVariantAttr *OMPDeclareVariantAttr::Create(ASTContext &Ctx, Expr * VariantFuncRef, OMPTraitInfo * TraitInfos, Expr * *AdjustArgsNothing, unsigned AdjustArgsNothingSize, Expr * *AdjustArgsNeedDevicePtr, unsigned AdjustArgsNeedDevicePtrSize, const AttributeCommonInfo &CommonInfo) {
+  auto *A = new (Ctx) OMPDeclareVariantAttr(Ctx, CommonInfo, VariantFuncRef, TraitInfos, AdjustArgsNothing, AdjustArgsNothingSize, AdjustArgsNeedDevicePtr, AdjustArgsNeedDevicePtrSize);
   if (!A->isAttributeSpellingListCalculated() && !A->getAttrName())
     A->setAttributeSpellingListIndex(0);
   return A;
 }
 
-OMPDeclareVariantAttr *OMPDeclareVariantAttr::CreateImplicit(ASTContext &Ctx, Expr * VariantFuncRef, OMPTraitInfo * TraitInfos, SourceRange Range, AttributeCommonInfo::Syntax Syntax) {
+OMPDeclareVariantAttr *OMPDeclareVariantAttr::CreateImplicit(ASTContext &Ctx, Expr * VariantFuncRef, OMPTraitInfo * TraitInfos, Expr * *AdjustArgsNothing, unsigned AdjustArgsNothingSize, Expr * *AdjustArgsNeedDevicePtr, unsigned AdjustArgsNeedDevicePtrSize, SourceRange Range, AttributeCommonInfo::Syntax Syntax) {
   AttributeCommonInfo I(Range, NoSemaHandlerAttribute, Syntax);
-  return CreateImplicit(Ctx, VariantFuncRef, TraitInfos, I);
+  return CreateImplicit(Ctx, VariantFuncRef, TraitInfos, AdjustArgsNothing, AdjustArgsNothingSize, AdjustArgsNeedDevicePtr, AdjustArgsNeedDevicePtrSize, I);
 }
 
-OMPDeclareVariantAttr *OMPDeclareVariantAttr::Create(ASTContext &Ctx, Expr * VariantFuncRef, OMPTraitInfo * TraitInfos, SourceRange Range, AttributeCommonInfo::Syntax Syntax) {
+OMPDeclareVariantAttr *OMPDeclareVariantAttr::Create(ASTContext &Ctx, Expr * VariantFuncRef, OMPTraitInfo * TraitInfos, Expr * *AdjustArgsNothing, unsigned AdjustArgsNothingSize, Expr * *AdjustArgsNeedDevicePtr, unsigned AdjustArgsNeedDevicePtrSize, SourceRange Range, AttributeCommonInfo::Syntax Syntax) {
   AttributeCommonInfo I(Range, NoSemaHandlerAttribute, Syntax);
-  return Create(Ctx, VariantFuncRef, TraitInfos, I);
+  return Create(Ctx, VariantFuncRef, TraitInfos, AdjustArgsNothing, AdjustArgsNothingSize, AdjustArgsNeedDevicePtr, AdjustArgsNeedDevicePtrSize, I);
+}
+
+OMPDeclareVariantAttr::OMPDeclareVariantAttr(ASTContext &Ctx, const AttributeCommonInfo &CommonInfo
+              , Expr * VariantFuncRef
+              , OMPTraitInfo * TraitInfos
+              , Expr * *AdjustArgsNothing, unsigned AdjustArgsNothingSize
+              , Expr * *AdjustArgsNeedDevicePtr, unsigned AdjustArgsNeedDevicePtrSize
+             )
+  : InheritableAttr(Ctx, CommonInfo, attr::OMPDeclareVariant, false, true)
+              , variantFuncRef(VariantFuncRef)
+              , traitInfos(TraitInfos)
+              , adjustArgsNothing_Size(AdjustArgsNothingSize), adjustArgsNothing_(new (Ctx, 16) Expr *[adjustArgsNothing_Size])
+              , adjustArgsNeedDevicePtr_Size(AdjustArgsNeedDevicePtrSize), adjustArgsNeedDevicePtr_(new (Ctx, 16) Expr *[adjustArgsNeedDevicePtr_Size])
+  {
+  std::copy(AdjustArgsNothing, AdjustArgsNothing + adjustArgsNothing_Size, adjustArgsNothing_);
+  std::copy(AdjustArgsNeedDevicePtr, AdjustArgsNeedDevicePtr + adjustArgsNeedDevicePtr_Size, adjustArgsNeedDevicePtr_);
 }
 
 OMPDeclareVariantAttr::OMPDeclareVariantAttr(ASTContext &Ctx, const AttributeCommonInfo &CommonInfo
@@ -17076,6 +17092,8 @@ OMPDeclareVariantAttr::OMPDeclareVariantAttr(ASTContext &Ctx, const AttributeCom
   : InheritableAttr(Ctx, CommonInfo, attr::OMPDeclareVariant, false, true)
               , variantFuncRef(VariantFuncRef)
               , traitInfos(TraitInfos)
+              , adjustArgsNothing_Size(0), adjustArgsNothing_(nullptr)
+              , adjustArgsNeedDevicePtr_Size(0), adjustArgsNeedDevicePtr_(nullptr)
   {
 }
 
@@ -17083,8 +17101,12 @@ OMPDeclareVariantAttr::OMPDeclareVariantAttr(ASTContext &Ctx, const AttributeCom
 
 
 
+
+
+
+
 OMPDeclareVariantAttr *OMPDeclareVariantAttr::clone(ASTContext &C) const {
-  auto *A = new (C) OMPDeclareVariantAttr(C, *this, variantFuncRef, traitInfos);
+  auto *A = new (C) OMPDeclareVariantAttr(C, *this, variantFuncRef, traitInfos, adjustArgsNothing_, adjustArgsNothing_Size, adjustArgsNeedDevicePtr_, adjustArgsNeedDevicePtr_Size);
   A->Inherited = Inherited;
   A->IsPackExpansion = IsPackExpansion;
   A->setImplicit(Implicit);
@@ -31163,8 +31185,8 @@ const char *Attr::getSpelling() const {
     return cast<AvailabilityAttr>(this)->getSpelling();
   case attr::BPFPreserveAccessIndex:
     return cast<BPFPreserveAccessIndexAttr>(this)->getSpelling();
-  case attr::BTFTag:
-    return cast<BTFTagAttr>(this)->getSpelling();
+  case attr::BTFDeclTag:
+    return cast<BTFDeclTagAttr>(this)->getSpelling();
   case attr::Blocks:
     return cast<BlocksAttr>(this)->getSpelling();
   case attr::Builtin:
@@ -31857,8 +31879,8 @@ Attr *Attr::clone(ASTContext &C) const {
     return cast<AvailabilityAttr>(this)->clone(C);
   case attr::BPFPreserveAccessIndex:
     return cast<BPFPreserveAccessIndexAttr>(this)->clone(C);
-  case attr::BTFTag:
-    return cast<BTFTagAttr>(this)->clone(C);
+  case attr::BTFDeclTag:
+    return cast<BTFDeclTagAttr>(this)->clone(C);
   case attr::Blocks:
     return cast<BlocksAttr>(this)->clone(C);
   case attr::Builtin:
@@ -32551,8 +32573,8 @@ void Attr::printPretty(raw_ostream &OS, const PrintingPolicy &Policy) const {
     return cast<AvailabilityAttr>(this)->printPretty(OS, Policy);
   case attr::BPFPreserveAccessIndex:
     return cast<BPFPreserveAccessIndexAttr>(this)->printPretty(OS, Policy);
-  case attr::BTFTag:
-    return cast<BTFTagAttr>(this)->printPretty(OS, Policy);
+  case attr::BTFDeclTag:
+    return cast<BTFDeclTagAttr>(this)->printPretty(OS, Policy);
   case attr::Blocks:
     return cast<BlocksAttr>(this)->printPretty(OS, Policy);
   case attr::Builtin:

@@ -491,12 +491,12 @@
     New->setPackExpansion(isPackExpansion);
     break;
   }
-  case attr::BTFTag: {
+  case attr::BTFDeclTag: {
     bool isInherited = Record.readInt();
     bool isImplicit = Record.readInt();
     bool isPackExpansion = Record.readInt();
-    std::string bTFTag= Record.readString();
-    New = new (Context) BTFTagAttr(Context, Info, bTFTag);
+    std::string bTFDeclTag= Record.readString();
+    New = new (Context) BTFDeclTagAttr(Context, Info, bTFDeclTag);
     cast<InheritableAttr>(New)->setInherited(isInherited);
     New->setImplicit(isImplicit);
     New->setPackExpansion(isPackExpansion);
@@ -2079,7 +2079,17 @@
     bool isPackExpansion = Record.readInt();
     Expr * variantFuncRef = Record.readExpr();
     OMPTraitInfo * traitInfos = Record.readOMPTraitInfo();
-    New = new (Context) OMPDeclareVariantAttr(Context, Info, variantFuncRef, traitInfos);
+    unsigned adjustArgsNothingSize = Record.readInt();
+    SmallVector<Expr *, 4> adjustArgsNothing;
+    adjustArgsNothing.reserve(adjustArgsNothingSize);
+    for (unsigned i = 0; i != adjustArgsNothingSize; ++i)
+      adjustArgsNothing.push_back(Record.readExpr());
+    unsigned adjustArgsNeedDevicePtrSize = Record.readInt();
+    SmallVector<Expr *, 4> adjustArgsNeedDevicePtr;
+    adjustArgsNeedDevicePtr.reserve(adjustArgsNeedDevicePtrSize);
+    for (unsigned i = 0; i != adjustArgsNeedDevicePtrSize; ++i)
+      adjustArgsNeedDevicePtr.push_back(Record.readExpr());
+    New = new (Context) OMPDeclareVariantAttr(Context, Info, variantFuncRef, traitInfos, adjustArgsNothing.data(), adjustArgsNothingSize, adjustArgsNeedDevicePtr.data(), adjustArgsNeedDevicePtrSize);
     cast<InheritableAttr>(New)->setInherited(isInherited);
     New->setImplicit(isImplicit);
     New->setPackExpansion(isPackExpansion);

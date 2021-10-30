@@ -211,7 +211,7 @@ set(LLVM_HAVE_OPT_VIEWER_MODULES 0)
 set(LLVM_CONFIGURATION_TYPES )
 set(LLVM_ENABLE_SHARED_LIBS OFF)
 
-set(LLVM_DEFAULT_EXTERNAL_LIT "/home/mark/toolchain/bld/build/llvm/stage3/./bin/llvm-lit")
+set(LLVM_DEFAULT_EXTERNAL_LIT "/home/mark/toolchain/bld/build/llvm/stage2/./bin/llvm-lit")
 set(LLVM_LIT_ARGS "-sv")
 
 set(LLVM_HAVE_LIBXAR "")

@@ -122,6 +122,10 @@
   void VisitOMPDeclareVariantAttr(const OMPDeclareVariantAttr *A) {
     const auto *SA = cast<OMPDeclareVariantAttr>(A); (void)SA;
     Visit(SA->getVariantFuncRef());
+    for (OMPDeclareVariantAttr::adjustArgsNothing_iterator I = SA->adjustArgsNothing_begin(), E = SA->adjustArgsNothing_end(); I != E; ++I)
+      Visit(*I);
+    for (OMPDeclareVariantAttr::adjustArgsNeedDevicePtr_iterator I = SA->adjustArgsNeedDevicePtr_begin(), E = SA->adjustArgsNeedDevicePtr_end(); I != E; ++I)
+      Visit(*I);
   }
   void VisitOMPReferencedVarAttr(const OMPReferencedVarAttr *A) {
     const auto *SA = cast<OMPReferencedVarAttr>(A); (void)SA;

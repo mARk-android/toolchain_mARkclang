@@ -326,12 +326,12 @@
         return 2;
     break;
   }
-  case AT_BTFTag: {
-    if (Name == "btf_tag" && getSyntax() == AttributeCommonInfo::AS_GNU && Scope == "")
+  case AT_BTFDeclTag: {
+    if (Name == "btf_decl_tag" && getSyntax() == AttributeCommonInfo::AS_GNU && Scope == "")
         return 0;
-    if (Name == "btf_tag" && getSyntax() == AttributeCommonInfo::AS_CXX11 && Scope == "clang")
+    if (Name == "btf_decl_tag" && getSyntax() == AttributeCommonInfo::AS_CXX11 && Scope == "clang")
         return 1;
-    if (Name == "btf_tag" && getSyntax() == AttributeCommonInfo::AS_C2x && Scope == "clang")
+    if (Name == "btf_decl_tag" && getSyntax() == AttributeCommonInfo::AS_C2x && Scope == "clang")
         return 2;
     break;
   }

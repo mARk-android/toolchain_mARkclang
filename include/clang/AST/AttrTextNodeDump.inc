@@ -121,9 +121,9 @@
     OS << " \"" << SA->getReplacement() << "\"";
     OS << " " << SA->getPriority();
   }
-  void VisitBTFTagAttr(const BTFTagAttr *A) {
-    const auto *SA = cast<BTFTagAttr>(A); (void)SA;
-    OS << " \"" << SA->getBTFTag() << "\"";
+  void VisitBTFDeclTagAttr(const BTFDeclTagAttr *A) {
+    const auto *SA = cast<BTFDeclTagAttr>(A); (void)SA;
+    OS << " \"" << SA->getBTFDeclTag() << "\"";
   }
   void VisitBlocksAttr(const BlocksAttr *A) {
     const auto *SA = cast<BlocksAttr>(A); (void)SA;

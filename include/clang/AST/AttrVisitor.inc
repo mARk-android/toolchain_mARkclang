@@ -172,8 +172,8 @@
   bool VisitBPFPreserveAccessIndexAttr(BPFPreserveAccessIndexAttr *A) {
     return true; 
   }
-  bool TraverseBTFTagAttr(BTFTagAttr *A);
-  bool VisitBTFTagAttr(BTFTagAttr *A) {
+  bool TraverseBTFDeclTagAttr(BTFDeclTagAttr *A);
+  bool VisitBTFDeclTagAttr(BTFDeclTagAttr *A) {
     return true; 
   }
   bool TraverseBlocksAttr(BlocksAttr *A);
@@ -1834,10 +1834,10 @@ bool VISITORCLASS<Derived>::TraverseBPFPreserveAccessIndexAttr(BPFPreserveAccess
 }
 
 template <typename Derived>
-bool VISITORCLASS<Derived>::TraverseBTFTagAttr(BTFTagAttr *A) {
+bool VISITORCLASS<Derived>::TraverseBTFDeclTagAttr(BTFDeclTagAttr *A) {
   if (!getDerived().VisitAttr(A))
     return false;
-  if (!getDerived().VisitBTFTagAttr(A))
+  if (!getDerived().VisitBTFDeclTagAttr(A))
     return false;
   return true;
 }
@@ -3243,6 +3243,22 @@ bool VISITORCLASS<Derived>::TraverseOMPDeclareVariantAttr(OMPDeclareVariantAttr 
     return false;
   if (!getDerived().TraverseStmt(A->getVariantFuncRef()))
     return false;
+  {
+    Expr * *I = A->adjustArgsNothing_begin();
+    Expr * *E = A->adjustArgsNothing_end();
+    for (; I != E; ++I) {
+      if (!getDerived().TraverseStmt(*I))
+        return false;
+    }
+  }
+  {
+    Expr * *I = A->adjustArgsNeedDevicePtr_begin();
+    Expr * *E = A->adjustArgsNeedDevicePtr_end();
+    for (; I != E; ++I) {
+      if (!getDerived().TraverseStmt(*I))
+        return false;
+    }
+  }
   return true;
 }
 
@@ -4784,8 +4800,8 @@ bool VISITORCLASS<Derived>::TraverseAttr(Attr *A) {
       return getDerived().TraverseAvailabilityAttr(cast<AvailabilityAttr>(A));
     case attr::BPFPreserveAccessIndex:
       return getDerived().TraverseBPFPreserveAccessIndexAttr(cast<BPFPreserveAccessIndexAttr>(A));
-    case attr::BTFTag:
-      return getDerived().TraverseBTFTagAttr(cast<BTFTagAttr>(A));
+    case attr::BTFDeclTag:
+      return getDerived().TraverseBTFDeclTagAttr(cast<BTFDeclTagAttr>(A));
     case attr::Blocks:
       return getDerived().TraverseBlocksAttr(cast<BlocksAttr>(A));
     case attr::Builtin:

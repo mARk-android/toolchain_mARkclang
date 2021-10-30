@@ -11,6 +11,7 @@
 
 #define _PSTL_PAR_BACKEND_SERIAL
 /* #undef _PSTL_PAR_BACKEND_TBB */
+/* #undef _PSTL_PAR_BACKEND_OPENMP */
 /* #undef _PSTL_HIDE_FROM_ABI_PER_TU */
 
 #endif // __PSTL_CONFIG_SITE

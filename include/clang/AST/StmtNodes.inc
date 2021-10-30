@@ -365,17 +365,25 @@ STMT_RANGE(OMPLoopDirective, OMPDistributeDirective, OMPTeamsDistributeSimdDirec
 
 #undef OMPLOOPDIRECTIVE
 
-#ifndef OMPTILEDIRECTIVE
-#  define OMPTILEDIRECTIVE(Type, Base) OMPLOOPBASEDDIRECTIVE(Type, Base)
+#ifndef OMPLOOPTRANSFORMATIONDIRECTIVE
+#  define OMPLOOPTRANSFORMATIONDIRECTIVE(Type, Base) OMPLOOPBASEDDIRECTIVE(Type, Base)
 #endif
-OMPTILEDIRECTIVE(OMPTileDirective, OMPLoopBasedDirective)
+ABSTRACT_STMT(OMPLOOPTRANSFORMATIONDIRECTIVE(OMPLoopTransformationDirective, OMPLoopBasedDirective))
+#ifndef OMPTILEDIRECTIVE
+#  define OMPTILEDIRECTIVE(Type, Base) OMPLOOPTRANSFORMATIONDIRECTIVE(Type, Base)
+#endif
+OMPTILEDIRECTIVE(OMPTileDirective, OMPLoopTransformationDirective)
 #undef OMPTILEDIRECTIVE
 
 #ifndef OMPUNROLLDIRECTIVE
-#  define OMPUNROLLDIRECTIVE(Type, Base) OMPLOOPBASEDDIRECTIVE(Type, Base)
+#  define OMPUNROLLDIRECTIVE(Type, Base) OMPLOOPTRANSFORMATIONDIRECTIVE(Type, Base)
 #endif
-OMPUNROLLDIRECTIVE(OMPUnrollDirective, OMPLoopBasedDirective)
+OMPUNROLLDIRECTIVE(OMPUnrollDirective, OMPLoopTransformationDirective)
 #undef OMPUNROLLDIRECTIVE
+
+STMT_RANGE(OMPLoopTransformationDirective, OMPTileDirective, OMPUnrollDirective)
+
+#undef OMPLOOPTRANSFORMATIONDIRECTIVE
 
 STMT_RANGE(OMPLoopBasedDirective, OMPDistributeDirective, OMPUnrollDirective)
 

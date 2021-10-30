@@ -351,12 +351,12 @@ Record.push_back(SA->getInterrupt());
     Record.push_back(A->isPackExpansion());
     break;
   }
-  case attr::BTFTag: {
-    const auto *SA = cast<BTFTagAttr>(A);
+  case attr::BTFDeclTag: {
+    const auto *SA = cast<BTFDeclTagAttr>(A);
     Record.push_back(SA->isInherited());
     Record.push_back(A->isImplicit());
     Record.push_back(A->isPackExpansion());
-    Record.AddString(SA->getBTFTag());
+    Record.AddString(SA->getBTFDeclTag());
     break;
   }
   case attr::Blocks: {
@@ -1469,6 +1469,12 @@ Record.push_back(SA->getDevType());
     Record.push_back(A->isPackExpansion());
     Record.AddStmt(SA->getVariantFuncRef());
     Record.writeOMPTraitInfo(SA->getTraitInfos());
+    Record.push_back(SA->adjustArgsNothing_size());
+    for (auto &Val : SA->adjustArgsNothing())
+      Record.AddStmt(Val);
+    Record.push_back(SA->adjustArgsNeedDevicePtr_size());
+    for (auto &Val : SA->adjustArgsNeedDevicePtr())
+      Record.AddStmt(Val);
     break;
   }
   case attr::OMPReferencedVar: {

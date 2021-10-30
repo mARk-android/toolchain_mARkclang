@@ -27,6 +27,7 @@ enum WASMIntrinsics : unsigned {
     wasm_get_ehselector,                       // llvm.wasm.get.ehselector
     wasm_get_exception,                        // llvm.wasm.get.exception
     wasm_landingpad_index,                     // llvm.wasm.landingpad.index
+    wasm_laneselect,                           // llvm.wasm.laneselect
     wasm_lsda,                                 // llvm.wasm.lsda
     wasm_memory_atomic_notify,                 // llvm.wasm.memory.atomic.notify
     wasm_memory_atomic_wait32,                 // llvm.wasm.memory.atomic.wait32
